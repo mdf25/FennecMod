@@ -1468,13 +1468,13 @@
 	<item name="44MagBullet"		count="12,50" 	prob="0.1" 	/>
 </lootgroup>
 
-<lootgroup name="StartingGear">
-	<item name="classPaperCraftable" 	count="3" />
-	<item name="firstAidKit"		 	count="1" />
-	<item name="firstAidBandage"		count="2" />
-	<item name="canLamb"				count="1" />
-	<item name="canPeas"				count="1" />
-	<item name="bottledWater"			count="2" />
+<lootgroup name="StartingGear" count="all">
+	<item name="classPaperCraftable" 	count="3" prob="1"/>
+	<item name="firstAidKit"		 	count="1" prob="1"/>
+	<item name="firstAidBandage"		count="2" prob="1"/>
+	<item name="canLamb"				count="1" prob="1"/>
+	<item name="canPeas"				count="1" prob="1"/>
+	<item name="bottledWater"			count="2" prob="1"/>
 </lootgroup>
 
 <!-- misc storage, cardboard boxes-->
