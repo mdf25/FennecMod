@@ -1469,7 +1469,6 @@
 </lootgroup>
 
 <lootgroup name="StartingGear" count="all">
-	<item name="classPaperCraftable" 	count="3" prob="1"/>
 	<item name="firstAidKit"		 	count="1" prob="1"/>
 	<item name="firstAidBandage"		count="2" prob="1"/>
 	<item name="canLamb"				count="1" prob="1"/>
