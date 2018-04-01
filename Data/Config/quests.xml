@@ -626,7 +626,7 @@
 	<!-- SHOTGUNS CLASS -->
 	<quest id="quest_shotguns_1" name_key="quest_shotguns_1" subtitle_key="quest_shotguns_1_subtitle" description_key="quest_shotguns_1_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_shotguns_1_offer" difficulty="easy">
-		<reward type="Skill" id="ShotgunPerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ShotgunBuff" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ShotgunWeaponsDebuff" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ShotgunMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Quest" id="quest_shotguns_2" />
@@ -667,7 +667,7 @@
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
 			<requirement type="Holding" id="gunPumpShotgun" />
 		</requirement>
-		<reward type="Skill" id="ShotgunPerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ShotgunBuff" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ShotgunWeaponsDebuff" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ShotgunMastery" 		value="1" stage="aftercomplete" />
 	</quest>
