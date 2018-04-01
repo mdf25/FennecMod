@@ -1,0 +1,1218 @@
+<!--
+	Quest format description:
+
+	Example: <quest id="quest_BasicSurvival1" name_key="Basic Survival 1/8" subtitle_key="Craft a Stone Axe" description_key="blah" icon="ui_game_symbol_hammer" >
+
+	id = ID used for the quest
+	name_key - localization key for the quest used when displayed in the quest list.
+	subtitle_key = localization key for the sub name used when displayed in the quest details and tracker.
+	description_key = localization key for the description displayed in the description window.
+	offer_key = localization key for the offer window description.
+	icon = icon shown in the quest list and on the tracker.
+	category_key = localization key for the category type (quest,challenge)
+	difficulty = (veryeasy, easy, medium, hard, insane )
+
+	Alternative settings for custom quest creation:
+
+	name - quest name without localization.
+	subtitle - sub name without localization.
+	description - description without localization.
+	offer - offer without localization.
+	group_name - quest chain name without localization.
+	category - category type without localization.
+
+-->
+
+<quests>
+	<!-- Basic Survival 1 - Craft a Bedroll /> -->
+	<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival1" subtitle_key="quest_BasicSurvival1_subtitle" description_key="quest_BasicSurvival1_description" icon="ui_game_symbol_map_bed" category_key="quest" difficulty="veryeasy" offer_key="quest_BasicSurvival_offer">
+		<action type="ShowTip" value="tutorialTipQuest02" />
+		<action type="TrackQuest" />
+
+		<objective type="FetchKeep" id="yuccaFibers" value="20" />
+		<objective type="Craft" id="bedroll" value="1" />
+		<objective type="BlockPlace" id="bedroll" value="1" />
+
+		<reward type="Quest" id="quest_BasicSurvival2" />
+    </quest>
+
+	<!-- Basic Survival 2 - Craft a Stone Axe /> -->
+    <quest id="quest_BasicSurvival2" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival2" subtitle="Craft a Stone Axe" subtitle_key="quest_BasicSurvival2_subtitle" description_key="quest_BasicSurvival2_description"
+	icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_BasicSurvival_offer" >
+
+		<objective type="FetchKeep" id="yuccaFibers" value="2" />
+		<objective type="FetchKeep" id="wood" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="4" />
+
+		<objective type="Craft" id="stoneAxe" value="1" />
+		<reward type="Quest" id="quest_BasicSurvival3" />
+
+    </quest>
+
+	<!-- Basic Survival 3 - Craft Plant Fiber Clothing /> -->
+	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival3" subtitle_key="quest_BasicSurvival3_subtitle" description_key="quest_BasicSurvival3_description" icon="ui_game_symbol_tailoring" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="yuccaFibers" value="35" />
+		<objective type="Craft" id="plantFiberPants" value="1" />
+		<objective type="Craft" id="plantFiberShirt" value="1" />
+		<objective type="Craft" id="plantFiberHood" value="1" />
+		<objective type="Craft" id="plantFiberShoes" value="1" />
+		<objective type="Craft" id="plantFiberGloves" value="1" />
+
+		<reward type="Quest" id="quest_BasicSurvival4" />
+    </quest>
+
+	<!-- Basic Survival 4 - Wear Plant Fiber Clothing /> -->
+	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_shirt" category_key="quest" difficulty="veryeasy">
+		<objective type="Wear" id="plantFiberPants" />
+		<objective type="Wear" id="plantFiberShirt" />
+		<objective type="Wear" id="plantFiberHood" />
+		<objective type="Wear" id="plantFiberShoes" />
+		<objective type="Wear" id="plantFiberGloves" />
+
+		<reward type="Quest" id="quest_BasicSurvival5" />
+    </quest>
+
+	<!-- Basic Survival 5 - Craft a Wooden Club /> -->
+	<quest id="quest_BasicSurvival5" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival5" subtitle_key="quest_BasicSurvival5_subtitle" description_key="quest_BasicSurvival5_description" icon="ui_game_symbol_club" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="wood" value="6" />
+		<objective type="Craft" id="clubWood" value="1" />
+
+		<reward type="Quest" id="quest_BasicSurvival6" />
+    </quest>
+
+	<!-- Basic Survival 6 - Craft Bow & Arrows /> -->
+	<quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_archery" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="wood" value="10" />
+		<objective type="FetchKeep" id="yuccaFibers" value="3" />
+		<objective type="FetchKeep" id="feather" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="2" />
+		<objective type="Craft" id="woodenBow" value="1" />
+		<objective type="Craft" id="arrow" value="2" />
+
+		<reward type="Quest" id="quest_BasicSurvival7" />
+    </quest>
+
+	<!-- Basic Survival 7 - Start a Base /> -->
+	<quest id="quest_BasicSurvival7" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival7" subtitle_key="quest_BasicSurvival7_subtitle" description_key="quest_BasicSurvival7_description" icon="ui_game_symbol_map_house" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="wood" value="18" />
+		<objective type="Craft" id="woodFrameBlock" value="3" />
+		<objective type="BlockPlace" id="woodFrameBlock" value="3" />
+		<objective type="BlockUpgrade" id="woodFrameBlock" value="3" />
+
+		<reward type="Quest" id="quest_BasicSurvival8" />
+    </quest>
+
+	<!-- Basic Survival 8 - Build a Campfire /> -->
+	<quest id="quest_BasicSurvival8" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival8" subtitle_key="quest_BasicSurvival8_subtitle" description_key="quest_BasicSurvival8_description" icon="ui_game_symbol_campfire" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="rockSmall" value="8" />
+		<objective type="Craft" id="campfire" value="1" />
+		<objective type="BlockPlace" id="campfire" value="1" />
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
+    </quest>
+
+	<!-- White River Citizen 1 - Journey to Settlement -->
+	
+	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
+		<objective type="Goto" id="trader" value="5" />
+
+		<reward type="SkillPoints" value="5" />
+    </quest>
+	
+
+	<!-- CHALLENGES -->
+	<quest id="challenge_silenceofthelambs" name_key="challenge_silenceofthelambs" subtitle_key="challenge_silenceofthelambs_subtitle" description_key="challenge_silenceofthelambs_offer" icon="ui_game_symbol_zombie"
+	repeatable="true" category_key="challenge" offer_key="challenge_silenceofthelambs_offer" difficulty="insane" >
+		<objective type="Time" value="1200" optional="true" />
+		<objective type="ZombieKill" id="zombieScreamer,zombieScreamerFeral" value="3" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_drunkanddisorderly" name_key="challenge_drunkanddisorderly" subtitle_key="challenge_drunkanddisorderly_subtitle" description_key="challenge_drunkanddisorderly_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_drunkanddisorderly_offer" difficulty="medium">
+		<objective type="Time" value="600" optional="true" />
+		<objective type="ZombieKill" value="2"  />
+		<requirement type="Holding" id="" />
+
+		<requirement type="Group" value="OR">
+			<requirement type="Buff" id="Drunk" />
+			<requirement type="Buff" id="SickDrunk" />
+		</requirement>
+
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_nurseyoubacktohealth" name_key="challenge_nurseyoubacktohealth" subtitle_key="challenge_nurseyoubacktohealth_subtitle" description_key="challenge_nurseyoubacktohealth_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_nurseyoubacktohealth_offer" difficulty="medium" >
+
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="3" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_copanattitude" name_key="challenge_copanattitude" subtitle_key="challenge_copanattitude_subtitle" description_key="challenge_copanattitude_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_copanattitude_offer" difficulty="hard">
+		<objective type="Time" value="1500" optional="true" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopFeral,zombieFatCopFeralRadiated" value="2" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_dogdaysareover" name_key="challenge_dogdaysareover" subtitle_key="challenge_dogdaysareover_subtitle" description_key="challenge_dogdaysareover_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_dogdaysareover_offer" difficulty="hard">
+		<objective type="Time" value="1500" optional="true" />
+		<objective type="ZombieKill" id="animalZombieDog" value="4" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_itsybitsyspider" name_key="challenge_itsybitsyspider" subtitle_key="challenge_itsybitsyspider_subtitle" description_key="challenge_itsybitsyspider_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_itsybitsyspider_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieSpider,zombieSpiderFeral,zombieSpiderFeralRadiated" value="3" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_ladykiller" name_key="challenge_ladykiller" subtitle_key="challenge_ladykiller_subtitle" description_key="challenge_ladykiller_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_ladykiller_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieArlene,zombieArleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieDarlene,zombieDarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieMarlene,zombieMarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="1" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+
+	<quest id="challenge_maneater" name_key="challenge_maneater" subtitle_key="challenge_maneater_subtitle" description_key="challenge_maneater_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_maneater_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieBoe,zombieBoeFeral" value="1" />
+		<objective type="ZombieKill" id="zombieJoe,zombieJoeFeral" value="1" />
+		<objective type="ZombieKill" id="zombieMoe,zombieMoeFeral" value="1" />
+		<objective type="ZombieKill" id="zombieYo,zombieYoFeral" value="1" />
+		<objective type="ZombieKill" id="zombieSteve,zombieSteveFeral" value="1" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_yournothingspecial" name_key="challenge_yournothingspecial" subtitle_key="challenge_yournothingspecial_subtitle" description_key="challenge_yournothingspecial_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_yournothingspecial_offer" difficulty="insane">
+		<objective type="Time" value="1800" optional="true" />
+		<objective type="ZombieKill" id="zombieSpider,zombieSpiderFeral,zombieSpiderFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopFeral,zombieFatCopFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeral,zombieWightFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieScreamer,zombieScreamerFeral" value="1" />
+		<objective type="ZombieKill" id="zombieBurnt" value="1" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_imalumberjackandimokay" name_key="challenge_imalumberjackandimokay" subtitle_key="challenge_imalumberjackandimokay_subtitle" description_key="challenge_imalumberjackandimokay_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_imalumberjackandimokay_offer" difficulty="hard">
+
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieSnow,zombieSnowFeral" value="3" />
+
+		<requirement type="Group" id="requirementGroupFireaxe" value="OR">
+			<requirement type="Holding" id="fireaxeIron" />
+			<requirement type="Holding" id="fireaxeSteel" />
+		</requirement>
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+
+	<quest id="challenge_killthewabbit" name_key="challenge_killthewabbit" subtitle_key="challenge_killthewabbit_subtitle" description_key="challenge_killthewabbit_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_killthewabbit_offer" difficulty="medium">
+
+		<objective type="AnimalKill" id="animalRabbit" value="5"  />
+
+		<requirement type="Group" id="requirementGroupShotgun" value="OR">
+			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
+			<requirement type="Holding" id="gunPumpShotgun" />
+		</requirement>
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_nailsomechicks" name_key="challenge_nailsomechicks" subtitle_key="challenge_nailsomechicks_subtitle" description_key="challenge_nailsomechicks_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_nailsomechicks_offer" difficulty="medium">
+		<objective type="AnimalKill" id="animalChicken" value="5"  />
+
+		<requirement type="Holding" id="nailgun" />
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_thatlldopig" name_key="challenge_thatlldopig" subtitle_key="challenge_thatlldopig_subtitle" description_key="challenge_thatlldopig_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_thatlldopig_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalBoar" value="5"  />
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_stagparty" name_key="challenge_stagparty" subtitle_key="challenge_stagparty_subtitle" description_key="challenge_stagparty_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_stagparty_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalStag" value="5"  />
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_dontfeedthebears" name_key="challenge_dontfeedthebears" subtitle_key="challenge_dontfeedthebears_subtitle" description_key="challenge_dontfeedthebears_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_dontfeedthebears_offer" difficulty="hard">
+		<objective type="AnimalKill" id="animalBear" value="3"  />
+
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_buythefarm" name_key="challenge_buythefarm" subtitle_key="challenge_buythefarm_subtitle" description_key="challenge_buythefarm_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_buythefarm_offer" difficulty="medium">
+		<objective type="AnimalKill" id="animalRabbit" value="1"  />
+		<objective type="AnimalKill" id="animalChicken" value="1"  />
+		<objective type="AnimalKill" id="animalBoar" value="1"  />
+		<objective type="AnimalKill" id="animalStag" value="1"  />
+		<objective type="AnimalKill" id="animalBear" value="1"  />
+
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="treasure_taylor" name_key="treasure_taylor" subtitle_key="treasure_taylor_subtitle" description_key="treasure_taylor_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_taylor_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="700-1000" />
+	</quest>
+
+	<quest id="treasure_nickole" name_key="treasure_nickole" subtitle_key="treasure_nickole_subtitle" description_key="treasure_nickole_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_nickole_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="700-1000" />
+	</quest>
+
+	<quest id="treasure_stephan" name_key="treasure_stephan" subtitle_key="treasure_stephan_subtitle" description_key="treasure_stephan_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_stephan_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="700-1000" />
+	</quest>
+
+	<quest id="treasure_jennifer" name_key="treasure_jennifer" subtitle_key="treasure_jennifer_subtitle" description_key="treasure_jennifer_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_jennifer_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="700-1000" />
+	</quest>
+
+	<quest id="treasure_claude" name_key="treasure_claude" subtitle_key="treasure_claude_subtitle" description_key="treasure_claude_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_claude_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="700-1000" />
+	</quest>
+
+	<quest id="treasure_sarah" name_key="treasure_sarah" subtitle_key="treasure_sarah_subtitle" description_key="treasure_sarah_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_sarah_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="700-1000" />
+	</quest>
+
+	<quest id="treasure_raphael" name_key="treasure_raphael" subtitle_key="treasure_raphael_subtitle" description_key="treasure_raphael_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_raphael_offer" difficulty="medium">
+	
+		<objective type="TreasureChest" id="treasureChest" value="700-1000" />
+	</quest>
+
+
+	<!-- Specialization quests -->
+	
+	<!-- BUILDER CLASS -->
+	<quest id="quest_builder_1" name_key="quest_builder_1" subtitle_key="quest_builder_1_subtitle" description_key="quest_builder_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_builder_1_offer" difficulty="easy">
+		<reward type="Skill" id="BuilderWellness50" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderToolsDamage" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderStaminaDrain" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderThirst" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_builder_2" />
+	</quest>
+	
+	<quest id="quest_builder_2" name_key="quest_builder_2" subtitle_key="quest_builder_2_subtitle" description_key="quest_builder_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_builder_2_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="wood" 					value="5000" />
+		<objective type="FetchKeep" 	id="scrapIron" 				value="1000" />
+		<objective type="Craft" 		id="woodFrameBlock" 		value="50" />
+		<objective type="Craft" 		id="scrapIronFrameBlock" 	value="30" />
+		<reward type="Quest" id="quest_builder_3" />
+	</quest>
+	
+	<quest id="quest_builder_3" name_key="quest_builder_3" subtitle_key="quest_builder_3_subtitle" description_key="quest_builder_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_builder_3_offer" difficulty="easy">
+		<objective type="Craft" 		id="clawHammer" 			value="1" />
+		<objective type="BlockUpgrade" 	id="woodFrameBlock" 		value="50" />
+		<objective type="BlockUpgrade" 	id="scrapIronFrameBlock" 	value="30" />
+		<objective type="Craft" 		id="secureDoorWooden" 		value="1" />
+		<reward type="Quest" id="quest_builder_4" />
+	</quest>
+	
+	<quest id="quest_builder_4" name_key="quest_builder_4" subtitle_key="quest_builder_4_subtitle" description_key="quest_builder_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_builder_4_offer" difficulty="easy">
+		<objective type="BlockPlace" 	id="cementMixer" 			value="1" />
+		<objective type="BlockPlace" 	id="metalTrussingBlock" 	value="100" />
+		<objective type="BlockPlace" 	id="rebarFrameBlock" 		value="100" />
+		<objective type="FetchKeep" 	id="concreteMix" 			value="1000" />
+		<reward type="Quest" id="quest_builder_5" />
+	</quest>
+	
+	<quest id="quest_builder_5" name_key="quest_builder_5" subtitle_key="quest_builder_5_subtitle" description_key="quest_builder_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_builder_5_offer" difficulty="easy">
+		<objective type="ZombieKill" value="30" />	
+		<requirement type="Holding" id="clawHammer" />
+		<reward type="Skill" id="BuilderWellness50" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderToolsDamage" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderStaminaDrain" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderThirst" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- CRAFTER CLASS -->
+	<quest id="quest_crafter_1" name_key="quest_crafter_1" subtitle_key="quest_crafter_1_subtitle" description_key="quest_crafter_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_crafter_1_offer" difficulty="easy">
+		<reward type="Skill" id="CrafterSpeed" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CrafterWeakness" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CrafterMastery"	 	value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_crafter_2" />
+	</quest>
+	
+	<quest id="quest_crafter_2" name_key="quest_crafter_2" subtitle_key="quest_crafter_2_subtitle" description_key="quest_crafter_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_crafter_2_offer" difficulty="easy">
+		<objective type="Craft" 		id="barbedFence" 			value="100" />
+		<objective type="Craft" 		id="scrapIronLogSpike4" 	value="50"  />
+		<objective type="Craft" 		id="trapSpikesNew" 			value="100" />
+		<reward type="Quest" id="quest_crafter_3" />
+	</quest>
+	
+	<quest id="quest_crafter_3" name_key="quest_crafter_3" subtitle_key="quest_crafter_3_subtitle" description_key="quest_crafter_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_crafter_3_offer" difficulty="easy">
+		<objective type="BlockPlace" 	id="forge" 					value="1" />
+		<objective type="FetchKeep" 	id="anvil" 					value="1" />
+		<objective type="FetchKeep" 	id="forgedIron" 			value="200" />
+		<objective type="FetchKeep" 	id="ironArrowHead" 			value="200" />
+		<reward type="Quest" id="quest_crafter_4" />
+	</quest>
+	
+	<quest id="quest_crafter_4" name_key="quest_crafter_4" subtitle_key="quest_crafter_4_subtitle" description_key="quest_crafter_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_crafter_4_offer" difficulty="easy">
+		<objective type="BlockPlace" 	id="workbench" 				value="1"  />
+		<objective type="FetchKeep" 	id="wrench" 				value="3"  />
+		<objective type="FetchKeep" 	id="clawHammer" 			value="2"  />
+		<objective type="FetchKeep" 	id="mechanicalParts" 		value="20" />
+		<reward type="Quest" id="quest_crafter_5" />
+	</quest>
+	
+	<quest id="quest_crafter_5" name_key="quest_crafter_5" subtitle_key="quest_crafter_5_subtitle" description_key="quest_crafter_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_crafter_5_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="toolAndDieSet" 			value="1" />
+		<reward type="Skill" id="CrafterSpeed" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CrafterWeakness" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CrafterMastery"	 	value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- BLADES CLASS -->
+	<quest id="quest_blades_1" name_key="quest_blades_1" subtitle_key="quest_blades_1_subtitle" description_key="quest_blades_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blades_1_offer" difficulty="easy">
+		<reward type="Skill" id="BladesKnifeBuff" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BladesClubDebuff" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BladesMastery"		 	value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_blades_2" />
+	</quest>
+	
+	<quest id="quest_blades_2" name_key="quest_blades_2" subtitle_key="quest_blades_2_subtitle" description_key="quest_blades_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blades_2_offer" difficulty="easy">
+		<objective type="ZombieKill" value="30" />	
+		<requirement type="Group" id="requirementGroupKnife1" value="OR">
+			<requirement type="Holding" id="boneShiv" />
+			<requirement type="Holding" id="huntingKnife" />
+		</requirement>
+		<reward type="Quest" id="quest_blades_3" />
+	</quest>
+	
+	<quest id="quest_blades_3" name_key="quest_blades_3" subtitle_key="quest_blades_3_subtitle" description_key="quest_blades_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blades_3_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="rawMeat" 				value="30"  />
+		<objective type="FetchKeep" 	id="animalHide" 			value="30"  />
+		<reward type="Quest" id="quest_blades_4" />
+	</quest>
+	
+	<quest id="quest_blades_4" name_key="quest_blades_4" subtitle_key="quest_blades_4_subtitle" description_key="quest_blades_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blades_4_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="machete" 				value="1"  />
+		<reward type="Quest" id="quest_blades_5" />
+	</quest>
+	
+	<quest id="quest_blades_5" name_key="quest_blades_5" subtitle_key="quest_blades_5_subtitle" description_key="quest_blades_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blades_5_offer" difficulty="easy">
+		<objective type="ZombieKill" value="100" />	
+		<requirement type="Holding" id="machete" />
+		<reward type="Skill" id="BladesKnifeBuff" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BladesClubDebuff" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BladesMastery"		 	value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- BLUNTS CLASS -->
+	<quest id="quest_blunts_1" name_key="quest_blunts_1" subtitle_key="quest_blunts_1_subtitle" description_key="quest_blunts_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blunts_1_offer" difficulty="easy">
+		<reward type="Skill" id="BluntsClubBuff" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BluntsKnifeDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BluntsMastery"		 	value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_blunts_2" />
+	</quest>
+	
+	<quest id="quest_blunts_2" name_key="quest_blunts_2" subtitle_key="quest_blunts_2_subtitle" description_key="quest_blunts_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blunts_2_offer" difficulty="easy">
+		<objective type="ZombieKill" value="30" />	
+		<requirement type="Group" id="requirementGroupBlunt1" value="OR">
+			<requirement type="Holding" id="clubWood" />
+			<requirement type="Holding" id="clubIron" />
+		</requirement>
+		<reward type="Quest" id="quest_blunts_3" />
+	</quest>
+	
+	<quest id="quest_blunts_3" name_key="quest_blunts_3" subtitle_key="quest_blunts_3_subtitle" description_key="quest_blunts_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blunts_3_offer" difficulty="easy">
+		<objective type="ZombieKill" value="100" 	/>	
+		<requirement type="Holding" id="clubBarbed" />
+		<reward type="Quest" id="quest_blunts_4" />
+	</quest>
+	
+	<quest id="quest_blunts_4" name_key="quest_blunts_4" subtitle_key="quest_blunts_4_subtitle" description_key="quest_blunts_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blunts_4_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="clubSpiked" 	value="1" />
+		<objective type="FetchKeep" 	id="sledgehammer" 	value="1" />
+		<reward type="Quest" id="quest_blunts_5" />
+	</quest>
+	
+	<quest id="quest_blunts_5" name_key="quest_blunts_5" subtitle_key="quest_blunts_5_subtitle" description_key="quest_blunts_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_blunts_5_offer" difficulty="easy">
+		<objective type="ZombieKill" value="100" />	
+		<requirement type="Group" id="requirementGroupBlunt2" value="OR">
+			<requirement type="Holding" id="clubSpiked" />
+			<requirement type="Holding" id="sledgehammer" />
+		</requirement>
+		<reward type="Skill" id="BluntsClubBuff" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BluntsKnifeDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BluntsMastery"		 	value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- MINER CLASS -->
+	<quest id="quest_miner_1" name_key="quest_miner_1" subtitle_key="quest_miner_1_subtitle" description_key="quest_miner_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_miner_1_offer" difficulty="easy">
+		<reward type="Skill" id="MinerHarvest" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="MinerSlowCraft" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="MinerMastery"		 	value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_miner_2" />
+	</quest>
+	
+	<quest id="quest_miner_2" name_key="quest_miner_2" subtitle_key="quest_miner_2_subtitle" description_key="quest_miner_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_miner_2_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="copperFragment" 	value="200" />
+		<objective type="FetchKeep"		id="clayLump"			value="500" />
+		<objective type="Craft" 		id="pickaxeCopper" 		value="1" />
+		<objective type="Craft" 		id="shovelCopper" 		value="1" />
+		<reward type="Quest" id="quest_miner_3" />
+	</quest>
+	
+	<quest id="quest_miner_3" name_key="quest_miner_3" subtitle_key="quest_miner_3_subtitle" description_key="quest_miner_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_miner_3_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="ironFragment" 		value="1000" />
+		<objective type="FetchKeep"		id="zincFragment"		value="1000" />
+		<objective type="BlockPlace" 	id="forge" 				value="3"  />
+		<objective type="FetchKeep"		id="forgedIron"			value="30" />
+		<objective type="FetchKeep"		id="pickaxeIron"		value="1" />
+		<objective type="FetchKeep"		id="shovelIron"			value="1" />
+		<reward type="Quest" id="quest_miner_4" />
+	</quest>
+	
+	<quest id="quest_miner_4" name_key="quest_miner_4" subtitle_key="quest_miner_4_subtitle" description_key="quest_miner_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_miner_4_offer" difficulty="easy">
+		<objective type="BlockPlace"	id="alloyForge"				value="1" />
+		<objective type="FetchKeep" 	id="coal" 					value="1000" />
+		<objective type="FetchKeep"		id="potassiumNitratePowder"	value="1000" />
+		<objective type="FetchKeep" 	id="pickaxeSteel" 			value="1" />
+		<objective type="FetchKeep" 	id="shovelSteel" 			value="1" />
+		<objective type="Craft"			id="forgedSteel"			value="10" />
+		<reward type="Quest" id="quest_miner_5" />
+	</quest>
+	
+	<quest id="quest_miner_5" name_key="quest_miner_5" subtitle_key="quest_miner_5_subtitle" description_key="quest_miner_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_miner_5_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="uraniumFragment" 		value="1000" />
+		<objective type="FetchKeep"		id="silverNugget"			value="100" />
+		<objective type="FetchKeep" 	id="goldNugget" 			value="30" />
+		<objective type="FetchKeep"		id="rawDiamond"				value="1" />
+		<reward type="Skill" id="MinerHarvest" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="MinerSlowCraft" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="MinerMastery"		 	value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- RANGER CLASS -->
+	<quest id="quest_ranger_1" name_key="quest_ranger_1" subtitle_key="quest_ranger_1_subtitle" description_key="quest_ranger_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_ranger_1_offer" difficulty="easy">
+		<reward type="Skill" id="RangerBowPerk" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="RangerWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="RangerMastery"		 	value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_ranger_2" />
+	</quest>
+	
+	<quest id="quest_ranger_2" name_key="quest_ranger_2" subtitle_key="quest_ranger_2_subtitle" description_key="quest_ranger_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_ranger_2_offer" difficulty="easy">
+		<objective type="AnimalKill" value="10"  />
+		<requirement type="Holding" id="woodenBow" />
+		<reward type="Quest" id="quest_ranger_3" />
+	</quest>
+	
+	<quest id="quest_ranger_3" name_key="quest_ranger_3" subtitle_key="quest_ranger_3_subtitle" description_key="quest_ranger_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_ranger_3_offer" difficulty="easy">
+		<objective type="ZombieKill" value="30" />	
+		<requirement type="Holding" id="woodenBow" />
+		<reward type="Quest" id="quest_ranger_4" />
+	</quest>
+	
+	<quest id="quest_ranger_4" name_key="quest_ranger_4" subtitle_key="quest_ranger_4_subtitle" description_key="quest_ranger_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_ranger_4_offer" difficulty="easy">
+		<objective type="ZombieKill" value="100" />	
+		<requirement type="Group" id="requirementGroupBows1" value="OR">
+			<requirement type="Holding" id="crossbow" />
+			<requirement type="Holding" id="compoundBow" />
+		</requirement>
+		<reward type="Quest" id="quest_ranger_5" />
+	</quest>
+	
+	<quest id="quest_ranger_5" name_key="quest_ranger_5" subtitle_key="quest_ranger_5_subtitle" description_key="quest_ranger_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_ranger_5_offer" difficulty="easy">
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
+		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<requirement type="Group" id="requirementGroupBows1" value="OR">
+			<requirement type="Holding" id="crossbow" />
+			<requirement type="Holding" id="compoundBow" />
+		</requirement>
+		<reward type="Skill" id="RangerBowPerk" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="RangerWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="RangerMastery"		 	value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- SHOTGUNS CLASS -->
+	<quest id="quest_shotguns_1" name_key="quest_shotguns_1" subtitle_key="quest_shotguns_1_subtitle" description_key="quest_shotguns_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_shotguns_1_offer" difficulty="easy">
+		<reward type="Skill" id="ShotgunPerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ShotgunWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ShotgunMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_shotguns_2" />
+	</quest>
+	
+	<quest id="quest_shotguns_2" name_key="quest_shotguns_2" subtitle_key="quest_shotguns_2_subtitle" description_key="quest_shotguns_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_shotguns_2_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="gunSawedOffPumpShotgun" value="1" />
+		<objective type="FetchKeep"		id="gunPumpShotgun"			value="1" />
+		<objective type="FetchKeep"		id="shotgunShell"			value="50" />
+		<reward type="Quest" id="quest_shotguns_3" />
+	</quest>
+	
+	<quest id="quest_shotguns_3" name_key="quest_shotguns_3" subtitle_key="quest_shotguns_3_subtitle" description_key="quest_shotguns_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_shotguns_3_offer" difficulty="easy">
+		<objective type="ZombieKill" value="100" />
+		<requirement type="Group" id="requirementGroupShotguns1" value="OR">
+			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
+			<requirement type="Holding" id="gunPumpShotgun" />
+		</requirement>
+		<reward type="Quest" id="quest_shotguns_4" />
+	</quest>
+	
+	<quest id="quest_shotguns_4" name_key="quest_shotguns_4" subtitle_key="quest_shotguns_4_subtitle" description_key="quest_shotguns_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_shotguns_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="shotgunShell"			value="100" />
+		<objective type="FetchKeep"		id="shotgunShellMed"		value="50" />
+		<reward type="Quest" id="quest_shotguns_5" />
+	</quest>
+	
+	<quest id="quest_shotguns_5" name_key="quest_shotguns_5" subtitle_key="quest_shotguns_5_subtitle" description_key="quest_shotguns_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_shotguns_5_offer" difficulty="easy">
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
+		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<requirement type="Group" id="requirementGroupShotguns1" value="OR">
+			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
+			<requirement type="Holding" id="gunPumpShotgun" />
+		</requirement>
+		<reward type="Skill" id="ShotgunPerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ShotgunWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ShotgunMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- PISTOLS CLASS -->
+	<quest id="quest_pistols_1" name_key="quest_pistols_1" subtitle_key="quest_pistols_1_subtitle" description_key="quest_pistols_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_pistols_1_offer" difficulty="easy">
+		<reward type="Skill" id="PistolPerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PistolWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PistolMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_pistols_2" />
+	</quest>
+	
+	<quest id="quest_pistols_2" name_key="quest_pistols_2" subtitle_key="quest_pistols_2_subtitle" description_key="quest_pistols_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_pistols_2_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="gunPistol"				value="1" />
+		<objective type="FetchKeep"		id="9mmBulletLow"			value="50" />
+		<reward type="Quest" id="quest_pistols_3" />
+	</quest>
+	
+	<quest id="quest_pistols_3" name_key="quest_pistols_3" subtitle_key="quest_pistols_3_subtitle" description_key="quest_pistols_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_pistols_3_offer" difficulty="easy">
+		<objective type="ZombieKill" value="80" />
+		<requirement type="Holding" id="gunPistol" />
+		<reward type="Quest" id="quest_pistols_4" />
+	</quest>
+	
+	<quest id="quest_pistols_4" name_key="quest_pistols_4" subtitle_key="quest_pistols_4_subtitle" description_key="quest_pistols_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_pistols_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="gun44Magnum"			value="1" />
+		<objective type="FetchKeep"		id="44MagBullet"			value="50" />
+		<reward type="Quest" id="quest_pistols_5" />
+	</quest>
+	
+	<quest id="quest_pistols_5" name_key="quest_pistols_5" subtitle_key="quest_pistols_5_subtitle" description_key="quest_pistols_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_pistols_5_offer" difficulty="easy">
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
+		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<requirement type="Group" id="requirementGroupPistols1" value="OR">
+			<requirement type="Holding" id="gunPistol" />
+			<requirement type="Holding" id="gun44Magnum" />
+		</requirement>
+		<reward type="Skill" id="PistolPerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PistolWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PistolMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- RIFLES CLASS -->
+	<quest id="quest_rifles_1" name_key="quest_rifles_1" subtitle_key="quest_rifles_1_subtitle" description_key="quest_rifles_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_rifles_1_offer" difficulty="easy">
+		<reward type="Skill" id="RiflePerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="RifleWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="RifleMastery" 			value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_rifles_2" />
+	</quest>
+	
+	<quest id="quest_rifles_2" name_key="quest_rifles_2" subtitle_key="quest_rifles_2_subtitle" description_key="quest_rifles_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_rifles_2_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="gunHuntingRifle"		value="1" />
+		<objective type="FetchKeep"		id="762mmBulletLow"			value="20" />
+		<reward type="Quest" id="quest_rifles_3" />
+	</quest>
+	
+	<quest id="quest_rifles_3" name_key="quest_rifles_3" subtitle_key="quest_rifles_3_subtitle" description_key="quest_rifles_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_rifles_3_offer" difficulty="easy">
+		<objective type="ZombieKill" value="50" />
+		<requirement type="Holding" id="gunHuntingRifle" />
+		<reward type="Quest" id="quest_rifles_4" />
+	</quest>
+	
+	<quest id="quest_rifles_4" name_key="quest_rifles_4" subtitle_key="quest_rifles_4_subtitle" description_key="quest_rifles_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_rifles_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="gunSniperRifle"			value="1" />
+		<objective type="FetchKeep"		id="762mmBullet"			value="30" />
+		<reward type="Quest" id="quest_rifles_5" />
+	</quest>
+	
+	<quest id="quest_rifles_5" name_key="quest_rifles_5" subtitle_key="quest_rifles_5_subtitle" description_key="quest_rifles_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_rifles_5_offer" difficulty="easy">
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
+		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<requirement type="Group" id="requirementGroupRifles1" value="OR">
+			<requirement type="Holding" id="gunHuntingRifle" />
+			<requirement type="Holding" id="gunSniperRifle" />
+		</requirement>
+		<reward type="Skill" id="RiflePerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="RifleWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="RifleMastery" 			value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- PLUNDERER CLASS -->
+	<quest id="quest_plunderer_1" name_key="quest_plunderer_1" subtitle_key="quest_plunderer_1_subtitle" description_key="quest_plunderer_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_plunderer_1_offer" difficulty="easy">
+		<reward type="Skill" id="PlundererQualityTime" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PlundererSlow" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PlundererStaminaDrain" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PlundererMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_plunderer_2" />
+	</quest>
+	
+	<quest id="quest_plunderer_2" name_key="quest_plunderer_2" subtitle_key="quest_plunderer_2_subtitle" description_key="quest_plunderer_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_plunderer_2_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="candleStick"			value="5" />
+		<objective type="FetchKeep"		id="skullCap"				value="1" />
+		<objective type="FetchKeep"		id="fishingWeight"			value="5" />
+		<objective type="FetchKeep"		id="trophy"					value="5" />
+		<reward type="Quest" id="quest_plunderer_3" />
+	</quest>
+	
+	<quest id="quest_plunderer_3" name_key="quest_plunderer_3" subtitle_key="quest_plunderer_3_subtitle" description_key="quest_plunderer_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_plunderer_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="fireaxeSteelFactory"	value="1" />
+		<objective type="FetchKeep"		id="pickaxeSteelFactory"	value="1" />
+		<objective type="FetchKeep"		id="shovelSteelFactory"		value="1" />
+		<reward type="Quest" id="quest_plunderer_4" />
+	</quest>
+	
+	<quest id="quest_plunderer_4" name_key="quest_plunderer_4" subtitle_key="quest_plunderer_4_subtitle" description_key="quest_plunderer_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_plunderer_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="chainsaw"				value="1" />
+		<objective type="FetchKeep"		id="auger"					value="1" />
+		<reward type="Quest" id="quest_plunderer_5" />
+	</quest>
+	
+	<quest id="quest_plunderer_5" name_key="quest_plunderer_5" subtitle_key="quest_plunderer_5_subtitle" description_key="quest_plunderer_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_plunderer_5_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="forgedFadium"			value="1" />
+		<objective type="FetchKeep"		id="forgedFoxium"			value="1" />
+		<reward type="Skill" id="PlundererQualityTime" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PlundererSlow" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PlundererStaminaDrain" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="PlundererMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- ARMOUR CLASS -->
+	<quest id="quest_armour_1" name_key="quest_armour_1" subtitle_key="quest_armour_1_subtitle" description_key="quest_armour_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_armour_1_offer" difficulty="easy">
+		<reward type="Skill" id="ArmourPerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ArmourHungerThirst" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ArmourMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_armour_2" />
+	</quest>
+	
+	<quest id="quest_armour_2" name_key="quest_armour_2" subtitle_key="quest_armour_2_subtitle" description_key="quest_armour_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_armour_2_offer" difficulty="easy">
+		<objective type="Craft"			id="animalHideChestArmor"		value="1" />
+		<objective type="Craft"			id="animalHideGloves"			value="1" />
+		<objective type="Craft"			id="animalHideLegArmor"			value="1" />
+		<objective type="Craft"			id="animalHideBoots"			value="1" />
+		<reward type="Quest" id="quest_armour_3" />
+	</quest>
+	
+	<quest id="quest_armour_3" name_key="quest_armour_3" subtitle_key="quest_armour_3_subtitle" description_key="quest_armour_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_armour_3_offer" difficulty="easy">
+		<objective type="Craft"			id="leatherJacket"			value="1" />
+		<objective type="Craft"			id="leatherGloves"			value="1" />
+		<objective type="Craft"			id="leatherPants"			value="1" />
+		<objective type="Craft"			id="leatherBoots"			value="1" />
+		<reward type="Quest" id="quest_armour_4" />
+	</quest>
+	
+	<quest id="quest_armour_4" name_key="quest_armour_4" subtitle_key="quest_armour_4_subtitle" description_key="quest_armour_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_armour_4_offer" difficulty="easy">
+		<objective type="Craft"			id="ironChestArmor"			value="1" />
+		<objective type="Craft"			id="ironGloves"				value="1" />
+		<objective type="Craft"			id="ironLegArmor"			value="1" />
+		<objective type="Craft"			id="ironBoots"				value="1" />
+		<reward type="Quest" id="quest_armour_5" />
+	</quest>
+	
+	<quest id="quest_armour_5" name_key="quest_armour_5" subtitle_key="quest_armour_5_subtitle" description_key="quest_armour_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_armour_5_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="militaryVest"			value="1" />
+		<objective type="FetchKeep"		id="militaryGloves"			value="1" />
+		<objective type="FetchKeep"		id="militaryLegArmor"		value="1" />
+		<objective type="FetchKeep"		id="militaryBoots"			value="1" />
+		<reward type="Skill" id="ArmourPerk" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ArmourHungerThirst" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ArmourMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- HUNTER CLASS -->
+	<quest id="quest_hunter_1" name_key="quest_hunter_1" subtitle_key="quest_hunter_1_subtitle" description_key="quest_hunter_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_hunter_1_offer" difficulty="easy">
+		<reward type="Skill" id="HunterHarvest" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="HunterBowPerk" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="HunterHungerThirst" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="HunterMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_hunter_2" />
+	</quest>	
+	
+	<quest id="quest_hunter_2" name_key="quest_hunter_2" subtitle_key="quest_hunter_2_subtitle" description_key="quest_hunter_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_hunter_2_offer" difficulty="easy">
+		<objective type="AnimalKill" value="20"  />
+		<reward type="Quest" id="quest_hunter_3" />
+	</quest>	
+	
+	<quest id="quest_hunter_3" name_key="quest_hunter_3" subtitle_key="quest_hunter_3_subtitle" description_key="quest_hunter_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_hunter_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="rawMeat"				value="60" 	/>
+		<objective type="FetchKeep"		id="femur"					value="100" />
+		<objective type="FetchKeep"		id="rottingFlesh"			value="200" />
+		<reward type="Quest" id="quest_hunter_4" />
+	</quest>
+	
+	<quest id="quest_hunter_4" name_key="quest_hunter_4" subtitle_key="quest_hunter_4_subtitle" description_key="quest_hunter_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_hunter_4_offer" difficulty="easy">
+		<objective type="TreasureChest" id="treasureChestHunter1" value="200-500" />
+		<reward type="Quest" id="quest_hunter_5" />
+	</quest>
+	
+	<quest id="quest_hunter_5" name_key="quest_hunter_5" subtitle_key="quest_hunter_5_subtitle" description_key="quest_hunter_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_hunter_5_offer" difficulty="easy">
+		<objective type="TreasureChest" id="treasureChestHunter2" value="300-700" />
+		<reward type="Skill" id="HunterHarvest" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="HunterBowPerk" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="HunterHungerThirst" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="HunterMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	<quest id="quest_hunter_finish" name_key="quest_hunter_finish" subtitle_key="quest_hunter_finish_subtitle" description_key="quest_hunter_finish_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_hunter_5_offer" difficulty="easy">
+		<reward type="Skill" id="HunterHarvest" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="HunterBowPerk" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="HunterHungerThirst" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="HunterMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- SCIENTIST CLASS -->
+	<quest id="quest_scientist_1" name_key="quest_scientist_1" subtitle_key="quest_scientist_1_subtitle" description_key="quest_scientist_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_scientist_1_offer" difficulty="easy">
+		<reward type="Skill" id="ScientistHealth" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ScientistArmourDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ScientistStaminaDrain" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ScientistMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_scientist_2" />
+	</quest>	
+	
+	<quest id="quest_scientist_2" name_key="quest_scientist_2" subtitle_key="quest_scientist_2_subtitle" description_key="quest_scientist_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_scientist_2_offer" difficulty="easy">
+		<objective type="Craft"			id="bandage"				value="30" />
+		<objective type="Craft"			id="firstAidBandage"		value="30" />
+		<reward type="Quest" id="quest_scientist_3" />
+	</quest>	
+	
+	<quest id="quest_scientist_3" name_key="quest_scientist_3" subtitle_key="quest_scientist_3_subtitle" description_key="quest_scientist_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_scientist_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="gunPowder"				value="1000" />
+		<objective type="FetchKeep"		id="pipeBomb"				value="50" 	/>
+		<objective type="FetchKeep"		id="molotovCocktail"		value="50" 	/>
+		<reward type="Quest" id="quest_scientist_4" />
+	</quest>	
+	
+	<quest id="quest_scientist_4" name_key="quest_scientist_4" subtitle_key="quest_scientist_4_subtitle" description_key="quest_scientist_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_scientist_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="beaker"					value="1" />
+		<objective type="FetchKeep"		id="bloodDrawKit"			value="1" />
+		<objective type="BlockPlace"	id="chemistryStation"		value="1" />
+		<reward type="Quest" id="quest_scientist_5" />
+	</quest>	
+	
+	<quest id="quest_scientist_5" name_key="quest_scientist_5" subtitle_key="quest_scientist_5_subtitle" description_key="quest_scientist_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_scientist_5_offer" difficulty="easy">
+		<objective type="Craft"			id="firstAidKit"			value="10" />
+		<reward type="Skill" id="ScientistHealth" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ScientistArmourDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ScientistStaminaDrain" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ScientistMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ScientistBeakerRecipe" value="1" stage="aftercomplete" />
+	</quest>	
+	
+	
+	<!-- MECHANIC CLASS -->
+	<quest id="quest_mechanic_1" name_key="quest_mechanic_1" subtitle_key="quest_mechanic_1_subtitle" description_key="quest_mechanic_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_mechanic_1_offer" difficulty="easy">
+		<reward type="Skill" id="MechanicHarvest" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="MechanicEntityDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="MechanicMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_mechanic_2" />
+	</quest>
+	
+	<quest id="quest_mechanic_2" name_key="quest_mechanic_2" subtitle_key="quest_mechanic_2_subtitle" description_key="quest_mechanic_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_mechanic_2_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="wrench"				value="1" />
+		<reward type="Quest" id="quest_mechanic_3" />
+	</quest>
+	
+	<quest id="quest_mechanic_3" name_key="quest_mechanic_3" subtitle_key="quest_mechanic_3_subtitle" description_key="quest_mechanic_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_mechanic_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="oil"					value="10" />
+		<objective type="FetchKeep"		id="mechanicalParts"		value="50" />
+		<objective type="FetchKeep"		id="electricParts"			value="50" />
+		<objective type="FetchKeep"		id="electronicParts"		value="20" />
+		<reward type="Quest" id="quest_mechanic_4" />
+	</quest>
+	
+	<quest id="quest_mechanic_4" name_key="quest_mechanic_4" subtitle_key="quest_mechanic_4_subtitle" description_key="quest_mechanic_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_mechanic_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="smallEngine"			value="1" />
+		<objective type="FetchKeep"		id="minibikeWheels"			value="1" />
+		<objective type="FetchKeep"		id="carBattery"				value="1" />
+		<objective type="FetchKeep"		id="shoppingBasketItem"		value="1" />
+		<reward type="Quest" id="quest_mechanic_5" />
+	</quest>
+	
+	<quest id="quest_mechanic_5" name_key="quest_mechanic_5" subtitle_key="quest_mechanic_5_subtitle" description_key="quest_mechanic_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_mechanic_5_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="minibikesForDumbshits"	value="1" />
+		<objective type="FetchKeep"		id="minibikeHandlebars"		value="1" />
+		<objective type="FetchKeep"		id="minibikeSeat"			value="1" />
+		<objective type="FetchKeep"		id="minibikeChassis"		value="1" />
+		<reward type="Skill" id="MechanicHarvest" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="MechanicEntityDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="MechanicMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- RESEARCHER CLASS -->
+	<quest id="quest_researcher_1" name_key="quest_researcher_1" subtitle_key="quest_researcher_1_subtitle" description_key="quest_researcher_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_researcher_1_offer" difficulty="easy">
+		<reward type="SkillPoints" value="60" />
+		<reward type="Skill" id="ResearcherHealthDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ResearcherArmourDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ResearcherMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_researcher_2" />
+	</quest>
+	
+	<quest id="quest_researcher_2" name_key="quest_researcher_2" subtitle_key="quest_researcher_2_subtitle" description_key="quest_researcher_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_researcher_2_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="paper"					value="250" />
+		<reward type="Quest" id="quest_researcher_3" />
+	</quest>
+	
+	<quest id="quest_researcher_3" name_key="quest_researcher_3" subtitle_key="quest_researcher_3_subtitle" description_key="quest_researcher_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_researcher_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="huntingKnifeBook"		value="1" />
+		<objective type="FetchKeep"		id="pistolBook"				value="1" />
+		<objective type="FetchKeep"		id="pumpShotgunSchematic"	value="1" />
+		<objective type="FetchKeep"		id="huntingRifleSchematic"	value="1" />
+		<reward type="Quest" id="quest_researcher_4" />
+	</quest>
+	
+	<quest id="quest_researcher_4" name_key="quest_researcher_4" subtitle_key="quest_researcher_4_subtitle" description_key="quest_researcher_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_researcher_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="sniperRifleSchematic"	value="2" />
+		<objective type="FetchKeep"		id="ak47Schematic"			value="2" />
+		<objective type="FetchKeep"		id="smgSchematics"			value="2" />
+		<objective type="FetchKeep"		id="theEnforcerMagazine"	value="2" />
+		<reward type="Quest" id="quest_researcher_5" />
+	</quest>
+	
+	<quest id="quest_researcher_5" name_key="quest_researcher_5" subtitle_key="quest_researcher_5_subtitle" description_key="quest_researcher_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_researcher_5_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="rocketLauncherSchematic"	value="3" />
+		<objective type="FetchKeep"		id="gasCanSchematic"			value="3" />
+		<objective type="FetchKeep"		id="augerSchematic"				value="3" />
+		<objective type="FetchKeep"		id="chainsawSchematic"			value="3" />
+		<reward type="SkillPoints" value="30" />
+		<reward type="Skill" id="ResearcherHealthDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ResearcherArmourDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ResearcherMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- ATHLETE CLASS -->
+	<quest id="quest_athlete_1" name_key="quest_athlete_1" subtitle_key="quest_athlete_1_subtitle" description_key="quest_athlete_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_athlete_1_offer" difficulty="easy">
+		<reward type="Skill" id="AthleteHealthStaminaGain" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="AthleteHunger" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="AthleteMastery" 			value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_athlete_2" />
+	</quest>
+	
+	<quest id="quest_athlete_2" name_key="quest_athlete_2" subtitle_key="quest_athlete_2_subtitle" description_key="quest_athlete_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_athlete_2_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="painkillers"		value="25" />
+		<objective type="FetchKeep"		id="firstAidBandage"	value="10" />
+		<reward type="Quest" id="quest_athlete_3" />
+	</quest>
+	
+	<quest id="quest_athlete_3" name_key="quest_athlete_3" subtitle_key="quest_athlete_3_subtitle" description_key="quest_athlete_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_athlete_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="coffee"			value="10" />
+		<objective type="FetchKeep"		id="beer"			value="10" />
+		<reward type="Quest" id="quest_athlete_4" />
+	</quest>
+	
+	<quest id="quest_athlete_4" name_key="quest_athlete_4" subtitle_key="quest_athlete_4_subtitle" description_key="quest_athlete_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_athlete_4_offer" difficulty="easy">
+		<objective type="ZombieKill" value="20"  />
+		<requirement type="Holding" id="" />
+		<requirement type="Buff" id="steroids" />
+		<reward type="Quest" id="quest_athlete_5" />
+	</quest>
+	
+	<quest id="quest_athlete_5" name_key="quest_athlete_5" subtitle_key="quest_athlete_5_subtitle" description_key="quest_athlete_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_athlete_5_offer" difficulty="easy">
+		<objective type="Craft"		id="bed02"		value="1" />
+		<reward type="Skill" id="AthleteHealthStaminaGain" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="AthleteHunger" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="AthleteMastery" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="AthleteVitaminsRecipe"		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- TRADER CLASS -->
+	<quest id="quest_trader_1" name_key="quest_trader_1" subtitle_key="quest_trader_1_subtitle" description_key="quest_trader_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_trader_1_offer" difficulty="easy">
+		<reward type="Skill" id="TraderBarterStash" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="TraderRunsAlot" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="TraderClubKnifeDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="TraderMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_trader_2" />
+	</quest>
+	
+	<quest id="quest_trader_2" name_key="quest_trader_2" subtitle_key="quest_trader_2_subtitle" description_key="quest_trader_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_trader_2_offer" difficulty="easy">
+		<objective type="Goto" id="trader" value="5" />
+		<reward type="Quest" id="quest_trader_3" />
+	</quest>
+	
+	<quest id="quest_trader_3" name_key="quest_trader_3" subtitle_key="quest_trader_3_subtitle" description_key="quest_trader_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_trader_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="casinoCoin"		value="10000" />
+		<reward type="Quest" id="quest_trader_4" />
+	</quest>
+	
+	<quest id="quest_trader_4" name_key="quest_trader_4" subtitle_key="quest_trader_4_subtitle" description_key="quest_trader_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_trader_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="casinoCoin"		value="50000" />
+		<!--<objective type="Goto" id="trader" value="5" />-->
+		<reward type="Quest" id="quest_trader_5" />
+	</quest>
+	
+	<quest id="quest_trader_5" name_key="quest_trader_5" subtitle_key="quest_trader_5_subtitle" description_key="quest_trader_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_trader_5_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="casinoCoin"		value="200000" />
+		<reward type="Skill" id="TraderBarterStash" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="TraderRunsAlot" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="TraderClubKnifeDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="TraderMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- FARMER CLASS -->
+	<quest id="quest_farmer_1" name_key="quest_farmer_1" subtitle_key="quest_farmer_1_subtitle" description_key="quest_farmer_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_farmer_1_offer" difficulty="easy">
+		<reward type="Skill" id="FarmerToolsDamage" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="FarmerClubKnifeDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="FarmerRangedDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="FarmerSeedCrafting"	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="FarmerMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_farmer_2" />
+	</quest>
+	
+	<quest id="quest_farmer_2" name_key="quest_farmer_2" subtitle_key="quest_farmer_2_subtitle" description_key="quest_farmer_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_farmer_2_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="goldenrodPlant"		value="25" />
+		<objective type="FetchKeep"		id="cottonPlant"		value="25" />
+		<objective type="FetchKeep"		id="blueberries"		value="25" />
+		<objective type="FetchKeep"		id="chrysanthemumPlant"	value="25" />
+		<reward type="Quest" id="quest_farmer_3" />
+	</quest>
+	
+	<quest id="quest_farmer_3" name_key="quest_farmer_3" subtitle_key="quest_farmer_3_subtitle" description_key="quest_farmer_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_farmer_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="fertilizer" 		value="25" />
+		<reward type="Quest" id="quest_farmer_4" />
+	</quest>
+	
+	<quest id="quest_farmer_4" name_key="quest_farmer_4" subtitle_key="quest_farmer_4_subtitle" description_key="quest_farmer_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_farmer_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="potato"				value="25" />
+		<objective type="FetchKeep"		id="corn"				value="25" />
+		<objective type="FetchKeep"		id="coffeeBeans"		value="25" />
+		<reward type="Quest" id="quest_farmer_5" />
+	</quest>
+	
+	<quest id="quest_farmer_5" name_key="quest_farmer_5" subtitle_key="quest_farmer_5_subtitle" description_key="quest_farmer_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_farmer_5_offer" difficulty="easy">
+		<objective type="BlockUpgrade" id="fertileFarmland" value="100" />
+		<reward type="Skill" id="FarmerToolsDamage" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="FarmerClubKnifeDebuff" value="1" stage="aftercomplete" />
+		<reward type="Skill" id="FarmerRangedDebuff" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="FarmerSeedCrafting"	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="FarmerStationRecipe"	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="FarmerMastery" 		value="1" stage="aftercomplete" />
+	</quest>
+	
+	
+	<!-- CULINARY CLASS -->
+	<quest id="quest_culinary_1" name_key="quest_culinary_1" subtitle_key="quest_culinary_1_subtitle" description_key="quest_culinary_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_culinary_1_offer" difficulty="easy">
+		<reward type="Skill" id="CulinaryMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CulinaryBoost" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CulinaryStaminaDrain" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CulinaryRecipes"		value="1" stage="aftercomplete" />
+		<reward type="Quest" id="quest_culinary_2" />
+	</quest>
+	
+	<quest id="quest_culinary_2" name_key="quest_culinary_2" subtitle_key="quest_culinary_2_subtitle" description_key="quest_culinary_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_culinary_2_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="bottledWater"		value="10" />
+		<objective type="FetchKeep"		id="goldenRodTea"		value="10" />
+		<objective type="FetchKeep"		id="eggboiled"			value="10" />
+		<objective type="FetchKeep"		id="redTea"				value="10" />
+		<objective type="FetchKeep"		id="cornOnTheCob"		value="10" />
+		<reward type="Quest" id="quest_culinary_3" />
+	</quest>
+	
+	<quest id="quest_culinary_3" name_key="quest_culinary_3" subtitle_key="quest_culinary_3_subtitle" description_key="quest_culinary_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_culinary_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="charredMeat"		value="10" />
+		<objective type="FetchKeep"		id="boiledMeat"			value="10" />
+		<objective type="FetchKeep"		id="grilledMeat"		value="5"  />
+		<objective type="FetchKeep"		id="baconAndEggs"		value="10" />
+		<objective type="FetchKeep"		id="bakedPotato"		value="10" />
+		<reward type="Quest" id="quest_culinary_4" />
+	</quest>
+	
+	<quest id="quest_culinary_4" name_key="quest_culinary_4" subtitle_key="quest_culinary_4_subtitle" description_key="quest_culinary_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_culinary_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="cornBread"			value="10" />
+		<objective type="FetchKeep"		id="blueberryPie"		value="10" />
+		<objective type="FetchKeep"		id="vegetableStew"		value="10"  />
+		<reward type="Quest" id="quest_culinary_5" />
+	</quest>
+	
+	<quest id="quest_culinary_5" name_key="quest_culinary_5" subtitle_key="quest_culinary_5_subtitle" description_key="quest_culinary_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_culinary_5_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="meatStew"			value="20"  />
+		<reward type="Skill" id="CulinaryMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CulinaryBoost" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CulinaryStaminaDrain" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="CulinaryRecipes"		value="1" stage="aftercomplete" />
+	</quest>
+
+</quests>
