@@ -4908,8 +4908,8 @@ ttBedrollGone,UI,Tooltip,New,Your bedroll is gone,,Dein Schlafsack ist verschwun
 extinguishFireBuffName,buffs,Buff,New,Extinguish Fire,,Lösche Feuer,,
 extinguishFireBuffDesc,buffs,Buff,New,If you happen to be on fire then this will put out the fire and prevent another while the buff remains active.,,Solltest Du in Flammen stehen dann löscht dies das Feuer und verhindert ein neues solange der Effekt aktiv ist.,,
 DroppedLootContainer,entityclasses,Entity Info,New,Dropped Loot,,,,
-classPaperCraftable,items,Book,KgNone,"Class Paper (Craftable)",,,,
-classPaperCraftableDesc,items,Book,KgNone,"A class paper that you can craft into one of the many specializations. View recipes to see details of all the classes."
+classPaperCraftable,items,Book,KgNone,"Specialization Paper (Craftable)",,,,
+classPaperCraftableDesc,items,Book,KgNone,"You can craft this into one of the many specializations papers, which you then read to get your skills and quests. View recipes to see details of all the specializations. IMPORTANT: You cannot read the same paper twice, so choose 3 different ones!"
 classPaperBuilder,items,Book,KgNone,"Builder",,,,
 classPaperBuilderDesc,items,Book,KgNone,"A love for building and the desire to smack a zombie in the face with a hammer? This class gives you more wellness and damage with construction tools.",,,,
 classPaperCrafter,items,Book,KgNone,"Crafter",,,,
@@ -5303,9 +5303,10 @@ scrapHelmetLightDesc,items,Clothes,KgNone,"Using some duct tape and a flashlight
 militaryHelmetLight,items,Clothes,KgNone,"Military Helmet (Light)",,,,
 militaryHelmetLightDesc,items,Clothes,KgNone,"Using some duct tape and a flashlight, this military helmet can now double as a light source.",,,,
 
-
-
-
+startingBackpackUnlocked,blocks,Backpacks,KgNone,"Starting Backpack",,,,
+startingBackpackUnlockedDesc,blocks,Backpacks,KgNone,"Your starting gear! Place this down and use your fists to punch it open! Inside you will get 3 class paper quests that you can use to choose your character specializations, as well as a couple of starting items.",,,,
+startingBackpackLocked,blocks,Backpacks,KgNone,"Starting Backpack",,,,
+startingBackpackLockedDesc,blocks,Backpacks,KgNone,"Your starting gear! Place this down and use your fists to punch it open! Inside you will get 3 class paper quests that you can use to choose your character specializations, as well as a couple of starting items.",,,,
 
 
 

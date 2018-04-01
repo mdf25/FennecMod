@@ -4532,6 +4532,31 @@ group desc for stuff like metal siding
 	<property name="SellableToTrader" value="false"/>
 </block>
 
+<block id="442" name="startingBackpackUnlocked">
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="cntBackpack01" />
+	<property name="Material" value="cloth"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="StabilitySupport" value="false"/> 
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="LootContainers/backpack01" param1="main_mesh"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="LootList" value="110"/>
+	<drop event="Destroy" name="cloth" count="0"/>
+</block>
+
+<block id="443" name="startingBackpackLocked">
+	<property name="CustomIcon" value="cntBackpack01" />
+	<property name="Material" value="cloth"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="LootContainers/backpack01" param1="main_mesh"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="DowngradeBlock" value="startingBackpackUnlocked"/>
+</block>
 
 <!--
 kind of free

@@ -2320,7 +2320,14 @@
 	<item name="classPaperHunterFinale" count="1" />
 </lootcontainer>
 
-
+<lootcontainer id="110" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="baseTemplate">
+	<item name="classPaperCraftable" 	count="3" />
+	<item name="firstAidKit"		 	count="1" />
+	<item name="firstAidBandage"		count="2" />
+	<item name="canLamb"				count="1" />
+	<item name="canPeas"				count="1" />
+	<item name="bottledWater"			count="2" />
+</lootcontainer>
 
 
 
