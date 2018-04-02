@@ -5304,9 +5304,9 @@ militaryHelmetLight,items,Clothes,KgNone,"Military Helmet (Light)",,,,
 militaryHelmetLightDesc,items,Clothes,KgNone,"Using some duct tape and a flashlight, this military helmet can now double as a light source.",,,,
 
 startingBackpackUnlocked,blocks,Backpacks,KgNone,"Starting Backpack",,,,
-startingBackpackUnlockedDesc,blocks,Backpacks,KgNone,"Your starting gear! Place this down and use your fists to punch it open! Inside you will get 3 class paper quests that you can use to choose your character specializations, as well as a couple of starting items.",,,,
+startingBackpackUnlockedDesc,blocks,Backpacks,KgNone,"Your starting gear!",,,,
 startingBackpackLocked,blocks,Backpacks,KgNone,"Starting Backpack",,,,
-startingBackpackLockedDesc,blocks,Backpacks,KgNone,"Your starting gear! Place this down and use your fists to punch it open! Inside you will get 3 class paper quests that you can use to choose your character specializations, as well as a couple of starting items.",,,,
+startingBackpackLockedDesc,blocks,Backpacks,KgNone,"Your starting gear! Place this down and open it! Inside you will get 3 class paper quests that you can use to choose your character specializations, as well as a couple of starting items.",,,,
 
 
 
