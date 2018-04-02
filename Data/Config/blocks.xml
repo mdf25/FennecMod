@@ -4548,6 +4548,7 @@ group desc for stuff like metal siding
 
 <block id="443" name="startingBackpackLocked">
 	<property name="CustomIcon" value="cntBackpack01" />
+	<property name="Class" value="PlantGrowing" />
 	<property name="Material" value="cloth"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="StabilitySupport" value="false"/>
@@ -4555,7 +4556,11 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/backpack01" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="DowngradeBlock" value="startingBackpackUnlocked"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="startingBackpackUnlocked"/>
+	<property name="PlantGrowing.GrowthRate" value="0.0001"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
 	<drop event="Destroy" name="" count="0"/>
 </block>
 
