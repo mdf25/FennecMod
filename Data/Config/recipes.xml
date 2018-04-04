@@ -3301,6 +3301,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="classPaperCraftable" count="1" />
 </recipe>
 
+<recipe name="classPaperCulinary" count="1">
+	<ingredient name="classPaperCraftable" count="1" />
+</recipe>
+
 <recipe name="chickenAndSweetcornSoup" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
 	<ingredient name="canChicken"   count="1"/>
   	<ingredient name="corn"    		count="2"/>

@@ -778,7 +778,7 @@
 	<quest id="quest_plunderer_2" name_key="quest_plunderer_2" subtitle_key="quest_plunderer_2_subtitle" description_key="quest_plunderer_2_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_plunderer_2_offer" difficulty="easy">
 		<objective type="FetchKeep"		id="candleStick"			value="5" />
-		<objective type="FetchKeep"		id="skullCap"				value="1" />
+		<objective type="FetchKeep"		id="leatherDuster"			value="1" />
 		<objective type="FetchKeep"		id="fishingWeight"			value="5" />
 		<objective type="FetchKeep"		id="trophy"					value="5" />
 		<reward type="Quest" id="quest_plunderer_3" />
