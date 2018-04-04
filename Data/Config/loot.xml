@@ -1028,8 +1028,9 @@
 </lootgroup>
 
 <lootgroup name="junk">
-	<item name="ironArrowHead" count="1,12"/>
-	<item name="steelArrowHead" count="1,10" prob="0.05"/>
+	<item name="ironArrowHead" count="10,30"/>
+	<item name="copperArrowHead" count="20,50" />
+	<item name="steelArrowHead" count="5,15" prob="0.05"/>
 	<item name="candyTin"/>
 	<item name="emptyJar" count="1"/>
 	<item name="canEmpty" count="1"/>
@@ -1052,7 +1053,7 @@
 	<item name="casinoCoin" count="1,5"/>
 	<item name="copperBulletCasing" count="1,10"/>
 	<item name="bulletCasing" count="1,10"/>
-	<item name="feather" count="1,3"/>
+	<item name="feather" count="5,40"/>
 	<item name="ductTape" count="1,3"/>
 	<item group="rottenFood" count="1"/>
 	<item group="books"/>
@@ -2203,18 +2204,19 @@
 
 <!-- cntCollapsedForge -->
 <lootcontainer id="91" count="0,2" size="7,4" sound_open="forge_open" sound_close="forge_close" loot_quality_template="baseTemplate">
-	<item name="scrapIron" count="20,60" prob="2"/>
-	<item name="scrapBrass" count="10,30"/>
-	<item name="scrapLead" count="20,60"/>
-	<item name="brokenGlass" count="10,20"/>
-	<item name="rockSmall" count="10,20"/>
-	<item name="clayLump" count="10,20"/>
-	<item name="ironFragment" count="10,20" prob="2"/>
+	<item name="scrapIron" count="100,300" prob="2"/>
+	<item name="scrapBrass" count="40,120"/>
+	<item name="scrapLead" count="40,120"/>
+	<item name="rockSmall" count="120,500"/>
+	<item name="clayLump" count="120,500"/>
+	<item name="ironFragment" count="100,200" prob="2"/>
+	<item name="copperFragment" count="200,400" prob="3" />
 	<item name="shortMetalPipe" count="10,20"/>
+	<item name="forgedCopper" count="20,50" prob="2" />
 	<item name="forgedIron" count="10,20" prob="2"/>
-	<item name="forgedSteel" count="5,20"/>
 	<item name="anvil" count="1"/>
 	<item name="nail" count="20,60"/>
+	<item name="copperArrowHead" count="20,50" />
 	<item name="ironArrowHead" count="10,30"/>
 	<item name="steelArrowHead" count="10,20"/>
 	<item name="wood" count="20,80" prob="2"/>

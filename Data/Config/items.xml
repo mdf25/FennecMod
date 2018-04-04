@@ -316,6 +316,45 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 </item>
 
+<item id="20" name="stoneKnife">
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab"/>
+	<property name="Material" value="stone"/>
+	<property name="Weight" value="1" />
+	<property name="EconomicValue" value="34"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="HoldType" value="36"/>
+	<property name="DegradationBreaksAfter" value="true" />
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="4.23"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.wood" value="8"/>
+		<property name="DamageBonus.stone" value="0"/> 
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="8"/>
+		<property name="ToolCategory.Butcher" value="0.65" param1="10"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" /> <!-- Special harvest sound only plays if the target has ANY matching ToolCategory harvest.
+		Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface_category ) -->
+		<property name="ToolCategory.harvestingTools" value="0.8" param1="1"/> 
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="6,15"/>
+		<property name="BlockDamage" value="2,10"/>
+		<property name="DegradationMax" value="150,600"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0,0.01"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+</item>
+
 <item id="21" name="huntingKnife">
 	<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab"/>
 	<property name="Material" value="metal"/>
@@ -6539,7 +6578,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="15"/> <!-- STK medical -->
+	<property name="Stacknumber" value="50"/> <!-- STK medical -->
 	<property class="Action0">
 		<property name="Class" value="UseOther"/>
 		<property name="Delay" value="1.0"/>
@@ -6569,7 +6608,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="cloth"/>
 	<property name="HoldType" value="16"/>
-	<property name="Stacknumber" value="5"/> <!-- STK medical -->
+	<property name="Stacknumber" value="25"/> <!-- STK medical -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
@@ -6617,7 +6656,7 @@ Mesh files no longer used:
 
 <item id="658" name="firstAidKit">
 	<property name="Extends" value="bandage"/>
-	<property name="EconomicValue" value="200"/>
+	<property name="EconomicValue" value="500"/>
 	<property class="Action0">
 		<property name="Gain_health" value="50"/>
 		<property name="Sound_start" value="player_firstAidKit"/>
@@ -7743,9 +7782,9 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
 	<property name="Material" value="glass"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="15"/> <!-- STK drink -->
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
-	<property name="EconomicValue" value="30"/>
+	<property name="EconomicValue" value="20"/>
 	<property name="CraftingIngredientTime" value="15"/>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
@@ -10411,8 +10450,8 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="50"/>
-	<property name="EconomicValue" value="600"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="200"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 </item>

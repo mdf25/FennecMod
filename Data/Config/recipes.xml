@@ -1751,6 +1751,28 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="feather" count="1"/>
 </recipe>
 
+<recipe name="copperArrow" count="1">
+	<ingredient name="copperArrowHead" count="1"/>
+	<ingredient name="wood"	count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
+</recipe>
+
+<recipe name="ironArrow" count="1">
+	<ingredient name="ironArrowHead" count="1"/>
+	<ingredient name="wood" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
+</recipe>
+
+<recipe name="stoneKnife" count="2" craft_time="30">
+	<ingredient name="rockSmall" count="2" />
+</recipe>
+
+<recipe name="steelArrow" count="1">
+	<ingredient name="steelArrowHead" count="1"/>
+	<ingredient name="wood" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
+</recipe>
+
 <recipe name="copperArrowHead" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
 	<ingredient name="unit_copper" 	count="2"/>
 	<ingredient name="unit_clay"	count="1"/>
