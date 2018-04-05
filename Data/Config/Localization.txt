@@ -5311,5 +5311,39 @@ startingBackpackLockedDesc,blocks,Backpacks,KgNone,"Your starting gear! Place th
 stoneKnife,items,Melee,KgNone,"Stone Knife",,,,
 stoneKnifeDesc,items,Melee,KgNone,"A simple stone knife will help you harvesting animals. Though it is not as good as a bone shiv, it is a little better at harvesting wood than the stone axe and can also double as a melee weapon to defend yourself.",,,,
 
+scrapKnife,items,Melee,KgNone,"Scrap Knife",,,,
+scrapKnifeDesc,items,Melee,KgNone,"A simple knife made from a sharp piece of metal with a bone handle, bound with some plant fiber and duct tape to attach the metal to the hilt. A good weapon to use if you're looking for an improvement over a bone or stone tool.",,,,
+
+sharpRustyMetal,items,Melee,KgNone,"Sharp Rusty Metal",,,,
+sharpRustyMetalDesc,items,Melee,KgNone,"A piece of salvaged metal with a sharp edge. You may be able to make it into a knife of sorts with a few other materials.",,,,
+
+scrapCopper,items,Melee,KgNone,"Scrap Copper",,,,
+scrapCopperDesc,items,Melee,KgNone,"Leftover wires and pipes could be useful to forge into copper to make tools and electrical components later...",,,,
+
+ingotMold,items,Melee,KgNone,"Ingot Mold (Untreated)",,,,
+ingotMoldDesc,items,Melee,KgNone,"By using an ingot and some clay you are able to craft an ingot mold. This is of no real use until you harden the mold using the firepit - you'll need bellows to get the fire hot enough.",,,,
+
+ingotMoldHardened,items,Melee,KgNone,"Ingot Mold",,,,
+ingotMoldHardenedDesc,items,Melee,KgNone,"This can be used in the firepit in order to shape copper into ingots and arrowheads. This method of production is inefficient, but it's better than nothing until you find a forge.",,,,
+
+copperCrossbowBolt,items,Melee,KgNone,"Copper Crossbow Bolt",,,,
+copperCrossbowBoltDesc,items,Melee,KgNone,"A crossbow bolt using copper arrowheads. It's not great, but it will get the job done until you can smelt iron.",,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1031,6 +1031,8 @@
 	<item name="ironArrowHead" count="10,30"/>
 	<item name="copperArrowHead" count="20,50" />
 	<item name="steelArrowHead" count="5,15" prob="0.05"/>
+	<item name="sharpRustyMetal" count="1,2" prob="0.4" />
+	<item name="scrapCopper" count="20,50" prob="1.5" />
 	<item name="candyTin"/>
 	<item name="emptyJar" count="1"/>
 	<item name="canEmpty" count="1"/>

@@ -1216,6 +1216,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="feather" count="1"/>
 </recipe>
 
+<recipe name="explodingCrossbowBolt" count="1" craft_area="workbench">
+	<ingredient name="steelArrowHead" count="1"/>
+	<ingredient name="gunPowder" count="8"/>
+	<ingredient name="ductTape" count="1"/>
+	<ingredient name="wood" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
+</recipe>
+
+<recipe name="explodingCrossbowBolt" count="1" craft_area="workbench">
+	<ingredient name="steelCrossbowBolt" count="1"/>
+	<ingredient name="gunPowder" count="8"/>
+	<ingredient name="ductTape" count="1"/>
+</recipe>
+
 <recipe name="fertilizer" count="1" craft_area="chemistryStation">
 	<ingredient name="turd" count="1"/>
 	<ingredient name="potassiumNitratePowder" count="10"/>
@@ -1764,7 +1778,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="stoneKnife" count="2" craft_time="30">
-	<ingredient name="rockSmall" count="2" />
+	<ingredient name="stone" count="2" />
 </recipe>
 
 <recipe name="steelArrow" count="1">
@@ -1842,6 +1856,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="ironArrowHead" count="1"/>
 	<ingredient name="wood" count="1"/>
 	<ingredient name="feather" count="1"/>
+</recipe>
+
+<recipe name="ironCrossbowBolt" count="1">
+	<ingredient name="ironArrowHead" count="1"/>
+	<ingredient name="wood" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
 
 <recipe name="ironDoor1_v1" count="1">
@@ -2612,6 +2632,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="steelArrowHead" count="1"/>
 	<ingredient name="wood" count="1"/>
 	<ingredient name="feather" count="1"/>
+</recipe>
+
+<recipe name="steelCrossbowBolt" count="1">
+	<ingredient name="steelArrowHead" count="1"/>
+	<ingredient name="wood" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
 
 <recipe name="stone" count="1" craft_area="cementMixer">
@@ -3583,7 +3609,64 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="ductTape" count="2" />
 </recipe>
 
+<recipe name="scrapKnife" count="1">
+	<ingredient name="sharpRustyMetal" 	count="1" />
+	<ingredient name="ductTape" 		count="1" />
+	<ingredient name="femur"			count="1" />
+	<ingredient name="yuccaFibers" 		count="3" />
+</recipe>
 
+<recipe name="sharpRustyMetal" count="1">
+	<ingredient name="canEmpty" 		count="1" />
+</recipe>
+
+<recipe name="copperCrossbowBolt" count="1">
+	<ingredient name="copperArrowHead" 	count="1" />
+	<ingredient name="wood"				count="1" />
+	<ingredient name="feather"			count="1" />
+</recipe>
+
+<recipe name="copperCrossbowBolt" count="1">
+	<ingredient name="copperArrowHead" 	count="1" />
+	<ingredient name="wood"				count="1" />
+	<ingredient name="scrapPlastics"	count="1" />
+</recipe>
+
+<recipe name="firepit" count="1">
+	<ingredient name="campfire" 	count="1" />
+	<ingredient name="rockSmall" 	count="40" />
+	<ingredient name="clayLump"		count="40" />
+	<ingredient name="wood"			count="200"/>
+</recipe>
+
+<recipe name="ingotMold" count="1">
+	<ingredient name="forgedCopper"		count="1" />
+	<ingredient name="clayLump"			count="20"/>
+</recipe>
+
+<recipe name="ingotMold" count="1">
+	<ingredient name="forgedIron"		count="1" />
+	<ingredient name="clayLump"			count="20"/>
+</recipe>
+
+<recipe name="ingotMold" count="1">
+	<ingredient name="forgedSteel"		count="1" />
+	<ingredient name="clayLump"			count="20"/>
+</recipe>
+
+<recipe name="ingotMoldHardened" count="1" craft_time="300" craft_area="firepit" craft_tool="bellows">
+	<ingredient name="ingotMold"		count="1" />
+	<ingredient name="scrapIron"		count="5" />
+	<ingredient name="clayLump"			count="5" />			
+</recipe>
+
+<recipe name="forgedCopper"	count="1" craft_time="180" craft_area="firepit" craft_tool="ingotMoldHardened">
+	<ingredient name="scrapCopper"		count="100" />
+</recipe>
+
+<recipe name="copperArrowHead" count="1" craft_time="30" craft_area="firepit" craft_tool="ingotMoldHardened">
+	<ingredient name="scrapCopper"		count="20" />
+</recipe>
 
 
 </recipes>
