@@ -5308,7 +5308,8 @@ startingBackpackUnlockedDesc,blocks,Backpacks,KgNone,"Your starting gear!",,,,
 startingBackpackLocked,blocks,Backpacks,KgNone,"Starting Backpack",,,,
 startingBackpackLockedDesc,blocks,Backpacks,KgNone,"Your starting gear! Place this down and open it! Inside you will get 3 class paper quests that you can use to choose your character specializations, as well as a couple of starting items.",,,,
 
-
+stoneKnife,items,Melee,KgNone,"Stone Knife",,,,
+stoneKnifeDesc,items,Melee,KgNone,"A simple stone knife will help you harvesting animals. Though it is not as good as a bone shiv, it is a little better at harvesting wood than the stone axe and can also double as a melee weapon to defend yourself.",,,,
 
 
 
