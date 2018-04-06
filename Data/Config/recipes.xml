@@ -1778,7 +1778,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="stoneKnife" count="2" craft_time="30">
-	<ingredient name="stone" count="2" />
+	<ingredient name="rockSmall" count="2" />
 </recipe>
 
 <recipe name="steelArrow" count="1">
