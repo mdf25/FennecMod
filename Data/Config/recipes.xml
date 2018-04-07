@@ -100,7 +100,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="762mmBulletHigh" count="1" craft_area="workbench">
 	<ingredient name="bulletTip" count="1"/>
-	<ingredient name="gunPowder" count="6"/>
+	<ingredient name="gunpowderDust" count="4"/>
 	<ingredient name="steelBulletCasing" count="1"/>
 </recipe>
 
@@ -124,7 +124,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="9mmBulletHigh" count="1" craft_area="workbench">
 	<ingredient name="bulletTip" count="1"/>
-	<ingredient name="gunPowder" count="2"/>
+	<ingredient name="gunpowderDust" count="2"/>
 	<ingredient name="steelBulletCasing" count="1"/>
 </recipe>
 
@@ -143,7 +143,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="shotgunShellHigh" count="1" craft_area="workbench">
 	<ingredient name="bulletTip" count="3"/>
 	<ingredient name="buckshot"  count="1"/>
-	<ingredient name="gunPowder" count="6"/>
+	<ingredient name="gunpowderDust" count="5"/>
 	<ingredient name="scrapPlastics" count="2"/>
 </recipe>
 
@@ -2769,8 +2769,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="2"/>
 </recipe>
 
+<!-- TAKEN OUT to stop exploit with carpenter bench giving extra wood.
 <recipe name="woodLogPillar100" count="1">
 	<ingredient name="wood" count="4"/>
+</recipe>
+-->
+
+<recipe name="wood" count="10" craft_area="carpenter_bench">
+	<ingredient name="woodLogPillar100" />
 </recipe>
 
 <recipe name="woodLogSpike1" count="1"> <!-- trap -->
@@ -2965,10 +2971,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="brickWedgeTipCNRFullBottom" count="1" craft_area="forge" material_based="true">
 	<ingredient name="unit_stone" count="10"/>
 	<ingredient name="unit_clay" count="60"/>
-</recipe>
-
-<recipe name="woodFrameWedgeCNRInsideBottom" count="1">
-	<ingredient name="wood" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameWedgeCNRInsideBottom" count="1">
@@ -3353,6 +3355,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="classPaperCraftable" count="1" />
 </recipe>
 
+<recipe name="classPaperCarpenter" count="1">
+	<ingredient name="classPaperCraftable" count="1" />
+</recipe>
+
 <recipe name="chickenAndSweetcornSoup" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
 	<ingredient name="canChicken"   count="1"/>
   	<ingredient name="corn"    		count="2"/>
@@ -3660,13 +3666,134 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="clayLump"			count="5" />			
 </recipe>
 
-<recipe name="forgedCopper"	count="1" craft_time="180" craft_area="firepit" craft_tool="ingotMoldHardened">
-	<ingredient name="scrapCopper"		count="100" />
+<recipe name="forgedCopper"	count="1" craft_time="60" craft_area="firepit" craft_tool="ingotMoldHardened">
+	<ingredient name="scrapCopper"		count="40" />
 </recipe>
 
-<recipe name="copperArrowHead" count="1" craft_time="30" craft_area="firepit" craft_tool="ingotMoldHardened">
-	<ingredient name="scrapCopper"		count="20" />
+<recipe name="forgedCopper"	count="1" craft_time="60" craft_area="firepit" craft_tool="ingotMoldHardened">
+	<ingredient name="copperArrowHead"	count="5" />
 </recipe>
+
+<recipe name="copperArrowHead" count="1" craft_time="25" craft_area="firepit" craft_tool="ingotMoldHardened">
+	<ingredient name="scrapCopper"		count="8" />
+</recipe>
+
+<recipe name="carpenterBench" count="1" craft_area="workbench">
+	<ingredient name="forgedCopper" 		count="25"/>
+	<ingredient name="mechanicalParts" 		count="20"/>
+	<ingredient name="partsChainsaw_blade" 	count="1" />
+	<ingredient name="smallEngine" 			count="1" />
+	<ingredient name="wood" 				count="150"/>
+</recipe>
+
+<recipe name="charcoal" count="2" craft_area="firepit" craft_tool="bellows" craft_time="120">
+	<ingredient name="woodLogPillar100" 	count="3"  />
+	<ingredient name="dirtFragment"			count="10" />
+</recipe>
+
+<recipe name="woodPlanks" count="12" craft_area="carpenter_bench" craft_time="3">
+	<ingredient name="wood" count="1" />
+</recipe>
+
+<recipe name="charcoalDust" count="2" craft_area="grinder_station" craft_time="20">
+	<ingredient name="charcoal"	count="1" />
+</recipe>
+
+<recipe name="potassiumNitrateDust" count="2" craft_area="grinder_station" craft_time="20">
+	<ingredient name="potassiumNitratePowder" count="1" />
+</recipe>
+
+<recipe name="gunpowderDust" count="2" craft_area="chemistryStation" craft_time="3">
+	<ingredient name="charcoalDust" 		count="1" />
+	<ingredient name="potassiumNitrateDust" count="1" />
+</recipe>
+
+<recipe name="gunpowderDust" count="1" craft_area="grinder_station" craft_time="4" >
+	<ingredient name="gunPowder" count="2" />
+</recipe>
+
+<recipe name="woodFrameBlock" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameCNRFull" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameCNRInside" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameRamp" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameWedge" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameHalf" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameWedgeIncline" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameWedgeTipCNRFullTop" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameWedgeTipCNRFullBottom" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameWedgeCNRInsideBottom" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameWedgeCNRInsideTop" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameStairs25CornerCNR" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameCNRRampFiller" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameArch" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameWedgeStairs" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="woodFrameWedgeTipStairs" count="1" craft_area="carpenter_bench">
+	<ingredient name="woodPlanks" count="12"/>
+</recipe>
+
+<recipe name="trapSpikesNew" count="1" craft_time="2" craft_area="carpenter_bench"> <!-- trap -->
+	<ingredient name="woodPlanks" count="60"/>
+</recipe>
+
+<recipe name="woodLogSpike1" count="1" craft_time="2" craft_area="carpenter_bench"> <!-- trap -->
+	<ingredient name="woodLogPillar100" count="1"/>
+</recipe>
+
+<recipe name="rWoodLogSpike2" count="1" craft_time="2" craft_area="carpenter_bench"> <!-- trap -->
+	<ingredient name="woodLogSpike1" count="1" />
+	<ingredient name="woodPlanks"	 count="10" />
+</recipe>
+
+<recipe name="rWoodMetalLogSpike3" count="1" craft_time="2" craft_area="carpenter_bench"> <!-- trap -->
+	<ingredient name="rWoodLogSpike2" 	count="1"  />
+	<ingredient name="scrapIron"	 	count="10" />
+</recipe>
+
 
 
 </recipes>

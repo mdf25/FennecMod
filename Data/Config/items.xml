@@ -1620,7 +1620,7 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="0,0.05"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Axes"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
@@ -1968,7 +1968,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="PickupJournalEntry" value="farmingTip"/>
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="FarmingTools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
@@ -2012,7 +2012,7 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="0,0.05"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Axes"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
@@ -9493,7 +9493,17 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="1070" name="classPaperHunterContinue">
+<item id="1070" name="classPaperCarpenter">
+	<property name="Extends" value="classPaperMaster" />
+	<property name="DescriptionKey" value="classPaperCulinaryDesc"/>
+	<property class="Action1">
+		<property name="Class" value="Quest"/>
+		<property name="Delay" value="0"/>
+		<property name="QuestGiven" value="quest_carpenter_1"/>
+	</property>
+</item>
+
+<item id="1071" name="classPaperHunterContinue">
 	<property name="Extends" value="classPaperMaster" />
 	<property name="DescriptionKey" value="classPaperHunterContinueDesc"/>
 	<property class="Action1">
@@ -9503,7 +9513,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="1071" name="classPaperHunterFinale">
+<item id="1072" name="classPaperHunterFinale">
 	<property name="Extends" value="classPaperMaster" />
 	<property name="DescriptionKey" value="classPaperHunterFinaleDesc"/>
 	<property class="Action1">
@@ -10052,7 +10062,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="DropScale" value="1"/>
 	<property name="EconomicValue" value="10"/>
-	<property name="EconomicBundleSize" value="70"/>
+	<property name="EconomicBundleSize" value="100"/>
 	<property name="Group" value="Resources"/>
 </item>
 
@@ -10352,6 +10362,21 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 </item>
 
+<item id="1344" name="charcoal"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="coal"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="FuelValue" value="1000"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+</item>
+
 <item id="1345" name="coal">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/coalDroppedPrefab"/>
@@ -10501,6 +10526,20 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="50"/>
 </item>
 
+<item id="1357" name="charcoalDust"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="coal"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+</item>
+
 <item id="1358" name="macheteBlade">
 	<property name="CustomIcon" value="machete"/> <property name="CustomIconTint" value="a0a0ff"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -10596,6 +10635,20 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
+<item id="1366" name="potassiumNitrateDust"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="coal"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+</item>
+
 <item id="1367" name="canEmpty">
 	<property name="Meshfile" value="Items/Food/can_empty"/>
 	<property name="Material" value="metal"/>
@@ -10651,6 +10704,21 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Resources"/>
 </item>
+
+<item id="1369" name="gunpowderDust"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="coal"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+</item>
+
 
 <item id="1370" name="bucket">
 	<property name="Meshfile" value="Items/Crafting/Metal/IronBucket"/>
@@ -10804,6 +10872,33 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 </item>
 
+<item id="1378" name="sawdust"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="wood"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+</item>
+
+<item id="1379" name="woodPlanks"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="wood"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="100"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+</item>
 
 <item id="1380" name="hubcap">
 	<property name="Meshfile" value="Items/Crafting/hubcap"/>

@@ -14471,6 +14471,48 @@ kind of free
 	<property name="Group" value="Building,Science"/>
 </block>
 
+<block id="1571" name="carpenterBench">
+	<property name="Class" value="Workstation"/>
+	<property name="RandomTintColor1" value="137,129,112" />
+	<property name="Material" value="metal"/>
+	<property name="MaxDamage" value="800"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Crafting/workbenchPrefab"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="HeatMapStrength" value="0.5"/>
+	<property name="HeatMapTime" value="1200"/>
+	<property name="HeatMapFrequency" value="25"/>
+	<!--<property name="RecipeList" value="backpack, workbench"/>-->
+	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+	<property name="Stacknumber" value="1"/>
+	<property class="Workstation">
+		<property name="CraftingAreaRecipes" value="carpenter_bench" />
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="player,workbench"/>
+	</property>
+	<property class="RepairItems">
+		<property name="forgedIron" value="25"/>
+		<property name="mechanicalParts" value="20"/>
+		<property name="wood" value="50"/>
+	</property>
+	<drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="20" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="10" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="8" tool_category="Disassemble"/>
+	<drop event="Harvest" name="wood" count="20" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="DescriptionKey" value="workbenchDesc"/>
+	<property name="EconomicValue" value="776"/>
+	<property name="Group" value="Building,Science"/>
+</block>
+
 <block id="1575" name="woodPoleSupportCtr">
 	<property name="Extends" value="woodNoUpgradeMaster"/>
 	<property name="Shape" value="New"/>

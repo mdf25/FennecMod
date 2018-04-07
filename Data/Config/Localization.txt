@@ -916,8 +916,8 @@ mineHubcap,blocks,Trap,KgNone,Hubcap Land Mine,Mine terrestre en enjoliveurs,Rad
 mineHubcapDesc,blocks,Trap,KgNone,A hubcap land mine. Place it on the ground and let the fun begin.,Une mine construite à partir d'enjoliveurs. Placez-la au sol et profitez du spectacle.,Eine Mine bestehend aus einer Radkappe. Platziere sie auf dem Boden und der Spaß kann beginnen.,,Una mina terrestre hecha con un tapacubos. Colócala en el suelo y... ¡que empiece la fiesta!
 rScrapIronLogSpike5,blocks,Trap,KgNone,Reinforced Scrap Iron Log Spike 5,Pique renforcé en rondin et en ferraille 5,Verstärkte Alteisenspitze 5,,Pincho 5 de troncos de chatarra de hierro reforzado
 rScrapIronPlateMine,blocks,Trap,KgNone,Pressure Plate Mine,Mine à déclencheur,Druckplattenmine,,Mina hecha con una placa de presión
-rWoodLogSpike2,blocks,Trap,KgNone,Reinforced Wood Log Spike 2,Pique en rondin de bois renforcé 2,Verstärkter spitzer Stamm 2,,Pincho de tronco de madera reforzado 2
-rWoodMetalLogSpike3,blocks,Trap,KgNone,Reinforced Wood Metal Log Spike 3,Pique en rondin de bois et de métal renforcé 3,Metallverstärkter spitzer Stamm 3,,Pincho de tronco de metal y madera reforzado 3
+rWoodLogSpike2,blocks,Trap,KgNone,Reinforced Log Spike,Pique en rondin de bois renforcé 2,Verstärkter spitzer Stamm 2,,Pincho de tronco de madera reforzado 2
+rWoodMetalLogSpike3,blocks,Trap,KgNone, Metal Log Spike,Pique en rondin de bois et de métal renforcé 3,Metallverstärkter spitzer Stamm 3,,Pincho de tronco de metal y madera reforzado 3
 scrapIronLogSpike4,blocks,Trap,KgNone,Scrap Iron Log Spike,Pique en rondin et en ferraille,Alteisenspitze,,Pincho de troncos de chatarra de hierro
 tnt,blocks,Trap,EnChanged,TNT (Ammo),T.N.T.,TNT (Mun),,Dinamita
 tntDesc,blocks,Trap,KgNone,"TNT can be made from paper, plant fibers and gun powder. Place on the ground and ignite it by damaging it.","La T.N.T. peut être fabriquée avec du papier, des fibres végétales et de la poudre à canon. Placez-la sur le sol et allumez-la en l'endommageant.","TNT kann aus Papier, Pflanzenfasern oder Schießpulver hergestellt werden. Platziere es auf dem Boden und entzünde es, indem du es beschädigst.",,"La dinamita se puede hacer con papel, fibra vegetal y pólvora. Colócala en el suelo y dáñala para prenderla."
@@ -4948,6 +4948,8 @@ classPaperFarmer,items,Book,KgNone,"Farmer",,,,
 classPaperFarmerDesc,items,Book,KgNone,"All right me lover! This class gives you access to seed packet crafting as well as give those tools a huge damage boost against the zombies."
 classPaperCulinary,items,Book,KgNone,"Culinary",,,,
 classPaperCulinaryDesc,items,Book,KgNone,"Gordon Ramsay might be proud. Well maybe. This class gives you access to more nutritions meals that increase health and wellness much more than normal.",,,,
+classPaperCarpenter,items,Book,KgNone,"Carpenter",,,,
+classPaperCarpenterDesc,items,Book,KgNone,"Wood is everywhere. Wood is power. If you're a lumberjack... Or at least a carpenter... You'll be okay! Right? Right??",,,,
 classPaperHunterContinue,items,Book,KgNone,"Hunter (Continued)",,,,
 classPaperHunterContinueDesc,items,Book,KgNone,"If you happened to lose the treasure, this note will pick up the quest from where you left off.",,,,
 classPaperHunterFinale,items,Book,KgNone,"Hunter (Finale)",,,,
@@ -5178,7 +5180,7 @@ BluntsKnifeDebuffDesc,progression,Perk,EnChanged,"You find most bladed weapons a
 MinerMasteryName,progression,Perk,EnChanged,"Miner: Mastery",,,,
 MinerMasteryDesc,progression,Perk,EnChanged,"If you chose the Miner class, this will reflect how much you have mastered by completing the quests. Taking the class will give you one level of mastery and completing the quest chain will give you the final level.",,,,
 MinerHarvestName,progression,Perk,EnChanged,"Miner: Tool Efficiency",,,,
-MinerHarvestDesc,progression,Perk,EnChanged,"As a miner, you know how to get the most out of your pickaxes and shovels, whilst expending less stamina. You tend to get more harvest out of the earth than other survivors using the same tools.",,,,
+MinerHarvestDesc,progression,Perk,EnChanged,"As a miner, you know how to get the most out of your pickaxes and shovels. You do more damage with them, whilst expending less stamina. You tend to get more harvest out of the earth than other survivors using the same tools.",,,,
 MinerSlowCraftName,progression,Perk,EnChanged,"Miner: Slow Crafting",,,,
 MinerSlowCraftDesc,progression,Perk,EnChanged,"Though you're efficient at getting all the ores, you don't really care for what gets done with them and tend to take longer forming them into usable materials compared to other survivors.",,,,
 RangerMasteryName,progression,Perk,EnChanged,"Ranger: Mastery",,,,
@@ -5285,6 +5287,33 @@ CulinaryStaminaDrainName,progression,Perk,EnChanged,"Culinary: Stamina Drain",,,
 CulinaryStaminaDrainDesc,progression,Perk,EnChanged,"Although running around a kitchen all day gives you some form of exercise. you tend to tire more easily and regain stamina slower than other survivors.",,,,
 CulinaryRecipesName,progression,Perk,EnChanged,"Culinary: Tasty Food Recipes",,,,
 CulinaryRecipesDesc,progression,Perk,EnChanged,"Any survivor can boil water and char meat, but you can prepare only the tastiest of meals. At level 1 you will gain some recipes and when you master the culinary class you will gain the rest.",,,,
+
+CarpenterMasteryName,progression,Perk,EnChanged,"Carpenter: Mastery",,,,
+CarpenterMasteryDesc,progression,Perk,EnChanged,"If you chose the Carpenter class, this will reflect how much you have mastered by completing the quests. Taking the class will give you one level of mastery and completing the quest chain will give you the final level.",,,,
+
+CarpenterHarvestName,progression,Perk,EnChanged,"Carpenter: Tool Efficiency",,,,
+CarpenterHarvestDesc,progression,Perk,EnChanged,"As a carpenter, you know how to get the most out of your axes. You do more damage with them whilst expending less stamina. You tend to get more harvest out of trees than other survivors using the same tools.",,,,
+
+CarpenterThirstName,progression,Perk,EnChanged,"Carpenter: Thirst",,,,
+CarpenterThirstDesc,progression,Perk,EnChanged,"Spending time outdoors, carrying a heavy axe and chopping trees all day definitely takes its toll. You'll need to drink a little more than other survivors.",,,,
+
+CarpenterBenchRecipeName,progression,Perk,EnChanged,"Carpenter: Bench Recipe",,,,
+CarpenterBenchRecipeDesc,progression,Perk,EnChanged,"As a master carpenter, you can learn how to make a workbench capable of getting wood from logs more efficiently and crafting some other items with it.",,,,
+
+
+
+AxesName,progression,Perk,EnChanged,"Axes",,,,
+AxesDesc,progression,Perk,EnChanged,"Get better at chopping down trees and breaking wooden blocks with axes. Level up this skill by using items from this group.",,,,
+WoodchuckerName,progression,Perk,EnChanged,"Woodchucker",,,,
+WoodchuckerDesc,progression,Perk,EnChanged,"Increase the block damage done by all fireaxes. Higher ranks also increase how much wood you get from trees too!",,,,
+BarbarianName,progression,Perk,EnChanged,"Barbarian",,,,
+BarbarianDesc,progression,Perk,EnChanged,"Turn your fireaxe from a log-splitter into a head-splitter! Each rank increases dismemberment chance and entity damage with fireaxes.",,,,
+ToolsOfWarName,progression,Perk,EnChanged,"Tools of War",,,,
+ToolsOfWarDesc,progression,Perk,EnChanged,"Unleash the strength of those miner arms! Pickaxes and shovels do more damage with every rank, and higher ranks give all tools the chance to sever limbs and faces!",,,,
+FarmingToolsName,progression,Perk,EnChanged,"Farming Tools",,,,
+FarmingToolsDesc,progression,Perk,EnChanged,"Get better using farming equipment by using tools from this group.",,,,
+TorchAndPitchforksName,progression,Perk,EnChanged,"Torch and Pitchforks",,,,
+TorchAndPitchforksDesc,progression,Perk,EnChanged,"Decrease the amount of stamina when using farming tools and get greater harvest from your crops by using farming tools. Your farming tools do more damage with every rank.",,,,
 mowEmDownName,progression,Perk,EnChanged,"Mow 'em Down",,,,
 mowEmDownDesc,progression,Perk,EnChanged,"Increase the chance to dismember and decapitate zombies with rifles and assult rifles with every rank.",,,,
 WilliamTellName,progression,Perk,EnChanged,"William Tell",,,,
@@ -5328,6 +5357,34 @@ ingotMoldHardenedDesc,items,Melee,KgNone,"This can be used in the firepit in ord
 
 copperCrossbowBolt,items,Melee,KgNone,"Copper Crossbow Bolt",,,,
 copperCrossbowBoltDesc,items,Melee,KgNone,"A crossbow bolt using copper arrowheads. It's not great, but it will get the job done until you can smelt iron.",,,,
+
+carpenterBench,items,Workstation,KgNone,"Carpenter's Bench",,,,
+carpenterBenchDesc,items,Workstation,KgNone,"A workbench that can be used to cut wood logs into much, much more wood than from scrapping them. Also gives access to planks which can be used to craft other items more quickly and cost-effectively.",,,,
+
+charcoal,items,Fuel,KgNone,"Charcoal",,,,
+charcoalDesc,items,Fuel,KgNone,"Using charcoal is a great source of fuel. It can be made in the firepit by covering some wood logs with dirt, then leaving a limited oxygen supply to allow the charcoal to form. ",,,,
+
+charcoalDust,items,Fuel,KgNone,"Charcoal Dust",,,,
+charcoalDustDesc,items,Fuel,KgNone,"You can grind down charcoal in an industrial grinder to get charcoal dust. You can use this to make refined gunpowder used in the highest tier ammunition.",,,,
+
+potassiumNitrateDust,items,Fuel,KgNone,"Nitrate Dust",,,,
+potassiumNitrateDustDesc,items,Fuel,KgNone,"You can grind down nitrate powder in an industrial grinder to get nitrate dust. You can use this to make refined gunpowder used in the highest tier ammunition.",,,,
+
+gunpowderDust,items,Fuel,KgNone,"Refined Gunpowder",,,,
+gunpowderDustDesc,items,Fuel,KgNone,"Refined gunpowder can be made by combining charcoal and nitrate dusts together on a chemistry station. It is used to make the highest tier ammunition.",,,,
+
+sawdust,items,Fuel,KgNone,"Sawdust",,,,
+sawdustDesc,items,Fuel,KgNone,"Sawdust can be made on the carpenter's workbench by sawing up wood. It is used primarily in making paper with water on a chemistry station.",,,,
+
+woodPlanks,items,wood,KgNone,"Wood Planks",,,,
+woodPlanksDesc,items,wood,KgNone,"Wooden planks are better for making wooden frames and reinforcing spikes than just throwing wood at things with a nailgun. Planks can be crafted on a carpenter's workbench."
+
+
+
+
+
+
+
 
 
 
