@@ -14491,9 +14491,8 @@ kind of free
 	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
 	<property name="Stacknumber" value="1"/>
 	<property class="Workstation">
-		<property name="CraftingAreaRecipes" value="carpenter_bench" />
+		<property name="CraftingAreaRecipes" value="carpenter_bench"/>
 		<property name="Modules" value="output"/>
-		<property name="CraftingAreaRecipes" value="player,workbench"/>
 	</property>
 	<property class="RepairItems">
 		<property name="forgedIron" value="25"/>
