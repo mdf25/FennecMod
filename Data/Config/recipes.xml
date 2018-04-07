@@ -217,11 +217,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="alloyForge" count="1" craft_area="workbench">
-	<ingredient name="bellows"		count="2"/>
-	<ingredient name="cobblestones" count="150"/>
-	<ingredient name="forgedSteel" 	count="10"/>
-	<ingredient name="forgedCopper" count="20"/>
-	<ingredient name="forgedIron"	count="10"/>
+	<ingredient name="bellows"				count="2"/>
+	<ingredient name="cobblestones" 		count="150"/>
+	<ingredient name="ingotMoldHardened"	count="2"/>
+	<ingredient name="forgedSteel" 			count="10"/>
+	<ingredient name="forgedCopper" 		count="20"/>
 </recipe>
 
 <recipe name="scrapBrass" count="4" craft_area="alloy_forge" material_based="true">
@@ -408,7 +408,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="bellows" count="1">
 	<ingredient name="wood" count="6"/>
-	<ingredient name="leather" count="20"/>
+	<ingredient name="animalHide" count="20"/>
 	<ingredient name="shortMetalPipe" count="1"/>
 </recipe>
 
@@ -1328,9 +1328,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="forge" count="1">
-	<ingredient name="cobblestones" count="50"/>
-	<ingredient name="bellows" count="1"/>
-	<ingredient name="shortMetalPipe" count="1"/>
+	<ingredient name="cobblestones" 		count="50" />
+	<ingredient name="bellows" 				count="1"  />
+	<ingredient name="ingotMoldHardened"	count="2"  />
+	<ingredient name="forgedCopper" 		count="20" />
+	<ingredient name="charcoal" 			count="30" />
 </recipe>
 
 <recipe name="forgedIron" count="1" craft_area="forge" material_based="true">
@@ -3793,6 +3795,318 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rWoodLogSpike2" 	count="1"  />
 	<ingredient name="scrapIron"	 	count="10" />
 </recipe>
+
+<!-- QUICK DRYING CONCRETE RECIPES -->
+<recipe name="concreteMixQuick" count="10" craft_time="10" craft_area="cementMixer">
+	<ingredient name="concreteMix"				count="10" />
+	<ingredient name="calciumNitrateSolution"	count="1"  />
+</recipe>
+
+<recipe name="calciumNitrateSolution" count="10" craft_time="20" craft_area="chemistryStation">
+	<ingredient name="calciumDust"				count="1"  />
+	<ingredient name="potassiumNitrateDust"		count="3"  />
+	<ingredient name="purifiedWater"			count="1"  />
+</recipe>
+
+<recipe name="calciumDust" count="3" craft_area="grinder_station" craft_time="5">
+	<ingredient name="femur"					count="1"	/>
+</recipe>
+
+<recipe name="concreteBlock" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteRamp" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteSupport" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteCNRInside" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concretePillar100" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concretePillar50" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteCNRRound" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteCNRRoundTop" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteWedgeIncline" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteCTRPlate" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteWedgeTipCNRFullTop" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteEighth" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteQuarter" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteHalf" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteCNRRamp" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concretePyramid" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteCNRFull" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concretePole" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concretePlate" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteWedgeTipCNRFullBottom" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteStairs50" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteWedgeCNRInsideBottom" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteWedgeCNRInsideTop" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteArrowSlitHalf" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteStairs25CornerCNR" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteWedgeStairs" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteStairs25" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteArch" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteWedge" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteCNRRampFiller" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteWedgeTip" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteWedgeTipStairs" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+<recipe name="concreteCTRpole" count="1" craft_area="cementMixer" craft_time="4">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+</recipe>
+
+
+<!-- Reinforced concrete quick dry -->
+<recipe name="rConcreteBlock" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteWedgeTip" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteRamp" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteCNRFull" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteCNRInside" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcretePillar100" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcretePillar50" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteCNRRound" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteCNRRoundTop" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteWedgeIncline" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteWedgeTipCNRFullTop" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteWedgeTipCNRFullBottom" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteWedgeCNRInsideBottom" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteWedgeCNRInsideTop" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteArrowSlitHalf" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteCNRRampFiller" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteWedgeStairs" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteArch" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteWedgeTipStairs" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteCTRPlate" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcretePole" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteCTRpole" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteStairs25CornerCNR" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteWedge" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteCNRRamp" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcretePlate" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteEighth" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteSupport" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteHalf" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcretePyramid" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteQuarter" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+<recipe name="rConcreteStairs25" count="1" craft_area="cementMixer" craft_time="5">
+	<ingredient name="concreteMixQuick"			count="10"	/>
+	<ingredient name="rebarFrameBlock"			count="1"	/>
+</recipe>
+
+
 
 
 

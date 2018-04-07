@@ -1028,6 +1028,7 @@
 </lootgroup>
 
 <lootgroup name="junk">
+	<item name="chisel" count="1" prob="0.05" />
 	<item name="ironArrowHead" count="10,30"/>
 	<item name="copperArrowHead" count="20,50" />
 	<item name="steelArrowHead" count="5,15" prob="0.05"/>
@@ -1219,6 +1220,7 @@
 </lootgroup>
 
 <lootgroup name="tools" count="1">
+	<item name="chisel" />
 	<item name="pickaxeIron"/>
 	<item name="shovelIron"/>
 	<item name="fireaxeIron"/>
@@ -1236,7 +1238,7 @@
 </lootgroup>
 
 <lootgroup name="workingStiffs" count="1">
-	<item name="forge" />
+	<item name="chisel" />
 	<item name="pickaxeIron"/>
 	<item name="shovelIron"/>
 	<item name="fireaxeIron"/>
@@ -1268,7 +1270,7 @@
 	<item name="paintTool" prob="0.4"/>
 	<item name="wireTool"/>
 	<item name="paintMagazineMasonry" prob="0.4"/>
-	<item name="workbench" />
+	<item name="workbench" prob="0.4" />
 </lootgroup>
 
 <lootgroup name="rareMedicine" count="1">

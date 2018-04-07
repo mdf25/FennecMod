@@ -1158,8 +1158,9 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_concrete"/>
-	<drop event="Harvest" name="clayLump" count="6"/>
-	<drop event="Harvest" name="rockSmall" count="6"/>
+	<drop event="Harvest" name="clayLump" count="3"/>
+	<drop event="Harvest" name="rockSmall" count="3"/>
+	<drop event="Harvest" name="cobblestones" count="2,4" 	tool_category="Chisel"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="14"/>
@@ -1262,8 +1263,9 @@ group desc for stuff like metal siding
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="6"/>
 	</property>
-	<drop event="Harvest" name="clayLump" count="2"/>
-	<drop event="Harvest" name="rockSmall" count="2"/>
+	<drop event="Harvest" name="clayLump" count="1"/>
+	<drop event="Harvest" name="rockSmall" count="1"/>
+	<drop event="Harvest" name="cobblestones" count="0,1" 	tool_category="Chisel"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="8"/>
@@ -1371,7 +1373,8 @@ group desc for stuff like metal siding
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="1"/> -->
 	<property name="CreativeMode" value="None"/>
 	<property class="RepairItems"> <property name="cobblestones" value="5"/> </property>
-	<drop event="Harvest" name="rockSmall" count="16"/>
+	<drop event="Harvest" name="rockSmall" 	  count="8" />
+	<drop event="Harvest" name="cobblestones" count="1,6" 	tool_category="Chisel"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="8"/>

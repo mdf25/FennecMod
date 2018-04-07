@@ -5157,6 +5157,8 @@ BuilderStaminaDrainName,progression,Perk,EnChanged,"Builder: Stamina Drain",,,,
 BuilderStaminaDrainDesc,progression,Perk,EnChanged,"Though you work tirelessly as a builder, no rest does take its toll. Your stamina regenerates slower than other survivors.",,,,
 BuilderThirstName,progression,Perk,EnChanged,"Builder: Thirst",,,,
 BuilderThirstDesc,progression,Perk,EnChanged,"Working long hours and in often hot conditions, you tend to need to drink more fluids. You will need to drink a little more often than other survivors.",,,,
+BuilderQuickConcreteRecipeName,progression,Perk,EnChanged,"Builder: Quick Concrete",,,,
+BuilderQuickConcreteRecipeDesc,progression,Perk,EnChanged,"Learn how to make quick-drying concrete as a master builder.",,,,
 CrafterMasteryName,progression,Perk,EnChanged,"Crafter: Mastery",,,,
 CrafterMasteryDesc,progression,Perk,EnChanged,"If you chose the crafter class, this will reflect how much you have mastered by completing the quests. Taking the class will give you one level of mastery and completing the quest chain will give you the final level.",,,,
 CrafterSpeedName,progression,Perk,EnChanged,"Crafter: Craft Speed",,,,
@@ -5377,15 +5379,19 @@ sawdust,items,Fuel,KgNone,"Sawdust",,,,
 sawdustDesc,items,Fuel,KgNone,"Sawdust can be made on the carpenter's workbench by sawing up wood. It is used primarily in making paper with water on a chemistry station.",,,,
 
 woodPlanks,items,wood,KgNone,"Wood Planks",,,,
-woodPlanksDesc,items,wood,KgNone,"Wooden planks are better for making wooden frames and reinforcing spikes than just throwing wood at things with a nailgun. Planks can be crafted on a carpenter's workbench."
+woodPlanksDesc,items,wood,KgNone,"Wooden planks are better for making wooden frames and reinforcing spikes than just throwing wood at things with a nailgun. Planks can be crafted on a carpenter's workbench.",,,,
 
+concreteMixQuick,items,wood,KgNone,"Quick-Dry Concrete Mix",,,,
+concreteMixQuickDesc,items,wood,KgNone,"A quick-drying variant of concrete mix which has had calcium nitrate additives for fast curing.",,,,
 
+calciumDust,items,wood,KgNone,"Ground Bone Dust",,,,
+calciumDustDesc,items,wood,KgNone,"Used primarily to make calcium nitrate solution, this ground bone dust can be made by crushing down animal and zombie bones in an industrial grinder.",,,,
 
+calciumNitrateSolution,items,wood,KgNone,"Calcium Nitrate Solution",,,,
+calciumNitrateSolutionDesc,items,wood,KgNone,"A solution created on the chemistry station. It i primarily used as a concrete mix additive for creating a quick-drying variant.",,,,
 
-
-
-
-
+chisel,items,wood,KgNone,"Chisel",,,,
+chiselDesc,items,wood,KgNone,"You can use a chisel on brick or cobblestone blocks to get the cobblestones back out of them.",,,,
 
 
 

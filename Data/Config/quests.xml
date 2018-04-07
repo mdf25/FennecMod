@@ -382,11 +382,12 @@
 	repeatable="false" category_key="quest" offer_key="quest_builder_5_offer" difficulty="easy">
 		<objective type="ZombieKill" value="30" />	
 		<requirement type="Holding" id="clawHammer" />
-		<reward type="Skill" id="BuilderWellness50" 	value="1" stage="aftercomplete" />
-		<reward type="Skill" id="BuilderToolsDamage" 	value="1" stage="aftercomplete" />
-		<reward type="Skill" id="BuilderStaminaDrain" 	value="1" stage="aftercomplete" />
-		<reward type="Skill" id="BuilderThirst" 		value="1" stage="aftercomplete" />
-		<reward type="Skill" id="BuilderMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderWellness50" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderToolsDamage" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderStaminaDrain" 			value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderThirst" 				value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderQuickConcreteRecipe" 	value="1" stage="aftercomplete" />
+		<reward type="Skill" id="BuilderMastery" 				value="1" stage="aftercomplete" />
 	</quest>
 	
 	
