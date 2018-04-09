@@ -1548,7 +1548,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="100"/>
 		<property name="Upgrade_hit_offset" value="0"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10"/>
@@ -1701,6 +1701,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.organic" value="0.2"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.Chisel" value="0.4" param1="1" />
 		<property name="ActionExp" value="4"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
@@ -1729,6 +1730,7 @@ Mesh files no longer used:
 		<property name="Stamina_usage" value="20.4"/>
 		<property name="DamageBonus.head" value="4"/>
 		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
+		<property name="ToolCategory.Chisel" value="0.5" param1="1" />
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
@@ -1770,6 +1772,7 @@ Mesh files no longer used:
 		<property name="Stamina_usage" value="15"/>
 		<property name="DamageBonus.head" value="4.3"/>
 		<property name="ToolCategory.harvestingTools" value="1.7" param1="1"/>
+		<property name="ToolCategory.Chisel" value="0.6" param1="1" />
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
@@ -2041,7 +2044,8 @@ Mesh files no longer used:
 		<property name="DamageBonus.wood" value="0.2"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.organic" value="0.2"/>
-		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="0.9"/>
+		<property name="ToolCategory.Chisel" value="1" param1="0.3" />
 		<property name="ActionExp" value="4"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
@@ -2085,7 +2089,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.stone" value="0.5"/>
 		<property name="DamageBonus.metal" value="0.25"/>
 		<property name="DamageBonus.organic" value="0.7"/>
-		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 		<property name="ActionExp" value="4"/>
 	</property>
@@ -2141,7 +2145,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="350"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10"/>
@@ -2190,7 +2194,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="250"/>
 		<property name="Upgrade_hit_offset" value="-3"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,nail"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,nail,forgeUpgradeKit"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,20"/>
@@ -2249,7 +2253,7 @@ Mesh files no longer used:
 		<property name="Upgrade_hit_offset" value="-3"/>
 		<property name="Repair_action_sound" value="nailgun_fire"/>
 		<property name="Upgrade_action_sound" value="nailgun_fire"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,nail"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,nail,forgeUpgradeKit"/>
 		<!--<property name="Restricted_upgrade_items" value="concrete"/>-->
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -11374,7 +11378,6 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 </item>
 
-
 <item id="1413" name="coffeeBeans">
 	<property name="Meshfile" value="Items/Food/seed_blueberryPrefab"/>
 	<property name="Material" value="plants"/>
@@ -11384,6 +11387,17 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="CraftingIngredientTime" value="5"/>
 	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="1414" name="forgeUpgradeKit">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="stone"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 
 <item id="1430" name="candle">

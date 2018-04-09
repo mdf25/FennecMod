@@ -4143,6 +4143,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledRiverWater"	count="1" />
 </recipe>
 
+<recipe name="cobblestones" count="1" craft_area="firepit" craft_time="80" craft_tool="bellows">
+	<ingredient name="rockSmall"			count="20" />
+	<ingredient name="clayLump"				count="20" />
+</recipe>
+
+<recipe name="forgeUpgradeKit" count="1" craft_time="120">
+	<ingredient name="cobblestones"			count="10" />
+	<ingredient name="ingotMoldHardened"	count="1"  />
+	<ingredient name="charcoal"				count="5"  />
+	<ingredient name="animalHide"			count="1"  />
+	<ingredient name="shortMetalPipe"		count="1"  />
+</recipe>
+
 </recipes>
 <!-- To do (maybe / later)
 <recipe name="steelArrowHead" count="1" craft_area="forge" craft_tool="calipers" material_based="true">

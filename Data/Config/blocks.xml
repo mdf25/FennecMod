@@ -7234,6 +7234,12 @@ kind of free
 		<property name="clayLump" value="50"/>
 		<property name="leather" value="20"/>
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="forge"/>
+		<property name="Item" value="forgeUpgradeKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Harvest" name="cobblestones" 	count="10" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="cobblestones" 	count="15" tool_category="Disassemble"/>
 	<drop event="Harvest" name="bellows" 		count="1" tool_category="Disassemble"/>
@@ -12801,7 +12807,7 @@ kind of free
 	<property name="ParticleOffset" value="0,0,0"/>
 	<property name="BuffsWhenWalkedOn" value="blockBurn2Trigger"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="coal" count="1,2" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="charcoal" count="1,2" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="wood" count="1"/>
 </block>
 

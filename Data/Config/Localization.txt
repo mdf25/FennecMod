@@ -5405,4 +5405,25 @@ cementMixerSchematic,items,Schematic,KgNone,"Concrete Mixing Schematic",,,,
 cementMixerSchematicDesc,items,Schematic,KgNone,"Learn how to craft a cement mixer and create cement for concrete mix by reading this schematic.",,,,
 steelSmithingSchematic,items,Schematic,KgNone,"Steel Smithing Schematic",,,,
 steelSmithingSchematicDesc,items,Schematic,KgNone,"Learn how to forge steel and shape it into tools by reading this schematic.",,,,
+forgeUpgradeKit,items,Crafting,KgNone,"Forge Upgrade Kit",,,,
+forgeUpgradeKitDesc,items,Crafting,KgNone,"If you find a broken forge in the world you can use a construction tool and upgrade it into a working forge with this upgrade kit.",,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
