@@ -5071,7 +5071,7 @@ groundCopperDustDesc,items,Book,KgNone,"Copper ore that has been ground in an in
 groundZincDust,items,Book,KgNone,"Ground Zinc Dust",,,,
 groundZincDustDesc,items,Book,KgNone,"Zinc ore that has been ground in an industrial grinder. This will give you twice the amount of usable resource when forged, compared to the ore.",,,,
 groundBrassDust,items,Book,KgNone,"Ground Brass Dust",,,,
-groundBrassDustDesc,items,Book,KgNone,"This finely mixed dust can be smelted in a forge to produce brass. It is made by combining copper and tin dusts and mixing thoroughly.",,,,
+groundBrassDustDesc,items,Book,KgNone,"This finely mixed dust can be smelted in a forge to produce brass. It is made by combining copper and zinc dusts and mixing thoroughly.",,,,
 groundUraniumDust,items,Book,KgNone,"Ground Uranium Dust",,,,
 groundUraniumDustDesc,items,Book,KgNone,"By grinding down a forged ingot of uranium, you can remove some impurities and make it suitable for enriching after purification. Or, the dust can be mixed with lead to make a depleted uranium compound useful in improved military armour.",,,,
 groundLeadDust,items,Book,KgNone,"Ground Lead Dust",,,,
@@ -5289,21 +5289,18 @@ CulinaryStaminaDrainName,progression,Perk,EnChanged,"Culinary: Stamina Drain",,,
 CulinaryStaminaDrainDesc,progression,Perk,EnChanged,"Although running around a kitchen all day gives you some form of exercise. you tend to tire more easily and regain stamina slower than other survivors.",,,,
 CulinaryRecipesName,progression,Perk,EnChanged,"Culinary: Tasty Food Recipes",,,,
 CulinaryRecipesDesc,progression,Perk,EnChanged,"Any survivor can boil water and char meat, but you can prepare only the tastiest of meals. At level 1 you will gain some recipes and when you master the culinary class you will gain the rest.",,,,
-
 CarpenterMasteryName,progression,Perk,EnChanged,"Carpenter: Mastery",,,,
 CarpenterMasteryDesc,progression,Perk,EnChanged,"If you chose the Carpenter class, this will reflect how much you have mastered by completing the quests. Taking the class will give you one level of mastery and completing the quest chain will give you the final level.",,,,
-
 CarpenterHarvestName,progression,Perk,EnChanged,"Carpenter: Tool Efficiency",,,,
 CarpenterHarvestDesc,progression,Perk,EnChanged,"As a carpenter, you know how to get the most out of your axes. You do more damage with them whilst expending less stamina. You tend to get more harvest out of trees than other survivors using the same tools.",,,,
-
 CarpenterThirstName,progression,Perk,EnChanged,"Carpenter: Thirst",,,,
 CarpenterThirstDesc,progression,Perk,EnChanged,"Spending time outdoors, carrying a heavy axe and chopping trees all day definitely takes its toll. You'll need to drink a little more than other survivors.",,,,
-
 CarpenterBenchRecipeName,progression,Perk,EnChanged,"Carpenter: Bench Recipe",,,,
 CarpenterBenchRecipeDesc,progression,Perk,EnChanged,"As a master carpenter, you can learn how to make a workbench capable of getting wood from logs more efficiently and crafting some other items with it.",,,,
-
-
-
+IronSmithingName,progression,Perk,EnChanged,"Iron Smithing",,,,
+IronSmithingDesc,progression,Perk,EnChanged,"Learn how to forge iron properly and shape it into tools. You will be able to make the iron pickaxe, shovel and axe, as well as the hoe and arrowheads.",,,,
+IronToolCraftingName,progression,Perk,EnChanged,"Iron Component Crafting",,,,
+IronToolCraftingDesc,progression,Perk,EnChanged,"Learn how to shape iron into cooking pots, grills and anvils with this perk.",,,,
 AxesName,progression,Perk,EnChanged,"Axes",,,,
 AxesDesc,progression,Perk,EnChanged,"Get better at chopping down trees and breaking wooden blocks with axes. Level up this skill by using items from this group.",,,,
 WoodchuckerName,progression,Perk,EnChanged,"Woodchucker",,,,
@@ -5324,7 +5321,10 @@ TargetPracticeName,progression,Perk,EnChanged,"Target Practice",,,,
 TargetPracticeDesc,progression,Perk,EnChanged,"Make headshots matter! Blast off more and more faces using bows and crossbows with every rank.",,,,
 PunchingName,progression,Perk,EnChanged,"Hand to Hand Combat",,,,
 PunchingDesc,progression,Perk,EnChanged,"Do you like punching zombies in their face? Get stronger and do more damage by punching zombies in their faces!",,,,
-
+IndustrialGrindingName,progression,Perk,EnChanged,"Industrial Grinder",,,,
+IndustrialGrindingDesc,progression,Perk,EnChanged,"Learn how to grind down metal fragments into dusts and craft a device capable of doing so by taking this perk or finding and reading the schematic.",,,,
+PurificationMethodsName,progression,Perk,EnChanged,"Purification Methods",,,,
+PurificationMethodsDesc,progression,Perk,EnChanged,"Learn how to purify ground dusts into purified dusts and create other purified items by reading taking this perk or finding and reading the schematic.",,,,
 ironHelmetLight,items,Clothes,KgNone,"Iron Helmet (Light)",,,,
 ironHelmetLightDesc,items,Clothes,KgNone,"Using some duct tape and a flashlight, this iron helmet can now double as a light source.",,,,
 swatHelmetLight,items,Clothes,KgNone,"Swat Helmet (Light)",,,,
@@ -5333,80 +5333,76 @@ scrapHelmetLight,items,Clothes,KgNone,"Scrap Iron Helmet (Light)",,,,
 scrapHelmetLightDesc,items,Clothes,KgNone,"Using some duct tape and a flashlight, this scrap iron helmet can now double as a light source.",,,,
 militaryHelmetLight,items,Clothes,KgNone,"Military Helmet (Light)",,,,
 militaryHelmetLightDesc,items,Clothes,KgNone,"Using some duct tape and a flashlight, this military helmet can now double as a light source.",,,,
-
 startingBackpackUnlocked,blocks,Backpacks,KgNone,"Starting Backpack",,,,
 startingBackpackUnlockedDesc,blocks,Backpacks,KgNone,"Your starting gear!",,,,
 startingBackpackLocked,blocks,Backpacks,KgNone,"Starting Backpack",,,,
 startingBackpackLockedDesc,blocks,Backpacks,KgNone,"Your starting gear! Place this down and open it! Inside you will get 3 class paper quests that you can use to choose your character specializations, as well as a couple of starting items.",,,,
-
 stoneKnife,items,Melee,KgNone,"Stone Knife",,,,
 stoneKnifeDesc,items,Melee,KgNone,"A simple stone knife will help you harvesting animals. Though it is not as good as a bone shiv, it is a little better at harvesting wood than the stone axe and can also double as a melee weapon to defend yourself.",,,,
-
 scrapKnife,items,Melee,KgNone,"Scrap Knife",,,,
 scrapKnifeDesc,items,Melee,KgNone,"A simple knife made from a sharp piece of metal with a bone handle, bound with some plant fiber and duct tape to attach the metal to the hilt. A good weapon to use if you're looking for an improvement over a bone or stone tool.",,,,
-
 sharpRustyMetal,items,Melee,KgNone,"Sharp Rusty Metal",,,,
 sharpRustyMetalDesc,items,Melee,KgNone,"A piece of salvaged metal with a sharp edge. You may be able to make it into a knife of sorts with a few other materials.",,,,
-
 scrapCopper,items,Melee,KgNone,"Scrap Copper",,,,
 scrapCopperDesc,items,Melee,KgNone,"Leftover wires and pipes could be useful to forge into copper to make tools and electrical components later...",,,,
-
 ingotMold,items,Melee,KgNone,"Ingot Mold (Untreated)",,,,
 ingotMoldDesc,items,Melee,KgNone,"By using an ingot and some clay you are able to craft an ingot mold. This is of no real use until you harden the mold using the firepit - you'll need bellows to get the fire hot enough.",,,,
-
 ingotMoldHardened,items,Melee,KgNone,"Ingot Mold",,,,
 ingotMoldHardenedDesc,items,Melee,KgNone,"This can be used in the firepit in order to shape copper into ingots and arrowheads. This method of production is inefficient, but it's better than nothing until you find a forge.",,,,
-
+copperArrow,items,Melee,KgNone,"Copper Arrow",,,,
+copperArrowDesc,items,Melee,KgNone,"An arrow made using copper arrowheads. It's not great, but it will get the job done until you can smelt iron.",,,,
+copperArrowHead,items,Melee,KgNone,"Copper Arrowhead",,,,
+copperArrowHeadDesc,items,Melee,KgNone,"An arrowhead made from copper. It's not great, but it will get the job done until you can smelt iron.",,,,
 copperCrossbowBolt,items,Melee,KgNone,"Copper Crossbow Bolt",,,,
 copperCrossbowBoltDesc,items,Melee,KgNone,"A crossbow bolt using copper arrowheads. It's not great, but it will get the job done until you can smelt iron.",,,,
-
 carpenterBench,items,Workstation,KgNone,"Carpenter's Bench",,,,
 carpenterBenchDesc,items,Workstation,KgNone,"A workbench that can be used to cut wood logs into much, much more wood than from scrapping them. Also gives access to planks which can be used to craft other items more quickly and cost-effectively.",,,,
-
 charcoal,items,Fuel,KgNone,"Charcoal",,,,
 charcoalDesc,items,Fuel,KgNone,"Using charcoal is a great source of fuel. It can be made in the firepit by covering some wood logs with dirt, then leaving a limited oxygen supply to allow the charcoal to form. ",,,,
-
 charcoalDust,items,Fuel,KgNone,"Charcoal Dust",,,,
 charcoalDustDesc,items,Fuel,KgNone,"You can grind down charcoal in an industrial grinder to get charcoal dust. You can use this to make refined gunpowder used in the highest tier ammunition.",,,,
-
 potassiumNitrateDust,items,Fuel,KgNone,"Nitrate Dust",,,,
 potassiumNitrateDustDesc,items,Fuel,KgNone,"You can grind down nitrate powder in an industrial grinder to get nitrate dust. You can use this to make refined gunpowder used in the highest tier ammunition.",,,,
-
 gunpowderDust,items,Fuel,KgNone,"Refined Gunpowder",,,,
 gunpowderDustDesc,items,Fuel,KgNone,"Refined gunpowder can be made by combining charcoal and nitrate dusts together on a chemistry station. It is used to make the highest tier ammunition.",,,,
-
 sawdust,items,Fuel,KgNone,"Sawdust",,,,
 sawdustDesc,items,Fuel,KgNone,"Sawdust can be made on the carpenter's workbench by sawing up wood. It is used primarily in making paper with water on a chemistry station.",,,,
-
 woodPlanks,items,wood,KgNone,"Wood Planks",,,,
 woodPlanksDesc,items,wood,KgNone,"Wooden planks are better for making wooden frames and reinforcing spikes than just throwing wood at things with a nailgun. Planks can be crafted on a carpenter's workbench.",,,,
-
 concreteMixQuick,items,wood,KgNone,"Quick-Dry Concrete Mix",,,,
 concreteMixQuickDesc,items,wood,KgNone,"A quick-drying variant of concrete mix which has had calcium nitrate additives for fast curing.",,,,
-
 calciumDust,items,wood,KgNone,"Ground Bone Dust",,,,
 calciumDustDesc,items,wood,KgNone,"Used primarily to make calcium nitrate solution, this ground bone dust can be made by crushing down animal and zombie bones in an industrial grinder.",,,,
-
 calciumNitrateSolution,items,wood,KgNone,"Calcium Nitrate Solution",,,,
 calciumNitrateSolutionDesc,items,wood,KgNone,"A solution created on the chemistry station. It i primarily used as a concrete mix additive for creating a quick-drying variant.",,,,
-
 chisel,items,wood,KgNone,"Chisel",,,,
 chiselDesc,items,wood,KgNone,"You can use a chisel on brick or cobblestone blocks to get the cobblestones back out of them.",,,,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+waterskin,items,survival,KgNone,"Waterskin (Empty)",,,,
+waterskinDesc,items,survival,KgNone,"An empty waterskin - essential for survival out in the wilderness. Fill it up at any water source. Due to the built-in filter, all water will be safe to drink directly from the waterskin.",,,,
+waterskinFilled,items,survival,KgNone,"Waterskin",,,,
+waterskinFilledDesc,items,survival,KgNone,"A filled waterskin. You can refill it anytime by left-clicking with it on any water source.",,,,
+waterskinFilled10,items,survival,KgNone,"Waterskin (10/10)",,,,
+waterskinFilled9,items,survival,KgNone,"Waterskin (9/10)",,,,
+waterskinFilled8,items,survival,KgNone,"Waterskin (8/10)",,,,
+waterskinFilled7,items,survival,KgNone,"Waterskin (7/10)",,,,
+waterskinFilled6,items,survival,KgNone,"Waterskin (6/10)",,,,
+waterskinFilled5,items,survival,KgNone,"Waterskin (5/10)",,,,
+waterskinFilled4,items,survival,KgNone,"Waterskin (4/10)",,,,
+waterskinFilled3,items,survival,KgNone,"Waterskin (3/10)",,,,
+waterskinFilled2,items,survival,KgNone,"Waterskin (2/10)",,,,
+waterskinFilled1,items,survival,KgNone,"Waterskin (1/10)",,,,
+waterFilter,items,survival,KgNone,"Water Filter",,,,
+waterFilterDesc,items,survival,KgNone,"A water filter using charcoal and sand to remove most of the contamination. You can use this to purify a jar of murky water or make a waterskin out of it for prolonged use.",,,,
+weldingTorch,items,tools,KgNone,"Welding Torch",,,,
+weldingTorchDesc,items,tools,KgNone,"A welding torch that can be used to disassemble some iron and steel blocks to reclaim some of the forged iron and steel from them. Try it on safes, munitions boxes, iron bars, trussing and vault doors.",,,,
+weldingFuel,items,fuel,KgNone,"Welding Torch Fuel",,,,
+weldingFuelDesc,items,fuel,KgNone,"Fuel that is used for the welding torch. Crafted using gasoline and oil.",,,,
+workbenchSchematic,items,Schematic,KgNone,"Workbench Schematic",,,,
+workbenchSchematicDesc,items,Schematic,KgNone,"Learn how to craft a workbench by reading this schematic.",,,,
+chemistryStationSchematic,items,Schematic,KgNone,"Chemistry Station Schematic",,,,
+chemistryStationSchematicDesc,items,Schematic,KgNone,"Learn how to craft a chemistry station by reading this schematic.",,,,
+cementMixerSchematic,items,Schematic,KgNone,"Concrete Mixing Schematic",,,,
+cementMixerSchematicDesc,items,Schematic,KgNone,"Learn how to craft a cement mixer and create cement for concrete mix by reading this schematic.",,,,
+steelSmithingSchematic,items,Schematic,KgNone,"Steel Smithing Schematic",,,,
+steelSmithingSchematicDesc,items,Schematic,KgNone,"Learn how to forge steel and shape it into tools by reading this schematic.",,,,
 

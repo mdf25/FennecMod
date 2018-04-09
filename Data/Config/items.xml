@@ -2291,7 +2291,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="EntityDamage" value="7,15.5"/>
 		<property name="BlockDamage" value="10,30"/> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
-		<property name="DegradationMax" value="100,300"/>
+		<property name="DegradationMax" value="250,250"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="-0.1,0.05"/>
 	</property>
@@ -2404,39 +2404,51 @@ Mesh files no longer used:
 <item id="132" name="weldingTorch">
 	<property name="Meshfile" value="Items/Tools/nailgunPrefab"/>
 	<property name="Material" value="metal"/>
-	<property name="RepairTools" value="repairKit"/>
-	<property name="HoldType" value="37"/>
-	<property name="DegradationBreaksAfter" value="false"/>
-	<property name="SoundJammed" value="weapon_jam"/>
-	<property name="CrosshairUpAfterShot" value="false"/>
+	<property name="RepairTools" value="forgedSteel"/>
+	<property name="HoldType" value="20"/>
+	<property name="SoundIdle" value="Auger_Idle"/>
+	<property name="Particles_muzzle_smoke" value="p_onFire"/>
 	<property class="Action0"> <!-- AttackAction -->
-		<property name="Class" value="Launcher"/>
-		<property name="Hitmask_override" value="Arrow"/>
-		<property name="Delay" 			value="0.01" />
-		<property name="Crosshair_min_distance" value="15"/> <!-- 15 -->
-		<property name="Crosshair_max_distance" value="18"/> <!-- 18 -->
+		<property name="Class" value="Ranged"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Delay" value="0.07"/>
+		<property name="Crosshair_min_distance" value="5"/>
+		<property name="Crosshair_max_distance" value="30"/>
 		<property name="Magazine_size" value="1000"/>
+		<property name="Single_magazine_usage" value="false"/>
 		<property name="Magazine_items" value="weldingFuel"/>
-		<property name="Rays_spread" value="0.013"/>
-		<property name="Instantiate_on_load" value="false"/>
-		<property name="Reload_time" value="2"/>
-		<property name="Bullet_icon" value="uzi"/>
-		<property name="Auto_fire"	value="true"/>
-		<property name="Sound_start" value="nailgun_fire"/>
-		<property name="Particles_muzzle_fire" value="nailgunfire"/>
-	<!-- <property name="Particles_muzzle_smoke" value="nozzlesmoke"/> -->
-		<property name="Sound_repeat" value="nailgunfire"/>
-		<property name="Sound_end" value=""/>
-		<property name="Sound_empty" value="weapon_empty"/>
-		<property name="Sound_reload" value="nailgun_reload"/>
-		<property name="DamageBonus.head" value="0.1"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Bullet_material" value="metal"/>
+		<property name="Reload_time" value="4.1"/>
+		<property name="Sound_start" value="Auger_Fire_Start"/>
+		<property name="Sound_repeat" value="Weapons/Motorized/Auger/auger_fire_lp"/>
+		<property name="Sound_end" value="Weapons/Motorized/Auger/auger_fire_end"/>
+		<property name="Sound_empty" value="auger_empty"/>
+		<property name="Sound_reload" value="Auger_Reload"/>
+		<property name="Horde_meter_rate" value="0.275"/>
+		<property name="Horde_meter_distance" value="20"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.head" value="1"/>
 		<property name="DamageBonus.glass" value="1"/>
-		<property name="DamageBonus.metal" value="20" />
-		<property name="ActionExp" value="2"/>
+		<property name="DamageBonus.metal" value="1.2" />
+		<property name="DamageBonus.earth" value="0" />
+		<property name="SupportHarvesting" value="true"/>
+		<property name="UseMeleeCrosshair" value="true"/>
+		<property name="ToolCategory.harvestingTools" value="0" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="20"/>
+		<property name="ToolCategory.weldingTools" value="1" param1="1" />
+		<property name="ActionExp" value="0"/>
+		<property name="CrosshairUpAfterShot" value="false" />
 	</property>
 	<property class="Attributes">
-		<property name="DegradationMax" value="1000,5000"/>
-		<property name="DegradationRate" value="1,0.1"/>
+		<property name="FalloffRange" value="4,4"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DegradationMax" value="1000,2000"/>
+		<property name="EntityDamage" value="2,7"/>
+		<property name="BlockDamage" value="2,10"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
@@ -9303,8 +9315,6 @@ Mesh files no longer used:
 <item id="1026" name="toolSetSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="DescriptionKey" value="toolSetSchematicDesc"/>
-	<property name="CustomIcon" value="schematicMaster" />
-	<property name="CustomIconTint" value="ff2828" />
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="CrafterToolSetRecipe"/>
@@ -9314,8 +9324,6 @@ Mesh files no longer used:
 <item id="1027" name="beakerSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="DescriptionKey" value="beakerSchematicDesc"/>
-	<property name="CustomIcon" value="schematicMaster" />
-	<property name="CustomIconTint" value="bfd7ff" />
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="ScientistBeakerRecipe"/>
@@ -9325,44 +9333,72 @@ Mesh files no longer used:
 <item id="1028" name="ironForgingSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="DescriptionKey" value="ironForgingSchematicDesc"/>
-	<property name="CustomIcon" value="schematicMaster" />
-	<property name="CustomIconTint" value="777777" />
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="forgedIron,ironArrowHead,fireaxeIron,pickaxeIron,shovelIron,hoeIron"/>
+		<property name="Skills_to_gain" value="IronSmithing"/>
 	</property>
 </item>
 
 <item id="1029" name="toolForgingSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="DescriptionKey" value="toolForgingSchematicDesc"/>
-	<property name="CustomIcon" value="schematicMaster" />
-	<property name="CustomIconTint" value="ff0000" />
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="anvil,cookingPot,cookingGrill"/>
+		<property name="Skills_to_gain" value="IronToolCrafting"/>
 	</property>
 </item>
 
 <item id="1030" name="purificationSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="DescriptionKey" value="purificationSchematicDesc"/>
-	<property name="CustomIcon" value="schematicMaster" />
-	<property name="CustomIconTint" value="ff0000" />
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="purifiedWater,purificationPlant"/>
+		<property name="Skills_to_gain" value="PurificationMethods"/>
 	</property>
 </item>
 
 <item id="1031" name="industrialGrinderSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="DescriptionKey" value="industrialGrinderSchematicDesc"/>
-	<property name="CustomIcon" value="schematicMaster" />
-	<property name="CustomIconTint" value="ff0000" />
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="industrialGrinder"/>
+		<property name="Skills_to_gain" value="IndustrialGrinding"/>
+	</property>
+</item>
+
+<item id="1032" name="workbenchSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="workbenchSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Workbench"/>
+	</property>
+</item>
+
+<item id="1033" name="chemistryStationSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="chemistryStationSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="ChemStationPerk"/>
+	</property>
+</item>
+
+<item id="1034" name="cementMixerSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="cementMixerSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Concrete Mixing"/>
+	</property>
+</item>
+
+<item id="1035" name="steelSmithingSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="steelSmithingSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Steel Smithing"/>
 	</property>
 </item>
 
@@ -9581,7 +9617,7 @@ Mesh files no longer used:
 
 <item id="1070" name="classPaperCarpenter">
 	<property name="Extends" value="classPaperMaster" />
-	<property name="DescriptionKey" value="classPaperCulinaryDesc"/>
+	<property name="DescriptionKey" value="classPaperCarpenterDesc"/>
 	<property class="Action1">
 		<property name="Class" value="Quest"/>
 		<property name="Delay" value="0"/>
@@ -11191,36 +11227,153 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 </item>
 
-<item id="1353" name="weldingFuel">
-	<property name="Meshfile" value="Items/Tools/nailProjectilePrefab"/>
-	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="metal"/>
+<item id="1400" name="weldingFuel">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="CustomIcon" value="gasCan" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
-	<property name="EconomicValue" value="10"/>
-	<property name="EconomicBundleSize" value="10"/>
-	<property class="Action1">
-		<property name="Class" value="Projectile"/>
-		<property name="Explosion.ParticleIndex" value="0"/>
-		<!-- no expl. -->
-		<property name="Velocity" value="35"/>
-		<property name="FlyTime" value="1"/>
-		<property name="LifeTime" value="0.1"/>
-		<property name="DamageBonus.head" value="5"/>
-		<property name="DamageBonus.glass" value="1"/>
-		<property name="DamageBonus.wood" value="0.1"/>
-		<property name="DamageBonus.earth" value="0"/>
-		<property name="DamageBonus.metal" value="1"/>
-		<property name="DamageBonus.cloth" value="0"/>
-	</property>
-	<property class="Attributes">
-		<property name="GetQualityFromWeapon" value="true"/>
-		<property name="EntityDamage" value="5,10"/>
-		<property name="BlockDamage" value="1,2"/>
-	</property>
-	<property name="Group" value="Ammo/Weapons"/>
+	<property name="Material" value="MFuelBarrel"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
+	<property name="FuelValue" value="2"/>
+	<property name="EconomicValue" value="83"/> <!-- oil barrel 500 -->
+	<property name="EconomicBundleSize" value="100"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="Group" value="Resources,Chemicals"/>
 </item>
+
+<item id="1401" name="waterskin">
+	<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="CraftingIngredientTime" value="9"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="waterskinFilled10"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="water"/>
+		<property name="Focused_blockname_2" value="waterMoving"/>
+		<property name="Focused_blockname_3" value="waterStaticBucket"/>
+		<property name="Focused_blockname_4" value="waterMovingBucket"/>
+		<property name="Focused_blockname_5" value="waterSource8"/>
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item id="1402" name="waterskinFilled10">
+	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
+	<property name="CustomIcon" value="waterskinFilled" />
+	<property name="DescriptionKey" value="waterskinFilledDesc" />
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="1"/> <!-- STK drink -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="waterskinFilled10"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="water"/>
+		<property name="Focused_blockname_2" value="waterMoving"/>
+		<property name="Focused_blockname_3" value="waterStaticBucket"/>
+		<property name="Focused_blockname_4" value="waterMovingBucket"/>
+		<property name="Focused_blockname_5" value="waterSource8"/>
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="20"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="20"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff"/>
+		<property name="Create_item" value="waterskinFilled9"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="1403" name="waterskinFilled9">
+	<property name="Extends" value="waterskinFilled10" />
+	<property class="Action1">
+		<property name="Create_item" value="waterskinFilled8"/>
+	</property>
+</item>
+
+<item id="1404" name="waterskinFilled8">
+	<property name="Extends" value="waterskinFilled10" />
+	<property class="Action1">
+		<property name="Create_item" value="waterskinFilled7"/>
+	</property>
+</item>
+
+<item id="1405" name="waterskinFilled7">
+	<property name="Extends" value="waterskinFilled10" />
+	<property class="Action1">
+		<property name="Create_item" value="waterskinFilled6"/>
+	</property>
+</item>
+
+<item id="1406" name="waterskinFilled6">
+	<property name="Extends" value="waterskinFilled10" />
+	<property class="Action1">
+		<property name="Create_item" value="waterskinFilled5"/>
+	</property>
+</item>
+
+<item id="1407" name="waterskinFilled5">
+	<property name="Extends" value="waterskinFilled10" />
+	<property class="Action1">
+		<property name="Create_item" value="waterskinFilled4"/>
+	</property>
+</item>
+
+<item id="1408" name="waterskinFilled4">
+	<property name="Extends" value="waterskinFilled10" />
+	<property class="Action1">
+		<property name="Create_item" value="waterskinFilled3"/>
+	</property>
+</item>
+
+<item id="1409" name="waterskinFilled3">
+	<property name="Extends" value="waterskinFilled10" />
+	<property class="Action1">
+		<property name="Create_item" value="waterskinFilled2"/>
+	</property>
+</item>
+
+<item id="1410" name="waterskinFilled2">
+	<property name="Extends" value="waterskinFilled10" />
+	<property class="Action1">
+		<property name="Create_item" value="waterskinFilled1"/>
+	</property>
+</item>
+
+<item id="1411" name="waterskinFilled1">
+	<property name="Extends" value="waterskinFilled10" />
+	<property class="Action1">
+		<property name="Create_item" value="waterskin"/>
+	</property>
+</item>
+
+<item id="1412" name="waterFilter">
+	<property name="Meshfile" value="Items/Crafting/beaker"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="2"/>
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="EconomicValue" value="5"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+</item>
+
 
 <item id="1413" name="coffeeBeans">
 	<property name="Meshfile" value="Items/Food/seed_blueberryPrefab"/>

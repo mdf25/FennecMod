@@ -110,8 +110,114 @@
 
 		<reward type="SkillPoints" value="5" />
 		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
+		<reward type="Quest" id="quest_smelting_1" />
     </quest>
 
+	
+	
+	
+	
+	<!-- SMELTING QUESTS -->
+	<quest id="quest_smelting_1" name_key="quest_smelting_1" subtitle_key="quest_smelting_1_subtitle" description_key="quest_smelting_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_smelting_1_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="rockSmall"	value="40"	/>
+		<objective type="FetchKeep" 	id="clayLump"	value="40"	/>
+		<objective type="FetchKeep" 	id="wood"		value="120"	/>
+		<objective type="BlockPlace" 	id="firepit"	value="1"	/>
+		<reward type="Quest" id="quest_smelting_2" />
+	</quest>
+	
+	<quest id="quest_smelting_2" name_key="quest_smelting_2" subtitle_key="quest_smelting_2_subtitle" description_key="quest_smelting_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_smelting_2_offer" difficulty="easy">
+		<objective type="FetchKeep"	id="animalHide" 		value="20"  />
+		<objective type="FetchKeep" id="shortMetalPipe"	value="1"	/>
+		<objective type="FetchKeep" id="wood"			value="5"	/>
+		<objective type="FetchKeep"	id="bellows"			value="1"	/>
+		<reward type="Quest" id="quest_smelting_3" />
+	</quest>
+	
+	<quest id="quest_smelting_3" name_key="quest_smelting_3" subtitle_key="quest_smelting_3_subtitle" description_key="quest_smelting_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_smelting_3_offer" difficulty="easy">
+		<objective type="FetchKeep" id="charcoal"			value="2"	/>
+		<reward type="Quest" id="quest_smelting_4" />
+	</quest>
+	
+	<quest id="quest_smelting_4" name_key="quest_smelting_4" subtitle_key="quest_smelting_4_subtitle" description_key="quest_smelting_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_smelting_4_offer" difficulty="easy">
+		<objective type="FetchKeep" id="ingotMold"			value="1"	/>
+		<objective type="FetchKeep" id="ingotMoldHardened"	value="1"	/>	
+		<reward type="Quest" id="quest_smelting_5" />
+	</quest>
+	
+	<quest id="quest_smelting_5" name_key="quest_smelting_5" subtitle_key="quest_smelting_5_subtitle" description_key="quest_smelting_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_smelting_5_offer" difficulty="easy">
+		<objective type="FetchKeep" id="scrapCopper"		value="40"	/>
+		<objective type="FetchKeep" id="forgedCopper"		value="1"	/>
+		<reward type="Quest" id="quest_smelting_6" />
+	</quest>
+	
+	<quest id="quest_smelting_6" name_key="quest_smelting_6" subtitle_key="quest_smelting_6_subtitle" description_key="quest_smelting_6_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_smelting_6_offer" difficulty="easy">
+		<objective type="FetchKeep" id="forgedIron"			value="3"	/>
+		<objective type="FetchKeep" id="wood"				value="3"	/>
+		<objective type="FetchKeep" id="chisel"				value="1"	/>
+		<reward type="Quest" id="quest_smelting_7" />
+	</quest>
+	
+	<quest id="quest_smelting_7" name_key="quest_smelting_7" subtitle_key="quest_smelting_7_subtitle" description_key="quest_smelting_7_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_smelting_7_offer" difficulty="easy">
+		<objective type="FetchKeep" id="cobblestones"		value="50"	/>
+		<objective type="FetchKeep" id="bellows"				value="1"	/>
+		<objective type="FetchKeep" id="ingotMoldHardened"	value="2"	/>
+		<objective type="FetchKeep" id="forgedCopper"		value="15"	/>
+		<objective type="FetchKeep" id="charcoal"			value="20"	/>
+		<reward type="Quest" id="quest_smelting_8" />
+	</quest>
+	
+	<quest id="quest_smelting_8" name_key="quest_smelting_8" subtitle_key="quest_smelting_8_subtitle" description_key="quest_smelting_8_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_smelting_8_offer" difficulty="easy">
+		<objective type="BlockPlace" id="forge"				value="1" />
+		<reward type="Quest" id="quest_survivalism_1" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	
+	
+	<!-- SURVIVALISM -->
+	<quest id="quest_survivalism_1" name_key="quest_survivalism_1" subtitle_key="quest_survivalism_1_subtitle" description_key="quest_survivalism_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_survivalism_1_offer" difficulty="easy">
+		<objective type="FetchKeep" 	id="charcoal"		value="1"	/>
+		<objective type="FetchKeep" 	id="yuccaFibers"	value="10"	/>
+		<objective type="FetchKeep" 	id="crushedSand"	value="3"	/>
+		<objective type="FetchKeep"		id="waterFilter"	value="1"	/>
+		<reward type="Quest" id="quest_survivalism_2" />
+	</quest>
+	
+	<quest id="quest_survivalism_2" name_key="quest_survivalism_2" subtitle_key="quest_survivalism_2_subtitle" description_key="quest_survivalism_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_survivalism_2_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="waterFilter"		value="5"	/>
+		<objective type="FetchKeep"		id="bottledRiverWater"	value="5"	/>
+		<objective type="Craft"			id="bottledWater"		value="5"	/>
+		<reward type="Quest" id="quest_survivalism_3" />
+	</quest>
+	
+	<quest id="quest_survivalism_3" name_key="quest_survivalism_3" subtitle_key="quest_survivalism_3_subtitle" description_key="quest_survivalism_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_survivalism_3_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="animalHide"			value="3"	/>
+		<objective type="FetchKeep"		id="leather"			value="1"	/>
+		<objective type="FetchKeep"		id="yuccaFibers"		value="1"	/>
+		<objective type="FetchKeep"		id="waterFilter"		value="1"	/>
+		<objective type="FetchKeep"		id="waterskin"			value="1"	/>
+		<reward type="Quest" id="quest_survivalism_4" />
+	</quest>
+	
+	<quest id="quest_survivalism_4" name_key="quest_survivalism_4" subtitle_key="quest_survivalism_4_subtitle" description_key="quest_survivalism_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_survivalism_4_offer" difficulty="easy">
+		<objective type="FetchKeep"		id="waterskinFilled10"	value="1"	/>
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	
+	
+	
 	<!-- White River Citizen 1 - Journey to Settlement -->
 	
 	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">

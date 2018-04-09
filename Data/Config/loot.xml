@@ -164,9 +164,9 @@
 
 	<!-- Replace the lootYard with one of the following -->
 	<placeholder name="randomCarsHelper">
-		<block name="cntCar03SedanDamage2" prob="0.5"/>
-		<block name="cntCar03SedanDamage1" prob="0.1"/>
-		<block name="cntCar03SedanDamage0" prob="0.05"/>
+		<block name="cntCar03SedanDamage2" prob="0.3"/>
+		<block name="cntCar03SedanDamage1" prob="0.2"/>
+		<block name="cntCar03SedanDamage0" prob="0.15"/>
 	</placeholder>
 
 	<!-- Replace the lootYard with one of the following -->
@@ -249,14 +249,14 @@
 	</placeholder>
 
 	<placeholder name="lootWorkstationsHelper">
-		<block name="forge" prob="30"/>
+		<block name="forge" prob="10"/>
 		<block name="workbench" prob="30"/>
 		<block name="chemistryStation" prob="20"/>
 		<block name="cementMixer" prob="20"/>
 	</placeholder>
 
 	<placeholder name="lootWorkstationsBustedHelper">
-		<block name="forge" prob="1"/>
+		<block name="forge" prob="0.2"/>
 		<block name="cntCollapsedForge" prob="10"/>
 		<block name="workbench" prob="1"/>
 		<block name="cntCollapsedWorkbench" prob="10"/>
@@ -267,7 +267,7 @@
 	</placeholder>
 
 	<placeholder name="lootForgeBustedHelper">
-		<block name="forge" prob="1"/>
+		<block name="forge" prob="0.2"/>
 		<block name="cntCollapsedForge" prob="10"/>
 	</placeholder>
 	<placeholder name="lootWorkbenchBustedHelper">
@@ -286,16 +286,21 @@
 	<!-- Note that these cannot reference themselves -->
 	<placeholder name="lootConstructionSuppliesHelper">
 		<block name="cntLootCrateConstructionSupplies" prob="16"/>
+		<block name="cntLootCrateLabEquipment" />
+		<block name="cntLootCrateWorkingStiffs" />
 		<block name="cementMixer" prob="0.2"/>
 		<block name="cntCollapsedGeneratorbank" prob="0.25"/>
 		<block name="cntCollapsedBatterybank" prob="0.1"/>
 		<block name="cntLootCrateWorkingStiffs"/>
 		<block name="airConditioner"/>
 		<block name="cntOven"/>
+		<block name="cntLootCrateHero" prob="0.05" />
+		<!--
 		<block name="oilBarrel"/>
 		<block name="cntToilet01"/>
 		<block name="cntToilet02"/>
 		<block name="cntToilet03"/>
+		-->
 		<block name="sectionalLeatherCouchSofaCorner"/>
 		<block name="sectionalLeatherCouchSofaMiddle"/>
 		<block name="cntGraniteSink"/>
@@ -1025,10 +1030,13 @@
 	<item name="silverNugget" count="1,4"/> <!-- 250 -->
 	<item name="goldNugget" count="1,3" prob="0.3"/> <!-- 700 -->
 	<item name="rawDiamond" count="1,2" prob="0.1"/> <!-- 1500 -->
+	<item name="rawFadium" count="1" prob="0.1" />
+	<item name="rawFoxium" count="1" prob="0.1" />
 </lootgroup>
 
 <lootgroup name="junk">
-	<item name="chisel" count="1" prob="0.05" />
+	<item name="chisel" count="1" prob="0.1" />
+	<item name="weldingTorch" count="1" prob="0.05" />
 	<item name="ironArrowHead" count="10,30"/>
 	<item name="copperArrowHead" count="20,50" />
 	<item name="steelArrowHead" count="5,15" prob="0.05"/>
@@ -1231,6 +1239,7 @@
 	<item name="repairKit" count="1,4"/>
 	<item group="nailgun+parts"/>
 	<item group="rareTools"/>
+	<item name="forgedCopper" count="1,5" prob="0.83" />
 	<item name="forgedIron" count="1,4" prob="0.41"/>
 	<item name="forgedSteel" count="1,4" prob="0.22"/>
 	<item name="paintTool" prob="0.3"/>

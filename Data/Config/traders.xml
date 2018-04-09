@@ -619,7 +619,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="insulator" count="20,60" prob="0.6"/>
 		</trader_item_group>
 
+		<trader_item_group name="welding" count="all">
+			<item name="weldingTorch" count="1" />
+			<item name="weldingFuel"  count="200,1000" />
+		</trader_item_group>
+		
 		<trader_item_group name="rareTools" count="1">
+			<item group="welding" />
 			<item name="chainsaw"/>
 			<item name="auger" prob="0.3"/>
 			<item name="partsChainsaw_parts"/>
@@ -634,6 +640,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="tools" count="1">
+			<item name="chisel"/>
 			<item name="pickaxeIron"/>
 			<item name="shovelIron"/>
 			<item name="fireaxeIron"/>

@@ -310,6 +310,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="feather" count="1"/>
 </recipe>
 
+<recipe name="arrow" count="1">
+	<ingredient name="rockSmall" count="1"/>
+	<ingredient name="wood" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
+</recipe>
+
 <recipe name="asphalt" count="1" craft_area="cementMixer">
 	<ingredient name="crushedSand" count="8"/>
 	<ingredient name="rockSmall" count="17"/>
@@ -595,10 +601,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
 
+<!--
 <recipe name="hpBulletTip" count="1" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
 	<ingredient name="unit_lead" count="4"/>
 	<ingredient name="unit_clay" count="2"/>
 </recipe>
+-->
 
 <recipe name="forgedFadium" count="1" craft_area="laser_forge" material_based="true">
 	<ingredient name="unit_fadium" 	count="10" />
@@ -1331,8 +1339,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cobblestones" 		count="50" />
 	<ingredient name="bellows" 				count="1"  />
 	<ingredient name="ingotMoldHardened"	count="2"  />
-	<ingredient name="forgedCopper" 		count="20" />
-	<ingredient name="charcoal" 			count="30" />
+	<ingredient name="forgedCopper" 		count="15" />
+	<ingredient name="charcoal" 			count="20" />
+</recipe>
+
+<recipe name="chisel" count="1" >
+	<ingredient name="forgedIron"			count="3" />
+	<ingredient name="wood"					count="3" />
+</recipe>
+
+<recipe name="weldingFuel" count="100">
+	<ingredient name="gasCan"	 count="100" />
+	<ingredient name="oil"		 count="1"	 />
+	<ingredient name="gunPowder" count="5"   />
 </recipe>
 
 <recipe name="forgedIron" count="1" craft_area="forge" material_based="true">
@@ -3644,7 +3663,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="campfire" 	count="1" />
 	<ingredient name="rockSmall" 	count="40" />
 	<ingredient name="clayLump"		count="40" />
-	<ingredient name="wood"			count="200"/>
+	<ingredient name="wood"			count="120"/>
 </recipe>
 
 <recipe name="ingotMold" count="1">
@@ -4106,9 +4125,23 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rebarFrameBlock"			count="1"	/>
 </recipe>
 
+<recipe name="waterFilter" count="1">
+	<ingredient name="charcoal"		count="1" />
+	<ingredient name="yuccaFibers" 	count="10"/>
+	<ingredient name="crushedSand"  count="3" />
+</recipe>
 
+<recipe name="waterskin" count="1">
+	<ingredient name="animalHide" 	count="3" />
+	<ingredient name="leather"    	count="1" />
+	<ingredient name="yuccaFibers"	count="1" />
+	<ingredient name="waterFilter"	count="1" />
+</recipe>
 
-
+<recipe name="bottledWater" count="1">
+	<ingredient name="waterFilter" 			count="1" />
+	<ingredient name="bottledRiverWater"	count="1" />
+</recipe>
 
 </recipes>
 <!-- To do (maybe / later)

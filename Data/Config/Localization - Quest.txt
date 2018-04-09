@@ -669,6 +669,55 @@ quest_carpenter_5,,Quest Info,Reordered,"Carpenter: Quest 4/4",,,,
 quest_carpenter_5_subtitle,,Quest Info,Reordered,"Zombie Chainsaw Massacre",,,,
 quest_carpenter_5_offer,,Quest Info,Reordered,"Ever hear of the Texas Chainsaw Massacre? Recreate it, but with zombies. Yup, that's right! Take a blade to their faces and don't stop until you can't see the ground for body parts!",,,,
 
+quest_smelting_1,,Quest Info,Reordered,"The Quest for the Forge (1/8)",,,,
+quest_smelting_1_subtitle,,Quest Info,Reordered,"The Firepit",,,,
+quest_smelting_1_offer,,Quest Info,Reordered,"Before you are able to construct a forge hot enough to smelt iron, you will need to make do with a firepit. It's almost as simple to make as a campfire... Almost. Whilist it can't melt iron and is quite inefficient, you can use it to smelt down that scrap copper you find in the world...",,,,
+
+quest_smelting_2,,Quest Info,Reordered,"The Quest for the Forge (2/8)",,,,
+quest_smelting_2_subtitle,,Quest Info,Reordered,"Blowing Hot Air",,,,
+quest_smelting_2_offer,,Quest Info,Reordered,"In order for the firepit to reach maximum temperature you will need to get yourself a set of bellows to use with it. But, before you can do that you'll need to scavenge for a few items first and do some more hunting.",,,,
+
+quest_smelting_3,,Quest Info,Reordered,"The Quest for the Forge (3/8)",,,,
+quest_smelting_3_subtitle,,Quest Info,Reordered,"Hot Coals",,,,
+quest_smelting_3_offer,,Quest Info,Reordered,"Now that you've got a firepit and bellows, you can turn those wood logs you've been collecting into charcoal. Charcoal is a much better fuel source than the logs, and can be used in other things.",,,,
+
+quest_smelting_4,,Quest Info,Reordered,"The Quest for the Forge (4/8)",,,,
+quest_smelting_4_subtitle,,Quest Info,Reordered,"Metal Forming",,,,
+quest_smelting_4_offer,,Quest Info,Reordered,"You have a firepit and a hot enough temperature to smelt copper now, but no way to form it into ingots/ You will need to first find an ingot in the world and form some clay around it to get a basic shape. Try taking apart safes, munitions boxes and other things, or seek out a welding torch for increased harvest.",,,,
+
+quest_smelting_5,,Quest Info,Reordered,"The Quest for the Forge (5/8)",,,,
+quest_smelting_5_subtitle,,Quest Info,Reordered,"Copper!",,,,
+quest_smelting_5_offer,,Quest Info,Reordered,"Now you have an ingot mold ready to accept molten metal, you'll need to get yourself some scraps to melt down. Scrap copper can be found in junk or taking cars and certain electrical devices apart.",,,,
+
+quest_smelting_6,,Quest Info,Reordered,"The Quest for the Forge (6/8)",,,,
+quest_smelting_6_subtitle,,Quest Info,Reordered,"A Work of Art",,,,
+quest_smelting_6_offer,,Quest Info,Reordered,"To make a forge you need to get yourself some cobblestone. But you need a forge to make it. So we have a catch-22. But, you can make a chisel and use it on brick blocks to get yourself some cobblestone back...",,,,
+
+quest_smelting_7,,Quest Info,Reordered,"The Quest for the Forge (7/8)",,,,
+quest_smelting_7_subtitle,,Quest Info,Reordered,"Getting Materials",,,,
+quest_smelting_7_offer,,Quest Info,Reordered,"You now have all the things necessary to get materials for the forge. So, time to go out and get them!",,,,
+
+quest_smelting_8,,Quest Info,Reordered,"The Quest for the Forge (8/8)",,,,
+quest_smelting_8_subtitle,,Quest Info,Reordered,"Upgrades!",,,,
+quest_smelting_8_offer,,Quest Info,Reordered,"Now that you have the materials for the forge, time to craft and place it down! Forget about that old firepit, now you can use the forge instead. Though you may want to keep the firepit for charcoal...",,,,
+
+
+quest_survivalism_1,,Quest Info,Reordered,"Surviving the Wilds (1/4)",,,,
+quest_survivalism_1_subtitle,,Quest Info,Reordered,"Water Filtering",,,,
+quest_survivalism_1_offer,,Quest Info,Reordered,"Now that you can make charcoal, you can actually use it for more than just fuel! One such use is the filtration of water from the river. Time to make a water filter.",,,,
+
+quest_survivalism_2,,Quest Info,Reordered,"Surviving the Wilds (2/4)",,,,
+quest_survivalism_2_subtitle,,Quest Info,Reordered,"Drinkable Water on Demand",,,,
+quest_survivalism_2_offer,,Quest Info,Reordered,"So you've made some water filters, all you need to do now is grab some jars and fill it with some river water. Then, craft these murky water jars with your water filter (you will need to make more!) and presto, clean water!",,,,
+
+quest_survivalism_3,,Quest Info,Reordered,"Surviving the Wilds (3/4)",,,,
+quest_survivalism_3_subtitle,,Quest Info,Reordered,"A Waterskin! (1/2)",,,,
+quest_survivalism_3_offer,,Quest Info,Reordered,"Now you can make water filters, it's time to see if you can make yourself a waterskin to carry around greater quantities of water with you. All you need are some animal hides, and a bit of leather and fibers to tie the filter to the neck...",,,,
+
+quest_survivalism_4,,Quest Info,Reordered,"Surviving the Wilds (4/4)",,,,
+quest_survivalism_4_subtitle,,Quest Info,Reordered,"A Waterskin! (1/2)",,,,
+quest_survivalism_4_offer,,Quest Info,Reordered,"Now that you have a waterskin, you can go fill it up at your nearby water source! You can drink from a waterskin up to 10 times. Left clicking whilst the waterskin is partially filled will refill it completely. Go fill her up!",,,,
+
 
 requirementGroupKnife1,,Requirement Group,KgNone,"Holding a Stone Knife, Bone Shiv, Scrap Knife, or Hunting Knife",,,,
 requirementGroupBlunt1,,Requirement Group,KgNone,"Holding a Wooden or Iron Reinforced Club",,,,
