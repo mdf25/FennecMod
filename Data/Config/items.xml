@@ -2410,6 +2410,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="forgedSteel"/>
 	<property name="HoldType" value="20"/>
+	<property name="EconomicValue" value="1500"/>
 	<property name="SoundIdle" value="Auger_Idle"/>
 	<property name="Particles_muzzle_smoke" value="p_onFire"/>
 	<property class="Action0"> <!-- AttackAction -->
