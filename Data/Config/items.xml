@@ -10480,7 +10480,7 @@ Mesh files no longer used:
 <item id="1343" name="copperArrowHead">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="metal"/>
+	<property name="Material" value="copper"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="8"/>

@@ -1143,7 +1143,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<layer depth="1" blockname="stone" > <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer>
 				<layer depth="10" blockname="stone" >
 					<resource blockname="potassiumNitrate" cluster="1" prob="0.1130" rwgGenerationType="all" />
-					<resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all" />
+                    <resource blockname="uraniumOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+                    <resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all" />
 					<resource blockname="silverOre"  cluster="1" prob="0.00030" rwgGenerationType="all" />
 					<resource blockname="goldOre"    cluster="1" prob="0.00020" rwgGenerationType="all" />
 					<resource blockname="diamondOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
@@ -1205,8 +1206,9 @@ If you do not declare them, the decorations of the main biome are used.
 			</layer>
 			<layer depth="1" blockname="stone" > <resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all" /> </layer>
 			<layer depth="10" blockname="stone" >
-				<resource blockname="potassiumNitrate" cluster="1" prob="0.1130" rwgGenerationType="all" />
-				<resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all" />
+                <resource blockname="potassiumNitrate" cluster="1" prob="0.1130" rwgGenerationType="all" />
+                <resource blockname="uraniumOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+                <resource blockname="gravelPlusPotassium" cluster="1" prob="0.7" rwgGenerationType="all" />
 				<resource blockname="silverOre"  cluster="1" prob="0.00030" rwgGenerationType="all" />
 				<resource blockname="goldOre"    cluster="1" prob="0.00020" rwgGenerationType="all" />
 				<resource blockname="diamondOre" cluster="1" prob="0.00010" rwgGenerationType="all" />

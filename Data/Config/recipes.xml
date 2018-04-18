@@ -1602,12 +1602,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bioFuel"					count="1" />
 	<ingredient name="grainAlcohol"				count="1" />
 	<ingredient name="scrapPlastics"			count="3" />
-	<ingredient name="zincFragment" 			count="1" />
+	<ingredient name="groundZincDustPure" 		count="1" />
 </recipe>
 
 <recipe name="grainAlcohol" count="1" craft_area="chemistryStation">
-	<ingredient name="cornMeal" count="1"/>
-	<ingredient name="bottledRiverWater" count="1"/>
+	<ingredient name="cornMeal" 			count="1"/>
+	<ingredient name="bottledRiverWater" 	count="1"/>
 </recipe>
 
 <recipe name="grainAlcohol" count="1" craft_area="campfire" craft_tool="beaker">

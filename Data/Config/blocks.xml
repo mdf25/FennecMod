@@ -432,8 +432,8 @@ tbnsew:
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="96"/>
 	<property name="DropScale" value="2"/>
-	<drop event="Harvest" name="silverNugget" count="5,20" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="silverNugget" count="5"/>
+	<drop event="Harvest" name="silverNugget" count="2,3" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="silverNugget" count="1"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
 	<property name="CanMobsSpawnOn" value="true"/>
 </block>
@@ -536,8 +536,8 @@ tbnsew:
 
 <block id="29" name="goldOre">
 	<property name="Extends" value="silverOre" param1="Harvest"/>
-	<drop event="Harvest" name="goldNugget" count="4,12" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="goldNugget" count="3"/>
+	<drop event="Harvest" name="goldNugget" count="1,2" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="goldNugget" count="1"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
 </block>
 
@@ -617,8 +617,8 @@ tbnsew:
 
 <block id="34" name="diamondOre">
 	<property name="Extends" value="silverOre" param1="Harvest"/>
-	<drop event="Harvest" name="rawDiamond" count="2,10" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="rawDiamond" count="2" />
+	<drop event="Harvest" name="rawDiamond" count="1" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="rawDiamond" count="1" />
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
 </block>
 
@@ -1601,7 +1601,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="10"/>
-	<property name="EconomicBundleSize" value="20"/>
+	<property name="EconomicBundleSize" value="100"/>
 </block>
 
 <block id="149" name="woodFrameMaster">
@@ -1631,7 +1631,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="wood" count="1" prob="1"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.3" stick_chance="1"/>
 	<property name="EconomicValue" value="5"/>
-	<property name="EconomicBundleSize" value="20"/>
+	<property name="EconomicBundleSize" value="100"/>
 </block>
 
 <!-- ****************************  Main Blocks  **************************** -->
