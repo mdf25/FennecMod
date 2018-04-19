@@ -64,7 +64,7 @@
 		</effect>
 	</perk>
 	<perk name="BuilderQuickConcreteRecipe" icon="forge" description_key="BuilderQuickConcreteRecipeDesc" title_key="BuilderQuickConcreteRecipeName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science">
-		<requirement perk_level="1" required_skill_name="CrafterMastery" required_skill_level="2"/>
+		<requirement perk_level="1" required_skill_name="BuilderMastery" required_skill_level="2"/>
 		<recipe name="concreteMixQuick" unlock_level="1"/>
 	</perk>
 	
