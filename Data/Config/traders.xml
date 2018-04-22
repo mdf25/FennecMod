@@ -316,6 +316,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="antibiotics"/>
 			<item name="bloodDrawKit"/>
 			<item name="firstAidKitSchematic"/>
+			<item name="rabiesSyringe"/>
 		</trader_item_group>
 
 		<trader_item_group name="medicine" count="1">
@@ -534,6 +535,11 @@ quality_mod: adjusts the price range of all items with a quality level.
 		
 		<trader_item_group name="foodSupplies">
 			<item name="egg" count="2,6"/>
+			<item name="bottledMilk" count="5,10" />
+			<item name="bottledSoyaMilk" count="5,10" />
+			<item name="yoghurt" count="5,10" />
+			<item name="yoghurtBlueberry" count="5,10" />
+			<item name="yoghurtYucca" count="5,10" />
 			<item name="rawMeat" count="2,4"/>
 			<item name="corn" count="4,12"/>
 			<item name="potato" count="4,12"/>

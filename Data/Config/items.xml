@@ -1258,8 +1258,8 @@ Mesh files no longer used:
 		<property name="Delay" value="0.7"/>
 		<property name="DamageEntity" value="18"/>
 		<property name="DamageBlock" value="18"/>
-		<property name="Buff" value="bleeding,infection"/>
-		<property name="Buff_chance" value="0.3,0.2"/>
+		<property name="Buff" value="bleeding,infection,rabies0"/>
+		<property name="Buff_chance" value="0.3,0.2,0.04"/>
 		<property name="DamageBonus.earth" value="4"/>
 	</property>
 </item>
@@ -1502,8 +1502,8 @@ Mesh files no longer used:
 		<property name="Range" value="2"/>
 		<property name="DamageEntity" value="22"/>
 		<property name="DamageBlock" value="22"/>
-		<property name="Buff" value="bleeding"/>
-		<property name="Buff_chance" value="0.3"/>
+		<property name="Buff" value="bleeding,rabies0"/>
+		<property name="Buff_chance" value="0.3,0.1"/>
 		<property name="DamageBonus.earth" value="4"/>
 	</property>
 </item>
@@ -1941,7 +1941,7 @@ Mesh files no longer used:
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="5"/>
 	</property>
-	<property class="Action1"> <!-- UseAction -->
+	<!--<property class="Action1">
 		<property name="Class" value="Repair"/>
 		<property name="Delay" value="0.6"/>
 		<property name="Repair_amount" value="30"/>
@@ -1950,17 +1950,17 @@ Mesh files no longer used:
 		<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
 		<property name="Allowed_upgrade_items" value="hoeIron,dirtFragment,fertilizer"/>
 		<property name="ActionExp" value="0"/>
-	</property>
-	<!-- <property class="Action1">
+	</property>-->
+	<property class="Action1">
 		<property name="Class" value="MakeFertile"/>
-		<property name="Delay" value="2.1"/>
+		<property name="Delay" value="0.6"/>
 		<property name="Block_range" value="4"/>
 		<property name="DamageBlock" value="1"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Sound_end" value="repair_block"/>
 		<property name="Fertileblock" value="fertileFarmland"/>
 		<property name="Adjacentblock" value="dirt"/>
-	</property> -->
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,12"/>
 		<!-- clubWood 10.5 (42) DPS, clubIron 12 (48) DPS, clubBarbed 16 (82) DPS, clubSpiked 22 (135) DPS -->
@@ -1978,8 +1978,6 @@ Mesh files no longer used:
 
 <item id="123" name="fireaxeCopper">
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
-	<property name="CustomIcon" value="fireaxeIron" />
-	<property name="CustomIconTint" value="ad6920" />
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="17"/>
 	<property name="DegradationBreaksAfter" value="true"/>
@@ -2022,8 +2020,6 @@ Mesh files no longer used:
 
 <item id="124" name="pickaxeCopper">
 	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab"/>
-	<property name="CustomIcon" value="pickaxeIron" />
-	<property name="CustomIconTint" value="ad6920" />
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="32"/>
 	<property name="DegradationBreaksAfter" value="true"/>
@@ -2065,8 +2061,6 @@ Mesh files no longer used:
 
 <item id="125" name="shovelCopper">
 	<property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
-	<property name="CustomIcon" value="shovelIron" />
-	<property name="CustomIconTint" value="ad6920" />
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="18"/>
 	<property name="DegradationBreaksAfter" value="true"/>
@@ -2106,9 +2100,6 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="miningTip"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
-
-
-
 
 <item id="126" name="wrench">
 	<property name="Meshfile" value="Items/Tools/wrenchPrefab"/>
@@ -2346,11 +2337,11 @@ Mesh files no longer used:
 		<property name="UseMeleeCrosshair" value="true"/>
 		<property name="ToolCategory.harvestingTools" value="2" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="20"/>
-		<property name="ActionExp" value="1"/>
+		<property name="ActionExp" value="0"/>
 		<!-- xxx trains blade weapons SUPER fast but ActionExp cannot be set lower than 1 -->
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="ActionSkillGroup" value="Axes"/>
+	<!--<property name="ActionSkillGroup" value="Axes"/>-->
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
@@ -2397,10 +2388,10 @@ Mesh files no longer used:
 		<property name="UseMeleeCrosshair" value="true"/>
 		<property name="ToolCategory.harvestingTools" value="2" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="20"/>
-		<property name="ActionExp" value="1"/>
+		<property name="ActionExp" value="0"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<!--<property name="ActionSkillGroup" value="Mining Tools"/>-->
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
@@ -2412,6 +2403,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="20"/>
 	<property name="SoundIdle" value="Auger_Idle"/>
 	<property name="Particles_muzzle_smoke" value="p_onFire"/>
+	<property name="EconomicValue" value="1500" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Ranged"/>
 		<property name="Auto_fire" value="true"/>
@@ -2455,7 +2447,7 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="2,10"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<!--<property name="ActionSkillGroup" value="Construction Tools"/>-->
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
@@ -2528,6 +2520,188 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="PickupJournalEntry" value="paintingTip"/>
+</item>
+
+<item id="135" name="trowelIron">
+	<property name="Meshfile" value="Items/Tools/hoe_ironPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="forgedIron"/>
+	<property name="HoldType" value="50"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="24"/>
+	<property name="EconomicValue" value="200"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="6.5"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.earth" value="2"/>
+		<property name="DamageBonus.glass" value="0.2"/>
+		<property name="DamageBonus.stone" value="0"/>
+		<property name="DamageBonus.metal" value="0"/>
+		<property name="ActionExp" value="2"/>
+		<property name="ActionExpBonusMultiplier" value="1"/>
+		<property name="ToolCategory.Hoe" value="1"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="5"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.6"/>
+		<property name="Repair_amount" value="30"/>
+		<property name="Upgrade_hit_offset" value="-4"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
+		<property name="Allowed_upgrade_items" value="trowelIron,fertilizer"/>
+		<property name="ActionExp" value="0"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,12"/>
+		<!-- clubWood 10.5 (42) DPS, clubIron 12 (48) DPS, clubBarbed 16 (82) DPS, clubSpiked 22 (135) DPS -->
+		<property name="BlockDamage" value="10,20"/>
+		<property name="DegradationMax" value="200,1000"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.3,-0.15"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="PickupJournalEntry" value="farmingTip"/>
+	<property name="ActionSkillGroup" value="FarmingTools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item id="136" name="fireaxePigIron">
+	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="17"/>
+	<property name="RepairTools" value="forgedPigIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="FuelValue" value="30"/>
+	<property name="EconomicValue" value="180"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Range" value="2.1"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="6.41"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.head" value="2"/>
+		<property name="DamageBonus.glass" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.25"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.organic" value="1"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0.45" param1="10"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,10"/>
+		<property name="BlockDamage" value="23,46"/>
+		<property name="DegradationMax" value="200,700"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0,0.05"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Axes"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item id="137" name="pickaxePigIron">
+	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="32"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="RepairTools" value="forgedPigIron"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="FuelValue" value="30"/>
+	<property name="EconomicValue" value="180"/>
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="0.9"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="5.21"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.head" value="2"/>
+		<property name="DamageBonus.wood" value="0.2"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.organic" value="0.2"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="0.9"/>
+		<property name="ToolCategory.Chisel" value="1" param1="0.3" />
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="5,15"/>
+		<property name="BlockDamage" value="27,60.3"/>
+		<property name="DegradationMax" value="200,700"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.1,0"/>
+	</property>
+	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="PickupJournalEntry" value="miningTip"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item id="138" name="shovelPigIron">
+	<property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="18"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="RepairTools" value="forgedPigIron"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="30"/>
+	<property name="EconomicValue" value="180"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="6.71"/>
+		<property name="DamageBonus.earth" value="2"/>
+		<property name="DamageBonus.glass" value="0.5"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.wood" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.5"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.organic" value="0.7"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+		<property name="ActionExp" value="4"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="5,12.2"/>
+		<property name="BlockDamage" value="18,47"/> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
+		<property name="DegradationMax" value="200,700"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.1,0.05"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="PickupJournalEntry" value="miningTip"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
 <!-- * * * * * * * * * * bows, crossbows * * * * * * * * * * -->
@@ -4199,8 +4373,8 @@ Mesh files no longer used:
 <item id="364" name="animalHideBoots"> <!-- armorMasterHideArmor -->
 	<property name="Insulation" value="4"/>
 	<property name="Encumbrance" value="0.02"/>
-	<property name="Material" value="leather"/>
-	<property name="RepairTools" value="leather"/>
+	<property name="Material" value="animalHide"/>
+	<property name="RepairTools" value="animalHide"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="FuelValue" value="20"/>
 	<property name="EconomicValue" value="120"/>
@@ -5385,8 +5559,8 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="leather"/>
-	<property name="RepairTools" value="leather"/>
+	<property name="Material" value="animalHide"/>
+	<property name="RepairTools" value="animalHide"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="FuelValue" value="75"/>
 	<property name="EconomicValue" value="480"/>
@@ -7019,70 +7193,41 @@ Mesh files no longer used:
 	<property name="ActionExp" value="10"/>
 </item>
 
-<!-- dev item to test buff variables
-<item id="669" name="redPill">
+<item id="670" name="rabiesSyringe">
 	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="16"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="painkillers"/> <property name="CustomIconTint" value="ff4040"/>
-	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="140"/>
+	<property name="Stacknumber" value="50"/> <!-- STK loot -->
 	<property class="Action0">
 		<property name="Class" value="UseOther"/>
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
 		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="-10"/>
-		<property name="Gain_water" value="-10"/>
-		<property name="Gain_wellness" value="10"/>
-		<property name="Buff" value="redPillBuff"/>
+		<property name="Buff" value="cured"/>
+		<property name="Debuff" value="rabies0,rabies1,rabies2,rabies3"/>
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="-10"/>
-		<property name="Gain_water" value="-10"/>
-		<property name="Gain_wellness" value="10"/>
-		<property name="Buff" value="redPillBuff"/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Sound_start" value="player_blooddraw"/>
+		<property name="Buff" value="cured"/>
+		<property name="Debuff" value="rabies0,rabies1,rabies2,rabies3"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
+	<property name="ActionExp" value="10"/>
 </item>
-
-<item id="670" name="bluePill">
-	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
-	<property name="Material" value="organic"/>
-	<property name="HoldType" value="16"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="painkillers"/> <property name="CustomIconTint" value="4040ff"/>
-	<property name="SellableToTrader" value="false"/>
-	<property class="Action0">
-		<property name="Class" value="UseOther"/>
-		<property name="Delay" value="1.0"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="1000"/>
-		<property name="Gain_water" value="1000"/>
-		<property name="Gain_wellness" value="1000"/>
-		<property name="Buff" value="bluePillBuff"/>
-	</property>
-	<property class="Action1">
-		<property name="Class" value="Eat"/>
-		<property name="Delay" value="1.0"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_painkillers"/>
-		<property name="Gain_food" value="1000"/>
-		<property name="Gain_water" value="1000"/>
-		<property name="Gain_wellness" value="1000"/>
-		<property name="Buff" value="bluePillBuff"/>
-	</property>
-	<property name="ActionSkillGroup" value="Medicine"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="Group" value="Science"/>
-</item>-->
 
 <item id="671" name="brokenGlass"> <!-- scrap material -->
 	<property name="Meshfile" value="Items/Misc/brokenGlassPrefab"/>
@@ -7144,7 +7289,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="3"/>
-		<property name="Buff" value="eatFood_2_Trigger"/>
+		<property name="Buff" value="eatFood_2_Trigger,EatYuccaFruit,ConsumeFruit3"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_stamina" value="10"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7169,7 +7314,7 @@ Mesh files no longer used:
 		<property name="Gain_stamina" value="30"/>
 		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="yuccaJuiceCooling,extinguishFireBuff"/>
+		<property name="Buff" value="yuccaJuiceCooling,extinguishFireBuff,DrinkYuccaJuice,ConsumeFruit10"/>
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -7188,7 +7333,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="15"/>
-		<property name="Buff" value="eatFood_8_Trigger"/>
+		<property name="Buff" value="eatFood_8_Trigger,ConsumeMeats5"/>
 		<property name="Gain_water" value="-10"/>
 		<property name="Sound_start" value="player_eating"/>
 		<property name="Create_item" value="canEmpty"/>
@@ -7215,7 +7360,7 @@ Mesh files no longer used:
 		<property name="Delay" value="2.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeMeats3,ConsumeVegetables3"/>
 		<property name="Gain_water" value="-2"/>
 		<property name="Gain_gas" value="0"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7229,7 +7374,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/can_dogfoodPrefab"/>
 	<property class="Action1">
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeMeats5,ConsumeVegetables3"/>
 		<property name="Gain_water" value="-2"/>
 		<property name="Gain_gas" value="0"/>
 	</property>
@@ -7240,7 +7385,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/can_chiliPrefab"/>
 	<property class="Action1">
 		<property name="Gain_food" value="10"/>
-		<property name="Buff" value="eatFood_5_Trigger"/>
+		<property name="Buff" value="eatFood_5_Trigger,ConsumeVegetables5"/>
 		<property name="Gain_water" value="-5"/>
 		<property name="Gain_gas" value="0"/>
 	</property>
@@ -7252,7 +7397,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/can_misoPrefab"/>
 	<property class="Action1">
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeVegetables3,ConsumeDairy3"/>
 		<property name="Gain_water" value="10"/>
 	</property>
 </item>
@@ -7262,7 +7407,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/can_pastaPrefab"/>
 	<property class="Action1">
 		<property name="Gain_food" value="7"/>
-		<property name="Buff" value="eatFood_4_Trigger"/>
+		<property name="Buff" value="eatFood_4_Trigger,ConsumeDairy5"/>
 		<property name="Gain_water" value="0"/>
 	</property>
 </item>
@@ -7272,7 +7417,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/can_peasPrefab"/>
 	<property class="Action1">
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeVegetables5"/>
 		<property name="Gain_water" value="0"/>
 	</property>
 </item>
@@ -7282,7 +7427,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/can_pearsPrefab"/>
 	<property class="Action1">
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeFruit5"/>
 		<property name="Gain_water" value="10"/>
 	</property>
 </item>
@@ -7292,7 +7437,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/can_soupPrefab"/>
 	<property class="Action1">
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeMeats3,ConsumeVegetables3"/>
 		<property name="Gain_water" value="10"/>
 	</property>
 </item>
@@ -7312,7 +7457,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/can_tunaPrefab"/>
 	<property class="Action1">
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeMeats5"/>
 		<property name="Gain_water" value="-2"/>
 	</property>
 </item>
@@ -7330,7 +7475,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="7"/>
-		<property name="Buff" value="eatFood_4_Trigger"/>
+		<property name="Buff" value="eatFood_4_Trigger,ConsumeMeats5"/>
 		<property name="Gain_water" value="-5"/>
 		<property name="Sound_start" value="player_eating"/>
 		<property name="Create_item" value="canEmpty"/>
@@ -7343,7 +7488,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/can_salmonPrefab"/>
 	<property class="Action1">
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeMeats3"/>
 	</property>
 </item>
 
@@ -7358,7 +7503,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="-10"/>
 		<property name="Gain_stamina" value="-20"/>
 		<property name="Gain_wellness" value="-1"/>
-		<property name="Buff" value="eatSnowberryExtractTrigger"/>
+		<property name="Buff" value="eatSnowberryExtractTrigger,ConsumeFruit3"/>
 	</property>
 	<property name="Group" value="Science"/>
 </item>
@@ -7377,7 +7522,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="1"/>
-		<property name="Buff" value="eatFood_1_Trigger"/>
+		<property name="Buff" value="eatFood_1_Trigger,ConsumeGrain3"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
@@ -7396,7 +7541,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="3"/>
-		<property name="Buff" value="eatFood_2_Trigger"/>
+		<property name="Buff" value="eatFood_2_Trigger,ConsumeGrain3"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_stamina" value="2"/>
 		<property name="Gain_wellness" value="0.08"/>
@@ -7420,7 +7565,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="2"/>
-		<property name="Buff" value="eatFood_1_Trigger"/>
+		<property name="Buff" value="eatFood_1_Trigger,ConsumeGrain3"/>
 		<property name="Gain_water" value="-10"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
@@ -7440,9 +7585,9 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeGrain5"/>
 		<property name="Gain_water" value="0"/>
-		<property name="Gain_wellness" value="0.4"/>
+		<property name="Gain_wellness" value="0.05"/>
 		<property name="Sound_start" value="player_eating"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
@@ -7464,8 +7609,8 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="10"/>
-		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger"/>
-		<property name="Buff_chance" value="0.6,1"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger,ConsumeGrain3"/>
+		<property name="Buff_chance" value="0.6,1,1"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_sickness" value="30"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7492,8 +7637,8 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="15"/>
-		<property name="Buff" value="foodPoisoning,eatFood_4_Trigger"/>
-		<property name="Buff_chance" value="0.6,1"/>
+		<property name="Buff" value="foodPoisoning,eatFood_4_Trigger,ConsumeMeats5,ConsumeGrain3"/>
+		<property name="Buff_chance" value="0.6,1,1,1"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -7512,8 +7657,8 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="10"/>
-		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger"/>
-		<property name="Buff_chance" value="0.4,1"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger,ConsumeMeats3"/>
+		<property name="Buff_chance" value="0.4,1,1"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_stamina" value="0"/>
 		<property name="Gain_sickness" value="30"/>
@@ -7537,7 +7682,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="10"/>
-		<property name="Buff" value="foodPoisoning"/>
+		<property name="Buff" value="foodPoisoning,ConsumeMeats3"/>
 		<property name="Gain_water" value="-5"/>
 		<property name="Gain_stamina" value="-20"/>
 		<property name="Gain_sickness" value="30"/>
@@ -7561,7 +7706,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="10"/>
-		<property name="Buff" value="eatFood_9_Trigger"/>
+		<property name="Buff" value="eatFood_9_Trigger,ConsumeMeats5"/>
 		<property name="Gain_water" value="-5"/>
 		<property name="Gain_wellness" value="0.65"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7583,7 +7728,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="16"/>
-		<property name="Buff" value="eatFood_14_Trigger"/>
+		<property name="Buff" value="eatFood_14_Trigger,ConsumeMeats10"/>
 		<property name="Gain_water" value="-3"/>
 		<property name="Gain_wellness" value="1.35"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7605,7 +7750,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="12"/>
-		<property name="Buff" value="eatFood_9_Trigger"/>
+		<property name="Buff" value="eatFood_9_Trigger,ConsumeMeats5"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_wellness" value="0.675"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7627,12 +7772,12 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="60"/>
+		<property name="Gain_food" value="20"/>
 		<property name="Gain_water" value="0"/>
-		<property name="Gain_wellness" value="6"/>
+		<property name="Gain_wellness" value="0.5"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
-		<property name="Buff" value="stewWarming,eatFood_78_Trigger"/>
+		<property name="Buff" value="stewWarming,eatFood_78_Trigger,ConsumeMeats15,ConsumeVegetables10,ConsumeGrain10"/>
 	</property>
 	<property name="Smell" value="exLargeSmell"/>
 	<property name="Group" value="Food/Cooking"/>
@@ -7654,7 +7799,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="2"/>
-		<property name="Buff" value="eatFood_1_Trigger"/>
+		<property name="Buff" value="eatFood_1_Trigger,ConsumeVegetables3"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_wellness" value="0"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7676,7 +7821,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="1"/>
-		<property name="Buff" value="eatFood_1_Trigger"/>
+		<property name="Buff" value="eatFood_1_Trigger,ConsumeFruit3"/>
 		<property name="Gain_water" value="1"/>
 		<property name="Gain_wellness" value="0"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7697,7 +7842,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="3"/>
-		<property name="Buff" value="foodPoisoning,eatFood_1_Trigger"/>
+		<property name="Buff" value="foodPoisoning,eatFood_1_Trigger,ConsumeMeats3"/>
 		<property name="Buff_chance" value="0.4,1"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_stamina" value="-8"/>
@@ -7719,10 +7864,10 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="4"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeMeats3"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_stamina" value="0"/>
-		<property name="Gain_wellness" value="0.32"/>
+		<property name="Gain_wellness" value="0.05"/>
 		<property name="Sound_start" value="player_eating"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
@@ -7741,9 +7886,9 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="10"/>
-		<property name="Buff" value="eatFood_9_Trigger"/>
+		<property name="Buff" value="eatFood_9_Trigger,ConsumeFruit10,ConsumeDairy5,ConsumeGrain10"/>
 		<property name="Gain_water" value="0"/>
-		<property name="Gain_wellness" value="0.8"/>
+		<property name="Gain_wellness" value="0.2"/>
 		<property name="Sound_start" value="player_eating"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
@@ -7763,7 +7908,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="4"/>
-		<property name="Buff" value="eatFood_2_Trigger"/>
+		<property name="Buff" value="eatFood_2_Trigger,ConsumeVegetables3"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_wellness" value="0"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7784,8 +7929,8 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="16"/>
-		<property name="Buff" value="eatFood_15_Trigger"/>
-		<property name="Gain_wellness" value="1.35"/>
+		<property name="Buff" value="eatFood_15_Trigger,ConsumeMeats10"/>
+		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="largeSmell"/>
@@ -7807,7 +7952,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="5"/>
-		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeVegetables3"/>
 		<property name="Gain_water" value="1"/>
 		<property name="Gain_wellness" value="0"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7828,10 +7973,10 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="21"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="0.5"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="stewWarming,eatFood_12_Trigger"/>
+		<property name="Buff" value="stewWarming,eatFood_12_Trigger,ConsumeVegetables15"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -7881,8 +8026,10 @@ Mesh files no longer used:
 		<property name="Gain_stamina" value="20"/>
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="20"/>
+		<property name="Gain_sickness" value="1" />
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="extinguishFireBuff"/>
+		<property name="Buff" value="dysentery,extinguishFireBuff"/>
+		<property name="Buff_chance" value="0.2,1"/>
 		<property name="Create_item" value="canEmpty"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -7950,7 +8097,7 @@ Mesh files no longer used:
 		<property name="Gain_stamina" value="10"/>
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="10"/>
-		<property name="Buff" value="eatsnowberryJuiceTrigger,extinguishFireBuff"/>
+		<property name="Buff" value="eatsnowberryJuiceTrigger,extinguishFireBuff,ConsumeFruit5"/>
 	</property>
 	<property name="Group" value="Science"/>
 </item>
@@ -7969,7 +8116,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="20"/>
 		<property name="Gain_stamina" value="40"/>
-		<property name="Gain_wellness" value="0.2"/>
+		<property name="Gain_wellness" value="0.02"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="extinguishFireBuff"/>
 		<property name="Debuff" value="dysentery"/>
@@ -7992,7 +8139,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="20"/>
 		<property name="Gain_stamina" value="40"/>
-		<property name="Gain_wellness" value="0.2"/>
+		<property name="Gain_wellness" value="0.02"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="redTeaCooling,extinguishFireBuff"/>
 		<property name="Debuff" value="dysentery"/>
@@ -8035,7 +8182,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="-10"/>
 		<property name="Gain_stamina" value="100"/>
-		<property name="Gain_wellness" value="-0.1"/>
+		<property name="Gain_wellness" value="-0.02"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="CoffeeStaminaBoost,extinguishFireBuff"/>
 		<property name="Create_item" value="emptyJar"/>
@@ -8080,7 +8227,7 @@ Mesh files no longer used:
 		<property name="Gain_stamina" value="10"/>
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="-5"/>
-		<property name="Gain_wellness" value="-0.5"/>
+		<property name="Gain_wellness" value="-0.25"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="DrinkGrainAlcohol,extinguishFireBuff"/>
 		<property name="Create_item" value="emptyJar"/>
@@ -8103,7 +8250,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="20"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats5,ConsumeGrain5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8124,7 +8271,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="20"/>
 		<property name="Gain_wellness" value="0.8"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood1,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood1,eatFood_20_Trigger,ConsumeMeats10,ConsumeGrain10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8145,7 +8292,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="20"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats5,ConsumeVegetables5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8166,7 +8313,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="20"/>
 		<property name="Gain_wellness" value="0.8"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood2,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood2,eatFood_20_Trigger,ConsumeMeats10,ConsumeVegetables10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8187,7 +8334,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="25"/>
 		<property name="Gain_wellness" value="0.5"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeVegetables10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8208,7 +8355,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="25"/>
 		<property name="Gain_wellness" value="1.0"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood2,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood2,eatFood_20_Trigger,ConsumeVegetables15"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8229,7 +8376,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="15"/>
 		<property name="Gain_wellness" value="0.2"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats5,ConsumeVegetables3"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8250,7 +8397,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="15"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood1,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood1,eatFood_20_Trigger,ConsumeMeats10,ConsumeVegetables5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8271,7 +8418,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="0.6"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeVegetables10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8292,7 +8439,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="1.2"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood1,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood1,eatFood_20_Trigger,ConsumeVegetables15"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8313,7 +8460,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="5"/>
 		<property name="Gain_wellness" value="0"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeVegetables5,ConsumeGrain3,ConsumeMeats5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8334,7 +8481,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="5"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood2,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood2,eatFood_20_Trigger,ConsumeVegetables10,ConsumeGrain5,ConsumeMeats10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8355,7 +8502,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="5"/>
 		<property name="Gain_wellness" value="0.3"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats5,ConsumeVegetables5,ConsumeDairy5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8376,7 +8523,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="5"/>
 		<property name="Gain_wellness" value="0.6"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood3,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood3,eatFood_20_Trigger,ConsumeMeats10,ConsumeVegetables10,ConsumeDairy10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8397,7 +8544,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-10"/>
 		<property name="Gain_wellness" value="0.2"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats5,ConsumeDairy5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8418,7 +8565,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-5"/>
 		<property name="Gain_wellness" value="0.6"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood1,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood1,eatFood_20_Trigger,ConsumeMeats10,ConsumeDairy10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8439,7 +8586,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-5"/>
 		<property name="Gain_wellness" value="0.2"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeVegetables10,ConsumeMeats5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8460,7 +8607,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-5"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood3,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood3,eatFood_20_Trigger,ConsumeVegetables15,ConsumeMeats10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8481,7 +8628,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="1.5"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats10,ConsumeVegetables5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8502,7 +8649,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="3.0"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood2,eatFood_78_Trigger"/>
+		<property name="Buff" value="tastyFood2,eatFood_78_Trigger,ConsumeMeats15,ConsumeVegetables10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8523,7 +8670,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="1.5"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats10,ConsumeVegetables5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8544,7 +8691,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="3.0"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood1,eatFood_78_Trigger"/>
+		<property name="Buff" value="tastyFood1,eatFood_78_Trigger,ConsumeMeats15,ConsumeVegetables10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8565,7 +8712,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="1.0"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats10,ConsumeVegetables5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8586,7 +8733,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="2.0"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood2,eatFood_78_Trigger"/>
+		<property name="Buff" value="tastyFood2,eatFood_78_Trigger,ConsumeMeats15,ConsumeVegetables10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8607,7 +8754,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-5"/>
 		<property name="Gain_wellness" value="2.0"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats5,ConsumeVegetables10,ConsumeDairy5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8628,7 +8775,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-5"/>
 		<property name="Gain_wellness" value="4.5"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood3,eatFood_78_Trigger"/>
+		<property name="Buff" value="tastyFood3,eatFood_78_Trigger,ConsumeMeats10,ConsumeVegetables15,ConsumeDairy10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8649,7 +8796,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="40"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatSnowberryTrigger,eatFood_12_Trigger"/>
+		<property name="Buff" value="eatSnowberryTrigger,eatFood_12_Trigger,ConsumeFruit10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8670,7 +8817,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="40"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood1,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood1,eatFood_20_Trigger,ConsumeFruit15"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8692,7 +8839,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-5"/>
 		<property name="Gain_wellness" value="0.05"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats10,ConsumeVegetables5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8713,7 +8860,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_wellness" value="0.25"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood2,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood2,eatFood_20_Trigger,ConsumeMeats15,ConsumeVegetables5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8734,7 +8881,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="20"/>
 		<property name="Gain_wellness" value="0"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="eatFood_12_Trigger"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeMeats10,ConsumeVegetables5"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8755,7 +8902,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="20"/>
 		<property name="Gain_wellness" value="1.2"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="tastyFood2,eatFood_20_Trigger"/>
+		<property name="Buff" value="tastyFood2,eatFood_20_Trigger,ConsumeMeats15,ConsumeVegetables10"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -8773,6 +8920,898 @@ Mesh files no longer used:
 	<property name="CraftingIngredientTime" value="15"/>
 	<property name="Group" value="Food/Cooking"/>
 </item>
+
+<item id="822" name="bottledBoiledWater">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="5"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="15"/>
+		<property name="Gain_sickness" value="1"/>
+		<property name="Gain_wellness" value="-0.02"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="dysentery,extinguishFireBuff"/>
+		<property name="Buff_chance" value="0.1,1"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="823" name="bottledMilk">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="25"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="25"/>
+		<property name="Gain_wellness" value="0.1"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeDairy5"/>
+		<property name="Create_item" value="emptyBottle"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="824" name="yoghurt">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="10"/>
+		<property name="Gain_stamina" value="10"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Gain_water" value="5"/>
+		<property name="Gain_wellness" value="0.1"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeDairy5"/>
+		<property name="Create_item" value="emptyBottle"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="825" name="yoghurtBlueberry">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="10"/>
+		<property name="Gain_stamina" value="30"/>
+		<property name="Gain_food" value="20"/>
+		<property name="Gain_water" value="15"/>
+		<property name="Gain_wellness" value="0.2"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeDairy5,ConsumeFruit5"/>
+		<property name="Create_item" value="emptyBottle"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="826" name="yoghurtYucca">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="10"/>
+		<property name="Gain_stamina" value="30"/>
+		<property name="Gain_food" value="20"/>
+		<property name="Gain_water" value="15"/>
+		<property name="Gain_wellness" value="0.2"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeDairy5,ConsumeDairy5"/>
+		<property name="Create_item" value="emptyBottle"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="827" name="yoghurtMixedFruit">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="20"/>
+		<property name="Gain_stamina" value="40"/>
+		<property name="Gain_food" value="25"/>
+		<property name="Gain_water" value="15"/>
+		<property name="Gain_wellness" value="0.3"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeDairy10,ConsumeFruit15"/>
+		<property name="Create_item" value="emptyBottle"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="828" name="cheese">
+	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_food" value="5"/>
+		<property name="Gain_water" value="-1"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Buff" value="ConsumeDairy5"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="829" name="soyabean">
+	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_food" value="2"/>
+		<property name="Gain_water" value="1"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Buff" value="ConsumeVegetables3"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="830" name="bottledSoyaMilk">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="25"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="20"/>
+		<property name="Gain_wellness" value="0.1"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeDairy3,ConsumeVegetables3"/>
+		<property name="Create_item" value="emptyBottle"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="840" name="rawRabbitMeat">
+	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger,ConsumeMeats3"/>
+		<property name="Buff_chance" value="0.7,1,1"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="841" name="rawChickenMeat">
+	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger,ConsumeMeats3"/>
+		<property name="Buff_chance" value="1,1,1"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="842" name="rawVenisonMeat">
+	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger,ConsumeMeats3"/>
+		<property name="Buff_chance" value="0.1,1,1"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="843" name="rawBearMeat">
+	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger,ConsumeMeats3"/>
+		<property name="Buff_chance" value="0.1,1,1"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="844" name="rawBoarMeat">
+	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="6"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger,ConsumeMeats3"/>
+		<property name="Buff_chance" value="0.1,1,1"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="845" name="rawWolfMeat">
+	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger,ConsumeMeats3"/>
+		<property name="Buff_chance" value="0.1,1,1"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="846" name="rawSnakeMeat">
+	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="2"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeMeats3"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+
+
+<item id="847" name="charredRabbitMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="848" name="charredChickenMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="849" name="charredVenisonMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="850" name="charredBearMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats10"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="851" name="charredBoarMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="6"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="852" name="charredWolfMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="853" name="charredSnakeMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="2"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats3"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+
+
+<item id="854" name="boiledRabbitMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="856" name="boiledChickenMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="857" name="boiledVenisonMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="858" name="boiledBearMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats10"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="859" name="boiledBoarMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="6"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="860" name="boiledWolfMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="861" name="boiledSnakeMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="2"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats3"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+
+
+<item id="862" name="grilledRabbitMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="863" name="grilledChickenMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="864" name="grilledVenisonMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="865" name="grilledBearMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats10"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="866" name="grilledBoarMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="6"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="867" name="grilledWolfMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="868" name="grilledSnakeMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="2"/>
+		<property name="Buff" value="eatFood_7_Trigger,ConsumeMeats3"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+
 
 <!-- * * * * * * * * * * recipes, books, and schematics * * * * * * * * * * -->
 
@@ -9405,6 +10444,71 @@ Mesh files no longer used:
 		<property name="Skills_to_gain" value="Steel Smithing"/>
 	</property>
 </item>
+
+<item id="1036" name="generatorBankSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="generatorBankSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="electricGeneratorPerk"/>
+	</property>
+</item>
+
+<item id="1037" name="forgeAheadSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="forgeAheadSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="ForgeAhead"/>
+	</property>
+</item>
+
+<item id="1038" name="ironcladSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="ironcladSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Ironclad"/>
+	</property>
+</item>
+
+<item id="1039" name="rebarSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="rebarSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="RebarManual"/>
+	</property>
+</item>
+
+<item id="1040" name="glassworkingSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="glassworkingSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Glassworking"/>
+	</property>
+</item>
+
+<item id="1041" name="glassworkingBusinessSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="glassworkingBusinessSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="GlassworkingBusiness"/>
+	</property>
+</item>
+
+<item id="1042" name="glassworkingBulletproofSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="glassworkingBulletproofSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="GlassworkingBulletproof"/>
+	</property>
+</item>
+
+
 
 <!-- Specialization papers -->
 <item id="1049" name="classPaperMaster">
@@ -10041,7 +11145,7 @@ Mesh files no longer used:
 <item id="1312" name="animalHide">
 	<property name="Meshfile" value="Items/Crafting/animal_hidePrefab"/>
 	<property name="HoldType" value="21"/>
-	<property name="Material" value="leather"/>
+	<property name="Material" value="animalHide"/>
 	<property name="Weight" value="5"/>
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
@@ -10479,7 +11583,7 @@ Mesh files no longer used:
 <item id="1343" name="copperArrowHead">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="metal"/>
+	<property name="Material" value="copper"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="8"/>
@@ -11297,7 +12401,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_stamina" value="20"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="20"/>
+		<property name="Gain_water" value="50"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="extinguishFireBuff"/>
 		<property name="Create_item" value="waterskinFilled9"/>
@@ -11373,7 +12477,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="2"/>
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
-	<property name="EconomicValue" value="5"/>
+	<property name="EconomicValue" value="2"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Resources"/>
 </item>
@@ -11398,6 +12502,47 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="50"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+
+<item id="1415" name="leadFragment">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="ironFragment" />
+	<property name="CustomIconTint" value="676a70" />
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="1200"/> <!-- STK resource -->
+	<property name="SellableToTrader" value="false"/>
+	<property name="HoldType" value="45"/>
+	<property name="DropScale" value="3"/>
+	<property name="EconomicValue" value="25"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item id="1416" name="forgedPigIron">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Miron"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="12"/>
+	<property name="CraftingIngredientExp" value="10"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property name="RepairTime" value="0.5"/>
+	<property name="RepairAmount" value="270"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item id="1429" name="emptyBottle">
+	<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="CraftingIngredientTime" value="9"/>
+	<property name="Group" value="Resources"/>
 </item>
 
 <item id="1430" name="candle">
@@ -11639,6 +12784,80 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 
+<item id="1451" name="leatherStrips"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Crafting/leather"/>
+	<property name="Material" value="leather"/>
+	<property name="RepairAmount" value="80"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="FuelValue" value="5"/>
+	<property name="EconomicValue" value="22"/>
+	<property name="Group" value="Resources,Clothing"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<property name="Weight" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+</item>
+
+<item id="1452" name="string"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Crafting/leather"/>
+	<property name="Material" value="cloth"/>
+	<property name="RepairAmount" value="80"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="FuelValue" value="5"/>
+	<property name="EconomicValue" value="22"/>
+	<property name="Group" value="Resources,Clothing"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<property name="Weight" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+</item>
+
+<item id="1453" name="vegetableOil">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Weight" value="10"/>
+	<property name="Stacknumber" value="15"/> <!-- STK resource -->
+	<property name="EconomicValue" value="48"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="5"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="-10"/>
+		<property name="Gain_wellness" value="-0.1"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Chemicals"/>
+</item>
+
+<item id="1454" name="vegetableFerment">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Weight" value="10"/>
+	<property name="Stacknumber" value="15"/> <!-- STK resource -->
+	<property name="EconomicValue" value="48"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="-5"/>
+		<property name="Gain_stamina" value="5"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="-15"/>
+		<property name="Gain_wellness" value="-0.3"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="DrinkBeer,extinguishFireBuff"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Chemicals"/>
+</item>
+
 <item id="1460" name="unit_iron">
 	<property name="CustomIcon" value="scrapIron"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -11785,6 +13004,10 @@ Mesh files no longer used:
 </item>
 
 <item id="1510" name="seedPacketAloe">
+	<property name="Extends" value="paper" />
+</item>
+
+<item id="1510" name="seedPacketSoybean">
 	<property name="Extends" value="paper" />
 </item>
 
@@ -11957,8 +13180,6 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
 </item>
-
-
 
 <!--
 <item id="1501" name="superWrench">

@@ -669,13 +669,21 @@ quest_carpenter_5,,Quest Info,Reordered,"Carpenter: Quest 4/4",,,,
 quest_carpenter_5_subtitle,,Quest Info,Reordered,"Zombie Chainsaw Massacre",,,,
 quest_carpenter_5_offer,,Quest Info,Reordered,"Ever hear of the Texas Chainsaw Massacre? Recreate it, but with zombies. Yup, that's right! Take a blade to their faces and don't stop until you can't see the ground for body parts!",,,,
 
+
+
+quest_surviving_1,,Quest Info,Reordered,"Partially drinkable water...",,,,
+quest_surviving_1_subtitle,,Quest Info,Reordered,"Boiling Water",,,,
+quest_surviving_1_offer,,Quest Info,Reordered,"As a survivor your first priority is going to be food and water - well, food isn't TOO hard to find, but water is definitely going to be difficult. You can boil water to get most of the impurities out, but it's still not 100% safe. Best make sure you keep vitamins handy to remove any nasty dysentery.",,,,
+
+
+
 quest_smelting_1,,Quest Info,Reordered,"The Quest for the Forge (1/8)",,,,
 quest_smelting_1_subtitle,,Quest Info,Reordered,"The Firepit",,,,
 quest_smelting_1_offer,,Quest Info,Reordered,"Before you are able to construct a forge hot enough to smelt iron, you will need to make do with a firepit. It's almost as simple to make as a campfire... Almost. Whilist it can't melt iron and is quite inefficient, you can use it to smelt down that scrap copper you find in the world...",,,,
 
 quest_smelting_2,,Quest Info,Reordered,"The Quest for the Forge (2/8)",,,,
 quest_smelting_2_subtitle,,Quest Info,Reordered,"Blowing Hot Air",,,,
-quest_smelting_2_offer,,Quest Info,Reordered,"In order for the firepit to reach maximum temperature you will need to get yourself a set of bellows to use with it. But, before you can do that you'll need to scavenge for a few items first and do some more hunting.",,,,
+quest_smelting_2_offer,,Quest Info,Reordered,"In order for the firepit to reach maximum temperature you will need to get yourself a set of bellows to use with it. But, before you can do that you'll need to scavenge for a few items first. Making leather from scraps or hides is very difficult at this point, so perhaps you could trade for some instead, or use a workbench to patch up those strips you find, if you were lucky enough to find one...",,,,
 
 quest_smelting_3,,Quest Info,Reordered,"The Quest for the Forge (3/8)",,,,
 quest_smelting_3_subtitle,,Quest Info,Reordered,"Hot Coals",,,,
@@ -683,7 +691,7 @@ quest_smelting_3_offer,,Quest Info,Reordered,"Now that you've got a firepit and 
 
 quest_smelting_4,,Quest Info,Reordered,"The Quest for the Forge (4/8)",,,,
 quest_smelting_4_subtitle,,Quest Info,Reordered,"Metal Forming",,,,
-quest_smelting_4_offer,,Quest Info,Reordered,"You have a firepit and a hot enough temperature to smelt copper now, but no way to form it into ingots/ You will need to first find an ingot in the world and form some clay around it to get a basic shape. Try taking apart safes, munitions boxes and other things, or seek out a welding torch for increased harvest.",,,,
+quest_smelting_4_offer,,Quest Info,Reordered,"You have a firepit and a hot enough temperature to smelt copper now, but no way to form it into ingots. You will need to first find an ingot in the world and form some clay around it to get a basic shape. Try taking apart safes, munitions boxes and other things, or seek out a welding torch for increased harvest.",,,,
 
 quest_smelting_5,,Quest Info,Reordered,"The Quest for the Forge (5/8)",,,,
 quest_smelting_5_subtitle,,Quest Info,Reordered,"Copper!",,,,
@@ -695,7 +703,7 @@ quest_smelting_6_offer,,Quest Info,Reordered,"To make a forge you need to get yo
 
 quest_smelting_7,,Quest Info,Reordered,"The Quest for the Forge (7/8)",,,,
 quest_smelting_7_subtitle,,Quest Info,Reordered,"Getting Materials",,,,
-quest_smelting_7_offer,,Quest Info,Reordered,"You now have all the things necessary to get materials for the forge. So, time to go out and get them!",,,,
+quest_smelting_7_offer,,Quest Info,Reordered,"You now have all the things necessary to get materials for the forge. So, time to go out and get them! Whilst you're out there, see if you can get a forging recipe book as well, since you will need this to make the forge. However if you're not so lucky you can buy the perk.",,,,
 
 quest_smelting_8,,Quest Info,Reordered,"The Quest for the Forge (8/8)",,,,
 quest_smelting_8_subtitle,,Quest Info,Reordered,"Upgrades!",,,,
@@ -730,11 +738,9 @@ requirementGroupAxes1,,Requirement Group,KgNone,"Holding any Fireaxe",,,,
 
 
 
+survivalTip,,Popup Tip,EnChanged,"In order for you to stay healthy and gain much wellness, you will need to consume fruit, veggies, meat, grains and dairy foods. You will need to make sure you don't become deficient in any of these groups otherwise you'll start to become lethargic and sluggish. But, maintaining a good balance will give you wellness over time.",,,,
 
-
-
-
-
+poopingTip,,Popup Tip,EnChanged,"As you eat, you may find that your digestive system catches up with you. If you ever feel the need to answer a call of nature, a toilet should come in very handy.",,,,
 
 
 

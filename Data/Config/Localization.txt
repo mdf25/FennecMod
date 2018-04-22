@@ -725,7 +725,7 @@ woodHatch1_v1Desc,blocks,Block,KgNone,Press & hold [activate] to lock it or set 
 woodHatch1_v2,blocks,Block,KgNone,Wood Hatch1 v2,Trappe en bois 1 v2,Holzklappe 1 v2,,Escotilla 1 de madera v2
 woodHatch1_v3,blocks,Block,KgNone,Wood Hatch1 v3,Trappe en bois 1 v3,Holzklappe 1 v3,,Escotilla 1 de madera v3
 woodLogPillar100,blocks,Block,KgNone,Wood Log,Rondin de bois,Holzklotz,,Tronco de madera
-woodLogPillar100Desc,blocks,Block,KgNone,Wood logs are good for crude walls to place spikes on top of.,Les rondins de bois servent à construire des murs sommaires. Vous pouvez également placer des piques au sommet.,"Holzklötze eignen sich für einfache Mauern, um darauf Stacheln zu platzieren.",,Los troncos de madera son útiles para construir paredes en las que colocar pinchos.
+woodLogPillar100Desc,blocks,Block,KgNone,Wood logs are good for crude walls to place spikes on top of. The carpenter class will be able to use logs directly in the carpenter's workbench to make spikes, wood, and planks. Or just place it down and chop it manually for extra wood.,Les rondins de bois servent à construire des murs sommaires. Vous pouvez également placer des piques au sommet.,"Holzklötze eignen sich für einfache Mauern, um darauf Stacheln zu platzieren.",,Los troncos de madera son útiles para construir paredes en las que colocar pinchos.
 woodPillar100,blocks,Block,KgNone,Wood Pillar 100,Pilier 100 en bois,Holzsäule 100,,Pilar de madera 100
 woodPillar100Desc,blocks,Block,KgNone,A pillar to build a strong fence or a temple.,Un pilier pouvant servir à construire une clôture solide ou un temple.,Eine Säule für einen stabilen Zaun oder einen Tempel.,,Un pilar para construir una valla resistente o un templo.
 woodPlate,blocks,Block,KgNone,Wood Plate,Plaque en bois,Holzplatte,,Placa de madera
@@ -1418,13 +1418,13 @@ blueberryPieDesc,items,Food,KgNone,This homemade blueberry pie is nutritious and
 boiledMeat,items,Food,KgNone,Boiled Meat,Viande bouillie,Gekochtes Fleisch,,Carne cocida
 boiledMeatDesc,items,Food,EnChanged,"While not as yummy as grilled meat, boiling is an efficient way to prepare a meal.","Bien qu'elle ait moins de goût que la viande grillée, la viande bouillie attire moins l'attention des zombies.",Es ist zwar nicht so lecker wie gegrilltes Wildbret aber mindestens so nahrhaft.,,"Aunque no sabe igual de bien que a la parrilla, la carne cocida es prácticamente imperceptible para los zombis."
 bottledRiverWater,items,Food,KgNone,Bottled Murky Water,Eau trouble en bouteille,Flasche trübes Wasser,,Agua turbia embotellada
-bottledRiverWaterDesc,items,Food,KgNone,Disgusting murky water but it's the apocalypse. You can't be picky. Boil at a campfire to purify it.,"De l'eau trouble dégoutante. Mais bon, c'est l'apocalypse. Ne faites pas la fine bouche. Faites-la bouillir sur un feu de camp pour la purifier.","Ekliges trübes Wasser, aber es ist die Apokalypse. Da darf man nicht wählerisch sein. Koch das Wasser am Lagerfeuer, damit es trinkbar wird.",,"Asquerosa agua turbia, pero estamos en el apocalipsis. ¡No puedes ponerte quisquilloso! Hiérvela en una fogata para purificarla."
+bottledRiverWaterDesc,items,Food,KgNone,Disgusting murky water but it's the apocalypse. You can't be picky. Boil at a campfire to get most of the bacteria out of it, then purify using a filter or at the Chemistry Station to make it totally safe to drink.,"De l'eau trouble dégoutante. Mais bon, c'est l'apocalypse. Ne faites pas la fine bouche. Faites-la bouillir sur un feu de camp pour la purifier.","Ekliges trübes Wasser, aber es ist die Apokalypse. Da darf man nicht wählerisch sein. Koch das Wasser am Lagerfeuer, damit es trinkbar wird.",,"Asquerosa agua turbia, pero estamos en el apocalipsis. ¡No puedes ponerte quisquilloso! Hiérvela en una fogata para purificarla."
 bottledWater,items,Food,KgNone,Bottled Water,Eau en bouteille,Flasche Wasser,,Agua embotellada
 bottledWaterDesc,items,Food,KgNone,Fresh bottled water. Well as fresh as you can get in the apocalypse.,"De l'eau fraîche en bouteille. Enfin, aussi fraîche qu'elle puisse l'être en période d'apocalypse.","Eine Flasche mit frischem Wasser. Na ja, so frisch, wie es während der Apokalypse geht.",,"Agua fresca embotellada. Bueno, tan fresca como puede ser en el apocalipsis."
 canBeef,items,Food,KgNone,Large Beef Ration,Grande ration de bœuf,Große Rindfleisch-Ration,,Gran porción de ternera
 canBeefDesc,items,Food,KgNone,It's not from your favorite steakhouse but this can of beef will fill you up. Bon appetit!,"Ça ne provient pas de votre restaurant à viandes préféré, mais ça vous remplira l'estomac. Bon appétit !","Dein Lieblings-Steakhouse ist es nicht, aber diese Dose Rindfleisch wird deinen Bauch füllen. Guten Appetit!",,"No es de tu asador favorito, pero te saciará. ¡Buen provecho!"
 canBoiledWater,items,Food,KgNone,Boiled Water,Eau bouillie,Konserve mit Wasser,,Agua hervida
-canBoiledWaterDesc,items,Food,KgNone,Boiled water is safe to drink. Probably.,L'eau bouillie est potable. Sûrement.,Gekochtes Wasser kann bedenkenlos getrunken werden. Wahrscheinlich.,,El agua hervida es segura. Probablemente.
+canBoiledWaterDesc,items,Food,KgNone,"Boiling water in a dirty or used tin can you found laying around... Better be prepared for a long night in Poopersville if it doesn't go right.",L'eau bouillie est potable. Sûrement.,Gekochtes Wasser kann bedenkenlos getrunken werden. Wahrscheinlich.,,El agua hervida es segura. Probablemente.
 canCatfood,items,Food,KgNone,Can of Cat Food,Conserve de pâtée pour chat,Dose Katzenfutter,,Lata de comida para gatos
 canCatfoodDesc,items,Food,KgNone,"A can of Meow Chow is a delicacy. For cats. You are not eating this, are you?","Cette nourriture est un mets délicat. Pour les chats. Vous n'allez pas en manger, n'est-ce pas ?","Eine Dose mit Katzenfutter ist eine Delikatesse. Für Katzen. Du hast nicht vor, das zu essen, oder?",,"Una lata de Whiskas es un deleite. Para gatos. No te la vas a comer, ¿o sí?"
 canChicken,items,Food,KgNone,Chicken Ration,Ration de poulet,Hühnchen-Ration,,Porción de pollo
@@ -1772,7 +1772,7 @@ fireaxeIronDesc,items,Tool,KgNone,The fireaxe is good for harvesting wood and ha
 fireaxeSteel,items,Tool,KgNone,Homemade Steel Fireaxe,Hache de pompier en acier,Stählerne Feueraxt,,Hacha de bombero de acero
 fireaxeSteelDesc,items,Tool,KgNone,The steel fireaxe has a durable blade and is great for harvesting wood. It has a better chance to dismember than most weapons.,La lame de la hache de pompier en acier est solide et idéale pour couper du bois. Elle est également l'arme qui a le plus de chance de démembrer un adversaire.,"Die stählerne Feueraxt verfügt über eine langlebige Schneide und eignet sich großartig dazu, Holz zu fällen. Sie hat zudem eine erhöhte Chance, Gegner zu zergliedern.",,El hacha de bombero de acero tiene una hoja duradera y es muy buena para recolectar madera. Tiene más posibilidades de desmembrar que la mayoría de armas.
 hoeIron,items,Tool,KgNone,Iron Garden Hoe,Binette en fer,Gartenhacke aus Eisen,,Azada de hierro de jardín
-hoeIronDesc,items,Tool,KgNone,The iron gardening hoe is great tool for turning poor soil into fertile soil for planting crops.,La binette en fer est géniale pour transformer un sol pauvre en sol fertile afin d'y planter des cultures.,"Die Gartenhacke aus Eisen ist ein großartiges Werkzeug, um karge Erde in furchtbare Erde zu verwandeln, in der du Feldfrüchte pflanzen kannst.",,La azada de hierro de jardinería es una herramienta estupenda para convertir terreno árido en fértil para plantar cosechas.
+hoeIronDesc,items,Tool,KgNone,The iron gardening hoe is great tool for turning poor soil into fertile soil for planting crops. It will turn the block directly in front of it into tilled soil, but the blocks either side will become dirt.,La binette en fer est géniale pour transformer un sol pauvre en sol fertile afin d'y planter des cultures.,"Die Gartenhacke aus Eisen ist ein großartiges Werkzeug, um karge Erde in furchtbare Erde zu verwandeln, in der du Feldfrüchte pflanzen kannst.",,La azada de hierro de jardinería es una herramienta estupenda para convertir terreno árido en fértil para plantar cosechas.
 hoeSteel,items,Tool,KgNone,Steel Garden Hoe,Binette en acier,Gartenhacke aus Stahl,,Azada de acero de jardín
 hoeSteelDesc,items,Tool,KgNone,The steel garden hoe is the best tool for turning poor soil into fertile soil for planting crops.,La binette en acier est l'outil idéal pour transformer un sol pauvre en sol fertile afin d'y planter des cultures.,"Die Gartenhacke aus Stahl ist das beste Werkzeug, um karge Erde in furchtbare Erde zu verwandeln, in der du Feldfrüchte pflanzen kannst.",,La azada de acero de jardín es una herramienta estupenda para convertir terreno árido en fértil para plantar cosechas.
 nailgun,items,Tool,KgNone,Nailgun,Pistolet à clous,Nagelpistole,,Pistola de clavos
@@ -4988,6 +4988,8 @@ seedPacketYucca,items,Book,KgNone,"Yucca Seed Packet",,,,
 seedPacketYuccaDesc,items,Book,KgNone,"A packet of 3 yucca seeds.",,,,
 seedPacketAloe,items,Book,KgNone,"Aloe Seed Packet",,,,
 seedPacketAloeDesc,items,Book,KgNone,"A packet of 3 aloe seeds.",,,,
+seedPacketSoybean,items,Book,KgNone,"Soybean Seed Packet",,,,
+seedPacketSoybeanDesc,items,Book,KgNone,"A packet of 3 soybean seeds.",,,,
 chickenAndSweetcornSoup,items,Book,KgNone,"Chicken and Sweetcorn Soup",,,,
 chickenAndSweetcornSoupDesc,items,Book,KgNone,"Attempted in a Chinese style, though it didn't come out looking too good...",,,,
 chickenAndSweetcornSoupTasty,items,Book,KgNone,"Chicken and Sweetcorn Soup (Tasty)",,,,
@@ -5405,17 +5407,202 @@ cementMixerSchematic,items,Schematic,KgNone,"Concrete Mixing Schematic",,,,
 cementMixerSchematicDesc,items,Schematic,KgNone,"Learn how to craft a cement mixer and create cement for concrete mix by reading this schematic.",,,,
 steelSmithingSchematic,items,Schematic,KgNone,"Steel Smithing Schematic",,,,
 steelSmithingSchematicDesc,items,Schematic,KgNone,"Learn how to forge steel and shape it into tools by reading this schematic.",,,,
+generatorBankSchematic,items,Schematic,KgNone,"Generator Bank Schematic",,,,
+generatorBankSchematicDesc,items,Schematics,KgNone,"Learn how to craft a generator bank by reading this schematic.",,,,
 forgeUpgradeKit,items,Crafting,KgNone,"Forge Upgrade Kit",,,,
 forgeUpgradeKitDesc,items,Crafting,KgNone,"If you find a broken forge in the world you can use a construction tool and upgrade it into a working forge with this upgrade kit.",,,,
 
+forgeAheadSchematic,items,Schematic,KgNone,"Forge Ahead",,,,
+forgeAheadSchematicDesc,items,Schematic,KgNone,"Learn how to craft a forge by reading this schematic.",,,,
+ForgeAheadName,progression,Perk,KgNone,"Forge Ahead",,,,
+ForgeAheadDesc,progression,Perk,KgNone,"Learn how to craft a forge by purchasing this perk or reading the book.",,,,
 
+ironcladSchematic,items,Schematic,KgNone,"Sturdy Constructs",,,,
+ironcladSchematicDesc,items,Schematic,KgNone,"Learn how to shape your metal into sturdy bars and trussing blocks by reading this schematic.",,,,
+IroncladName,progression,Perk,KgNone,"Sturdy Constructs",,,,
+IroncladDesc,progression,Perk,KgNone,"Learn how to forge metal into sturdy trussing and bars by purchasing this perk or reading the schematic.",,,,
 
+rebarSchematic,items,Schematic,KgNone,"Concrete Reinforcing 101",,,,
+rebarSchematicDesc,items,Schematic,KgNone,"Learn how to craft rebar frames for a more effective way to reinforce concrete by reading this book.",,,,
+RebarManualName,progression,Perk,KgNone,"Concrete Reinforcing 101",,,,
+RebarManualDesc,progression,Perk,KgNone,"Learn how to craft rebar frames for a more effective way to create reinforced concrete by purchasing this perk or reading the schematic.",,,,
 
+glassworkingSchematic,items,Schematic,KgNone,"Glassworking Basics",,,,
+glassworkingSchematicDesc,items,Schematic,KgNone,"Learn how to shape glass into jars and basic panes by reading this book.",,,,
+GlassworkingName,progression,Perk,KgNone,"Glassworking Basics",,,,
+GlassworkingDesc,progression,Perk,KgNone,"Learn how to shape glass into jars and basic panes by purchasing this perk or reading the book.",,,,
+glassworkingBusinessSchematic,items,Schematic,KgNone,"Glassworking for Profit",,,,
+glassworkingBusinessSchematicDesc,items,Schematic,KgNone,"Forge glass into nice panes and blocks by reading this book.",,,,
+GlassworkingBusinessName,progression,Perk,KgNone,"Glassworking for Profit",,,,
+GlassworkingBusinessDesc,progression,Perk,KgNone,"Forge glass into nice panes and blocks by purchasing this perk or reading the book.",,,,
+glassworkingBulletproofSchematic,items,Schematic,KgNone,"Advanced Glassworking",,,,
+glassworkingBulletproofSchematicDesc,items,Schematic,KgNone,"Do you need glass that doesn't shatter when a cop farts on it? Time to read this book!",,,,
+GlassworkingBulletproofName,progression,Perk,KgNone,"Advanced Glassworking",,,,
+GlassworkingBulletproofDesc,progression,Perk,KgNone,"Do you need glass that doesn't shatter when a cop farts on it? Time to get this perk or read the book!",,,,
 
+bottledBoiledWater,items,Consumable,KgNone,"Bottled Impure Water",,,,
+bottledBoiledWaterDesc,items,Consumable,KgNone,"This water is safer to drink after boiling but it may still contain some nasties in there...",,,,
 
+FruitDeficiency,buffs,buff,KgNone,"Fruit Deficiency",,,,
+FruitDeficiencyDesc,buffs,buff,KgNone,"An apple a day keeps the doctor away, and you sure haven't been eating apples! You feel less energetic from a lack of fruit.",,,,
+FruitDeficiencyTooltip,buffs,buff,KgNone,"You feel weak from not eating enough fruit.",,,,
+VegetablesDeficiency,buffs,buff,KgNone,"Veggie Deficiency",,,,
+VegetablesDeficiencyDesc,buffs,buff,KgNone,"Your momma was right when she told you to eat your greens! You feel weaker due to lack of veggies.",,,,
+VegetablesDeficiencyTooltip,buffs,buff,KgNone,"You feel weak from not eating enough vegetables.",,,,
+MeatsDeficiency,buffs,buff,KgNone,"Meat Deficiency",,,,
+MeatsDeficiencyDesc,buffs,buff,KgNone,"Your inner caveman is calling, desperately! You feel more fatigued from a lack of meat.",,,,
+MeatsDeficiencyTooltip,buffs,buff,KgNone,"You feel weak from not eating enough meat.",,,,
+GrainDeficiency,buffs,buff,KgNone,"Grain Deficiency",,,,
+GrainDeficiencyDesc,buffs,buff,KgNone,"This is going to sound so corny, but... You feel your strength slipping away due to a lack of grain.",,,,
+GrainDeficiencyTooltip,buffs,buff,KgNone,"You feel weak from not eating enough grain.",,,,
+DairyDeficiency,buffs,buff,KgNone,"Dairy Deficiency",,,,
+DairyDeficiencyDesc,buffs,buff,KgNone,"Cows everywhere are cheering. Don't let them mock you. You feel weaker from a lack of dairy.",,,,
+DairyDeficiencyTooltip,buffs,buff,KgNone,"You feel weak from not eating enough dairy.",,,,
 
+FruitVitality,buffs,buff,KgNone,"Fruit Vitality",,,,
+FruitVitalityDesc,buffs,buff,KgNone,"Those fruit are coming in handy! You feel stronger from consuming lots of fruit.",,,,
+FruitVitalityTooltip,buffs,buff,KgNone,"Eating so much fruit has given you strength.",,,,
+VegetablesVitality,buffs,buff,KgNone,"Veggie Vitality",,,,
+VegetablesVitalityDesc,buffs,buff,KgNone,"Momma is gonna be so proud! You feel stronger from consuming lots of veggies.",,,,
+VegetablesVitalityTooltip,buffs,buff,KgNone,"Eating so much veggies has given you strength.",,,,
+MeatsVitality,buffs,buff,KgNone,"Meat Vitality",,,,
+MeatsVitalityDesc,buffs,buff,KgNone,"You have unleashed your inner caveman! You feel stronger from consuming lots of meat.",,,,
+MeatsVitalityTooltip,buffs,buff,KgNone,"Eating so much meat has given you strength.",,,,
+GrainVitality,buffs,buff,KgNone,"Grain Vitality",,,,
+GrainVitalityDesc,buffs,buff,KgNone,"You've got enough grain stuck in your teeth! You feel stronger from consuming lots of grain.",,,,
+GrainVitalityTooltip,buffs,buff,KgNone,"Eating so much grain has given you strength.",,,,
+DairyVitality,buffs,buff,KgNone,"Dairy Vitality",,,,
+DairyVitalityDesc,buffs,buff,KgNone,"Cows everywhere have been put in their place. You feel stronger from consuming lots of dairy.",,,,
+DairyVitalityTooltip,buffs,buff,KgNone,"Eating so much dairy has given you strength.",,,,
 
+bottledMilk,items,Food,KgNone,"Carton of Milk",,,,
+bottledMilkDesc,items,Food,KgNone,"A carton of long-life milk that seems drinkable... Well maybe. At least it doesn't smell as bad as a zombie's heiny, so that's a start.",,,,
 
+emptyBottle,items,Resource,KgNone,"Empty Carton",,,,
+emptyBottleDesc,items,Resource,KgNone,"An empty carton that probably had some sort of milk or juice in it at one point. Maybe it could come in useful if plastics become a shortage...",,,,
+
+yoghurt,items,Food,KgNone,"Yoghurt",,,,
+yoghurtDesc,items,Food,KgNone,"A carton of yoghurt. It doesn't taste great since it's not got any added flavours, but maybe you can add some fruit to it...",,,,
+yoghurtBlueberry,items,Food,KgNone,"Blueberry Yoghurt",,,,
+yoghurtBlueberryDesc,items,Food,KgNone,"A carton of blueberry yoghurt. Tastes awesome and hopefully those blueberries weren't snowberries in disguise.",,,,
+yoghurtYucca,items,Food,KgNone,"Yucca Yoghurt",,,,
+yoghurtYuccaDesc,items,Food,KgNone,"Who knew that yucca fruit in a yoghurt would taste so good? Better be careful not to eat too much yucca though!",,,,
+yoghurtMixedFruit,items,Food,KgNone,"Mixed Fruit Yoghurt",,,,
+yoghurtMixedFruitDesc,items,Food,KgNone,"Lots of mixed fruit in a yoghurt is sure to be a healthy snack for any survivor and give you that must needed boost.",,,,
+cheese,items,Food,KgNone,"Cheese",,,,
+cheeseDesc,items,Food,KgNone,"It smells a little bit, but should be good to eat... Maybe.",,,,
+
+rawRabbitMeat,items,Food,KgNone,"Raw Rabbit Meat",,,,
+rawRabbitMeatDesc,items,Food,KgNone,"Raw rabbit meat. Not really safe to eat raw, so you may want to cook it first.",,,,
+rawChickenMeat,items,Food,KgNone,"Raw Chicken Meat",,,,
+rawChickenMeatDesc,items,Food,KgNone,"Raw chicken meat. Definitely unsafe to eat raw, you will want to cook it first.",,,,
+rawVenisonMeat,items,Food,KgNone,"Raw Venison Meat",,,,
+rawVenisonMeatDesc,items,Food,KgNone,"Raw venison meat. Somewhat safe to eat raw, but still worth cooking it first.",,,,
+rawBearMeat,items,Food,KgNone,"Raw Bear Meat",,,,
+rawBearMeatDesc,items,Food,KgNone,"Raw bear meat. Somewhat safe to eat raw, but still worth cooking it first.",,,,
+rawBoarMeat,items,Food,KgNone,"Raw Boar Meat",,,,
+rawBoarMeatDesc,items,Food,KgNone,"Raw boar meat. Somewhat safe to eat raw, but still worth cooking it first.",,,,
+rawWolfMeat,items,Food,KgNone,"Raw Wolf Meat",,,,
+rawWolfMeatDesc,items,Food,KgNone,"Raw wolf meat. Not really safe to eat, you may want to cook it first.",,,,
+rawSnakeMeat,items,Food,KgNone,"Raw Snake Meat",,,,
+rawSnakeMeatDesc,items,Food,KgNone,"Raw snake meat. You can safely eat this raw, but still worth cooking.",,,,
+
+charredRabbitMeat,items,Food,KgNone,"Charred Rabbit Meat",,,,
+charredRabbitMeatDesc,items,Food,KgNone,"Rabbit meat that has been charred (rather badly) on a campfire. It will fill you up but dehydrate you some.",,,,
+charredChickenMeat,items,Food,KgNone,"Charred Chicken Meat",,,,
+charredChickenMeatDesc,items,Food,KgNone,"Chicken meat that has been charred (rather badly) on a campfire. It will fill you up but dehydrate you some.",,,,
+charredVenisonMeat,items,Food,KgNone,"Charred Venison Meat",,,,
+charredVenisonMeatDesc,items,Food,KgNone,"Venison meat that has been charred (rather badly) on a campfire. It will fill you up but dehydrate you some.",,,,
+charredBearMeat,items,Food,KgNone,"Charred Bear Meat",,,,
+charredBearMeatDesc,items,Food,KgNone,"Bear meat that has been charred (rather badly) on a campfire. It will fill you up but dehydrate you some.",,,,
+charredBoarMeat,items,Food,KgNone,"Charred Boar Meat",,,,
+charredBoarMeatDesc,items,Food,KgNone,"Boar meat that has been charred (rather badly) on a campfire. It will fill you up but dehydrate you some.",,,,
+charredWolfMeat,items,Food,KgNone,"Charred Wolf Meat",,,,
+charredWolfMeatDesc,items,Food,KgNone,"Wolf meat that has been charred (rather badly) on a campfire. It will fill you up but dehydrate you some.",,,,
+charredSnakeMeat,items,Food,KgNone,"Charred Snake Meat",,,,
+charredSnakeMeatDesc,items,Food,KgNone,"Snake meat that has been charred (rather badly) on a campfire. It will fill you up but dehydrate you some.",,,,
+
+boiledRabbitMeat,items,Food,KgNone,"Boiled Rabbit Meat",,,,
+boiledRabbitMeatDesc,items,Food,KgNone,"Boiling rabbit in water renders it flavourful and tasty - a good reward for a good hunt.",,,,
+boiledChickenMeat,items,Food,KgNone,"Boiled Chicken Meat",,,,
+boiledChickenMeatDesc,items,Food,KgNone,"Boiling chicken in water removes the chances of food poisoning, and it tastes cluckin' amazing!",,,,
+boiledVenisonMeat,items,Food,KgNone,"Boiled Venison Meat",,,,
+boiledVenisonMeatDesc,items,Food,KgNone,"No idea how you stuffed that massive chunk of venison in the cooking pot, but it was worth the effort and tastes great.",,,,
+boiledBearMeat,items,Food,KgNone,"Boiled Bear Meat",,,,
+boiledBearMeatDesc,items,Food,KgNone,"What doesn't kill you makes you stronger (after boiling it in water). Good hunt, and now you can say you've tried bear!",,,,
+boiledBoarMeat,items,Food,KgNone,"Boiled Boar Meat",,,,
+boiledBoarMeatDesc,items,Food,KgNone,"A hog roast is great, but boiling works almost as well to preserve the good taste of the boar.",,,,
+boiledWolfMeat,items,Food,KgNone,"Boiled Wolf Meat",,,,
+boiledWolfMeatDesc,items,Food,KgNone,"Smells delicious. Better wolf this down before the zombies smell it!",,,,
+boiledSnakeMeat,items,Food,KgNone,"Boiled Snake Meat",,,,
+boiledSnakeMeatDesc,items,Food,KgNone,"Make sure this tasty morsel doesn't slither down your windpipe!",,,,
+
+grilledRabbitMeat,items,Food,KgNone,"Grilled Rabbit Meat",,,,
+grilledRabbitMeatDesc,items,Food,KgNone,"I smell a barbecue, and on the menu is... Rabbit? Heh. Well, it tastes good, so why not.",,,,
+grilledChickenMeat,items,Food,KgNone,"Grilled Chicken Meat",,,,
+grilledChickenMeatDesc,items,Food,KgNone,"Now we're talking! What could be better than grilled chicken? Well maybe fried chicken, but this is close enough...",,,,
+grilledVenisonMeat,items,Food,KgNone,"Grilled Venison Meat",,,,
+grilledVenisonMeatDesc,items,Food,KgNone,"Damn, that deer ass tastes good after being slapped on a grill for a while!",,,,
+grilledBearMeat,items,Food,KgNone,"Grilled Bear Meat",,,,
+grilledBearMeatDesc,items,Food,KgNone,"That bear didn't know what was coming for him, did he... Good lord it tastes good when grilled!",,,,
+grilledBoarMeat,items,Food,KgNone,"Grilled Boar Meat",,,,
+grilledBoarMeatDesc,items,Food,KgNone,"Some men just want to watch the world burn. But they don't get hog roasts, poor buggers. Bet they're jealous of you right now!",,,,
+grilledWolfMeat,items,Food,KgNone,"Grilled Wolf Meat",,,,
+grilledWolfMeatDesc,items,Food,KgNone,"You will want to eat this before the full moon comes out, else you may find the meat bites you instead.",,,,
+grilledSnakeMeat,items,Food,KgNone,"Grilled Snake Meat",,,,
+grilledSnakeMeatDesc,items,Food,KgNone,"Make sure you took the fangs out before eating, otherwise you'll be in for a crappy night, literally!",,,,
+
+plantedSoybean1,blocks,Food,KgNone,"Soybean (Seed)",,,,
+plantedSoybean1Desc,blocks,Food,KgNone,"A packet of soybean seeds. Plant it to grow Soybean crops.",,,,
+plantedSoybean3Harvest,blocks,Food,KgNone,"Soybean Plant",,,,
+soyabean,items,Food,KgNone,"Soybeans",,,,
+soyabeanDesc,items,Food,KgNone,"A handful of soybeans. You can eat them raw or use them to make salads, soya milk and yoghurts.",,,,
+bottledSoyaMilk,items,Food,KgNone,"Soya Milk",,,,
+bottledSoyaMilkDesc,items,Food,KgNone,"A buttle of soya milk. You can also make it yourself with soybeans.",,,,
+
+trowelIron,items,Tools,KgNone,"Iron Garden Trowel",,,,
+trowelIronDesc,items,Tools,KgNone,"A trowel can be used to further upgrade your farmland into fertile farmland with some fertilizer.",,,,
+
+forgedPigIron,items,Resources,KgNone,"Forged Pig iron",,,,
+forgedPigIronDesc,items,Resources,KgNone,"A crude and somewhat usable attempt to shape raw iron. You may be able to make some tools with this...",,,,
+fireaxePigIron,items,Tools,KgNone,"Homemade Pig Iron Fireaxe",,,,
+fireaxePigIronDesc,items,Tools,KgNone,"A fireaxe made from pig iron. It's not very durable but it can be repaired and shouldn't shatter, unlike weaker copper variants.",,,,
+pickaxePigIron,items,Tools,KgNone,"Homemade Pig Iron Pickaxe",,,,
+pickaxePigIronDesc,items,Tools,KgNone,"A pickaxe made from pig iron. It's not very durable but it can be repaired and shouldn't shatter, unlike weaker copper variants.",,,,
+shovelPigIron,items,Tools,KgNone,"Homemade Pig Iron Shovel",,,,
+shovelPigIronDesc,items,Tools,KgNone,"A shovel made from pig iron. It's not very durable but it can be repaired and shouldn't shatter, unlike weaker copper variants.",,,,
+
+rabies,buffs,buff,KgNone,"Rabies",,,,
+rabies0Desc,buffs,buff,KgNone,"It seems that animal bite may have been infectous... Better find a syringe to vaccinate yourself before the symptoms worsen.",,,,
+rabies0Tooltip,buffs,buff,KgNone,"You have been bitten and contracted rabies.",,,,
+rabies1Desc,buffs,buff,KgNone,"The signs are getting worse. You're not quite foaming at the mouth yet, but there may still be time to cure yourself.",,,,
+rabies1Tooltip,buffs,buff,KgNone,"Your condition is getting worse. Get a vaccine, and fast.",,,,
+rabies2Desc,buffs,buff,KgNone,"The vaccine has lightened your symptoms of rabies, but you may need to take another to completely remove it.",,,,
+rabies2Tooltip,buffs,buff,Kgnone,"The vaccine has lightened your symptoms.",,,,
+rabies3Desc,buffs,buff,KgNone,"The symptoms are worsening and you're starting to froth at the mouth... Looks like a single vaccine isn't going to cure your rabies now. You may need several, but if you're not careful this will kill you.",,,,
+rabies3Tooltip,buffs,buff,KgNone,"You're frothing at the mouth - death is soon to follow.",,,,
+rabiesSyringe,items,Medical,KgNone,"Rabies Vaccine",,,,
+rabiesSyringeDesc,items,Medical,KgNone,"A vaccine that will either cure early stages of rabies, or protect you from contracting rabies for about 2 days.",,,,
+
+needPoop,buffs,buff,KgNone,"Gotta Go!",,,,
+needPoopDesc,buffs,buff,KgNone,"Oh man, oh boy, oh god, oh sh** me, uhh uhh UHHHH... Better find a toilet quick...",,,,
+needPoopTooltip,buffs,buff,KgNone,"Nature is calling. Like seriously, find a toilet...",,,,
+pooping,buffs,buff,KgNone,"Releasing Tension",,,,
+poopingDesc,buffs,buff,KgNone,"Pooping feels so glorious, especially when it's been bunged up in there for way too long.",,,,
+poopingTooltip,buffs,buff,KgNone,"Ouuuuaaaaarrrghhhhh... *plop*",,,,
+
+stuffed,buffs,buff,KgNone,"Stuffed",,,,
+stuffedDesc,buffs,buff,KgNone,"You have eaten a little too much!",,,,
+stuffedTooltip,buffs,buff,KgNone,"You have eaten a little too much!",,,,
+
+leatherStrips,items,Resources,KgNone,"Tattered Leather Pieces",,,,
+leatherStripsDesc,items,Resources,KgNone,"This ripped apart leather may come in handy if sewn back together using some string on a workbench...",,,,
+string,items,Resources,KgNone,"String",,,,
+stringDesc,items,Resources,KgNone,"String can be used in sewing. You can repair tattered leather pieces and create leather on a workbench using this.",,,,
+vegetableOil,items,Resources,KgNone,"Vegetable Oil",,,,
+vegetableOilDesc,items,Resources,KgNone,"Vegetable oil can make a fermenting substance used in the curing of animal hides to make leather.",,,,
+vegetableFerment,items,Resources,KgNone,"Fermented Vegetable Oil",,,,
+vegetableFermentDesc,items,Resources,KgNone,"Fermented vegetable oil can be used to cure animal hides into leather over a firepit. Or you can drink it... But it tastes disgusting and can't be good for your insides!",,,,
 
 
 

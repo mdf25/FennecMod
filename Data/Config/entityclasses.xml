@@ -1647,7 +1647,7 @@
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="ExperienceGain" value="327"/>
 	<property name="HasRagdoll" value="true"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="6"/> <!-- animalStag -->
+	<drop event="Harvest" name="rawVenisonMeat" tool_category="Butcher" count="2"/> <!-- animalStag -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="9"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4"/>
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
@@ -1669,7 +1669,7 @@
 	<property name="Faction" value="animals"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="DeadBodyHitPoints" value="175"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2"/> <!-- animalRabbit -->
+	<drop event="Harvest" name="rawRabbitMeat" tool_category="Butcher" count="2"/> <!-- animalRabbit -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2"/>
 </entity_class>
 
@@ -1690,7 +1690,7 @@
 	<property name="HasRagdoll" value="true"/>
 	<property name="HasDeathAnim" value="false"/>
 	<property name="DeadBodyHitPoints" value="175"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2"/> <!-- animalChicken -->
+	<drop event="Harvest" name="rawChickenMeat" tool_category="Butcher" count="2"/> <!-- animalChicken -->
 	<drop event="Harvest" name="feather" tool_category="Butcher" count="30"/>
 </entity_class>
 
@@ -1876,7 +1876,7 @@
 	<property name="SoundGiveUp" value="Animals/Bear/beargiveup"/>
 	<property name="ExperienceGain" value="2509"/>
 	<property name="DeadBodyHitPoints" value="600"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="10"/> <!-- animalBear -->
+	<drop event="Harvest" name="rawBearMeat" tool_category="Butcher" count="3"/> <!-- animalBear -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="4"/>
@@ -1949,7 +1949,7 @@
 	<property name="SoundSense" value="Animals/Wolf/wolfsense"/>
 	<property name="SoundGiveUp" value="Animals/Wolf/wolfgiveup"/>
 	<property name="ExperienceGain" value="1407"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="5"/> <!-- animalWolf -->
+	<drop event="Harvest" name="rawWolfMeat" tool_category="Butcher" count="2"/> <!-- animalWolf -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="10"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="5"/>
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
@@ -1974,7 +1974,7 @@
 	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="30"/>
 	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
 	<property name="DeadBodyHitPoints" value="450"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="7"/> <!-- animalDireWolf -->
+	<drop event="Harvest" name="rawWolfMeat" tool_category="Butcher" count="3"/> <!-- animalDireWolf -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="12"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
@@ -2078,7 +2078,7 @@
 		<property name="state0" value="DeathTrigger"/>
 	</property>
 	<property name="DeadBodyHitPoints" value="150"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2"/> <!-- animalSnake -->
+	<drop event="Harvest" name="rawSnakeMeat" tool_category="Butcher" count="2"/> <!-- animalSnake -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2"/>
 </entity_class>
 
@@ -2126,7 +2126,7 @@
 	<property name="SoundSense" value="Animals/Boar/boarsense"/>
 	<property name="SoundGiveUp" value="Animals/Boar/boargiveup"/>
 	<property name="ExperienceGain" value="1407"/>
-	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="5"/> <!-- animalBoar -->
+	<drop event="Harvest" name="rawBoarMeat" tool_category="Butcher" count="2"/> <!-- animalBoar -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="6"/>
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>

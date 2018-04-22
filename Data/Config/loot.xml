@@ -440,6 +440,14 @@
 
 <lootgroup name="empty"/>
 
+<lootgroup name="yoghurts" count="1">
+	<item name="yoghurt" />
+	<item name="yoghurtBlueberry" />
+	<item name="yoghurtYucca" />
+	<item name="yoghurtMixedFruit" />
+</lootgroup>
+
+
 <lootgroup name="questChallenge" count="1">
 	<item name="qc_silenceofthelambs" count="1"/>
 	<item name="qc_drunkanddisorderly" count="1"/>
@@ -805,8 +813,6 @@
 <lootgroup name="motorToolParts" count="1" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
 	<item name="partsChainsaw_blade"/>
 	<item name="partsChainsaw_parts"/>
-	<item name="partsAuger_blade"/>
-	<item name="partsAuger_parts"/>
 	<item name="partsHandlebars"/>
 </lootgroup>
 
@@ -841,6 +847,9 @@
 	<item name="scrapGlovesSchematic" prob="0.7"/>
 	<item name="ironForgingSchematic" prob="0.4"/>
 	<item name="toolForgingSchematic" prob="0.7"/>
+	<item name="forgeAheadSchematic" />
+	<item name="glassworkingSchematic" />
+	<item name="glassworkingBusinessSchematic" />
 	
 	<!-- <item name="ammunitionNationBook"/>NO LONGER USED
 	<item name="sawedoffPumpShotgunSchematic"/>
@@ -879,6 +888,14 @@
 	<item name="beakerSchematic"/>
 	<item name="purificationSchematic" />
 	<item name="industrialGrinderSchematic" />
+	<item name="workbenchSchematic" />
+	<item name="chemistryStationSchematic" />
+	<item name="cementMixerSchematic" />
+	<item name="steelSmithingSchematic" />
+	<item name="generatorBankSchematic" />
+	<item name="ironcladSchematic" />
+	<item name="rebarSchematic" />
+	<item name="glassworkingBulletproofSchematic" />
 	<item group="questChallenge" count="1"/>
 	<!--
 	<item name="handleBarsSchematic"/>
@@ -973,6 +990,26 @@
 	<item name="cornMeal"/>
 </lootgroup>
 
+<lootgroup name="cupboardJackpot" count="all">
+	<item name="canBeef"	count="1,3" prob="0.4" />
+	<item name="canCatfood" count="1,5" prob="0.4" />
+	<item name="canChicken" count="1,3" prob="0.4" />
+	<item name="canChili"	count="1,5" prob="0.4" />
+	<item name="canDogfood" count="1,5" prob="0.4" />
+	<item name="canHam"		count="1,3" prob="0.4" />
+	<item name="canLamb"	count="1,3" prob="0.4" />
+	<item name="canMiso"	count="1,5" prob="0.5" />
+	<item name="canPasta"	count="1,5" prob="0.6" />
+	<item name="canPeas"	count="1,5" prob="0.6" />
+	<item name="canSalmon"	count="1,3" prob="0.4" />
+	<item name="canSoup"	count="1,5" prob="0.5" />
+	<item name="canStock"	count="1,5" prob="0.5" />
+	<item name="canTuna"	count="1,3" prob="0.3" />
+	<item name="canPears"	count="1,5" prob="0.5" />
+	<item name="foodHoney"	count="1,2" prob="0.4" />
+	<item name="cornMeal"	count="5,10" prob="0.4" />
+</lootgroup>
+
 <lootgroup name="seeds">
 	<item name="plantedPotato1"/>
 	<item name="plantedCoffee1"/>
@@ -983,6 +1020,7 @@
 	<item name="plantedAloe1"/>
 	<item name="plantedMushroom1"/>
 	<item name="plantedYucca1"/>
+	<item name="plantedSoybean1" />
 	<item name="plantedChrysanthemum1" prob="0.5"/>
 	<item name="treePlantedMountainPine1m" prob="0.3"/>
 	<item name="treePlantedMaple1m" prob="0.3"/>
@@ -996,19 +1034,42 @@
 </lootgroup>
 
 <lootgroup name="coldfood">
-	<item name="egg" count="1,2"/>
+	<item name="egg" 			count="1,2"/>
 	<item name="blueberryPie"/>
 	<item name="meatStew"/>
-	<item name="rawMeat" count="1,2"/>
-	<item name="rottingFlesh" count="1,2"/>
+	<item name="rawVenisonMeat" count="1,2"/>
+	<item name="rawChickenMeat" count="1,2"/>
+	<item name="rawBoarMeat" 	count="1,2"/>
+	<item name="rottingFlesh" 	count="1,2"/>
 	<item name="corn"/>
 	<item name="potato"/>
 	<item name="blueberries"/>
 </lootgroup>
 
+<lootgroup name="coldfoodJackpot" count="all">
+	<item name="egg" 				count="1,6"		prob="0.6"/>
+	<item name="blueberryPie"		count="1,2"		prob="0.2"/>
+	<item name="meatStew"			count="1"  		prob="0.1"/>
+	<item name="rawVenisonMeat" 	count="1,2"		prob="0.4"/>
+	<item name="rawChickenMeat" 	count="1,2"		prob="0.4"/>
+	<item name="rawBoarMeat" 		count="1,2"		prob="0.4"/>
+	<item name="corn"				count="5,10"	prob="0.3"/>
+	<item name="potato"				count="1,2" 	prob="0.3"/>
+	<item name="blueberries"		count="5,10"	prob="0.3"/>
+	<item group="yoghurts"			count="2,4"		prob="0.3"/>
+	<item name="cheese"				count="1,3"		prob="0.4"/>
+	<item name="bottledWater"		count="2,5"		prob="0.2"/>
+	<item name="bottledMilk"		count="1,2"		prob="0.2"/>
+	<item name="bottledSoyaMilk"	count="1,2"		prob="0.2"/>
+	<item name="goldenRodTea"		count="1,3"		prob="0.2"/>
+	<item name="redTea"				count="1,3"		prob="0.2"/>
+</lootgroup>
+
+
 <lootgroup name="farmCrops">
 	<item name="corn"/>
 	<item name="potato"/>
+	<item name="soyabean"/>
 	<item name="blueberries"/>
 	<item name="cottonPlant"/>
 	<item name="coffeeBeans"/>
@@ -1017,10 +1078,11 @@
 
 <lootgroup name="cupboard">
 	<item name="canEmpty"/>
-	<item group="cannedfood" prob="0.5"/>
+	<item group="cannedfood" prob="0.02"/>
 	<item group="seeds" prob="0.05"/>
-	<item name="bottledWater" prob="0.5"/>
+	<item name="bottledRiverWater" prob="0.5"/>
 	<item name="emptyJar" count="1,4"/>
+	<item name="emptyBottle" count="1,7" />
 	<item name="electricParts" count="1,2" prob="0.05"/>
 	<item name="potassiumNitratePowder" count="2,6" prob="0.15"/>
 	<item name="paint" count="5,20" prob="0.15"/>
@@ -1213,7 +1275,6 @@
 
 <lootgroup name="rareTools" count="1">
 	<item name="chainsaw"/>
-	<item name="auger" prob="0.35"/>
 	<item group="motorToolParts" count="1" prob="5"/>
 	<item name="sledgehammer"/>
 	<item name="smallEngine"/>
@@ -1289,6 +1350,7 @@
 	<item name="bloodDrawKit"/>
 	<item name="firstAidKitSchematic"/>
 	<item name="steroids"/>
+	<item name="rabiesSyringe"/>
 </lootgroup>
 
 <lootgroup name="medicine" count="1">
@@ -1335,8 +1397,11 @@
 <lootgroup name="beverages" count="1">
 	<item name="emptyJar" prob="2.5"/>
 	<item name="bottledWater"/>
-	<item name="beer"/>
-	<item name="megaCrush" prob="0.045"/>
+	<item name="beer" />
+	<item name="bottledMilk" />
+	<item name="bottledSoyaMilk" />
+	<item name="megaCrush" prob="0.045" />
+	<item group="yoghurts" prob="0.2" />
 </lootgroup>
 
 <lootgroup name="automotive+tools+junk" count="0,2">
@@ -1507,14 +1572,21 @@
 <!-- canned or dry food cupboard door open sound-->
 <lootcontainer id="3" count="0,1" size="5,4" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="baseTemplate">
 	<item group="cupboard"/>
+	<item group="cupboardJackpot" prob="0.005" />
 </lootcontainer>
 
 <!-- frozen or refridgerated food, spoiled food -->
 <lootcontainer id="4" count="0,1" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate">
 	<item group="coldfood" prob="0.5"/>
 	<item name="bottledWater" count="1,2" prob="0.5"/>
+	<item name="bottledMilk" count="1" prob="0.2" />
+	<item name="bottledSoyaMilk" count="1" prob="0.2" />
+	<item group="yoghurts" count="1" prob="0.05" />
+	<item name="cheese" count="1,2" prob="0.2" />
 	<item name="emptyJar" count="1,2"/>
 	<item name="canEmpty" count="1,2"/>
+	<item name="emptyBottle" count="1,2" />
+	<item group="coldfoodJackpot" count="1" prob="0.01" />
 </lootcontainer>
 
 <!-- stove, cooking pots and pans rotten food -->
@@ -1557,6 +1629,7 @@
 	<item name="scrapLead" count="1,10"/>
 	<item name="potassiumNitratePowder" count="2,6" prob="0.3"/>
 	<item name="steroids" />
+	<item group="cupboardJackpot" count="1" prob="0.004" />
 </lootcontainer>
 
 <!-- backpack, place where people stash things, -->
@@ -1633,7 +1706,7 @@
 <lootcontainer id="21" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item group="junk" prob="1.5"/>
 	<item group="medicine"/>
-	<item name="steroids" />
+	<item name="steroids" prob="0.3" />
 	<item name="oldCash" count="1,20" prob="0.5"/>
 </lootcontainer>
 
@@ -1676,21 +1749,19 @@
 
 <!-- tree hollowed stump, place where people stash things, -->
 <lootcontainer id="35" count="0,2" size="4,3" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump" loot_quality_template="baseTemplate">
-	<item name="scrapPlastics" count="1,6" prob="2"/>
+	<item name="emptyBottle" count="1,2" prob="2" />
 	<item name="emptyJar" count="1,2" prob="2"/>
 	<item name="canEmpty" count="1,2" prob="5"/>
 	<item group="rottenFood" prob="1"/>
 	<item group="weaponsBasicGuns+ammo" prob="1.3"/>
 	<item group="sportingGoods" count="1,2" prob="5"/>
 	<item name="foodHoney"/>
-	<item group="cannedfood"/>
 	<item group="medicine"/>
 </lootcontainer>
 
 <!-- suitcase -->
 <lootcontainer id="36" count="0,2" size="4,3" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" loot_quality_template="baseTemplate">
-	<item name="bottledWater" count="1,2" prob="0.15"/>
-	<item group="cannedfood" prob="0.5"/>
+	<item group="cannedfood" prob="0.15"/>
 	<item group="junk"/>
 	<item name="flashlight02" prob="0.1"/>
 	<item group="medicine" prob="0.1"/>
@@ -1708,10 +1779,9 @@
 <!-- fatHawaiianZombie, fat zombie -->
 <lootcontainer id="38" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item group="junk" prob="4"/>
-	<item group="rottenFood" prob="4"/>
-	<item name="bottledWater" count="1,2" prob="1.5"/>
-	<item name="shamSandwich" prob="5"/>
-	<item group="cannedfood" prob="5"/>
+	<item group="rottenFood" prob="3"/>
+	<item name="bottledWater" count="1,2" prob="0.05"/>
+	<item group="cannedfood" prob="1"/>
 	<item name="painkillers" prob="1"/>
 	<item group="ammo" prob="1"/>
 	<item group="weaponsPistol+ammo" prob="0.3"/>
@@ -1775,7 +1845,9 @@
 <!-- cooler loot -->
 <lootcontainer id="45" count="0,3" size="4,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="baseTemplate">
 	<item group="cupboard"/>
+	<item group="cupboardJackpot" prob="0.005" />
 	<item group="coldfood"/>
+	<item group="coldfoodJackpot" prob="0.005" />
 	<item group="beverages"/>
 </lootcontainer>
 
@@ -1783,8 +1855,6 @@
 <lootcontainer id="46" count="0,3" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="treasureTemplate">
 	<item group="junk" prob="10"/>
 	<item group="clothes"/>
-	<item group="cannedfood"/>
-	<item group="beverages"/>
 </lootcontainer>
 
 <!-- "bag" container that gets dropped when another loot container is destroyed -->
@@ -1796,8 +1866,6 @@
 <lootcontainer id="48" count="0,2" size="4,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="baseTemplate">
 	<item group="weaponsPistol+ammo" prob="0.3"/>
 	<item group="books" prob="0.1"/>
-	<item group="cannedfood"/>
-	<item name="bottledWater"/>
 	<item group="medicine"/>
 	<item name="paper" count="2,8" prob="0.5"/>
 	<item name="oldCash" count="4,13" prob="1.5"/>
@@ -1837,8 +1905,9 @@
 <!-- shopping cart-->
 <lootcontainer id="54" count="1,2" size="5,4" sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart" loot_quality_template="baseTemplate">
 	<item group="cupboard"/>
+	<item group="cupboardJackpot" prob="0.01" />
 	<item group="beverages"/>
-	<item name="scrapPlastics" count="1,2" prob="0.15"/>
+	<item name="emptyBottle" count="1,2" prob="0.15"/>
 </lootcontainer>
 
 <!-- cash register-->
@@ -1875,22 +1944,20 @@
 	<item name="foodHoney" count="1" prob="0.1"/>
 	<item name="paper" count="5,10" prob="0.4"/>
 	<item name="scrapPlastics" count="1,8" prob="0.5"/>
-	<item name="chickenAndSweetcornSoup" />
-	<item name="chickenMushroomSoup" />
-	<item name="vegtableSoup" />
-	<item name="peaHamSoup" />
-	<item name="mushroomSoup" />
-	<item name="chowder" />
-	<item name="chickenMushroomPasta" />
-	<item name="pastaSham" />
-	<item name="spicyHash" />
-	<item name="beefStew" />
-	<item name="lambStew" />
-	<item name="chickenStew" />
-	<item name="britishBreakfast" />
-	<item name="winterFruitSalad" />
-	<item name="doggyDoo" />
-	<item name="kittyKasserole" />
+	<item name="chickenAndSweetcornSoup" prob="0.02" />
+	<item name="chickenMushroomSoup" prob="0.02" />
+	<item name="vegtableSoup" prob="0.02" />
+	<item name="peaHamSoup" prob="0.02" />
+	<item name="mushroomSoup" prob="0.02" />
+	<item name="chowder" prob="0.02" />
+	<item name="chickenMushroomPasta" prob="0.02" />
+	<item name="pastaSham" prob="0.02" />
+	<item name="spicyHash" prob="0.02" />
+	<item name="beefStew" prob="0.02" />
+	<item name="lambStew" prob="0.02" />
+	<item name="chickenStew" prob="0.02" />
+	<item name="britishBreakfast" prob="0.02" />
+	<item name="winterFruitSalad" prob="0.02" />
 </lootcontainer>
 
 <!-- Bookstore bookcase -->
@@ -2071,8 +2138,8 @@
 	<item name="cigar" prob="1"/>
 	<item group="rareOres" prob="1"/>
 	<item name="grainAlcohol" count="1,3" prob="0.7"/>
-	<item group="cannedfood" count="1,2" prob="1"/>
-	<item name="bottledWater" count="1,3" prob="1"/>
+	<item group="cannedfood" count="1,2" prob="0.2"/>
+	<item name="bottledWater" count="1,3" prob="0.12"/>
 	<item name="oldCash" count="2,15" prob="1"/>
 	<item group="treasureMaps" count="1" prob="1"/>
 </lootcontainer>
@@ -2135,6 +2202,7 @@
 	<item group="farmCrops" prob="1"/>
 	<item group="seeds" prob="1"/>
 	<item name="hoeIron" prob="1"/>
+	<item name="trowelIron" prob="1" />
 	<item name="shovelIron" prob="1"/>
 	<item name="shovelSteel" prob="0.5"/>
 	<item name="beer" prob="1"/>
@@ -2207,6 +2275,7 @@
 	<item name="oldCash" count="14,60" prob="2"/>
 	<item name="paper" count="10,25" prob="0.66"/>
 	<item group="questChallenge" count="1" prob="0.036"/>
+	<item name="coffee" prob="1" />
 	<item group="treasureMaps" count="1" prob="0.031"/>
 </lootcontainer>
 

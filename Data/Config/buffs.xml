@@ -129,7 +129,140 @@ built-in buff variables:
 <buff id="isPlayer" buffif="+full > 0" />
 
 <!-- This buff is called on the first time the player spawns into the game and on respawning the player after each death. Can not add buffs. -->
-<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0)"/>
+<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0);setvar(CTRyuccaConcentration,0);setvar(CTRvegetables,0);setvar(CTRfruit,0);setvar(CTRmeats,0);setvar(CTRgrain,0);setvar(CTRvitamins,0);setvar(CTRdairy,0);setvar(CTRpoop,0)"/>
+
+<!-- Food group counters - decrease from 50 to 0 by 1 point every 2 ingame hours. So in 1 ingame day 12 points are lost. Vitamins are slower to decrease. -->
+
+<buff id="MetabolizeFruit" 		buffif="CTRfruit greater -50" 		debuffif="CTRfruit less -49" 		actions="increment(CTRfruit,-1,200t,0,0)" 		/>
+<buff id="MetabolizeVegetables" buffif="CTRvegetables greater -50" 	debuffif="CTRvegetables less -49" 	actions="increment(CTRvegetables,-1,200t,0,0)" 	/>
+<buff id="MetabolizeMeats" 		buffif="CTRmeats greater -50" 		debuffif="CTRmeats less -49" 		actions="increment(CTRmeats,-1,200t,0,0)" 		/>
+<buff id="MetabolizeGrain" 		buffif="CTRgrain greater -50" 		debuffif="CTRgrain less -49" 		actions="increment(CTRgrain,-1,200t,0,0)" 		/>
+<buff id="MetabolizeDairy" 		buffif="CTRdairy greater -50" 		debuffif="CTRdairy less -49" 		actions="increment(CTRdairy,-1,200t,0,0)" 		/>
+<buff id="MetabolizeVitamins" 	buffif="CTRvitamins greater -50" 	debuffif="CTRvitamins less -49" 	actions="increment(CTRvitamins,-1,600t,0,0)"	/>
+
+<buff id="ClampLowerFruit"		buffif="CTRfruit less -50"			debuffif="CTRfruit greater -50"			actions="min(CTRfruit, -50)" />
+<buff id="ClampLowerVegetables"	buffif="CTRvegetables less -50"		debuffif="CTRvegetables greater -50"	actions="min(CTRfruit, -50)" />
+<buff id="ClampLowerMeats"		buffif="CTRmeats less -50"			debuffif="CTRmeats greater -50"			actions="min(CTRfruit, -50)" />
+<buff id="ClampLowerGrain"		buffif="CTRgrain less -50"			debuffif="CTRgrain greater -50"			actions="min(CTRfruit, -50)" />
+<buff id="ClampLowerDairy"		buffif="CTRdairy less -50"			debuffif="CTRdairy greater -50"			actions="min(CTRfruit, -50)" />
+<buff id="ClampLowerVitamins"	buffif="CTRvitamins less -50"		debuffif="CTRvitamins greater -50"		actions="min(CTRfruit, -50)" />
+
+
+
+<!-- POOPING! -->
+<buff id="digestiveSystem" duration="0" buffif="CTRpoop less 100" actions="increment(CTRpoop,1,60t,0,0);max(CTRpoop,100)" />
+<buff id="needPoop" duration="0" buffif="CTRpoop greater 90" debuffif="CTRpoop less 10" icon="ui_game_symbol_poop" name_key="needPoop" description_key="needPoopDesc" tooltip_key="needPoopTooltip">
+	<modify id="0" stat="stamina" amount="-1" />
+	<modify id="1" stat="speedmodifier" mulValue="0.8" />
+</buff>
+<buff id="pooping" duration="5" actions="increment(CTRpoop,-10,1,0,0);min(CTRpoop,0)" icon="ui_game_symbol_toilet" name_key="pooping" description_key="poopingDesc" tooltip_key="poopingTooltip" />
+
+
+<!-- Eating buffs: Each of these will raise a counter by 3, 5, 10 or 15 and will be applied to food types. -->
+<buff id="ConsumeFruit3" 		duration="1" actions="increment(CTRfruit,3,0,0,1);max(CTRfruit,50)" />
+<buff id="ConsumeFruit5" 		duration="1" actions="increment(CTRfruit,5,0,0,1);max(CTRfruit,50)" />
+<buff id="ConsumeFruit10" 		duration="1" actions="increment(CTRfruit,10,0,0,1);max(CTRfruit,50)" />
+<buff id="ConsumeFruit15" 		duration="1" actions="increment(CTRfruit,15,0,0,1);max(CTRfruit,50)" />
+
+<buff id="ConsumeVegetables3" 	duration="1" actions="increment(CTRvegetables,3,0,0,1);max(CTRvegetables,50)" />
+<buff id="ConsumeVegetables5" 	duration="1" actions="increment(CTRvegetables,5,0,0,1);max(CTRvegetables,50)" />
+<buff id="ConsumeVegetables10" 	duration="1" actions="increment(CTRvegetables,10,0,0,1);max(CTRvegetables,50)" />
+<buff id="ConsumeVegetables15" 	duration="1" actions="increment(CTRvegetables,15,0,0,1);max(CTRvegetables,50)" />
+
+<buff id="ConsumeMeats3" 		duration="1" actions="increment(CTRmeats,3,0,0,1);max(CTRmeats,50)" />
+<buff id="ConsumeMeats5" 		duration="1" actions="increment(CTRmeats,5,0,0,1);max(CTRmeats,50)" />
+<buff id="ConsumeMeats10" 		duration="1" actions="increment(CTRmeats,10,0,0,1);max(CTRmeats,50)" />
+<buff id="ConsumeMeats15" 		duration="1" actions="increment(CTRmeats,15,0,0,1);max(CTRmeats,50)" />
+
+<buff id="ConsumeGrain3" 		duration="1" actions="increment(CTRgrain,3,0,0,1);max(CTRgrain,50)" />
+<buff id="ConsumeGrain5" 		duration="1" actions="increment(CTRgrain,5,0,0,1);max(CTRgrain,50)" />
+<buff id="ConsumeGrain10" 		duration="1" actions="increment(CTRgrain,10,0,0,1);max(CTRgrain,50)" />
+<buff id="ConsumeGrain15" 		duration="1" actions="increment(CTRgrain,15,0,0,1);max(CTRgrain,50)" />
+
+<buff id="ConsumeDairy3" 		duration="1" actions="increment(CTRdairy,3,0,0,1);max(CTRdairy,50)" />
+<buff id="ConsumeDairy5" 		duration="1" actions="increment(CTRdairy,5,0,0,1);max(CTRdairy,50)" />
+<buff id="ConsumeDairy10" 		duration="1" actions="increment(CTRdairy,10,0,0,1);max(CTRdairy,50)" />
+<buff id="ConsumeDairy15" 		duration="1" actions="increment(CTRdairy,15,0,0,1);max(CTRdairy,50)" />
+
+<!-- Vitamins. Food and antibiotics give 1, vitamins give 5 -->
+<buff id="ConsumeVitamins1" 	duration="1" actions="increment(CTRvitamins,1,0,0,1);max(CTRvitamins,50)" />
+<buff id="ConsumeVitamins5" 	duration="1" actions="increment(CTRvitamins,5,0,0,1);max(CTRvitamins,50)" />
+
+
+
+<!-- Buffs and debuffs for food -->
+<buff id="FruitDeficiency" duration="0" buffif="CTRfruit less -40" debuffif="CTRfruit greater -40" actions="increment(@wellness, -0.05, 200t, 0, 0)" type="staminadown" icon="ui_game_symbol_fruit_down" name_key="FruitDeficiency" description_key="FruitDeficiencyDesc" tooltip_key="FruitDeficiencyTooltip">
+	<modify id="0" stat="stamina" amount="-0.75" rate="1" />
+	<modify id="0" stat="stamina" modifyMaxValue="-20" />
+	<modify id="0" stat="speedmodifier" mulValue="0.95" />
+</buff> 
+
+<buff id="VegetablesDeficiency" duration="0" buffif="CTRvegetables less -40" debuffif="CTRvegetables greater -40" actions="increment(@wellness, -0.05, 200t, 0, 0)" type="staminadown" icon="ui_game_symbol_vegetable_down" name_key="VegetablesDeficiency" description_key="VegetablesDeficiencyDesc" tooltip_key="VegetablesDeficiencyTooltip">
+	<modify id="0" stat="stamina" amount="-0.75" rate="1" />
+	<modify id="1" stat="health" modifyMaxValue="-20" />
+	<modify id="0" stat="speedmodifier" mulValue="0.95" />
+</buff> 
+
+<buff id="GrainDeficiency" duration="0" buffif="CTRgrain less -40" debuffif="CTRgrain greater -40" actions="increment(@wellness, -0.05, 200t, 0, 0)" type="staminadown" icon="ui_game_symbol_grain_down" name_key="GrainDeficiency" description_key="GrainDeficiencyDesc" tooltip_key="GrainDeficiencyTooltip">
+	<modify id="0" stat="stamina" amount="-0.75" rate="1" />
+	<modify id="1" stat="health" modifyMaxValue="-20" />
+	<modify id="0" stat="speedmodifier" mulValue="0.95" />
+</buff> 
+
+<buff id="MeatsDeficiency" duration="0" buffif="CTRmeats less -40" debuffif="CTRmeats greater -40" actions="increment(@wellness, -0.05, 200t, 0, 0)" type="staminadown" icon="ui_game_symbol_meat_down" name_key="MeatsDeficiency" description_key="MeatsDeficiencyDesc" tooltip_key="MeatsDeficiencyTooltip">
+	<modify id="0" stat="stamina" amount="-0.75" rate="1" />
+	<modify id="0" stat="stamina" modifyMaxValue="-20" />
+	<modify id="0" stat="speedmodifier" mulValue="0.95" />
+</buff> 
+
+<buff id="DairyDeficiency" duration="0" buffif="CTRdairy less -40" debuffif="CTRdairy greater -40" actions="increment(@wellness, -0.05, 200t, 0, 0)" type="staminadown" icon="ui_game_symbol_dairy_down" name_key="DairyDeficiency" description_key="DairyDeficiencyDesc" tooltip_key="DairyDeficiencyTooltip">
+	<modify id="0" stat="stamina" amount="-0.75" rate="1" />
+	<modify id="1" stat="health" modifyMaxValue="-10" />
+	<modify id="0" stat="stamina" modifyMaxValue="-10" />
+	<modify id="0" stat="speedmodifier" mulValue="0.95" />
+</buff> 
+
+
+
+<buff id="FruitVitality" duration="0" buffif="CTRfruit greater 40" debuffif="CTRfruit less 40" actions="increment(@wellness, 0.05, 200t, 0, 0)" type="staminaup" icon="ui_game_symbol_fruit_up" name_key="FruitVitality" description_key="FruitVitalityDesc" tooltip_key="FruitVitalityTooltip">
+	<modify id="0" stat="stamina" 	amount="0.25" 	rate="1" 	/>
+	<modify id="0" stat="stamina" 	modifyMaxValue="20" 		/>
+</buff> 
+
+<buff id="VegetablesVitality" duration="0" buffif="CTRvegetables greater 40" debuffif="CTRvegetables less 40" actions="increment(@wellness, 0.05, 200t, 0, 0)" type="staminaup" icon="ui_game_symbol_vegetable_up" name_key="VegetablesVitality" description_key="VegetablesVitalityDesc" tooltip_key="VegetablesVitalityTooltip">
+	<modify id="0" stat="stamina" 	amount="0.25" 	rate="1" 	/>
+	<modify id="1" stat="health" 	modifyMaxValue="20" 		/>
+</buff> 
+
+<buff id="GrainVitality" duration="0" buffif="CTRgrain greater 40" debuffif="CTRgrain less 40" actions="increment(@wellness, 0.05, 200t, 0, 0)" type="staminaup" icon="ui_game_symbol_grain_up" name_key="GrainVitality" description_key="GrainVitalityDesc" tooltip_key="GrainVitalityTooltip">
+	<modify id="0" stat="stamina" 	amount="0.25" 	rate="1" 	/>
+	<modify id="1" stat="health" 	modifyMaxValue="20" 		/>
+</buff> 
+
+<buff id="MeatsVitality" duration="0" buffif="CTRmeats greater 40" debuffif="CTRmeats less 40" actions="increment(@wellness, 0.05, 200t, 0, 0)" type="staminaup" icon="ui_game_symbol_meat_up" name_key="MeatsVitality" description_key="MeatsVitalityDesc" tooltip_key="MeatsVitalityTooltip">
+	<modify id="0" stat="stamina" 	amount="0.25" 	rate="1" 	/>
+	<modify id="0" stat="stamina" 	modifyMaxValue="20" 		/>
+</buff> 
+
+<buff id="DairyVitality" duration="0" buffif="CTRdairy greater 40" debuffif="CTRdairy less 40" actions="increment(@wellness, 0.05, 200t, 0, 0)" type="staminaup" icon="ui_game_symbol_dairy_up" name_key="DairyVitality" description_key="DairyVitalityDesc" tooltip_key="DairyVitalityTooltip">
+	<modify id="0" stat="stamina" 	amount="0.25" 	rate="1"	/>
+	<modify id="1" stat="health" 	modifyMaxValue="10" 		/>
+	<modify id="0" stat="stamina" 	modifyMaxValue="10" 		/>
+</buff> 
+
+<!--
+<buff id="stuffed" duration="0" buffif="CTRfood greater 95" debuffif="CTRfood lequal 95" type="staminadown" icon="ui_game_symbol_stuffed" name_key="stuffed" description_key="stuffedDesc" tooltip_key="stuffedTooltip">
+	<modify id="0" stat="speedmodifier" mulValue="0.9" />
+</buff>
+-->
+
+
+
+
+
+
+
+
 
 <buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
@@ -176,7 +309,6 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="MetabolizeBeer" buffif="beers greater 0" debuffif="beers less 1" actions="increment(beers, -1, 100t, 0, 0);min(beers, 0)"/>
 
-<!-- base stamina regen = 0.4 /s -->
 <buff id="Buzzed" mutex="Hangover,Drunk,SickDrunk,AlcoholPoisoning" duration="0" buffif="beers greater 0" debuffif="beers less 1" causes="beer,grainAlcohol"
 	type="staminaup" icon="ui_game_symbol_beer" name_key="beerBuzz" description_key="beerBuzzDesc" tooltip_key="beerBuzzTooltip">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
@@ -207,6 +339,43 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="stamina" amount="-5" rate="1"/>
 	<modify id="0" stat="speedmodifier" setValue="0.40"/>
 </buff>
+
+
+<!-- YUCCARIA: Muahahahaha! -->
+<buff id="EatYuccaFruit" duration="1" actions="increment(CTRyuccaConcentration,1,0,0,1)" />
+<buff id="DrinkYuccaJuice" duration="1" actions="increment(CTRyuccaConcentration,5,0,0,1)" />
+<buff id="MetabolizeYucca" buffif="CTRyuccaConcentration greater 0" debuffif="CTRyuccaConcentration less 1" actions="increment(CTRyuccaConcentration,-1,150t,0,0);min(CTRyuccaConcentration,0)" />
+<buff id="YuccaRush" mutex="Yuccaria" duration="0" buffif="CTRyuccaConcentration greater 5" debuffif="CTRyuccaConcentration less 5" causes="foodYuccaFruit,foodYuccaJuice" type="staminaup" icon="ui_game_symbol_run" name_key="yuccaRush" description_key="yuccaRushDesc" tooltip_key="yuccaRushTooltip">
+	<modify id="0" stat="stamina" amount="0.3" rate="1"/>
+</buff> 
+<buff id="Yuccaria" duration="0" buffif="CTRyuccaConcentration greater 15" debuffif="CTRyuccaConcentration less 3" actions="increment(@wellness, -0.2, 150t, 0, 0);debuff(YuccaRush)" causes="foodYuccaFruit,foodYuccaJuice" type="staminadown" icon="ui_game_symbol_poop" name_key="yuccaria" description_key="yuccariaDesc" tooltip_key="yuccariaTooltip">
+	<modify id="0" stat="stamina" amount="-2" rate="1" />
+	<modify id="0" stat="speedmodifier" setValue="0.75" />
+</buff> 
+
+
+
+<buff id="rabies0" duration="2400t" type="healthdown" icon="ui_game_symbol_rabies" name_key="rabies" description_key="rabies0Desc" tooltip_key="rabies0Tooltip" onexpired="rabies1">
+	<modify id="0" stat="food" amount="-1" rate="120" />
+</buff>
+<buff id="rabies1" duration="7200t" type="healthdown" actions="debuff(rabies0)" icon="ui_game_symbol_rabies" name_key="rabies" description_key="rabies1Desc" tooltip_key="rabies1Tooltip" onexpired="rabies3">
+	<modify id="0" stat="food" amount="-1" rate="60" />
+	<modify id="0" stat="health" amount="-1" rate="120" />
+</buff>
+<buff id="rabies2" duration="7200t" type="healthdown" actions="debuff(rabies1);debuff(rabies0)" icon="ui_game_symbol_rabies" name_key="rabies" description_key="rabies2Desc" tooltip_key="rabies2Tooltip" onexpired="rabies3">
+	<modify id="0" stat="food" amount="-1" rate="120" />
+</buff>
+<buff id="rabies3" duration="7200t" type="healthdown" actions="debuff(rabies2);debuff(rabies1);debuff(rabies0)" icon="ui_game_symbol_rabies" name_key="rabies" description_key="rabies3Desc" tooltip_key="rabies3Tooltip" onexpired="rabies4" ondebuff="rabies2">
+	<modify id="0" stat="food" amount="-1" rate="40" />
+	<modify id="0" stat="health" amount="-1" rate="60" />
+</buff>
+
+<buff id="rabies4" actions="kill" icon="ui_game_symbol_rabies" name_key="rabies" description_key="rabies4Desc" tooltip_key="rabies4Tooltip"/>
+
+
+
+
+
 
 <!-- todo ideally this buff is only applied on a critical hit to the heart region and not applied to zombies. Armor would limit this too -->
 <buff id="arrowCriticalBleedout" duration="50" causes="arrow,ironArrow,steelArrow,ironCrossbowBolt,steelCrossbowBolt,explodingCrossbowBolt" type="bleeding"
@@ -247,7 +416,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" amount="-100" rate="1"/>
 </buff>
 
-<buff id="dysentery" mutex="cured,dysentery2" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="2400" onexpired="dysentery2"
+<buff id="dysentery" mutex="cured,dysentery2" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="2400t" onexpired="dysentery2"
 	icon="ui_game_symbol_dysentery" castsound="playersick" name_key="dysentery" description_key="dysenteryDesc" tooltip_key="dysenteryTooltip" cures="goldenRodTea,redTea,vitamins,herbalAntibiotics,antibiotics" causes="bottledRiverWater,canMurkyWater">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 </buff>
@@ -258,17 +427,19 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" amount="-5" rate="60"/>
 </buff>
 
-<buff id="foodPoisoning" duration="30" stack="extend" actions="increment(@wellness, -.5, 14, 0, 0)" type="sickness" icon="ui_game_symbol_food_poisoning" name_key="foodPoisoning" description_key="foodPoisoningDesc" tooltip_key="foodPoisoningTooltip" causes="moldyBread,shamSandwich,rawMeat,rottingFlesh,egg">
+<buff id="foodPoisoning" duration="600t" stack="extend" actions="increment(@wellness, -.1, 14, 0, 0)" type="sickness" icon="ui_game_symbol_food_poisoning" name_key="foodPoisoning" description_key="foodPoisoningDesc" tooltip_key="foodPoisoningTooltip" causes="moldyBread,shamSandwich,rawMeat,rottingFlesh,egg">
 	<modify id="0" stat="stamina" amount="-10" rate="1"/>
 </buff>
 
 <buff id="steroids" mutex="steroidsCooldown" duration="200t" type="staminaup" actions="addimmunity(sickness);increment(@wellness, -.1, 50t, 0, 0)" icon="ui_game_symbol_pills" name_key="steroids" description_key="steroidsDesc" tooltip_key="steroidsTooltip" onexpired="steroidsCooldown" >
-	<modify id="0" stat="health"  amount="0.1" rate="1" />
-	<modify id="0" stat="stamina" amount="6" rate="1" />
+	<modify id="0" stat="health"  	amount="0.1" 	rate="1" />
+	<modify id="0" stat="stamina" 	amount="6" 	rate="1" />
+	<modify id="1" stat="food"	  	amount="-0.1" rate="1" />
 </buff>
 
-<buff id="steroidsCooldown" mutex="steroids" duration="100t" type="staminadown" icon="ui_game_symbol_zombie" name_key="steroidsCooldown" description_key="steroidsCooldownDesc" tooltip_key="steroidsCooldownTooltip">
-	<modify id="0" stat="stamina" amount="-1" rate="1" />
+<buff id="steroidsCooldown" duration="100t" actions="debuff(steroids);increment(@wellness, -.1, 50t, 0, 0)" type="staminadown" icon="ui_game_symbol_zombie" name_key="steroidsCooldown" description_key="steroidsCooldownDesc" tooltip_key="steroidsCooldownTooltip">
+	<modify id="0" stat="stamina" 	amount="-1" rate="1" />
+	<modify id="1" stat="water"		amount="-0.3" rate="1" />
 </buff>
 
 <buff id="cured" duration="3000" stack="reset" icon="ui_game_symbol_pills" name_key="cured" description_key="curedDesc" tooltip_key="curedTooltip"/>
@@ -279,17 +450,17 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	icon="ui_game_symbol_infection" name_key="infection" description_key="infectionDesc" tooltip_key="infectionTooltip" cures="foodHoney,antibiotics,herbalAntibiotics">
 </buff>
 
-<buff id="infection1" duration="9000" actions="debuff(infection)" onexpired="infection2" type="sickness"
+<buff id="infection1" duration="2400t" actions="debuff(infection)" onexpired="infection2" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antibiotics">
 	<modify id="0" stat="stamina" amount="-0.3" rate="1"/>
 </buff>
 
-<buff id="infection2" duration="9000" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1)" onexpired="infection3" type="sickness"
+<buff id="infection2" duration="7200t" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1)" onexpired="infection3" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection2" description_key="infection2Desc" tooltip_key="infection2Tooltip" cures="antibiotics">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 </buff>
 
-<buff id="infection3" duration="3000" actions="damage(25,800t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1);debuff(infection2)" onexpired="infection4" type="sickness"
+<buff id="infection3" duration="7200t" actions="damage(25,800t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1);debuff(infection2)" onexpired="infection4" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection3" description_key="infection3Desc" tooltip_key="infection3Tooltip" cures="antibiotics">
 	<modify id="0" stat="stamina" amount="-2" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="3"/>
