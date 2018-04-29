@@ -3,7 +3,7 @@
 	<world ruleset="vanilla" />
 
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0" generation_distance="10000" terrain_generator="vanilla" biome_generator="vanilla">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="1200" cell_offset="0" generation_distance="10000" terrain_generator="vanilla" biome_generator="vanilla">
 			<cell_rule name="default" prob="1"/>
 			<!--<cell_rule name="customHubTest" position="0,1" prob="0"/>-->
 		</ruleset>
@@ -14,14 +14,20 @@
 			<cave_count value="4,8"/>
 			<path_material value="asphalt" />
 			<path_radius value="10" />
-
-			<hub_rule name="townSmall" prob="0.3"/>
-			<hub_rule name="townLarge" prob="0.3"/>
-			<hub_rule name="citySmall" prob="0.1"/>
-			<hub_rule name="cityLarge" prob="0.1"/>
-			<hub_rule name="rural" prob="0.3"/>
-
+			
+			<!--
+			<hub_rule name="emptyTown"/>
+			<wilderness_rule name="empty" />
+			-->
+			<hub_rule name="smallTown"  prob="0.2" />
+			<hub_rule name="townSmall" 	prob="0.2"/>
+			<hub_rule name="townLarge" 	prob="0.1"/>
+			<hub_rule name="citySmall" 	prob="0.25"/>
+			<hub_rule name="cityLarge" 	prob="0.2"/>
+			<hub_rule name="rural" 		prob="0.05"/>
+			
 			<wilderness_rule name="wildernessDefault"/>
+
 		</cell_rule>
 
 		<cell_rule name="customHubTest">
@@ -36,6 +42,44 @@
 	</cell_rules>
 
 	<hub_rules>
+
+		<hub_rule name="emptyTown">
+			<hub_type value="rural"/>
+			<width value="10, 20" />
+			<height value="10, 20" />
+			<path_material value="asphalt" />
+			<path_radius value="10" />
+
+			<prefab_rule name="none"/>
+
+			<street_gen level="10" length_multiplier="4">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
+			</street_gen>
+		</hub_rule>
+		
+		<hub_rule name="smallTown">
+			<hub_type value="town"/>
+			<width value="200, 550" />
+			<height value="200, 550" />
+			<path_material value="asphalt" />
+			<path_radius value="10" />
+
+			<prefab_rule name="smallTownGroup"/>
+
+			<street_gen level="15" length_multiplier="4">
+				<axiom value="[FFCT]"/>
+
+				<rule char="T" replace_with="FFFFF[-F**]FF+FFFFFF[+F**T]"/>
+				<alt_commands chars="T"/>
+			</street_gen>
+		</hub_rule>
+		
 		<hub_rule name="ruralSmall">
 			<hub_type value="rural"/>
 			<width value="168, 250" />
@@ -166,7 +210,14 @@
 	</hub_rules>
 
 	<wilderness_rules>
-		<wilderness_rule name="wildernessDefault" spawn_min_max="15,20">
+		<wilderness_rule name="wildernessDefault" spawn_min_max="10,20">
+			<path_material value="gravel" />
+			<path_radius value="2" />
+			<path_adjust_terrain value="false"/>
+			<prefab_rule name="wildernessGroup" prob="1"/>
+		</wilderness_rule>
+		
+		<wilderness_rule name="empty" spawn_min_max="0,0">
 			<path_material value="gravel" />
 			<path_radius value="2" />
 			<path_adjust_terrain value="false"/>
@@ -176,14 +227,14 @@
 
 	<prefab_rules>
 		<prefab_rule name="none"/>
-
+` 	
 		<prefab_rule name="default">
 			<prefab rule="residentialOldGroup"/>
-			<prefab rule="residentialNewGroup"/>
-			<prefab rule="commercialGroup"/>
-			<prefab rule="downtownGroup"/>
-			<prefab rule="industrialGroup"/>
-			<prefab rule="ruralGroup"/>
+			<prefab rule="residentialNewGroup" min_count="2"/>
+			<prefab rule="commercialGroup" min_count="2"/>
+			<prefab rule="downtownGroup" min_count="3"/>
+			<prefab rule="industrialGroup" min_count="1"/>
+			<prefab rule="ruralGroup" min_count="2"/>
 			<prefab rule="detailFillerGroup"/>
 		</prefab_rule>
 
@@ -268,17 +319,70 @@
 			<prefab name="apartment_brick_6_flr" max_count="1" />
 			<prefab name="funeral_home_01" max_count="1" />
 		</prefab_rule>
+		
+		<prefab_rule name="smallTownGroup">
+			<prefab rule="residentialOldGroup"	min_count="20"	max_count="30"				/>
+			<prefab rule="hotels" 								max_count="1"	prob="0.5"	/>
+			<prefab name="police_station1" 						max_count="1"				/>
+			<prefab rule="gasStations" 							max_count="1"				/>
+			<prefab rule="businesses"							max_count="3"				/>
+			<prefab rule="fastfood"								max_count="1"				/>
+			<prefab rule="smallStores"							max_count="1"	prob="0.4"	/>
+		</prefab_rule>
+		
+		<prefab_rule name="hotels">
+			<prefab name="hotel_roadside_01" 				max_count="1"				/>
+			<prefab name="hotel_roadside_02" 				max_count="1"				/>
+		</prefab_rule>
+		
+		<prefab_rule name="smallStores">
+			<prefab name="store_gun_sm_01" 		max_count="1"/>
+			<prefab name="store_pharmacy_sm_01" max_count="1"/>
+			<prefab name="store_hardware_sm_01" max_count="1"/>
+			<prefab name="store_book_sm_01" 	max_count="1"/>
+			<prefab name="store_grocery_sm_01" 	max_count="1"/>
+		</prefab_rule>
+		
+		<prefab_rule name="fastfood">
+			<prefab name="fastfood_01"						max_count="1"  	/>
+			<prefab name="fastfood_02"						max_count="1" 	/>
+			<prefab name="fastfood_03"						max_count="1" 	/>
+		</prefab_rule>
+		
+		<prefab_rule name="gasStations">
+			<prefab name="gas_station1" 					max_count="1"/>
+			<prefab name="gas_station2" 					max_count="1"/>
+			<prefab name="gas_station3" 					max_count="1"/>
+			<prefab name="gas_station4" 					max_count="1"/>
+			<prefab name="gas_station5" 					max_count="1"/>
+		</prefab_rule>
+		
+		<prefab_rule name="businesses">
+			<prefab name="business_red_brick_01"			max_count="1" 	/>
+			<prefab name="business_red_brick_02"			max_count="1" 	/>
+			<prefab name="business_red_brick_03"			max_count="1" 	/>
+			<prefab name="business_red_brick_04"			max_count="1" 	/>
+			<prefab name="business_red_brick_05"			max_count="1" 	/>
+			<prefab name="business_red_brick_06"			max_count="1" 	/>
+			<prefab name="business_red_brick_07"			max_count="1" 	/>
+			<prefab name="business_tan_brick_01"			max_count="1" 	/>
+			<prefab name="business_tan_brick_02"			max_count="1" 	/>
+			<prefab name="business_tan_brick_03"			max_count="1" 	/>
+			<prefab name="business_tan_brick_04"			max_count="1" 	/>
+			<prefab name="business_tan_brick_05"			max_count="1" 	/>
+		</prefab_rule>
+		
 
 		<prefab_rule name="commercialGroup">
-			<prefab name="store_gun_sm_01" prob="0.6"/>
-			<prefab name="store_gun_lg_01" prob="0.4"/>
-			<prefab name="store_pharmacy_sm_01" />
-			<prefab name="store_hardware_sm_01" prob="0.6"/>
-			<prefab name="store_hardware_lg_01" prob="0.4"/>
-			<prefab name="store_book_sm_01" prob="0.6"/>
-			<prefab name="store_book_lg_01" prob="0.4"/>
-			<prefab name="store_grocery_lg_01" prob="0.4"/>
-			<prefab name="store_grocery_sm_01" prob="0.6"/>
+			<prefab name="store_gun_sm_01" prob="0.6" min_count="1"/>
+			<prefab name="store_pharmacy_sm_01" min_count="1"/>
+			<prefab name="store_hardware_sm_01" prob="0.6" min_count="1"/>
+			<prefab name="store_book_sm_01" prob="0.6" min_count="1"/>
+			<prefab name="store_grocery_sm_01" prob="0.6" min_count="1"/>
+			<prefab name="store_gun_lg_01" prob="0.4" min_count="1"/>
+			<prefab name="store_hardware_lg_01" prob="0.4" min_count="1"/>
+			<prefab name="store_book_lg_01" prob="0.4" min_count="1"/>
+			<prefab name="store_grocery_lg_01" prob="0.4" min_count="1"/>
 			<prefab name="store_bank_lg_01" />
 			<prefab name="gas_station1" max_count="1"/>
 			<prefab name="gas_station2" max_count="1"/>
@@ -362,7 +466,6 @@
 			<prefab name="vacant_lot_med_02"/>
 			<prefab name="vacant_lot_sm_01"/>
 			<prefab name="vacant_lot_sm_02"/>
-			<prefab name="army_barracks_01" />
 			<prefab name="mp_waste_bldg_01_white" />
 			<prefab name="mp_waste_bldg_03_white" />
 			<prefab name="mp_waste_bldg_04_white" />
@@ -390,10 +493,12 @@
 		</prefab_rule>
 
 		<prefab_rule name="ruralGroup">
+			<!-- REMOVE FARM POIs
 			<prefab name="blueberryfield_sm"/>
 			<prefab name="cornfield_sm"/>
 			<prefab name="cornfield_med"/>
 			<prefab name="potatofield_sm"/>
+			-->
 			<prefab name="barn_01" />
 			<prefab name="barn_02" />
 			<prefab name="barn_03" />
@@ -418,13 +523,10 @@
 			<prefab name="oldwest_sm_shop_01"/>
 			<prefab name="oldwest_sm_shop_02"/>
 			<prefab name="oldwest_sm_shop_03"/>
-			<prefab name="army_camp_01" />
-			<prefab name="army_camp_02" />
-			<prefab name="army_camp_03" />
 		</prefab_rule>
 
 		<prefab_rule name="wildernessGroup">
-			<prefab rule="traderGroup" min_count="1" max_count="1"/>
+			<prefab rule="traderGroup" min_count="1" max_count="1" prob="0.4" />
 			<prefab name="cabin_01" />
 			<prefab name="cabin_02_sm" />
 			<prefab name="cabin_03_lg" />
@@ -448,6 +550,18 @@
 			<prefab name="cave_02" />
 			<prefab name="cave_03" />
 			<prefab name="cave_04" />
+			<prefab name="army_barracks_01" prob="20" />
+			<prefab name="army_camp_01" prob="100" />
+			<prefab name="army_camp_02" prob="100" />
+			<prefab name="army_camp_03" prob="100" />
+			<prefab name="store_gun_sm_01" prob="0.2" />
+			<prefab name="store_pharmacy_sm_01" prob="0.1" />
+			<prefab name="store_hardware_sm_01" prob="0.4" />
+			<prefab name="store_book_sm_01" prob="0.4" />
+			<prefab name="store_grocery_sm_01" prob="0.2" />
+			<prefab name="house_new_mansion_01" prob="0.2"/>
+			<prefab name="house_new_mansion_02" prob="0.3"/>
+			<prefab name="house_new_mansion_03" prob="0.2"/>
 		</prefab_rule>
 
 		<prefab_rule name="detailFillerGroup">
@@ -550,7 +664,153 @@
 -->
 
 	<terrain_generators>
+		<terrain_generator name="vanilla2" use_old_final="false" distanceEnabled="true">
+			<module name="landBaseBase" type="Voronoi">
+				<property name="frequency" value="5"/>
+				<property name="displacement" value="0"/>
+				<property name="distanceEnabled" value="true" />
+			</module>
+			
+			<module name="scaleLandBaseFilter" type="ScaleBiasOutput">
+				<property name="sourceModule" value="landBaseBase" />
+				<property name="scale" value="3" />
+				<property name="bias" value="0" />
+			</module>
+			
+			<output module="scaleLandBaseFilter" />
+		</terrain_generator>
+	
+	
+	
 		<terrain_generator name="vanilla" use_old_final="false">
+			<module name="landBaseBase" type="FastBillow" >
+				<property name="frequency" value="0.0005"/>
+			</module>
+			
+			<module name="invertLand"	type="InvertOutput">
+				<property name="sourceModule" value="landBaseBase" />
+			</module>
+			
+			<module name="flattenedLandBasedFilter"		type="AbsoluteOutput">
+				<property name="sourceModule"	value="invertLand" />
+			</module>
+			
+			<module name="scaleLandBaseFilter" 	type="ScaleBiasOutput">
+				<property name="sourceModule" 	value="flattenedLandBasedFilter" />
+				<property name="scale"			value="15" />
+				<property name="bias"			value="-10" />
+			</module>
+			
+			
+		
+			<module name="Hills" type="RidgedMultifractal">
+				<property name="frequency" value="0.15"/>
+			</module>
+			<module name="HillsShaped" type="FastTurbulence">
+				<property name="sourceModule" value="Hills"/>
+				<property name="power" value="0.3"/>
+				<property name="frequency" value="0.35"/>
+				<property name="roughness" value="1"/>
+			</module>
+			<module name="HillsScaled" type="ScaleBiasOutput">
+				<property name="sourceModule" value="HillsShaped"/>
+				<property name="scale" value="150"/>
+				<property name="bias"  value="-30"/>
+			</module>
+			
+			
+			
+			<module name="Mounds" type="RidgedMultifractal">
+				<property name="frequency" value="0.15"/>
+			</module>
+			<module name="MoundsAbove" type="AbsoluteOutput">
+				<property name="sourceModule" value="Mounds"/>
+			</module>
+			<module name="MoundsShaped" type="FastTurbulence">
+				<property name="sourceModule" value="MoundsAbove"/>
+				<property name="power" value="0.3"/>
+				<property name="frequency" value="0.2"/>
+				<property name="roughness" value="2"/>
+			</module>
+			<module name="MoundsScaled" type="ScaleBiasOutput">
+				<property name="sourceModule" value="MoundsShaped"/>
+				<property name="scale" value="30"/>
+				<property name="bias"  value="0"/>
+			</module>
+			
+			
+			
+			
+			<module name="fastWaterBase" type="FastBillow">
+				<property name="frequency" value="3"/>
+			</module>
+			<module name="fastWaterBase2" type="InvertOutput">
+				<property name="sourceModule" value="fastWaterBase"/>
+			</module>
+			<module name="fastWaterScaled" type="ScaleBiasOutput">
+				<property name="sourceModule" value="fastWaterBase2"/>
+				<property name="scale" value="10"/>
+				<property name="bias" value="-2"/>
+			</module>
+			<module name="fastWaterClamped" type="ClampOutput">
+				<property name="sourceModule" value="fastWaterScaled"/>
+				<property name="bounds" value="-20,0.25"/>
+			</module>
+		
+			<module name="LandController"		type="Voronoi">
+				<property name="frequency" value="0.002"/>
+				<property name="displacement" value="0.5"/>
+				<property name="distanceEnabled" value="true" />
+			</module>
+			
+			<module name="LandController2"		type="FastBillow">
+				<property name="frequency" value="0.1"/>
+			</module>
+			
+			<module name="BlendWaterLand"		type="SmallerOutput">
+				<property name="sourceModule1" value="scaleLandBaseFilter" />
+				<property name="sourceModule2" value="fastWaterClamped" />
+			</module>
+		
+			<module name="BlendMoundsLand"		type="LargerOutput">
+				<property name="sourceModule1"	value="scaleLandBaseFilter" />
+				<property name="sourceModule2"	value="MoundsScaled" />
+			</module>
+		
+			<module name="BlendHillsLand"		type="LargerOutput">
+				<property name="sourceModule1"	value="BlendMoundsLand" />
+				<property name="sourceModule2"	value="HillsScaled" />
+			</module>
+			
+			<!--
+			<module name="BlendFinalLand"		type="Blend">
+				<property name="controlModule"	value="LandController" />
+				<property name="sourceModule1"	value="BlendHillsLand" />
+				<property name="sourceModule2" 	value="BlendWaterLand" />
+			</module>
+			-->
+			
+			<module name="BlendFinalLand"		type="Blend">
+				<property name="controlModule"	value="LandController2" />
+				<property name="sourceModule1"	value="BlendHillsLand" />
+				<property name="sourceModule2" 	value="BlendWaterLand" />
+			</module>
+			
+			
+			<module name="FinalLand" 			type="ScaleBiasOutput">
+				<property name="sourceModule"	value="BlendFinalLand" />
+				<property name="scale"			value="3" />
+				<property name="bias"			value="15" />
+			</module>
+			
+			
+			<!--<output module="scaleLandBaseFilter" />-->
+			<output module="FinalLand" />
+		</terrain_generator>
+	
+	
+	
+		<terrain_generator name="vanilla_old" use_old_final="false">
 			<module name="landBaseBase" type="FastBillow" seed_additive="5">
 				<property name="frequency" value="0.02"/>
 			</module>
@@ -569,16 +829,16 @@
 			</module>
 			<module name="fastMountainsT" type="FastTurbulence">
 				<property name="sourceModule" value="fastMountainsBase"/>
-				<property name="power" value="5"/>
-				<property name="frequency" value="0.025"/>
+				<property name="power" value="3"/>
+				<property name="frequency" value="0.15"/>
 				<property name="roughness" value="1"/>
 			</module>
 			<module name="fastMountainsScaled" type="ScaleBiasOutput">
 				<property name="sourceModule" value="fastMountainsT"/>
-				<property name="scale" value="0.9"/>
+				<property name="scale" value="1.7"/>
 			</module>
 			<module name="fastWaterBase" type="FastRidgedMultifractal">
-				<property name="frequency" value="0.35"/>
+				<property name="frequency" value="0.45"/>
 			</module>
 			<module name="fastWaterBase2" type="InvertOutput">
 				<property name="sourceModule" value="fastWaterBase"/>
@@ -586,7 +846,7 @@
 			<module name="fastWaterScaled" type="ScaleBiasOutput">
 				<property name="sourceModule" value="fastWaterBase2"/>
 				<property name="scale" value="1"/>
-				<property name="bias" value="-0.15"/>
+				<property name="bias" value="-0.55"/>
 			</module>
 			<module name="fastWaterClamped" type="ClampOutput">
 				<property name="sourceModule" value="fastWaterScaled"/>
@@ -617,7 +877,8 @@
 
 			<module name="scaleBiasOutput" type="ScaleBiasOutput">
 				<property name="sourceModule" value="finalLand"/>
-				<property name="scale" value="182"/>
+				<property name="scale" 	value="74"/>
+				<property name="bias"	value="9" />
 			</module>
 
 			<output module="scaleBiasOutput"/>
@@ -698,36 +959,37 @@
 	<biome_spawn_rules>
 		<biome_spawn_rule name="pine_forest">
 			<biome_generator range="0,0.1"/>
-			<terrain_generator range="150,175"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="desert">
-			<biome_generator range="0.1,0.3"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.3,0.4"/>
+			<terrain_generator range="70,86"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="forest">
-			<biome_generator range="0.4,0.6"/>
+			<biome_generator range="0.1,0.4"/>
 		</biome_spawn_rule>
-
-		<biome_spawn_rule name="snow">
-			<biome_generator range="0.6,0.7"/>
-			<terrain_generator range="176,255"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.7,0.8"/>
-		</biome_spawn_rule>
-
+		
 		<biome_spawn_rule name="plains">
-			<biome_generator range="0.8,1"/>
+			<biome_generator range="0.4,65"/>
+			<terrain_generator range="0,3"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="snow">
+			<biome_generator range="0.65,0.70"/>
+			<terrain_generator range="86,255"/>
 		</biome_spawn_rule>
 
+		<biome_spawn_rule name="desert">
+			<biome_generator range="0.7,1"/>
+		</biome_spawn_rule>
+
+		<biome_spawn_rule name="burnt_forest">
+			<distance_from_center range="7000,9000"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="wasteland">
+			<distance_from_center range="9000,12000"/>
+		</biome_spawn_rule>
+		
 		<biome_spawn_rule name="radiated">
-			<distance_from_center range="10000,20000"/>
+			<distance_from_center range="12000,20000"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="water">

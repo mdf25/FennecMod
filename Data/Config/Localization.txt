@@ -4990,6 +4990,8 @@ seedPacketAloe,items,Book,KgNone,"Aloe Seed Packet",,,,
 seedPacketAloeDesc,items,Book,KgNone,"A packet of 3 aloe seeds.",,,,
 seedPacketSoybean,items,Book,KgNone,"Soybean Seed Packet",,,,
 seedPacketSoybeanDesc,items,Book,KgNone,"A packet of 3 soybean seeds.",,,,
+seedPacketWheat,items,Book,KgNone,"Wheat Seed Packet",,,,
+seedPacketWheatDesc,items,Book,KgNone,"A packet of 3 wheat seeds.",,,,
 chickenAndSweetcornSoup,items,Book,KgNone,"Chicken and Sweetcorn Soup",,,,
 chickenAndSweetcornSoupDesc,items,Book,KgNone,"Attempted in a Chinese style, though it didn't come out looking too good...",,,,
 chickenAndSweetcornSoupTasty,items,Book,KgNone,"Chicken and Sweetcorn Soup (Tasty)",,,,
@@ -5560,6 +5562,27 @@ soyabeanDesc,items,Food,KgNone,"A handful of soybeans. You can eat them raw or u
 bottledSoyaMilk,items,Food,KgNone,"Soya Milk",,,,
 bottledSoyaMilkDesc,items,Food,KgNone,"A buttle of soya milk. You can also make it yourself with soybeans.",,,,
 
+plantedWheat1,blocks,Food,KgNone,"Wheat (Seed)",,,,
+plantedWheat1Desc,blocks,Food,KgNone,"A packet of wheat seeds. Plant it to grow Wheat crops.",,,,
+plantedWheat3Harvest,blocks,Food,KgNone,"Wheat Crop",,,,
+flour,items,Food,KgNone,"Sack of Flour",,,,
+flourDesc,items,Food,KgNone,"A sack of flour. You can use this to make pastas or doughs for bread and other items. Craft it using some wheat in your backpack, or for better results use an industrial grinder to get much more flour.",,,,
+dough,items,Food,KgNone,"Dough",,,,
+doughDesc,items,Food,KgNone,"A dough ball which can be baked into bread, or mixed with an egg, cut and canned to make a can of pasta.",,,,
+bread,items,Food,KgNone,"Loaf of Bread",,,,
+breadDesc,items,Food,KgNone,"A loaf of bread that can be eaten for a lot of fullness, or used to make sandwiches or even burgers with other ingredients.",,,,
+
+cheesyChickenBurger,items,Food,KgNone,"Chicken Cheeseburger",,,,
+cheesyChickenBurgerDesc,items,Food,KgNone,"A delicious chicken cheeseburger which is going to give you a good burst of energy.",,,,
+hogRoastBurger,items,Food,KgNone,"Hog Roast Burger",,,,
+hogRoastBurgerDesc,items,Food,KgNone,"How many boars did you have to kill for that!? Damn, that's a mighty fine lookin' burger you got there!",,,,
+snakeSoup,items,Food,KgNone,"Snake Soup",,,,
+snakeSoupDesc,items,Food,KgNone,"Snake soup made with some raw snake meat, mushrooms and chrysanthemum leaves for some additional kick. Not only will this fill you up but if you happen to have dysentery, this will help cure it.",,,,
+snakeStrips,items,Food,KgNone,"Breaded Snake Strips",,,,
+snakeStripsDesc,items,Food,KgNone,"They make look like fish sticks, but don't tell the others that lest they have a hissy fit!",,,,
+
+
+
 trowelIron,items,Tools,KgNone,"Iron Garden Trowel",,,,
 trowelIronDesc,items,Tools,KgNone,"A trowel can be used to further upgrade your farmland into fertile farmland with some fertilizer.",,,,
 
@@ -5604,12 +5627,14 @@ vegetableOilDesc,items,Resources,KgNone,"Vegetable oil can make a fermenting sub
 vegetableFerment,items,Resources,KgNone,"Fermented Vegetable Oil",,,,
 vegetableFermentDesc,items,Resources,KgNone,"Fermented vegetable oil can be used to cure animal hides into leather over a firepit. Or you can drink it... But it tastes disgusting and can't be good for your insides!",,,,
 
-
-
-
-
-
-
+cntGraniteSinkWorking,Blocks,block,KgNone,"Granite Sink (Working)",,,,
+cntGraniteSinkWorkingDesc,Blocks,block,KgNone,"A working granite sink. Right click with an empty jar to get murky water.",,,,
+cntGraniteSinkNotWorking,Blocks,block,KgNone,"Granite Sink",,,,
+cntGraniteSinkNotWorkingDesc,Blocks,block,KgNone,"A granite sink. Looks nice but unfortunately it doesn't work.",,,,
+cntCabinetOldSinkWorking,Blocks,block,KgNone,"Old Sink (Working)",,,,
+cntCabinetOldSinkWorkingDesc,Blocks,block,KgNone,"It may be a grimy old sink but it seems to still work. Right click with a jar to fill it with murky water.",,,,
+cntCabinetOldSinkNotWorking,Blocks,block,KgNone,"Old Sink",,,,
+cntCabinetOldSinkNotWorkingDesc,Blocks,block,KgNone,"Just a grimy old sink - not in working order.",,,,
 
 
 

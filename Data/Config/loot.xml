@@ -127,6 +127,16 @@
 		<block name="cntPurse01"/>
 	</placeholder>
 
+	<!-- Gives houses a chance of working sinks!-->
+	<placeholder name="cntGraniteSink">
+		<block name="cntGraniteSinkWorking" 		prob="0.25"/>
+		<block name="cntGraniteSinkNotWorking" 		prob="0.75"/>
+	</placeholder>
+	<placeholder name="cntCabinetOldSink">
+		<block name="cntCabinetOldSinkWorking" 		prob="0.25"/>
+		<block name="cntCabinetOldSinkNotWorking" 	prob="0.75"/>
+	</placeholder>
+	
 	<!-- Replace the lootStreet with one of the following -->
 	<placeholder name="lootStreetHelper">
 		<block name="cntTrashPile01"/>
@@ -1021,6 +1031,7 @@
 	<item name="plantedMushroom1"/>
 	<item name="plantedYucca1"/>
 	<item name="plantedSoybean1" />
+	<item name="plantedWheat1" />
 	<item name="plantedChrysanthemum1" prob="0.5"/>
 	<item name="treePlantedMountainPine1m" prob="0.3"/>
 	<item name="treePlantedMaple1m" prob="0.3"/>
@@ -1070,6 +1081,7 @@
 	<item name="corn"/>
 	<item name="potato"/>
 	<item name="soyabean"/>
+	<item name="wheat" />
 	<item name="blueberries"/>
 	<item name="cottonPlant"/>
 	<item name="coffeeBeans"/>
@@ -1079,6 +1091,7 @@
 <lootgroup name="cupboard">
 	<item name="canEmpty"/>
 	<item group="cannedfood" prob="0.02"/>
+	<item name="flour" prob="0.3" />
 	<item group="seeds" prob="0.05"/>
 	<item name="bottledRiverWater" prob="0.5"/>
 	<item name="emptyJar" count="1,4"/>
@@ -1940,6 +1953,9 @@
 	<item name="shamSandwich" count="1,3"/>
 	<item name="canHam" count="1,2"/>
 	<item group="coldfood"/>
+	<item group="coldfoodJackpot" prob="0.1" />
+	<item group="cupboardJackpot" prob="0.1" />
+	<item name="flour" count="2,5" />
 	<item group="beverages" count="1,2"/>
 	<item name="foodHoney" count="1" prob="0.1"/>
 	<item name="paper" count="5,10" prob="0.4"/>

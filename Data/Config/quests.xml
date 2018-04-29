@@ -110,8 +110,6 @@
 
 		<reward type="SkillPoints" value="5" />
 		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
-		<reward type="ShowTip" value="survivalTip" stage="aftercomplete" />
-		<reward type="ShowTip" value="poopingTip" stage="aftercomplete" />
 		<reward type="Quest" id="quest_smelting_1" />
 		<reward type="Quest" id="quest_surviving_1" />
     </quest>
@@ -132,7 +130,7 @@
 	repeatable="false" category_key="quest" offer_key="quest_smelting_1_offer" difficulty="easy">
 		<objective type="FetchKeep" 	id="rockSmall"	value="40"	/>
 		<objective type="FetchKeep" 	id="clayLump"	value="40"	/>
-		<objective type="FetchKeep" 	id="wood"		value="120"	/>
+		<objective type="FetchKeep" 	id="wood"		value="80"	/>
 		<objective type="BlockPlace" 	id="firepit"	value="1"	/>
 		<reward type="Quest" id="quest_smelting_2" />
 	</quest>

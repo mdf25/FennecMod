@@ -4653,6 +4653,44 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="soyabean" count="2"/>
 </block>
 
+<block id="448" name="plantedWheat1">
+	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+	<property name="Model" value="Entities/Plants/potato_plant_sproutPrefab"/>
+	<property name="Collide" value="melee"/>
+	<property name="PlantGrowing.Next" value="plantedSoybean2"/>
+	<property name="Group" value="Food/Cooking"/>
+	<property name="Shape" value="BillboardPlant"/>
+	<property name="Mesh" value="grass"/>
+	<property name="Texture" value="378"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<drop event="Destroy" name="plantedWheat1" count="1"/>
+</block>
+
+<block id="449" name="plantedWheat2">
+	<property name="Extends" value="cropsGrowingMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="PlantGrowing.Next" value="plantedSoybean3Harvest"/>
+	<property name="Collide" value="melee"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Shape" value="BillboardPlant"/>
+	<property name="Mesh" value="grass"/>
+	<property name="Texture" value="378"/>
+	<drop event="Destroy" name="plantedWheat1" count="1"/>
+</block>
+
+<block id="450" name="plantedWheat3Harvest">
+	<property name="Extends" value="cropsHarvestableMaster"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="melee"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Shape" value="BillboardPlant"/>
+	<property name="Mesh" value="grass"/>
+	<property name="Texture" value="395"/>
+	<drop event="Harvest" name="wheat" count="2"/>
+</block>
+
+
+
 
 
 <block id="463" name="bed01">
@@ -6750,7 +6788,43 @@ group desc for stuff like metal siding
 	<property name="TraderID" value="4"/>
 	<property name="Buff" value="shockedBuff"/>
 </block>
-	<!-- 1 Free -->
+
+<block id="659" name="cntGraniteSinkWorking">
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="cntGraniteSink" />
+	<property name="Material" value="metal"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="counter_sink"/> <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Texture" value="373,261,262,345,345,345"/> <!-- 373/374=sink, 82=cabinetWood -->
+	<property name="LootList" value="8"/>
+	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
+	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
+	<property name="ImposterExchange" value="imposterBlock" param1="116"/>
+</block>
+
+<block id="660" name="cntGraniteSinkNotWorking">
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="cntGraniteSink" />
+	<property name="Material" value="metal"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="counter_sink"/> <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Texture" value="373,261,262,345,345,345"/> <!-- 373/374=sink, 82=cabinetWood -->
+	<property name="LootList" value="8"/>
+	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
+	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
+	<property name="ImposterExchange" value="imposterBlock" param1="116"/>
+</block>
+
 
 <block id="662" name="flagstonePole">
 	<property name="Extends" value="flagstoneMaster"/>
@@ -9534,6 +9608,41 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="ladderMetalDesc"/>
 	<property name="Group" value="Building"/>
 </block>
+
+<block id="950" name="cntCabinetOldSinkWorking">
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="cntCabinetOldSink" />
+	<property name="Shape" value="New"/>
+	<property name="Model" value="counter_sink"/> <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Material" value="metal"/>
+	<property name="Texture" value="374,78,79,84,84,84"/> <!-- 373/374=sink, 84=cabinetWood -->
+	<property name="LootList" value="8"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="5"/>
+	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+	<property name="ImposterExchange" value="imposterBlock" param1="43"/>
+</block>
+
+<block id="951" name="cntCabinetOldSinkNotWorking">
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="cntCabinetOldSink" />
+	<property name="Shape" value="New"/>
+	<property name="Model" value="counter_sink"/> <property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="Material" value="metal"/>
+	<property name="Texture" value="374,78,79,84,84,84"/> <!-- 373/374=sink, 84=cabinetWood -->
+	<property name="LootList" value="8"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="5"/>
+	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+	<property name="ImposterExchange" value="imposterBlock" param1="43"/>
+</block>
+
 	<!-- 35 Free -->
 
 <block id="985" name="steelArrowSlitHalf">
