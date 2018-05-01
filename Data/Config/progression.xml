@@ -1248,9 +1248,10 @@
 		<recipe name="concreteMix" unlock_level="1"/>
 	</perk>
 	<perk name="ForgeAhead" icon="resource" description_key="ForgeAheadDesc" title_key="ForgeAheadName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="1"/>
-		<recipe name="forge"		unlock_level="1" />
+		<recipe name="forge"			unlock_level="1" />
+		<recipe name="forgeUpgradeKit"	unlock_level="1" />
 	</perk>
 	<perk name="Glassworking" icon="resource" description_key="GlassworkingDesc" title_key="GlassworkingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>

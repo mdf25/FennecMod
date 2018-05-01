@@ -2048,8 +2048,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="4"/>
 </recipe>
 
-<recipe name="leather" count="1" craft_area="firepit" craft_tool="cookingGrill">
-	<ingredient name="animalHide" count="1"/>
+<recipe name="leather" count="4" craft_area="firepit" craft_tool="cookingGrill">
+	<ingredient name="animalHide" count="4"/>
 	<ingredient name="vegetableFerment" count="1"/>
 </recipe>
 
@@ -2058,11 +2058,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="grainAlcohol" count="1" />
 </recipe>
 
-<recipe name="vegetableFerment" count="1" craft_area="chemistryStation" craft_time="80">
+<recipe name="vegetableFerment" count="1" craft_area="chemistryStation" craft_time="120">
 	<ingredient name="vegetableOil" count="1" />
 </recipe>
 
-<recipe name="vegetableFerment" count="1" craft_area="purificationPlant" craft_time="40">
+<recipe name="vegetableFerment" count="1" craft_area="purificationPlant" craft_time="80">
 	<ingredient name="vegetableOil" count="1" />
 </recipe>
 
@@ -4065,7 +4065,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="campfire" 	count="1" />
 	<ingredient name="rockSmall" 	count="40" />
 	<ingredient name="clayLump"		count="40" />
-	<ingredient name="wood"			count="120"/>
+	<ingredient name="wood"			count="80"/>
 </recipe>
 
 <recipe name="ingotMold" count="1">

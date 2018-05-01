@@ -1981,6 +1981,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="17"/>
 	<property name="DegradationBreaksAfter" value="true"/>
+	<property name="RepairTools" value="forgedCopper"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="FuelValue" value="30"/>
 	<property name="EconomicValue" value="180"/>
@@ -2022,6 +2023,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="32"/>
+	<property name="RepairTools" value="forgedCopper"/>
 	<property name="DegradationBreaksAfter" value="true"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
@@ -2063,6 +2065,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="18"/>
+	<property name="RepairTools" value="forgedCopper"/>
 	<property name="DegradationBreaksAfter" value="true"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
