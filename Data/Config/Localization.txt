@@ -5303,6 +5303,10 @@ CarpenterBenchRecipeName,progression,Perk,EnChanged,"Carpenter: Bench Recipe",,,
 CarpenterBenchRecipeDesc,progression,Perk,EnChanged,"As a master carpenter, you can learn how to make a workbench capable of getting wood from logs more efficiently and crafting some other items with it.",,,,
 IronSmithingName,progression,Perk,EnChanged,"Iron Smithing",,,,
 IronSmithingDesc,progression,Perk,EnChanged,"Learn how to forge iron properly and shape it into tools. You will be able to make the iron pickaxe, shovel and axe, as well as the hoe and arrowheads.",,,,
+plumbingName,progression,Perk,EnChanged,"Plumbing",,,,
+plumbingDesc,progression,Perk,EnChanged,"Learn how to make sink upgrade kits to create a working sink.",,,,
+ovenRepairName,progression,Perk,EnChanged,"Oven Repair",,,,
+ovenRepairDesc,progression,Perk,EnChanged,"Learn how to make oven upgrade kits to create a working oven.",,,,
 IronToolCraftingName,progression,Perk,EnChanged,"Iron Component Crafting",,,,
 IronToolCraftingDesc,progression,Perk,EnChanged,"Learn how to shape iron into cooking pots, grills and anvils with this perk.",,,,
 AxesName,progression,Perk,EnChanged,"Axes",,,,
@@ -5317,6 +5321,10 @@ FarmingToolsName,progression,Perk,EnChanged,"Farming Tools",,,,
 FarmingToolsDesc,progression,Perk,EnChanged,"Get better using farming equipment by using tools from this group.",,,,
 TorchAndPitchforksName,progression,Perk,EnChanged,"Torch and Pitchforks",,,,
 TorchAndPitchforksDesc,progression,Perk,EnChanged,"Decrease the amount of stamina when using farming tools and get greater harvest from your crops by using farming tools. Your farming tools do more damage with every rank.",,,,
+PowerToolsName,progression,Skill,EnChanged,"Power Tools",,,,
+PowerToolsDesc,progression,Skill,EnChanged,"Increase the block damage done with chainsaws and augers by using them to chop and mine.",,,,
+SavageryName,progression,Perk,EnChanged,"Savagery",,,,
+SavageryDesc,progression,Perk,EnChanged,"Increase the amount of entity damage you do with chainsaws and augers. Higher levels also increase the dismemberment chance too, so you can start chopping off limbs and heads more easily!",,,,
 mowEmDownName,progression,Perk,EnChanged,"Mow 'em Down",,,,
 mowEmDownDesc,progression,Perk,EnChanged,"Increase the chance to dismember and decapitate zombies with rifles and assult rifles with every rank.",,,,
 WilliamTellName,progression,Perk,EnChanged,"William Tell",,,,
@@ -5441,6 +5449,11 @@ glassworkingBulletproofSchematic,items,Schematic,KgNone,"Advanced Glassworking",
 glassworkingBulletproofSchematicDesc,items,Schematic,KgNone,"Do you need glass that doesn't shatter when a cop farts on it? Time to read this book!",,,,
 GlassworkingBulletproofName,progression,Perk,KgNone,"Advanced Glassworking",,,,
 GlassworkingBulletproofDesc,progression,Perk,KgNone,"Do you need glass that doesn't shatter when a cop farts on it? Time to get this perk or read the book!",,,,
+
+sinkUpgradeKitSchematic,items,Schematic,KgNone,"Plumbing for Blind Buggers",,,,
+sinkUpgradeKitSchematicDesc,items,Schematic,KgNone,"Learn how to repair sinks by making sink upgrade kits.",,,,
+ovenUpgradeKitSchematic,items,Schematic,KgNone,"The Fox Guide to Oven Repair",,,,
+ovenUpgradeKitSchematicDesc,items,Schematic,KgNone,"Learn how to repair ovens by making oven upgrade kits.",,,,
 
 bottledBoiledWater,items,Consumable,KgNone,"Bottled Impure Water",,,,
 bottledBoiledWaterDesc,items,Consumable,KgNone,"This water is safer to drink after boiling but it may still contain some nasties in there...",,,,
@@ -5631,10 +5644,47 @@ cntGraniteSinkWorking,Blocks,block,KgNone,"Granite Sink (Working)",,,,
 cntGraniteSinkWorkingDesc,Blocks,block,KgNone,"A working granite sink. Right click with an empty jar to get murky water.",,,,
 cntGraniteSinkNotWorking,Blocks,block,KgNone,"Granite Sink",,,,
 cntGraniteSinkNotWorkingDesc,Blocks,block,KgNone,"A granite sink. Looks nice but unfortunately it doesn't work.",,,,
+cntGraniteSinkWorking2,Blocks,block,KgNone,"Granite Sink (Filtered, Working)",,,,
+cntGraniteSinkWorking2Desc,Blocks,block,KgNone,"A working granite sink. Left click with an empty jar to get clean water.",,,,
+
 cntCabinetOldSinkWorking,Blocks,block,KgNone,"Old Sink (Working)",,,,
 cntCabinetOldSinkWorkingDesc,Blocks,block,KgNone,"It may be a grimy old sink but it seems to still work. Right click with a jar to fill it with murky water.",,,,
 cntCabinetOldSinkNotWorking,Blocks,block,KgNone,"Old Sink",,,,
 cntCabinetOldSinkNotWorkingDesc,Blocks,block,KgNone,"Just a grimy old sink - not in working order.",,,,
+cntCabinetOldSinkWorking2,Blocks,block,KgNone,"Old Sink (Filtered, Working)",,,,
+cntCabinetOldSinkWorking2Desc,Blocks,block,KgNone,"A working sink. Left click with an empty jar to get clean water.",,,,
+workingOven,Blocks,block,KgNone,"Wall Oven (Working)",,,,
+workingOvenDesc,Blocks,Block,KgNone,"A working wall oven that you can use to make better food.",,,,
+
+sinkUpgradeKit,Items,resources,KgNone,"Sink Upgrade Kit",,,,
+sinkUpgradeKitDesc,Items,resources,KgNone,"You can use this on any old sink to upgrade it into a working variant to provide clean water. You need to use a wrench to upgrade it - other tools will not work. Once the sink is upgraded, left click with an empty jar to get clean water.",,,,
+ovenUpgradeKit,Items,resources,KgNone,"Oven Upgrade Kit",,,,
+ovenUpgradeKitDesc,Items,resources,KgNone,"You can use this on any wall oven to upgrade it into a working variant. The working oven gives access to some of the more advanced cooking recipes and is more efficient than the campfire.",,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

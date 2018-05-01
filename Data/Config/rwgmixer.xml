@@ -19,15 +19,15 @@
 			<hub_rule name="emptyTown"/>
 			<wilderness_rule name="empty" />
 			-->
+			
 			<hub_rule name="smallTown"  prob="0.2" />
 			<hub_rule name="townSmall" 	prob="0.2"/>
 			<hub_rule name="townLarge" 	prob="0.1"/>
 			<hub_rule name="citySmall" 	prob="0.25"/>
 			<hub_rule name="cityLarge" 	prob="0.2"/>
 			<hub_rule name="rural" 		prob="0.05"/>
-			
 			<wilderness_rule name="wildernessDefault"/>
-
+			
 		</cell_rule>
 
 		<cell_rule name="customHubTest">
@@ -702,6 +702,26 @@
 			</module>
 			
 			
+			
+			<module name="SmallHills" type="FastNoise">
+				<property name="frequency" 		value="1.5" />
+				<property name="octaveCount"	value="2" 	 />
+				<property name="persistence"	value="0.7"	 />
+				<property name="lacunarity"		value="1.7"	 />
+			</module>
+			
+			<module name="SmallHillsScaled" type="ScaleBiasOutput">
+				<property name="sourceModule"	value="SmallHills" />
+				<property name="scale"			value="15" />
+				<property name="bias"			value="-5" />
+			</module>
+			
+			<module name="SmallHillsClamped" type="ClampOutput">
+				<property name="sourceModule" 	value="SmallHillsScaled" />
+				<property name="bounds"			value="0,50" />
+			</module>
+			
+			
 		
 			<module name="Hills" type="RidgedMultifractal">
 				<property name="frequency" value="0.15"/>
@@ -782,6 +802,11 @@
 				<property name="sourceModule2"	value="HillsScaled" />
 			</module>
 			
+			<module name="BlendSmallHillsLand" 	type="Add">
+				<property name="sourceModule1"	value="BlendHillsLand"	/>
+				<property name="sourceModule2"	value="SmallHillsClamped" />
+			</module>
+			
 			<!--
 			<module name="BlendFinalLand"		type="Blend">
 				<property name="controlModule"	value="LandController" />
@@ -792,7 +817,7 @@
 			
 			<module name="BlendFinalLand"		type="Blend">
 				<property name="controlModule"	value="LandController2" />
-				<property name="sourceModule1"	value="BlendHillsLand" />
+				<property name="sourceModule1"	value="BlendSmallHillsLand" />
 				<property name="sourceModule2" 	value="BlendWaterLand" />
 			</module>
 			
@@ -803,7 +828,7 @@
 				<property name="bias"			value="15" />
 			</module>
 			
-			
+			<!--<output module="SmallHillsClamped" />-->
 			<!--<output module="scaleLandBaseFilter" />-->
 			<output module="FinalLand" />
 		</terrain_generator>

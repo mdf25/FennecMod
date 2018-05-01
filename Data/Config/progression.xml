@@ -1064,6 +1064,38 @@
 		</effect>
 	</perk>
 	
+	<action_skill name="PowerTools" exp_to_level="2000" icon="mining" description_key="PowerToolsDesc" title_key="PowerToolsName" group="tools">
+		<effect name="BlockDamage">
+			<multiply skill_level="1,100" value="1.00,4.00"/>
+		</effect>
+	</action_skill>
+	
+	<perk name="Savagery" icon="mining" description_key="SavageryDesc" title_key="SavageryName" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="weapons">
+		<requirement perk_level="1" required_skill_name="PowerTools" required_skill_level="1"/>
+		<requirement perk_level="2" required_skill_name="PowerTools" required_skill_level="10"/>
+		<requirement perk_level="3" required_skill_name="PowerTools" required_skill_level="20"/>
+		<requirement perk_level="4" required_skill_name="PowerTools" required_skill_level="40"/>
+		<requirement perk_level="5" required_skill_name="PowerTools" required_skill_level="80"/>
+		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
+			<multiply skill_level="1" value="1.22500"/>
+			<multiply skill_level="2" value="1.56250"/>
+			<multiply skill_level="3" value="2.00000"/>
+			<multiply skill_level="4" value="2.50000"/>
+			<multiply skill_level="5" value="3.00000"/>
+			
+		</effect>
+		<effect name="DismembermentChance">
+			<add perk_level="0" value="0"/>
+			<add skill_level="1" value="0"/>
+			<add skill_level="2" value="0.03"/>
+			<add skill_level="3" value="0.07"/>
+			<add skill_level="4" value="0.12"/>
+			<add skill_level="5" value="0.20"/>
+		</effect>
+	</perk>
+	
+	
 	<action_skill name="Mining Tools" exp_to_level="500" icon="mining" description_key="miningToolsDesc" title_key="miningTools" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
@@ -1228,7 +1260,6 @@
 		<recipe name="glassIndustrialCTRPlate"		unlock_level="1" />
 		<recipe name="glassIndustrial02CTRPlate"	unlock_level="1" />
 	</perk>	
-		
 	<perk name="GlassworkingBusiness" icon="resource" description_key="GlassworkingBusinessDesc" title_key="GlassworkingBusinessName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
@@ -1238,7 +1269,6 @@
 		<recipe name="glassBusinessPlate"			unlock_level="1" />
 		<recipe name="glassBusinessPlateCurved"		unlock_level="1" />
 	</perk>		
-		
 	<perk name="GlassworkingBulletproof" icon="resource" description_key="GlassworkingBulletproofDesc" title_key="GlassworkingBulletproofName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="4"/>
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="7"/>
@@ -1249,9 +1279,17 @@
 		<recipe name="glassBulletproofRamp"			unlock_level="1" />
 	</perk>	
 		
+	<perk name="plumbing" icon="resource" description_key="plumbingDesc" title_key="plumbingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<recipe name="sinkUpgradeKit"		unlock_level="1" />
+	</perk>	
 		
-		
-		
+	<perk name="ovenRepair" icon="resource" description_key="ovenRepairDesc" title_key="ovenRepairName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<recipe name="ovenUpgradeKit"		unlock_level="1" />
+	</perk>		
 		
 		
 		

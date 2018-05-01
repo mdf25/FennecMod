@@ -313,7 +313,7 @@
 		-->
 		<block name="sectionalLeatherCouchSofaCorner"/>
 		<block name="sectionalLeatherCouchSofaMiddle"/>
-		<block name="cntGraniteSink"/>
+		<block name="cntGraniteSinkNotWorking"/>
 		<block name="cntCabinet"/>
 		<block name="cntCabinetTop"/>
 		<block name="cntWallOven"/>
@@ -906,6 +906,8 @@
 	<item name="ironcladSchematic" />
 	<item name="rebarSchematic" />
 	<item name="glassworkingBulletproofSchematic" />
+	<item name="sinkUpgradeKitSchematic" />
+	<item name="ovenUpgradeKitSchematic" />
 	<item group="questChallenge" count="1"/>
 	<!--
 	<item name="handleBarsSchematic"/>

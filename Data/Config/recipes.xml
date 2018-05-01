@@ -238,11 +238,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1" />
 </recipe>
 
-<recipe name="bread" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="30">
+<recipe name="bread" count="1" craft_area="working_oven" craft_time="30">
 	<ingredient name="dough" count="1" />
 </recipe>
 
-<recipe name="canPasta" count="5" craft_area="campfire" craft_tool="cookingPot" craft_time="30">
+<recipe name="canPasta" count="5" craft_area="working_oven" craft_tool="cookingPot" craft_time="30">
 	<ingredient name="dough" 	count="3" />
 	<ingredient name="egg"   	count="1" />
 	<ingredient name="canEmpty"	count="5" />
@@ -435,7 +435,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawBoarMeat" count="1"/>
 </recipe>
 
+<recipe name="baconAndEggs" count="1" craft_area="working_oven">
+	<ingredient name="egg" count="2"/>
+	<ingredient name="rawBoarMeat" count="1"/>
+</recipe>
+
 <recipe name="bakedPotato" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="potato" count="1"/>
+</recipe>
+
+<recipe name="bakedPotato" count="1" craft_area="working_oven">
 	<ingredient name="potato" count="1"/>
 </recipe>
 
@@ -496,6 +505,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
+<recipe name="blueberryPie" count="1" craft_area="working_oven">
+	<ingredient name="blueberries" count="1"/>
+	<ingredient name="egg" count="1"/>
+	<ingredient name="cornMeal" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
 <recipe name="plantedBlueberry1" count="1" craft_time="1">
 	<ingredient name="blueberries" count="1"/>
 </recipe>
@@ -521,11 +537,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="bottledBoiledWater" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="snowBall" count="1"/>
+	<ingredient name="snowBall" count="10"/>
+	<ingredient name="emptyJar" count="1"/>
+</recipe>
+
+<recipe name="bottledBoiledWater" count="1" craft_area="working_oven">
+	<ingredient name="snowBall" count="10"/>
 	<ingredient name="emptyJar" count="1"/>
 </recipe>
 
 <recipe name="bottledBoiledWater" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bottledRiverWater" count="1"/>
+</recipe>
+
+<recipe name="bottledBoiledWater" count="1" craft_area="working_oven">
 	<ingredient name="bottledRiverWater" count="1"/>
 </recipe>
 
@@ -739,8 +764,17 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="canMurkyWater" count="1"/>
 </recipe>
 
+<recipe name="canBoiledWater" count="1" craft_area="working_oven">
+	<ingredient name="canMurkyWater" count="1"/>
+</recipe>
+
 <recipe name="canBoiledWater" count="1" craft_area="campfire">
-	<ingredient name="snowBall" count="1"/>
+	<ingredient name="snowBall" count="10"/>
+	<ingredient name="canEmpty" count="1"/>
+</recipe>
+
+<recipe name="canBoiledWater" count="1" craft_area="working_oven">
+	<ingredient name="snowBall" count="10"/>
 	<ingredient name="canEmpty" count="1"/>
 </recipe>
 
@@ -1088,6 +1122,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="coffee" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="coffeeBeans" count="5"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="coffee" count="1" craft_area="working_oven">
 	<ingredient name="coffeeBeans" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
@@ -1197,11 +1236,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
+<recipe name="cornBread" count="1" craft_area="working_oven">
+	<ingredient name="cornMeal" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
 <recipe name="cornMeal" count="1">
 	<ingredient name="corn" count="1"/>
 </recipe>
 
 <recipe name="cornOnTheCob" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="corn" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="cornOnTheCob" count="1" craft_area="working_oven">
 	<ingredient name="corn" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
@@ -1254,6 +1303,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="eggboiled" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="egg" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="eggboiled" count="1" craft_area="working_oven">
 	<ingredient name="egg" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
@@ -1402,6 +1456,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="foodYuccaJuice" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="foodYuccaFruit" count="5"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="foodYuccaJuice" count="1" craft_area="working_oven">
+	<ingredient name="foodYuccaFruit" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
@@ -1660,6 +1719,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="goldenRodTea" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="goldenrodPlant" count="5"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="goldenRodTea" count="1" craft_area="working_oven">
+	<ingredient name="goldenrodPlant" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
@@ -2009,6 +2073,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="plantedSoybean1"	count="1" />
 </recipe>
 
+<recipe name="vegetableOil" count="3" craft_area="working_oven" craft_time="20">
+	<ingredient name="bottledWater" 	count="3" />
+	<ingredient name="plantedCorn1" 	count="1" />
+	<ingredient name="plantedPotato1"	count="1" />
+	<ingredient name="plantedSoybean1"	count="1" />
+</recipe>
+
 <recipe name="vegetableOil" count="5" craft_area="chemistryStation" craft_time="15">
 	<ingredient name="bottledWater" 	count="5" />
 	<ingredient name="plantedCorn1" 	count="1" />
@@ -2090,7 +2161,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="leather" count="1"/>
 </recipe>
 
-<recipe name="meatStew" count="1" craft_area="campfire" craft_tool="cookingPot">
+<recipe name="meatStew" count="1" craft_area="working_oven">
 	<ingredient name="rawWolfMeat" count="2"/>
 	<ingredient name="rawBearMeat" count="2"/>
 	<ingredient name="potato" count="2"/>
@@ -2467,6 +2538,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="redTea" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="chrysanthemumPlant" count="5"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="redTea" count="1" craft_area="working_oven">
+	<ingredient name="chrysanthemumPlant" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
@@ -2865,7 +2941,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="mechanicalParts" count="2"/>
 </recipe>
 
-<recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
+<recipe name="vegetableStew" count="1" craft_area="working_oven">
 	<ingredient name="potato" count="5"/>
 	<ingredient name="corn" count="5"/>
 	<ingredient name="mushrooms" count="5"/>
@@ -3498,19 +3574,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="classPaperCraftable" count="1" />
 </recipe>
 
-<recipe name="chickenAndSweetcornSoup" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="chickenAndSweetcornSoup" count="1" craft_area="working_oven" craft_time="50">
 	<ingredient name="canChicken"   count="1"/>
   	<ingredient name="corn"    		count="2"/>
   	<ingredient name="canSoup"      count="1"/>
 </recipe>
 
-<recipe name="chickenMushroomSoup" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="chickenMushroomSoup" count="1" craft_area="working_oven" craft_time="50">
    	<ingredient name="canStock"     count="1"/>
    	<ingredient name="mushrooms"    count="2"/>
    	<ingredient name="canChicken"   count="1"/>
 </recipe>
 
-<recipe name="vegtableSoup" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="vegtableSoup" count="1" craft_area="working_oven" craft_time="50">
    	<ingredient name="canMiso"      count="1"/>
    	<ingredient name="canStock"     count="1"/>
    	<ingredient name="canPeas"      count="1"/>
@@ -3518,20 +3594,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
    	<ingredient name="corn"         count="1"/>
 </recipe>
 
-<recipe name="peaHamSoup"    count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="peaHamSoup"    count="1" craft_area="working_oven" craft_time="50">
 	<ingredient name="canPeas" 		count="1"/>
  	<ingredient name="canHam"		count="1"/>
  	<ingredient name="canMiso"		count="1"/>
  	<ingredient name="canStock"  	count="1"/>
 </recipe>
 
-<recipe name="mushroomSoup"  count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="mushroomSoup"  count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="canStock"     count="1"/>
  	<ingredient name="mushrooms"    count="5"/>
  	<ingredient name="canMiso"	    count="1"/>
 </recipe>
 
-<recipe name="chowder" count="1" craft_area="campfire"  craft_tool="cookingPot" craft_time="50">
+<recipe name="chowder" count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="canSoup"      count="1"/>
  	<ingredient name="canTuna"      count="1"/>
 	<ingredient name="canSalmon"	count="1"/>
@@ -3539,26 +3615,26 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
  	<ingredient name="potato"		count="1"/>
 </recipe>
 
-<recipe name="chickenMushroomPasta" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="chickenMushroomPasta" count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="canPasta"         count="1"/>
  	<ingredient name="canChicken"		count="1"/>
  	<ingredient name="mushrooms"		count="1"/>
 </recipe>
 
-<recipe name="pastaSham"  count="1" craft_area="campfire"  craft_tool="cookingPot" craft_time="50">
+<recipe name="pastaSham"  count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="canPasta"         count="1"/>
   	<ingredient name="canHam"		    count="1"/>
   	<ingredient name="corn"				count="1"/>
 </recipe>
 
-<recipe name="spicyHash"  count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="spicyHash"  count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="canHam"         	count="1"/>
  	<ingredient name="canChili"	        count="1"/>
  	<ingredient name="egg"				count="1"/>
  	<ingredient name="potato" 			count="1"/>
 </recipe>
 
-<recipe name="beefStew"  count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="beefStew"  count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="potato"         	count="2"/>
    	<ingredient name="canBeef"		    count="1"/>
 	<ingredient name="mushrooms"		count="2"/>
@@ -3566,7 +3642,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="corn"				count="2"/>
 </recipe>
 
-<recipe name="lambStew"  count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="lambStew"  count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="potato"         	count="2"/>
    	<ingredient name="canLamb"		    count="1"/>
 	<ingredient name="mushrooms"		count="2"/>
@@ -3574,7 +3650,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="corn"				count="2"/>
 </recipe>
 
-<recipe name="chickenStew"  count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="chickenStew"  count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="potato"         	count="2"/>
    	<ingredient name="canChicken"		count="1"/>
 	<ingredient name="mushrooms"		count="2"/>
@@ -3582,7 +3658,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="corn"				count="2"/>
 </recipe>
 
-<recipe name="britishBreakfast" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="britishBreakfast" count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="potato"         	count="2"/>
    	<ingredient name="canHam"		   	count="1"/>
 	<ingredient name="mushrooms"		count="3"/>
@@ -3590,21 +3666,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="egg"				count="3"/>
 </recipe>
 
-<recipe name="winterFruitSalad" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="winterFruitSalad" count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="blueberries"      count="1"/>
    	<ingredient name="canPears"		    count="1"/>
 	<ingredient name="goldenRodTea"		count="1"/>
 	<ingredient name="snowberryPlant"	count="1"/>
 </recipe>
 
-<recipe name="doggyDoo"  count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="doggyDoo"  count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="canDogfood"       count="1"/>
    	<ingredient name="canPeas"			count="1"/>
 	<ingredient name="potato"		 	count="1"/>
 	<ingredient name="corn"				count="1"/>
 </recipe>
 
-<recipe name="kittyKasserole"  count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="50">
+<recipe name="kittyKasserole"  count="1" craft_area="working_oven" craft_time="50">
  	<ingredient name="canCatfood"       count="1"/>
    	<ingredient name="canPeas"			count="1"/>
 	<ingredient name="potato"		 	count="1"/>
@@ -3612,19 +3688,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater"		count="1"/>
 </recipe>
 
-<recipe name="chickenAndSweetcornSoupTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="chickenAndSweetcornSoupTasty" count="1" craft_area="working_oven" craft_time="80">
 	<ingredient name="canChicken"   count="1"/>
   	<ingredient name="corn"    		count="2"/>
   	<ingredient name="canSoup"      count="1"/>
 </recipe>
 
-<recipe name="chickenMushroomSoupTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="chickenMushroomSoupTasty" count="1" craft_area="working_oven" craft_time="80">
    	<ingredient name="canStock"     count="1"/>
    	<ingredient name="mushrooms"    count="2"/>
    	<ingredient name="canChicken"   count="1"/>
 </recipe>
 
-<recipe name="vegtableSoupTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="vegtableSoupTasty" count="1" craft_area="working_oven" craft_time="80">
    	<ingredient name="canMiso"      count="1"/>
    	<ingredient name="canStock"     count="1"/>
    	<ingredient name="canPeas"      count="1"/>
@@ -3632,20 +3708,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
    	<ingredient name="corn"         count="1"/>
 </recipe>
 
-<recipe name="peaHamSoupTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="peaHamSoupTasty" count="1" craft_area="working_oven" craft_time="80">
 	<ingredient name="canPeas" 		count="1"/>
  	<ingredient name="canHam"		count="1"/>
  	<ingredient name="canMiso"		count="1"/>
  	<ingredient name="canStock"  	count="1"/>
 </recipe>
 
-<recipe name="mushroomSoupTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="mushroomSoupTasty" count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="canStock"     count="1"/>
  	<ingredient name="mushrooms"    count="5"/>
  	<ingredient name="canMiso"	    count="1"/>
 </recipe>
 
-<recipe name="chowderTasty" count="1" craft_area="campfire"  craft_tool="cookingPot" craft_time="80">
+<recipe name="chowderTasty" count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="canSoup"      count="1"/>
  	<ingredient name="canTuna"      count="1"/>
 	<ingredient name="canSalmon"	count="1"/>
@@ -3653,26 +3729,26 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
  	<ingredient name="potato"		count="1"/>
 </recipe>
 
-<recipe name="chickenMushroomPastaTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="chickenMushroomPastaTasty" count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="canPasta"         count="1"/>
  	<ingredient name="canChicken"		count="1"/>
  	<ingredient name="mushrooms"		count="1"/>
 </recipe>
 
-<recipe name="pastaShamTasty"  count="1" craft_area="campfire"  craft_tool="cookingPot" craft_time="80">
+<recipe name="pastaShamTasty"  count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="canPasta"         count="1"/>
   	<ingredient name="canHam"		    count="1"/>
   	<ingredient name="corn"				count="1"/>
 </recipe>
 
-<recipe name="spicyHashTasty"  count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="spicyHashTasty"  count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="canHam"         	count="1"/>
  	<ingredient name="canChili"	        count="1"/>
  	<ingredient name="egg"				count="1"/>
  	<ingredient name="potato" 			count="1"/>
 </recipe>
 
-<recipe name="beefStewTasty"  count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="beefStewTasty"  count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="potato"         	count="2"/>
    	<ingredient name="canBeef"		    count="1"/>
 	<ingredient name="mushrooms"		count="2"/>
@@ -3680,7 +3756,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="corn"				count="2"/>
 </recipe>
 
-<recipe name="lambStewTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="lambStewTasty" count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="potato"         	count="2"/>
    	<ingredient name="canLamb"		    count="1"/>
 	<ingredient name="mushrooms"		count="2"/>
@@ -3688,7 +3764,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="corn"				count="2"/>
 </recipe>
 
-<recipe name="chickenStewTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="chickenStewTasty" count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="potato"         	count="2"/>
    	<ingredient name="canChicken"		count="1"/>
 	<ingredient name="mushrooms"		count="2"/>
@@ -3696,7 +3772,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="corn"				count="2"/>
 </recipe>
 
-<recipe name="britishBreakfastTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="britishBreakfastTasty" count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="potato"         	count="2"/>
    	<ingredient name="canHam"		   	count="1"/>
 	<ingredient name="mushrooms"		count="3"/>
@@ -3704,21 +3780,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="egg"				count="3"/>
 </recipe>
 
-<recipe name="winterFruitSaladTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="winterFruitSaladTasty" count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="blueberries"      count="1"/>
    	<ingredient name="canPears"		    count="1"/>
 	<ingredient name="goldenRodTea"		count="1"/>
 	<ingredient name="snowberryPlant"	count="1"/>
 </recipe>
 
-<recipe name="doggyDooTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="doggyDooTasty" count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="canDogfood"       count="1"/>
    	<ingredient name="canPeas"			count="1"/>
 	<ingredient name="potato"		 	count="1"/>
 	<ingredient name="corn"				count="1"/>
 </recipe>
 
-<recipe name="kittyKasseroleTasty" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="80">
+<recipe name="kittyKasseroleTasty" count="1" craft_area="working_oven" craft_time="80">
  	<ingredient name="canCatfood"       count="1"/>
    	<ingredient name="canPeas"			count="1"/>
 	<ingredient name="potato"		 	count="1"/>
@@ -3732,48 +3808,48 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="bottledSoyaMilk" count="1">
 	<ingredient name="emptyBottle" 	count="1" />
-	<ingredient name="soyabean"		count="1" />
+	<ingredient name="soyabean"		count="3" />
 </recipe>
 
-<recipe name="yoghurt" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="20">
+<recipe name="yoghurt" count="1" craft_area="working_oven" craft_time="20">
 	<ingredient name="bottledMilk"			count="1" />
 	<ingredient name="bottledBoiledWater" 	count="1" />
 </recipe>
 
-<recipe name="yoghurt" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="20">
+<recipe name="yoghurt" count="1" craft_area="working_oven" craft_time="20">
 	<ingredient name="bottledSoyaMilk"			count="1" />
 	<ingredient name="bottledBoiledWater" 	count="1" />
 </recipe>
 
-<recipe name="yoghurtBlueberry" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="5">
+<recipe name="yoghurtBlueberry" count="1" craft_area="working_oven" craft_time="5">
 	<ingredient name="yoghurt"				count="1" />
 	<ingredient name="blueberries"			count="3" />
 </recipe>
 
-<recipe name="yoghurtYucca" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="25">
+<recipe name="yoghurtYucca" count="1" craft_area="working_oven" craft_time="25">
 	<ingredient name="bottledMilk"			count="1" />
 	<ingredient name="bottledBoiledWater"	count="1" />
 	<ingredient name="foodYuccaFruit"		count="3" />
 </recipe>
 
-<recipe name="yoghurtMixedFruit" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="5">
+<recipe name="yoghurtMixedFruit" count="1" craft_area="working_oven" craft_time="5">
 	<ingredient name="yoghurt"				count="1" />
 	<ingredient name="foodYuccaFruit"		count="1" />
 	<ingredient name="blueberries"			count="1" />
 	<ingredient name="canPears"				count="1" />
 </recipe>
 
-<recipe name="canChicken" count="1">
+<recipe name="canChicken" count="1" craft_area="working_oven">
 	<ingredient name="canBoiledWater"		count="1" />
 	<ingredient name="grilledChickenMeat"	count="1" />
 </recipe>
 
-<recipe name="canDogfood" count="1">
+<recipe name="canDogfood" count="1" craft_area="working_oven">
 	<ingredient name="canBoiledWater"		count="1" />
 	<ingredient name="grilledRabbitMeat"	count="1" />
 </recipe>
 
-<recipe name="canCatfood" count="1">
+<recipe name="canCatfood" count="1" craft_area="working_oven">
 	<ingredient name="canBoiledWater"		count="1" />
 	<ingredient name="grilledChickenMeat"	count="1" />
 </recipe>
@@ -3783,27 +3859,42 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="vegetableOil"	count="1" />
 </recipe>
 
-<recipe name="cheesyChickenBurger" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="20">
+<recipe name="cheese" count="10" craft_area="working_oven" craft_time="60" >
+	<ingredient name="bottledMilk" 	count="1" />
+	<ingredient name="vegetableOil"	count="1" />
+</recipe>
+
+<recipe name="cheese" count="10" craft_area="campfire" craft_tool="cookingPot" craft_time="120" >
+	<ingredient name="bottledSoyaMilk" 	count="1" />
+	<ingredient name="vegetableOil"		count="1" />
+</recipe>
+
+<recipe name="cheese" count="10" craft_area="working_oven" craft_time="60" >
+	<ingredient name="bottledSoyaMilk" 	count="1" />
+	<ingredient name="vegetableOil"		count="1" />
+</recipe>
+
+<recipe name="cheesyChickenBurger" count="1" craft_area="working_oven" craft_time="20">
 	<ingredient name="bread"				count="1" />
 	<ingredient name="cheese" 				count="1" />
 	<ingredient name="eggboiled"			count="1" />
 	<ingredient name="grilledChickenMeat" 	count="1" />
 </recipe>
 
-<recipe name="hogRoastBurger" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="20">
+<recipe name="hogRoastBurger" count="1" craft_area="working_oven" craft_time="20">
 	<ingredient name="bread"				count="1" />
 	<ingredient name="grilledBoarMeat" 		count="1" />
 	<ingredient name="charredBoarMeat"		count="2" />
 </recipe>
 
-<recipe name="snakeSoup" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="20">
+<recipe name="snakeSoup" count="1" craft_area="working_oven" craft_time="20">
 	<ingredient name="rawSnakeMeat"			count="2" />
 	<ingredient name="chrysanthemumPlant"	count="2" />
 	<ingredient name="mushrooms"			count="1" />
 	<ingredient name="bottledWater"			count="1" />
 </recipe>
 
-<recipe name="snakeStrips" count="6" craft_area="campfire" craft_tool="cookingPot" craft_time="20">
+<recipe name="snakeStrips" count="6" craft_area="working_oven" craft_time="20">
 	<ingredient name="rawSnakeMeat"			count="3" />
 	<ingredient name="egg"					count="1" />
 	<ingredient name="dough"				count="2" />
@@ -3821,6 +3912,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawVenisonMeat" count="1" />
 </recipe>
 
+<recipe name="grilledVenisonMeat" count="1" craft_area="working_oven" craft_time="10">
+	<ingredient name="rawVenisonMeat" count="1" />
+</recipe>
+
 <recipe name="charredWolfMeat" count="1" craft_area="campfire" craft_time="20">
 	<ingredient name="rawWolfMeat" count="1" />
 </recipe>
@@ -3830,6 +3925,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="grilledWolfMeat" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="20">
+	<ingredient name="rawWolfMeat" count="1" />
+</recipe>
+
+<recipe name="grilledWolfMeat" count="1" craft_area="working_oven" craft_time="10">
 	<ingredient name="rawWolfMeat" count="1" />
 </recipe>
 
@@ -3845,6 +3944,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawBearMeat" count="1" />
 </recipe>
 
+<recipe name="grilledBearMeat" count="1" craft_area="working_oven" craft_time="10">
+	<ingredient name="rawBearMeat" count="1" />
+</recipe>
+
 <recipe name="charredBoarMeat" count="1" craft_area="campfire" craft_time="20">
 	<ingredient name="rawBoarMeat" count="1" />
 </recipe>
@@ -3854,6 +3957,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="grilledBoarMeat" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="20">
+	<ingredient name="rawBoarMeat" count="1" />
+</recipe>
+
+<recipe name="grilledBoarMeat" count="1" craft_area="working_oven" craft_time="10">
 	<ingredient name="rawBoarMeat" count="1" />
 </recipe>
 
@@ -3869,6 +3976,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawRabbitMeat" count="1" />
 </recipe>
 
+<recipe name="grilledRabbitMeat" count="1" craft_area="working_oven" craft_time="10">
+	<ingredient name="rawRabbitMeat" count="1" />
+</recipe>
+
 <recipe name="charredChickenMeat" count="1" craft_area="campfire" craft_time="20">
 	<ingredient name="rawChickenMeat" count="1" />
 </recipe>
@@ -3881,6 +3992,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawChickenMeat" count="1" />
 </recipe>
 
+<recipe name="grilledChickenMeat" count="1" craft_area="working_oven" craft_time="10">
+	<ingredient name="rawChickenMeat" count="1" />
+</recipe>
+
 <recipe name="charredSnakeMeat" count="1" craft_area="campfire" craft_time="20">
 	<ingredient name="rawSnakeMeat" count="1" />
 </recipe>
@@ -3890,6 +4005,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="grilledSnakeMeat" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="20">
+	<ingredient name="rawSnakeMeat" count="1" />
+</recipe>
+
+<recipe name="grilledSnakeMeat" count="1" craft_area="working_oven" craft_time="10">
 	<ingredient name="rawSnakeMeat" count="1" />
 </recipe>
 
@@ -4437,6 +4556,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="charcoal"				count="5"  />
 	<ingredient name="animalHide"			count="1"  />
 	<ingredient name="shortMetalPipe"		count="1"  />
+</recipe>
+
+<recipe name="sinkUpgradeKit" count="1" craft_time="120">
+	<ingredient name="waterFilter" 		count="2" />
+	<ingredient name="mechanicalParts" 	count="5" />
+	<ingredient name="shortMetalPipe"	count="3" />
+	<ingredient name="ductTape"			count="3" />			
+</recipe>
+
+<recipe name="ovenUpgradeKit" count="1" craft_time="120">
+	<ingredient name="cookingPot" 		count="2" />
+	<ingredient name="electricParts" 	count="5" />
+	<ingredient name="cookingGrill"		count="2" />
+	<ingredient name="ductTape"			count="3" />			
 </recipe>
 
 </recipes>

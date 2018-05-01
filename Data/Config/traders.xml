@@ -404,6 +404,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="beakerSchematic"/>
 			<item name="purificationSchematic" />
 			<item name="industrialGrinderSchematic" />
+			<item name="sinkUpgradeKitSchematic" />
+			<item name="ovenUpgradeKitSchematic" />
 		</trader_item_group>
 
 		<trader_item_group name="paintMagazines" count="1">
@@ -535,6 +537,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 		
 		<trader_item_group name="foodSupplies">
 			<item name="egg" count="2,6"/>
+			<item name="cheese" count="5,10" />
 			<item name="bottledMilk" count="5,10" />
 			<item name="bottledSoyaMilk" count="5,10" />
 			<item name="yoghurt" count="5,10" />
@@ -700,13 +703,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="airConditioner"/>
 			<item name="chaulkboardPlate"/>
 			<item name="cntBookcase"/>
-			<item name="cntCabinetOldSink"/>
+			<item name="cntCabinetOldSinkNotWorking"/>
 			<item name="cntCashRegister"/>
 			<item name="cntCooler"/>
 			<item name="cntFileCabinet"/>
 			<item name="cntFurnaceDrawer"/>
 			<item name="cntGasPump"/>
-			<item name="cntGraniteSink"/>
+			<item name="cntGraniteSinkNotWorking"/>
 			<item name="cntGreenDrawer"/>
 			<item name="cntLockers"/>
 			<item name="cntMunitionsBox"/>

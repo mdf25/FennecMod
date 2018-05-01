@@ -2136,7 +2136,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="350"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10"/>
@@ -2341,7 +2341,7 @@ Mesh files no longer used:
 		<!-- xxx trains blade weapons SUPER fast but ActionExp cannot be set lower than 1 -->
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<!--<property name="ActionSkillGroup" value="Axes"/>-->
+	<property name="ActionSkillGroup" value="PowerTools"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
@@ -2391,7 +2391,7 @@ Mesh files no longer used:
 		<property name="ActionExp" value="0"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<!--<property name="ActionSkillGroup" value="Mining Tools"/>-->
+	<property name="ActionSkillGroup" value="PowerTools"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
@@ -10709,6 +10709,23 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="1043" name="sinkUpgradeKitSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="sinkUpgradeKitSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="plumbing"/>
+	</property>
+</item>
+
+<item id="1044" name="ovenUpgradeKitSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="ovenUpgradeKitSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="ovenRepair"/>
+	</property>
+</item>
 
 
 <!-- Specialization papers -->
@@ -12121,6 +12138,15 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="6"/>
 	<property name="CraftingIngredientTime" value="9"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="bottledWater"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_6" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_7" value="cntCabinetOldSinkWorking2" />
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="ExchangeItem"/>
 		<property name="Delay" value="1.0"/>
@@ -12570,6 +12596,10 @@ Mesh files no longer used:
 		<property name="Focused_blockname_3" value="waterStaticBucket"/>
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="waterSource8"/>
+		<property name="Focused_blockname_6" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_7" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_9" value="cntCabinetOldSinkWorking2" />
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -12595,6 +12625,10 @@ Mesh files no longer used:
 		<property name="Focused_blockname_3" value="waterStaticBucket"/>
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="waterSource8"/>
+		<property name="Focused_blockname_6" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_7" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_9" value="cntCabinetOldSinkWorking2" />
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property class="Action1">
@@ -12735,6 +12769,28 @@ Mesh files no longer used:
 	<property name="RepairTime" value="0.5"/>
 	<property name="RepairAmount" value="270"/>
 	<property name="Group" value="Resources"/>
+</item>
+
+<item id="1417" name="sinkUpgradeKit">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="metal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="EconomicValue" value="120"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+
+<item id="1418" name="ovenUpgradeKit">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="metal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="EconomicValue" value="120"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 
 <item id="1429" name="emptyBottle">

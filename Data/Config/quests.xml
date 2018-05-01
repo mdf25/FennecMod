@@ -1307,9 +1307,9 @@
 	
 	<quest id="quest_culinary_3" name_key="quest_culinary_3" subtitle_key="quest_culinary_3_subtitle" description_key="quest_culinary_3_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_culinary_3_offer" difficulty="easy">
-		<objective type="FetchKeep"		id="charredMeat"		value="10" />
-		<objective type="FetchKeep"		id="boiledMeat"			value="10" />
-		<objective type="FetchKeep"		id="grilledMeat"		value="5"  />
+		<objective type="FetchKeep"		id="charredVenisonMeat"	value="10" />
+		<objective type="FetchKeep"		id="boiledChickenMeat"	value="10" />
+		<objective type="FetchKeep"		id="grilledWolfMeat"	value="5"  />
 		<objective type="FetchKeep"		id="baconAndEggs"		value="10" />
 		<objective type="FetchKeep"		id="bakedPotato"		value="10" />
 		<reward type="Quest" id="quest_culinary_4" />
@@ -1325,7 +1325,7 @@
 	
 	<quest id="quest_culinary_5" name_key="quest_culinary_5" subtitle_key="quest_culinary_5_subtitle" description_key="quest_culinary_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_culinary_5_offer" difficulty="easy">
-		<objective type="FetchKeep"		id="meatStew"			value="20"  />
+		<objective type="FetchKeep"		id="meatStew"			value="5"  />
 		<reward type="Skill" id="CulinaryMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="CulinaryBoost" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="CulinaryStaminaDrain" 	value="1" stage="aftercomplete" />
