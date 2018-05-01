@@ -613,6 +613,7 @@
 		<recipe name="seedPacketBlueberry" 		unlock_level="1"/>
 		<recipe name="seedPacketYucca" 			unlock_level="1"/>
 		<recipe name="seedPacketSoybean"		unlock_level="1"/>
+		<recipe name="seedPacketWheat"			unlock_level="2"/>
 		<recipe name="seedPacketCoffee" 		unlock_level="2"/>
 		<recipe name="seedPacketPotato" 		unlock_level="2"/>
 		<recipe name="seedPacketAloe" 			unlock_level="2"/>
