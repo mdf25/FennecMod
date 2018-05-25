@@ -58,21 +58,6 @@
 		<entity name="zombieWightFeral" prob="0.01" />
 	</entitygroup>
 
-	<entitygroup name="ZombiesNightFerals">
-		<entity name="zombieBoeFeral" />
-		<entity name="zombieJoeFeral" />
-		<entity name="zombieSteveFeral" />
-		<entity name="zombieMoeFeral" />
-		<entity name="zombieYoFeral" />
-		<entity name="zombieBusinessManFeral" />
-		<entity name="zombieArleneFeral" />
-		<entity name="zombieDarleneFeral" />
-		<entity name="zombieMarleneFeral" />
-		<entity name="zombieNurseFeral" />
-		<entity name="zombieSteveCrawlerFeral" />
-		<entity name="zombieWightFeral" prob="0.01" />
-	</entitygroup>
-	
 	<entitygroup name="ZombiesNight">
 		<entity name="zombieSpider"/>
 		<entity name="zombieBoe"/>
@@ -610,9 +595,7 @@
 		<entitygroup name="sleeperHordeStageGS272"><entity name="zombieSteve"/><entity name="zombieFemaleFat"/><entity name="zombieSpider" prob="0.077"/><entity name="zombieDarlene"/><entity name="zombieJoe"/><entity name="zombieUtilityWorker"/><entity name="zombieSkateboarder"/><entity name="zombieYoFeral" prob="0.077"/><entity name="zombieMaleHazmat"/><entity name="zombieArlene"/><entity name="zombieArleneFeral" prob="0.077"/></entitygroup>
 		<entitygroup name="sleeperHordeStageGS281"><entity name="zombieMarlene"/><entity name="zombieJoe"/><entity name="zombieSkateboarder"/><entity name="zombieMoe"/><entity name="zombieArleneFeral" prob="0.079"/><entity name="zombieBoe"/><entity name="zombieUtilityWorker"/><entity name="zombieBusinessMan"/><entity name="zombieArlene"/><entity name="zombieFemaleFat"/><entity name="zombieSteveCrawlerFeral" prob="0.079"/></entitygroup>
 		<entitygroup name="sleeperHordeStageGS291"><entity name="zombieSteveFeral" prob="0.082"/><entity name="zombieMarlene"/><entity name="zombieNurse"/><entity name="zombieMoe"/><entity name="zombieMaleHazmat"/><entity name="zombieYoFeral" prob="0.082"/><entity name="zombieCheerleader"/><entity name="zombieArlene"/><entity name="zombieFemaleFat"/><entity name="zombieArleneFeral" prob="0.082"/><entity name="zombieSteveCrawler"/></entitygroup>
-		<!-- STARTING GS 301 -->
-		<entitygroup name="sleeperHordeStageGS301"><entity name="zombieMaleHazmat" prob="0.01"/><entity name="zombieArleneFeral" prob="0.025"/><entity name="zombieSpider" prob="0.025"/><entity name="zombieBusinessMan"/><entity name="zombieSteveCrawlerFeral" prob="0.025"/><entity name="zombieDarleneFeral" prob="0.025"/><entity name="zombieYoFeral" prob="0.025"/><entity name="zombieUtilityWorker"/><entity name="zombieFemaleFat" prob="0.1"/><entity name="zombieFatHawaiian" prob="0.1"/><entity name="zombieBoe"/><entity name="zombieJoe"/><entity name="zombieMoe"/><entity name="zombieYo"/><entity name="zombieArlene"/><entity name="zombieDarlene"/><entity name="zombieMarlene"/><entity name="zombieNurse"/></entitygroup>
-		<!-- CONTUNUE -->
+		<entitygroup name="sleeperHordeStageGS301"><entity name="zombieMaleHazmat"/><entity name="zombieArleneFeral" prob="0.085"/><entity name="zombieSpider" prob="0.085"/><entity name="zombieBusinessMan"/><entity name="zombieSteveCrawlerFeral" prob="0.085"/><entity name="zombieDarleneFeral" prob="0.085"/><entity name="zombieYoFeral" prob="0.085"/><entity name="zombieUtilityWorker"/><entity name="zombieFemaleFat"/><entity name="zombieFatHawaiian"/><entity name="zombieBoe"/></entitygroup>
 		<entitygroup name="sleeperHordeStageGS311"><entity name="zombieBoe"/><entity name="zombieMarleneFeral" prob="0.088"/><entity name="zombieSteve"/><entity name="zombieYoFeral" prob="0.088"/><entity name="zombieFemaleFat"/><entity name="zombieMoe"/><entity name="zombieYo"/><entity name="zombieCheerleader"/><entity name="zombieUtilityWorker"/><entity name="zombieMaleHazmat"/><entity name="zombieDarlene"/></entitygroup>
 		<entitygroup name="sleeperHordeStageGS322"><entity name="zombieBusinessMan"/><entity name="zombieMoe"/><entity name="zombieSteve"/><entity name="zombieSpider" prob="0.091"/><entity name="zombieDarlene"/><entity name="zombieNurse"/><entity name="zombieSkateboarder"/><entity name="zombieYoFeral" prob="0.091"/><entity name="zombieFemaleFat"/><entity name="zombieCheerleader"/><entity name="zombieJoe"/></entitygroup>
 		<entitygroup name="sleeperHordeStageGS332"><entity name="zombieNurse"/><entity name="zombieFemaleFat"/><entity name="zombieCheerleader"/><entity name="zombieFatHawaiian"/><entity name="zombieSteveCrawler"/><entity name="zombieJoe"/><entity name="zombieMoe"/><entity name="zombieSkateboarder"/><entity name="zombieArleneFeral" prob="0.093"/><entity name="zombieSteve"/><entity name="zombieMaleHazmat"/></entitygroup>

@@ -579,7 +579,7 @@
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="LootListOnDeath" value="102"/>
+	<property name="LootListOnDeath" value="38"/>
 	<property name="TintMaterial1" value="56,50,40"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -628,7 +628,7 @@
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="LootListOnDeath" value="102"/>
+	<property name="LootListOnDeath" value="38"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
@@ -662,7 +662,7 @@
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="LootListOnDeath" value="102"/>
+	<property name="LootListOnDeath" value="38"/>
 	<property name="TintMaterial2" value="32,24,20"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -711,7 +711,7 @@
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="LootListOnDeath" value="102"/>
+	<property name="LootListOnDeath" value="38"/>
 	<property name="TintMaterial2" value="41,25,25"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -777,7 +777,7 @@
 	<property name="ChestExplosionDamageMultiplier" value="0.5"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
-	<property name="LootListOnDeath" value="102"/>
+	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -816,7 +816,7 @@
 	<property name="ChestExplosionDamageMultiplier" value="0.5"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
-	<property name="LootListOnDeath" value="102"/>
+	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -843,7 +843,7 @@
 	<property name="HandItem" value="handZombie02Feral"/>
 	<property name="MaxHealth" value="200"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="LootListOnDeath" value="102"/>
+	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -1255,16 +1255,6 @@
 	<property name="ApproachSpeed" value="0.1"/>
 	<property name="NightApproachSpeed" value="0.8"/>
 	<property name="HandItem" value="handZombieFrozen"/>
-</entity_class>
-
-<entity_class name="zombieUtilityWorkerBurnt" extends="zombieUtilityWorker">
-	<property name="TintMaterial0" value="106,78,53"/>
-	<property name="TintMaterial2" value="20,33,32"/>
-	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
-	<property name="MaxHealth" value="200"/>
-	<property name="ApproachSpeed" value="0.7"/>
-	<property name="NightApproachSpeed" value="1.4"/>
-	<property name="HandItem" value="handZombieBurning"/>
 </entity_class>
 
 <!-- Missing: zombieUtilityWorkerRadiated -->
@@ -2057,7 +2047,7 @@
 	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
 	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
 	<property name="MaxHealth" value="60"/>
-	<property name="HandItem" value="handAnimalSnake"/>
+	<property name="HandItem" value="handZombie"/>
 	<property name="Weight" value="70"/>
 	<property name="WanderSpeed" value="0.08"/>
 	<property name="PanicSpeed" value="0.2"/>
@@ -2088,9 +2078,8 @@
 		<property name="state0" value="DeathTrigger"/>
 	</property>
 	<property name="DeadBodyHitPoints" value="150"/>
-	<drop event="Harvest" name="snakeHead" 	    count="1" />
-	<drop event="Harvest" name="rawSnakeMeat" 	tool_category="Butcher" count="2"/> <!-- animalSnake -->
-	<drop event="Harvest" name="animalHide" 	tool_category="Butcher" count="2"/>
+	<drop event="Harvest" name="rawSnakeMeat" tool_category="Butcher" count="2"/> <!-- animalSnake -->
+	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2"/>
 </entity_class>
 
 <entity_class name="animalBoar" extends="animalTemplateHostile">

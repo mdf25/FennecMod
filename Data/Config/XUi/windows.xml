@@ -1,52 +1,27 @@
 <windows>
 	<window name="HUDLeftStatBars">
-		<grid name="hud" pos="9,183" rows="3" cols="1" width="188" cell_width="188" cell_height="46" repeat_content="false" side="left" >
-			<rect width="188" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+		<grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left" >
+			<rect width="168" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="182" color="64,64,64,100" type="sliced" />
-				<sprite depth="4" name="Icon" sprite="ui_game_symbol_temperature" size="32,32" pos="8,-6" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="0,-10" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playercoretemp}" height="30" controller="PlayerStatsWindow" effect="outline" />
-			</rect>
-
-			<rect width="188" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="182" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="182" fill="0"  />
+				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0"  />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
 				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 			</rect>
 
-			<rect width="188" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+			<rect width="168" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="182" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="182" fill="0" />
+				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
 				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 			</rect>
 		</grid>
 
-		<grid name="hud" pos="9,45" rows="1" cols="2" width="188" cell_width="94" cell_height="46" repeat_content="false" side="left" >
-			<rect width="93" height="43" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="90" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  color="0,128,0,150" type="filled" height="37" width="87" fill="{playerfoodfill}" controller="PlayerStatsWindow" />
-				<sprite depth="4" name="Icon" sprite="ui_game_symbol_hunger" size="32,32" pos="4,-6" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrent}%" height="30"/>
-			</rect>
-
-			<rect width="93" height="43" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
-				<sprite depth="2" pos="3,-3"  name="background" height="37" width="90" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  color="64,164,223,150" type="filled" height="37" width="87" fill="{playerwaterfill}" controller="PlayerStatsWindow" />
-				<sprite depth="4" name="Icon" sprite="ui_game_symbol_water" size="32,32" pos="4,-6" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrent}%" height="30"/>
-			</rect>
-		</grid>
-		
-		<rect name="hud" pos="93,210" side="left" controller="BuffPopoutList" pivot="BottomLeft" >			
+		<rect name="hud" pos="93,124" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
 				<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-				<sprite depth="4" name="Icon" size="36,32" pos="-58,0" pivot="center" color="[transparent]" atlas="ItemIconAtlas"/>
+				<sprite depth="4" name="Icon" size="36,32" pos="-58,0" pivot="center" color="[transparent]" atlas="ItemIconAtlas" />
 				<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center"/>
 			</panel>
 		</rect>
@@ -505,20 +480,6 @@
 
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
 			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="bellows,ingotMoldHardened,cookingGrill" required_tools_only="true">
-				<required_item_stack name="0"/>
-			</grid>
-		</rect>
-	</window>
-	
-	<window name="windowToolsKitchenWorkbench" width="228" height="121" panel="Right" cursor_area="true" >
-	<!--#$-IGS END.-$#-->
-		<panel style="header.panel">
-			<sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
-			<label style="header.name" text="TOOLS" text_key="xuiTools" />
-		</panel>
-
-		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="juicer,mixingBowl,breadBoard" required_tools_only="true">
 				<required_item_stack name="0"/>
 			</grid>
 		</rect>
