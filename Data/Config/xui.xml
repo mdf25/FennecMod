@@ -98,15 +98,39 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 			<window name="windowCombine" />
-		</window_group>				
+		</window_group>	
 
+		<window_group name="workstation_kitchenWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsKitchenWorkbench" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>	
+
+		<window_group name="workstation_squeezerWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>	
+		
 		<window_group name="workstation_carpenterBench" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowCombine" />
+		</window_group>	
+		
+		<window_group name="workstation_researchDesk" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
 		</window_group>	
 		
 		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">

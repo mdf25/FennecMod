@@ -193,9 +193,37 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Experience" value="10"/>
 </material>
 
+<material id="MfertileSand">
+	<property name="damage_category" value="earth" />
+	<property name="surface_category" value="earth" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="sand" />
+	<property name="fertile_level" value="50" />
+	<property name="stability_glue" value="20" />
+	<property name="Mass" type="int" value="10" />
+	<property name="MaxDamage" value="250" />
+	<property name="Experience" value="10"/>
+</material>
+
 <!-- All plants -->
 
 <!-- used for all crops and seeds -->
+<material id="MfishingNet">
+	<property name="damage_category" value="metal" />
+	<property name="surface_category" value="metal" />
+	<property name="particle_category" value="metal" />
+	<property name="forge_category" value="plants" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="leaves" />
+	<property name="lightopacity" value="1" />
+	<property name="stability_glue" value="0" />
+	<property name="Mass" type="int" value="1" />
+	<property name="plant" value="false" />
+	<property name="StabilitySupport" value="false" />
+	<property name="MaxDamage" value="200" />
+	<property name="Experience" value="5"/>
+</material>
+
 <material id="plants">
 	<property name="damage_category" value="wood" />
 	<property name="surface_category" value="plant" />
@@ -715,6 +743,18 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Experience" value="3.0"/>
 </material>
 
+<material id="noteFragment">
+	<property name="damage_category" value="cloth" />
+	<property name="surface_category" value="cloth" />
+	<property name="forge_category" value="noteFragment" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="wood" />
+	<property name="stability_glue" value="20" />
+	<property name="Mass" type="int" value="5" />
+	<property name="MaxDamage" value="1" />
+	<property name="Experience" value="3.0"/>
+</material>
+
 <material id="trash">
 	<property name="damage_category" value="cloth" />
 	<property name="surface_category" value="cloth" />
@@ -739,10 +779,22 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Experience" value="3.0"/>
 </material>
 
+<material id="leatherStrips">
+	<property name="damage_category" value="cloth" />
+	<property name="surface_category" value="cloth" />
+	<property name="forge_category" value="leatherStrips" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="wood" />
+	<property name="stability_glue" value="20" />
+	<property name="Mass" type="int" value="5" />
+	<property name="MaxDamage" value="20" />
+	<property name="Experience" value="3.0"/>
+</material>
+
 <material id="animalHide">
 	<property name="damage_category" value="cloth" />
 	<property name="surface_category" value="cloth" />
-	<property name="forge_category" value="leather" />
+	<property name="forge_category" value="animalHide" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="wood" />
 	<property name="stability_glue" value="20" />
