@@ -18,14 +18,14 @@
 			<!--
 			<hub_rule name="emptyTown"/>
 			<wilderness_rule name="empty" />
+			<hub_rule name="smallTown"  prob="0.1" />
+			<hub_rule name="rural" 		prob="0.05"/>
 			-->
 			
-			<hub_rule name="smallTown"  prob="0.2" />
-			<hub_rule name="townSmall" 	prob="0.2"/>
+			<hub_rule name="townSmall" 	prob="0.1"/>
 			<hub_rule name="townLarge" 	prob="0.1"/>
-			<hub_rule name="citySmall" 	prob="0.25"/>
-			<hub_rule name="cityLarge" 	prob="0.2"/>
-			<hub_rule name="rural" 		prob="0.05"/>
+			<hub_rule name="citySmall" 	prob="0.35"/>
+			<hub_rule name="cityLarge" 	prob="0.3"/>
 			<wilderness_rule name="wildernessDefault"/>
 			
 		</cell_rule>
@@ -499,30 +499,30 @@
 			<prefab name="cornfield_med"/>
 			<prefab name="potatofield_sm"/>
 			-->
-			<prefab name="barn_01" />
-			<prefab name="barn_02" />
-			<prefab name="barn_03" />
-			<prefab name="farm_shed1" />
-			<prefab name="farm_shed2" />
-			<prefab name="farm_shed3" />
-			<prefab name="farm_shed4" />
-			<prefab name="oldwest_stables" />
-			<prefab name="pond02"/>
-			<prefab name="pond01"/>
-			<prefab name="water_tower_01" />
-			<prefab name="water_tower_02" />
-			<prefab name="oldwest_watertower" />
-			<prefab name="oldwest_church"/>
-			<prefab name="oldwest_hotel_01"/>
-			<prefab name="oldwest_hotel_02"/>
-			<prefab name="oldwest_jail"/>
-			<prefab name="oldwest_md_shop_01"/>
-			<prefab name="oldwest_md_shop_02"/>
-			<prefab name="oldwest_md_shop_03"/>
-			<prefab name="oldwest_md_shop_04"/>
-			<prefab name="oldwest_sm_shop_01"/>
-			<prefab name="oldwest_sm_shop_02"/>
-			<prefab name="oldwest_sm_shop_03"/>
+			<prefab name="barn_01" 				max_count="1" />
+			<prefab name="barn_02" 				max_count="1" />
+			<prefab name="barn_03" 				max_count="1" />
+			<prefab name="farm_shed1" 			max_count="1" />
+			<prefab name="farm_shed2" 			max_count="1" />
+			<prefab name="farm_shed3" 			max_count="1" />
+			<prefab name="farm_shed4" 			max_count="1" />
+			<prefab name="oldwest_stables" 		max_count="2" />
+			<prefab name="pond02" 				max_count="2" />
+			<prefab name="pond01" 				max_count="2" />
+			<prefab name="water_tower_01" 		max_count="1" />
+			<prefab name="water_tower_02" 		max_count="1" />
+			<prefab name="oldwest_watertower" 	max_count="1" />
+			<prefab name="oldwest_church"		max_count="1" />
+			<prefab name="oldwest_hotel_01"		max_count="1" />
+			<prefab name="oldwest_hotel_02" 	max_count="1" />
+			<prefab name="oldwest_jail"			max_count="1" />
+			<prefab name="oldwest_md_shop_01"	max_count="2" />
+			<prefab name="oldwest_md_shop_02"	max_count="2" />
+			<prefab name="oldwest_md_shop_03"	max_count="2" />
+			<prefab name="oldwest_md_shop_04"	max_count="2" />
+			<prefab name="oldwest_sm_shop_01"	max_count="2" />
+			<prefab name="oldwest_sm_shop_02"	max_count="2" />
+			<prefab name="oldwest_sm_shop_03"	max_count="2" />
 		</prefab_rule>
 
 		<prefab_rule name="wildernessGroup">
@@ -579,7 +579,7 @@
 			<prefab name="tree_burntpine_01"/>
 			<prefab name="tree_burntpine_02"/>
 			<prefab name="tree_burntpine_03"/>
-			<prefab name="water_tower_03" />
+			<prefab name="water_tower_03" max_count="1"/>
 		</prefab_rule>
 
 		<prefab_rule name="traderGroup">
@@ -983,26 +983,26 @@
 
 	<biome_spawn_rules>
 		<biome_spawn_rule name="pine_forest">
-			<biome_generator range="0,0.1"/>
+			<biome_generator range="0,0.2"/>
 			<terrain_generator range="70,86"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="forest">
-			<biome_generator range="0.1,0.4"/>
+			<biome_generator range="0.2,0.65"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="plains">
-			<biome_generator range="0.4,65"/>
+			<biome_generator range="0.65,8"/>
 			<terrain_generator range="0,3"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="snow">
-			<biome_generator range="0.65,0.70"/>
+			<biome_generator range="0.8,0.85"/>
 			<terrain_generator range="86,255"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="desert">
-			<biome_generator range="0.7,1"/>
+			<biome_generator range="0.85,1"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="burnt_forest">

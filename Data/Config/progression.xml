@@ -3,8 +3,8 @@
 <progression>
 <player
 	max_level="200"
-	exp_to_level="20000"
-	experience_multiplier="1.025"
+	exp_to_level="22000"
+	experience_multiplier="1.012"
 	skill_points_per_level="6"
 	skill_point_multiplier="0"/>
 	<!-- A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level -->
@@ -24,6 +24,13 @@
 		<requirement perk_level="1" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 		<requirement perk_level="2" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 	-->
+	
+	<!-- Overall Mastery -->
+	<perk name="ClassMastery" icon="resource" description_key="ClassMasteryDesc" title_key="ClassMasteryName" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="health" always_fire="true">
+		<recipe name="researchDesk" unlock_level="3" />
+	</perk>
+	
+	
 	
 	<!-- Builder -->
 	<perk name="BuilderMastery" icon="resource" description_key="BuilderMasteryDesc" title_key="BuilderMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="health" always_fire="true">
@@ -67,6 +74,8 @@
 		<recipe name="concreteMixQuick" unlock_level="1"/>
 	</perk>
 	
+	
+	
 	<!-- Crafter -->
 	<perk name="CrafterMastery" icon="forge" description_key="CrafterMasteryDesc" title_key="CrafterMasteryName" max_level="2" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="0" always_fire="true" group="crafting">
 	</perk>
@@ -88,6 +97,7 @@
 		<requirement perk_level="1" required_skill_name="CrafterMastery" required_skill_level="2"/>
 		<recipe name="toolAndDieSet" unlock_level="1"/>
 	</perk>
+	
 	
 	
 	<!-- Blades -->
@@ -123,6 +133,7 @@
 	</perk>
 	
 	
+	
 	<!-- Blunts -->
 	<perk name="BluntsMastery" icon="club" description_key="BluntsMasteryDesc" title_key="BluntsMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="weapons">
 	</perk>
@@ -156,6 +167,7 @@
 	</perk>
 	
 	
+	
 	<!-- Miner -->
 	<perk name="MinerMastery" icon="mining" description_key="MinerMasteryDesc" title_key="MinerMasteryName" max_level="2" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="0" always_fire="true" group="crafting">
 	</perk>
@@ -185,6 +197,7 @@
 			<multiply perk_level="2" value="1.15"/>
 		</effect>
 	</perk>
+	
 	
 	
 	<!-- Ranger -->
@@ -219,6 +232,7 @@
 	</perk>
 	
 	
+	
 	<!-- Shotgun -->
 	<perk name="ShotgunMastery" icon="shotgun" description_key="ShotgunMasteryDesc" title_key="ShotgunMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
 	</perk>
@@ -249,6 +263,7 @@
 			<multiply skill_level="2" value="0.85"/>
 		</effect>
 	</perk>
+	
 	
 	
 	<!-- Pistols -->
@@ -283,6 +298,7 @@
 	</perk>
 	
 	
+	
 	<!-- Rifles -->
 	<perk name="RifleMastery" icon="rifle" description_key="RifleMasteryDesc" title_key="RifleMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
 	</perk>
@@ -313,6 +329,7 @@
 			<multiply skill_level="2" value="0.85"/>
 		</effect>
 	</perk>
+	
 	
 	
 	<!-- Plunderer -->
@@ -348,6 +365,7 @@
 	</perk>
 	
 	
+	
 	<!-- Armour -->
 	<perk name="ArmourMastery" icon="armor_iron" description_key="ArmourMasteryDesc" title_key="ArmourMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="clothing">
 	</perk>
@@ -374,6 +392,7 @@
 	</perk>
 	
 	
+	
 	<!-- Hunter -->
 	<perk name="HunterMastery" icon="knife" description_key="HunterMasteryDesc" title_key="HunterMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="weapons">
 	</perk>
@@ -395,6 +414,13 @@
 			<multiply skill_level="2" value="1.39"/>
 		</effect>
 	</perk>
+	<perk name="HunterCrouchPerk" icon="knife" description_key="HunterCrouchPerkDesc" title_key="HunterCrouchPerkName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="weapons">
+		<effect name="CrouchSpeed">
+			<multiply perk_level="0" value="1"/>
+			<multiply skill_level="1" value="1.5"/>
+			<multiply skill_level="2" value="1.8"/>
+		</effect>
+	</perk>
 	<perk name="HunterHungerThirst" icon="knife" description_key="HunterHungerThirstDesc" title_key="HunterHungerThirstName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" always_fire="true" group="health">
 		<effect name="HungerDegradation">
 			<multiply perk_level="0" value="1"/>
@@ -407,6 +433,7 @@
 			<multiply perk_level="2" value="1.10"/>
 		</effect>
 	</perk>
+	
 	
 	
 	<!-- Scientist -->
@@ -440,6 +467,11 @@
 		<recipe name="beakerUntreated" unlock_level="1"/>
 		<recipe name="beaker" unlock_level="1"/>
 	</perk>
+	<perk name="ScientistVitaminsRecipe" icon="science" description_key="ScientistVitaminsRecipeDesc" title_key="ScientistVitaminsRecipeName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science">
+		<requirement perk_level="1" required_skill_name="ScientistMastery" required_skill_level="2"/>
+		<recipe name="vitamins" unlock_level="1"/>
+	</perk>
+	
 	
 	
 	<!-- Mechanic -->
@@ -474,6 +506,7 @@
 	</perk>
 	
 	
+	
 	<!-- Researcher -->
 	<perk name="ResearcherMastery" icon="medical" description_key="ResearcherMasteryDesc" title_key="ResearcherMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" always_fire="true" group="health">
 	</perk>
@@ -495,6 +528,7 @@
 	</perk>
 	
 	
+	
 	<!-- Athlete -->
 	<perk name="AthleteMastery" icon="resource" description_key="AthleteMasteryDesc" title_key="AthleteMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" always_fire="true" group="health">
 	</perk>
@@ -509,6 +543,16 @@
 			<multiply perk_level="1" value="1.15"/>
 			<multiply perk_level="2" value="1.2"/>
 		</effect>
+		<effect name="MaxSpeed">
+			<multiply perk_level="0" value="1"/>
+			<multiply perk_level="1" value="1.3"/>
+			<multiply perk_level="2" value="1.4"/>
+		</effect>
+		<effect name="RunSpeed">
+			<multiply perk_level="0" value="1"/>
+			<multiply perk_level="1" value="1.3"/>
+			<multiply perk_level="2" value="1.4"/>
+		</effect>
 	</perk>
 	<perk name="AthleteHunger" icon="knife" description_key="AthleteHungerDesc" title_key="AthleteHungerName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" always_fire="true" group="health">
 		<effect name="HungerDegradation">
@@ -519,7 +563,6 @@
 	</perk>
 	<perk name="AthleteVitaminsRecipe" icon="knife" description_key="AthleteVitaminsRecipeDesc" title_key="AthleteVitaminsRecipeName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science">
 		<requirement perk_level="1" required_skill_name="AthleteMastery" required_skill_level="2"/>
-		<recipe name="vitamins" unlock_level="1"/>
 		<recipe name="steroids"	unlock_level="1"/>
 	</perk>
 	
@@ -533,8 +576,8 @@
 		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="1"/>
 		<effect name="Bartering">
 			<add perk_level="0" value="0"/>
-			<add perk_level="1" value="0.2"/>
-			<add perk_level="2" value="0.3"/>
+			<add perk_level="1" value="0.4"/>
+			<add perk_level="2" value="0.6"/>
 		</effect>
 		<effect name="SecretStash">
 			<add skill_level="0" value="0"/>
@@ -562,6 +605,7 @@
 			<multiply perk_level="2" value="0.95"/>
 		</effect>
 	</perk>
+	
 	
 	
 	<!-- Farmer -->
@@ -624,6 +668,8 @@
 		<recipe name="fertilizerStation" 		unlock_level="1"/>
 	</perk>
 	
+	
+	
 	<!-- Culinary -->
 	<perk name="CulinaryMastery" icon="rifle" description_key="CulinaryMasteryDesc" title_key="CulinaryMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="tools">
 	</perk>
@@ -665,6 +711,8 @@
 		<recipe name="kittyKasseroleTasty"			unlock_level="1"/>
 	</perk>
 	
+	
+	
 	<!-- Carpenter -->
 	<perk name="CarpenterMastery" icon="mining" description_key="CarpenterMasteryDesc" title_key="CarpenterMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="tools">
 	</perk>
@@ -702,6 +750,7 @@
 	<perk name="CarpenterBenchRecipe" icon="rifle" description_key="CarpenterBenchRecipeDesc" title_key="CarpenterBenchRecipeName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
 		<recipe name="carpenterBench"	unlock_level="1"/>
 	</perk>
+	
 	
 	
 	<!-- Player Skills -->
@@ -1248,9 +1297,10 @@
 		<recipe name="concreteMix" unlock_level="1"/>
 	</perk>
 	<perk name="ForgeAhead" icon="resource" description_key="ForgeAheadDesc" title_key="ForgeAheadName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="1"/>
-		<recipe name="forge"		unlock_level="1" />
+		<recipe name="forge"			unlock_level="1" />
+		<recipe name="forgeUpgradeKit"	unlock_level="1" />
 	</perk>
 	<perk name="Glassworking" icon="resource" description_key="GlassworkingDesc" title_key="GlassworkingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
@@ -1292,17 +1342,14 @@
 		<recipe name="ovenUpgradeKit"		unlock_level="1" />
 	</perk>		
 		
-		
-		
-		
-		
-		
-		
-		
-		
+	<perk name="squeezer" icon="resource" description_key="squeezerDesc" title_key="squeezerName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="6"/>
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="5"/>
+		<recipe name="squeezerWorkbench"		unlock_level="1" />
+	</perk>
 	
 	<perk name="IronSmithing" icon="resource" description_key="IronSmithingDesc" title_key="IronSmithingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="4"/>
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="3"/>
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
 		<recipe name="forgedIron"		unlock_level="1" />
 		<recipe name="ironArrowHead" 	unlock_level="1" />
@@ -1312,8 +1359,8 @@
 		<recipe name="hoeIron"			unlock_level="1" />
 	</perk>
 	<perk name="IronToolCrafting" icon="resource" description_key="IronToolCraftingDesc" title_key="IronToolCraftingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="4"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
 		<recipe name="anvil"		unlock_level="1" />
 		<recipe name="cookingPot" 	unlock_level="1" />
 		<recipe name="cookingGrill" unlock_level="1" />
@@ -1340,7 +1387,7 @@
 		<recipe name="industrialGrinder" unlock_level="1"/>
 	</perk>
 	<perk name="PurificationMethods" icon="resource" description_key="PurificationMethodsDesc" title_key="PurificationMethodsName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="6"/>
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="7"/>
 		<recipe name="purificationPlant" unlock_level="1"/>
 		<recipe name="purifiedWater" unlock_level="1" />
 	</perk>
@@ -1928,23 +1975,53 @@
 		<recipe name="motionsensor" unlock_level="3"/>
 	</perk>
 
-	<perk name="electricTrapsMeleePerk" icon="wind" description_key="electricTrapsMeleeDesc" title_key="electricTrapsMeleeName" max_level="2" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="5" group="science">
+	<perk name="electricTrapsMeleePerk" icon="wind" description_key="electricTrapsMeleeDesc" title_key="electricTrapsMeleeName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="5" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
-		<recipe name="electricfencepost" unlock_level="1"/>
 		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="6"/>
-		<recipe name="bladeTrap" unlock_level="2"/>
-	</perk>
-
-	<perk name="electricTrapsRangedPerk" icon="electric_turret" description_key="electricTrapsRangedDesc" title_key="electricTrapsRangedName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="5" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
-		<recipe name="dartTrap" unlock_level="1"/>
-		<!--	<recipe name="steelDart" unlock_level="1"/> -->
-		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="6"/>
-		<recipe name="shotgunTurret" unlock_level="2"/>
 		<requirement skill_level="3" required_skill_name="craftSkillScience" required_skill_level="7"/>
-		<recipe name="autoTurret" unlock_level="3"/>
+		<recipe name="electricfencepost" 	unlock_level="1"/>
+		<recipe name="shockTrap" 			unlock_level="2"/>
+		<recipe name="bladeTrap"	 		unlock_level="3"/>
 	</perk>
 
+	<perk name="electricTrapsRangedPerk" icon="electric_turret" description_key="electricTrapsRangedDesc" title_key="electricTrapsRangedName" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="science">
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="7"/>
+		<recipe name="dartTrap" 	unlock_level="1"/>
+		<recipe name="flameTrap" 	unlock_level="2"/>
+	</perk>
+	
+	
+
+	<!-- Turrets! -->
+	<perk name="shotgunTurretPerk" icon="electric_turret" description_key="shotgunTurretPerkDesc" title_key="shotgunTurretPerkName" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="10" group="science">
+		<requirement skill_level="1" required_skill_name="craftSkillScience" 	required_skill_level="5" />
+		<requirement skill_level="2" required_skill_name="craftSkillScience" 	required_skill_level="7" />
+		<requirement skill_level="2" required_skill_name="ShotgunMastery"	 	required_skill_level="2" />
+		<recipe name="shotgunTurretLow" 	unlock_level="1" />
+		<recipe name="shotgunTurret"		unlock_level="2" />
+	</perk>
+	
+	<perk name="autoTurretPerk" icon="electric_turret" description_key="autoTurretPerkDesc" title_key="autoTurretPerkName" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="10" group="science">
+		<requirement skill_level="1" required_skill_name="craftSkillScience" 	required_skill_level="5" />
+		<requirement skill_level="2" required_skill_name="craftSkillScience" 	required_skill_level="7" />
+		<requirement skill_level="2" required_skill_name="PistolMastery"	 	required_skill_level="2" />
+		<recipe name="autoTurretLow" 		unlock_level="1" />
+		<recipe name="autoTurret"			unlock_level="2" />
+	</perk>
+	
+	<perk name="gattlingTurretPerk" icon="electric_turret" description_key="gattlingTurretPerkDesc" title_key="gattlingTurretPerkName" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="10" group="science">
+		<requirement skill_level="1" required_skill_name="craftSkillScience" 	required_skill_level="5" />
+		<requirement skill_level="2" required_skill_name="craftSkillScience" 	required_skill_level="7" />
+		<requirement skill_level="2" required_skill_name="RifleMastery"	 		required_skill_level="2" />
+		<recipe name="gattlingTurretLow" 	unlock_level="1" />
+		<recipe name="gattlingTurret"		unlock_level="2" />
+	</perk>
+	
+	
+	
+	
+	
 	<perk name="electricGeneratorPerk" icon="electric_generator" description_key="electricGeneratorDesc" title_key="electricGeneratorName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
 		<recipe name="generatorbank" unlock_level="1"/>
@@ -2208,16 +2285,7 @@
 
 	<player_skill name="Barter" exp_to_level="600" experience_multiplier="1.1" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
 		<effect name="Bartering">
-			<add skill_level="1,10" value="0.00,0.15"/>
-			<add skill_level="10,20" value="0.15,0.25"/>
-			<add skill_level="20,30" value="0.25,0.31"/>
-			<add skill_level="30,40" value="0.31,0.37"/>
-			<add skill_level="40,50" value="0.37,0.44"/>
-			<add skill_level="50,60" value="0.44,0.50"/>
-			<add skill_level="60,70" value="0.50,0.55"/>
-			<add skill_level="70,80" value="0.55,0.60"/>
-			<add skill_level="80,90" value="0.60,0.65"/>
-			<add skill_level="90,100" value="0.65,0.70"/>
+			<add skill_level="1,100" value="0.00,4.00"/>
 		</effect>
 		<effect name="SecretStash">
 			<add skill_level="1,25" 	value="0"/>
