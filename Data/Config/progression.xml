@@ -2285,7 +2285,7 @@
 
 	<player_skill name="Barter" exp_to_level="600" experience_multiplier="1.1" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.5">
 		<effect name="Bartering">
-			<add skill_level="1,100" value="0.00,4.00"/>
+			<add skill_level="1,100" value="0.00,2.85"/>
 		</effect>
 		<effect name="SecretStash">
 			<add skill_level="1,25" 	value="0"/>

@@ -203,7 +203,7 @@
 	<quest id="quest_survivalism_2" name_key="quest_survivalism_2" subtitle_key="quest_survivalism_2_subtitle" description_key="quest_survivalism_2_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_survivalism_2_offer" difficulty="easy">
 		<objective type="FetchKeep"		id="waterFilter"		value="5"	/>
-		<objective type="FetchKeep"		id="bottledRiverWater"	value="5"	/>
+		<objective type="FetchKeep"		id="bottledBoiledWater"	value="5"	/>
 		<objective type="Craft"			id="bottledWater"		value="5"	/>
 		<reward type="Quest" id="quest_survivalism_3" />
 	</quest>
@@ -802,9 +802,9 @@
 	<!-- PISTOLS CLASS -->
 	<quest id="quest_pistols_1" name_key="quest_pistols_1" subtitle_key="quest_pistols_1_subtitle" description_key="quest_pistols_1_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_pistols_1_offer" difficulty="easy">
+		<reward type="Skill" id="PistolMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PistolPerk" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PistolWeaponsDebuff" 	value="1" stage="aftercomplete" />
-		<reward type="Skill" id="PistolMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Quest" id="quest_pistols_2" />
 	</quest>
 	
@@ -839,9 +839,9 @@
 			<requirement type="Holding" id="gunPistol" />
 			<requirement type="Holding" id="gun44Magnum" />
 		</requirement>
+		<reward type="Skill" id="PistolMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PistolPerk" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PistolWeaponsDebuff" 	value="1" stage="aftercomplete" />
-		<reward type="Skill" id="PistolMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ClassMastery"			value="1" stage="aftercomplete" />
 	</quest>
 	
@@ -849,9 +849,9 @@
 	<!-- RIFLES CLASS -->
 	<quest id="quest_rifles_1" name_key="quest_rifles_1" subtitle_key="quest_rifles_1_subtitle" description_key="quest_rifles_1_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_rifles_1_offer" difficulty="easy">
+		<reward type="Skill" id="RifleMastery" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="RiflePerk" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="RifleWeaponsDebuff" 	value="1" stage="aftercomplete" />
-		<reward type="Skill" id="RifleMastery" 			value="1" stage="aftercomplete" />
 		<reward type="Quest" id="quest_rifles_2" />
 	</quest>
 	
@@ -886,9 +886,9 @@
 			<requirement type="Holding" id="gunHuntingRifle" />
 			<requirement type="Holding" id="gunSniperRifle" />
 		</requirement>
+		<reward type="Skill" id="RifleMastery" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="RiflePerk" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="RifleWeaponsDebuff" 	value="1" stage="aftercomplete" />
-		<reward type="Skill" id="RifleMastery" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ClassMastery"			value="1" stage="aftercomplete" />
 	</quest>
 	
@@ -896,10 +896,10 @@
 	<!-- PLUNDERER CLASS -->
 	<quest id="quest_plunderer_1" name_key="quest_plunderer_1" subtitle_key="quest_plunderer_1_subtitle" description_key="quest_plunderer_1_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_plunderer_1_offer" difficulty="easy">
+		<reward type="Skill" id="PlundererMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PlundererQualityTime" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PlundererSlow" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PlundererStaminaDrain" value="1" stage="aftercomplete" />
-		<reward type="Skill" id="PlundererMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Quest" id="quest_plunderer_2" />
 	</quest>
 	

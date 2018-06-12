@@ -143,7 +143,7 @@
 	<property name="IsEnemyEntity" value="true"/>
 
 	<!-- Stealth settings -->
-	<property name="SightRange" value="100"/> <!-- distance in m -->
+	<property name="SightRange" value="30"/> <!-- distance in m -->
 	<property name="SightScale" value="-2,150"/> <!-- how well lit you have to be for the zombie to see you at min,max range -->
 
 	<property name="SleeperWakeupSightDetectionMin" value="-40,5"/> <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
@@ -248,7 +248,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieWightFeralFrozen" extends="zombieWightFeral">
+<entity_class name="zombieWightFeralNS" extends="zombieWightFeral">
+	<property name="SightRange"	value="90" />
+</entity_class>
+
+<entity_class name="zombieWightFeralFrozen" extends="zombieWightFeralNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -296,6 +300,11 @@
 	<property name="ChestExplosionDamageMultiplier" value="0.35"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
+
+<entity_class name="zombieWightFeralRadiatedNS" extends="zombieWightFeralRadiated">
+	<property name="SightRange"	value="120" />
+</entity_class>
+
 <!--
 <entity_class name="zombieBehemoth" extends="zombieTemplateMale">
 	<property name="Prefab" value="NPC4m"/>
@@ -344,7 +353,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieBoeFrozen" extends="zombieBoe">
+<entity_class name="zombieBoeNS" extends="zombieBoe">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieBoeFrozen" extends="zombieBoeNS">
 	<property name="TintMaterial0" value="78,164,162"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -369,6 +382,10 @@
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieBoeFeralNS" extends="zombieBoeFeral">
+	<property name="SightRange"	value="80" />
 </entity_class>
 
 <!-- Missing: zombieBoeFeralRadiated -->
@@ -399,6 +416,10 @@
 	<property name="ChestExplosionDamageMultiplier" value="0.9"/>
 	<property name="LootListOnDeath" value="78"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieFootballPlayerNS" extends="zombieFootballPlayer">
+	<property name="SightRange"	value="70" />
 </entity_class>
 
 <!-- Missing: zombieFootballPlayerRadiated -->
@@ -440,7 +461,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieFemaleFatFrozen" extends="zombieFemaleFat">
+<entity_class name="zombieFemaleFatNS" extends="zombieFemaleFat">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieFemaleFatFrozen" extends="zombieFemaleFatNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -469,6 +494,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieFemaleFatFeralNS" extends="zombieFemaleFatFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieFemaleFatFeralRadiated -->
 
 <entity_class name="zombieJoe" extends="zombieTemplateMale">
@@ -482,7 +511,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieJoeFrozen" extends="zombieJoe">
+<entity_class name="zombieJoeNS" extends="zombieJoe">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieJoeFrozen" extends="zombieJoeNS">
 	<property name="TintMaterial0" value="78,164,162"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -507,6 +540,10 @@
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieJoeFeralNS" extends="zombieJoeFeral">
+	<property name="SightRange"	value="80" />
 </entity_class>
 
 <!-- Missing: zombieJoeFeralRadiated -->
@@ -535,7 +572,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieMoeFrozen" extends="zombieMoe">
+<entity_class name="zombieMoeNS" extends="zombieMoe">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieMoeFrozen" extends="zombieMoeNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -561,6 +602,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieMoeFeralNS" extends="zombieMoeFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieMoeFeralRadiated -->
 
 <entity_class name="zombieArlene" extends="zombieTemplateMale">
@@ -584,7 +629,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieArleneFrozen" extends="zombieArlene">
+<entity_class name="zombieArleneNS" extends="zombieArlene">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieArleneFrozen" extends="zombieArleneNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -608,6 +657,10 @@
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieArleneFeralNS" extends="zombieArleneFeral">
+	<property name="SightRange"	value="80" />
 </entity_class>
 
 <!-- Missing: zombieArleneFeralRadiated -->
@@ -667,7 +720,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieDarleneFrozen" extends="zombieDarlene">
+<entity_class name="zombieDarleneNS" extends="zombieDarlene">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieDarleneFrozen" extends="zombieDarleneNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -693,6 +750,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieDarleneFeralNS" extends="zombieDarleneFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieDarleneFeralRadiated -->
 
 <entity_class name="zombieMarlene" extends="zombieTemplateMale">
@@ -716,7 +777,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieMarleneFrozen" extends="zombieMarlene">
+<entity_class name="zombieMarleneNS" extends="zombieMarlene">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieMarleneFrozen" extends="zombieMarleneNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -742,6 +807,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieMarleneFeralNS" extends="zombieMarleneFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieMarleneFeralRadiated -->
 
 <entity_class name="zombieYo" extends="zombieTemplateMale">
@@ -755,7 +824,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieYoFrozen" extends="zombieYo">
+<entity_class name="zombieYoNS" extends="zombieYo">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieYoFrozen" extends="zombieYoNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -782,6 +855,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieYoFeralNS" extends="zombieYoFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieYoFeralRadiated -->
 
 <entity_class name="zombieSteve" extends="zombieTemplateMale">
@@ -794,7 +871,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieSteveFrozen" extends="zombieSteve">
+<entity_class name="zombieSteveNS" extends="zombieSteve">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieSteveFrozen" extends="zombieSteveNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -821,6 +902,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieSteveFeralNS" extends="zombieSteveFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieSteveFeralRadiated -->
 
 <entity_class name="zombieSteveCrawler" extends="zombieTemplateMale">
@@ -837,6 +922,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieSteveCrawlerNS" extends="zombieSteveCrawler">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
 <!-- Missing: zombieSteveCrawlerRadiated -->
 
 <entity_class name="zombieSteveCrawlerFeral" extends="zombieSteveCrawler">
@@ -846,6 +935,10 @@
 	<property name="LootListOnDeath" value="102"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieSteveCrawlerFeralNS" extends="zombieSteveCrawlerFeral">
+	<property name="SightRange"	value="80" />
 </entity_class>
 
 <!-- Missing: zombieSteveCrawlerFeralRadiated -->
@@ -861,7 +954,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieBusinessManFrozen" extends="zombieBusinessMan">
+<entity_class name="zombieBusinessManNS" extends="zombieBusinessMan">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieBusinessManFrozen" extends="zombieBusinessManNS">
 	<property name="TintMaterial0" value="78,164,162"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -887,6 +984,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieBusinessManFeralNS" extends="zombieBusinessManFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieBusinessManFeralRadiated -->
 
 <entity_class name="zombieSnow" extends="zombieTemplateMale">
@@ -910,6 +1011,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieSnowNS" extends="zombieSnow">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
 <!-- Missing: zombieSnowRadiated -->
 
 <entity_class name="zombieSnowFeral" extends="zombieSnow">
@@ -925,6 +1030,10 @@
 	<property name="LootListOnDeath" value="66"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieSnowFeralNS" extends="zombieSnowFeral">
+	<property name="SightRange"	value="80" />
 </entity_class>
 
 <!-- Missing: zombieSnowFeralRadiated -->
@@ -962,6 +1071,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieSpiderNS" extends="zombieSpider">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
 <!-- Missing: zombieSpiderRadiated -->
 
 <entity_class name="zombieSpiderFeral" extends="zombieSpider">
@@ -979,6 +1092,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieSpiderFeralNS" extends="zombieSpiderFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <entity_class name="zombieSpiderFeralRadiated" extends="zombieSpiderFeral">
 	<property name="HandItem" value="handZombie02Feral"/>
 	<property name="MaxHealth" value="1000"/>
@@ -992,6 +1109,10 @@
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
+</entity_class>
+
+<entity_class name="zombieSpiderFeralRadiatedNS" extends="zombieSpiderFeralRadiated">
+	<property name="SightRange"	value="120" />
 </entity_class>
 
 <entity_class name="zombieBurnt" extends="zombieTemplateMale">
@@ -1041,7 +1162,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieNurseFrozen" extends="zombieNurse">
+<entity_class name="zombieNurseNS" extends="zombieNurse">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieNurseFrozen" extends="zombieNurseNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -1066,6 +1191,10 @@
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieNurseFeralNS" extends="zombieNurseFeral">
+	<property name="SightRange"	value="80" />
 </entity_class>
 
 <!-- Missing: zombieNurseFeralRadiated -->
@@ -1098,6 +1227,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieFatHawaiianNS" extends="zombieFatHawaiian">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
 <!-- Missing: zombieFatHawaiianRadiated -->
 
 <entity_class name="zombieFatHawaiianFeral" extends="zombieFatHawaiian">
@@ -1113,6 +1246,10 @@
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieFatHawaiianFeralNS" extends="zombieFatHawaiianFeral">
+	<property name="SightRange"	value="80" />
 </entity_class>
 
 <!-- Missing: zombieFatHawaiianFeralRadiated -->
@@ -1171,6 +1308,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieFatCopNS" extends="zombieFatCop">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
 <!-- Missing: zombieFatCopRadiated -->
 
 <entity_class name="zombieFatCopFeral" extends="zombieFatCop">
@@ -1185,6 +1326,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieFatCopFeralNS" extends="zombieFatCopFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <entity_class name="zombieFatCopFeralRadiated" extends="zombieFatCopFeral">
 	<property name="MaxHealth" value="3500"/>
 	<property name="ExperienceGain" value="6042"/>
@@ -1197,6 +1342,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieFatCopFeralRadiatedNS" extends="zombieFatCopFeralRadiated">
+	<property name="SightRange"	value="100" />
+</entity_class>
+
 <entity_class name="zombieMaleHazmat" extends="zombieBoe">
 	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
 	<property name="HandItem" value="handZombieHazMat"/>
@@ -1206,7 +1355,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieMaleHazmatFrozen" extends="zombieMaleHazmat">
+<entity_class name="zombieMaleHazmatNS" extends="zombieMaleHazmat">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieMaleHazmatFrozen" extends="zombieMaleHazmatNS">
 	<property name="TintMaterial0" value="78,164,162"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -1247,7 +1400,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieUtilityWorkerFrozen" extends="zombieUtilityWorker">
+<entity_class name="zombieUtilityWorkerNS" extends="zombieUtilityWorker">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieUtilityWorkerFrozen" extends="zombieUtilityWorkerNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -1283,6 +1440,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieUtilityWorkerFeralNS" extends="zombieUtilityWorkerFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieUtilityWorkerFeralRadiated -->
 
 <entity_class name="zombieSoldier" extends="zombieTemplateMale">
@@ -1305,6 +1466,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieSoldierNS" extends="zombieSoldier">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
 <!-- Missing: zombieSoldierRadiated -->
 
 <entity_class name="zombieSoldierFeral" extends="zombieSoldier">
@@ -1319,6 +1484,10 @@
 	<property name="ChestExplosionDamageMultiplier" value="0.2"/>
 	<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieSoldierFeralNS" extends="zombieSoldierFeral">
+	<property name="SightRange"	value="100" />
 </entity_class>
 
 <!-- Missing: zombieSoldierFeralRadiated -->
@@ -1337,7 +1506,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieSkateboarderFrozen" extends="zombieSkateboarder">
+<entity_class name="zombieSkateboarderNS" extends="zombieSkateboarder">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieSkateboarderFrozen" extends="zombieSkateboarderNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -1363,6 +1536,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieSkateboarderFeralNS" extends="zombieSkateboarderFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieSkateboarderFeralRadiated -->
 
 <entity_class name="zombieCheerleader" extends="zombieTemplateMale">
@@ -1386,7 +1563,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieCheerleaderFrozen" extends="zombieCheerleader">
+<entity_class name="zombieCheerleaderNS" extends="zombieCheerleader">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieCheerleaderFrozen" extends="zombieCheerleaderNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -1412,6 +1593,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieCheerleaderFeralNS" extends="zombieCheerleaderFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieCheerleaderFeralRadiated -->
 
 <entity_class name="zombieOldTimer" extends="zombieBoe">
@@ -1419,6 +1604,10 @@
 	<property name="WalkType" value="3"/>
 	<property name="LootListOnDeath" value="81"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieOldTimerNS" extends="zombieOldTimer">
+	<property name="SightRange"	value="70" />
 </entity_class>
 
 <!-- Missing: zombieOldTimerRadiated -->
@@ -1439,6 +1628,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieOldTimerFeralNS" extends="zombieOldTimerFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieOldTimerFeralRadiated -->
 
 <entity_class name="zombieBiker" extends="zombieTemplateMale">
@@ -1455,7 +1648,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieBikerFrozen" extends="zombieBiker">
+<entity_class name="zombieBikerNS" extends="zombieBiker">
+	<property name="SightRange"	value="90" />
+</entity_class>
+
+<entity_class name="zombieBikerFrozen" extends="zombieBikerNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -1482,6 +1679,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieFarmerNS" extends="zombieFarmer">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
 <!-- Missing: zombieFarmerRadiated -->
 
 <entity_class name="zombieFarmerFeral" extends="zombieFarmer">
@@ -1502,6 +1703,10 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieFarmerFeralNS" extends="zombieFarmerFeral">
+	<property name="SightRange"	value="80" />
+</entity_class>
+
 <!-- Missing: zombieFarmerFeralRadiated -->
 
 <entity_class name="zombieStripper" extends="zombieDarlene">
@@ -1513,7 +1718,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieStripperFrozen" extends="zombieStripper">
+<entity_class name="zombieStripperNS" extends="zombieStripper">
+	<property name="SightRange"	value="70" />
+</entity_class>
+
+<entity_class name="zombieStripperFrozen" extends="zombieStripperNS">
 	<property name="TintMaterial0" value="167,217,215"/>
 	<property name="TintMaterial2" value="20,33,32"/>
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
@@ -1538,6 +1747,10 @@
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieStripperFeralNS" extends="zombieStripperFeral">
+	<property name="SightRange"	value="80" />
 </entity_class>
 
 <!-- Missing: zombieStripperFeralRadiated -->

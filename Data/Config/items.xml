@@ -5639,7 +5639,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="animalHide"/>
-	<property name="RepairTools" value="animalHide"/>
+	<property name="RepairTools" value="leather"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="FuelValue" value="75"/>
 	<property name="EconomicValue" value="480"/>

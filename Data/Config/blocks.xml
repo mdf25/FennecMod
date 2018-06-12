@@ -4708,10 +4708,6 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="wheat" count="2"/>
 </block>
 
-
-
-
-
 <block id="463" name="bed01">
 	<property name="DescriptionKey" value="bedGroupDesc"/>
 	<property name="Class" value="SleepingBag"/>
