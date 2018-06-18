@@ -462,6 +462,13 @@
 		<reward type="Skill" id="BuilderStaminaDrain" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="BuilderThirst" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="BuilderMastery" 		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="oldHammer" 			value="300" />
+		<reward type="Item" id="rebarFrameBlock" 	value="50" />
+		<reward type="Item" id="concreteMix" 		value="500" />
+		<reward type="Item" id="secureDoorWooden"   value="1" />
+		<reward type="Item" id="woodFrameBlock" 	value="100" />
+		
 		<reward type="Quest" id="quest_builder_2" />
 	</quest>
 	
@@ -512,6 +519,12 @@
 		<reward type="Skill" id="CrafterSpeed" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="CrafterWeakness" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="CrafterMastery"	 	value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="forgeUpgradeKit" 		value="1" />
+		<reward type="Item" id="workbenchUpgradeKit"	value="1" />
+		<reward type="Item" id="wood" 					value="500" />
+		<reward type="Item" id="rockSmall" 				value="500" />
+		
 		<reward type="Quest" id="quest_crafter_2" />
 	</quest>
 	
@@ -557,6 +570,11 @@
 		<reward type="Skill" id="BladesKnifeBuff" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="BladesClubDebuff" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="BladesMastery"		 	value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="oldKnife" 				value="300" />
+		<reward type="Item" id="coffee" 				value="3" />
+		<reward type="Item" id="firstAidBandage" 		value="2" />
+		
 		<reward type="Quest" id="quest_blades_2" />
 	</quest>
 	
@@ -604,6 +622,11 @@
 		<reward type="Skill" id="BluntsClubBuff" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="BluntsKnifeDebuff" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="BluntsMastery"		 	value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="oldClub" 				value="300" />
+		<reward type="Item" id="megaCrush" 				value="2" />
+		<reward type="Item" id="firstAidBandage"	 	value="3" />
+		
 		<reward type="Quest" id="quest_blunts_2" />
 	</quest>
 	
@@ -651,6 +674,11 @@
 		<reward type="Skill" id="MinerHarvest" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="MinerSlowCraft" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="MinerMastery"		 	value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="minersPickaxe" 			value="300" />
+		<reward type="Item" id="minersShovel" 			value="300" />
+		<reward type="Item" id="miningHelmet" 			value="50"  />
+		
 		<reward type="Quest" id="quest_miner_2" />
 	</quest>
 	
@@ -704,6 +732,10 @@
 		<reward type="Skill" id="RangerBowPerk" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="RangerWeaponsDebuff" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="RangerMastery"		 	value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="oldBow" 				value="300" />
+		<reward type="Item" id="arrow" 					value="100" />
+		
 		<reward type="Quest" id="quest_ranger_2" />
 	</quest>
 	
@@ -754,6 +786,10 @@
 		<reward type="Skill" id="ShotgunBuff" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ShotgunWeaponsDebuff" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ShotgunMastery" 		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="oldShotgun" 			value="300" />
+		<reward type="Item" id="shotgunShell" 			value="24" />
+		
 		<reward type="Quest" id="quest_shotguns_2" />
 	</quest>
 	
@@ -805,6 +841,10 @@
 		<reward type="Skill" id="PistolMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PistolPerk" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PistolWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="oldPistol" 				value="300" />
+		<reward type="Item" id="9mmBulletLow" 			value="40" />
+		
 		<reward type="Quest" id="quest_pistols_2" />
 	</quest>
 	
@@ -852,6 +892,10 @@
 		<reward type="Skill" id="RifleMastery" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="RiflePerk" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="RifleWeaponsDebuff" 	value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="oldRifle" 				value="300" />
+		<reward type="Item" id="762mmBulletLow" 		value="20"  />
+		
 		<reward type="Quest" id="quest_rifles_2" />
 	</quest>
 	
@@ -900,6 +944,10 @@
 		<reward type="Skill" id="PlundererQualityTime" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PlundererSlow" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="PlundererStaminaDrain" value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="nightvisionGoggles" 	value="50" />
+		<reward type="Item" id="beer" 					value="2" />
+		
 		<reward type="Quest" id="quest_plunderer_2" />
 	</quest>
 	
@@ -945,6 +993,13 @@
 		<reward type="Skill" id="ArmourPerk" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ArmourHungerThirst" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ArmourMastery" 		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="oldHelmet" 				value="300" />
+		<reward type="Item" id="oldVest" 				value="300" />
+		<reward type="Item" id="oldGloves" 				value="300" />
+		<reward type="Item" id="oldLegArmor" 			value="300" />
+		<reward type="Item" id="oldArmorBoots" 			value="300" />
+		
 		<reward type="Quest" id="quest_armour_2" />
 	</quest>
 	
@@ -996,6 +1051,11 @@
 		<reward type="Skill" id="HunterCrouchPerk"		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="HunterHungerThirst" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="HunterMastery" 		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="trapSpikesNew" 			value="50" />
+		<reward type="Item" id="barbedFence" 			value="50" />
+		<reward type="Item" id="fishingNetEmpty" 		value="3" />
+		
 		<reward type="Quest" id="quest_hunter_2" />
 	</quest>	
 	
@@ -1029,6 +1089,7 @@
 		<reward type="Skill" id="HunterBowPerk" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="HunterHungerThirst" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="HunterMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ClassMastery"			value="1" stage="aftercomplete" />
 	</quest>
 	
 	<quest id="quest_hunter_finish" name_key="quest_hunter_finish" subtitle_key="quest_hunter_finish_subtitle" description_key="quest_hunter_finish_offer" icon="ui_game_symbol_knife"
@@ -1049,6 +1110,11 @@
 		<reward type="Skill" id="ScientistArmourDebuff" value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ScientistStaminaDrain" value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ScientistMastery" 		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="beaker" 				value="2" />
+		<reward type="Item" id="firstAidBandage" 		value="5" />
+		<reward type="Item" id="firstAidKit" 			value="2" />
+		
 		<reward type="Quest" id="quest_scientist_2" />
 	</quest>	
 	
@@ -1094,6 +1160,12 @@
 		<reward type="Skill" id="MechanicHarvest" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="MechanicEntityDebuff" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="MechanicMastery" 		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="oldWrench" 				value="300" />
+		<reward type="Item" id="minibikeChassis" 		value="50" 	/>
+		<reward type="Item" id="minibikeSeat" 			value="50" 	/>
+		<reward type="Item" id="minibikeHandlebars" 	value="50"  />
+		
 		<reward type="Quest" id="quest_mechanic_2" />
 	</quest>
 	
@@ -1140,7 +1212,10 @@
 		<reward type="SkillPoints" value="60" />
 		<reward type="Skill" id="ResearcherHealthDebuff" value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ResearcherArmourDebuff" value="1" stage="aftercomplete" />
-		<reward type="Skill" id="ResearcherMastery" 		value="1" stage="aftercomplete" />
+		<reward type="Skill" id="ResearcherMastery" 	 value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="schematicBag" 			 value="1" />
+		
 		<reward type="Quest" id="quest_researcher_2" />
 	</quest>
 	
@@ -1188,6 +1263,10 @@
 		<reward type="Skill" id="AthleteHealthStaminaGain" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="AthleteHunger" 			value="1" stage="aftercomplete" />
 		<reward type="Skill" id="AthleteMastery" 			value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="steroids" 					value="2" />
+		<reward type="Item" id="vitamins" 					value="2" />
+		
 		<reward type="Quest" id="quest_athlete_2" />
 	</quest>
 	
@@ -1231,6 +1310,12 @@
 		<reward type="Skill" id="TraderRunsAlot" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="TraderClubKnifeDebuff" value="1" stage="aftercomplete" />
 		<reward type="Skill" id="TraderMastery" 		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="casinoCoin" 			value="5000" />
+		<reward type="Item" id="oldCash" 				value="100" />
+		<reward type="Item" id="goldNugget" 			value="2" />
+		<reward type="Item" id="rawDiamond" 			value="1" />
+		
 		<reward type="Quest" id="quest_trader_2" />
 	</quest>
 	
@@ -1272,6 +1357,12 @@
 		<reward type="Skill" id="FarmerRangedDebuff" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="FarmerSeedCrafting"	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="FarmerMastery" 		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="farmersHoe" 			value="300" />
+		<reward type="Item" id="seedPacketCorn" 		value="2" />
+		<reward type="Item" id="seedPacketPotato" 		value="2" />
+		<reward type="Item" id="seedPacketWheat" 		value="2" />
+		<reward type="Item" id="fertilizer" 			value="20" />
 		<reward type="Quest" id="quest_farmer_2" />
 	</quest>
 	
@@ -1318,6 +1409,11 @@
 		<reward type="Skill" id="CulinaryBoost" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="CulinaryStaminaDrain" 	value="1" stage="aftercomplete" />
 		<reward type="Skill" id="CulinaryRecipes"		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="ovenUpgradeKit" 		value="1" />
+		<reward type="Item" id="cookingPot" 			value="1" />
+		<reward type="Item" id="groceryBag" 			value="4" />
+		
 		<reward type="Quest" id="quest_culinary_2" />
 	</quest>
 	
@@ -1367,6 +1463,10 @@
 		<reward type="Skill" id="CarpenterMastery" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="CarpenterHarvest" 		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="CarpenterThirst" 		value="1" stage="aftercomplete" />
+		
+		<reward type="Item" id="carpentersAxe" 			value="300" />
+		<reward type="Item" id="beer" 					value="2" />
+		
 		<reward type="Quest" id="quest_carpenter_2" />
 	</quest>
 	

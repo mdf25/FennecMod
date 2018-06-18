@@ -19,11 +19,6 @@
 	<!-- if skill_point_cost_multiplier > 0 then PointCostPerLevel = int(SkillPointCostMultiplier ^ currentTier) * SkillPointCostPerLevel -->
 
 	<!-- Player Specializations -->
-	<!--
-		<requirement perk_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
-		<requirement perk_level="1" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
-		<requirement perk_level="2" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
-	-->
 	
 	<!-- Overall Mastery -->
 	<perk name="ClassMastery" icon="resource" description_key="ClassMasteryDesc" title_key="ClassMasteryName" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="health" always_fire="true">
@@ -127,8 +122,8 @@
 		</effect>
 		<effect name="StaminaDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.4" />
-			<multiply perk_level="2" value="1.2" />
+			<multiply perk_level="1" value="1.25" />
+			<multiply perk_level="2" value="1.1" />
 		</effect>
 	</perk>
 	
@@ -161,8 +156,8 @@
 		</effect>
 		<effect name="StaminaDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.4" />
-			<multiply perk_level="2" value="1.2" />
+			<multiply perk_level="1" value="1.25" />
+			<multiply perk_level="2" value="1.1" />
 		</effect>
 	</perk>
 	
@@ -374,20 +369,20 @@
 		<requirement perk_level="2" required_skill_name="Clothing/Armor" required_skill_level="1"/>
 		<effect name="ArmorDefense">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.5"/>
-			<multiply perk_level="2" value="1.65"/>
+			<multiply perk_level="1" value="1.25"/>
+			<multiply perk_level="2" value="1.35"/>
 		</effect>
 	</perk>
 	<perk name="ArmourHungerThirst" icon="armor_iron" description_key="ArmourHungerThirstDesc" title_key="ArmourHungerThirstName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" always_fire="true" group="health">
 		<effect name="HungerDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.20"/>
-			<multiply perk_level="2" value="1.10"/>
+			<multiply perk_level="1" value="1.10"/>
+			<multiply perk_level="2" value="1.05"/>
 		</effect>
 		<effect name="ThirstDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.20"/>
-			<multiply perk_level="2" value="1.10"/>
+			<multiply perk_level="1" value="1.10"/>
+			<multiply perk_level="2" value="1.05"/>
 		</effect>
 	</perk>
 	
@@ -401,8 +396,8 @@
 		<requirement perk_level="2" required_skill_name="Blade Weapons" required_skill_level="1"/>
 		<effect name="HarvestCount">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="2"/>
-			<multiply perk_level="2" value="2.6"/>
+			<multiply perk_level="1" value="1.5"/>
+			<multiply perk_level="2" value="1.75"/>
 		</effect>
 	</perk>
 	<perk name="HunterBowPerk" icon="knife" description_key="HunterBowPerkDesc" title_key="HunterBowPerkName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="weapons">
@@ -424,13 +419,13 @@
 	<perk name="HunterHungerThirst" icon="knife" description_key="HunterHungerThirstDesc" title_key="HunterHungerThirstName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" always_fire="true" group="health">
 		<effect name="HungerDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.20"/>
-			<multiply perk_level="2" value="1.10"/>
+			<multiply perk_level="1" value="1.10"/>
+			<multiply perk_level="2" value="1.05"/>
 		</effect>
 		<effect name="ThirstDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.20"/>
-			<multiply perk_level="2" value="1.10"/>
+			<multiply perk_level="1" value="1.10"/>
+			<multiply perk_level="2" value="1.05"/>
 		</effect>
 	</perk>
 	
@@ -495,8 +490,8 @@
 		<requirement perk_level="2" required_skill_name="Mining Tools" required_skill_level="1"/>
 		<effect name="EntityDamage">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="0.8"/>
-			<multiply perk_level="2" value="0.9"/>
+			<multiply perk_level="1" value="0.9"/>
+			<multiply perk_level="2" value="0.95"/>
 		</effect>
 		<effect name="StaminaDegradation">
 			<multiply perk_level="0" value="1"/>
@@ -522,8 +517,8 @@
 		<requirement perk_level="2" required_skill_name="Clothing/Armor" required_skill_level="1"/>
 		<effect name="ArmorDefense">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="0.8"/>
-			<multiply perk_level="2" value="0.9"/>
+			<multiply perk_level="1" value="0.9"/>
+			<multiply perk_level="2" value="0.95"/>
 		</effect>
 	</perk>
 	
@@ -535,8 +530,8 @@
 	<perk name="AthleteHealthStaminaGain" icon="resource" description_key="AthleteHealthStaminaGainDesc" title_key="AthleteHealthStaminaGainName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" always_fire="true" group="health">
 		<effect name="StaminaGain">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.5"/>
-			<multiply perk_level="2" value="1.65"/>
+			<multiply perk_level="1" value="1.25"/>
+			<multiply perk_level="2" value="1.35"/>
 		</effect>
 		<effect name="HealthGain">
 			<multiply perk_level="0" value="1"/>
@@ -557,8 +552,8 @@
 	<perk name="AthleteHunger" icon="knife" description_key="AthleteHungerDesc" title_key="AthleteHungerName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" always_fire="true" group="health">
 		<effect name="HungerDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.20"/>
-			<multiply perk_level="2" value="1.10"/>
+			<multiply perk_level="1" value="1.15"/>
+			<multiply perk_level="2" value="1.075"/>
 		</effect>
 	</perk>
 	<perk name="AthleteVitaminsRecipe" icon="knife" description_key="AthleteVitaminsRecipeDesc" title_key="AthleteVitaminsRecipeName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science">
@@ -634,8 +629,8 @@
 		<requirement perk_level="1" required_skill_name="Axes" required_skill_level="1"/>
 		<effect name="EntityDamage">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="0.8"/>
-			<multiply perk_level="2" value="0.9"/>
+			<multiply perk_level="1" value="0.9"/>
+			<multiply perk_level="2" value="0.95"/>
 		</effect>
 	</perk>
 	<perk name="FarmerRangedDebuff" icon="rifle" description_key="FarmerRangedDebuffDesc" title_key="FarmerRangedDebuffName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
@@ -645,8 +640,8 @@
 		<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="1"/>
 		<effect name="EntityDamage">
 			<multiply skill_level="0" value="1"/>
-			<multiply skill_level="1" value="0.6"/>
-			<multiply skill_level="2" value="0.8"/>
+			<multiply skill_level="1" value="0.8"/>
+			<multiply skill_level="2" value="0.9"/>
 		</effect>
 	</perk>
 	<perk name="FarmerSeedCrafting" icon="rifle" description_key="FarmerSeedCraftingDesc" title_key="FarmerSeedCraftingName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
@@ -738,13 +733,13 @@
 	<perk name="CarpenterThirst" icon="mining" description_key="CarpenterThirstDesc" title_key="CarpenterThirstName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" always_fire="true" group="health">
 		<effect name="HungerDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.20"/>
-			<multiply perk_level="2" value="1.10"/>
+			<multiply perk_level="1" value="1.10"/>
+			<multiply perk_level="2" value="1.05"/>
 		</effect>
 		<effect name="ThirstDegradation">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="1.20"/>
-			<multiply perk_level="2" value="1.10"/>
+			<multiply perk_level="1" value="1.10"/>
+			<multiply perk_level="2" value="1.05"/>
 		</effect>
 	</perk>
 	<perk name="CarpenterBenchRecipe" icon="rifle" description_key="CarpenterBenchRecipeDesc" title_key="CarpenterBenchRecipeName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
@@ -1286,25 +1281,26 @@
 	</action_skill>
 	<perk name="Workbench" icon="resource" description_key="workbenchSkillDesc" title_key="workbench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="30"/>
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="5"/>
 		<recipe name="workbench" unlock_level="1"/>
+		<recipe name="workbenchUpgradeKit" unlock_level="1" />
 	</perk>
 	<perk name="Concrete Mixing" icon="resource" description_key="concreteMixingDesc" title_key="concreteMixing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="50"/>
 		<requirement skill_level="1" required_skill_name="Mining Tools" required_skill_level="20"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="5"/>
 		<recipe name="cement" unlock_level="1"/>
 		<recipe name="concreteMix" unlock_level="1"/>
 	</perk>
 	<perk name="ForgeAhead" icon="resource" description_key="ForgeAheadDesc" title_key="ForgeAheadName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="1"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="2"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="1"/>
 		<recipe name="forge"			unlock_level="1" />
 		<recipe name="forgeUpgradeKit"	unlock_level="1" />
 	</perk>
 	<perk name="Glassworking" icon="resource" description_key="GlassworkingDesc" title_key="GlassworkingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="2"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
 		<recipe name="emptyJar"						unlock_level="1" />
 		<recipe name="glassShowerBlock"				unlock_level="1" />
 		<recipe name="glassShowerRamp"				unlock_level="1" />
@@ -1312,8 +1308,8 @@
 		<recipe name="glassIndustrial02CTRPlate"	unlock_level="1" />
 	</perk>	
 	<perk name="GlassworkingBusiness" icon="resource" description_key="GlassworkingBusinessDesc" title_key="GlassworkingBusinessName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="2"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
 		<recipe name="glassBusinessSheet"			unlock_level="1" />
 		<recipe name="glassBusinessCTRSheet"		unlock_level="1" />
 		<recipe name="glassBusinessBlock"			unlock_level="1" />
@@ -1321,8 +1317,8 @@
 		<recipe name="glassBusinessPlateCurved"		unlock_level="1" />
 	</perk>		
 	<perk name="GlassworkingBulletproof" icon="resource" description_key="GlassworkingBulletproofDesc" title_key="GlassworkingBulletproofName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="4"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="7"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="4"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="7"/>
 		<recipe name="glassBulletproofBlock"		unlock_level="1" />
 		<recipe name="glassBulletproofPlate"		unlock_level="1" />
 		<recipe name="glassBulletproofCTRPlate"		unlock_level="1" />
@@ -1331,26 +1327,26 @@
 	</perk>	
 		
 	<perk name="plumbing" icon="resource" description_key="plumbingDesc" title_key="plumbingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="5"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
 		<recipe name="sinkUpgradeKit"		unlock_level="1" />
 	</perk>	
 		
 	<perk name="ovenRepair" icon="resource" description_key="ovenRepairDesc" title_key="ovenRepairName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="5"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
 		<recipe name="ovenUpgradeKit"		unlock_level="1" />
 	</perk>		
 		
 	<perk name="squeezer" icon="resource" description_key="squeezerDesc" title_key="squeezerName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="6"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="6"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="5"/>
 		<recipe name="squeezerWorkbench"		unlock_level="1" />
 	</perk>
 	
 	<perk name="IronSmithing" icon="resource" description_key="IronSmithingDesc" title_key="IronSmithingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="3"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="2"/>
 		<recipe name="forgedIron"		unlock_level="1" />
 		<recipe name="ironArrowHead" 	unlock_level="1" />
 		<recipe name="fireaxeIron" 		unlock_level="1" />
@@ -1359,23 +1355,23 @@
 		<recipe name="hoeIron"			unlock_level="1" />
 	</perk>
 	<perk name="IronToolCrafting" icon="resource" description_key="IronToolCraftingDesc" title_key="IronToolCraftingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="3"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="2"/>
 		<recipe name="anvil"		unlock_level="1" />
 		<recipe name="cookingPot" 	unlock_level="1" />
 		<recipe name="cookingGrill" unlock_level="1" />
 	</perk>
 	<perk name="Ironclad" icon="resource" description_key="IroncladDesc" title_key="IroncladName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="5"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="2"/>
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="25" />
 		<recipe name="metalTrussingBlock"	unlock_level="1" />
 		<recipe name="metalTrussingRamp"	unlock_level="1" />
 		<recipe name="ironBars"				unlock_level="1" />
 	</perk>
 	<perk name="RebarManual" icon="resource" description_key="RebarManualDesc" title_key="RebarManualName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="3"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="6"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="6"/>
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="65" />
 		<recipe name="rebarFrameBlock"		unlock_level="1" />
 		<recipe name="rebarFrameCNRInside"	unlock_level="1" />
@@ -1383,18 +1379,18 @@
 		<recipe name="rebarFrameRamp"		unlock_level="1" />
 	</perk>
 	<perk name="IndustrialGrinding" icon="resource" description_key="IndustrialGrindingDesc" title_key="IndustrialGrindingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="5"/>
 		<recipe name="industrialGrinder" unlock_level="1"/>
 	</perk>
 	<perk name="PurificationMethods" icon="resource" description_key="PurificationMethodsDesc" title_key="PurificationMethodsName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="7"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="7"/>
 		<recipe name="purificationPlant" unlock_level="1"/>
 		<recipe name="purifiedWater" unlock_level="1" />
 	</perk>
 	<perk name="Steel Smithing" icon="resource" description_key="steelSmithingDesc" title_key="steelSmithing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="6"/>
-		<requirement skill_level="1" required_skill_name="craftSkillWeapons" required_skill_level="6"/>
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="6"/>
+		<requirement skill_level="1" required_skill_name="craftSkillWeaponsPerk" required_skill_level="6"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="3"/>
 		<recipe name="forgeCrucible" unlock_level="1"/>
 		<recipe name="forgedSteel" unlock_level="1"/>
 		<recipe name="steelBulletCasing" unlock_level="1"/>
@@ -1404,8 +1400,8 @@
 		<recipe name="shovelSteel" unlock_level="1" />
 	</perk>
 	<perk name="ChemStationPerk" icon="resource" description_key="chemStationPerkDesc" title_key="chemistryStation" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="7"/>
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="7"/>
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="3"/>
 		<recipe name="chemistryStation" unlock_level="1"/>
 	</perk>
 	<perk name="BadMechanic" icon="resource" description_key="badMechanicDesc" title_key="badMechanic" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="tools">
@@ -1615,220 +1611,195 @@
 		</effect>
 	</player_skill>
 
+	
+	
+	
+	
 	<!-- Crafting Skills -->
-	<perk name="craftSkillWeapons" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
-	icon="weapon_smithing" description_key="craftSkillWeaponsDesc" title_key="craftSkillWeapons" group="weapons" exp_gain_multiplier="0">
-		<requirement perk_level="1" required_player_level="10"/>
-		<requirement perk_level="2" required_player_level="20"/>
-		<requirement perk_level="3" required_player_level="30"/>
-		<requirement perk_level="4" required_player_level="45"/>
-		<requirement perk_level="5" required_player_level="60"/>
-		<requirement perk_level="6" required_player_level="80"/>
-		<requirement perk_level="7" required_player_level="100"/>
-		<requirement perk_level="8" required_player_level="125"/>
-		<requirement perk_level="9" required_player_level="150"/>
-		<requirement perk_level="10" required_player_level="180"/>
-		<requirement perk_level="8" required_skill_name="ResearcherMastery" required_skill_level="1" />
-		<requirement perk_level="9" required_skill_name="ResearcherMastery" required_skill_level="1" />
-		<requirement perk_level="10" required_skill_name="ResearcherMastery" required_skill_level="2" />
+	<action_skill name="craftSkillWeapons" exp_to_level="120" icon="weapon_smithing" description_key="craftSkillWeaponsDesc" title_key="craftSkillWeapons" group="weapons">
 		<effect name="CraftingTime">
-			<multiply skill_level="0,1" value="1.0,0.95"/>
-			<multiply skill_level="1,2" value="0.95,0.90"/>
-			<multiply skill_level="2,3" value="0.90,0.85"/>
-			<multiply skill_level="3,4" value="0.85,0.80"/>
-			<multiply skill_level="4,5" value="0.80,0.75"/>
-			<multiply skill_level="5,6" value="0.75,0.70"/>
-			<multiply skill_level="6,7" value="0.70,0.65"/>
-			<multiply skill_level="7,8" value="0.65,0.60"/>
-			<multiply skill_level="8,9" value="0.60,0.55"/>
-			<multiply skill_level="9,10" value="0.55,0.50"/>
+			<multiply skill_level="1,100" value="1.0,0.5"/>
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="0" value="10"/>
-			<setvalue skill_level="1" value="20"/>
-			<setvalue skill_level="2" value="30"/>
-			<setvalue skill_level="3" value="50"/>
-			<setvalue skill_level="4" value="100"/>
-			<setvalue skill_level="5" value="150"/>
-			<setvalue skill_level="6" value="200"/>
-			<setvalue skill_level="7" value="250"/>
-			<setvalue skill_level="8" value="300"/>
-			<setvalue skill_level="9" value="400"/>
-			<setvalue skill_level="10" value="500"/>
+			<add skill_level="1,5" 	value="0,40"/>
+			<add skill_level="5,15" 	value="40,80"/>
+			<add skill_level="15,40" 	value="80,120"/>
+			<add skill_level="40,70" 	value="120,160"/>
+			<add skill_level="70,100" 	value="160,200"/>
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="0,1" value="1.0,0.93"/>
-			<multiply skill_level="1,2" value="0.93,0.86"/>
-			<multiply skill_level="2,3" value="0.86,0.79"/>
-			<multiply skill_level="3,4" value="0.79,0.72"/>
-			<multiply skill_level="4,5" value="0.72,0.65"/>
-			<multiply skill_level="5,6" value="0.65,0.58"/>
-			<multiply skill_level="6,7" value="0.58,0.51"/>
-			<multiply skill_level="7,8" value="0.51,0.44"/>
-			<multiply skill_level="8,9" value="0.44,0.37"/>
-			<multiply skill_level="9,10" value="0.37,0.30"/>
+			<multiply skill_level="1,100" value="1.0,0.3"/>
 		</effect>
 		<effect name="RepairAmount">
-			<multiply skill_level="0,10" value="1,1.2"/>
+			<multiply skill_level="1,100" value="1,1.2"/>
 		</effect>
-		<effect name="RepairQualityLoss"> <!-- .666 for Fixer.  Loss at no Fixer skill and QL 600 = 40,32,25...6,5,4 -->
-			<multiply skill_level="0,1" value="0.0670,0.0533"/>
-			<multiply skill_level="1,2" value="0.0533,0.0425"/>
-			<multiply skill_level="2,3" value="0.0425,0.0338"/>
-			<multiply skill_level="3,4" value="0.0338,0.0269"/>
-			<multiply skill_level="4,5" value="0.0269,0.0214"/>
-			<multiply skill_level="5,6" value="0.0214,0.0170"/>
-			<multiply skill_level="6,7" value="0.0170,0.0136"/>
-			<multiply skill_level="7,8" value="0.0136,0.0108"/>
-			<multiply skill_level="8,9" value="0.0108,0.0086"/>
-			<multiply skill_level="9,10" value="0.0086,0.0068"/>
+		<effect name="RepairQualityLoss"> 
+			<multiply skill_level="1,100" value="0.0670,0.0068"/>
+		</effect>
+	</action_skill>
+	<perk name="craftSkillWeaponsPerk" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
+	icon="weapon_smithing" description_key="craftSkillWeaponsPerkDesc" title_key="craftSkillWeaponsPerk" group="weapons" exp_gain_multiplier="0">
+		<requirement perk_level="1"  required_skill_name="craftSkillWeapons" required_skill_level="1"/>
+		<requirement perk_level="2"  required_skill_name="craftSkillWeapons" required_skill_level="10"/>
+		<requirement perk_level="3"  required_skill_name="craftSkillWeapons" required_skill_level="20"/>
+		<requirement perk_level="4"  required_skill_name="craftSkillWeapons" required_skill_level="40"/>
+		<requirement perk_level="5"  required_skill_name="craftSkillWeapons" required_skill_level="60"/>
+		<requirement perk_level="5"  required_player_level="50"/>
+		<requirement perk_level="6"  required_skill_name="craftSkillWeapons" required_skill_level="80"/>
+		<requirement perk_level="6"  required_player_level="75"/>
+		<requirement perk_level="7"  required_skill_name="craftSkillWeapons" required_skill_level="100"/>
+		<requirement perk_level="7"  required_player_level="100"/>
+		<requirement perk_level="8"  required_skill_name="craftSkillWeapons" required_skill_level="100"/>
+		<requirement perk_level="8"  required_player_level="125"/>
+		<requirement perk_level="8"  required_skill_name="ResearcherMastery" required_skill_level="1" />
+		<requirement perk_level="9"  required_skill_name="craftSkillWeapons" required_skill_level="100"/>
+		<requirement perk_level="9"  required_player_level="150"/>
+		<requirement perk_level="9"  required_skill_name="ResearcherMastery" required_skill_level="1" />
+		<requirement perk_level="10" required_skill_name="craftSkillWeapons" required_skill_level="100"/>
+		<requirement perk_level="10" required_player_level="180"/>
+		<requirement perk_level="10" required_skill_name="ResearcherMastery" required_skill_level="2" />
+		<effect name="CraftingQuality">
+			<add skill_level="0" value="1"/>
+			<add skill_level="1" value="10"/>
+			<add skill_level="2" value="20"/>
+			<add skill_level="3" value="30"/>
+			<add skill_level="4" value="40"/>
+			<add skill_level="5" value="50"/>
+			<add skill_level="6" value="75"/>
+			<add skill_level="7" value="100"/>
+			<add skill_level="8" value="150"/>
+			<add skill_level="9" value="200"/>
+			<add skill_level="10" value="300"/>
 		</effect>
 	</perk>
+	
+	
+	
+	
+	
+	
 	<perk name="macheteCraftingPerk" icon="knife" description_key="macheteCraftingDesc" title_key="macheteCraftingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="weapons">
-		<requirement skill_level="1" required_skill_name="craftSkillWeapons" required_skill_level="7"/>
+		<requirement skill_level="1" required_skill_name="craftSkillWeaponsPerk" required_skill_level="7"/>
 		<recipe name="macheteBlade" unlock_level="1"/>
 	</perk>
 
-	<perk name="craftSkillTools" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
-	icon="tool_smithing" description_key="craftSkillToolsDesc" title_key="craftSkillTools" group="tools" exp_gain_multiplier="0">
-		<requirement perk_level="1" required_player_level="10"/>
-		<requirement perk_level="2" required_player_level="20"/>
-		<requirement perk_level="3" required_player_level="30"/>
-		<requirement perk_level="4" required_player_level="45"/>
-		<requirement perk_level="5" required_player_level="60"/>
-		<requirement perk_level="6" required_player_level="80"/>
-		<requirement perk_level="7" required_player_level="100"/>
-		<requirement perk_level="8" required_player_level="125"/>
-		<requirement perk_level="9" required_player_level="150"/>
+	<action_skill name="craftSkillTools" exp_to_level="120" icon="tool_smithing" description_key="craftSkillToolsDesc" title_key="craftSkillTools" group="tools">
+		<effect name="CraftingTime">
+			<multiply skill_level="1,100" value="1.0,0.5"/>
+		</effect>
+		<effect name="CraftingQuality">
+			<add skill_level="1,5" 	value="0,40"/>
+			<add skill_level="5,15" 	value="40,80"/>
+			<add skill_level="15,40" 	value="80,120"/>
+			<add skill_level="40,70" 	value="120,160"/>
+			<add skill_level="70,100" 	value="160,200"/>
+		</effect>
+		<effect name="RepairTime">
+			<multiply skill_level="1,100" value="1.0,0.3"/>
+		</effect>
+		<effect name="RepairAmount">
+			<multiply skill_level="1,100" value="1,1.2"/>
+		</effect>
+		<effect name="RepairQualityLoss"> 
+			<multiply skill_level="1,100" value="0.0670,0.0068"/>
+		</effect>
+	</action_skill>
+	<perk name="craftSkillToolsPerk" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
+	icon="tool_smithing" description_key="craftSkillToolsPerkDesc" title_key="craftSkillToolsPerk" group="tools" exp_gain_multiplier="0">
+		<requirement perk_level="1"  required_skill_name="craftSkillTools" required_skill_level="1"/>
+		<requirement perk_level="2"  required_skill_name="craftSkillTools" required_skill_level="10"/>
+		<requirement perk_level="3"  required_skill_name="craftSkillTools" required_skill_level="20"/>
+		<requirement perk_level="4"  required_skill_name="craftSkillTools" required_skill_level="40"/>
+		<requirement perk_level="5"  required_skill_name="craftSkillTools" required_skill_level="60"/>
+		<requirement perk_level="5"  required_player_level="50"/>
+		<requirement perk_level="6"  required_skill_name="craftSkillTools" required_skill_level="80"/>
+		<requirement perk_level="6"  required_player_level="75"/>
+		<requirement perk_level="7"  required_skill_name="craftSkillTools" required_skill_level="100"/>
+		<requirement perk_level="7"  required_player_level="100"/>
+		<requirement perk_level="8"  required_skill_name="craftSkillTools" required_skill_level="100"/>
+		<requirement perk_level="8"  required_player_level="125"/>
+		<requirement perk_level="8"  required_skill_name="MinerMastery" required_skill_level="1" />
+		<requirement perk_level="9"  required_skill_name="craftSkillTools" required_skill_level="100"/>
+		<requirement perk_level="9"  required_player_level="150"/>
+		<requirement perk_level="9"  required_skill_name="MinerMastery" required_skill_level="1" />
+		<requirement perk_level="10" required_skill_name="craftSkillTools" required_skill_level="100"/>
 		<requirement perk_level="10" required_player_level="180"/>
-		<requirement perk_level="8" required_skill_name="MinerMastery" required_skill_level="1" />
-		<requirement perk_level="9" required_skill_name="MinerMastery" required_skill_level="1" />
 		<requirement perk_level="10" required_skill_name="MinerMastery" required_skill_level="2" />
-		<effect name="CraftingTime">
-			<multiply skill_level="0,1" value="1.0,0.95"/>
-			<multiply skill_level="1,2" value="0.95,0.90"/>
-			<multiply skill_level="2,3" value="0.90,0.85"/>
-			<multiply skill_level="3,4" value="0.85,0.80"/>
-			<multiply skill_level="4,5" value="0.80,0.75"/>
-			<multiply skill_level="5,6" value="0.75,0.70"/>
-			<multiply skill_level="6,7" value="0.70,0.65"/>
-			<multiply skill_level="7,8" value="0.65,0.60"/>
-			<multiply skill_level="8,9" value="0.60,0.55"/>
-			<multiply skill_level="9,10" value="0.55,0.50"/>
-		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="0" value="10"/>
-			<setvalue skill_level="1" value="20"/>
-			<setvalue skill_level="2" value="30"/>
-			<setvalue skill_level="3" value="50"/>
-			<setvalue skill_level="4" value="100"/>
-			<setvalue skill_level="5" value="150"/>
-			<setvalue skill_level="6" value="200"/>
-			<setvalue skill_level="7" value="250"/>
-			<setvalue skill_level="8" value="300"/>
-			<setvalue skill_level="9" value="400"/>
-			<setvalue skill_level="10" value="500"/>
-		</effect>
-		<effect name="RepairTime">
-			<multiply skill_level="0,1" value="1.0,0.93"/>
-			<multiply skill_level="1,2" value="0.93,0.86"/>
-			<multiply skill_level="2,3" value="0.86,0.79"/>
-			<multiply skill_level="3,4" value="0.79,0.72"/>
-			<multiply skill_level="4,5" value="0.72,0.65"/>
-			<multiply skill_level="5,6" value="0.65,0.58"/>
-			<multiply skill_level="6,7" value="0.58,0.51"/>
-			<multiply skill_level="7,8" value="0.51,0.44"/>
-			<multiply skill_level="8,9" value="0.44,0.37"/>
-			<multiply skill_level="9,10" value="0.37,0.30"/>
-		</effect>
-		<effect name="RepairAmount">
-			<multiply skill_level="0,10" value="1,1.2"/>
-		</effect>
-		<effect name="RepairQualityLoss"> <!-- .666 for Fixer.  Loss at no Fixer skill and QL 600 = 40,32,25...6,5,4 -->
-			<multiply skill_level="0,1" value="0.0670,0.0533"/>
-			<multiply skill_level="1,2" value="0.0533,0.0425"/>
-			<multiply skill_level="2,3" value="0.0425,0.0338"/>
-			<multiply skill_level="3,4" value="0.0338,0.0269"/>
-			<multiply skill_level="4,5" value="0.0269,0.0214"/>
-			<multiply skill_level="5,6" value="0.0214,0.0170"/>
-			<multiply skill_level="6,7" value="0.0170,0.0136"/>
-			<multiply skill_level="7,8" value="0.0136,0.0108"/>
-			<multiply skill_level="8,9" value="0.0108,0.0086"/>
-			<multiply skill_level="9,10" value="0.0086,0.0068"/>
+			<add skill_level="0" value="1"/>
+			<add skill_level="1" value="10"/>
+			<add skill_level="2" value="20"/>
+			<add skill_level="3" value="30"/>
+			<add skill_level="4" value="40"/>
+			<add skill_level="5" value="50"/>
+			<add skill_level="6" value="75"/>
+			<add skill_level="7" value="100"/>
+			<add skill_level="8" value="150"/>
+			<add skill_level="9" value="200"/>
+			<add skill_level="10" value="300"/>
 		</effect>
 	</perk>
-	<perk name="craftSkillGuns" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
-	icon="gunsmithing" description_key="craftSkillGunsDesc" title_key="craftSkillGuns" group="firearms" exp_gain_multiplier="0">
-		<requirement perk_level="1" required_player_level="10"/>
-		<requirement perk_level="2" required_player_level="20"/>
-		<requirement perk_level="3" required_player_level="30"/>
-		<requirement perk_level="4" required_player_level="45"/>
-		<requirement perk_level="5" required_player_level="60"/>
-		<requirement perk_level="6" required_player_level="80"/>
-		<requirement perk_level="7" required_player_level="100"/>
-		<requirement perk_level="8" required_player_level="125"/>
-		<requirement perk_level="9" required_player_level="150"/>
+	
+	<action_skill name="craftSkillGuns" exp_to_level="120" icon="gunsmithing" description_key="craftSkillGunsDesc" title_key="craftSkillGuns" group="firearms">
+		<effect name="CraftingTime">
+			<multiply skill_level="1,100" value="1.0,0.5"/>
+		</effect>
+		<effect name="CraftingQuality">
+			<add skill_level="1,5" 	value="0,40"/>
+			<add skill_level="5,15" 	value="40,80"/>
+			<add skill_level="15,40" 	value="80,120"/>
+			<add skill_level="40,70" 	value="120,160"/>
+			<add skill_level="70,100" 	value="160,200"/>
+		</effect>
+		<effect name="RepairTime">
+			<multiply skill_level="1,100" value="1.0,0.3"/>
+		</effect>
+		<effect name="RepairAmount">
+			<multiply skill_level="1,100" value="1,1.2"/>
+		</effect>
+		<effect name="RepairQualityLoss"> 
+			<multiply skill_level="1,100" value="0.0670,0.0068"/>
+		</effect>
+	</action_skill>
+	<perk name="craftSkillGunsPerk" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000" icon="gunsmithing" description_key="craftSkillGunsPerkDesc" title_key="craftSkillGunsPerk" group="firearms" exp_gain_multiplier="0">
+		<requirement perk_level="1"  required_skill_name="craftSkillGuns" required_skill_level="1"/>
+		<requirement perk_level="2"  required_skill_name="craftSkillGuns" required_skill_level="10"/>
+		<requirement perk_level="3"  required_skill_name="craftSkillGuns" required_skill_level="20"/>
+		<requirement perk_level="4"  required_skill_name="craftSkillGuns" required_skill_level="40"/>
+		<requirement perk_level="5"  required_skill_name="craftSkillGuns" required_skill_level="60"/>
+		<requirement perk_level="5"  required_player_level="50"/>
+		<requirement perk_level="6"  required_skill_name="craftSkillGuns" required_skill_level="80"/>
+		<requirement perk_level="6"  required_player_level="75"/>
+		<requirement perk_level="7"  required_skill_name="craftSkillGuns" required_skill_level="100"/>
+		<requirement perk_level="7"  required_player_level="100"/>
+		<requirement perk_level="8"  required_skill_name="craftSkillGuns" required_skill_level="100"/>
+		<requirement perk_level="8"  required_player_level="125"/>
+		<requirement perk_level="8"  required_skill_name="ResearcherMastery" required_skill_level="1" />
+		<requirement perk_level="9"  required_skill_name="craftSkillGuns" required_skill_level="100"/>
+		<requirement perk_level="9"  required_player_level="150"/>
+		<requirement perk_level="9"  required_skill_name="ResearcherMastery" required_skill_level="1" />
+		<requirement perk_level="10" required_skill_name="craftSkillGuns" required_skill_level="100"/>
 		<requirement perk_level="10" required_player_level="180"/>
-		<requirement perk_level="8" required_skill_name="ResearcherMastery" required_skill_level="1" />
-		<requirement perk_level="9" required_skill_name="ResearcherMastery" required_skill_level="1" />
 		<requirement perk_level="10" required_skill_name="ResearcherMastery" required_skill_level="2" />
-		<effect name="CraftingTime">
-			<multiply skill_level="0,1" value="1.0,0.95"/>
-			<multiply skill_level="1,2" value="0.95,0.90"/>
-			<multiply skill_level="2,3" value="0.90,0.85"/>
-			<multiply skill_level="3,4" value="0.85,0.80"/>
-			<multiply skill_level="4,5" value="0.80,0.75"/>
-			<multiply skill_level="5,6" value="0.75,0.70"/>
-			<multiply skill_level="6,7" value="0.70,0.65"/>
-			<multiply skill_level="7,8" value="0.65,0.60"/>
-			<multiply skill_level="8,9" value="0.60,0.55"/>
-			<multiply skill_level="9,10" value="0.55,0.50"/>
-		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="0" value="10"/>
-			<setvalue skill_level="1" value="20"/>
-			<setvalue skill_level="2" value="30"/>
-			<setvalue skill_level="3" value="50"/>
-			<setvalue skill_level="4" value="100"/>
-			<setvalue skill_level="5" value="150"/>
-			<setvalue skill_level="6" value="200"/>
-			<setvalue skill_level="7" value="250"/>
-			<setvalue skill_level="8" value="300"/>
-			<setvalue skill_level="9" value="400"/>
-			<setvalue skill_level="10" value="500"/>
-		</effect>
-		<effect name="RepairTime">
-			<multiply skill_level="0,1" value="1.0,0.93"/>
-			<multiply skill_level="1,2" value="0.93,0.86"/>
-			<multiply skill_level="2,3" value="0.86,0.79"/>
-			<multiply skill_level="3,4" value="0.79,0.72"/>
-			<multiply skill_level="4,5" value="0.72,0.65"/>
-			<multiply skill_level="5,6" value="0.65,0.58"/>
-			<multiply skill_level="6,7" value="0.58,0.51"/>
-			<multiply skill_level="7,8" value="0.51,0.44"/>
-			<multiply skill_level="8,9" value="0.44,0.37"/>
-			<multiply skill_level="9,10" value="0.37,0.30"/>
-		</effect>
-		<effect name="RepairAmount">
-			<multiply skill_level="0,10" value="1,1.2"/>
-		</effect>
-		<effect name="RepairQualityLoss"> <!-- .666 for Fixer.  Loss at no Fixer skill and QL 600 = 30,24,19...5,4,3 -->
-			<multiply skill_level="0,1" value="0.0503,0.0402"/>
-			<multiply skill_level="1,2" value="0.0402,0.0321"/>
-			<multiply skill_level="2,3" value="0.0321,0.0257"/>
-			<multiply skill_level="3,4" value="0.0257,0.0205"/>
-			<multiply skill_level="4,5" value="0.0205,0.0164"/>
-			<multiply skill_level="5,6" value="0.0164,0.0131"/>
-			<multiply skill_level="6,7" value="0.0131,0.0105"/>
-			<multiply skill_level="7,8" value="0.0105,0.0084"/>
-			<multiply skill_level="8,9" value="0.0084,0.0067"/>
-			<multiply skill_level="9,10" value="0.0067,0.0053"/>
+			<add skill_level="0" value="1"/>
+			<add skill_level="1" value="10"/>
+			<add skill_level="2" value="20"/>
+			<add skill_level="3" value="30"/>
+			<add skill_level="4" value="40"/>
+			<add skill_level="5" value="50"/>
+			<add skill_level="6" value="75"/>
+			<add skill_level="7" value="100"/>
+			<add skill_level="8" value="150"/>
+			<add skill_level="9" value="200"/>
+			<add skill_level="10" value="300"/>
 		</effect>
 	</perk>
+	
 	<perk name="9mm Round Crafting" icon="gunsmithing" description_key="9mmRoundCraftingDesc" title_key="9mmRoundCrafting" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
-		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="1"/>
-		<requirement perk_level="2" required_skill_name="craftSkillGuns" required_skill_level="3"/>
-		<requirement perk_level="3" required_skill_name="craftSkillGuns" required_skill_level="5"/>
+		<requirement perk_level="1" required_skill_name="craftSkillGunsPerk" required_skill_level="1"/>
+		<requirement perk_level="2" required_skill_name="craftSkillGunsPerk" required_skill_level="3"/>
+		<requirement perk_level="3" required_skill_name="craftSkillGunsPerk" required_skill_level="5"/>
 		<requirement perk_level="2" required_skill_name="PistolMastery" required_skill_level="1" />
 		<requirement perk_level="3" required_skill_name="PistolMastery" required_skill_level="2" />
 		<recipe name="9mmBulletLow" unlock_level="1"/>
@@ -1842,13 +1813,13 @@
 		<recipe name="bulletCasing" unlock_level="1"/>
 	</perk> -->
 	<perk name="44 Magnum Round Crafting" icon="gunsmithing" description_key="44MagnumRoundCraftingDesc" title_key="44MagnumRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
-		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="2"/>
+		<requirement perk_level="1" required_skill_name="craftSkillGunsPerk" required_skill_level="2"/>
 		<recipe name="44MagBullet" unlock_level="1"/>
 	</perk>
 	<perk name="shotgun Shell Crafting" icon="gunsmithing" description_key="shotgunShellCraftingDesc" title_key="shotgunShellCrafting" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
-		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="2"/>
-		<requirement perk_level="2" required_skill_name="craftSkillGuns" required_skill_level="4"/>
-		<requirement perk_level="3" required_skill_name="craftSkillGuns" required_skill_level="7"/>
+		<requirement perk_level="1" required_skill_name="craftSkillGunsPerk" required_skill_level="2"/>
+		<requirement perk_level="2" required_skill_name="craftSkillGunsPerk" required_skill_level="4"/>
+		<requirement perk_level="3" required_skill_name="craftSkillGunsPerk" required_skill_level="7"/>
 		<requirement perk_level="2" required_skill_name="ShotgunMastery" required_skill_level="1" />
 		<requirement perk_level="3" required_skill_name="ShotgunMastery" required_skill_level="2" />
 		<recipe name="shotgunShell" unlock_level="1"/>
@@ -1856,93 +1827,83 @@
 		<recipe name="shotgunShellHigh" unlock_level="3"/>
 	</perk>
 	<perk name="762mm Round Crafting" icon="gunsmithing" description_key="762mmRoundCraftingDesc" title_key="762mmRoundCrafting" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
-		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="3"/>
-		<requirement perk_level="2" required_skill_name="craftSkillGuns" required_skill_level="5"/>
-		<requirement perk_level="3" required_skill_name="craftSkillGuns" required_skill_level="7"/>
+		<requirement perk_level="1" required_skill_name="craftSkillGunsPerk" required_skill_level="3"/>
+		<requirement perk_level="2" required_skill_name="craftSkillGunsPerk" required_skill_level="5"/>
+		<requirement perk_level="3" required_skill_name="craftSkillGunsPerk" required_skill_level="7"/>
 		<requirement perk_level="2" required_skill_name="RifleMastery" required_skill_level="1" />
 		<requirement perk_level="3" required_skill_name="RifleMastery" required_skill_level="2" />
 		<recipe name="762mmBulletLow" unlock_level="1"/>
 		<recipe name="762mmBullet" unlock_level="2"/>
 		<recipe name="762mmBulletHigh" unlock_level="3"/>
 	</perk>
-	<perk name="craftSkillScience" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
-	icon="science" description_key="craftSkillScienceDesc" title_key="craftSkillScience" group="science" exp_gain_multiplier="0">
-		<requirement perk_level="1" required_player_level="10"/>
-		<requirement perk_level="2" required_player_level="20"/>
-		<requirement perk_level="3" required_player_level="30"/>
-		<requirement perk_level="4" required_player_level="45"/>
-		<requirement perk_level="5" required_player_level="60"/>
-		<requirement perk_level="6" required_player_level="80"/>
-		<requirement perk_level="7" required_player_level="100"/>
-		<requirement perk_level="8" required_player_level="125"/>
-		<requirement perk_level="9" required_player_level="150"/>
-		<requirement perk_level="10" required_player_level="180"/>
-		<requirement perk_level="8" required_skill_name="ScientistMastery" required_skill_level="1" />
-		<requirement perk_level="9" required_skill_name="ScientistMastery" required_skill_level="1" />
-		<requirement perk_level="10" required_skill_name="ScientistMastery" required_skill_level="2" />
+	
+	<action_skill name="craftSkillScience" exp_to_level="120" icon="science" description_key="craftSkillScienceDesc" title_key="craftSkillScience" group="science">
 		<effect name="CraftingTime">
-			<multiply skill_level="0,1" value="1.0,0.95"/>
-			<multiply skill_level="1,2" value="0.95,0.90"/>
-			<multiply skill_level="2,3" value="0.90,0.85"/>
-			<multiply skill_level="3,4" value="0.85,0.80"/>
-			<multiply skill_level="4,5" value="0.80,0.75"/>
-			<multiply skill_level="5,6" value="0.75,0.70"/>
-			<multiply skill_level="6,7" value="0.70,0.65"/>
-			<multiply skill_level="7,8" value="0.65,0.60"/>
-			<multiply skill_level="8,9" value="0.60,0.55"/>
-			<multiply skill_level="9,10" value="0.55,0.50"/>
+			<multiply skill_level="1,100" value="1.0,0.5"/>
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="0" value="10"/>
-			<setvalue skill_level="1" value="20"/>
-			<setvalue skill_level="2" value="30"/>
-			<setvalue skill_level="3" value="50"/>
-			<setvalue skill_level="4" value="100"/>
-			<setvalue skill_level="5" value="150"/>
-			<setvalue skill_level="6" value="200"/>
-			<setvalue skill_level="7" value="250"/>
-			<setvalue skill_level="8" value="300"/>
-			<setvalue skill_level="9" value="400"/>
-			<setvalue skill_level="10" value="500"/>
+			<add skill_level="1,5" 		value="0,40"/>
+			<add skill_level="5,15" 	value="40,80"/>
+			<add skill_level="15,40" 	value="80,120"/>
+			<add skill_level="40,70" 	value="120,160"/>
+			<add skill_level="70,100" 	value="160,200"/>
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="0,1" value="1.0,0.93"/>
-			<multiply skill_level="1,2" value="0.93,0.86"/>
-			<multiply skill_level="2,3" value="0.86,0.79"/>
-			<multiply skill_level="3,4" value="0.79,0.72"/>
-			<multiply skill_level="4,5" value="0.72,0.65"/>
-			<multiply skill_level="5,6" value="0.65,0.58"/>
-			<multiply skill_level="6,7" value="0.58,0.51"/>
-			<multiply skill_level="7,8" value="0.51,0.44"/>
-			<multiply skill_level="8,9" value="0.44,0.37"/>
-			<multiply skill_level="9,10" value="0.37,0.30"/>
+			<multiply skill_level="1,100" value="1.0,0.3"/>
 		</effect>
 		<effect name="RepairAmount">
-			<multiply skill_level="0,10" value="1,1.2"/>
+			<multiply skill_level="1,100" value="1,1.2"/>
 		</effect>
-		<effect name="RepairQualityLoss"> <!-- .666 for Fixer.  Loss at no Fixer skill and QL 600 = 30,24,19...5,4,3 -->
-			<multiply skill_level="0,1" value="0.0503,0.0402"/>
-			<multiply skill_level="1,2" value="0.0402,0.0321"/>
-			<multiply skill_level="2,3" value="0.0321,0.0257"/>
-			<multiply skill_level="3,4" value="0.0257,0.0205"/>
-			<multiply skill_level="4,5" value="0.0205,0.0164"/>
-			<multiply skill_level="5,6" value="0.0164,0.0131"/>
-			<multiply skill_level="6,7" value="0.0131,0.0105"/>
-			<multiply skill_level="7,8" value="0.0105,0.0084"/>
-			<multiply skill_level="8,9" value="0.0084,0.0067"/>
-			<multiply skill_level="9,10" value="0.0067,0.0053"/>
+		<effect name="RepairQualityLoss"> 
+			<multiply skill_level="1,100" value="0.0670,0.0068"/>
+		</effect>
+	</action_skill>
+	<perk name="craftSkillSciencePerk" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000" icon="science" description_key="craftSkillSciencePerkDesc" title_key="craftSkillSciencePerk" group="science" exp_gain_multiplier="0">
+		<requirement perk_level="1"  required_skill_name="craftSkillScience" required_skill_level="1"/>
+		<requirement perk_level="2"  required_skill_name="craftSkillScience" required_skill_level="10"/>
+		<requirement perk_level="3"  required_skill_name="craftSkillScience" required_skill_level="20"/>
+		<requirement perk_level="4"  required_skill_name="craftSkillScience" required_skill_level="40"/>
+		<requirement perk_level="5"  required_skill_name="craftSkillScience" required_skill_level="60"/>
+		<requirement perk_level="5"  required_player_level="50"/>
+		<requirement perk_level="6"  required_skill_name="craftSkillScience" required_skill_level="80"/>
+		<requirement perk_level="6"  required_player_level="75"/>
+		<requirement perk_level="7"  required_skill_name="craftSkillScience" required_skill_level="100"/>
+		<requirement perk_level="7"  required_player_level="100"/>
+		<requirement perk_level="8"  required_skill_name="craftSkillScience" required_skill_level="100"/>
+		<requirement perk_level="8"  required_player_level="125"/>
+		<requirement perk_level="8"  required_skill_name="ScientistMastery"  required_skill_level="1" />
+		<requirement perk_level="9"  required_skill_name="craftSkillScience" required_skill_level="100"/>
+		<requirement perk_level="9"  required_player_level="150"/>
+		<requirement perk_level="9"  required_skill_name="ScientistMastery"  required_skill_level="1" />
+		<requirement perk_level="10" required_skill_name="craftSkillScience" required_skill_level="100"/>
+		<requirement perk_level="10" required_player_level="180"/>
+		<requirement perk_level="10" required_skill_name="ScientistMastery"  required_skill_level="2" />
+		<effect name="CraftingQuality">
+			<add skill_level="0" value="1"/>
+			<add skill_level="1" value="10"/>
+			<add skill_level="2" value="20"/>
+			<add skill_level="3" value="30"/>
+			<add skill_level="4" value="40"/>
+			<add skill_level="5" value="50"/>
+			<add skill_level="6" value="75"/>
+			<add skill_level="7" value="100"/>
+			<add skill_level="8" value="150"/>
+			<add skill_level="9" value="200"/>
+			<add skill_level="10" value="300"/>
 		</effect>
 	</perk>
+	
+	
 
 	<perk name="electricBasicsPerk" icon="electric_power" description_key="electricBasicsDesc" title_key="electricBasicsName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="1"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="1"/>
 		<recipe name="wireTool" unlock_level="1"/>
 		<recipe name="electricwirerelay" unlock_level="1"/>
 		<recipe name="ceilingLight01_player" unlock_level="1"/>
 		<recipe name="porchLight01_player" unlock_level="1"/>
 		<recipe name="wallLight01_player" unlock_level="1"/>
 
-		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="3"/>
+		<requirement skill_level="2" required_skill_name="craftSkillSciencePerk" required_skill_level="3"/>
 		<recipe name="ceilingLight02_player" unlock_level="2"/>
 		<recipe name="industrialLight01_player" unlock_level="2"/>
 		<recipe name="ceilingLight07_player" unlock_level="2"/>
@@ -1952,9 +1913,9 @@
 
 	
 	<perk name="engineering" icon="electric_power" description_key="engineeringDesc" title_key="engineeringName" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="8"/>
-		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="9"/>
-		<requirement skill_level="3" required_skill_name="craftSkillScience" required_skill_level="10"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="8"/>
+		<requirement skill_level="2" required_skill_name="craftSkillSciencePerk" required_skill_level="9"/>
+		<requirement skill_level="3" required_skill_name="craftSkillSciencePerk" required_skill_level="10"/>
 		<recipe name="smallEngine" 	unlock_level="1"/>
 		<recipe name="carBattery" 	unlock_level="2"/>
 		<recipe name="solarbank"	unlock_level="3"/>
@@ -1963,30 +1924,30 @@
 	
 	
 	<perk name="electricTriggersPerk" icon="electric_switch" description_key="electricTriggersDesc" title_key="electricTriggersName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="3" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="2"/>
 		<recipe name="switch" unlock_level="1"/>
 		<recipe name="tripwirepost" unlock_level="1"/>
-		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<requirement skill_level="2" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
 		<recipe name="pressureplate" unlock_level="2"/>
 		<recipe name="electrictimerrelay" unlock_level="2"/>
 		<recipe name="pressureplateLong" unlock_level="2"/>
 
-		<requirement skill_level="3" required_skill_name="craftSkillScience" required_skill_level="6"/>
+		<requirement skill_level="3" required_skill_name="craftSkillSciencePerk" required_skill_level="6"/>
 		<recipe name="motionsensor" unlock_level="3"/>
 	</perk>
 
 	<perk name="electricTrapsMeleePerk" icon="wind" description_key="electricTrapsMeleeDesc" title_key="electricTrapsMeleeName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="5" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
-		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="6"/>
-		<requirement skill_level="3" required_skill_name="craftSkillScience" required_skill_level="7"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
+		<requirement skill_level="2" required_skill_name="craftSkillSciencePerk" required_skill_level="6"/>
+		<requirement skill_level="3" required_skill_name="craftSkillSciencePerk" required_skill_level="7"/>
 		<recipe name="electricfencepost" 	unlock_level="1"/>
 		<recipe name="shockTrap" 			unlock_level="2"/>
 		<recipe name="bladeTrap"	 		unlock_level="3"/>
 	</perk>
 
 	<perk name="electricTrapsRangedPerk" icon="electric_turret" description_key="electricTrapsRangedDesc" title_key="electricTrapsRangedName" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
-		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="7"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
+		<requirement skill_level="2" required_skill_name="craftSkillSciencePerk" required_skill_level="7"/>
 		<recipe name="dartTrap" 	unlock_level="1"/>
 		<recipe name="flameTrap" 	unlock_level="2"/>
 	</perk>
@@ -1995,126 +1956,108 @@
 
 	<!-- Turrets! -->
 	<perk name="shotgunTurretPerk" icon="electric_turret" description_key="shotgunTurretPerkDesc" title_key="shotgunTurretPerkName" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="10" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" 	required_skill_level="5" />
-		<requirement skill_level="2" required_skill_name="craftSkillScience" 	required_skill_level="7" />
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" 	required_skill_level="5" />
+		<requirement skill_level="2" required_skill_name="craftSkillSciencePerk" 	required_skill_level="7" />
 		<requirement skill_level="2" required_skill_name="ShotgunMastery"	 	required_skill_level="2" />
 		<recipe name="shotgunTurretLow" 	unlock_level="1" />
 		<recipe name="shotgunTurret"		unlock_level="2" />
 	</perk>
 	
 	<perk name="autoTurretPerk" icon="electric_turret" description_key="autoTurretPerkDesc" title_key="autoTurretPerkName" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="10" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" 	required_skill_level="5" />
-		<requirement skill_level="2" required_skill_name="craftSkillScience" 	required_skill_level="7" />
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" 	required_skill_level="5" />
+		<requirement skill_level="2" required_skill_name="craftSkillSciencePerk" 	required_skill_level="7" />
 		<requirement skill_level="2" required_skill_name="PistolMastery"	 	required_skill_level="2" />
 		<recipe name="autoTurretLow" 		unlock_level="1" />
 		<recipe name="autoTurret"			unlock_level="2" />
 	</perk>
 	
 	<perk name="gattlingTurretPerk" icon="electric_turret" description_key="gattlingTurretPerkDesc" title_key="gattlingTurretPerkName" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="10" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" 	required_skill_level="5" />
-		<requirement skill_level="2" required_skill_name="craftSkillScience" 	required_skill_level="7" />
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" 	required_skill_level="5" />
+		<requirement skill_level="2" required_skill_name="craftSkillSciencePerk" 	required_skill_level="7" />
 		<requirement skill_level="2" required_skill_name="RifleMastery"	 		required_skill_level="2" />
 		<recipe name="gattlingTurretLow" 	unlock_level="1" />
 		<recipe name="gattlingTurret"		unlock_level="2" />
 	</perk>
 	
-	
-	
-	
-	
 	<perk name="electricGeneratorPerk" icon="electric_generator" description_key="electricGeneratorDesc" title_key="electricGeneratorName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="3"/>
 		<recipe name="generatorbank" unlock_level="1"/>
 	</perk>
 
 	<perk name="electricBatteryBankPerk" icon="battery" description_key="electricBatteryBankDesc" title_key="electricBatteryBankName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
 		<recipe name="batterybank" unlock_level="1"/>
 	</perk>
 
 	<perk name="doItYourselfPerk" icon="misc_crafting" description_key="doItYourselfDesc" title_key="doItYourselfName" max_level="3" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="5" group="science">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="5"/>
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="30"/>
 		<recipe name="mechanicalParts" unlock_level="1"/>
-		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="6"/>
+		<requirement skill_level="2" required_skill_name="craftSkillSciencePerk" required_skill_level="6"/>
 		<recipe name="insulator" unlock_level="2"/>
 		<recipe name="electricParts" unlock_level="2"/>
-		<requirement skill_level="3" required_skill_name="craftSkillScience" required_skill_level="7"/>
+		<requirement skill_level="3" required_skill_name="craftSkillSciencePerk" required_skill_level="7"/>
 		<recipe name="electronicParts" unlock_level="3"/>
 	</perk>
 
-	<perk name="craftSkillArmor" max_level="10" skill_point_cost_multiplier="1.21" skill_point_cost_per_level="3" exp_to_level="5000000"
-		icon="forge" description_key="craftSkillArmorDesc" title_key="craftSkillArmor" group="clothing" exp_gain_multiplier="0">
-		<requirement perk_level="1" required_player_level="10"/>
-		<requirement perk_level="2" required_player_level="20"/>
-		<requirement perk_level="3" required_player_level="30"/>
-		<requirement perk_level="4" required_player_level="45"/>
-		<requirement perk_level="5" required_player_level="60"/>
-		<requirement perk_level="6" required_player_level="80"/>
-		<requirement perk_level="7" required_player_level="100"/>
-		<requirement perk_level="8" required_player_level="125"/>
-		<requirement perk_level="9" required_player_level="150"/>
-		<requirement perk_level="10" required_player_level="180"/>
-		<requirement perk_level="8" required_skill_name="ArmourMastery" required_skill_level="1" />
-		<requirement perk_level="9" required_skill_name="ArmourMastery" required_skill_level="1" />
-		<requirement perk_level="10" required_skill_name="ArmourMastery" required_skill_level="2" />
+	
+	
+	<action_skill name="craftSkillArmor" exp_to_level="120" icon="forge" description_key="craftSkillArmorDesc" title_key="craftSkillArmor" group="clothing">
 		<effect name="CraftingTime">
-			<multiply skill_level="0,1" value="1.0,0.95"/>
-			<multiply skill_level="1,2" value="0.95,0.90"/>
-			<multiply skill_level="2,3" value="0.90,0.85"/>
-			<multiply skill_level="3,4" value="0.85,0.80"/>
-			<multiply skill_level="4,5" value="0.80,0.75"/>
-			<multiply skill_level="5,6" value="0.75,0.70"/>
-			<multiply skill_level="6,7" value="0.70,0.65"/>
-			<multiply skill_level="7,8" value="0.65,0.60"/>
-			<multiply skill_level="8,9" value="0.60,0.55"/>
-			<multiply skill_level="9,10" value="0.55,0.50"/>
+			<multiply skill_level="1,100" value="1.0,0.5"/>
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="0" value="10"/>
-			<setvalue skill_level="1" value="20"/>
-			<setvalue skill_level="2" value="30"/>
-			<setvalue skill_level="3" value="50"/>
-			<setvalue skill_level="4" value="100"/>
-			<setvalue skill_level="5" value="150"/>
-			<setvalue skill_level="6" value="200"/>
-			<setvalue skill_level="7" value="250"/>
-			<setvalue skill_level="8" value="300"/>
-			<setvalue skill_level="9" value="400"/>
-			<setvalue skill_level="10" value="500"/>
+			<add skill_level="1,5" 		value="0,40"/>
+			<add skill_level="5,15" 	value="40,80"/>
+			<add skill_level="15,40" 	value="80,120"/>
+			<add skill_level="40,70" 	value="120,160"/>
+			<add skill_level="70,100" 	value="160,200"/>
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="0,1" value="1.0,0.93"/>
-			<multiply skill_level="1,2" value="0.93,0.86"/>
-			<multiply skill_level="2,3" value="0.86,0.79"/>
-			<multiply skill_level="3,4" value="0.79,0.72"/>
-			<multiply skill_level="4,5" value="0.72,0.65"/>
-			<multiply skill_level="5,6" value="0.65,0.58"/>
-			<multiply skill_level="6,7" value="0.58,0.51"/>
-			<multiply skill_level="7,8" value="0.51,0.44"/>
-			<multiply skill_level="8,9" value="0.44,0.37"/>
-			<multiply skill_level="9,10" value="0.37,0.30"/>
+			<multiply skill_level="1,100" value="1.0,0.3"/>
 		</effect>
 		<effect name="RepairAmount">
-			<multiply skill_level="0,10" value="1,1.2"/>
+			<multiply skill_level="1,100" value="1,1.2"/>
 		</effect>
-		<effect name="RepairQualityLoss"> <!-- .666 for Fixer.  Loss at no Fixer skill and QL 600 = 40,32,25...6,5,4 -->
-			<multiply skill_level="0,1" value="0.0670,0.0533"/>
-			<multiply skill_level="1,2" value="0.0533,0.0425"/>
-			<multiply skill_level="2,3" value="0.0425,0.0338"/>
-			<multiply skill_level="3,4" value="0.0338,0.0269"/>
-			<multiply skill_level="4,5" value="0.0269,0.0214"/>
-			<multiply skill_level="5,6" value="0.0214,0.0170"/>
-			<multiply skill_level="6,7" value="0.0170,0.0136"/>
-			<multiply skill_level="7,8" value="0.0136,0.0108"/>
-			<multiply skill_level="8,9" value="0.0108,0.0086"/>
-			<multiply skill_level="9,10" value="0.0086,0.0068"/>
+		<effect name="RepairQualityLoss"> 
+			<multiply skill_level="1,100" value="0.0670,0.0068"/>
+		</effect>
+	</action_skill>
+	<perk name="craftSkillArmorPerk" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000" icon="forge" description_key="craftSkillArmorPerkDesc" title_key="craftSkillArmorPerk" group="clothing" exp_gain_multiplier="0">
+		<requirement perk_level="1"  required_skill_name="craftSkillArmor" required_skill_level="1"/>
+		<requirement perk_level="2"  required_skill_name="craftSkillArmor" required_skill_level="10"/>
+		<requirement perk_level="3"  required_skill_name="craftSkillArmor" required_skill_level="20"/>
+		<requirement perk_level="4"  required_skill_name="craftSkillArmor" required_skill_level="40"/>
+		<requirement perk_level="5"  required_skill_name="craftSkillArmor" required_skill_level="60"/>
+		<requirement perk_level="5"  required_player_level="50"/>
+		<requirement perk_level="6"  required_skill_name="craftSkillArmor" required_skill_level="80"/>
+		<requirement perk_level="6"  required_player_level="75"/>
+		<requirement perk_level="7"  required_skill_name="craftSkillArmor" required_skill_level="100"/>
+		<requirement perk_level="7"  required_player_level="100"/>
+		<requirement perk_level="8"  required_skill_name="craftSkillArmor" required_skill_level="100"/>
+		<requirement perk_level="8"  required_player_level="125"/>
+		<requirement perk_level="8"  required_skill_name="ArmourMastery"   required_skill_level="1" />
+		<requirement perk_level="9"  required_skill_name="craftSkillArmor" required_skill_level="100"/>
+		<requirement perk_level="9"  required_player_level="150"/>
+		<requirement perk_level="9"  required_skill_name="ArmourMastery"   required_skill_level="1" />
+		<requirement perk_level="10" required_skill_name="craftSkillArmor" required_skill_level="100"/>
+		<requirement perk_level="10" required_player_level="180"/>
+		<requirement perk_level="10" required_skill_name="ArmourMastery"   required_skill_level="2" />
+		<effect name="CraftingQuality">
+			<add skill_level="0" value="1"/>
+			<add skill_level="1" value="10"/>
+			<add skill_level="2" value="20"/>
+			<add skill_level="3" value="30"/>
+			<add skill_level="4" value="40"/>
+			<add skill_level="5" value="50"/>
+			<add skill_level="6" value="75"/>
+			<add skill_level="7" value="100"/>
+			<add skill_level="8" value="150"/>
+			<add skill_level="9" value="200"/>
+			<add skill_level="10" value="300"/>
 		</effect>
 	</perk>
-	<!-- <perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
-		<requirement skill_level="1" required_skill_name="craftSkillArmor" required_skill_level="1"/>
-		<recipe name="leather" unlock_level="1"/>
-	</perk> -->
+	
 
 	<perk name="craftSkillMiscellaneous" max_level="5" skill_point_cost_multiplier="1.2" skill_point_cost_per_level="1" exp_to_level="5000000" exp_gain_multiplier="0"
 		icon="misc_crafting" description_key="craftSkillMiscellaneousDesc" title_key="craftSkillMiscellaneous" group="crafting">
@@ -2276,10 +2219,10 @@
 		</effect>
 		<effect name="RepairQualityLoss">
 			<multiply perk_level="0" value="1"/>
-			<multiply perk_level="1" value="0.944"/>
-			<multiply perk_level="2" value="0.888"/>
-			<multiply perk_level="3" value="0.777"/>
-			<multiply perk_level="4" value="0.666"/>
+			<multiply perk_level="1" value="0.8"/>
+			<multiply perk_level="2" value="0.6"/>
+			<multiply perk_level="3" value="0.5"/>
+			<multiply perk_level="4" value="0.4"/>
 		</effect>
 	</perk>
 

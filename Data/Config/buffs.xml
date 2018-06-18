@@ -484,6 +484,13 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" amount="-100" rate="1"/>
 </buff>
 
+<buff id="powerAttack" hitmask="body;head" duration="1" icon="ui_game_symbol_stunned">
+	<modify id="1" stat="health" amount="-30" rate="1"/>
+</buff>
+
+
+
+
 <buff id="dysentery" mutex="cured,dysentery2" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="2400t" onexpired="dysentery2"
 	icon="ui_game_symbol_dysentery" castsound="playersick" name_key="dysentery" description_key="dysenteryDesc" tooltip_key="dysenteryTooltip" cures="goldenRodTea,redTea,vitamins,herbalAntibiotics,antibiotics" causes="bottledRiverWater,canMurkyWater">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
@@ -561,6 +568,12 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="speedmodifier" mulValue="1.2"/>
 	<modify id="1" buff="brokenLeg" tickrate="2"/>
 	<modify id="2" buff="sprainedLeg" tickrate="2"/>
+</buff>
+
+<buff id="castLeg" overrides="brokenLeg,sprainedLeg,splint" type="speedmodifier" overrideicon="true" icon="ui_game_symbol_legcast" name_key="castLeg" description_key="castLegDesc" tooltip_key="castLegTooltip">
+	<modify id="0" stat="speedmodifier" mulValue="1.3"/>
+	<modify id="1" buff="brokenLeg" tickrate="10"/>
+	<modify id="2" buff="sprainedLeg" tickrate="4"/>
 </buff>
 
 <buff id="sprainedLeg" mutex="brokenLeg" type="speedmodifier" duration="2400" actions="debuff(firstAid);debuff(splint)" icon="ui_game_symbol_brokenbone" name_key="sprainedLeg" description_key="sprainedLegDesc" tooltip_key="sprainedLegTooltip" cures="splint">

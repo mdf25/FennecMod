@@ -40,16 +40,29 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
-	<property class="Action0"> <!-- AttackAction -->
+	<property class="Action0">
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.33"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.2"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="7"/> <!-- 10 is the break even point with maxed Athletics and Sexosaurus, standing still -->
+		<property name="Stamina_usage" value="7"/>
 		<property name="DamageBonus.head" value="4"/>
-		<property name="DamageBonus.glass" value="1"/> <!-- These are multipliers and correspond to "damage_category" in materials.xml. -->
+		<property name="DamageBonus.glass" value="1"/>
 		<property name="ActionExp" value="2"/>
+		<property name="ActionExpBonusMultiplier" value="10"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.33"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="15"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="ActionExp" value="4"/>
 		<property name="ActionExpBonusMultiplier" value="10"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
@@ -64,7 +77,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Blunt Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	<property name="RepairExpMultiplier" value="5.5"/> <!-- 54 = about 250 points of crafting skill XP. This does not base off the crafting XP auto-calculation. It has a base value of 5 or so. This only affects REPAIRING an item, not workbench combines. -->
+	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
 <item id="6" name="clubWood">
@@ -75,8 +88,15 @@ Mesh files no longer used:
 		<property name="DamageBonus.head" value="4"/>
 		<property name="Stamina_usage" value="3.7"/>
 	</property>
+	<property class="Action1">
+		<property name="Buff" value="criticalBlunt,powerAttack"/>
+		<property name="Buff_chance" value="0.2,1"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="Stamina_usage" value="8"/>
+	</property>
 	<property name="CritChance" value="0.10"/>
 	<property name="Group" value="Ammo/Weapons,Basics"/>
+	<property name="RepairExpMultiplier" value="12"/>
 </item>
 
 <item id="7" name="clubIron">
@@ -94,6 +114,12 @@ Mesh files no longer used:
 		<property name="Buff_chance" value="0.2"/>
 		<property name="DamageBonus.head" value="4"/>
 	</property>
+	<property class="Action1">
+		<property name="Stamina_usage" value="16"/>
+		<property name="Buff" value="criticalBlunt,powerAttack"/>
+		<property name="Buff_chance" value="0.2,1"/>
+		<property name="DamageBonus.head" value="4"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="9,16"/>
 		<property name="BlockDamage" value="11.8,29.5"/>
@@ -102,6 +128,7 @@ Mesh files no longer used:
 	<property name="CritChance" value="0.2"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="DescriptionKey" value="clubIronDesc"/>
+	<property name="RepairExpMultiplier" value="20"/>
 </item>
 
 <item id="8" name="clubBarbed">
@@ -117,6 +144,13 @@ Mesh files no longer used:
 		<property name="Buff_chance" value="0.3,0.3"/>
 		<property name="DamageBonus.head" value="5"/>
 	</property>
+	<property class="Action1">
+		<property name="Stamina_usage" value="13"/>
+		<property name="Delay" value="1.15" />
+		<property name="Buff" value="bleeding,criticalBlunt,powerAttack"/>
+		<property name="Buff_chance" value="0.4,0.4,1"/>
+		<property name="DamageBonus.head" value="5"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,19"/>
 		<property name="BlockDamage" value="7.2,18"/>
@@ -126,6 +160,7 @@ Mesh files no longer used:
 	<property name="CritChance" value="0.3"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="DescriptionKey" value="clubBarbedDesc"/>
+	<property name="RepairExpMultiplier" value="35"/>
 </item>
 
 <item id="9" name="clubSpiked">
@@ -140,6 +175,12 @@ Mesh files no longer used:
 		<property name="Buff_chance" value="0.5,0.4"/>
 		<property name="DamageBonus.head" value="6"/>
 	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Stamina_usage" value="8.5"/>
+		<property name="Buff" value="bleeding,criticalBlunt,powerAttack"/>
+		<property name="Buff_chance" value="0.6,0.5,1"/>
+		<property name="DamageBonus.head" value="6"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,30"/>
 		<property name="BlockDamage" value="15.2,38"/> <!-- 30% of an iron pick -->
@@ -148,7 +189,95 @@ Mesh files no longer used:
 	</property>
 	<property name="CritChance" value="0.4"/>
 	<property name="DescriptionKey" value="clubSpikedDesc"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
+
+<item id="10" name="oldClub">
+	<property name="Extends" value="clubIron"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BarbedPrefab"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="EconomicValue" value="192"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Stamina_usage" value="6"/>
+		<property name="Delay" value="1.15"/>
+		<property name="Buff" value="bleeding,criticalBlunt"/>
+		<property name="Buff_chance" value="0.3,0.3"/>
+		<property name="DamageBonus.head" value="4.5"/>
+	</property>
+	<property class="Action1">
+		<property name="Stamina_usage" value="12"/>
+		<property name="Delay" value="1.15" />
+		<property name="Buff" value="bleeding,criticalBlunt,powerAttack"/>
+		<property name="Buff_chance" value="0.4,0.4,1"/>
+		<property name="DamageBonus.head" value="5"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="10,10"/>
+		<property name="BlockDamage" value="10,10"/>
+		<property name="DegradationMax" value="100,100"/>
+		<property name="DegradationRate" value="1,1"/>
+	</property>
+	<property name="CritChance" value="0.3"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="DescriptionKey" value="oldClubDesc"/>
+	<property name="RepairExpMultiplier" value="300"/>
+</item>
+
+<item id="11" name="oldKnife">
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="36"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="120"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="3.5"/>
+		<property name="DamageBonus.head" value="4.5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="15"/>
+		<property name="ToolCategory.Butcher" value="1" param1="10"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="7"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="10"/>
+		<property name="ToolCategory.Butcher" value="1" param1="10"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="14,14"/>
+		<property name="BlockDamage" value="2,2"/>
+		<property name="DegradationMax" value="100,100"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0.01,0.02"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="300"/>
+</item>
+
 <item id="12" name="sledgehammer">
 	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab"/>
 	<property name="Material" value="metal"/>
@@ -175,6 +304,21 @@ Mesh files no longer used:
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.8"/>
+		<property name="Range" value="2.4"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="SlowSwoosh"/>
+		<property name="Stamina_usage" value="25"/>
+		<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,powerAttack"/>
+		<property name="Buff_chance" value="0.5,0.3,0.3,1"/>
+		<property name="DamageBonus.wood" value="0.5"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="20,50"/>
 		<property name="BlockDamage" value="82,206"/> <!-- 80% of a steel pick -->
@@ -185,6 +329,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons,Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Blunt Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
 
 <item id="15" name="torch">
@@ -301,8 +446,23 @@ Mesh files no longer used:
 		<property name="DamageBonus.leaves" value="25"/>
 		<property name="DamageBonus.organic" value="8"/>
 		<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
-		<property name="Sound_harvesting" value="open_animal" param1="organic" /> <!-- Special harvest sound only plays if the target has ANY matching ToolCategory harvest.
-		Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface_category ) -->
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="Stamina_usage" value="9.5"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="8"/>
+		<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,12"/>
@@ -339,8 +499,26 @@ Mesh files no longer used:
 		<property name="DamageBonus.leaves" value="25"/>
 		<property name="DamageBonus.organic" value="8"/>
 		<property name="ToolCategory.Butcher" value="0.65" param1="10"/>
-		<property name="Sound_harvesting" value="open_animal" param1="organic" /> <!-- Special harvest sound only plays if the target has ANY matching ToolCategory harvest.
-		Limit it by: if ( Sound_harvesting.param1 = TargetBlockOrEntity.material.surface_category ) -->
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+		<property name="ToolCategory.harvestingTools" value="0.8" param1="1"/> 
+	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="8.5"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.wood" value="8"/>
+		<property name="DamageBonus.stone" value="0"/> 
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="8"/>
+		<property name="ToolCategory.Butcher" value="0.65" param1="10"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		<property name="ToolCategory.harvestingTools" value="0.8" param1="1"/> 
 	</property>
 	<property class="Attributes">
@@ -379,6 +557,22 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="1" param1="10"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="11"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="10"/>
+		<property name="ToolCategory.Butcher" value="1" param1="10"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="10,20"/>
 		<property name="BlockDamage" value="1,2"/>
@@ -389,7 +583,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Blade Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="25"/>
 </item>
 
 <item id="22" name="machete">
@@ -418,6 +612,23 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="1" param1="7"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="13.5"/>
+		<property name="DamageBonus.wood" value="3"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="3"/>
+		<property name="ToolCategory.Butcher" value="1" param1="7"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,30"/>
 		<property name="BlockDamage" value="4,10"/>
@@ -428,7 +639,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Blade Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="40"/>
 </item>
 
 <item id="23" name="scrapKnife">
@@ -456,6 +667,22 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="0.9" param1="10"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="11"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="10"/>
+		<property name="ToolCategory.Butcher" value="0.9" param1="10"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,16"/>
 		<property name="BlockDamage" value="1,6"/>
@@ -466,7 +693,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Blade Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <!-- 40* * * * * * * * * * firearms * * * * * * * * * * -->
@@ -527,7 +754,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Pistols"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="50"/>
 	<property name="LightValue" value="0.45"/>
 </item>
 
@@ -639,7 +866,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Pistols"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="55"/>
 	<property name="LightValue" value="0.45"/>
 </item>
 
@@ -697,7 +924,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Shotguns"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="50"/>
 	<property name="LightValue" value="0.45"/>
 </item>
 
@@ -755,7 +982,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Shotguns"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="55"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 	<property name="LightValue" value="0.45"/>
 </item>
@@ -818,7 +1045,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Pistols"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="60"/>
 	<property name="LightValue" value="0.45"/>
 </item>
 
@@ -880,7 +1107,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Rifles"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="60"/>
 	<property name="LightValue" value="0.45"/>
 </item>
 
@@ -939,7 +1166,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Rifles"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="50"/>
 	<property name="LightValue" value="0.45"/>
 </item>
 
@@ -996,7 +1223,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Rifles"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="55"/>
 	<property name="LightValue" value="0.45"/>
 </item>
 
@@ -1043,7 +1270,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="60"/>
 </item>
 
 <item id="55" name="blunderbuss">
@@ -1101,8 +1328,180 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Shotguns"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="30"/>
 </item>
+
+
+<!-- OLD GUNS -->
+<item id="60" name="oldPistol">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="44"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property name="Sound_Sight_In" value="revolver_sight_in"/>
+	<property name="Sound_Sight_Out" value="revolver_sight_out"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Crosshair_min_distance" value="7"/> <!-- 7 -->
+		<property name="Crosshair_max_distance" value="9"/> <!-- 9 -->
+		<property name="Magazine_size" value="6"/>
+		<property name="Magazine_items" value="9mmBulletLow"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0.87"/> <!-- .87 -->
+		<property name="Reload_time" value="5"/>
+		<property name="Bullet_icon" value="pistol"/>
+		<property name="Sound_start" value="44magnum_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="44magnum_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" 	 	value="8,8"/>
+		<property name="BlockDamage"  	 	value="3,3"/>
+		<property name="FalloffRange" 	 	value="22,50"/>
+		<property name="DegradationMax"  	value="100,100"/>
+		<property name="DegradationRate" 	value="1,1"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Pistols"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="300"/>
+	<property name="LightValue" value="0.45"/>
+</item>
+
+<item id="61" name="oldRifle">
+	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="30"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="FuelValue" value="32"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
+		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
+		<property name="Magazine_size" value="1"/>
+		<property name="Magazine_items" value="762mmBulletLow"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Reload_time" value="4"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="hunting_rifle_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="hunting_rifle_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.glass" value="1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="35"/>
+		<property name="Zoom_max_in" value="35"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" 	value="12,12"/>
+		<property name="BlockDamage" 	value="6,6"/>
+		<property name="Accuracy" 		value="11,11"/> <!-- 29 -->
+		<property name="FalloffRange" 	value="96,160"/>
+		<property name="DismembermentBaseChance" value="0.01,0.01"/>
+		<property name="DegradationMax" value="100,100"/>
+		<property name="DegradationRate" value="1,1"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="300"/>
+	<property name="LightValue" value="0.45"/>
+</item>
+
+<item id="62" name="oldShotgun">
+	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/SawedOffPumpShotgunPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="5"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.8"/>
+		<property name="Crosshair_min_distance" value="41"/> <!-- 41 -->
+		<property name="Crosshair_max_distance" value="49"/> <!-- 49 -->
+		<property name="Magazine_size" value="8"/>
+		<property name="Magazine_items" value="shotgunShell"/>
+		<property name="Magazine_item_ray_counts" value="2"/>
+		<property name="Magazine_item_ray_spreads" value="0.74"/> <!-- .74 -->
+		<property name="Reload_time" value="2.6"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="sawed_off_shotgun_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="shotgun_reload"/>
+		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="DamageBonus.head" value="2"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="Buff" value="shotgunWound"/>
+		<property name="Buff_chance" value="1.0"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+	</property>
+	<property class="Attributes">
+		<property name="FalloffRange" 		value="36,36"/>
+		<property name="DegradationMax" 	value="100,100"/>
+		<property name="DegradationRate"	value="1,1"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Shotguns"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="300"/>
+	<property name="LightValue" value="0.45"/>
+</item>
+
+
+
+
+
 
 <!-- * * * * * * * * * * player / zombie / animal weapons / hands (and great big fangs) * * * * * * * * * * -->
 
@@ -1620,7 +2019,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps,Basics"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="12"/>
 </item>
 
 <item id="106" name="tazasStoneaxe">
@@ -1670,6 +2069,28 @@ Mesh files no longer used:
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2.1"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="16.5"/>
+		<property name="DamageBonus.wood" value="3"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.glass" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.25"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.organic" value="2"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0.5" param1="10"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,15"/>
 		<property name="BlockDamage" value="35,56"/>
@@ -1680,7 +2101,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Axes"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
 
 <item id="108" name="fireaxeSteel">
@@ -1695,11 +2116,17 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
 		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
 	</property>
+	<property class="Action1">
+		<property name="Stamina_usage" value="30"/>
+		<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
+		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="9,22"/>
 		<property name="BlockDamage" value="40,72"/>
 		<property name="DegradationMax" value="500,1400"/>
 	</property>
+	<property name="RepairExpMultiplier" value="70"/>
 </item>
 
 <item id="109" name="handZombieFrozen">
@@ -1763,6 +2190,28 @@ Mesh files no longer used:
 		<property name="ActionExp" value="4"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="15"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.head" value="2.5"/>
+		<property name="DamageBonus.wood" value="0.2"/>
+		<property name="DamageBonus.earth" value="0.4"/>
+		<property name="DamageBonus.organic" value="0.2"/>
+		<property name="DamageBonus.stone" value="2.5" />
+		<property name="DamageBonus.metal" value="2.5" />
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.Chisel" value="0.4" param1="1" />
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,15"/>
@@ -1774,7 +2223,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
 
 <item id="114" name="pickaxeSteel">
@@ -1790,12 +2239,20 @@ Mesh files no longer used:
 		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
 		<property name="ToolCategory.Chisel" value="0.5" param1="1" />
 	</property>
+	<property class="Action1">
+		<property name="Delay" value="1.5"/>
+		<property name="Stamina_usage" value="45"/>
+		<property name="DamageBonus.head" value="6"/>
+		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
+		<property name="ToolCategory.Chisel" value="0.5" param1="1" />
+	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,20"/>
 		<property name="BlockDamage" value="55,137"/> <!-- up to x4 from skills -->
 		<property name="DegradationMax" value="500,1400"/>
 	</property>
+	<property name="RepairExpMultiplier" value="70"/>
 </item>
 
 <item id="115" name="fireaxeSteelFactory">
@@ -1810,11 +2267,18 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="0.85" param1="10"/>
 		<property name="ToolCategory.harvestingTools" value="1.7" param1="1"/>
 	</property>
+	<property class="Action1">
+		<property name="Stamina_usage" value="24"/>
+		<property name="DamageBonus.head" value="7" />
+		<property name="ToolCategory.Butcher" value="0.85" param1="10"/>
+		<property name="ToolCategory.harvestingTools" value="1.7" param1="1"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="14,31"/>
 		<property name="BlockDamage" value="42,93"/>
 		<property name="DegradationMax" value="1000,2800"/>
 	</property>
+	<property name="RepairExpMultiplier" value="100"/>
 </item>
 
 <item id="116" name="pickaxeSteelFactory">
@@ -1832,12 +2296,20 @@ Mesh files no longer used:
 		<property name="ToolCategory.harvestingTools" value="1.7" param1="1"/>
 		<property name="ToolCategory.Chisel" value="0.6" param1="1" />
 	</property>
+	<property class="Action1">
+		<property name="Delay" value="1.5"/>
+		<property name="Stamina_usage" value="25"/>
+		<property name="DamageBonus.head" value="6"/>
+		<property name="ToolCategory.harvestingTools" value="1.7" param1="1"/>
+		<property name="ToolCategory.Chisel" value="0.6" param1="1" />
+	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,25"/>
 		<property name="BlockDamage" value="85,193"/>
 		<property name="DegradationMax" value="1000,2800"/>
 	</property>
+	<property name="RepairExpMultiplier" value="100"/>
 </item>
 
 <item id="117" name="stoneShovel">
@@ -1871,6 +2343,27 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 		<property name="ActionExp" value="3"/>
 	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="9"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="DamageBonus.earth" value="4.5"/>
+		<property name="DamageBonus.glass" value="0.5"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.wood" value="0.5"/>
+		<property name="DamageBonus.stone" value="0.75"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.organic" value="1"/>
+		<property name="ToolCategory.harvestingTools" value="0.7" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+		<property name="ActionExp" value="5"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,12"/>
 		<property name="BlockDamage" value="13,18.2"/>
@@ -1882,7 +2375,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="16"/>
 </item>
 
 <item id="118" name="shovelIron">
@@ -1914,6 +2407,27 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 		<property name="ActionExp" value="4"/>
 	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="16"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="DamageBonus.earth" value="4.5"/>
+		<property name="DamageBonus.glass" value="0.5"/>
+		<property name="DamageBonus.head" value="5.5"/>
+		<property name="DamageBonus.wood" value="0.5"/>
+		<property name="DamageBonus.stone" value="0.75"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.organic" value="1.1"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+		<property name="ActionExp" value="4"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="7,15.5"/>
 		<property name="BlockDamage" value="25,53"/> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
@@ -1925,7 +2439,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
 
 <item id="119" name="shovelSteel">
@@ -1942,10 +2456,18 @@ Mesh files no longer used:
 		<property name="DamageBonus.organic" value="1"/>
 		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
 	</property>
+	<property class="Action1">
+		<property name="Delay" value="1.2"/>
+		<property name="Stamina_usage" value="30"/>
+		<property name="DamageBonus.earth" value="6.5"/>
+		<property name="DamageBonus.organic" value="2"/>
+		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="8,19"/>
 		<property name="DegradationMax" value="500,1400"/>
 	</property>
+	<property name="RepairExpMultiplier" value="70"/>
 </item>
 
 <item id="120" name="shovelSteelFactory">
@@ -1964,10 +2486,18 @@ Mesh files no longer used:
 		<property name="DamageBonus.organic" value="1.2"/>
 		<property name="ToolCategory.harvestingTools" value="1.7" param1="1"/>
 	</property>
+	<property class="Action1">
+		<property name="Delay" value="1.2"/>
+		<property name="Stamina_usage" value="20"/>
+		<property name="DamageBonus.earth" value="8.5"/>
+		<property name="DamageBonus.organic" value="2"/>
+		<property name="ToolCategory.harvestingTools" value="1.7" param1="1"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="10.4,23.3"/>
 		<property name="DegradationMax" value="1000,2800"/>
 	</property>
+	<property name="RepairExpMultiplier" value="100"/>
 </item>
 
 <item id="121" name="handAnimalSnake">
@@ -2014,16 +2544,6 @@ Mesh files no longer used:
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="ToolCategory.Butcher" value="0" param1="5"/>
 	</property>
-	<!--<property class="Action1">
-		<property name="Class" value="Repair"/>
-		<property name="Delay" value="0.6"/>
-		<property name="Repair_amount" value="30"/>
-		<property name="Upgrade_hit_offset" value="-4"/>
-		<property name="Sound_start" value="repair_block"/>
-		<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
-		<property name="Allowed_upgrade_items" value="hoeIron,dirtFragment,fertilizer"/>
-		<property name="ActionExp" value="0"/>
-	</property>-->
 	<property class="Action1">
 		<property name="Class" value="MakeFertile"/>
 		<property name="Delay" value="0.6"/>
@@ -2046,7 +2566,7 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="farmingTip"/>
 	<property name="ActionSkillGroup" value="FarmingTools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
 
 <item id="123" name="fireaxeCopper">
@@ -2079,6 +2599,28 @@ Mesh files no longer used:
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Range" value="2.1"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="13"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="DamageBonus.wood" value="2.5"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.glass" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.25"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.organic" value="1.5"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0.45" param1="10"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10"/>
 		<property name="BlockDamage" value="23,46"/>
@@ -2089,7 +2631,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Axes"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="25"/>
 </item>
 
 <item id="124" name="pickaxeCopper">
@@ -2120,6 +2662,28 @@ Mesh files no longer used:
 		<property name="ActionExp" value="4"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="0.9"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="10.5"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" /> 
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.wood" value="0.2"/>
+		<property name="DamageBonus.earth" value="0.4"/>
+		<property name="DamageBonus.organic" value="0.2"/>
+		<property name="DamageBonus.stone" value="2.5" />
+		<property name="DamageBonus.metal" value="2.5" />
+		<property name="ToolCategory.harvestingTools" value="1" param1="0.9"/>
+		<property name="ToolCategory.Chisel" value="1" param1="0.3" />
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,15"/>
@@ -2131,7 +2695,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="25"/>
 </item>
 
 <item id="125" name="shovelCopper">
@@ -2163,6 +2727,27 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 		<property name="ActionExp" value="4"/>
 	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="13"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="DamageBonus.earth" value="4.5"/>
+		<property name="DamageBonus.glass" value="0.5"/>
+		<property name="DamageBonus.head" value="4.5"/>
+		<property name="DamageBonus.wood" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.5"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.organic" value="0.7"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+		<property name="ActionExp" value="4"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,12.2"/>
 		<property name="BlockDamage" value="18,47"/> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
@@ -2174,7 +2759,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="25"/>
 </item>
 
 <item id="126" name="wrench">
@@ -2212,7 +2797,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="350"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10"/>
@@ -2224,7 +2809,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="65"/>
 </item>
 
 <item id="127" name="clawHammer">
@@ -2273,7 +2858,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
 
 <item id="128" name="nailgun">
@@ -2326,7 +2911,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="100"/>
 </item>
 
 <item id="129" name="chisel">
@@ -2369,7 +2954,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="12"/>
 </item>
 
 <item id="130" name="chainsaw">
@@ -2419,7 +3004,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="PowerTools"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="100"/>
 </item>
 
 <item id="131" name="auger">
@@ -2469,7 +3054,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="PowerTools"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="100"/>
 </item>
 
 <item id="132" name="weldingTorch">
@@ -2525,7 +3110,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<!--<property name="ActionSkillGroup" value="Construction Tools"/>-->
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
 
 <item id="133" name="wireTool">
@@ -2551,7 +3136,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="65"/>
 	<property name="PickupJournalEntry" value="wireToolTip"/>
 </item>
 
@@ -2594,7 +3179,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="15"/>
 	<property name="PickupJournalEntry" value="paintingTip"/>
 </item>
 
@@ -2649,7 +3234,7 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="farmingTip"/>
 	<property name="ActionSkillGroup" value="FarmingTools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="12"/>
 </item>
 
 <item id="136" name="fireaxePigIron">
@@ -2682,6 +3267,28 @@ Mesh files no longer used:
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Range" value="2.1"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="13"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="DamageBonus.wood" value="2.5"/>
+		<property name="DamageBonus.head" value="2"/>
+		<property name="DamageBonus.glass" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.25"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.organic" value="1"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0.45" param1="10"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10"/>
 		<property name="BlockDamage" value="23,46"/>
@@ -2692,7 +3299,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Axes"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="35"/>
 </item>
 
 <item id="137" name="pickaxePigIron">
@@ -2723,6 +3330,26 @@ Mesh files no longer used:
 		<property name="ActionExp" value="4"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="0.9"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="11"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.head" value="2"/>
+		<property name="DamageBonus.wood" value="0.2"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.organic" value="0.2"/>
+		<property name="DamageBonus.stone" value="2.5" />
+		<property name="DamageBonus.metal" value="2.5" />
+		<property name="ToolCategory.harvestingTools" value="1" param1="0.9"/>
+		<property name="ToolCategory.Chisel" value="1" param1="0.3" />
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,15"/>
@@ -2734,7 +3361,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="35"/>
 </item>
 
 <item id="138" name="shovelPigIron">
@@ -2766,6 +3393,27 @@ Mesh files no longer used:
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 		<property name="ActionExp" value="4"/>
 	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="Stamina_usage" value="13"/>
+		<property name="DamageBonus.earth" value="4.5"/>
+		<property name="DamageBonus.glass" value="0.5"/>
+		<property name="DamageBonus.head" value="6"/>
+		<property name="DamageBonus.wood" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.5"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.organic" value="0.7"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+		<property name="ActionExp" value="4"/>
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,12.2"/>
 		<property name="BlockDamage" value="18,47"/> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
@@ -2777,7 +3425,356 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="35"/>
+</item>
+
+<item id="139" name="minersPickaxe">
+	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="32"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="FuelValue" value="30"/>
+	<property name="EconomicValue" value="240"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.head" value="2"/>
+		<property name="DamageBonus.wood" value="0.2"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.organic" value="0.2"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="10"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.head" value="2.5"/>
+		<property name="DamageBonus.wood" value="0.2"/>
+		<property name="DamageBonus.earth" value="0.4"/>
+		<property name="DamageBonus.organic" value="0.2"/>
+		<property name="DamageBonus.stone" value="2.5" />
+		<property name="DamageBonus.metal" value="2.5" />
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="9,9"/>
+		<property name="BlockDamage" value="60,60"/>
+		<property name="DegradationMax" value="200,200"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.1,-0.1"/>
+	</property>
+	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="PickupJournalEntry" value="miningTip"/>
+	<property name="RepairExpMultiplier" value="300"/>
+</item>
+
+<item id="140" name="minersShovel">
+	<property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="18"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="30"/>
+	<property name="EconomicValue" value="240"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="5"/>
+		<property name="DamageBonus.earth" value="2"/>
+		<property name="DamageBonus.glass" value="0.5"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.wood" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.5"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.organic" value="0.7"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+		<property name="ActionExp" value="4"/>
+	</property>
+	<property class="Action1"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="10"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="DamageBonus.earth" value="4.5"/>
+		<property name="DamageBonus.glass" value="0.5"/>
+		<property name="DamageBonus.head" value="5.5"/>
+		<property name="DamageBonus.wood" value="0.5"/>
+		<property name="DamageBonus.stone" value="0.75"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.organic" value="1.1"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+		<property name="ActionExp" value="4"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="11,11"/>
+		<property name="BlockDamage" value="45,45"/> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
+		<property name="DegradationMax" value="200,200"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.1,0.05"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="PickupJournalEntry" value="miningTip"/>
+	<property name="RepairExpMultiplier" value="300"/>
+</item>
+
+<item id="141" name="carpentersAxe">
+	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="17"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="FuelValue" value="30"/>
+	<property name="EconomicValue" value="240"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2.1"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="5"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.head" value="2"/>
+		<property name="DamageBonus.glass" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.25"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.organic" value="1"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0.4" param1="10"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2.1"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="10"/>
+		<property name="DamageBonus.wood" value="3"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.glass" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.25"/>
+		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.organic" value="2"/>
+		<property name="Buff" value="powerAttack" />
+		<property name="Buff_chance" value="1" />
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Butcher" value="0.4" param1="10"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="8,8"/>
+		<property name="BlockDamage" value="45,45"/>
+		<property name="DegradationMax" value="200,200"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0,0.05"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Axes"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="300"/>
+</item>
+
+<item id="142" name="farmersHoe">
+	<property name="Meshfile" value="Items/Tools/hoe_ironPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="50"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="24"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="3"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.earth" value="2"/>
+		<property name="DamageBonus.glass" value="0.2"/>
+		<property name="DamageBonus.stone" value="0"/>
+		<property name="DamageBonus.metal" value="0"/>
+		<property name="ActionExp" value="2"/>
+		<property name="ActionExpBonusMultiplier" value="1"/>
+		<property name="ToolCategory.Hoe" value="1"/>
+		<property name="ToolCategory.harvestingTools" value="0.9" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="5"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="MakeFertile"/>
+		<property name="Delay" value="0.6"/>
+		<property name="Block_range" value="4"/>
+		<property name="DamageBlock" value="1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Sound_end" value="repair_block"/>
+		<property name="Fertileblock" value="fertileFarmland"/>
+		<property name="Adjacentblock" value="dirt"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="8,8"/>
+		<property name="BlockDamage" value="15,15"/>
+		<property name="DegradationMax" value="200,200"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.3,-0.15"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="PickupJournalEntry" value="farmingTip"/>
+	<property name="ActionSkillGroup" value="FarmingTools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="300"/>
+</item>
+
+<item id="143" name="oldHammer">
+	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="32"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="18"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="0.8"/>
+		<property name="Range" value="2.1"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="6"/>
+		<property name="DamageBonus.head" value="2.5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.stone" value="1"/>
+		<property name="DamageBonus.metal" value="1"/>
+		<property name="DamageBonus.organic" value="0.5"/>
+		<property name="DamageBonus.earth" value="1"/>
+		<property name="ToolCategory.harvestingTools" value="0.7" param1="1"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+		<property name="ActionExp" value="3"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.65"/>
+		<property name="Repair_amount" value="100"/>
+		<property name="Upgrade_hit_offset" value="-2"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,nail,forgeUpgradeKit"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="12,12"/>
+		<property name="BlockDamage" value="20,20"/>
+		<property name="DegradationMax" value="100,100"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.3,-0.3"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="300"/>
+</item>
+
+<item id="144" name="oldWrench">
+	<property name="Meshfile" value="Items/Tools/wrenchPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="HoldType" value="29"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="EconomicValue" value="288"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="5.3"/>
+		<property name="DamageBonus.head" value="1.4"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.stone" value="0.5"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.metal" value="2"/>
+		<property name="DamageBonus.organic" value="0.5"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Disassemble" value="0.85" param1="2"  />
+		<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
+        <property name="Particle_harvesting" value="true" param1="metal" />
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.55"/>
+		<property name="Repair_amount" value="100"/>
+		<property name="Upgrade_hit_offset" value="-1"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="5,5"/>
+		<property name="BlockDamage" value="6,6"/>
+		<property name="DegradationMax" value="100,100"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.3,-0.3"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="300"/>
 </item>
 
 <!-- * * * * * * * * * * bows, crossbows * * * * * * * * * * -->
@@ -2834,7 +3831,7 @@ Mesh files no longer used:
 	</property>
 	<property name="ActionSkillGroup" value="Archery"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="20"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 </item>
 
@@ -2881,7 +3878,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Archery"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="55"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 </item>
 
@@ -2935,8 +3932,60 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Archery"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="55"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+</item>
+
+<item id="148" name="oldBow">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/WoodenBowPrefab"/>
+	<property name="Material" value="wood"/>
+	<property name="RepairTools" value="wood"/>
+	<property name="HoldType" value="27"/> <!-- "Sway Off" is hardcoded for hold types 26, 27, 53 -->
+	<property name="FuelValue" value="36"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="false"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Catapult"/>
+		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
+		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Delay" value="1"/>
+		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
+		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
+		<property name="Magazine_size" value="1"/>
+		<property name="Magazine_items" value="arrow"/>
+		<property name="Rays_spread" value="0.017"/>
+		<property name="Reload_time" value="0.8"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="bow_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="bow_reload"/>
+		<property name="Sound_draw" value="bow_draw"/>
+		<property name="Sound_cancel" value="bow_fire_cancel"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+		<property name="Max_strain_time" value="0.6"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="45"/>
+		<property name="Zoom_max_in" value="45"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons,Basics"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DegradationMax" value="100,100"/>
+	</property>
+	<property name="ActionSkillGroup" value="Archery"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="300"/>
 </item>
 
 <!-- * * * * * * * * * * ammunition / arrows / bolts / fuel * * * * * * * * * * -->
@@ -4306,8 +5355,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="plantFiberClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/> <!-- redundant because this is the default but it's easier to read -->
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/> <!-- redundant because this is the default but it's easier to read -->
+	<property name="RepairExpMultiplier" value="20"/>
 </item>
 
 <item id="351" name="plantFiberShirt"> <!-- plantFiberClothes -->
@@ -4391,7 +5440,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="25"/>
 </item>
 
 <item id="358" name="clothPants"> <!-- clothArmor -->
@@ -4476,7 +5525,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="30"/>
 </item>
 
 <item id="365" name="animalHideLegArmor"> <!-- hideArmor -->
@@ -4564,7 +5613,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="40"/>
 </item>
 
 <item id="371" name="leatherGloves"> <!-- leatherArmor -->
@@ -4650,7 +5699,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
 
 <item id="378" name="scrapLegArmor"> <!-- scrapArmor -->
@@ -4756,7 +5805,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="50"/>
 </item>
 
 <item id="384" name="ironLegArmor"> <!-- ironArmor -->
@@ -4875,7 +5924,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="12.8"/>
+	<property name="RepairExpMultiplier" value="80"/>
 </item>
 
 <item id="391" name="militaryHelmet"> <!-- militaryArmor -->
@@ -4973,7 +6022,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="80"/>
 </item>
 
 <item id="398" name="hazmatPants"> <!-- hazMatArmor -->
@@ -5069,7 +6118,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="80"/>
 </item>
 
 <item id="403" name="heavyBanditGasmask"> <!-- banditArmor -->
@@ -5134,6 +6183,96 @@ Mesh files no longer used:
 	</property>
 </item>
 
+
+<item id="410" name="oldGloves">
+	<property name="CustomIcon" value="militaryGloves" />
+	<property name="SellableToTrader" value="false" />
+	<property name="Insulation" value="0"/>
+	<property name="Encumbrance" value="0.05"/>
+	<property name="Material" value="leather"/>
+	<property name="RepairTools" value="leatherStrips"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="1600"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EquipSlot" value="Hands"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property class="Attributes">
+		<property name="ConcussiveProtection" value="0.2,0.2"/>
+		<property name="PunctureProtection" value="0.2,0.2"/>
+		<property name="FireProtection" value="0.1,0.1"/>
+		<property name="RadiationProtection" value="0.1,0.1"/>
+		<property name="ElectricalProtection" value="0.06,0.06"/>
+		<property name="DegradationMax" value="150,150"/>
+	</property>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_gloves"/>
+		<property name="Overlay0" value="armor_kevlar_gloves"/>
+		<property name="Layer" value="0"/>
+		<property name="UISlot" value="Gloves"/>
+	</property>
+	<property name="DescriptionKey" value="oldArmorDesc"/>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="300"/>
+</item>
+
+<item id="411" name="oldHelmet"> <!-- militaryArmor -->
+	<property name="Extends" value="oldGloves"/>
+	<property name="CustomIcon" value="militaryHelmet" />
+	<property name="EquipSlot" value="Head"/>
+	<property class="UMA">
+		<property name="Mesh" value="gear_kevlar_helmet"/>
+		<property name="Overlay0" value="gear_kevlar_helmet"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="ShowAltHair" value="true"/>
+	</property>
+</item>
+
+<item id="412" name="oldArmorBoots"> <!-- militaryArmor -->
+	<property name="Extends" value="oldGloves"/>
+	<property name="CustomIcon" value="militaryBoots" />
+	<property name="EquipSlot" value="Feet"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_boots"/>
+		<property name="Overlay0" value="armor_kevlar_boots"/>
+		<property name="Layer" value="0"/>
+		<property name="UISlot" value="Footwear"/>
+	</property>
+</item>
+
+<item id="413" name="oldLegArmor"> <!-- militaryArmor -->
+	<property name="Extends" value="oldGloves"/>
+	<property name="CustomIcon" value="militaryLegArmor" />
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="3200"/>
+	<property name="EquipSlot" value="Legs"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_legarmor"/>
+		<property name="Overlay0" value="armor_kevlar_legarmor"/>
+		<property name="Layer" value="3"/>
+		<property name="UISlot" value="LegArmor"/>
+	</property>
+</item>
+
+<item id="414" name="oldVest"> <!-- militaryArmor -->
+	<property name="Extends" value="oldGloves"/>
+	<property name="CustomIcon" value="militaryVest" />
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="3200"/>
+	<property name="EquipSlot" value="Chest"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_vest"/>
+		<property name="Overlay0" value="armor_kevlar_vest"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="ChestArmor"/>
+	</property>
+</item>
+
+
 <!-- * * * * * * * * * * general clothing * * * * * * * * * * -->
 
 <item id="450" name="cowboyHat">
@@ -5171,7 +6310,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="451" name="blackCowboyHat">
@@ -5236,8 +6375,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="clothClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="456" name="skullCap"> <!-- skullCapMaster -->
@@ -5273,8 +6412,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="skullCapDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 
 </item>
 
@@ -5357,7 +6496,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="60"/>
 	<property name="LightValue" value="0.7"/>
 </item>
 
@@ -5389,7 +6528,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="80"/>
 </item>
 
 <item id="466" name="footballHelmet">
@@ -5423,7 +6562,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="footballHelmetDesc"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="40"/>
 </item>
 
 <item id="467" name="footballHelmetZU">
@@ -5470,7 +6609,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="60"/>
 </item>
 
 <item id="469" name="gasMask">
@@ -5493,8 +6632,8 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
-		<property name="CreativeMode" value="Dev"/>
+	<property name="RepairExpMultiplier" value="70"/>
+	<property name="CreativeMode" value="Dev"/>
 </item>
 
 <item id="471" name="shades">
@@ -5524,7 +6663,8 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor" />
+	<property name="RepairExpMultiplier" value="25"/>
 </item>
 
 <item id="472" name="aviatorGoggles">
@@ -5575,7 +6715,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="RepairExpMultiplier" value="70"/>
 </item>
 
 <item id="475" name="shadesBlack">
@@ -5663,7 +6803,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="35"/>
 </item>
 
 <item id="482" name="bandana"> <!-- bandanaMaster -->
@@ -5697,8 +6837,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="bandanaClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="483" name="bandanaRed">
@@ -5778,8 +6918,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="denimClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="491" name="blackDenimPants">
@@ -5855,8 +6995,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="tankTopClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="498" name="tankTopRed">
@@ -5945,8 +7085,8 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="508" name="runningShoes">
@@ -5994,8 +7134,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="shirtClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="510" name="shirtRed">
@@ -6087,7 +7227,7 @@ Mesh files no longer used:
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="RepairExpMultiplier" value="35"/>
 </item>
 
 <item id="518" name="leatherDusterBlack">
@@ -6132,8 +7272,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="pufferCoatGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="45"/>
 </item>
 
 <item id="521" name="pufferCoatRed">
@@ -6224,8 +7364,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="shirtClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="532" name="sweatshirtRed">
@@ -6307,8 +7447,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="tshirtClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="538" name="tshirtRed">
@@ -6401,8 +7541,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="jacketGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="545" name="skirtRed">
@@ -6612,8 +7752,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="shirtClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="15"/>
 </item>
 
 <item id="565" name="hoodedSweatshirtRed">
@@ -6895,8 +8035,8 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="denimClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="25"/>
 </item>
 
 <item id="599" name="suitJacketBlack">
@@ -6963,7 +8103,41 @@ Mesh files no longer used:
 	<property name="Group" value="Science"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="30"/>
+</item>
+
+<item id="651" name="ankleCast">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="cloth"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property name="FuelValue" value="18"/>
+	<property name="EconomicValue" value="300"/>
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Sound_start" value="player_bandage"/>
+		<property name="Buff" value="castLeg"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Sound_start" value="player_bandage"/>
+		<property name="Buff" value="castLeg"/>
+	</property>
+	<property name="Group" value="Science"/>
+	<property name="ActionSkillGroup" value="Medicine"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="ActionExp" value="60"/>
 </item>
 
 <item id="655" name="aloeCream">
@@ -6993,7 +8167,7 @@ Mesh files no longer used:
 	<property name="Group" value="Science"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="30"/>
 </item>
 
 <item id="656" name="bandage">
@@ -7029,7 +8203,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="bandageDesc"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="20"/>
 	<property name="PickupJournalEntry" value="firstAidTip"/>
 </item>
 
@@ -7045,6 +8219,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="firstAidBandageDesc"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="CraftingIngredientExp" value="2"/>
+	<property name="ActionExp" value="50" />
 </item>
 
 <item id="658" name="firstAidKit">
@@ -7062,6 +8237,7 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="firstAidKitDesc"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="ActionExp" value="100" />
 </item>
 
 <item id="659" name="vegetableCream">
@@ -7125,7 +8301,7 @@ Mesh files no longer used:
 	<property name="Group" value="Science"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="50"/>
 </item>
 
 <item id="661" name="bloodDrawKit">
@@ -7151,7 +8327,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Resources"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="25"/>
 </item>
 
 <item id="662" name="bloodBag">
@@ -7176,7 +8352,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="CraftingIngredientExp" value="3"/>
 	<property name="Group" value="Science"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="25"/>
 </item>
 
 <item id="663" name="sunblocker">
@@ -7206,7 +8382,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="50"/>
 </item>
 
 <item id="666" name="painkillers">
@@ -7238,7 +8414,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
-	<property name="ActionExp" value="5"/>
+	<property name="ActionExp" value="25"/>
 </item>
 
 <item id="667" name="herbalAntibiotics">
@@ -7274,7 +8450,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="50"/>
 </item>
 
 <item id="668" name="antibiotics">
@@ -7310,7 +8486,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="50"/>
 </item>
 
 <item id="669" name="steroids">
@@ -7335,7 +8511,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="20"/>
 </item>
 
 <item id="670" name="rabiesSyringe">
@@ -7371,7 +8547,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Medicine"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Science"/>
-	<property name="ActionExp" value="10"/>
+	<property name="ActionExp" value="50"/>
 </item>
 
 <item id="671" name="brokenGlass"> <!-- scrap material -->
@@ -12120,6 +13296,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/animal_hidePrefab"/>
 	<property name="HoldType" value="21"/>
 	<property name="Material" value="animalHide"/>
+	<property name="RepairAmount" value="80"/>
 	<property name="Weight" value="5"/>
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="FuelValue" value="5"/>
@@ -12799,7 +13976,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="50"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="PickupJournalEntry" value="paintingTip"/>
 </item>
 
@@ -13549,6 +14726,17 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 
+<item id="1419" name="workbenchUpgradeKit">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="metal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+
 <item id="1429" name="emptyBottle">
 	<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
 	<property name="Material" value="Mplastics"/>
@@ -13668,6 +14856,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="38"/>
 	<property name="Group" value="Resources,Chemicals"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1440" name="ductTape">
@@ -13679,6 +14868,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="49"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1441" name="spring">
@@ -13699,6 +14889,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="250"/> <!-- STK loot -->
 	<property name="EconomicValue" value="26"/>
 	<property name="Group" value="Food/Cooking"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools" />
 </item>
 
 <item id="1443" name="beaker">
@@ -13709,6 +14900,7 @@ Mesh files no longer used:
 	<property name="Weight" value="15"/>
 	<property name="EconomicValue" value="750"/>
 	<property name="Group" value="Chemicals"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1444" name="bellows">
@@ -13740,6 +14932,7 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="beaker" />
 	<property name="CustomIconTint" value="999999" />
 	<property name="EconomicValue" value="20" />
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <!--<item id="1446" name="calipers">
@@ -13810,7 +15003,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources,Clothing"/>
 	<property name="CraftingIngredientTime" value="2"/>
 	<property name="Weight" value="5"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
 </item>
 
 <item id="1452" name="string"> <!-- scrap material -->
@@ -13824,7 +15017,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources,Clothing"/>
 	<property name="CraftingIngredientTime" value="2"/>
 	<property name="Weight" value="5"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
 </item>
 
 <item id="1453" name="vegetableOil">
@@ -13848,6 +15041,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Chemicals"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1454" name="vegetableFerment">
@@ -13871,6 +15065,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Chemicals"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1460" name="unit_iron">
@@ -14303,7 +15498,6 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="20" />
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 
 <item id="1604" name="workerBeeRoasted">
@@ -14339,7 +15533,6 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="20" />
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 
 

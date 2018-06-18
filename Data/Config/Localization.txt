@@ -69,6 +69,8 @@ rock10,blocks,Block,EnChanged GrChanged KgNone,Small Rock 10,Petite pierre,Klein
 rock11,blocks,Block,EnChanged GrChanged KgNone,Small Rock 11,Petite pierre,Kleiner Stein 11,,Piedra pequeña
 rock12,blocks,Block,EnChanged GrChanged KgNone,Small Rock 12,Petite pierre,Kleiner Stein 12,,Piedra pequeña
 craftSkillArmor,progression,Skill,EnChanged KeyChanged,Armor Crafting,Forgeron d'armures,Rüstungsschmied,,Forjar armaduras
+craftSkillArmorPerk,progression,Skill,EnChanged KeyChanged,"Armor Crafting Quality",,,,
+craftSkillArmorPerkDesc,progression,Skill,EnChanged KeyChanged,"Increase the quality of all clothing and armor crafted with this perk.",,,,
 craftSkillArmorDesc,progression,Skill,EnChanged KeyChanged,"Craft armor and clothes faster and at better quality while repairing them more efficiently. Buy levels of this perk to increase your skill from Crude to Novice, Apprentice, Journeyman, Professional and Master level.",,"Fertige Rüstungen und Kleidung schneller und von besserer Qualität und repariere sie zugleich effizienter. Kaufe die Fertigkeit um die Qualität von Krud auf Einfach, Lehrling, Geselle, Professionell und Meister zu verbessern.",,
 candleTable,blocks,Block,EnChanged KgNone,Candle Table (POI),Bougie,Kerze Freistehend (POI),,Vela
 candleWall,blocks,Block,EnChanged KgNone,Candle Wall (POI),Bougie,Kerze mit Wandhalterung (POI),,Vela
@@ -185,10 +187,18 @@ brickDestroyedBlock03,blocks,Block,KeyChanged,Brick Destroyed Block 03,Bloc de b
 corrugatedMetalPole,blocks,Block,KeyChanged,Corrugated Metal Pole,Poteau en fer rouillé,Rostiger Eisenpfosten,,Poste de hierro oxidado
 corrugatedMetalStairs25,blocks,Block,KeyChanged,Corrugated Metal Stairs25,Escalier 25 en fer rouillé,Rostige Eisenstufen 25,,Escaleras de hierro oxidadas 25
 craftSkillGuns,progression,Skill,KeyChanged,Gun Smithing,Forgeron d'armes à feu,Feuerwaffenschmied,,Forjar pistolas
+craftSkillGunsPerk,progression,Skill,KeyChanged,Gun Smithing Quality,,,,
+craftSkillGunsPerkDesc,progression,Skill,KeyChanged,"Increase the quality of your crafted guns with this perk.",,,,
 craftSkillMiscellaneous,progression,Skill,KeyChanged,Misc Crafting,Fabrication diverse,Sonstiger Handwerksmeister,,Fabricación varia
 craftSkillScience,progression,Skill,KeyChanged,Science,Science,Wissenschaft,,Por la ciencia
+craftSkillSciencePerk,progression,Skill,KeyChanged,Science Quality,,,,
+craftSkillSciencePerkDesc,progression,Skill,KeyChanged,"Increase the quality of your crafted sciennce tool and parts with this perk.",,,,
 craftSkillTools,progression,Skill,KeyChanged,Tool Smithing,Forgeron d'outils,Werkzeugschmied,,Forja de herramientas
+craftSkillToolsPerk,progression,Skill,KeyChanged,"Tool Smithing Quality",,,,
+craftSkillToolsPerkDesc,progression,Skill,KeyChanged,"Increase the quality of your handheld tools with this perk.",,,,
 craftSkillWeapons,progression,Skill,KeyChanged,Weapon Smithing,Forgeron d'armes,Waffenschmied,,Forja de armas
+craftSkillWeaponsPerk,progression,Skill,KeyChanged,"Weapon Smithing Quality",,,,
+craftSkillWeaponsPerkDesc,progression,Skill,KeyChanged,"Increase the quality of your crafted melee weapons, bows and crossbows with this perk.",,,,
 awningBlock,blocks,Block,KeyChanged EnChanged,Awning Block,Bloc en toile marron,Stoffplane – Block,,Bloque canela de toldo
 awningCNRFull,blocks,Block,KeyChanged EnChanged,Awning Corner Full,Angle complet en toile marron,Stoffplane – Komplette Ecke,,Esquina canela de toldo
 awningCNRInside,blocks,Block,KeyChanged EnChanged,Awning Corner Inside,Angle intérieur en toile marron,Stoffplane – Innenecke,,Esquina interior canela de toldo
@@ -5452,7 +5462,8 @@ generatorBankSchematic,items,Schematic,KgNone,"Generator Bank Schematic",,,,
 generatorBankSchematicDesc,items,Schematics,KgNone,"Learn how to craft a generator bank by reading this schematic. To read this book you require Science 3.",,,,
 forgeUpgradeKit,items,Crafting,KgNone,"Forge Upgrade Kit",,,,
 forgeUpgradeKitDesc,items,Crafting,KgNone,"If you find a broken forge in the world you can use a construction tool and upgrade it into a working forge with this upgrade kit.",,,,
-
+workbenchUpgradeKit,items,Crafting,KgNone,"Workbench Upgrade Kit",,,,
+workbenchUpgradeKitDesc,items,Crafting,KgNone,"If you find a broken workbench in the world you can use a wrench and upgrade it into a working workbench with this upgrade kit.",,,,
 forgeAheadSchematic,items,Schematic,KgNone,"Forge Ahead",,,,
 forgeAheadSchematicDesc,items,Schematic,KgNone,"Learn how to craft a forge by reading this schematic. To read this book you require Tool Smithing 2 and Science 1.",,,,
 ForgeAheadName,progression,Perk,KgNone,"Forge Ahead",,,,
@@ -5697,8 +5708,15 @@ stuffed,buffs,buff,KgNone,"Stuffed",,,,
 stuffedDesc,buffs,buff,KgNone,"You have eaten a little too much!",,,,
 stuffedTooltip,buffs,buff,KgNone,"You have eaten a little too much!",,,,
 
+castLeg,buffs,buff,KgNone,"Leg Cast",,,,
+castLegDesc,buffs,buff,KgNone,"You have used a cast to heal your broken or sprained leg faster.",,,,
+castLegTooltip,buffs,buff,KgNone,"The cast you used will heal your leg faster.",,,,
+
 firepit,blocks,Block,KgNone,"Firepit",,,,
 firepitDesc,blocks,Block,KgNone,"The firepit is used for several things including smelting copper and making charcoal, as well as curing animal hides into leather. In order to utilise the firepit fully you will need a cooking grill, some bellows and a hardened ingot mold.",,,,
+
+ankleCast,Items,Medical,KgNone,"Leg Cast",,,,
+ankleCastDesc,Items,Medical,KgNone,"If you've got a broken or sprained leg, this will heal it in almost no time! Sponsored by HolyBallz Inc. Not suitable for touchies, adult assembly required.",,,,
 
 leatherStrips,items,Resources,KgNone,"Tattered Leather Pieces",,,,
 leatherStripsDesc,items,Resources,KgNone,"This ripped apart leather may come in handy if sewn back together using some string on a workbench...",,,,
@@ -5832,8 +5850,46 @@ projectileFlameDesc,items,Ammo,KgNone,"You can place this into a flamethrower tr
 projectileElectric,items,Ammo,KgNone,"Power Cell",,,,
 projectileElectricDesc,items,Ammo,KgNone,"A power cell that can be used to charge an electric floor trap. Craft in a chemistry station.",,,,
 
+farmersHoe,items,Tools,KgNone,"Farmer's Hoe",,,,
+farmersHoeDesc,items,Tools,KgNone,"An old hoe that has served you well. Easy to wield, easy to repair, lasts for ages.",,,,
+carpentersAxe,Items,Tools,KgNone,"Woodcutter's Axe",,,,
+carpentersAxeDesc,Items,Tools,KgNone,"A durable and reliable axe. It may be old, but it's easy to wield and repair and lasts for ages!",,,,
+minersPickaxe,Items,Tools,KgNone,"Miner's Pickaxe",,,,
+minersPickaxeDesc,Items,Tools,KgNone,"A pickaxe that can smash through rocks or zombie faces with the best of them. Durable, reliable, and easy to repair... Even if a little old.",,,,
+minersShovel,Items,Tools,KgNone,"Miner's Shovel",,,,
+minersShovelDesc,Items,Tools,KgNone,"From shovellin' shit in your day job to digging graves on the night shift, this shovel can handle all that and more. Though it may be worn, it's still durable and reliable as ever.",,,,
+oldClub,Items,Weapons,KgNone,"Old Club",,,,
+oldClubDesc,Items,Weapons,KgNone,"Nothing beats bashing zombie faces in with this old thing! Easy to repair and surprisingly durable for such an old thing.",,,,
+oldKnife,Items,Weapons,KgNone,"Old Knife",,,,
+oldKnifeDesc,Items,Weapons,KgNone,"An old knife that still retains its sharpness to this day. Great at cutting up kills, or just at doing the killing - and surprisingly durable and easy to repair.",,,,
+oldRifle,Items,Weapons,KgNone,"Old Rifle",,,,
+oldRifleDesc,Items,Weapons,KgNone,"An old rifle that surprisingly still shoots, but it doesn't have that much going for it, even if it is easy to repair.",,,,
+oldPistol,items,Weapons,KgNone,"Old Pistol",,,,
+oldPistolDesc,items,Weapons,KgNone,"An old pistol that surprisingly still shoots, but it doesn't have that much going for it, even if it is easy to repair.",,,,
+oldShotgun,Items,Weapons,KgNone,"Old Shotgun",,,,
+oldShotgunDesc,Items,Weapons,KgNone,"An old shotgun that surprisingly still shoots, but it doesn't have that much going for it, even if it is easy to repair.",,,,
+oldHammer,Items,Tools,KgNone,"Old Hammer",,,,
+oldHammerDesc,Items,Tools,KgNone,"An old hammer that surprisingly can still hit a few nails now and again, though it's a little bit rusty, it's the best you have... for now.",,,,
+oldWrench,Items,Tools,KgNone,"Old Wrench",,,,
+oldWrenchDesc,Items,Tools,KgNone,"An old rusty wrench. It may get jammed sometimes, but it's still decent at taking stuff apart.",,,,
+oldBow,Items,Weapons,KgNone,"Old Bow",,,,
+oldBowDesc,Items,Weapons,KgNone,"An old bow that can still somehow fire arrows at a decent rate. However, the string likes to snap often.",,,,
+oldGloves,Items,Clothing,KgNone,"Old Gloves",,,,
+oldVest,Items,Clothing,KgNone,"Old Vest",,,,
+oldLegArmor,Items,Clothing,KgNone,"Old Leg Armour",,,,
+oldArmorBoots,Items,Clothing,KgNone,"Old Boots",,,,
+oldHelmet,Items,Clothing,KgNone,"Old Helmet",,,,
+oldArmorDesc,Items,Clothing,KgNone,"Old armour does offer some protection, but it's not the most durable stuff in the world.",,,,
 
 
+
+schematicBag,Blocks,Block,KgNone,"Bag of Schematics",,,,
+schematicBagOpen,Blocks,Block,KgNone,"Bag of Schematics",,,,
+schematicBagDesc,Blocks,Block,KgNone,"Hmmm, let's place it down and see what's inside!",,,,
+
+groceryBag,Blocks,Block,KgNone,"Bag of Groceries",,,,
+groceryBagOpen,Blocks,Block,KgNone,"Bag of Groceries",,,,
+groceryBagDesc,Blocks,Block,KgNone,"Hmmm, let's place it down and see what's inside!",,,,
 
 
 
