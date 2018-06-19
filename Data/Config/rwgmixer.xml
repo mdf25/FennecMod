@@ -762,19 +762,19 @@
 			
 			
 			<module name="fastWaterBase" type="FastBillow">
-				<property name="frequency" value="3"/>
+				<property name="frequency" value="1"/>
 			</module>
 			<module name="fastWaterBase2" type="InvertOutput">
 				<property name="sourceModule" value="fastWaterBase"/>
 			</module>
 			<module name="fastWaterScaled" type="ScaleBiasOutput">
 				<property name="sourceModule" value="fastWaterBase2"/>
-				<property name="scale" value="10"/>
+				<property name="scale" value="5"/>
 				<property name="bias" value="-2"/>
 			</module>
 			<module name="fastWaterClamped" type="ClampOutput">
 				<property name="sourceModule" value="fastWaterScaled"/>
-				<property name="bounds" value="-20,0.25"/>
+				<property name="bounds" value="-10,0.25"/>
 			</module>
 		
 			<module name="LandController"		type="Voronoi">
@@ -784,7 +784,7 @@
 			</module>
 			
 			<module name="LandController2"		type="FastBillow">
-				<property name="frequency" value="0.1"/>
+				<property name="frequency" value="0.6"/>
 			</module>
 			
 			<module name="BlendWaterLand"		type="SmallerOutput">
@@ -824,8 +824,8 @@
 			
 			<module name="FinalLand" 			type="ScaleBiasOutput">
 				<property name="sourceModule"	value="BlendFinalLand" />
-				<property name="scale"			value="3" />
-				<property name="bias"			value="15" />
+				<property name="scale"			value="1.7" />
+				<property name="bias"			value="5" />
 			</module>
 			
 			<!--<output module="SmallHillsClamped" />-->

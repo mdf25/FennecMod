@@ -3960,7 +3960,7 @@ Mesh files no longer used:
 		<property name="Magazine_size" value="1"/>
 		<property name="Magazine_items" value="arrow"/>
 		<property name="Rays_spread" value="0.017"/>
-		<property name="Reload_time" value="0.8"/>
+		<property name="Reload_time" value="1.3"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="bow_fire"/>
 		<property name="Sound_repeat" value=""/>
@@ -3971,7 +3971,7 @@ Mesh files no longer used:
 		<property name="Sound_cancel" value="bow_fire_cancel"/>
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="Max_strain_time" value="0.6"/>
+		<property name="Max_strain_time" value="3"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Zoom"/>
