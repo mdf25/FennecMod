@@ -5891,10 +5891,19 @@ groceryBag,Blocks,Block,KgNone,"Bag of Groceries",,,,
 groceryBagOpen,Blocks,Block,KgNone,"Bag of Groceries",,,,
 groceryBagDesc,Blocks,Block,KgNone,"Hmmm, let's place it down and see what's inside!",,,,
 
+awesomeSauce,Items,Food,KgNone,"Bottle of AwesomeSauce",,,,
+awesomeSauceDesc,Items,Food,KgNone,"A legendary drink that can be used to recover any ailment.",,,,
 
-
-
-
+bookScience,Items,Schematics,KgNone,"Science Book",,,,
+bookScienceDesc,Items,Schematics,KgNone,"So E = MC whatsit now? Hmm, maybe there's some useful stuff in here...",,,,
+bookToolSmithing,Items,Schematics,KgNone,"Tool Smithing Book",,,,
+bookToolSmithingDesc,Items,Schematics,KgNone,"Maybe something in here can help make those tools better...",,,,
+bookWeaponSmithing,Items,Schematics,KgNone,"Weapon Smithing Book",,,,
+bookWeaponSmithingDesc,Items,Schematics,KgNone,"So it seems making wooden clobbering devices is in fact an art form...",,,,
+bookGunSmithing,Items,Schematics,KgNone,"Gun Smithing Book",,,,
+bookGunSmithingDesc,Items,Schematics,KgNone,"Step 1: Point gun at self. Step 2: Take safety off. St- Wait a minute, is this a guide on how to win a Darwin award?",,,,
+bookArmorCrafting,Items,Schematics,KgNone,"Armor Crafting Book",,,,
+bookArmorCraftingDesc,Items,Schematics,KgNone,"Who knew that making armour could be so complicated? Well, guess there's some useful stuff in here...",,,,
 
 
 

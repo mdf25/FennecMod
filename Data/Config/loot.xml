@@ -921,6 +921,14 @@
 	-->
 </lootgroup>
 
+<lootgroup name="skillBooks" count="1">
+	<item name="bookGunSmithing" />
+	<item name="bookToolSmithing" />
+	<item name="bookWeaponSmithing" />
+	<item name="bookArmorCrafting" />
+	<item name="bookScience" />
+</lootgroup>
+
 <lootgroup name="paintMagazines" count="1">
 	<item name="paintMagazineDecorations"/> <!-- traders -->
 	<item name="paintMagazineFaux"/> <!-- cntBookcase -->
@@ -931,10 +939,11 @@
 </lootgroup>
 
 <lootgroup name="books" count="1">
-	<item name="paper" count="10,25" prob="0.66"/>
+	<item name="paper" count="10,25" prob="0.56"/>
 	<item group="commonBooks" prob="0.33"/>
 	<item group="paintMagazines" prob="0.03"/>
 	<item group="rareBooks" loot_prob_template="rareBookTemplate"/> <!-- .2 => 1.0 -->
+	<item group="skillBooks" count="0,1" prob="0.1"/>
 </lootgroup>
 
 <lootgroup name="weaponsMilitaryGuns+ammo">
@@ -1154,6 +1163,7 @@
 	<item name="femur" count="1,2" prob="0.05"/>
 	<item name="scrapPlastics" count="1,2" prob="0.3"/>
 	<item name="steroids" prob="0.004" />
+	<item group="skillBooks" prob="0.005" />
 </lootgroup>
 
 <lootgroup name="rareAutomotive">
@@ -1357,7 +1367,8 @@
 	<item name="paintTool" prob="0.4"/>
 	<item name="wireTool"/>
 	<item name="paintMagazineMasonry" prob="0.4"/>
-	<item name="workbench" prob="0.4" />
+	<item name="bookToolSmithing" prob="0.05" />
+	<item name="bookWeaponSmithing" prob="0.05" />
 </lootgroup>
 
 <lootgroup name="rareMedicine" count="1">
@@ -1382,6 +1393,7 @@
 	<item name="grainAlcohol"/>
 	<item name="splint"/>
 	<item group="rareMedicine"/>
+	<item name="bookScience" prob="0.05" />
 </lootgroup>
 
 <lootgroup name="sportingGoods" count="1">
@@ -1428,6 +1440,7 @@
 	<item group="junk" prob="1"/>
 	<item group="automotive" prob="0.21"/>
 	<item group="tools" prob="0.21"/>
+	<item name="bookToolSmithing" prob="0.06" />
 </lootgroup>
 
 <lootgroup name="backpacks">
@@ -1439,6 +1452,7 @@
 	<item name="flashlight02" prob="0.3"/>
 	<item group="medicine" prob="0.05" />
 	<item name="steroids" prob="0.05" />
+	<item group="skillBooks" prob="0.04" />
 </lootgroup>
 
 <lootgroup name="airdropMedicine">
@@ -1469,6 +1483,7 @@
 	<item group="rareOres" prob="0.1"/>
 	<item name="ironFragment" count="30,150" prob="0.2"/>
 	<item name="torch" prob="0.1"/>
+	<item name="bookToolSmithing" />
 </lootgroup>
 
 <lootgroup name="banditsGeneral" count="1">
@@ -1498,6 +1513,7 @@
 	<item name="minibikeChassis" prob="0.05" />
 	<item name="minibikeSeat" prob="0.05" />
 	<item name="minibikeHandlebars" prob="0.05" />
+	<item name="bookToolSmithing" prob="0.05" />
 </lootgroup>
 
 <lootgroup name="ZombieFootballPlayer">
@@ -1541,6 +1557,7 @@
 	<item name="bloodDrawKit" prob="0.15"/>
 	<item name="firstAidKitSchematic" prob="0.15"/>
 	<item name="beaker" prob="0.15"/>
+	<item name="bookScience" prob="0.1" /> 
 </lootgroup>
 
 
@@ -1788,6 +1805,7 @@
 	<item group="automotive+tools+junk"/>
 	<item name="miningHelmet" prob="0.035"/>
 	<item name="noteFragment" count="2,6" prob="0.035" />
+	<item name="bookWeaponSmithing" prob="0.035" />
 </lootcontainer>
 
 <!-- air conditioners-->
@@ -1938,7 +1956,6 @@
 	<item group="ammo" prob="0.05"/>
 	<item group="books" count="1"/>
 	<item name="paper" count="5,10"/>
-	<item name="paper" count="5,10" prob="0.86"/>
 	<item name="oldCash" count="1,6" prob="0.3"/>
 	<item name="painkillers" prob="0.05"/>
 	<item group="trophyGroup"/>
@@ -1977,7 +1994,7 @@
 </lootcontainer>
 
 <!-- bookcase -->
-<lootcontainer id="49" count="0,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
+<lootcontainer id="49" count="0,3" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
 	<item name="paper" count="2,8" prob="0.2"/>
 	<item group="books"/>
 	<item name="paintMagazineFaux" prob="0.05"/>
@@ -1990,12 +2007,13 @@
 	<item group="weaponsMilitaryGuns+ammo"/>
 	<item name="mechanicalParts" count="1,5" prob="0.1"/>
 	<item name="scrapPlastics" count="1,6" prob="0.15"/>
+	<item name="bookGunSmithing" count="1" prob="0.04" />
 </lootcontainer>
 
 <!-- pop n pills -->
 <lootcontainer id="51" count="1,2" size="5,4" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" loot_quality_template="baseTemplate">
 	<item group="medicine"/>
-	<item name="scrapPlastics" count="1,2" prob="0.15"/>
+	<item name="scrapPlastics" count="1,2" prob="0.1"/>
 </lootcontainer>
 
 <!-- beer cooler -->
@@ -2122,6 +2140,7 @@
 	<item group="treasureMaps" count="1" prob="0.092"/>
 	<item group="weaponsPistol+ammo" prob="0.03"/>
 	<item name="noteFragment" count="1,2" prob="0.2" />
+	<item name="bookScience" prob="0.02" />
 </lootcontainer>
 
 <!-- snowzombie, lumberjack zombie loot-->
@@ -2183,6 +2202,8 @@
 	<item group="militaryArmor" prob="1"/>
 	<item name="nightvisionGoggles" prob="0.3"/>
 	<item name="noteFragment" count="2,5" prob="0.1" />
+	<item name="bookArmorCrafting" prob="0.04" />
+	<item name="bookGunSmithing" prob="0.04" />
 </lootcontainer>
 
 <!-- zombie utility worker / construction worker loot -->
@@ -2488,7 +2509,7 @@
 </lootcontainer>
 
 <!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
-<lootcontainer id="95" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="treasureTemplate">
+<lootcontainer id="95" count="1,3" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="treasureTemplate">
 	<item group="weaponsMilitaryGuns+ammo" prob="0.8"/>
 	<item group="weaponsBasicGuns+ammo"/>
 	<item name="compoundBow" prob="0.3"/>
@@ -2500,6 +2521,7 @@
 	<item name="forgedFadium" count="1,2" prob="0.15" />
 	<item name="forgedFoxium" count="1,2" prob="0.15" />
 	<item name="noteFragment" count="50,150" prob="0.2" />
+	<item name="awesomeSauce" count="1" prob="0.02" />
 </lootcontainer>
 
 <!-- cntLootCrateLabEquipment Lab equipment and medical items -->

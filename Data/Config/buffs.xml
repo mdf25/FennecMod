@@ -193,7 +193,7 @@ built-in buff variables:
 <buff id="ConsumeVitamins1" 	duration="1" actions="increment(CTRvitamins,1,0,0,1);max(CTRvitamins,50)" />
 <buff id="ConsumeVitamins5" 	duration="1" actions="increment(CTRvitamins,5,0,0,1);max(CTRvitamins,50)" />
 
-
+<buff id="ConsumeAwesomeSauce"	duration="1" actions="increment(CTRfruit,100,0,0,1);max(CTRFruit,100);increment(CTRvegetables,100,0,0,1);max(CTRvegetables,100);increment(CTRmeats,100,0,0,1);max(CTRmeats,100);increment(CTRgrain,100,0,0,1);max(CTRgrain,100);increment(CTRdairy,100,0,0,1);max(CTRdairy,100)" />
 
 <!-- Buffs and debuffs for food -->
 

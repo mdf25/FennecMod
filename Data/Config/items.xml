@@ -11633,7 +11633,29 @@ Mesh files no longer used:
 	<property name="Group" value="Food/Cooking"/>
 </item>
 
-
+<item id="880" name="awesomeSauce">
+	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="250"/> <!-- STK drink -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="100"/>
+		<property name="Gain_stamina" value="100"/>
+		<property name="Gain_food" value="100"/>
+		<property name="Gain_water" value="100"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeAwesomeSauce"/>
+		<property name="Debuff" value="rabies0,rabies1,rabies2,rabies3,infection,infection1,infection2,infection3,dysentery,dysentery2" />
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
 
 
 
@@ -11960,6 +11982,51 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="shotgunSlug"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
+	</property>
+</item>
+
+<item id="960" name="bookScience"> <!-- ammo crafting -->
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="1500"/>
+	<property name="Weight" value="5" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="craftSkillScience,craftSkillScience,craftSkillScience"/>
+	</property>
+</item>
+
+<item id="961" name="bookToolSmithing"> <!-- ammo crafting -->
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="1500"/>
+	<property name="Weight" value="5" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="craftSkillTools,craftSkillTools,craftSkillTools"/>
+	</property>
+</item>
+
+<item id="962" name="bookWeaponSmithing"> <!-- ammo crafting -->
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="1500"/>
+	<property name="Weight" value="5" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="craftSkillWeapons,craftSkillWeapons,craftSkillWeapons"/>
+	</property>
+</item>
+
+<item id="963" name="bookGunSmithing"> <!-- ammo crafting -->
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="1500"/>
+	<property name="Weight" value="5" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="craftSkillGuns,craftSkillGuns,craftSkillGuns"/>
+	</property>
+</item>
+
+<item id="964" name="bookArmorCrafting"> <!-- ammo crafting -->
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="1500"/>
+	<property name="Weight" value="5" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="craftSkillArmor,craftSkillArmor,craftSkillArmor"/>
 	</property>
 </item>
 
