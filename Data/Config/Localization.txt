@@ -1134,6 +1134,29 @@ zombieSteve,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wieder
 zombieSteveCrawler,entityclasses,Entity,KgNone,Crawler,Rampeur,Kriecher,,Oruga
 zombieWightFeral,entityclasses,Entity,KgNone,Feral Wight,Rôdeur féroce,Wilder Streuner,,Caminante salvaje
 zombieYo,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
+zombieArleneNS,entityclasses,Entity,KgNone,Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
+zombieBoeNS,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
+zombieBurntNS,entityclasses,Entity,KgNone,Burn Victim,Calciné,Brandopfer,,Víctima quemada
+zombieDarleneNS,entityclasses,Entity,KgNone,Decayed Mother,Mère décomposée,Verweste Mutter,,Madre podrida
+zombieFatCopNS,entityclasses,Entity,KgNone,Infected Policeman,Policier infecté,Infizierter Polizist,,Policía infectado
+zombieJoeNS,entityclasses,Entity,KgNone,Festering Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
+zombieMarleneNS,entityclasses,Entity,KgNone,Departed Woman,Défunte,Verstorbene Frau,,Mujer difunta
+zombieMoeNS,entityclasses,Entity,KgNone,Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
+zombieNurseNS,entityclasses,Entity,KgNone,Plagued Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
+zombieSpiderNS,entityclasses,Entity,KgNone,Spider Zombie,Zombie araignée,Spinnen-Zombie,,Araña zombi
+zombieSteveNS,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
+zombieSteveCrawlerNS,entityclasses,Entity,KgNone,Crawler,Rampeur,Kriecher,,Oruga
+zombieWightFeralNS,entityclasses,Entity,KgNone,Feral Wight,Rôdeur féroce,Wilder Streuner,,Caminante salvaje
+zombieYoNS,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
+zombieArleneFrozen,entityclasses,Entity,KgNone,Frozen Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
+zombieBoeFrozen,entityclasses,Entity,KgNone,Frozen Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
+zombieDarleneFrozen,entityclasses,Entity,KgNone,Frozen Mother,Mère décomposée,Verweste Mutter,,Madre podrida
+zombieJoeFrozen,entityclasses,Entity,KgNone,Icy Cadaver,Cadavre purulent,Eitrige Leiche,,Cadáver descompuesto
+zombieMarleneFrozen,entityclasses,Entity,KgNone,Frozen Woman,Défunte,Verstorbene Frau,,Mujer difunta
+zombieMoeFrozen,entityclasses,Entity,KgNone,Frozen Bloated Walker,Rôdeur obèse,Aufgedunsener Streuner,,Caminante hinchado
+zombieNurseFrozen,entityclasses,Entity,KgNone,Icy Nurse,Infirmière pestiférée,Verseuchte Krankenschwester,,Enfermera infestada
+zombieSteveFrozen,entityclasses,Entity,KgNone,Reanimated Frozen Corpse,Corps réanimé,Wiederbelebte Leiche,,Cadáver reanimado
+zombieSteveCrawler,entityclasses,Entity,KgNone,Crawler,Rampeur,Kriecher,,Oruga
 animalZombieVulture,entityclasses,Entity,New,Zombie Vulture,,,,
 playersBackpack,entityclasses,Entity Info,KgNone,{0}'s backpack,Sac à dos de {0},Rucksack von {0},,La mochila de {0}
 44MagBullet,items,Ammo,EnChanged,.44 Magnum Round (Ammo),Cartouches de .44 magnum,.44 Magnum Patrone (Mun),,Balas para Magnum 44
@@ -4365,6 +4388,57 @@ zombieUtilityWorker,entityclasses,Entity,New,Utility Worker Zombie,,,,
 zombieUtilityWorkerFeral,entityclasses,Entity,New,Feral Utility Worker,,,,
 zombieWightFeralRadiated,entityclasses,Entity,New,Feral Radiated Wight,,"Wilder Streuner, verstrahlt",,
 zombieYoFeral,entityclasses,Entity,New,Feral Carcass,,,,
+zombieArleneFeralNS,entityclasses,Entity,New,Feral Putrid Girl,,,,
+zombieBikerNS,entityclasses,Entity,New,Zombie Biker,,Zombie Biker,,
+zombieBoeFeralNS,entityclasses,Entity,New,Feral Infected Survivor,,,,
+zombieCheerleaderNS,entityclasses,Entity,New,Cheerleader Zombie,,,,
+zombieCheerleaderFeralNS,entityclasses,Entity,New,Feral Cheerleader Zombie,,,,
+zombieDarleneFeralNS,entityclasses,Entity,New,Feral Mother,,,,
+zombieFarmerNS,entityclasses,Entity,New,Zombie Farmer,,,,
+zombieFarmerFeralNS,entityclasses,Entity,New,Feral Zombie Farmer,,,,
+zombieFatCopFeralNS,entityclasses,Entity,New,Feral Policeman,,,,
+zombieFatCopFeralRadiatedNS,entityclasses,Entity,New,Feral Radiated Policeman,,,,
+zombieFatHawaiianNS,entityclasses,Entity,New,Disturbed Tourist,,Gestörter Tourist,,
+zombieFatHawaiianFeralNS,entityclasses,Entity,New,Feral Tourist,,,,
+zombieFemaleFatNS,entityclasses,Entity,New,Hungry Zombie,,,,
+zombieFemaleFatFeralNS,entityclasses,Entity,New,Feral Hungry Zombie,,,,
+zombieFootballPlayerNS,entityclasses,Entity,New,Team Z Player,,,,
+zombieJoeFeralNS,entityclasses,Entity,New,Feral Cadaver,,,,
+zombieMaleHazmatNS,entityclasses,Entity,New,Hazardous Worker,,,,
+zombieMarleneFeralNS,entityclasses,Entity,New,Feral Woman,,,,
+zombieMoeFeralNS,entityclasses,Entity,New,Feral Bloated Walker,,,,
+zombieNurseFeralNS,entityclasses,Entity,New,Feral Nurse,,,,
+zombieOldTimerNS,entityclasses,Entity,New,Zombie Cowboy,,Zombie Cowboy,,
+zombieOldTimerFeralNS,entityclasses,Entity,New,Feral Zombie Cowboy,,,,
+zombieScreamerFeralNS,entityclasses,Entity,New,Feral Screamer,,,,
+zombieSkateboarderNS,entityclasses,Entity,New,Skater Punk Zombie,,,,
+zombieSkateboarderFeralNS,entityclasses,Entity,New,Feral Skater Zombie,,,,
+zombieSnowFeralNS,entityclasses,Entity,New,Feral Frozen Lumberjack,,,,
+zombieSoldierNS,entityclasses,Entity,New,Fallen Soldier,,,,
+zombieSoldierFeralNS,entityclasses,Entity,New,Feral Soldier,,,,
+zombieSpiderFeralNS,entityclasses,Entity,New,Feral Spider Zombie,,,,
+zombieSpiderFeralRadiatedNS,entityclasses,Entity,New,Feral Radiated Spider Zombie,,,,
+zombieSteveCrawlerFeralNS,entityclasses,Entity,New,FeralCrawler,,,,
+zombieSteveFeralNS,entityclasses,Entity,New,Feral Corpse,,,,
+zombieStripperNS,entityclasses,Entity,New,Zombie Stripper,,Untote Stripperin,,
+zombieStripperFeralNS,entityclasses,Entity,New,Feral Stripper,,,,
+zombieUtilityWorkerNS,entityclasses,Entity,New,Utility Worker Zombie,,,,
+zombieUtilityWorkerFeralNS,entityclasses,Entity,New,Feral Utility Worker,,,,
+zombieWightFeralRadiatedNS,entityclasses,Entity,New,Feral Radiated Wight,,"Wilder Streuner, verstrahlt",,
+zombieYoFeralNS,entityclasses,Entity,New,Feral Carcass,,,,
+zombieBikerFrozen,entityclasses,Entity,New,Frozen Biker,,Zombie Biker,,
+zombieCheerleader,entityclasses,Entity,New,Frozen Cheerleader,,,,
+zombieFarmer,entityclasses,Entity,New,Frozen Farmer,,,,
+zombieFatHawaiian,entityclasses,Entity,New,Lost Tourist,,Gestörter Tourist,,
+zombieFemaleFat,entityclasses,Entity,New,Frozen Hungry Zombie,,,,
+zombieFootballPlayer,entityclasses,Entity,New,Frozen Football Player,,,,
+zombieMaleHazmat,entityclasses,Entity,New,Frozen Hazardous Worker,,,,
+zombieOldTimer,entityclasses,Entity,New,Frozen Cowboy,,Zombie Cowboy,,
+zombieSkateboarder,entityclasses,Entity,New,Frozen Skater Punk Zombie,,,,
+zombieSoldier,entityclasses,Entity,New,Frozen Soldier,,,,
+zombieStripper,entityclasses,Entity,New,Frozen Stripper,,Untote Stripperin,,
+zombieUtilityWorker,entityclasses,Entity,New,Frozen Utility Worker Zombie,,,,
+zombieWightFeralFrozen,entityclasses,Entity,New,Frozen Wight,,"Wilder Streuner, verstrahlt",,
 blockcommand_options,blocks,Radial,New,Options,,Optionen,,
 flagstoneWedgeIncline,blocks,Block,New,Flagstone Wedge Incline,,Steinplatten Dachvorsprung,,
 brickWedgeTipCNRFullBottom,blocks,Block,New,Brick Wedge Full Corner Bottom,,Ziegel Schrägenspitze Komplette Ecke Unten,,
