@@ -4170,8 +4170,6 @@ Mesh files no longer used:
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="250"/>
-	<property name="CustomIcon" value="shotgunShell" />
-	<property name="CustomIconTint" value="ffe229" />
  	<property name="EconomicValue" value="25"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
@@ -4187,8 +4185,6 @@ Mesh files no longer used:
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="250"/>
-	<property name="CustomIcon" value="shotgunShell" />
-	<property name="CustomIconTint" value="ff7a29" />
  	<property name="EconomicValue" value="45"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
