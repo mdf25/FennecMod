@@ -8198,7 +8198,7 @@ Mesh files no longer used:
 	<property name="Group" value="Science,Basics"/>
 	<property name="DescriptionKey" value="bandageDesc"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="ActionExp" value="20"/>
 	<property name="PickupJournalEntry" value="firstAidTip"/>
 </item>
@@ -8823,6 +8823,7 @@ Mesh files no longer used:
 		<property name="Buff" value="eatSnowberryExtractTrigger,ConsumeFruit3"/>
 	</property>
 	<property name="Group" value="Science"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="727" name="corn">
@@ -8979,6 +8980,28 @@ Mesh files no longer used:
 		<property name="Gain_food" value="15"/>
 		<property name="Buff" value="EatRottingFood1,eatFood_4_Trigger,ConsumeMeats5,ConsumeGrain3"/>
 		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="734" name="grilledCheese">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="32"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="9"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeGrain5,ConsumeDairy5"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0.05"/>
+		<property name="Sound_start" value="player_eating"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
 	</property>
 	<property name="Group" value="Food/Cooking"/>
 </item>
@@ -9573,6 +9596,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="788" name="grainAlcohol">
@@ -9596,6 +9620,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Chemicals"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="789" name="chickenAndSweetcornSoup">
@@ -10282,6 +10307,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="30"/>
 	<property name="CraftingIngredientTime" value="15"/>
 	<property name="Group" value="Food/Cooking"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="822" name="bottledBoiledWater">
@@ -11653,7 +11679,113 @@ Mesh files no longer used:
 	<property name="Group" value="Food/Cooking"/>
 </item>
 
+<item id="881" name="macaroniCheese">
+	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="65"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="15"/>
+		<property name="Gain_water" value="5"/>
+		<property name="Gain_wellness" value="0.15"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeDairy10,ConsumeGrain10"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
 
+<item id="882" name="cheeseDoughBalls">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="65"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0.05"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Buff" value="eatFood_12_Trigger,ConsumeDairy5,ConsumeGrain10"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="883" name="apple">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="65"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Gain_water" value="1"/>
+		<property name="Gain_wellness" value="0.01"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeFruit5"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="884" name="applePie">
+	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="65"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="10"/>
+		<property name="Gain_food" value="18"/>
+		<property name="Gain_water" value="5"/>
+		<property name="Gain_wellness" value="0.2"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Buff" value="eatFood_3_Trigger,ConsumeGrain10,ConsumeFruit15"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="885" name="appleJuice">
+	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="250"/> <!-- STK drink -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="18"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeFruit10"/>
+		<property name="Debuff" value="dysentery" />
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
 
 <!-- * * * * * * * * * * recipes, books, and schematics * * * * * * * * * * -->
 
@@ -13519,6 +13651,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="70"/>
 	<property name="Group" value="Building,Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1324" name="concreteMix">
@@ -13571,7 +13704,7 @@ Mesh files no longer used:
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="Group" value="Resources,Clothing"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
 </item>
 
 <item id="1328" name="paper"> <!-- scrap material -->
@@ -13585,6 +13718,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1329" name="scrapCopper">
@@ -13628,6 +13762,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 </item>
@@ -13643,6 +13778,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 </item>
@@ -13658,6 +13794,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 </item>
@@ -13738,6 +13875,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 </item>
@@ -13756,6 +13894,7 @@ Mesh files no longer used:
 	<property name="RepairTime" value="0.5"/>
 	<property name="RepairAmount" value="20"/>
 	<property name="CraftingIngredientTime" value="0.2"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons" />
 </item>
 
 <item id="1340" name="feather">
@@ -13819,6 +13958,7 @@ Mesh files no longer used:
 	<property name="RepairAmount" value="100"/>
 	<property name="LootExpValue" value="1"/>
 	<property name="CraftingIngredientTime" value="0.25"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1345" name="coal">
@@ -13982,6 +14122,7 @@ Mesh files no longer used:
 	<property name="RepairAmount" value="100"/>
 	<property name="LootExpValue" value="1"/>
 	<property name="CraftingIngredientTime" value="0.25"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1358" name="macheteBlade">
@@ -14064,6 +14205,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="24"/>
 	<property name="CraftingIngredientTime" value="15"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 	<property name="Group" value="Chemicals"/>
 </item>
 
@@ -14091,6 +14233,7 @@ Mesh files no longer used:
 	<property name="RepairAmount" value="100"/>
 	<property name="LootExpValue" value="1"/>
 	<property name="CraftingIngredientTime" value="0.25"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1367" name="canEmpty">
@@ -14172,6 +14315,7 @@ Mesh files no longer used:
 	<property name="RepairAmount" value="100"/>
 	<property name="LootExpValue" value="1"/>
 	<property name="CraftingIngredientTime" value="0.25"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 
@@ -14548,6 +14692,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1399" name="calciumNitrateSolution">
@@ -14558,6 +14703,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1400" name="weldingFuel">
@@ -14713,6 +14859,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1413" name="coffeeBeans">
@@ -14825,6 +14972,7 @@ Mesh files no longer used:
 		<property name="Blockname" value="candleWallPlayer"/>
 	</property>
 	<property name="Group" value="Basics,Decor/Miscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1431" name="smallEngine">
@@ -14943,6 +15091,7 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="22"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1442" name="cookingGrill">
@@ -15301,6 +15450,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1531" name="groundIronDustPure">
@@ -15315,6 +15465,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1532" name="groundCopperDust">
@@ -15329,6 +15480,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1533" name="groundCopperDustPure">
@@ -15343,6 +15495,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1534" name="groundZincDust">
@@ -15357,6 +15510,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1535" name="groundZincDustPure">
@@ -15371,6 +15525,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1536" name="groundUraniumDust">
@@ -15385,6 +15540,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1537" name="groundUraniumDustPure">
@@ -15399,6 +15555,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1538" name="groundBrassDust">
@@ -15413,6 +15570,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1539" name="groundBrassDustPure">
@@ -15427,6 +15585,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1540" name="groundLeadDust">
@@ -15441,6 +15600,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1541" name="groundLeadDustPure">
@@ -15455,6 +15615,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 
@@ -15501,7 +15662,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1"/>
 	<property name="EconomicBundleSize" value="50" />
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
 <item id="1600" name="queenBee">
@@ -15525,7 +15686,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 	</property>
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 
 <item id="1601" name="workerBee">
@@ -15537,7 +15698,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50" />
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 
 <item id="1602" name="princessBee">
@@ -15549,7 +15710,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1"/>
 	<property name="EconomicBundleSize" value="50" />
 	<property name="Group" value="Resources"/>
-	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 
 <item id="1603" name="honeycomb">
@@ -15561,6 +15722,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="20" />
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1604" name="workerBeeRoasted">
