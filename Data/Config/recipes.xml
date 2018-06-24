@@ -4172,7 +4172,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cheese"				count="2" />
 </recipe>
 
-<recipe name="macaroniChese" count="1" craft_area="working_oven" craft_time="20">
+<recipe name="macaroniCheese" count="1" craft_area="working_oven" craft_time="20">
 	<ingredient name="canPasta"				count="1" />
 	<ingredient name="cheese"				count="1" />
 </recipe>
