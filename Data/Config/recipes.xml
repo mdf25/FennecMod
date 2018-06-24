@@ -4165,12 +4165,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="grilledCheese" count="3" craft_area="campfire" craft_tool="cookingGrill" craft_time="60">
 	<ingredient name="bread" 				count="1" />
 	<ingredient name="cheese"				count="2" />
-<recipe>
+</recipe>
 
 <recipe name="grilledCheese" count="3" craft_area="campfire" craft_time="30">
 	<ingredient name="bread" 				count="1" />
 	<ingredient name="cheese"				count="2" />
-<recipe>
+</recipe>
 
 <recipe name="macaroniChese" count="1" craft_area="working_oven" craft_time="20">
 	<ingredient name="canPasta"				count="1" />
