@@ -1496,7 +1496,7 @@
 	repeatable="false" category_key="quest" offer_key="quest_carpenter_3_offer" difficulty="easy">
 		<objective type="ZombieKill" value="100" />	
 		<requirement type="Group" id="requirementGroupAxes1" value="OR">
-			<requirement type="Holding" id="carpentersAze" 	/>
+			<requirement type="Holding" id="carpentersAxe" 	/>
 			<requirement type="Holding" id="fireaxeCopper" 	/>
 			<requirement type="Holding" id="fireaxePigIron" />
 			<requirement type="Holding" id="fireaxeIron" 	/>

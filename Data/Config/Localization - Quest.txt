@@ -655,7 +655,7 @@ quest_carpenter_1_offer,,Quest Info,Reordered,"Gain your starting skills from th
 
 quest_carpenter_2,,Quest Info,Reordered,"Carpenter: Quest 1/4",,,,
 quest_carpenter_2_subtitle,,Quest Info,Reordered,"Getting Wood",,,,
-quest_carpenter_2_offer,,Quest Info,Reordered,"As a carpenter, you know the value of wood and how useful it can be. Though at this time, you don't really have any to use. Better get out there and chop some trees. And whilst you're out there, get yourself an axe!",,,,
+quest_carpenter_2_offer,,Quest Info,Reordered,"As a carpenter, you know the value of wood and how useful it can be. Though at this time, you don't really have any to use. Better get out there and chop some trees and gather wood logs. And whilst you're out there, get yourself an axe!",,,,
 
 quest_carpenter_3,,Quest Info,Reordered,"Carpenter: Quest 2/4",,,,
 quest_carpenter_3_subtitle,,Quest Info,Reordered,"Split Like A Coconut",,,,
