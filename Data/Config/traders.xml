@@ -410,6 +410,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="sinkUpgradeKitSchematic" />
 			<item name="ovenUpgradeKitSchematic" />
 			<item name="squeezerWorkbenchSchematic" />
+			<item name="toiletUpgradeKitSchematic" />
 		</trader_item_group>
 
 		<trader_item_group name="paintMagazines" count="1">

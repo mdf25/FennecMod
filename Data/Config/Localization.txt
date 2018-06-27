@@ -1690,7 +1690,7 @@ wood,items,Item,KgNone,Wood,Bois,Holz,,Madera
 woodDesc,items,Item,KgNone,A piece of wood. Great for building tools and constructing wood frames for building.,Un morceau de bois. Idéal pour fabriquer des outils et construire des structures en bois pour les constructions.,"Ein Stück Holz. Ideal, um Werkzeuge und Holzrahmen für den Bau herzustellen.",,Un trozo de madera. Ideal para construir herramientas y estructuras de madera para edificios.
 yuccaFibers,items,Item,KgNone,Plant Fibers,Fibres végétales,Pflanzenfaser,,Fibra vegetal
 aloeCream,items,Medical,KgNone,Aloe Cream,Pommade d'aloe vera,Aloe-Creme,,Crema de aloe
-aloeCreamDesc,items,Medical,KgNone,Aloe cream can be used to craft first aid bandages.,La pommade d'aloe vera sert à fabriquer des bandages médicaux.,Mit Aloe-Creme können Erste-Hilfe-Bandagen gefertigt werden.,,La crema de aloe se puede usar para elaborar vendajes de primeros auxilios.
+aloeCreamDesc,items,Medical,KgNone,"Aloe cream can be used to craft first aid bandages, or be directly applied for light pain relief. It can be crafted in your backpack, or for more efficient crafting try a juicer on a kitchen workbench, or an industrial squeezer for best results.",La pommade d'aloe vera sert à fabriquer des bandages médicaux.,Mit Aloe-Creme können Erste-Hilfe-Bandagen gefertigt werden.,,La crema de aloe se puede usar para elaborar vendajes de primeros auxilios.
 antibiotics,items,Medical,KgNone,Antibiotics,Antibiotiques,Antibiotika,,Antibióticos
 antibioticsDesc,items,Medical,KgNone,Antibiotics can cure infections and dysentery. Can be crafted in a beaker at a campfire.,Les antibiotiques peuvent soigner les infections et la dysenterie. Ils peuvent être fabriqués dans un bécher sur le feu de camp.,Antibiotika heilen Infektionen und Dysenterie. Kann in einem Messbecher am Lagerfeuer gefertigt werden.,,Los antibióticos pueden curar infecciones y la disentería. Se pueden elaborar en un matraz en una fogata.
 bandage,items,Medical,KgNone,Bandage,Bandage,Verband,,Vendaje
@@ -5422,6 +5422,10 @@ plumbingName,progression,Perk,EnChanged,"Plumbing",,,,
 plumbingDesc,progression,Perk,EnChanged,"Learn how to make sink upgrade kits to create a working sink.",,,,
 ovenRepairName,progression,Perk,EnChanged,"Oven Repair",,,,
 ovenRepairDesc,progression,Perk,EnChanged,"Learn how to make oven upgrade kits to create a working oven.",,,,
+toiletRepairName,progression,Perk,EnChanged,"Know Your Crap",,,,
+toiletRepairDesc,progression,Perk,EnChanged,"Learn how to make toilet upgreade and removal kits to create a working toilet for harvesting your very own beautiful turds.",,,,
+
+
 IronToolCraftingName,progression,Perk,EnChanged,"Iron Component Crafting",,,,
 IronToolCraftingDesc,progression,Perk,EnChanged,"Learn how to shape iron into cooking pots, grills and anvils with this perk.",,,,
 AxesName,progression,Perk,EnChanged,"Axes",,,,
@@ -5570,6 +5574,9 @@ sinkUpgradeKitSchematic,items,Schematic,KgNone,"Plumbing for Blind Buggers",,,,
 sinkUpgradeKitSchematicDesc,items,Schematic,KgNone,"Learn how to repair sinks by making sink upgrade kits. To read this book you require Tool Smithing 5 and Science 4.",,,,
 ovenUpgradeKitSchematic,items,Schematic,KgNone,"The Fox Guide to Oven Repair",,,,
 ovenUpgradeKitSchematicDesc,items,Schematic,KgNone,"Learn how to repair ovens by making oven upgrade kits. To read this book you require Tool Smithing 5 and Science 4.",,,,
+toiletUpgradeKitSchematic,items,Schematic,KgNone,"Lavatory Upgrades for Posh Ponces",,,,
+toiletUpgradeKitSchematicDesc,items,Schematic,KgNone,"Learn how to repair toilets by making toilet upgrade kits. To read this book you require Tool Smithing 5 and Science 4.",,,,
+
 
 bottledBoiledWater,items,Consumable,KgNone,"Bottled Impure Water",,,,
 bottledBoiledWaterDesc,items,Consumable,KgNone,"This water is safer to drink after boiling but it may still contain some nasties in there...",,,,
@@ -5605,6 +5612,23 @@ GrainVitalityTooltip,buffs,buff,KgNone,"Eating so much grain has given you stren
 DairyVitality,buffs,buff,KgNone,"Dairy Vitality",,,,
 DairyVitalityDesc,buffs,buff,KgNone,"Cows everywhere have been put in their place. You feel stronger from consuming lots of dairy.",,,,
 DairyVitalityTooltip,buffs,buff,KgNone,"Eating so much dairy has given you strength.",,,,
+
+appleJuiceCooling,Buffs,buff,KgNone,"Apple Juice Cooling",,,,
+appleJuiceCoolingDesc,Buffs,buff,KgNone,"Refreshing apple juice is a good way to keep cool in warmer environments.",,,,
+appleJuiceCoolingTooltip,Buffs,buff,KgNone,"That apple juice sure was refreshing!",,,,
+appleCider,items,Food,KgNone,"Apple Cider",,,,
+appleCiderDesc,items,Food,KgNone,"Apple cider makes a good alternative to beer, especially if you prefer the taste!",,,,
+
+
+aloeJuice,items,Food,KgNone,"Aloe Vera Juice",,,,
+aloeJuiceDesc,items,Food,KgNone,"If you've consumed anything rotten or poisonous recently, it may be good to use this to speed up the rate at which your symptoms go away.",,,,
+
+AloeBenefits,buffs,buff,KgNone,"Aloe Cleansing",,,,
+AloeBenefitsDesc,buffs,buff,KgNone,"Consuming aloe juice can definitely be good for your insides. But, should be drank in moderation.",,,,
+AloeBenefitsTooltip,buffs,buff,KgNone,"Your innards feel better already.",,,,
+AloeLaxative,buffs,buff,KgNone,"Laxative",,,,
+AloeLaxativeDesc,buffs,buff,KgNone,"Consuming too much aloe juice is working a little 'too' well. You may find you need to poop a little more often than usual.",,,,
+AloeLaxativeTooltip,buffs,buff,KgNone,"You have consumed too much aloe juice!",,,,
 
 yuccaRush,buffs,buff,KgNone,"Yucca Rush!",,,,
 yuccaRushDesc,buffs,buff,KgNone,"All that sugar from the yucca fruit is giving you a rush of energy! But remember, too much of a good thing...",,,,
@@ -5820,7 +5844,12 @@ workingOvenDesc,blocks,Block,KgNone,"A working wall oven that you can use to mak
 sinkUpgradeKit,items,resources,KgNone,"Sink Upgrade Kit",,,,
 sinkUpgradeKitDesc,items,resources,KgNone,"You can use this on any old sink to upgrade it into a working variant to provide clean water. You need to use a wrench to upgrade it - other tools will not work. Once the sink is upgraded, left click with an empty jar to get clean water.",,,,
 ovenUpgradeKit,items,resources,KgNone,"Oven Upgrade Kit",,,,
-ovenUpgradeKitDesc,items,resources,KgNone,"You can use this on any wall oven to upgrade it into a working variant. The working oven gives access to some of the more advanced cooking recipes and is more efficient than the campfire.",,,,
+ovenUpgradeKitDesc,items,resources,KgNone,"You can use this on any wall oven to upgrade it into a working variant. The working oven gives access to some of the more advanced cooking recipes and is more efficient than the campfire. Use a wrench to apply the upgrade kit.",,,,
+toiletUpgradeKit,Items,resource,KgNone,"Toilet Upgrade Kit",,,,
+toiletUpgradeKitDesc,Items,resource,KgNone,"You can use this on any toilet to upgrade it into a working variant, capable of collecting your lovely turds! Use a wrench to apply the upgrade kit.",,,,
+toiletRemovalKit,Items,resource,KgNone,"Toilet Removal Kit",,,,
+toiletRemovalKitDesc,Items,reousce,KgNone,"Need to remove that toilet without the contents spraying everywhere? Grab a wrench and apply this kit to an upgraded toilet to box it up and remove it.",,,,
+
 
 juicer,items,Tools,KgNone,"Juicer",,,,
 juicerDesc,items,Tools,KgNone,"A juicer can be placed on a kitchen workbench and will allow you to make fruit juices more effectively than doing it purely by hand. Save those fruit and get more juice! Warning: Contains small parts, not suitable for blind buggers.",,,,
@@ -5955,6 +5984,10 @@ oldArmorBoots,Items,Clothing,KgNone,"Old Boots",,,,
 oldHelmet,Items,Clothing,KgNone,"Old Helmet",,,,
 oldArmorDesc,Items,Clothing,KgNone,"Old armour does offer some protection, but it's not the most durable stuff in the world.",,,,
 
+healingAgent,items,Medical,KgNone,"Healing Agent",,,,
+healingAgentDesc,items,Medical,KgNone,"Combining aloe cream with turpentine extract yields a particularly potent mix which can heal wounds quickly.",,,,
+firstAidBandagePotent,Items,Medical,KgNone,"Strong First Aid Bandage",,,,
+firstAidBandagePotentDesc,Items,Medical,KgNone,"When a regular first aid bandage just won't cut it, try this for a quicker heal.",,,,
 
 
 schematicBag,Blocks,Block,KgNone,"Bag of Schematics",,,,
@@ -5992,6 +6025,9 @@ bookGunSmithingDesc,Items,Schematics,KgNone,"Step 1: Point gun at self. Step 2: 
 bookArmorCrafting,Items,Schematics,KgNone,"Armor Crafting Book",,,,
 bookArmorCraftingDesc,Items,Schematics,KgNone,"Who knew that making armour could be so complicated? Well, guess there's some useful stuff in here...",,,,
 
-
-
-
+cntToiletWorking,Blocks,block,KgNone,"Fancy Toilet (Working)",,,,
+cntToiletWorkingLootable,Blocks,block,KgNone,"Fancy Toilet (Working, Dirty)",,,,
+cntToiletWorkingRecharge,Blocks,block,KgNone,"Fancy Toilet (Working)",,,,
+cntToiletWorkingDesc,Blocks,Block,KgNone,"A working toilet that you can poop on and collect your turds! MmmmMMmmMMMmm, Lovely!",,,,
+cntToiletBox,Blocks,block,KgNone,"Boxed Working Toilet",,,,
+cntToiletBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your working toilet",,,,

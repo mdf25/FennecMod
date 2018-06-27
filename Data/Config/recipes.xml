@@ -201,6 +201,52 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="aloePlant" count="4"/>
 </recipe>
 
+<recipe name="aloeCream" count="1" craft_exp_gain="5" craft_area="kitchen_workbench" craft_tool="juicer">
+	<ingredient name="aloePlant" count="2"/>
+</recipe>
+
+<recipe name="aloeCream" count="1" craft_exp_gain="5" craft_area="squeezer_workbench">
+	<ingredient name="aloePlant" count="1"/>
+</recipe>
+
+
+<recipe name="aloeJuice" count="1" craft_exp_gain="10">
+	<ingredient name="aloePlant" count="5"/>
+	<ingredient name="emptyJar"	 count="1"/>
+</recipe>
+
+<recipe name="aloeJuice" count="1" craft_exp_gain="10" craft_area="kitchen_workbench" craft_tool="juicer">
+	<ingredient name="aloePlant" count="3"/>
+	<ingredient name="emptyJar"	 count="1"/>
+</recipe>
+
+<recipe name="aloeJuice" count="1" craft_exp_gain="10" craft_area="squeezer_workbench">
+	<ingredient name="aloePlant" count="1"/>
+	<ingredient name="emptyJar"	 count="1"/>
+</recipe>
+
+
+<recipe name="appleCider" count="1" craft_exp_gain="100" craft_area="chemistryStation" craft_time="1200">
+	<ingredient name="appleJuice" count="1" />
+</recipe>
+
+
+<recipe name="healingAgent" count="1" craft_exp_gain="10" craft_area="chemistryStation">
+	<ingredient name="aloeCream" 		count="1" />
+	<ingredient name="vegetableCream" 	count="1" />
+</recipe>
+
+<recipe name="healingAgent" count="1" craft_exp_gain="10" craft_area="campfire" craft_tool="beaker">
+	<ingredient name="aloeCream" 		count="3" />
+	<ingredient name="vegetableCream" 	count="3" />
+</recipe>
+
+<recipe name="firstAidBandagePotent" count="1" craft_exp_gain="15" >
+	<ingredient name="healingAgent"		count="1" />
+	<ingredient name="cloth"			count="2" />
+</recipe>
+
+
 <recipe name="blueberryJuice" count="1" craft_time="20">
 	<ingredient name="blueberries" count="5" />
 	<ingredient name="emptyJar"	count="1" />
@@ -4988,6 +5034,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="mechanicalParts" 	count="10" />
 	<ingredient name="wood"				count="30" />
 	<ingredient name="clawHammer"		count="1"  />			
+</recipe>
+
+<recipe name="toiletUpgradeKit" count="1" craft_time="120" craft_exp_gain="30">
+	<ingredient name="forgedIron" 		count="5" />
+	<ingredient name="mechanicalParts" 	count="2" />
+	<ingredient name="shortMetalPipe"	count="3" />
+	<ingredient name="bucket"			count="1" />			
+</recipe>
+
+<recipe name="toiletRemovalKit" count="1" craft_time="120" craft_exp_gain="30">
+	<ingredient name="oil" 				count="1" />
+	<ingredient name="bucket"			count="1" />			
 </recipe>
 
 </recipes>

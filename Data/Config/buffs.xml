@@ -129,7 +129,7 @@ built-in buff variables:
 <buff id="isPlayer" buffif="+full > 0" />
 
 <!-- This buff is called on the first time the player spawns into the game and on respawning the player after each death. Can not add buffs. -->
-<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0);setvar(CTRyuccaConcentration,0);setvar(CTRsoyaConcentration,0);setvar(CTRvegetables,0);setvar(CTRfruit,0);setvar(CTRmeats,0);setvar(CTRgrain,0);setvar(CTRvitamins,0);setvar(CTRdairy,0);setvar(CTRpoop,0);setvar(CTRrottingFood,0)"/>
+<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0);setvar(CTRaloeConcentration,0);setvar(CTRyuccaConcentration,0);setvar(CTRsoyaConcentration,0);setvar(CTRvegetables,0);setvar(CTRfruit,0);setvar(CTRmeats,0);setvar(CTRgrain,0);setvar(CTRvitamins,0);setvar(CTRdairy,0);setvar(CTRpoop,0);setvar(CTRrottingFood,0)"/>
 
 <!-- Food group counters - decrease from 50 to 0 by 1 point every 2 ingame hours. So in 1 ingame day 12 points are lost. Vitamins are slower to decrease. -->
 
@@ -157,9 +157,22 @@ built-in buff variables:
 </buff>
 <buff id="pooping" duration="5" actions="increment(CTRpoop,-10,1,0,0);min(CTRpoop,0)" icon="ui_game_symbol_toilet" name_key="pooping" description_key="poopingDesc" tooltip_key="poopingTooltip" >
 	<modify id="1" buff="foodPoisoning" 			tickrate="3"/>
-	<modify id="1" buff="MetabolizeYucca"			tickrate="4"/>
-	<modify id="1" buff="metabolizeSnowberryBuff"	tickrate="2"/>
-	<modify id="1" buff="MetabolizeRottingFood"		tickrate="3"/>
+	<modify id="2" buff="MetabolizeYucca"			tickrate="4"/>
+	<modify id="3" buff="metabolizeSnowberryBuff"	tickrate="2"/>
+	<modify id="4" buff="MetabolizeRottingFood"		tickrate="3"/>
+	<modify id="5" buff="MetabolizeAloe"			tickrate="5"/>
+	<modify id="6" stat="water" 					amount="-1" rate="60" />
+	<modify id="7" stat="coretemp"					modifyValue="5"/>
+</buff>
+<buff id="poopingHeal" duration="2" actions="increment(CTRpoop,-10,1,0,0);min(CTRpoop,0)" icon="ui_game_symbol_toilet" name_key="pooping" description_key="poopingDesc" tooltip_key="poopingTooltip" >
+	<modify id="0" stat="health"					amount="1" rate="1.2" />
+	<modify id="1" buff="foodPoisoning" 			tickrate="3"/>
+	<modify id="2" buff="MetabolizeYucca"			tickrate="4"/>
+	<modify id="3" buff="metabolizeSnowberryBuff"	tickrate="2"/>
+	<modify id="4" buff="MetabolizeRottingFood"		tickrate="3"/>
+	<modify id="5" buff="MetabolizeAloe"			tickrate="5"/>
+	<modify id="6" stat="water" 					amount="-1" rate="60" />
+	<modify id="7" stat="coretemp"					modifyValue="5"/>
 </buff>
 
 
@@ -288,9 +301,20 @@ built-in buff variables:
 
 
 
-
-
-
+<!-- ALOE -->
+<buff id="ConsumeAloe" duration="1" actions="increment(CTRaloeConcentration,1,0,0,1)" />
+<buff id="MetabolizeAloe" buffif="CTRaloeConcentration greater 0" debuffif="CTRaloeConcentration less 1" actions="increment(CTRaloeConcentration,-1,600t,0,0)" 	/>
+<buff id="AloeBenefits" duration="0" buffif="CTRaloeConcentration greater 0" debuffif="CTRaloeConcentration less 1" causes="aloeJuice" type="healthup" icon="ui_game_symbol_aloe" name_key="AloeBenefits" description_key="AloeBenefitsDesc" tooltip_key="AloeBenefitsTooltip">
+	<modify id="1" buff="foodPoisoning" 			tickrate="3"/>
+	<modify id="2" buff="MetabolizeYucca"			tickrate="3"/>
+	<modify id="3" buff="metabolizeSnowberryBuff"	tickrate="3"/>
+	<modify id="4" buff="MetabolizeRottingFood"		tickrate="3"/>
+</buff> 
+<buff id="AloeLaxative" duration="0" buffif="CTRaloeConcentration greater 2" debuffif="CTRaloeConcentration less 1" actions="increment(@wellness, -0.2, 150t, 0, 0);debuff(AloeBenefits)" causes="aloeJuice" type="staminadown" icon="ui_game_symbol_dysentery" name_key="AloeLaxative" description_key="AloeLaxativeDesc" tooltip_key="AloeLaxativeTooltip">
+	<modify id="0" stat="stamina" amount="-1" rate="1"  />
+	<modify id="0" stat="speedmodifier" setValue="0.85" />
+	<modify id="1" buff="digestiveSystem" tickrate="5"  />
+</buff> 
 
 
 
@@ -477,6 +501,11 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="redTeaCooling" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_tea"
 	name_key="redTeaCooling" description_key="redTeaCoolingDesc" tooltip_key="redTeaCoolingTooltip" causes="redTea">
 	<modify id="1" stat="coretemp" modifyValue="-10"/>
+</buff>
+
+<buff id="appleJuiceCooling" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_tea"
+	name_key="appleJuiceCooling" description_key="appleJuiceCoolingDesc" tooltip_key="appleJuiceCoolingTooltip" causes="appleJuice">
+	<modify id="1" stat="coretemp" modifyValue="-15"/>
 </buff>
 
 <buff id="criticalBlunt" hitmask="body;head" critical="true" duration="1" icon="ui_game_symbol_stunned"
@@ -888,6 +917,7 @@ This requires a 50+ food bar:
 "D:\7DTD_Project\trunk\Assets\GUI\Textures\ui_game_symbol_electric_power.tga"
 "D:\7DTD_Project\trunk\Assets\GUI\Textures\ui_game_symbol_natural_healing.tga"
 -->
+
 
 <buff id="zombieRadiatedBuff40" duration="0" icon="ui_game_symbol_fire">
 	<modify id="0" stat="health" amount="10" rate="5" />

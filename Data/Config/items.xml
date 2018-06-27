@@ -2797,7 +2797,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="350"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit,toiletUpgradeKit,toiletRemovalKit"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10"/>
@@ -3762,7 +3762,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="100"/>
 		<property name="Upgrade_hit_offset" value="-1"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit,toiletUpgradeKit,toiletRemovalKit"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,5"/>
@@ -8358,6 +8358,36 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="afffaf"/>
 </item>
 
+<item id="664" name="healingAgent">
+	<property name="Meshfile" value="Items/Food/aloeCreamPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="EconomicValue" value="30"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK medical -->
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="30"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Sound_start" value="player_ointment"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="30"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Sound_start" value="player_ointment"/>
+	</property>
+	<property name="Group" value="Science"/>
+	<property name="ActionSkillGroup" value="Medicine"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="ActionExp" value="40"/>
+</item>
+
 <item id="665" name="vitamins">
 	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
 	<property name="Material" value="organic"/>
@@ -8569,6 +8599,35 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 </item>
 
+<item id="672" name="firstAidBandagePotent">
+	<property name="Extends" value="bandage"/>
+	<property name="EconomicValue" value="15"/>
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="30"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Sound_start" value="player_ointment"/>
+		<property name="Buff" value="firstAid"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="30"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Sound_start" value="player_ointment"/>
+		<property name="Buff" value="firstAid"/>
+	</property>
+	<property name="DescriptionKey" value="firstAidBandagePotentDesc"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="CraftingIngredientExp" value="2"/>
+	<property name="ActionExp" value="60" />
+</item>
+
 <item id="700" name="foodHoney">
 	<property name="Meshfile" value="Items/Food/honeyPrefab"/>
 	<property name="Material" value="organic"/>
@@ -8632,6 +8691,28 @@ Mesh files no longer used:
 		<property name="Gain_wellness" value="0.1"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="yuccaJuiceCooling,extinguishFireBuff,DrinkYuccaJuice,ConsumeFruit10"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="703" name="aloeJuice">
+	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="250"/> <!-- STK drink -->
+	<property name="EconomicValue" value="36"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="3"/>
+		<property name="Gain_water" value="10"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_wellness" value="0.05"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeAloe"/>
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -11764,7 +11845,7 @@ Mesh files no longer used:
 </item>
 
 <item id="885" name="appleJuice">
-	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
+	<property name="Meshfile" value="Items/Food/redTeaPrefab"/>
 	<property name="Material" value="glass"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="250"/> <!-- STK drink -->
@@ -11780,8 +11861,31 @@ Mesh files no longer used:
 		<property name="Gain_food" value="0"/>
 		<property name="Gain_water" value="18"/>
 		<property name="Sound_start" value="player_drinking"/>
-		<property name="Buff" value="extinguishFireBuff,ConsumeFruit10"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeFruit10,appleJuiceCooling"/>
 		<property name="Debuff" value="dysentery" />
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="886" name="appleCider">
+	<property name="Meshfile" value="Items/Food/bottledBeerPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="250"/> <!-- STK drink -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="60"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="2"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeFruit5,DrinkBeer"/>
 		<property name="Create_item" value="emptyJar"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/>
@@ -12625,6 +12729,16 @@ Mesh files no longer used:
 	<property name="Weight" value="15" />
 	<property class="Action1">
 		<property name="Skills_to_gain" value="squeezer"/>
+	</property>
+</item>
+
+<item id="1046" name="toiletUpgradeKitSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="toiletUpgradeKitSchematicDesc"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="Weight" value="10" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="toiletRepair"/>
 	</property>
 </item>
 
@@ -14944,6 +15058,28 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1"/>
 	<property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="50"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+
+<item id="1420" name="toiletUpgradeKit">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="metal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="EconomicValue" value="120"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+
+<item id="1421" name="toiletRemovalKit">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="metal"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="EconomicValue" value="10"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 

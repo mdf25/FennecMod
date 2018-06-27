@@ -1337,6 +1337,13 @@
 		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
 		<recipe name="ovenUpgradeKit"		unlock_level="1" />
 	</perk>		
+	
+	<perk name="toiletRepair" icon="resource" description_key="toiletRepairDesc" title_key="toiletRepairName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="5"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
+		<recipe name="toiletUpgradeKit"		unlock_level="1" />
+		<recipe name="toiletRemovalKit"		unlock_level="1" />
+	</perk>	
 		
 	<perk name="squeezer" icon="resource" description_key="squeezerDesc" title_key="squeezerName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="6"/>

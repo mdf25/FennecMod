@@ -4448,7 +4448,16 @@ group desc for stuff like metal siding
 	<property name="LootList" value="67"/>
 	<property name="BuffsWhenWalkedOn" value="pooping"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
-	<property class="RepairItems"> <property name="shortMetalPipe" value="2"/> <property name="wood" value="4"/> </property>
+	<property class="RepairItems"> 
+		<property name="shortMetalPipe" value="2"/> 
+		<property name="wood" value="4"/> 
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntToiletWorking"/>
+		<property name="Item" value="toiletUpgradeKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="5,10" tool_category="Disassemble"/>
 	<drop event="Destroy" name="shortMetalPipe" count="1" prob="1"/>
@@ -4459,11 +4468,23 @@ group desc for stuff like metal siding
 <block id="435" name="cntToilet02">
 	<property name="Extends" value="cntToilet01"/>
 	<property name="Model" value="Plumbing/toilet02" param1="main_mesh"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntToiletWorking"/>
+		<property name="Item" value="toiletUpgradeKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 </block>
 
 <block id="436" name="cntToilet03">
 	<property name="Extends" value="cntToilet01"/>
 	<property name="Model" value="Plumbing/toilet03" param1="main_mesh"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntToiletWorking"/>
+		<property name="Item" value="toiletUpgradeKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 </block>
 
 <block id="437" name="treasureChestHunter1"> 
@@ -4789,7 +4810,96 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="" count="0"/>
 </block>
 
+<block id="455" name="cntToiletWorking">
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="Ext3dModel"/>	
+	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Plumbing/toilet02" param1="main_mesh"/>
+	<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<!--<property name="Class" value="TrapDoor"/>-->
+	<property name="Class" value="TrunkTip"/>
+	<property name="Damage_received" value="5"/>
+	<property name="Damage" 		 value="1"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="BuffsWhenWalkedOn" value="poopingHeal"/>
+	<property class="RepairItems"> 
+		<property name="shortMetalPipe" value="2"/> 
+		<property name="wood" value="4"/> 
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntToiletBox"/>
+		<property name="Item" value="toiletRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
+	<property name="DowngradeBlock" value="cntToiletWorkingLootable" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="56"/>
+</block>
 
+<block id="456" name="cntToiletWorkingLootable">
+	<property name="CustomIcon" value="cntToiletWorking" />
+	<property name="DescriptionKey" value="cntToiletWorking" />
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Damage_received" value="7"/>
+	<property name="Shape" value="Ext3dModel"/>	
+	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Plumbing/toilet02" param1="main_mesh"/>
+	<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="111"/>
+	<property name="BuffsWhenWalkedOn" value="pooping"/>
+	<property class="RepairItems"> 
+		<property name="shortMetalPipe" value="2"/> 
+		<property name="wood" value="4"/> 
+	</property>
+	<property name="DowngradeBlock" value="cntToiletWorkingRecharge" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="56"/>
+</block>
+
+<block id="457" name="cntToiletWorkingRecharge">
+	<property name="CustomIcon" value="cntToiletWorking" />
+	<property name="DescriptionKey" value="cntToiletWorking" />
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="Ext3dModel"/>	
+	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Plumbing/toilet02" param1="main_mesh"/>
+	<property name="ImposterExchange" value="imposterCTREighth" param1="98"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Class" value="UpgradeRated"/>
+	<property name="UpgradeRated.ToBlock" value="cntToiletWorking"/>
+	<property name="UpgradeRated.Rate" value="2"/>
+	<property name="BuffsWhenWalkedOn" value="pooping"/>
+	<property class="RepairItems"> 
+		<property name="shortMetalPipe" value="2"/> 
+		<property name="wood" value="4"/> 
+	</property>
+	<property name="DowngradeBlock" value="cntToilet01" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="56"/>
+</block>
+
+<block id="458" name="cntToiletBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="cntToiletWorking"/>
+</block>
 
 <block id="463" name="bed01">
 	<property name="DescriptionKey" value="bedGroupDesc"/>
