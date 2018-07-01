@@ -5423,7 +5423,7 @@ plumbingDesc,progression,Perk,EnChanged,"Learn how to make sink upgrade kits to 
 ovenRepairName,progression,Perk,EnChanged,"Oven Repair",,,,
 ovenRepairDesc,progression,Perk,EnChanged,"Learn how to make oven upgrade kits to create a working oven.",,,,
 toiletRepairName,progression,Perk,EnChanged,"Know Your Crap",,,,
-toiletRepairDesc,progression,Perk,EnChanged,"Learn how to make toilet upgreade and removal kits to create a working toilet for harvesting your very own beautiful turds.",,,,
+toiletRepairDesc,progression,Perk,EnChanged,"Learn how to make toilet upgrade kits to create a working toilet for harvesting your very own beautiful turds.",,,,
 
 
 IronToolCraftingName,progression,Perk,EnChanged,"Iron Component Crafting",,,,
@@ -5847,10 +5847,14 @@ ovenUpgradeKit,items,resources,KgNone,"Oven Upgrade Kit",,,,
 ovenUpgradeKitDesc,items,resources,KgNone,"You can use this on any wall oven to upgrade it into a working variant. The working oven gives access to some of the more advanced cooking recipes and is more efficient than the campfire. Use a wrench to apply the upgrade kit.",,,,
 toiletUpgradeKit,Items,resource,KgNone,"Toilet Upgrade Kit",,,,
 toiletUpgradeKitDesc,Items,resource,KgNone,"You can use this on any toilet to upgrade it into a working variant, capable of collecting your lovely turds! Use a wrench to apply the upgrade kit.",,,,
-toiletRemovalKit,Items,resource,KgNone,"Toilet Removal Kit",,,,
-toiletRemovalKitDesc,Items,reousce,KgNone,"Need to remove that toilet without the contents spraying everywhere? Grab a wrench and apply this kit to an upgraded toilet to box it up and remove it.",,,,
+workstationRemovalKit,Items,resource,KgNone,"Workstation Removal Kit",,,,
+workstationRemovalKitDesc,Items,reousce,KgNone,"If you find a workstation in the world and you'd like to take it with you, simply hold a wrench and use it on the workstation to box it up, allowing you to pick it up and place it down somewhere else!",,,,
 
+workstationRemovalKitSchematic,Items,Schematic,KgNone,"Workstation Removal for Putrid Girls",,,,
+workstationRemovalKitSchematicDesc,Items,Schematic,KgNone,"Learn how to craft workstation removal kits, so that you can pick up any workstation in the world and take it with you.",,,,
 
+tinFoil,items,Misc,KgNone,"Roll of Foil",,,,
+tinFoilDesc,items,Misc,KgNone,"A roll of tin foil can be used to help you cook things on a campfire that usually wouldn't be possible without an oven.",,,,
 juicer,items,Tools,KgNone,"Juicer",,,,
 juicerDesc,items,Tools,KgNone,"A juicer can be placed on a kitchen workbench and will allow you to make fruit juices more effectively than doing it purely by hand. Save those fruit and get more juice! Warning: Contains small parts, not suitable for blind buggers.",,,,
 mixingBowl,items,Tools,KgNone,"Mixing Bowl",,,,
@@ -6029,5 +6033,56 @@ cntToiletWorking,Blocks,block,KgNone,"Fancy Toilet (Working)",,,,
 cntToiletWorkingLootable,Blocks,block,KgNone,"Fancy Toilet (Working, Dirty)",,,,
 cntToiletWorkingRecharge,Blocks,block,KgNone,"Fancy Toilet (Working)",,,,
 cntToiletWorkingDesc,Blocks,Block,KgNone,"A working toilet that you can poop on and collect your turds! MmmmMMmmMMMmm, Lovely!",,,,
+
 cntToiletBox,Blocks,block,KgNone,"Boxed Working Toilet",,,,
-cntToiletBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your working toilet",,,,
+cntToiletBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your working toilet.",,,,
+cntWorkingOvenBox,Blocks,block,KgNone,"Boxed Working Oven",,,,
+cntWorkingOvenBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your working oven.",,,,
+cntWorkingSinkOldBox,Blocks,block,KgNone,"Boxed Old Working Sink",,,,
+cntWorkingSinkOldBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your old working sink.",,,,
+cntWorkingSinkNewBox,Blocks,block,KgNone,"Boxed New Working Sink",,,,
+cntWorkingSinkNewBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your working sink.",,,,
+
+cntForgeBox,Blocks,block,KgNone,"Boxed Forge",,,,
+cntForgeBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your forge.",,,,
+cntWorkbenchBox,Blocks,Block,KgNone,"Boxed Workbench",,,,
+cntWorkbenchBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your workbench.",,,,
+cntCementMixerBox,Blocks,Block,KgNone,"Boxed Cement Mixer",,,,
+cntCementMixerBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your cement mixer.",,,,
+cntChemistryStationBox,Blocks,Block,KgNone,"Boxed Chemistry Station",,,,
+cntChemistryStationBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your chemistry station.",,,,
+
+cntAlloyForgeBox,Blocks,block,KgNone,"Boxed Alloy Forge",,,,
+cntAlloyForgeBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your alloy forge.",,,,
+cntLaserForgeBox,Blocks,block,KgNone,"Boxed Laser Smelter",,,,
+cntLaserForgeBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your laser smelter.",,,,
+cntIndustrialGrinderBox,Blocks,block,KgNone,"Boxed Industrial Grinder",,,,
+cntIndustrialGrinderBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your industrial grinder.",,,,
+cntPurificationPlantBox,Blocks,block,KgNone,"Boxed Purification Plant",,,,
+cntPurificationPlantBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your purification plant.",,,,
+cntSqueezerWorkbenchBox,Blocks,Block,KgNone,"Boxed Industrial Squeezer",,,,
+cntSqueezerWorkbenchBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your industrial squeezer.",,,,
+
+cntCarpenterBenchBox,Blocks,block,KgNone,"Boxed Carpenter's Bench",,,,
+cntCarpenterBenchBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your carpenter's bench.",,,,
+cntFertilizerStationBox,Blocks,block,KgNone,"Boxed Fertilizer Station",,,,
+cntFertilizerStationBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your fertilizer station.",,,,
+
+q_workstationremoval,Items,Quest,KgNone,"Quest: The Trader's List",,,,
+q_workstationremovalDesc,Items,Quest,KgNone,"Help out the trader and maybe he'll teach you how to pick up those workstations you find in the world!",,,,
+
+q_sinkupgrade,Items,Quest,KgNone,"Quest: Sink It!",,,,
+q_sinkupgradeDesc,Items,Quest,KgNone,"A mysterious note I found. Seems someone needs help finding parts for a boiler.",,,,
+q_ovenupgrade,Items,Quest,KgNone,"Quest: Bun in the Oven",,,,
+q_ovenupgradeDesc,Items,Quest,KgNone,"A mysterious note I found. Seems someone needs help with farming.",,,,
+q_workbenchupgrade,Items,Quest,KgNone,"Quest: The Benchmark Brothers",,,,
+q_workbenchupgradeDesc,Items,Quest,KgNone,"A mysterious note I found. Seems someone needs help getting some bits and bobs for the garage.",,,,
+
+
+
+
+
+
+
+
+

@@ -4300,6 +4300,12 @@ group desc for stuff like metal siding
 		<property name="shortMetalPipe" value="10"/>
 		<property name="wood" value="40"/>
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntChemistryStationBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Harvest" name="scrapIron" count="80" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="wood" count="16" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="forgedIron" count="4" tool_category="Disassemble"/>
@@ -4576,6 +4582,12 @@ group desc for stuff like metal siding
 		<property name="shortMetalPipe" value="10"/>
 		<property name="wood" value="40"/>
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntPurificationPlantBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Harvest" name="scrapIron" count="80" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="wood" count="16" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="forgedIron" count="4" tool_category="Disassemble"/>
@@ -4831,7 +4843,7 @@ group desc for stuff like metal siding
 	</property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cntToiletBox"/>
-		<property name="Item" value="toiletRemovalKit"/>
+		<property name="Item" value="workstationRemovalKit"/>
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="20"/>
 	</property>
@@ -4900,6 +4912,59 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="paper" count="2,8"/>
 	<property name="CanPickup" value="true" param1="cntToiletWorking"/>
 </block>
+
+<block id="459" name="cntWorkbenchBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="workbench"/>
+</block>
+
+<block id="460" name="cntForgeBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="forge"/>
+</block>
+
+<block id="461" name="cntCementMixerBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="cementMixer"/>
+</block>
+
+<block id="462" name="cntChemistryStationBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="chemistryStation"/>
+</block>
+
 
 <block id="463" name="bed01">
 	<property name="DescriptionKey" value="bedGroupDesc"/>
@@ -5120,10 +5185,18 @@ group desc for stuff like metal siding
 	<property name="Model" value="Signs/sign_no_hazardous_waste" param1="main_mesh"/>
 </block>
 
-<!-- <block id="484" name="signRoadRightOnly">
-	<property name="Extends" value="signRoadArrowheadApache"/>
-	<property name="Model" value="Signs/sign_right_only" param1="main_mesh"/>
-</block> -->
+<block id="484" name="cntWorkingOvenBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="workingOven"/>
+</block>
 
 <block id="485" name="signRoadWork">
 	<property name="Extends" value="signRoadArrowheadApache"/>
@@ -5768,6 +5841,12 @@ group desc for stuff like metal siding
 		<property name="clayLump" value="50"/>
 		<property name="leather" value="20"/>
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntForgeBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Harvest" name="rockSmall" count="30" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="rockSmall" count="20" tool_category="Disassemble"/>
 	<drop event="Harvest" name="clayLump" count="20" tool_category="Disassemble"/>
@@ -6111,7 +6190,6 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="woodLogPillar100" count="6" />
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
-	<!-- 3 Free -->
 
 <block id="583" name="alloyForge">
 	<property name="RandomTintColor1" value="247,155,24"/>
@@ -6142,6 +6220,12 @@ group desc for stuff like metal siding
 		<property name="rockSmall" value="50"/>
 		<property name="clayLump" value="50"/>
 		<property name="leather" value="20"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntAlloyForgeBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
 	</property>
 	<drop event="Harvest" name="rockSmall" count="30" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="rockSmall" count="20" tool_category="Disassemble"/>
@@ -6184,6 +6268,12 @@ group desc for stuff like metal siding
 		<property name="clayLump" value="50"/>
 		<property name="leather" value="20"/>
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntLaserForgeBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Harvest" name="rockSmall" count="30" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="rockSmall" count="20" tool_category="Disassemble"/>
 	<drop event="Harvest" name="clayLump" count="20" tool_category="Disassemble"/>
@@ -6195,6 +6285,18 @@ group desc for stuff like metal siding
 	<property name="EconomicValue" value="214"/>
 </block>
 	
+<block id="585" name="cntAlloyForgeBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="alloyForge"/>
+</block>
 	
 <block id="586" name="treeWinterEverGreen">
 	<property name="Extends" value="treeMaster"/>
@@ -6421,6 +6523,45 @@ group desc for stuff like metal siding
 	<property name="Model" value="cube_half"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteHalf"/> </property>
 	<property name="LightOpacity" value="1"/>
+</block>
+
+<block id="609" name="cntLaserForgeBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="laserForge"/>
+</block>
+
+<block id="610" name="cntWorkingSinkOldBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="cntCabinetOldSinkWorking2"/>
+</block>
+
+<block id="611" name="cntWorkingSinkNewBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="cntGraniteSinkWorking2"/>
 </block>
 
 <block id="612" name="burntWoodBlock1">
@@ -7062,6 +7203,12 @@ group desc for stuff like metal siding
 	<property name="IsDecoration" value="true"/>
 	<property name="Texture" value="373,261,262,345,345,345"/> <!-- 373/374=sink, 82=cabinetWood -->
 	<property name="LootList" value="8"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntWorkingSinkNewBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
@@ -7581,7 +7728,19 @@ group desc for stuff like metal siding
 	<property name="Model" value="Entities/Crafting/chemistry_stationPrefab"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 </block>
-	<!-- 1 Free -->
+
+<block id="700" name="cntFertilizerStationBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="fertilizerStation"/>
+</block>
 
 <block id="701" name="GoreBlock1Prefab">
 	<property name="Class" value="Gore"/>
@@ -7608,6 +7767,19 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
+</block>
+
+<block id="702" name="cntCarpenterBenchBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="carpenterBench"/>
 </block>
 
 <!--
@@ -8071,6 +8243,21 @@ group desc for stuff like metal siding
 	<property name="ActivationDistance" value="14"/> <!-- This is how far away you can PLACE the block and how far away you can ACTIVATE it -->
 	<property name="Group" value="Science"/>
 </block>
+
+<block id="750" name="cntIndustrialGrinderBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="industrialGrinder"/>
+</block>
+
+
 
 <!--<block id="750" name="metalReinforcedWoodDrawBridgeDouble">
 	<property name="Group" value="Building"/>
@@ -8545,7 +8732,19 @@ group desc for stuff like metal siding
 	<property name="Model" value="i_beam_6way_centered"/>
 	<property name="ImposterExchange" value="imposterDontBlockBlock" param1="144"/>
 </block>
-	<!-- 1 Free -->
+
+<block id="805" name="cntPurificationPlantBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="purificationPlant"/>
+</block>
 
 <block id="806" name="stainlessSteelStairs25">
 	<property name="Extends" value="stainlessSteelMaster"/>
@@ -9993,6 +10192,12 @@ group desc for stuff like metal siding
 	<property name="Material" value="metal"/>
 	<property name="Texture" value="374,78,79,84,84,84"/> <!-- 373/374=sink, 84=cabinetWood -->
 	<property name="LootList" value="8"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntWorkingSinkOldBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
@@ -10633,6 +10838,12 @@ group desc for stuff like metal siding
 		<property name="forgedIron" value="10"/>
 		<property name="shortMetalPipe" value="10"/>
 		<property name="wood" value="40"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntWorkingOvenBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
 	</property>
 	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
@@ -14742,6 +14953,12 @@ group desc for stuff like metal siding
 		<property name="spring" value="4"/>
 		<property name="mechanicalParts" value="10"/>
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntCementMixerBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Harvest" name="scrapIron" count="300" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="forgedIron" count="10" tool_category="Disassemble"/>
 	<drop event="Harvest" name="spring" count="2" tool_category="Disassemble"/>
@@ -14810,6 +15027,12 @@ group desc for stuff like metal siding
 		<property name="mechanicalParts" value="20"/>
 		<property name="wood" value="50"/>
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntWorkbenchBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="wood" count="20" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="forgedIron" count="10" tool_category="Disassemble"/>
@@ -14865,6 +15088,12 @@ group desc for stuff like metal siding
 		<property name="forgedIron" value="25"/>
 		<property name="spring" value="4"/>
 		<property name="mechanicalParts" value="10"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntFertilizerStationBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
 	</property>
 	<drop event="Harvest" name="scrapCopper" count="300" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="forgedCopper" count="10" tool_category="Disassemble"/>
@@ -14947,6 +15176,12 @@ group desc for stuff like metal siding
 		<property name="spring" value="4"/>
 		<property name="mechanicalParts" value="10"/>
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntIndustrialGrinderBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Harvest" name="scrapIron" count="300" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="forgedIron" count="10" tool_category="Disassemble"/>
 	<drop event="Harvest" name="spring" count="2" tool_category="Disassemble"/>
@@ -14985,6 +15220,12 @@ group desc for stuff like metal siding
 		<property name="forgedIron" value="25"/>
 		<property name="mechanicalParts" value="20"/>
 		<property name="wood" value="50"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntCarpenterBenchBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
 	</property>
 	<drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="wood" count="20" tool_category="harvestingTools"/>
@@ -15065,6 +15306,12 @@ group desc for stuff like metal siding
 	<property class="Workstation">
 		<property name="Modules" value="output"/>
 		<property name="CraftingAreaRecipes" value="squeezer_workbench"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntSqueezerWorkbenchBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
 	</property>
 	<property name="TakeDelay" value="15"/>
 	<drop event="Destroy" name="wood" count="2,5"/>
@@ -15226,7 +15473,19 @@ group desc for stuff like metal siding
 	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Building,Science"/>
 </block>
-	<!-- n Free -->
+
+<block id="1588" name="cntSqueezerWorkbenchBox">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="LootList" value="22"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+	<property name="CanPickup" value="true" param1="cementMixer"/>
+</block>
 
 <block id="1592" name="rustyIronPoleSupportCtr">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>

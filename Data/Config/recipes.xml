@@ -334,6 +334,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1" />
 </recipe>
 
+<recipe name="bread" count="1" craft_area="campfire" craft_time="60" craft_tool="cookingGrill">
+	<ingredient name="dough" 	count="1" />
+	<ingredient name="tinFoil" 	count="1" />
+</recipe>
+
 <recipe name="bread" count="1" craft_area="working_oven" craft_time="30">
 	<ingredient name="dough" count="1" />
 </recipe>
@@ -4223,6 +4228,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cheese"				count="1" />
 </recipe>
 
+<recipe name="cheeseDoughBalls" count="2" craft_area="campfire" craft_time="50" craft_tool="cookingGrill">
+	<ingredient name="dough"				count="2" />
+	<ingredient name="cheese"				count="1" />
+	<ingredient name="tinFoil"				count="1" />
+</recipe>
+
 <recipe name="cheeseDoughBalls" count="2" craft_area="working_oven" craft_time="20">
 	<ingredient name="dough"				count="2" />
 	<ingredient name="cheese"				count="1" />
@@ -4921,9 +4932,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 
-<recipe name="juicer"	count="1" craft_time="20" craft_exp_gain="5">
-	<ingredient name="forgedIron"		count="3" />
-	<ingredient name="scrapPlastics" 	count="1" />
+<recipe name="juicer"	count="1" craft_time="20" craft_area="workbench" craft_exp_gain="5">
+	<ingredient name="electricParts"	count="4" />
+	<ingredient name="forgedIron"		count="5" />
+	<ingredient name="scrapPlastics" 	count="2" />
 </recipe>
 
 <recipe name="breadBoard" count="1" craft_time="10" craft_exp_gain="5">
@@ -5043,9 +5055,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bucket"			count="1" />			
 </recipe>
 
-<recipe name="toiletRemovalKit" count="1" craft_time="120" craft_exp_gain="30">
+<recipe name="workstationRemovalKit" count="1" craft_time="120" craft_exp_gain="30">
 	<ingredient name="oil" 				count="1" />
-	<ingredient name="bucket"			count="1" />			
+	<ingredient name="wood"				count="5" />
+	<ingredient name="paper"			count="5" />
+	<ingredient name="bucket"			count="1" />	
+	<ingredient name="shortMetalPipe"	count="2" />
 </recipe>
 
 </recipes>

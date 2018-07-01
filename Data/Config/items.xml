@@ -2797,7 +2797,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="350"/>
 		<property name="Upgrade_hit_offset" value="-2"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit,toiletUpgradeKit,toiletRemovalKit"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit,toiletUpgradeKit,workstationRemovalKit"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10"/>
@@ -3762,7 +3762,7 @@ Mesh files no longer used:
 		<property name="Repair_amount" value="100"/>
 		<property name="Upgrade_hit_offset" value="-1"/>
 		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit,toiletUpgradeKit,toiletRemovalKit"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,forgeUpgradeKit,sinkUpgradeKit,ovenUpgradeKit,workbenchUpgradeKit,toiletUpgradeKit,workstationRemovalKit"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,5"/>
@@ -12375,6 +12375,15 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="1004" name="workstationRemovalKitSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="Weight" value="100" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="workstationRemovalKit"/>
+	</property>
+</item>
+
 <!-- <item id="1010" name="leatherTanning">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CreativeMode" value="Dev"/>
@@ -13253,6 +13262,38 @@ Mesh files no longer used:
 	<property name="Extends" value="questMaster"/>
 	<property class="Action1">
 		<property name="QuestGiven" value="quest_BasicSurvival1"/>
+	</property>
+</item>
+
+<item id="1161" name="q_workstationremoval">
+	<property name="Extends" value="questMaster"/>
+	<property name="EconomicValue" value="50" />
+	<property class="Action1">
+		<property name="QuestGiven" value="quest_workstationremoval_1"/>
+	</property>
+</item>
+
+<item id="1162" name="q_workbenchupgrade">
+	<property name="Extends" value="questMaster"/>
+	<property name="EconomicValue" value="50" />
+	<property class="Action1">
+		<property name="QuestGiven" value="quest_workbenchupgrade_1"/>
+	</property>
+</item>
+
+<item id="1163" name="q_ovenupgrade">
+	<property name="Extends" value="questMaster"/>
+	<property name="EconomicValue" value="50" />
+	<property class="Action1">
+		<property name="QuestGiven" value="quest_ovenupgrade_1"/>
+	</property>
+</item>
+
+<item id="1164" name="q_sinkupgrade">
+	<property name="Extends" value="questMaster"/>
+	<property name="EconomicValue" value="50" />
+	<property class="Action1">
+		<property name="QuestGiven" value="quest_sinkupgrade_1"/>
 	</property>
 </item>
 
@@ -15072,7 +15113,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 
-<item id="1421" name="toiletRemovalKit">
+<item id="1421" name="workstationRemovalKit">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
@@ -15414,6 +15455,20 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Chemicals"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience" />
+</item>
+
+<item id="1455" name="tinFoil"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Crafting/leather"/>
+	<property name="Material" value="organic"/>
+	<property name="RepairAmount" value="80"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="FuelValue" value="5"/>
+	<property name="EconomicValue" value="22"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<property name="Weight" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 
 <item id="1460" name="unit_iron">

@@ -225,9 +225,135 @@
 	</quest>
 	
 	
+	<!-- QUESTS FOR WORKBENCH REMOVAL KIT -->
+	<quest id="quest_workstationremoval_1" name_key="quest_workstationremoval_1" subtitle_key="quest_workstationremoval_1_subtitle" description_key="quest_workstationremoval_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_workstationremoval_1_offer" difficulty="easy">
+		<objective type="Fetch" 	id="wood"			value="1000"	/>
+		<objective type="Fetch" 	id="rockSmall"		value="1000"	/>
+		<objective type="Fetch" 	id="scrapIron"		value="1000"	/>
+		<reward type="Item"			id="casinoCoin"	 value="1000" />
+		<reward type="Quest" id="quest_workstationremoval_3" />
+	</quest>
+	
+	<quest id="quest_workstationremoval_2" name_key="quest_workstationremoval_2" subtitle_key="quest_workstationremoval_2_subtitle" description_key="quest_workstationremoval_2_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_workstationremoval_2_offer" difficulty="easy">
+		<objective type="Goto" id="trader" value="5" />
+		<reward type="Item"			id="casinoCoin"	 value="1000" />
+		<reward type="Quest" id="quest_workstationremoval_3" />
+	</quest>
+	
+	<quest id="quest_workstationremoval_3" name_key="quest_workstationremoval_3" subtitle_key="quest_workstationremoval_3_subtitle" description_key="quest_workstationremoval_3_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_workstationremoval_3_offer" difficulty="easy">
+		<objective type="Fetch" 	id="rawVenisonMeat"		value="20"	/>
+		<objective type="Fetch" 	id="rawBoarMeat"		value="20"	/>
+		<objective type="Fetch" 	id="waterskinFilled10"	value="5"	/>
+		<objective type="Fetch" 	id="vegetableCream"		value="10"	/>
+		<objective type="Fetch" 	id="bandage"			value="50"	/>
+		<reward type="Item"			id="casinoCoin"	 		value="2000" />
+		<reward type="Quest" id="quest_workstationremoval_5" />
+	</quest>
+	
+	<quest id="quest_workstationremoval_4" name_key="quest_workstationremoval_4" subtitle_key="quest_workstationremoval_4_subtitle" description_key="quest_workstationremoval_4_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_workstationremoval_4_offer" difficulty="easy">
+		<objective type="Goto" id="trader" value="5" />
+		<reward type="Item"			id="casinoCoin"	 value="2000" />
+		<reward type="Quest" id="quest_workstationremoval_5" />
+	</quest>
+	
+	<quest id="quest_workstationremoval_5" name_key="quest_workstationremoval_5" subtitle_key="quest_workstationremoval_5_subtitle" description_key="quest_workstationremoval_5_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_workstationremoval_5_offer" difficulty="easy">
+		<objective type="Fetch" 	id="gunPistol"			value="5"	/>
+		<objective type="Fetch" 	id="9mmBulletLow"		value="200"	/>
+		<objective type="Fetch" 	id="woodenBow"			value="5"	/>
+		<objective type="Fetch" 	id="arrow"				value="500"	/>
+		<reward type="Item"			id="casinoCoin"	 value="3000" />
+		<reward type="Quest" id="quest_workstationremoval_7" />
+	</quest>
+	
+	<quest id="quest_workstationremoval_6" name_key="quest_workstationremoval_6" subtitle_key="quest_workstationremoval_6_subtitle" description_key="quest_workstationremoval_6_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_workstationremoval_6_offer" difficulty="easy">
+		<objective type="Goto" id="trader" value="5" />
+		<reward type="Item"			id="casinoCoin"	 value="3000" />
+		<reward type="Quest" id="quest_workstationremoval_7" />
+	</quest>
+	
+	<quest id="quest_workstationremoval_7" name_key="quest_workstationremoval_7" subtitle_key="quest_workstationremoval_7_subtitle" description_key="quest_workstationremoval_7_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_workstationremoval_7_offer" difficulty="easy">
+		<objective type="ZombieKill" value="100"  />
+		
+		<!--<reward type="Quest" id="quest_workstationremoval_8" />-->
+		<reward type="SkillPoints" 	value="20" />
+		<reward type="Item" 		id="workstationRemovalKitSchematic"  	value="1"   />
+		<reward type="Item"			id="casinoCoin"	 						value="5000" />
+		<reward type="Item"			id="noteFragment"		 				value="500" />
+		<reward type="Skill" 		id="Scavenging"	 						value="5" stage="aftercomplete" />
+	</quest>
+	
+	<quest id="quest_workstationremoval_8" name_key="quest_workstationremoval_8" subtitle_key="quest_workstationremoval_8_subtitle" description_key="quest_workstationremoval_8_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_workstationremoval_8_offer" difficulty="easy">
+		<objective type="Goto" id="trader" value="5" />
+		<reward type="SkillPoints" 	value="20" />
+		<reward type="Item" 		id="workstationRemovalKitSchematic"  	value="1"   />
+		<reward type="Item"			id="casinoCoin"	 						value="5000" />
+		<reward type="Item"			id="noteFragment"		 				value="500" />
+		<reward type="Skill" 		id="Scavenging"	 						value="5" stage="aftercomplete" />
+	</quest>
+	
+	
+	
+	<!-- QUEST FOR UPGRADE KITS -->
+	<quest id="quest_ovenupgrade_1" name_key="quest_ovenupgrade_1" subtitle_key="quest_ovenupgrade_1_subtitle" description_key="quest_ovenupgrade_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_ovenupgrade_1_offer" difficulty="easy">
+		<objective type="Fetch" 	id="foodHoney"		value="10"	/>
+		<objective type="Fetch" 	id="corn"			value="20"	/>
+		<objective type="Fetch"		id="potato"			value="20"  />
+		<objective type="Fetch"		id="wheat"			value="20"	/>
+		<objective type="Fetch"		id="blueberries"	value="20"  />
+		<objective type="Fetch"		id="coffeeBeans"	value="20"  />
+		
+		<reward type="Item"			id="ovenUpgradeKit" value="1" />
+		<reward type="Item"			id="blueberryPie"	value="5" />
+		<reward type="Item"			id="coffee"			value="5" />
+	</quest>
+	
+	<quest id="quest_workbenchupgrade_1" name_key="quest_workbenchupgrade_1" subtitle_key="quest_workbenchupgrade_1_subtitle" description_key="quest_workbenchupgrade_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_workbenchupgrade_1_offer" difficulty="easy">
+		<objective type="Fetch" 	id="wrench"			 	value="5"	/>
+		<objective type="Fetch" 	id="mechanicalParts"	value="50"	/>
+		<objective type="Fetch"		id="electricParts"		value="50"	/>
+		<objective type="Fetch"		id="scrapPlastics"		value="100" />
+		<objective type="Fetch"		id="forgedIron"			value="50" />
+		
+		<reward type="Item"			id="workbenchUpgradeKit" value="1" />
+		<reward type="Item"			id="smallEngine"		value="500" />
+		<reward type="Item"			id="carBattery"			value="500" />
+	</quest>
+	
+	<quest id="quest_sinkupgrade_1" name_key="quest_sinkupgrade_1" subtitle_key="quest_sinkupgrade_1_subtitle" description_key="quest_sinkupgrade_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_sinkupgrade_1_offer" difficulty="easy">
+		<objective type="Fetch" 	id="scrapCopper"		value="200"	/>
+		<objective type="Fetch" 	id="radiator"			value="5"	/>
+		<objective type="Fetch"		id="shortMetalPipe"		value="20"	/>
+		<objective type="Fetch"		id="ductTape"			value="30" 	/>
+		<objective type="Fetch"		id="hubcap"				value="3" 	/>
+		<objective type="Fetch"		id="oil"				value="5"	/>
+		
+		<reward type="Item"			id="sinkUpgradeKit" 	value="1" />
+		<reward type="Item"			id="wrench"				value="500" />
+		<reward type="Item"			id="miningHelmet"		value="300" />
+	</quest>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<!-- White River Citizen 1 - Journey to Settlement -->
-	
 	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
 		<objective type="Goto" id="trader" value="5" />
 
@@ -1487,8 +1613,8 @@
 	<quest id="quest_carpenter_2" name_key="quest_carpenter_2" subtitle_key="quest_carpenter_2_subtitle" description_key="quest_carpenter_2_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_carpenter_2_offer" difficulty="easy">
 		<objective type="FetchKeep"		id="fireaxeIron"		value="1"	 />
-		<objective type="FetchKeep"		id="wood"				value="1000" />
-		<objective type="FetchKeep"		id="woodLogPillar100"	value="250"  />
+		<objective type="FetchKeep"		id="wood"				value="2000" />
+		
 		<reward type="Quest" id="quest_carpenter_3" />
 	</quest>
 	
@@ -2342,8 +2468,7 @@
 	<quest id="quest_carpenter_2_secondary" name_key="quest_carpenter_2" subtitle_key="quest_carpenter_2_subtitle" description_key="quest_carpenter_2_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_carpenter_2_offer" difficulty="easy">
 		<objective type="FetchKeep"		id="fireaxeIron"		value="1"	 />
-		<objective type="FetchKeep"		id="wood"				value="1000" />
-		<objective type="FetchKeep"		id="woodLogPillar100"	value="250"  />
+		<objective type="FetchKeep"		id="wood"				value="2000" />
 		<reward type="Quest" id="quest_carpenter_3_secondary" />
 	</quest>
 	

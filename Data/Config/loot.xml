@@ -1434,6 +1434,7 @@
 	<item name="emptyJar"/>
 	<item name="bottledWater"/>
 	<item name="beer" />
+	<item name="appleJuice" />
 	<item name="spirits" />
 	<item name="bottledMilk" />
 	<item name="bottledSoyaMilk" />
@@ -1633,9 +1634,10 @@
 </lootgroup>
 
 <lootgroup name="groceryDrink"	count="1,3">
-	<item name="bottledWater"		count="1,3" />
+	<item name="bottledWater"		count="1,3" prob="1" 	/>
 	<item name="beer"				count="1,2" prob="0.2"  />
 	<item name="megaCrush"			count="1"	prob="0.05" />
+	<item name="appleCider"			count="1"	prob="0.2"  />
 </lootgroup>
 
 <lootgroup name="groceryFruitVeg" count="1,2">
@@ -1645,6 +1647,7 @@
 	<item name="potato"				count="1,4" />
 	<item name="corn"				count="1,4" />
 	<item name="mushrooms"			count="2,5" />
+	<item name="apple"				count="2,6" />
 </lootgroup>
 
 <lootgroup name="groceryBagLoot"	count="all">
@@ -1660,6 +1663,37 @@
 	<item group="rareBooks" 		prob="0.20"/> 
 </lootgroup>
 
+<lootgroup name="destroyedWorkbench" count="0,1">
+	<item name="scrapIron" count="10,20"/>
+	<item name="brokenGlass" count="3,8"/>
+	<item name="shortMetalPipe" count="5,10"/>
+	<item name="forgedIron" count="5,15" prob="2"/>
+	<item name="forgedSteel" count="5,10"/>
+	<item name="nail" count="10,20"/>
+	<item name="ironArrowHead" count="5,15"/>
+	<item name="steelArrowHead" count="5,10"/>
+	<item name="wood" count="10,30" prob="2"/>
+	<item name="scrapPlastics" count="1,5"/>
+	<item name="mechanicalParts" count="1,5"/>
+	<item name="electricParts" count="1,3" prob="0.3"/>
+	<item name="electronicParts" count="1,2" prob="0.1"/>
+	<item name="copperBulletCasing" count="1,20"/>
+	<item name="bulletCasing" count="1,20"/>
+	<item name="bulletTip" count="1,20"/>
+	<item name="airFilter" count="1,3"/>
+	<item name="candyTin" count="1,3"/>
+	<item name="hubcap" count="1,3"/>
+	<item name="cloth" count="2,7"/>
+	<item name="ductTape" count="1,4"/>
+	<item name="feather" count="5,12"/>
+	<item name="fishingWeight" count="1,3"/>
+	<item name="glue" count="1,6"/>
+	<item name="oil" count="1,6"/>
+	<item name="padlock" prob="0.5"/>
+	<item name="spring" count="1,4"/>
+	<item group="tools" count="1"/>
+	<item group="rareTools" count="1" prob="0.5"/>
+</lootgroup>
 
 <!-- misc storage, cardboard boxes-->
 <lootcontainer id="1" count="0,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
@@ -1677,9 +1711,10 @@
 
 <!-- canned or dry food cupboard door open sound-->
 <lootcontainer id="3" count="0,1" size="5,4" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="baseTemplate">
-	<item group="cupboard"/>
+	<item group="cupboard" prob="0.74"/>
 	<item group="cupboardJackpot" prob="0.01" />
-	<item name="noteFragment" count="1,2" prob="0.2" />
+	<item name="noteFragment" count="1,2" prob="0.1" />
+	<item name="tinFoil" count="3,6" prob="0.05" />
 </lootcontainer>
 
 <!-- frozen or refridgerated food, spoiled food -->
@@ -1704,6 +1739,7 @@
 	<item name="emptyJar" count="1,2"/>
 	<item name="canEmpty" count="1,2"/>
 	<item name="coal" count="4,12" prob="0.5"/>
+	<item name="q_ovenupgrade" count="1" prob="0.2" />
 </lootcontainer>
 
 <!-- night stands and dressers, pistol, ammo, magazines, books -->
@@ -1738,6 +1774,7 @@
 	<item name="potassiumNitratePowder" count="2,6" prob="0.3"/>
 	<item name="steroids" prob="0.2" />
 	<item group="cupboardJackpot" count="1" prob="0.004" />
+	<item name="q_sinkupgrade" count="1" prob="0.02" />
 </lootcontainer>
 
 <!-- backpack, place where people stash things, -->
@@ -2455,36 +2492,9 @@
 </lootcontainer>
 
 <!-- cntCollapsedWorkbench -->
-<lootcontainer id="92" count="0,2" size="7,4" sound_open="open_workbench" sound_close="close_workbench" loot_quality_template="baseTemplate">
-	<item name="scrapIron" count="10,20"/>
-	<item name="brokenGlass" count="3,8"/>
-	<item name="shortMetalPipe" count="5,10"/>
-	<item name="forgedIron" count="5,15" prob="2"/>
-	<item name="forgedSteel" count="5,10"/>
-	<item name="nail" count="10,20"/>
-	<item name="ironArrowHead" count="5,15"/>
-	<item name="steelArrowHead" count="5,10"/>
-	<item name="wood" count="10,30" prob="2"/>
-	<item name="scrapPlastics" count="1,5"/>
-	<item name="mechanicalParts" count="1,5"/>
-	<item name="electricParts" count="1,3" prob="0.3"/>
-	<item name="electronicParts" count="1,2" prob="0.1"/>
-	<item name="copperBulletCasing" count="1,20"/>
-	<item name="bulletCasing" count="1,20"/>
-	<item name="bulletTip" count="1,20"/>
-	<item name="airFilter" count="1,3"/>
-	<item name="candyTin" count="1,3"/>
-	<item name="hubcap" count="1,3"/>
-	<item name="cloth" count="2,7"/>
-	<item name="ductTape" count="1,4"/>
-	<item name="feather" count="5,12"/>
-	<item name="fishingWeight" count="1,3"/>
-	<item name="glue" count="1,6"/>
-	<item name="oil" count="1,6"/>
-	<item name="padlock" prob="0.5"/>
-	<item name="spring" count="1,4"/>
-	<item group="tools" count="1"/>
-	<item group="rareTools" count="1" prob="0.5"/>
+<lootcontainer id="92" count="1" size="7,4" sound_open="open_workbench" sound_close="close_workbench" loot_quality_template="baseTemplate">
+	<item group="destroyedWorkbench" count="1" prob="0.5" />
+	<item name="q_workbenchupgrade" count="1" prob="0.5" />
 </lootcontainer>
 
 <!-- cntCollapsedCementMixer -->

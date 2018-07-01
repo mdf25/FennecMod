@@ -727,6 +727,62 @@ quest_survivalism_4_subtitle,,Quest Info,Reordered,"A Waterskin! (1/2)",,,,
 quest_survivalism_4_offer,,Quest Info,Reordered,"Now that you have a waterskin, you can go fill it up at your nearby water source! You can drink from a waterskin up to 10 times. Left clicking whilst the waterskin is partially filled will refill it completely. Go fill her up!",,,,
 
 
+
+
+
+quest_workstationremoval_1,,Quest Info,Reordered,"The Trader's List (1/4)",,,,
+quest_workstationremoval_1_subtitle,,Quest Info,Reordered,"Gather Building Supplies",,,,
+quest_workstationremoval_1_offer,,Quest Info,Reordered,"Well now, thank god someone found me out here. This place has fallen into a bit of disrepair thanks to those smelly undead bastards outside my walls... Could you help me by getting some stuff to repair the walls? If so, I think I got some more jobs for you, and I'll pay you good, too.",,,,
+
+quest_workstationremoval_2,,Quest Info,Reordered,"The Trader's List (1/4)",,,,
+quest_workstationremoval_2_subtitle,,Quest Info,Reordered,"Return for more jobs",,,,
+quest_workstationremoval_2_offer,,Quest Info,Reordered,"Well now, looks like you got everything I needed to get this place fixed up. Come back for more jobs, I got just the job for you.",,,,
+
+quest_workstationremoval_3,,Quest Info,Reordered,"The Trader's List (2/4)",,,,
+quest_workstationremoval_3_subtitle,,Quest Info,Reordered,"Gather Food and Meds",,,,
+quest_workstationremoval_3_offer,,Quest Info,Reordered,"Well now, these walls are fixed up, but my belly sure ain't! We're running low on food and medical supplies, and walls ain't no good if we can't eat! If you could scavenge for some good meat and meds, I think it may see us through another week of this hell.",,,,
+
+quest_workstationremoval_4,,Quest Info,Reordered,"The Trader's List (2/4)",,,,
+quest_workstationremoval_4_subtitle,,Quest Info,Reordered,"Return for more jobs",,,,
+quest_workstationremoval_4_offer,,Quest Info,Reordered,"Damn, that's some mighty fine meat you got there! This should see the settlement through for a while. Come back for more work and I got a nice stash of cash waitin' for you.",,,,
+
+quest_workstationremoval_5,,Quest Info,Reordered,"The Trader's List (3/4)",,,,
+quest_workstationremoval_5_subtitle,,Quest Info,Reordered,"Gather weapons and ammo",,,,
+quest_workstationremoval_5_offer,,Quest Info,Reordered,"We got walls, we got food, all we need now is something to keep those bastards away. I remember when the army bailed, some of them left weapons behind... Could you gather some for us?",,,,
+
+quest_workstationremoval_6,,Quest Info,Reordered,"The Trader's List (3/4)",,,,
+quest_workstationremoval_6_subtitle,,Quest Info,Reordered,"Return for more jobs",,,,
+quest_workstationremoval_6_offer,,Quest Info,Reordered,"This stuff should keep us protected for a while now. But, we got some bigger problems. Get your ass back here pronto!",,,,
+
+quest_workstationremoval_7,,Quest Info,Reordered,"The Trader's List (4/4)",,,,
+quest_workstationremoval_7_subtitle,,Quest Info,Reordered,"Herd Security",,,,
+quest_workstationremoval_7_offer,,Quest Info,Reordered,"There are more of those smelly undead bastards out there than ever before. Seems the longer we stay here, the more of them come lookin'. I think it's time for a clean up on aisle 3.",,,,
+
+quest_workstationremoval_8,,Quest Info,Reordered,"The Trader's List (4/4)",,,,
+quest_workstationremoval_8_subtitle,,Quest Info,Reordered,"Collect your Reward",,,,
+quest_workstationremoval_8_offer,,Quest Info,Reordered,"I'll be damned to a pole and cover me with honey, you did it! Damn, you're some hot shit! I got somethin' special waitin' here for you, come back and get it.",,,,
+
+quest_ovenupgrade_1,,Quest Info,Reordered,"Bun in the Oven",,,,
+quest_ovenupgrade_1_subtitle,,Quest Info,Reordered,"Gather farming supplies",,,,
+quest_ovenupgrade_1_offer,,Quest Info,Reordered,"It's such a shame that food is so scarce since the apocalypse came to be. But, through some good old hard farming, I'm sure we could feed the masses once again. If you gather a lot of farm produce, I'll trade you for some cooked pies, coffee, and I've even got a spare oven upgrade kit back here somewhere.\n\nSylv",,,,
+
+quest_workbenchupgrade_1,,Quest Info,Reordered,"The Benchmark Brothers",,,,
+quest_workbenchupgrade_1_subtitle,,Quest Info,Reordered,"Gather Bits and Bobs",,,,
+quest_workbenchupgrade_1_offer,,Quest Info,Reordered,"Damn those pesky bastard dead goons! Every time I try and leave my garage to go out and scavenge for spare parts, those buggers are onto me faster than a moth to a flame. You look like you got some zombie killing under your belt... Fancy grabbing some bits and bobs? I got a great engine, battery, and even a spare upgrade kit for a workbench if you bring me what I need.\n\nWise Free",,,,
+
+quest_sinkupgrade_1,,Quest Info,Reordered,"Sink It!",,,,
+quest_sinkupgrade_1_subtitle,,Quest Info,Reordered,"Gather Boiler Parts",,,,
+quest_sinkupgrade_1_offer,,Quest Info,Reordered,"Access to clean water is great and all, but damn do I miss having hot water. I haven't had a nice warm bath in god knows how long. But, I don't want to get off this roof, because of all the zombies outside. I am pretty good at mechanical stuff, and could probably make a boiler if you could go get me some parts? I have a mining helmet, a great wrench and even a sink upgrade kit for you.\n\nTamara",,,,
+
+
+
+
+
+
+
+
+
+
 requirementGroupKnife1,,Requirement Group,KgNone,"Holding a Stone Knife, Bone Shiv, Scrap Knife, or Hunting Knife",,,,
 requirementGroupBlunt1,,Requirement Group,KgNone,"Holding a Wooden or Iron Reinforced Club",,,,
 requirementGroupBlunt2,,Requirement Group,KgNone,"Holding a Spiked Club or Sledgehammer",,,,
