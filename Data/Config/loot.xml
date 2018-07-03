@@ -910,6 +910,7 @@
 	<item name="ovenUpgradeKitSchematic" />
 	<item name="squeezerWorkbenchSchematic" />
 	<item name="toiletUpgradeKitSchematic" />
+	<item name="megaWrenchSchematic" prob="0.03" />
 	<item name="schematicBag" prob="0.02" />
 	<item group="questChallenge" count="1"/>
 	<!--
@@ -1694,6 +1695,123 @@
 	<item group="tools" count="1"/>
 	<item group="rareTools" count="1" prob="0.5"/>
 </lootgroup>
+
+
+<lootgroup name="carEngineBattery" count="all">
+	<item name="smallEngine" count="1" />
+	<item name="carBattery"	 count="1" />
+</lootgroup>
+
+<lootgroup name="carEngineBatteryOne" count="1">
+	<item name="smallEngine" count="1" />
+	<item name="carBattery"	 count="1" />
+</lootgroup>
+
+<lootgroup name="carPartsGroup1" count="all">
+	<item name="hubcap"		 		count="1,2" />
+	<item name="airFilter"	 		count="3,5" />
+	<item name="radiator"	 		count="1" />
+</lootgroup>
+
+<lootgroup name="carPartsGroup2" count="all">
+	<item name="minibikeWheels" 	count="2" />
+	<item name="leather"			count="10,30" />
+	<item name="cloth"				count="10,20" />
+</lootgroup>
+
+<lootgroup name="carPartsGroup3" count="all">
+	<item name="scrapIron"			count="100,200" />
+	<item name="scrapCopper"		count="100,200" />
+	<item name="scrapPlastics"		count="5,15" />
+</lootgroup>
+	
+<lootgroup name="carPartsGroup4" count="all">
+	<item name="shortMetalPipe" 	count="5,15" />
+	<item name="spring"				count="4,8"	/>
+	<item name="oil"				count="2,4" />
+</lootgroup>
+
+<lootgroup name="carPartsGroup5" count="all">	
+	<item name="mechanicalParts"	count="10,30" />
+	<item name="electricParts"		count="10,20" />
+	<item name="electronicParts"	count="5,10" />
+</lootgroup>
+
+
+<lootgroup name="carSubGroup1A" count="all">
+	<item group="carPartsGroup1"	count="1" />
+	<item group="carPartsGroup3"	count="1,3" />
+	<item group="carPartsGroup4"	count="1,2" />
+</lootgroup>
+
+<lootgroup name="carSubGroup1B" count="all">
+	<item group="carPartsGroup1"	count="1" />
+	<item group="carPartsGroup3"	count="1,3" />
+	<item group="carPartsGroup5"	count="1,2" />
+</lootgroup>
+
+<lootgroup name="carSubGroup1C" count="all">
+	<item group="carPartsGroup1"	count="1" />
+	<item group="carPartsGroup4"	count="1,2" />
+	<item group="carPartsGroup5"	count="1,2" />
+</lootgroup>
+
+<lootgroup name="carSubGroup1D" count="all">
+	<item group="carPartsGroup3"	count="1,3" />
+	<item group="carPartsGroup4"	count="1,2" />
+	<item group="carPartsGroup5"	count="1,2" />
+</lootgroup>
+
+<lootgroup name="carSubGroup1Selector" count="1">
+	<item group="carSubGroup1A" 	count="1" />
+	<item group="carSubGroup1B" 	count="1" />
+	<item group="carSubGroup1C" 	count="1" />
+	<item group="carSubGroup1D" 	count="1" />
+</lootgroup>
+
+<lootgroup name="carSubGroup2A" count="all">
+	<item group="carPartsGroup3"	count="1,2" />
+	<item group="carPartsGroup4"	count="1" />
+</lootgroup>
+
+<lootgroup name="carSubGroup2B" count="all">
+	<item group="carPartsGroup3"	count="1,2" />
+	<item group="carPartsGroup5"	count="1" />
+</lootgroup>
+
+<lootgroup name="carSubGroup2C" count="all">
+	<item group="carPartsGroup4"	count="1" />
+	<item group="carPartsGroup5"	count="1" />
+</lootgroup>
+
+<lootgroup name="carSubGroup2Selector" count="1">
+	<item group="carSubGroup2A" 	count="1" />
+	<item group="carSubGroup2B" 	count="1" />
+	<item group="carSubGroup2C" 	count="1" />
+</lootgroup>
+
+<lootgroup name="carBox0" count="all">
+	<item group="carEngineBattery" 	count="1" />
+	<item group="carPartsGroup1"	count="1" />
+	<item group="carPartsGroup2"	count="1" />
+	<item group="carPartsGroup3"	count="1,3" />
+	<item group="carPartsGroup4"	count="2,3" />
+	<item group="carPartsGroup5"	count="1,3" />
+	<item name="gasCan"				count="500,1000" />
+</lootgroup>
+
+<lootgroup name="carBox1" count="all">
+	<item group="carEngineBatteryOne" 	count="1" />
+	<item group="carSubGroup1Selector" 	count="1" />
+	<item name="gasCan"					count="300,800" />
+</lootgroup>
+
+<lootgroup name="carBox2" count="all">
+	<item group="carEngineBatteryOne" 	count="0,1" />
+	<item group="carSubGroup2Selector" 	count="1" />
+	<item name="gasCan"					count="0,400" />
+</lootgroup>
+
 
 <!-- misc storage, cardboard boxes-->
 <lootcontainer id="1" count="0,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
@@ -2591,6 +2709,18 @@
 
 <lootcontainer id="114" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="baseTemplate">
 	<item group="schematicBagLoot" count="1" />
+</lootcontainer>
+
+<lootcontainer id="115" destroy_on_close="true" count="1" size="5,5" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="treasureTemplate">
+	<item group="carBox0" count="1" />
+</lootcontainer>
+
+<lootcontainer id="116" destroy_on_close="true" count="1" size="5,5" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="treasureTemplate">
+	<item group="carBox1" count="1" />
+</lootcontainer>
+
+<lootcontainer id="117" destroy_on_close="true" count="1" size="5,5" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="treasureTemplate">
+	<item group="carBox2" count="1" />
 </lootcontainer>
 
 <lootcontainer id="120" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump" loot_quality_template="baseTemplate">

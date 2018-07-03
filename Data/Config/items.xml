@@ -3988,6 +3988,56 @@ Mesh files no longer used:
 	<property name="RepairExpMultiplier" value="300"/>
 </item>
 
+<item id="149" name="megaWrench">
+	<property name="Meshfile" value="Items/Tools/wrenchPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="forgedSteel"/>
+	<property name="HoldType" value="29"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="EconomicValue" value="288"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="8.27"/>
+		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.stone" value="0.5"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.metal" value="2"/>
+		<property name="DamageBonus.organic" value="0.5"/>
+		<property name="ActionExp" value="4"/>
+		<property name="ToolCategory.Disassemble" value="1" param1="2"  />
+		<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
+        <property name="Particle_harvesting" value="true" param1="metal" />
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.4"/>
+		<property name="Repair_amount" value="350"/>
+		<property name="Upgrade_hit_offset" value="-2"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="megaWrench"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,10"/>
+		<property name="BlockDamage" value="2,10"/>
+		<property name="DegradationMax" value="500,1400"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="-0.3,-0.1"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="65"/>
+</item>
+
 <!-- * * * * * * * * * * ammunition / arrows / bolts / fuel * * * * * * * * * * -->
 
 <item id="150" name="9mmBullet">
@@ -8634,6 +8684,32 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="80"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -8680,6 +8756,32 @@ Mesh files no longer used:
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="250"/> <!-- STK drink -->
 	<property name="EconomicValue" value="36"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -8702,6 +8804,32 @@ Mesh files no longer used:
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="250"/> <!-- STK drink -->
 	<property name="EconomicValue" value="36"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -9459,6 +9587,32 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="canEmpty"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -9485,6 +9639,32 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="1"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="canEmpty"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -9512,6 +9692,32 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -9538,6 +9744,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -9559,6 +9791,32 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="9f9fff"/>
 	<property name="EconomicValue" value="100"/>
 	<property name="CraftingIngredientTime" value="5"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Delay" value="1.5"/>
 		<property name="Gain_stamina" value="10"/>
@@ -9576,6 +9834,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="250"/> <!-- STK drink -->
 	<property name="EconomicValue" value="34"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -9599,6 +9883,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="250"/> <!-- STK drink -->
 	<property name="EconomicValue" value="36"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -9627,6 +9937,32 @@ Mesh files no longer used:
 	<!-- <property name="Meshfile" value="Items/Food/redTeaPrefab"/>
 	<property name="HoldType" value="3"/> -->
 	<property name="EconomicValue" value="100"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="canEmpty"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Gain_water" value="8"/>
 		<property name="Gain_stamina" value="0"/>
@@ -9641,6 +9977,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="15"/> <!-- STK drink -->
 	<property name="EconomicValue" value="34"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -9664,6 +10026,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="15"/> <!-- STK drink -->
 	<property name="EconomicValue" value="100"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="2"/>
@@ -9687,6 +10075,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="15"/> <!-- STK resource -->
 	<property name="EconomicValue" value="48"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -10401,6 +10815,32 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -10429,6 +10869,32 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyBottle"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -10609,6 +11075,32 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyBottle"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -10830,6 +11322,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="30"/>
 	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -11615,6 +12133,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="Stacknumber" value="15"/> <!-- STK resource -->
 	<property name="EconomicValue" value="48"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -11852,6 +12396,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -11876,6 +12446,32 @@ Mesh files no longer used:
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="60"/>
 	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1"/>
@@ -12391,6 +12987,16 @@ Mesh files no longer used:
 		<property name="Skills_to_gain" value="Leather Tanning"/>
 	</property>
 </item>-->
+
+<item id="1010" name="megaWrenchSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="megaWrenchSchematicDesc"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="Weight" value="10" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="precisionWrench"/>
+	</property>
+</item>
 
 <item id="1011" name="leatherBootsSchematic"> <!-- leatherArmorSchematic -->
 	<property name="Extends" value="schematicMaster"/>

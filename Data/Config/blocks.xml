@@ -1415,7 +1415,32 @@ group desc for stuff like metal siding
 	<property name="EconomicValue" value="8"/>
 	<property name="EconomicBundleSize" value="20"/>
 </block>
-	<!-- 1 Free -->
+	
+<block id="139" name="adobeMaster"> <!-- was stoneToAdobeMaster -->
+	<property name="Group" value="Building"/>
+	<property name="DescriptionKey" value="adobeGroupDesc"/>
+	<property name="Material" value="adobe"/> <!-- 500 -->
+	<property name="Texture" value="171"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="RepairItems"> 
+		<property name="rockSmall"		value="3"/>
+		<property name="crushedSand" 	value="6"/>
+		<property name="clayLump"		value="6"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cobblestoneMaster"/>
+		<property name="Item" value="cobblestones"/>
+		<property name="ItemCount" value="7"/>
+		<property name="UpgradeHitCount" value="6"/>
+	</property>
+	<drop event="Harvest" name="clayLump" 		count="2"/>
+	<drop event="Harvest" name="rockSmall" 		count="1" />
+	<drop event="Harvest" name="crushedSand"	count="2" />
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="8"/>
+	<property name="EconomicBundleSize" value="40"/>
+</block>
 
 <block id="140" name="concreteMaster">
 	<property name="Group" value="Building"/>
@@ -10255,6 +10280,53 @@ group desc for stuff like metal siding
 
 
 	<!-- 35 Free -->
+	
+<block id="955" name="adobeBlock">
+	<property name="Extends" value="adobeMaster"/>
+	<property class="UpgradeBlock"> 
+		<property name="ToBlock" value="cobblestoneBlock"/> 
+	</property>
+</block>
+	
+<block id="956" name="adobeCNRFull">
+	<property name="Extends" value="adobeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="ramp_outside_corner"/>
+	<property class="UpgradeBlock"> 
+		<property name="ToBlock" value="cobblestoneCNRFull"/> 
+	</property>
+</block>
+
+<block id="957" name="adobeCNRInside">
+	<property name="Extends" value="adobeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="ramp_inside_corner"/>
+	<property class="UpgradeBlock"> 
+		<property name="ToBlock" value="cobblestoneCNRInside"/> 
+	</property>
+</block>
+	
+<block id="958" name="adobeRamp">
+	<property name="Extends" value="adobeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="ramp"/> 
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="UpgradeBlock"> 
+		<property name="ToBlock" value="cobblestoneRamp"/> 
+	</property>
+</block>
+	
+<block id="959" name="adobePillar100">
+	<property name="Extends" value="adobeMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="Pole1m"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property class="UpgradeBlock"> 
+		<property name="ToBlock" value="cobblestonePillar100"/> 
+	</property>
+</block>
+	
+	
 
 <block id="985" name="steelArrowSlitHalf">
 	<property name="Extends" value="steelMaster"/>
@@ -14157,6 +14229,12 @@ group desc for stuff like metal siding
 		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntSedanBoxDamage0T"/>
+		<property name="Item" value="megaWrench"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="6"/>
+	</property>
 	<property name="ActivationDistance" value="6"/>
 </block>
 
@@ -14213,6 +14291,12 @@ group desc for stuff like metal siding
 		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntSedanBoxDamage1T"/>
+		<property name="Item" value="megaWrench"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="6"/>
+	</property>
 	<property name="ActivationDistance" value="6"/>
 </block>
 
@@ -14258,9 +14342,97 @@ group desc for stuff like metal siding
 		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
 		<property name="EntityDamage" value="70"/> <!-- damage for entities in the center of the explosion -->
 	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntSedanBoxDamage2T"/>
+		<property name="Item" value="megaWrench"/>
+		<property name="ItemCount" value="0"/>
+		<property name="UpgradeHitCount" value="6"/>
+	</property>
 	<property name="ActivationDistance" value="6"/>
 </block>
 	<!-- n Free -->
+	
+<block id="1456" name="cntSedanBoxDamage0T">
+	<property name="Class" value="UpgradeRated"/>
+	<property name="UpgradeRated.ToBlock" value="cntSedanBoxDamage0"/>
+	<property name="UpgradeRated.Rate" value="1"/>
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+</block>
+	
+<block id="1457" name="cntSedanBoxDamage1T">
+	<property name="Class" value="UpgradeRated"/>
+	<property name="UpgradeRated.ToBlock" value="cntSedanBoxDamage1"/>
+	<property name="UpgradeRated.Rate" value="1"/>
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+</block>	
+	
+<block id="1458" name="cntSedanBoxDamage2T">
+	<property name="Class" value="UpgradeRated"/>
+	<property name="UpgradeRated.ToBlock" value="cntSedanBoxDamage2"/>
+	<property name="UpgradeRated.Rate" value="1"/>
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+</block>
+	
+<block id="1459" name="cntSedanBoxDamage0">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="Class" value="Loot" />
+	<property name="LootList" value="115"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+</block>
+	
+<block id="1460" name="cntSedanBoxDamage1">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="Class" value="Loot" />
+	<property name="LootList" value="116"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+</block>	
+	
+<block id="1461" name="cntSedanBoxDamage2">
+	<property name="CustomIcon" value="cntGarageStorage"/>
+	<property name="Material" value="MCardboardLoot"/>
+	<property name="Texture" value="276,276,270,270,270,270"/>
+	<property name="Class" value="Loot" />
+	<property name="LootList" value="117"/>
+	<property class="RepairItems"> 
+		<property name="paper" value="10"/> 
+		<property name="wood" value="4"/>
+	</property>
+	<drop event="Destroy" name="paper" count="2,8"/>
+</block>
+	
 
 <block id="1463" name="scrapHatch_v1">
 	<property name="Class" value="DoorSecure"/>

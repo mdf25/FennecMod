@@ -681,6 +681,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="emptyJar" count="1"/>
 </recipe>
 
+<recipe name="bottledRiverWater" count="1">
+	<ingredient name="dirtFragment" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="bottledRiverWater" count="1">
+	<ingredient name="crushedSand" 	count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
 <recipe name="chemistryStation" count="1" craft_area="workbench" craft_exp_gain="120">
 	<ingredient name="beaker" count="2"/>
 	<ingredient name="burningBarrelPlayer" count="1"/>
@@ -2599,6 +2609,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cottonPlant" count="1"/>
 	<ingredient name="goldenrodPlant" count="1"/>
 	<ingredient name="bottledRiverWater" count="1"/>
+</recipe>
+
+<recipe name="paint" count="500" craft_area="chemistryStation" craft_exp_gain="30">
+	<ingredient name="potassiumNitrateDust" count="5"/>
+	<ingredient name="groundLeadDustPure" 	count="5"/>
+	<ingredient name="coffeeBeans" 			count="5"/>
+	<ingredient name="bucketWater" 			count="1"/>
 </recipe>
 
 <recipe name="pickaxeIron" count="1" craft_exp_gain="50">
@@ -5062,5 +5079,44 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bucket"			count="1" />	
 	<ingredient name="shortMetalPipe"	count="2" />
 </recipe>
+
+<recipe name="adobeBlock" count="1" craft_time="8">
+	<ingredient name="clayLump"			count="6" />
+	<ingredient name="crushedSand"		count="6" />
+	<ingredient name="rockSmall"		count="3" />
+</recipe>
+
+<recipe name="adobeCNRFull" count="1" craft_time="8">
+	<ingredient name="clayLump"			count="6" />
+	<ingredient name="crushedSand"		count="6" />
+	<ingredient name="rockSmall"		count="3" />
+</recipe>
+
+<recipe name="adobeCNRInside" count="1" craft_time="8">
+	<ingredient name="clayLump"			count="6" />
+	<ingredient name="crushedSand"		count="6" />
+	<ingredient name="rockSmall"		count="3" />
+</recipe>
+
+<recipe name="adobeRamp" count="1" craft_time="8">
+	<ingredient name="clayLump"			count="6" />
+	<ingredient name="crushedSand"		count="6" />
+	<ingredient name="rockSmall"		count="3" />
+</recipe>
+
+<recipe name="adobePillar100" count="1" craft_time="8">
+	<ingredient name="clayLump"			count="6" />
+	<ingredient name="crushedSand"		count="6" />
+	<ingredient name="rockSmall"		count="3" />
+</recipe>
+
+<recipe name="megaWrench" count="1" craft_time="60">
+	<ingredient name="forgedSteel"		count="20" />
+	<ingredient name="mechanicalParts"	count="3" />
+	<ingredient name="electricParts"	count="3" />
+</recipe>
+
+
+
 
 </recipes>

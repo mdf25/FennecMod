@@ -1349,7 +1349,10 @@
 		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="5"/>
 		<recipe name="squeezerWorkbench"		unlock_level="1" />
 	</perk>
-	
+	<perk name="precisionWrench" icon="resource" description_key="precisionWrenchDesc" title_key="precisionWrenchName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<requirement skill_level="1" required_skill_name="MechanicMastery" required_skill_level="2"/>
+		<recipe name="megaWrench"		unlock_level="1" />
+	</perk>
 	<perk name="IronSmithing" icon="resource" description_key="IronSmithingDesc" title_key="IronSmithingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="3"/>
 		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="2"/>
