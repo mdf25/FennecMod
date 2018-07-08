@@ -1045,10 +1045,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="cntCabinetTop" count="1">
 	<ingredient name="wood" count="10"/>
+	<ingredient name="nail" count="8" />
 </recipe>
 
 <recipe name="cntDesk01" count="1">
 	<ingredient name="wood" count="15"/>
+	<ingredient name="nail" count="10"/>
 </recipe>
 
 <recipe name="cntDesk02" count="1">
@@ -1103,18 +1105,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="cntMailBox01" count="1">
-	<ingredient name="forgedIron" count="2"/>
-	<ingredient name="wood" count="3"/>
+	<ingredient name="forgedIron" count="5"/>
+	<ingredient name="wood" count="5"/>
+	<ingredient name="nail"	count="4"/>
 </recipe>
 
 <recipe name="cntMailBox02" count="1">
-	<ingredient name="forgedIron" count="2"/>
-	<ingredient name="wood" count="3"/>
+	<ingredient name="forgedIron" count="5"/>
+	<ingredient name="wood" count="5"/>
+	<ingredient name="nail" count="4"/>
 </recipe>
 
 <recipe name="cntMailBox03" count="1">
-	<ingredient name="forgedIron" count="2"/>
-	<ingredient name="wood" count="3"/>
+	<ingredient name="forgedIron" count="5"/>
+	<ingredient name="wood" count="5"/>
+	<ingredient name="nail"	count="4"/>
 </recipe>
 
 <recipe name="cntNightstand" count="1">
@@ -2963,6 +2968,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="secureDoorWooden" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail"	count="2"/>
 </recipe>
 
 <recipe name="shortMetalPipe" count="1">
@@ -3149,22 +3155,27 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameBlock" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodFrameCNRFull" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodFrameCNRInside" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodFrameRamp" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodFrameWedge" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <!-- TAKEN OUT to stop exploit with carpenter bench giving extra wood.
@@ -3187,18 +3198,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodPlate" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodPole" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodStairs25" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodSupport" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodTable" count="1">
@@ -3213,42 +3228,52 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodArrowSlitHalf" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodHatch1_v1" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodCatwalk" count="1">
 	<ingredient name="wood" count="8"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodCatwalkRailing" count="1">
 	<ingredient name="wood" count="8"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodRailing" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodCatwalkRailingCNR" count="1">
 	<ingredient name="wood" count="8"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodCatwalkWedgeRailing" count="1">
 	<ingredient name="wood" count="8"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodStairsBoard" count="1">
 	<ingredient name="wood" count="8"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodStairsBoardRailing" count="1">
 	<ingredient name="wood" count="8"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="woodWedgeTip" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="signShopColdBeer" count="1">
@@ -3314,6 +3339,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameHalf" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameHalf" count="1">
@@ -3322,6 +3348,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameWedgeIncline" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameWedgeIncline" count="1">
@@ -3339,6 +3366,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameWedgeTipCNRFullTop" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameWedgeTipCNRFullTop" count="1">
@@ -3356,6 +3384,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameWedgeTipCNRFullBottom" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameWedgeTipCNRFullBottom" count="1">
@@ -3386,6 +3415,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameWedgeCNRInsideTop" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameWedgeCNRInsideTop" count="1">
@@ -3403,6 +3433,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameStairs25CornerCNR" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameStairs25CornerCNR" count="1">
@@ -3420,6 +3451,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodCTRpole" count="1">
 	<ingredient name="wood" count="4"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronCTRpole" count="1">
@@ -3437,6 +3469,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameCNRRampFiller" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameCNRRampFiller" count="1">
@@ -3454,6 +3487,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameArch" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameArch" count="1">
@@ -3681,6 +3715,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameWedgeStairs" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameWedgeStairs" count="1">
@@ -3702,6 +3737,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="woodFrameWedgeTipStairs" count="1">
 	<ingredient name="wood" count="2"/>
+	<ingredient name="nail" count="2"/>
 </recipe>
 
 <recipe name="scrapIronFrameWedgeTipStairs" count="1">
@@ -4179,11 +4215,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawFish"				count="1" />
 </recipe>
 
-<recipe name="canSalmon" count="1" craft_area="working_oven">
-	<ingredient name="canBoiledWater"		count="1" />
-	<ingredient name="rawFish"				count="2" />
-</recipe>
-
 <recipe name="cheese" count="10" craft_area="campfire" craft_tool="cookingPot" craft_time="120" >
 	<ingredient name="bottledMilk" 	count="1" />
 	<ingredient name="vegetableOil"	count="1" />
@@ -4203,6 +4234,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledSoyaMilk" 	count="1" />
 	<ingredient name="vegetableOil"		count="1" />
 </recipe>
+
+<recipe name="scrambledEggs" count="1" craft_area="working_oven" craft_time="40" >
+	<ingredient name="egg"				count="2" />
+	<ingredient name="bottledMilk"		count="1" />
+</recipe>
+
+
 
 <recipe name="cheesyChickenBurger" count="1" craft_area="kitchen_workbench" craft_time="20" craft_tool="breadBoard">
 	<ingredient name="bread"				count="1" />
@@ -4987,6 +5025,26 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawFish"			count="1" />
 </recipe>
 
+<recipe name="rawAnchovy" count="6" craft_time="2">
+	<ingredient name="canAnchovy"	count="1" />
+</recipe> 
+
+<recipe name="cookedSalmon" count="1" craft_area="working_oven" craft_time="60">
+	<ingredient name="rawSalmon"	count="1" />
+</recipe>
+
+<recipe name="smokedSalmon" count="1" craft_area="firepit" craft_time="120" craft_tool="cookingGrill">
+	<ingredient name="rawSalmon"	count="1" />
+	<ingredient name="charcoal"		count="2" />
+	<ingredient name="vegetableOil" count="1" />
+</recipe>
+
+<recipe name="canSalmon" count="2" craft_area="kitchen_workbench" craft_time="5">
+	<ingredient name="canBoiledWater" 	count="2" />
+	<ingredient name="rawSalmon"		count="1" />
+	<ingredient name="vegetableOil"		count="1" />
+</recipe>
+
 <recipe name="fishAndChips" count="1" craft_area="working_oven" craft_time="60">
 	<ingredient name="dough"			count="1" />
 	<ingredient name="rawFish"			count="1" />
@@ -5012,6 +5070,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="workerBeeRoasted" count="1" craft_area="campfire">
 	<ingredient name="workerBee" 		count="1" />
+</recipe>
+
+<recipe name="canSoupHot" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="canSoup"			count="1" />
+</recipe>
+
+<recipe name="canMisoHot" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="canMiso"			count="1" />
+</recipe>
+
+<recipe name="canPastaHot" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="canPasta"			count="1" />
 </recipe>
 
 <recipe name="honeyYuccaPie" count="1" craft_area="kitchen_workbench" craft_time="30" craft_tool="breadBoard">
@@ -5116,7 +5186,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="electricParts"	count="3" />
 </recipe>
 
+<recipe name="bloodTransfusionKit" count="1" craft_time="10">
+	<ingredient name="bloodDrawKit" 		count="1" />
+	<ingredient name="shortMetalPipe" 		count="2" />
+	<ingredient name="bloodBag"				count="1" />
+</recipe>
 
+<recipe name="bloodTransfusionKitSterile" count="1" craft_time="3">
+	<ingredient name="bloodTransfusionKit" 	count="1" />
+	<ingredient name="grainAlcohol" 		count="1" />
+</recipe>
+
+<recipe name="bloodDrawKitSterile" count="1" craft_time="3">
+	<ingredient name="bloodDrawKit"			count="1" />
+	<ingredient name="grainAlcohol"			count="1" />
+</recipe>
 
 
 </recipes>

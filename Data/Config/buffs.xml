@@ -319,12 +319,12 @@ built-in buff variables:
 
 
 
-<buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
+<buff id="bleeding" duration="60" type="bleeding" actions="increment(BDKbloodLoss, 4, 1, 0, 0);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="1"/>
 </buff>
 
-<buff id="trapDamage1Trigger" duration="1" type="bleeding" actions="setvar(CTRtrapDmg1, 3);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge)" /> <!-- spikes and other traps -->
+<buff id="trapDamage1Trigger" duration="1" type="bleeding" actions="increment(BDKbloodLoss, 10, 1, 0, 0);setvar(CTRtrapDmg1, 3);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge)" /> <!-- spikes and other traps -->
 <buff id="trapDamage1Effect" buffif="CTRtrapDmg1 greater 0" debuffif="CTRtrapDmg1 less 1" duration="0" type="bleeding" actions="increment(CTRtrapDmg1, -1, 1, 0, 0)"
 	name_key="trapDamage1EffectName" description_key="trapDamage1EffectDesc" tooltip_key="trapDamage1EffectTooltip" icon="ui_game_symbol_critical" >
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
@@ -650,7 +650,6 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 	<modify id="1" stat="health" amount="-15" rate="1"/>
 </buff>
 
-
 <buff id="extinguishFireBuff" duration="10" stack="reset" actions="debuff(burningSmall);debuff(burning);debuff(burningMolotov);debuff(burningSmall);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0)"
 	icon="ui_game_symbol_water" name_key="extinguishFireBuffName" description_key="extinguishFireBuffDesc"/>
 
@@ -794,16 +793,27 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 <buff id="bloodDrawTrigger" duration="1" actions="increment(BDKbloodLoss, 150, 1, 0, 0)" /> <!-- 1 default game hour = 150s -->
 <buff id="bloodDrawDecay" duration="0" buffif="BDKbloodLoss greater 0" debuffif="BDKbloodLoss less 1" actions="increment(BDKbloodLoss, -10, 10, 0, 0)" />
 
+<buff id="bloodTransfuseTrigger" duration="1" actions="increment(BDKbloodLoss, -150, 1, 0, 0)" />
+<buff id="bloodSet0" buffif="BDKbloodLoss less 0" debuffif="BDKbloodLoss gequal 0" duration="0" actions="min(BDKbloodLoss,0)" />
+
 <buff id="bloodDrawWarn" stack="discard" buffif="BDKbloodLoss greater 150" debuffif="BDKbloodLoss greater 300" duration="0"
 	icon="ui_game_symbol_death" name_key="BDKWarning" description_key="BDKWarningDesc" tooltip_key="BDKWarningDesc" >
 	<modify id="1" stat="stamina" amount="-.5" rate="1"/>
 </buff>
 <buff id="bloodDrawDecayClear" duration="1" buffif="BDKbloodLoss less 150" debuffif="BDKbloodLoss greater 139" actions="debuff(bloodDrawWarn)"/>
 
-<buff id="bloodDrawWeak" stack="discard" buffif="BDKbloodLoss greater 300" debuffif="BDKbloodLoss less 301" duration="0"
+<buff id="bloodDrawWeak" stack="discard" buffif="BDKbloodLoss greater 300" debuffif="BDKbloodLoss greater 600" duration="0"
 	icon="ui_game_symbol_death" name_key="BDKWarning" description_key="BDKWarningDesc" tooltip_key="BDKWarningDesc" >
 	<modify id="0" stat="wellness" amount="-.6" rate="60" />
 	<modify id="1" stat="stamina" amount="-2" rate="1"/>
+</buff>
+<buff id="bloodDrawDecayClear2" duration="1" buffif="BDKbloodLoss less 300" debuffif="BDKbloodLoss greater 289" actions="debuff(bloodDrawWeak)"/>
+
+<buff id="bloodDrawSevere" stack="discard" buffif="BDKbloodLoss greater 600" debuffif="BDKbloodLoss less 601" duration="0"
+	icon="ui_game_symbol_skull" name_key="bloodDrawSevereName" description_key="BloodDrawSevereDesc" tooltip_key="BloodDrawSevereTooltip" >
+	<modify id="0" stat="wellness" 	amount="-.6" rate="60" />
+	<modify id="1" stat="stamina" 	amount="-3" rate="1"/>
+	<modify id="2" stat="health"   	amount="-5" rate="1" />
 </buff>
 
 <!-- Snowberries double your natural water consumption. If you eat too much they are poisonous. Fun stuff. -->

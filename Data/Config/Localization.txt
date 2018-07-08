@@ -1698,7 +1698,7 @@ bandageDesc,items,Medical,KgNone,A simple bandage. Use it to stop bleeding.,Un s
 bloodBag,items,Medical,KgNone,Blood Bag,Poche de sang,Blutbeutel,,Bolsa de sangre
 bloodBagDesc,items,Medical,KgNone,Use blood bags to restore a little health or to craft first aid kits.,Utilisez les poches de sang pour restaurer un peu de santé ou fabriquer des trousses de premiers soins.,"Benutze Blutbeutel, um etwas Gesundheit wiederherzustellen oder Verbandskasten zu fertigen.",,Usa bolsas de sangre para recuperar algo de salud o fabricar botiquines de primeros auxilios.
 bloodDrawKit,items,Medical,KgNone,Blood Draw Kit,Kit de prise de sang,Blutabnahmekit,,Kit de extracción de sangre
-bloodDrawKitDesc,items,Medical,KgNone,Use blood draw kits to make blood bags. These are used to craft first aid kits.,Utilisez les kits de prise de sang pour faire des poches de sang. Ces dernières servent à fabriquer des trousses de premiers soins.,"Benutze Blutabnahmekits, um Blutbeutel zu erhalten. Mit ihnen können Verbandskasten gefertigt werden.",,Usa kits de extracción de sangre para preparar las bolsas de sangre. Estas se necesitan para fabricar botiquines de primeros auxilios.
+bloodDrawKitDesc,items,Medical,KgNone,"Use blood draw kits to make blood bags. These are used to craft first aid kits. Beware, the needle may not be sterile and infection is likely.",Utilisez les kits de prise de sang pour faire des poches de sang. Ces dernières servent à fabriquer des trousses de premiers soins.,"Benutze Blutabnahmekits, um Blutbeutel zu erhalten. Mit ihnen können Verbandskasten gefertigt werden.",,Usa kits de extracción de sangre para preparar las bolsas de sangre. Estas se necesitan para fabricar botiquines de primeros auxilios.
 firstAidBandage,items,Medical,KgNone,First Aid Bandage,Bandage médical,Erste-Hilfe-Verband,,Vendaje de primeros auxilios
 firstAidBandageDesc,items,Medical,KgNone,A first aid bandage can stop bleeding and restore some health.,Le bandage médical peut arrêter une hémorragie et restaurer de la santé.,Erste-Hilfe-Verbände können Blutungen stoppen und Gesundheit wiederherstellen.,,Un vendaje de primeros auxilios puede detener una hemorragia y restaurar algo de salud.
 firstAidKit,items,Medical,KgNone,First Aid Kit,Trousse de premiers soins,Verbandskasten,,Botiquín de primeros auxilios
@@ -5167,6 +5167,26 @@ kittyKasserole,items,Book,KgNone,"Kitty Kasserole",,,,
 kittyKasseroleDesc,items,Book,KgNone,"If anything could make your cat sick all over your carpet, surely this would be it.",,,,
 kittyKasseroleTasty,items,Book,KgNone,"Kitty Kasserole (Tasty?)",,,,
 kittyKasseroleTastyDesc,items,Book,KgNone,"Now that a master chef has... improved... this recipe, all I hear outside are cats.",,,,
+scrambledEggs,items,Food,KgNone,"Scrambled Eggs",,,,
+scrambledEggsDesc,items,Food,KgNone,"For a treat that is sure to add fat to your arse, try scrambled eggs! Just don't burn them, lest a putrid girl come runnin'. Crafted in a working oven.",,,,
+
+holyBallz,items,Food,KgNone,"Holy Ballz",,,,
+holyBallzDesc,items,Food,KgNone,"Go on... Eat them... You know you want to... Double dare ya!",,,,
+
+bloodDrawSevereName,buffs,buff,EnChanged,"Severe Blood Loss",,,,
+bloodDrawSevereDesc,buffs,buff,EnChanged,"You are suffering from severe blood loss!",,,,
+bloodDrawSevereTooltip,buffs,buff,EnChanged,"You are suffering from severe blood loss!",,,,
+
+bloodTransfusionKit,items,Medical,KgNone,"Blood Transfusion Kit",,,,
+bloodTransfusionKitDesc,items,Medical,KgNone,"A blood transfusion kit can be used to help you recover from blood loss. But, infection is likely as the needle may not be sterile, and who knows where that blood came from...",,,,
+bloodDrawKitSterile,items,Medical,KgNone,"Blood Draw Kit (Sterile)",,,,
+bloodDrawKitSterileDesc,items,Medical,KgNone,"A sterile blood draw kit will allow you to safely draw blood without risk of infection.",,,,
+bloodTransfusionKitSterile,items,Medical,KgNone,"Blood Transfusion Kit (Sterile)",,,,
+bloodTransfusionKitSterileDesc,items,Medical,KgNone,"A sterile blood transfusion kit will allow you to recover from blood loss, with a much reduced chance of infection. However, that blood source may not be safe...",,,,
+
+
+
+
 copperFragment,items,Book,KgNone,"Copper Fragment",,,,
 copperFragmentDesc,items,Book,KgNone,"Raw copper can be smelted in a forge and then used to make tools and some electrical devices.",,,,
 zincFragment,items,Book,kgNone,"Zinc Fragment",,,,
@@ -5943,6 +5963,23 @@ cookedFish,items,Food,KgNone,"Cooked Fish",,,,
 cookedFishDesc,items,Food,KgNone,"I think this thing was still flapping about in the pot during cooking... But maybe that makes it taste better?",,,,
 fishAndChips,items,Food,KgNone,"Fish and Chips",,,,
 fishAndChipsDesc,items,Food,KgNone,"Heaven on a plate! Well, as long as the fish was gutted and the chips weren't undercooked. Maybe it could be hell on a plate... Better dig in and find out.",,,,
+rawAnchovy,items,Food,KgNone,"Raw Anchovy",,,,
+rawAnchovyDesc,items,Food,KgNone,"An anchovy is not very filling but can be eaten raw. It is a little salty though.",,,,
+canAnchovy,items,Food,KgNone,"Can of Anchovies",,,,
+canAnchovyDesc,items,Food,KgNone,"A can of 6 anchovies, perfectly preserved, and just as salty as ever!",,,,
+rawSalmon,items,Food,KgNone,"Raw Salmon",,,,
+rawSalmonDesc,items,Food,KgNone,"A salmon will provide a great source of protein, but should probably be cooked first.",,,,
+cookedSalmon,items,Food,KgNone,"Cooked Salmon",,,,
+cookedSalmonDesc,items,Food,KgNone,"A cooked salmon is sure to make for some good eating! Prepare in a working oven for best results.",,,,
+smokedSalmon,items,Food,KgNone,"Smoked Salmon",,,,
+smokedSalmonDesc,items,Food,KgNone,"Smoked salmon tastes great and is sure to give you a wellness boost! Smoke over a firepit with some charcoal for best results.",,,,
+
+canSoupHot,items,Food,KgNone,"Can of Hot Soup",,,,
+canSoupHotDesc,items,Food,KgNone,"A heated can of soup is sure to raise your core temperature, good for cold environments.",,,,
+canMisoHot,items,Food,KgNone,"Can of Hot Miso",,,,
+canMisoHotDesc,items,Food,KgNone,"A heated can of miso is sure to raise your core temperature, good for cold environments.",,,,
+canPastaHot,items,Food,KgNone,"Can of Hot Pasta",,,,
+canPastaHotDesc,items,Food,KgNone,"A heated can of pasta is sure to raise your core temperature, good for cold environments.",,,,
 
 noteFragment,items,Schematic,KgNone,"Note Fragment",,,,
 noteFragmentDesc,items,Schematics,KgNone,"A note fragment. Collect enough of them, and you will be able to craft another class paper.",,,,
