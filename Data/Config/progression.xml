@@ -264,7 +264,7 @@
 	<!-- Pistols -->
 	<perk name="PistolMastery" icon="pistol" description_key="PistolMasteryDesc" title_key="PistolMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
 	</perk>
-	<perk name="PistolBuff" icon="pistol" description_key="PistolBuffDesc" title_key="PistolBuffName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
+	<perk name="PistolPerk" icon="pistol" description_key="PistolBuffDesc" title_key="PistolBuffName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
 		<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="1"/>
 		<effect name="EntityDamage">
@@ -297,7 +297,7 @@
 	<!-- Rifles -->
 	<perk name="RifleMastery" icon="rifle" description_key="RifleMasteryDesc" title_key="RifleMasteryName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
 	</perk>
-	<perk name="RifleBuff" icon="rifle" description_key="RifleBuffDesc" title_key="RifleBuffName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
+	<perk name="RiflePerk" icon="rifle" description_key="RifleBuffDesc" title_key="RifleBuffName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
 		<requirement perk_level="1" required_skill_name="Rifles" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Rifles" required_skill_level="1"/>
 		<effect name="EntityDamage">
@@ -658,6 +658,7 @@
 		<recipe name="seedPacketAloe" 			unlock_level="2"/>
 		<recipe name="seedPacketMushroom" 		unlock_level="2"/>
 		<recipe name="seedPacketHop" 			unlock_level="2"/>
+		<recipe name="seedPacketTomato"			unlock_level="2"/>
 	</perk>
 	<perk name="FarmerStationRecipe" icon="rifle" description_key="FarmerSeedCraftingDesc" title_key="FarmerSeedCraftingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="firearms">
 		<recipe name="fertilizerStation" 		unlock_level="1"/>

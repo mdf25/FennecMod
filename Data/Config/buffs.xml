@@ -177,30 +177,30 @@ built-in buff variables:
 
 
 <!-- Eating buffs: Each of these will raise a counter by 3, 5, 10 or 15 and will be applied to food types. -->
-<buff id="ConsumeFruit3" 		duration="1" actions="increment(CTRfruit,1,0,0,1);max(CTRfruit,100)" />
-<buff id="ConsumeFruit5" 		duration="1" actions="increment(CTRfruit,4,0,0,1);max(CTRfruit,100)" />
-<buff id="ConsumeFruit10" 		duration="1" actions="increment(CTRfruit,8,0,0,1);max(CTRfruit,100)" />
-<buff id="ConsumeFruit15" 		duration="1" actions="increment(CTRfruit,16,0,0,1);max(CTRfruit,100)" />
+<buff id="ConsumeFruit3" 		duration="1" actions="increment(CTRfruit,3,0,0,1);max(CTRfruit,100)" />
+<buff id="ConsumeFruit5" 		duration="1" actions="increment(CTRfruit,7,0,0,1);max(CTRfruit,100)" />
+<buff id="ConsumeFruit10" 		duration="1" actions="increment(CTRfruit,12,0,0,1);max(CTRfruit,100)" />
+<buff id="ConsumeFruit15" 		duration="1" actions="increment(CTRfruit,18,0,0,1);max(CTRfruit,100)" />
 
-<buff id="ConsumeVegetables3" 	duration="1" actions="increment(CTRvegetables,1,0,0,1);max(CTRvegetables,100)" />
-<buff id="ConsumeVegetables5" 	duration="1" actions="increment(CTRvegetables,4,0,0,1);max(CTRvegetables,100)" />
-<buff id="ConsumeVegetables10" 	duration="1" actions="increment(CTRvegetables,8,0,0,1);max(CTRvegetables,100)" />
-<buff id="ConsumeVegetables15" 	duration="1" actions="increment(CTRvegetables,16,0,0,1);max(CTRvegetables,100)" />
+<buff id="ConsumeVegetables3" 	duration="1" actions="increment(CTRvegetables,3,0,0,1);max(CTRvegetables,100)" />
+<buff id="ConsumeVegetables5" 	duration="1" actions="increment(CTRvegetables,7,0,0,1);max(CTRvegetables,100)" />
+<buff id="ConsumeVegetables10" 	duration="1" actions="increment(CTRvegetables,12,0,0,1);max(CTRvegetables,100)" />
+<buff id="ConsumeVegetables15" 	duration="1" actions="increment(CTRvegetables,18,0,0,1);max(CTRvegetables,100)" />
 
 <buff id="ConsumeMeats3" 		duration="1" actions="increment(CTRmeats,1,0,0,1);max(CTRmeats,100)" />
 <buff id="ConsumeMeats5" 		duration="1" actions="increment(CTRmeats,4,0,0,1);max(CTRmeats,100)" />
 <buff id="ConsumeMeats10" 		duration="1" actions="increment(CTRmeats,8,0,0,1);max(CTRmeats,100)" />
 <buff id="ConsumeMeats15" 		duration="1" actions="increment(CTRmeats,16,0,0,1);max(CTRmeats,100)" />
 
-<buff id="ConsumeGrain3" 		duration="1" actions="increment(CTRgrain,1,0,0,1);max(CTRgrain,100)" />
-<buff id="ConsumeGrain5" 		duration="1" actions="increment(CTRgrain,4,0,0,1);max(CTRgrain,100)" />
-<buff id="ConsumeGrain10" 		duration="1" actions="increment(CTRgrain,8,0,0,1);max(CTRgrain,100)" />
-<buff id="ConsumeGrain15" 		duration="1" actions="increment(CTRgrain,16,0,0,1);max(CTRgrain,100)" />
+<buff id="ConsumeGrain3" 		duration="1" actions="increment(CTRgrain,3,0,0,1);max(CTRgrain,100)" />
+<buff id="ConsumeGrain5" 		duration="1" actions="increment(CTRgrain,7,0,0,1);max(CTRgrain,100)" />
+<buff id="ConsumeGrain10" 		duration="1" actions="increment(CTRgrain,12,0,0,1);max(CTRgrain,100)" />
+<buff id="ConsumeGrain15" 		duration="1" actions="increment(CTRgrain,18,0,0,1);max(CTRgrain,100)" />
 
-<buff id="ConsumeDairy3" 		duration="1" actions="increment(CTRdairy,1,0,0,1);max(CTRdairy,100)" />
-<buff id="ConsumeDairy5" 		duration="1" actions="increment(CTRdairy,4,0,0,1);max(CTRdairy,100)" />
-<buff id="ConsumeDairy10" 		duration="1" actions="increment(CTRdairy,8,0,0,1);max(CTRdairy,100)" />
-<buff id="ConsumeDairy15" 		duration="1" actions="increment(CTRdairy,16,0,0,1);max(CTRdairy,100)" />
+<buff id="ConsumeDairy3" 		duration="1" actions="increment(CTRdairy,3,0,0,1);max(CTRdairy,100)" />
+<buff id="ConsumeDairy5" 		duration="1" actions="increment(CTRdairy,7,0,0,1);max(CTRdairy,100)" />
+<buff id="ConsumeDairy10" 		duration="1" actions="increment(CTRdairy,12,0,0,1);max(CTRdairy,100)" />
+<buff id="ConsumeDairy15" 		duration="1" actions="increment(CTRdairy,18,0,0,1);max(CTRdairy,100)" />
 
 <!-- Vitamins. Food and antibiotics give 1, vitamins give 5 -->
 <buff id="ConsumeVitamins1" 	duration="1" actions="increment(CTRvitamins,1,0,0,1);max(CTRvitamins,50)" />
@@ -737,10 +737,21 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 
 <buff id="testBreath" duration="0" stack="discard" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" icon="ui_game_symbol_cold" description_key=""/>
 
+<buff id="Bomber" duration="10" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)">
+    <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>
+    <modify id="1" stat="speedmodifier" modifyValue="2.0"/>
+    <modify id="2" stat="health" 		setValue="100"/>
+	<modify id="3" stat="health"		amount="500" rate="10" />
+</buff>
 
 <buff id="shotgunWound" mutex="painkillerBuff" duration="5" stack="reset" type="speedmodifier" icon="ui_game_symbol_brokenbone" name_key="shotgunWound" description_key="shotgunWoundDesc" tooltip_key="shotgunWoundTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="0.4"/>
 	<modify id="0" stat="health" amount="-2" rate="1" />
+</buff>
+
+<buff id="bombWinded" mutex="painkillerBuff" duration="10" stack="reset" type="speedmodifier" icon="ui_game_symbol_brokenbone" name_key="shotgunWound" description_key="shotgunWoundDesc" tooltip_key="shotgunWoundTooltip">
+	<modify id="0" stat="speedmodifier" mulValue="0.3"/>
+	<modify id="0" stat="health" amount="-1" rate="1" />
 </buff>
 
 <buff id="sleepingBagTrigger" duration="1" actions="setvar(CTRbedroll, 10)" />

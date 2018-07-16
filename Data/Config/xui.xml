@@ -45,6 +45,17 @@
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
+		<window_group name="workstation_forgeHighHeat" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeHighHeatInput" />
+			<window name="windowForgeHighHeatOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
 		<window_group name="workstation_alloyForge" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
@@ -56,6 +67,17 @@
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
+		<window_group name="workstation_alloyForgeHighHeat" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeHighHeatInput" />
+			<window name="windowForgeHighHeatOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
 		<window_group name="workstation_laserForge" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
@@ -64,6 +86,17 @@
 			<window name="windowFuel" />
 			<window name="windowForgeInput" />
 			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_laserForgeHighHeat" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeHighHeatInput" />
+			<window name="windowForgeHighHeatOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		

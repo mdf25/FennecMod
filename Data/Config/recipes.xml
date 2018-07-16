@@ -321,6 +321,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="seedPacketWheat" count="1"/>
 </recipe>
 
+
+<recipe name="plantedTomato1" count="1" craft_time="1">
+	<ingredient name="tomato" count="1"/>
+</recipe>
+
+<recipe name="seedPacketTomato" count="1" craft_time="1">
+	<ingredient name="tomato" count="1"/>
+</recipe>
+
+<recipe name="plantedTomato1" count="3" craft_time="1">
+	<ingredient name="seedPacketTomato" count="1"/>
+</recipe>
+
+
 <recipe name="flour" count="1" craft_time="10">
 	<ingredient name="wheat" count="3" />
 </recipe>
@@ -385,12 +399,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="alloyForge" count="1" craft_area="workbench">
+<recipe name="alloyForge" count="1" craft_area="workbench" craft_exp_gain="120">
 	<ingredient name="bellows"				count="2"/>
 	<ingredient name="cobblestones" 		count="150"/>
 	<ingredient name="ingotMoldHardened"	count="2"/>
 	<ingredient name="forgedSteel" 			count="10"/>
 	<ingredient name="forgedCopper" 		count="20"/>
+</recipe>
+
+<recipe name="alloyForgeHighHeat" count="1" craft_area="workbench" craft_exp_gain="180">
+	<ingredient name="alloyForge" 			count="1" />
+	<ingredient name="bellows"				count="1" />
+	<ingredient name="mechanicalParts"		count="10"/>
+	<ingredient name="shortMetalPipe"		count="3" />
 </recipe>
 
 <recipe name="scrapBrass" count="4" craft_area="alloy_forge" material_based="true">
@@ -866,6 +887,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cobblestones" count="100" 	/>
 	<ingredient name="electronicParts" count="50" 	/>
 	<ingredient name="rawDiamond"	count="20" 		/>
+</recipe>
+
+<recipe name="laserForgeHighHeat" count="1" craft_area="workbench" craft_exp_gain="500">
+	<ingredient name="laserForge" 		count="1" />
+	<ingredient name="forgedFadium"		count="5" />
+	<ingredient name="forgedFoxium"		count="5" />
+	<ingredient name="solarCell"		count="2" />
 </recipe>
 
 <recipe name="burntForestGround" count="1">
@@ -1616,6 +1644,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="ingotMoldHardened"	count="2"  />
 	<ingredient name="forgedCopper" 		count="15" />
 	<ingredient name="charcoal" 			count="20" />
+</recipe>
+
+<recipe name="forgeHighHeat" count="1" craft_area="workbench" craft_exp_gain="120">
+	<ingredient name="forge"				count="1" />
+	<ingredient name="bellows"				count="1" />
+	<ingredient name="mechanicalParts"		count="10"/>
+	<ingredient name="shortMetalPipe"		count="3" />
 </recipe>
 
 <recipe name="chisel" count="1" craft_exp_gain="15">
@@ -2507,6 +2542,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="oil" count="1"/>
 	<ingredient name="emptyJar" count="1"/>
 </recipe>
+
+<recipe name="molotovCocktail" count="1" craft_exp_gain="8">
+	<ingredient name="spirits"	count="1" />
+	<ingredient name="cloth"	count="1" />
+</recipe>
+
+<!--
+<recipe name="canBomb" count="1" craft_exp_gain="12">
+	<ingredient name="canEmpty"		count="1" />
+	<ingredient name="scrapLead"	count="2" />
+	<ingredient name="gunPowder"	count="3" />
+	<ingredient name="ductTape"		count="1" />
+</recipe>
+-->
 
 <recipe name="candyTin" count="1" craft_area="workbench">
 	<ingredient name="scrapIron" count="5"/>
@@ -4177,13 +4226,24 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="yoghurt" count="1" craft_area="working_oven" craft_time="20">
-	<ingredient name="bottledSoyaMilk"			count="1" />
+	<ingredient name="bottledSoyaMilk"		count="1" />
 	<ingredient name="bottledBoiledWater" 	count="1" />
 </recipe>
 
-<recipe name="yoghurtBlueberry" count="1" craft_area="working_oven" craft_time="5">
+<recipe name="yoghurtBlueberry" count="1" craft_area="kitchen_workbench" craft_tool="mixingBowl" craft_time="5">
 	<ingredient name="yoghurt"				count="1" />
 	<ingredient name="blueberries"			count="3" />
+</recipe>
+
+<recipe name="yoghurtBlueberry" count="1" craft_area="working_oven" craft_time="25">
+	<ingredient name="bottledMilk"			count="1" />
+	<ingredient name="bottledBoiledWater"	count="1" />
+	<ingredient name="blueberries"			count="3" />
+</recipe>
+
+<recipe name="yoghurtYucca" count="1" craft_area="kitchen_workbench" craft_tool="mixingBowl" craft_time="5">
+	<ingredient name="yoghurt"				count="1" />
+	<ingredient name="foodYuccaFruit"		count="3" />
 </recipe>
 
 <recipe name="yoghurtYucca" count="1" craft_area="working_oven" craft_time="25">
@@ -4192,8 +4252,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="foodYuccaFruit"		count="3" />
 </recipe>
 
+<recipe name="yoghurtMixedFruit" count="1" craft_area="kitchen_workbench" craft_tool="mixingBowl" craft_time="5">
+	<ingredient name="yoghurt"				count="2" />
+	<ingredient name="foodYuccaFruit"		count="1" />
+	<ingredient name="blueberries"			count="1" />
+	<ingredient name="canPears"				count="1" />
+</recipe>
+
 <recipe name="yoghurtMixedFruit" count="1" craft_area="working_oven" craft_time="5">
-	<ingredient name="yoghurt"				count="1" />
+	<ingredient name="bottledMilk"			count="2" />
+	<ingredient name="bottledBoiledWater"	count="2" />
 	<ingredient name="foodYuccaFruit"		count="1" />
 	<ingredient name="blueberries"			count="1" />
 	<ingredient name="canPears"				count="1" />
@@ -4215,22 +4283,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawFish"				count="1" />
 </recipe>
 
-<recipe name="cheese" count="10" craft_area="campfire" craft_tool="cookingPot" craft_time="120" >
+<recipe name="cheese" count="5" craft_area="campfire" craft_tool="cookingPot" craft_time="120" >
 	<ingredient name="bottledMilk" 	count="1" />
 	<ingredient name="vegetableOil"	count="1" />
 </recipe>
 
-<recipe name="cheese" count="10" craft_area="working_oven" craft_time="60" >
+<recipe name="cheese" count="5" craft_area="working_oven" craft_time="60" >
 	<ingredient name="bottledMilk" 	count="1" />
 	<ingredient name="vegetableOil"	count="1" />
 </recipe>
 
-<recipe name="cheese" count="10" craft_area="campfire" craft_tool="cookingPot" craft_time="120" >
+<recipe name="cheese" count="5" craft_area="campfire" craft_tool="cookingPot" craft_time="120" >
 	<ingredient name="bottledSoyaMilk" 	count="1" />
 	<ingredient name="vegetableOil"		count="1" />
 </recipe>
 
-<recipe name="cheese" count="10" craft_area="working_oven" craft_time="60" >
+<recipe name="cheese" count="5" craft_area="working_oven" craft_time="60" >
 	<ingredient name="bottledSoyaMilk" 	count="1" />
 	<ingredient name="vegetableOil"		count="1" />
 </recipe>
@@ -4268,12 +4336,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="dough"				count="2" />
 </recipe>
 
+<recipe name="snakeStrips" count="6" craft_area="campfire" craft_time="50">
+	<ingredient name="rawSnakeMeat"			count="3" />
+	<ingredient name="egg"					count="1" />
+	<ingredient name="dough"				count="2" />
+	<ingredient name="tinFoil"				count="1" />
+</recipe>
+
 <recipe name="grilledCheese" count="3" craft_area="campfire" craft_tool="cookingGrill" craft_time="60">
 	<ingredient name="bread" 				count="1" />
 	<ingredient name="cheese"				count="2" />
 </recipe>
 
-<recipe name="grilledCheese" count="3" craft_area="campfire" craft_time="30">
+<recipe name="grilledCheese" count="3" craft_area="working_oven" craft_time="30">
 	<ingredient name="bread" 				count="1" />
 	<ingredient name="cheese"				count="2" />
 </recipe>
@@ -4404,6 +4479,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="boiledSnakeMeat" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="20">
 	<ingredient name="rawSnakeMeat" count="1" />
+	<ingredient name="bottledWater" count="1" />
 </recipe>
 
 <recipe name="grilledSnakeMeat" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="20">
@@ -5090,6 +5166,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="foodHoney"		count="1" />
 </recipe>
 
+<recipe name="applePie" count="1" craft_area="working_oven" craft_time="30">
+	<ingredient name="apple"			count="2" />
+	<ingredient name="dough"			count="2" />
+</recipe>
+
 <recipe name="blueberryCake" count="1" craft_area="kitchen_workbench" craft_time="30" craft_tool="mixingBowl">
 	<ingredient name="yoghurtBlueberry" count="1" />
 	<ingredient name="blueberries"		count="2" />
@@ -5098,8 +5179,53 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="egg"				count="1" />
 </recipe>
 
+<recipe name="potatoPastaSalad" count="1" craft_area="kitchen_workbench" craft_tool="mixingBowl" craft_time="30">
+	<ingredient name="canPasta"			count="1" />
+	<ingredient name="eggboiled"		count="1" />
+	<ingredient name="boiledPotato"		count="2" />
+	<ingredient name="cornOnTheCob"		count="1" />
+</recipe>
+
+<recipe name="cheeseTomatoPizza" count="1" craft_area="working_oven" craft_time="35">
+	<ingredient name="dough"			count="1" />
+	<ingredient name="cheese"			count="1" />
+	<ingredient name="tomato"			count="1" />
+	<ingredient name="vegetableOil"		count="1" />
+</recipe>
+
+<recipe name="anchovyPizza" count="1" craft_area="working_oven" craft_time="55">
+	<ingredient name="dough"			count="1" />
+	<ingredient name="cheese"			count="1" />
+	<ingredient name="tomato"			count="1" />
+	<ingredient name="vegetableOil"		count="1" />
+	<ingredient name="rawAnchovy"		count="3" />
+</recipe>
+
+<recipe name="venisonFeastPizza" count="1" craft_area="working_oven" craft_time="55">
+	<ingredient name="dough"			count="1" />
+	<ingredient name="cheese"			count="1" />
+	<ingredient name="tomato"			count="1" />
+	<ingredient name="vegetableOil"		count="1" />
+	<ingredient name="rawVenisonMeat"	count="2" />
+</recipe>
+
+<recipe name="venisonWellington" count="1" craft_area="working_oven" craft_time="60">
+	<ingredient name="rawVenisonMeat"	count="1" />
+	<ingredient name="dough"			count="1" />
+	<ingredient name="egg"				count="1" />
+	<ingredient name="mushrooms"		count="2" />
+</recipe>
+
 <recipe name="hunterStew"	count="1" craft_area="working_oven"	craft_time="30">
 	<ingredient name="rawRabbitMeat"	count="3" />
+	<ingredient name="corn"				count="2" />
+	<ingredient name="mushrooms"		count="1" />
+	<ingredient name="canPeas"			count="1" />
+	<ingredient name="bottledWater"		count="1" />
+</recipe>
+
+<recipe name="hunterStew"	count="1" craft_area="working_oven"	craft_time="30">
+	<ingredient name="rawVenisonMeat"	count="2" />
 	<ingredient name="corn"				count="2" />
 	<ingredient name="mushrooms"		count="1" />
 	<ingredient name="canPeas"			count="1" />

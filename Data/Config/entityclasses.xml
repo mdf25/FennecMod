@@ -498,6 +498,59 @@
 	<property name="SightRange"	value="80" />
 </entity_class>
 
+
+<entity_class name="zombieFemaleFatBomber" extends="zombieFemaleFatNS">
+    <property name="Class" value="EntityZombieCop"/>
+    <property name="WalkType" value="1"/>
+    <property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="TintMaterial0" value="255,120,120"/>
+	<property name="TintMaterial2" value="120,30,30"/>
+	<property name="MaxHealth" value="700"/>
+    <property name="LootListOnDeath" value="38"/>
+    <property name="ExperienceGain" value="2500"/>
+    <property name="AITask-1" value="BreakDoor"/>
+    <property name="AITask-2" value="BreakBlock"/>
+    <property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
+    <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+    <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+    <property name="AITask-6" value="ApproachSpot"/>
+    <property name="AITask-7" value="Wander"/>
+    <property name="HandItem" value="handBomber"/>
+    <property name="Explosion.ParticleIndex" value="8"/>
+    <property name="Explosion.RadiusBlocks" value="4"/>
+    <property name="Explosion.RadiusEntities" value="2"/>
+    <property name="Explosion.BlockDamage" value="100"/>
+    <property name="Explosion.EntityDamage" value="300"/>
+    <property name="Explosion.DamageBonus.earth" value="0.5"/>
+</entity_class>
+
+<entity_class name="zombieFemaleFatBomberFeral" extends="zombieFemaleFatFeralNS">
+    <property name="Class" value="EntityZombieCop"/>
+    <property name="WalkType" value="1"/>
+    <property name="Buffs" value="zombieRadiatedBuff80"/>
+	<property name="TintMaterial0" value="255,30,30"/>
+	<property name="TintMaterial0" value="120,30,30"/>
+	<property name="MaxHealth" value="1050"/>
+    <property name="LootListOnDeath" value="38"/>
+    <property name="ExperienceGain" value="3500"/>
+    <property name="AITask-1" value="BreakDoor"/>
+    <property name="AITask-2" value="BreakBlock"/>
+    <property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
+    <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+    <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+    <property name="AITask-6" value="ApproachSpot"/>
+    <property name="AITask-7" value="Wander"/>
+    <property name="HandItem" value="handBomber"/>
+    <property name="Explosion.ParticleIndex" value="8"/>
+    <property name="Explosion.RadiusBlocks" value="5"/>
+    <property name="Explosion.RadiusEntities" value="8"/>
+    <property name="Explosion.BlockDamage" value="300"/>
+    <property name="Explosion.EntityDamage" value="500"/>
+    <property name="Explosion.DamageBonus.earth" value="0.5"/>
+</entity_class>
+
+
+
 <!-- Missing: zombieFemaleFatFeralRadiated -->
 
 <entity_class name="zombieJoe" extends="zombieTemplateMale">
@@ -1254,6 +1307,54 @@
 
 <!-- Missing: zombieFatHawaiianFeralRadiated -->
 
+<entity_class name="zombieFatHawaiianBomber" extends="zombieFatHawaiianNS">
+    <property name="Class" value="EntityZombieCop"/>
+    <property name="WalkType" value="1"/>
+    <property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="TintMaterial0" value="255,120,120"/>
+	<property name="MaxHealth" value="400"/>
+    <property name="LootListOnDeath" value="38"/>
+    <property name="ExperienceGain" value="2500"/>
+    <property name="AITask-1" value="BreakDoor"/>
+    <property name="AITask-2" value="BreakBlock"/>
+    <property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
+    <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+    <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+    <property name="AITask-6" value="ApproachSpot"/>
+    <property name="AITask-7" value="Wander"/>
+    <property name="HandItem" value="handBomber"/>
+    <property name="Explosion.ParticleIndex" value="8"/>
+    <property name="Explosion.RadiusBlocks" value="4"/>
+    <property name="Explosion.RadiusEntities" value="2"/>
+    <property name="Explosion.BlockDamage" value="1000"/>
+    <property name="Explosion.EntityDamage" value="100"/>
+    <property name="Explosion.DamageBonus.earth" value="1.2"/>
+</entity_class>
+
+<entity_class name="zombieFatHawaiianBomberFeral" extends="zombieFatHawaiianFeralNS">
+    <property name="Class" value="EntityZombieCop"/>
+    <property name="WalkType" value="1"/>
+    <property name="Buffs" value="zombieRadiatedBuff80"/>
+	<property name="TintMaterial0" value="255,30,30"/>
+	<property name="MaxHealth" value="500"/>
+    <property name="LootListOnDeath" value="38"/>
+    <property name="ExperienceGain" value="3500"/>
+    <property name="AITask-1" value="BreakDoor"/>
+    <property name="AITask-2" value="BreakBlock"/>
+    <property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
+    <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+    <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+    <property name="AITask-6" value="ApproachSpot"/>
+    <property name="AITask-7" value="Wander"/>
+    <property name="HandItem" value="handBomber"/>
+    <property name="Explosion.ParticleIndex" value="8"/>
+    <property name="Explosion.RadiusBlocks" value="7"/>
+    <property name="Explosion.RadiusEntities" value="5"/>
+    <property name="Explosion.BlockDamage" value="2500"/>
+    <property name="Explosion.EntityDamage" value="200"/>
+    <property name="Explosion.DamageBonus.earth" value="1.2"/>
+</entity_class>
+
 <entity_class name="zombieFatCop" extends="zombieTemplateMale">
 	<property name="Mesh" value="Zombies/zombieStandardCopRagdoll"/>
 	<property name="Class" value="EntityZombieCop"/>
@@ -1266,7 +1367,7 @@
 	<property name="PhysicsBody" value="zombieFat"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="MaxHealth" value="700"/>
+	<property name="MaxHealth" value="600"/>
 	<property name="ExperienceGain" value="2916"/>
 	<property name="Weight" value="70"/>
 	<property name="PushFactor" value="20"/>
@@ -1328,6 +1429,17 @@
 
 <entity_class name="zombieFatCopFeralNS" extends="zombieFatCopFeral">
 	<property name="SightRange"	value="80" />
+</entity_class>
+
+<entity_class name="zombieFatRocketCop" extends="zombieFatCopNS">
+	<property name="ParticleOnSpawn" value="supply_crate_gib_Prefab" />
+	<property name="HandItem" value="handZombieRocketCop"/>
+	<property name="MaxHealth" value="3000"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.RadiusBlocks"	value="6" />
+	<property name="Explosion.BlockDamage" value="2500"/>
+	<property name="Explosion.EntityDamage" value="200"/>
+	<property name="Explosion.ParticleIndex" value="4" />
 </entity_class>
 
 <entity_class name="zombieFatCopFeralRadiated" extends="zombieFatCopFeral">
