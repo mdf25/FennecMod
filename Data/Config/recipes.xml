@@ -277,6 +277,33 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="emptyJar"	count="1" />
 </recipe>
 
+<recipe name="tomatoJuice" count="1" craft_time="20">
+	<ingredient name="tomato" 	count="3" />
+	<ingredient name="emptyJar"	count="1" />
+</recipe>
+
+<recipe name="tomatoJuice" count="1" craft_area="kitchen_workbench" craft_tool="juicer" craft_time="12">
+	<ingredient name="tomato" 	count="2" />
+	<ingredient name="emptyJar"	count="1" />
+</recipe>
+
+<recipe name="tomatoJuice" count="1" craft_area="squeezer_workbench" craft_time="8">
+	<ingredient name="tomato" 	count="1" />
+	<ingredient name="emptyJar"	count="1" />
+</recipe>
+
+<recipe name="bloodyMary" count="3">
+	<ingredient name="tomatoJuice" count="2" />
+	<ingredient name="grainAlcohol" count="1" />
+</recipe>
+
+<recipe name="spaghettiVenisonMeatballs" count="1" craft_area="workingOven">
+	<ingredient name="tomato"	count="1" />
+	<ingredient name="canPasta" count="1" />
+	<ingredient name="rawVenisonMeat" count="2" />
+	<ingredient name="cheese" count="1" />
+</recipe>
+
 <recipe name="vegetableCream" count="1" craft_area="campfire" craft_tool="beaker" craft_time="10" craft_exp_gain="20">
 	<ingredient name="vegetableFerment" count="1" />
 </recipe>
@@ -2254,12 +2281,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="spirits"			count="1" />
 </recipe>
 
-<recipe name="vegetableFerment" count="1" craft_area="campfire" craft_time="80" craft_tool="cookingPot" craft_exp_gain="4">
+<recipe name="vegetableFerment" count="1" craft_area="campfire" craft_time="40" craft_tool="cookingPot" craft_exp_gain="4">
 	<ingredient name="woodLogPillar100" 	count="3" />
 	<ingredient name="bottledWater" 		count="1" />
 </recipe>
 
-<recipe name="vegetableFerment" count="1" craft_area="chemistryStation" craft_time="60" craft_exp_gain="4">
+<recipe name="vegetableFerment" count="1" craft_area="chemistryStation" craft_time="30" craft_exp_gain="4">
 	<ingredient name="woodLogPillar100" count="1" />
 	<ingredient name="bottledRiverWater" count="1" />
 </recipe>
@@ -5140,7 +5167,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="foodHoney" count="1" craft_area="squeezer_workbench" craft_time="10">
-	<ingredient name="honeycomb"		count="4" />
+	<ingredient name="honeycomb"		count="3" />
+	<ingredient name="emptyJar"			count="1" />
+</recipe>
+
+<recipe name="foodHoney" count="1" craft_area="kitchenWorkbench" craft_time="30">
+	<ingredient name="honeycomb"		count="8" />
+	<ingredient name="cloth"			count="5" />
 	<ingredient name="emptyJar"			count="1" />
 </recipe>
 

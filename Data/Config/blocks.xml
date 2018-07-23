@@ -11090,6 +11090,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5,10" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="356" />
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="workingOven"/>
 		<property name="Item" value="ovenUpgradeKit"/>
@@ -15719,7 +15720,6 @@ group desc for stuff like metal siding
 	<property name="TakeDelay" value="15"/>
 	<drop event="Destroy" name="wood" count="2,5"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
-	<property name="DescriptionKey" value="kitchenWorkbenchDesc"/>
 	<property name="EconomicValue" value="776"/>
 </block>
 
@@ -17280,7 +17280,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="Entities/Electrical/generatorPrefab"/> <property name="HandleFace" value="Bottom"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="DescriptionKey" value="powerSourceDesc"/>
-	<property name="MaxFuel" value="1000"/>
+	<property name="MaxFuel" value="5000"/>
 	<property name="OutputPerFuel" value="11250"/>
 	<property name="MaxPower" value="12250"/>
 	<property name="OutputPerStack" value="100"/>

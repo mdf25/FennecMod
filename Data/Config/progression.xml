@@ -876,9 +876,9 @@
 		<requirement perk_level="3" required_skill_name="HunterMastery" required_skill_level="2" />
 		<effect name="TreasureRadius">
 			<setvalue perk_level="0" value="8"/>
-			<setvalue skill_level="1" value="6"/>
-			<setvalue skill_level="2" value="4"/>
-			<setvalue skill_level="3" value="2"/>
+			<setvalue perk_level="1" value="6"/>
+			<setvalue perk_level="2" value="4"/>
+			<setvalue perk_level="3" value="2"/>
 		</effect>
 	</perk>
 

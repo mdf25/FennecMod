@@ -312,17 +312,25 @@ built-in buff variables:
 </buff> 
 <buff id="AloeLaxative" duration="0" buffif="CTRaloeConcentration greater 2" debuffif="CTRaloeConcentration less 1" actions="increment(@wellness, -0.2, 150t, 0, 0);debuff(AloeBenefits)" causes="aloeJuice" type="staminadown" icon="ui_game_symbol_dysentery" name_key="AloeLaxative" description_key="AloeLaxativeDesc" tooltip_key="AloeLaxativeTooltip">
 	<modify id="0" stat="stamina" amount="-1" rate="1"  />
-	<modify id="0" stat="speedmodifier" setValue="0.85" />
-	<modify id="1" buff="digestiveSystem" tickrate="5"  />
+	<modify id="1" stat="speedmodifier" setValue="0.85" />
+	<modify id="2" buff="digestiveSystem" tickrate="5"  />
+</buff> 
+
+<!-- Tomato Juice -->
+<buff id="TomatoJuiceCleaningInnards" stack="extend" duration="100t" causes="tomatoJuice" type="healthup" icon="ui_game_symbol_tomato" name_key="TomatoJuiceCleaningInnards" description_key="TomatoJuiceCleaningInnardsDesc" tooltip_key="TomatoJuiceCleaningInnardsTooltip">
+	<modify id="1" buff="foodPoisoning" 			tickrate="3"/>
+	<modify id="2" buff="MetabolizeYucca"			tickrate="3"/>
+	<modify id="3" buff="metabolizeSnowberryBuff"	tickrate="3"/>
+	<modify id="4" buff="MetabolizeRottingFood"		tickrate="3"/>
 </buff> 
 
 
-
-
-<buff id="bleeding" duration="60" type="bleeding" actions="increment(BDKbloodLoss, 4, 1, 0, 0);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
+<buff id="bleeding" mutex="BleedResist" duration="60" type="bleeding" actions="increment(BDKbloodLoss, 4, 1, 0, 0);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="1"/>
 </buff>
+
+<buff id="BleedResist" duration="200t" stack="extend" /> 
 
 <buff id="trapDamage1Trigger" duration="1" type="bleeding" actions="increment(BDKbloodLoss, 10, 1, 0, 0);setvar(CTRtrapDmg1, 3);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge)" /> <!-- spikes and other traps -->
 <buff id="trapDamage1Effect" buffif="CTRtrapDmg1 greater 0" debuffif="CTRtrapDmg1 less 1" duration="0" type="bleeding" actions="increment(CTRtrapDmg1, -1, 1, 0, 0)"
@@ -355,6 +363,10 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 -->
 <buff id="DrinkBeer" duration="1" actions="increment(beers, 1, 0, 0, 1)">
+	<modify id="0" stat="stamina" amount="2" rate="1"/>
+</buff>
+
+<buff id="DrinkTomatoJuice" duration="1" actions="increment(beers, 2, 0, 0, 1)">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
 
