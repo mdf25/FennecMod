@@ -1354,6 +1354,10 @@
 		<requirement skill_level="1" required_skill_name="MechanicMastery" required_skill_level="2"/>
 		<recipe name="megaWrench"		unlock_level="1" />
 	</perk>
+	<perk name="fermentingBarrelSkill" icon="resource" description_key="fermentingBarrelSkillDesc" title_key="fermentingBarrelSkillName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="3"/>
+		<recipe name="fermentingBarrel"		unlock_level="1" />
+	</perk>
 	<perk name="IronSmithing" icon="resource" description_key="IronSmithingDesc" title_key="IronSmithingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="3"/>
 		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="2"/>
@@ -1378,6 +1382,7 @@
 		<recipe name="metalTrussingBlock"	unlock_level="1" />
 		<recipe name="metalTrussingRamp"	unlock_level="1" />
 		<recipe name="ironBars"				unlock_level="1" />
+		<recipe name="ironBarsCentered"		unlock_level="1" />
 	</perk>
 	<perk name="RebarManual" icon="resource" description_key="RebarManualDesc" title_key="RebarManualName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="3"/>

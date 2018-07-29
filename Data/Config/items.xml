@@ -3910,7 +3910,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="copperCrossbowBolt,ironCrossbowBolt,steelCrossbowBolt,explodingCrossbowBolt"/>
+		<property name="Magazine_items" value="copperCrossbowBolt,ironCrossbowBolt,steelCrossbowBolt,flamingCrossbowBolt,explodingCrossbowBolt,electropulseCrossbowBolt,corrosiveCrossbowBolt"/>
 		<property name="Rays_spread" value="0.012"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -3960,7 +3960,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="arrow,copperArrow,ironArrow,steelArrow,flamingArrow"/>
+		<property name="Magazine_items" value="arrow,copperArrow,ironArrow,steelArrow,flamingArrow,explodingArrow,electropulseArrow,corrosiveArrow"/>
 		<property name="Rays_spread" value="0.011"/>
 		<property name="Reload_time" value="0.9"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -4380,7 +4380,20 @@ Mesh files no longer used:
 		<property name="Velocity" value="55"/>
 		<property name="Gravity" value="-6"/>
 		<property name="LifeTime" value="12"/>
-		<property name="DamageBonus.wood" value="2"/>
+		<property name="Explosion.BlockDamage" value="2"/>
+		<property name="Explosion.EntityDamage" value="5"/>
+		<property name="Explosion.ParticleIndex" value="10"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.RadiusEntities" value="3"/>
+		<property name="Explosion.RadiusBuffs" value="3"/> <!-- int, default is same as RadiusBlocks -->
+		<property name="Explosion.BlastPower" value="70"/>
+		<property name="Explosion.DamageBonus.stone" value="0.1"/>
+		<property name="Explosion.DamageBonus.metal" value="0"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value="2"/>
+		<property name="Explosion.Buff" value="burningMolotov"/>
+		<property name="Explosion.Buff_chance" value="1"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="20,45"/>
@@ -4552,6 +4565,169 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
+<item id="174" name="explodingArrow">
+	<property name="Extends" value="ironArrow"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property class="Action1">
+		<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
+		<property name="Velocity" value="75"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="12"/>
+		<property name="Explosion.BlockDamage" value="10"/>
+		<property name="Explosion.EntityDamage" value="80"/>
+		<property name="Explosion.ParticleIndex" value="1"/>
+		<property name="Explosion.RadiusBlocks" value="3"/>
+		<property name="Explosion.RadiusEntities" value="4"/>
+		<property name="Explosion.DamageBonus.stone" value="0.3"/>
+		<property name="Explosion.DamageBonus.metal" value="0.1"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/> <!-- should work? -->
+		<property name="Explosion.DamageBonus.wood" value="0.5"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="20,45"/>
+		<property name="BlockDamage" value="5,8"/>
+		<property name="ApplyBuff" value="0.5,0.5" param1="arrowCriticalBleedout"/>
+	</property>
+</item>
+
+<item id="175" name="flamingCrossbowBolt">
+	<property name="Extends" value="ironArrow"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/arrow_flaming_dropped"/>
+	<property name="HandMeshfile" value="Items/Misc/arrow_flaming_hand"/>
+	<property name="UsableUnderwater" value="false"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="44"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property class="Action1">
+		<property name="Velocity" value="55"/>
+		<property name="Gravity" value="-6"/>
+		<property name="LifeTime" value="12"/>
+		<property name="Explosion.BlockDamage" value="2"/>
+		<property name="Explosion.EntityDamage" value="5"/>
+		<property name="Explosion.ParticleIndex" value="10"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.RadiusEntities" value="3"/>
+		<property name="Explosion.RadiusBuffs" value="3"/> <!-- int, default is same as RadiusBlocks -->
+		<property name="Explosion.BlastPower" value="70"/>
+		<property name="Explosion.DamageBonus.stone" value="0.1"/>
+		<property name="Explosion.DamageBonus.metal" value="0"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value="2"/>
+		<property name="Explosion.Buff" value="burningMolotov"/>
+		<property name="Explosion.Buff_chance" value="1"/>
+		<property name="DamageBonus.wood" value="2"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="20,45"/>
+		<property name="BlockDamage" value="6,11"/>
+		<property name="ApplyBuff" value="1,1" param1="burning"/>
+	</property>
+</item>
+
+<item id="176" name="electropulseArrow">
+	<property name="Extends" value="ironArrow"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property class="Action1">
+		<property name="Velocity" value="75"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="12"/>
+		<property name="Explosion.BlockDamage" value="2"/>
+		<property name="Explosion.EntityDamage" value="5"/>
+		<property name="Explosion.ParticleIndex" value="3"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.RadiusEntities" value="3"/>
+		<property name="Explosion.RadiusBuffs" value="3"/> <!-- int, default is same as RadiusBlocks -->
+		<property name="Explosion.BlastPower" value="70"/>
+		<property name="Explosion.DamageBonus.stone" value="0.1"/>
+		<property name="Explosion.DamageBonus.metal" value="0"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value="0"/>
+		<property name="Explosion.Buff" value="electropulseArrowBuffAOE"/>
+		<property name="Explosion.Buff_chance" value="1"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="20,45"/>
+		<property name="BlockDamage" value="5,8"/>
+		<property name="ApplyBuff" value="1,1" param1="electropulseArrowBuff"/>
+	</property>
+</item>
+
+<item id="177" name="electropulseCrossbowBolt">
+	<property name="Extends" value="ironCrossbowBolt"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_steelPrefab"/>
+	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_steelPrefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property class="Action1">
+		<property name="Velocity" value="85"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="12"/>
+		<property name="Explosion.BlockDamage" value="2"/>
+		<property name="Explosion.EntityDamage" value="5"/>
+		<property name="Explosion.ParticleIndex" value="3"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.RadiusEntities" value="3"/>
+		<property name="Explosion.RadiusBuffs" value="3"/> <!-- int, default is same as RadiusBlocks -->
+		<property name="Explosion.BlastPower" value="70"/>
+		<property name="Explosion.DamageBonus.stone" value="0.1"/>
+		<property name="Explosion.DamageBonus.metal" value="0"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value="0"/>
+		<property name="Explosion.Buff" value="electropulseArrowBuffAOE"/>
+		<property name="Explosion.Buff_chance" value="1"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="25,55"/>
+		<property name="BlockDamage" value="6,11"/>
+		<property name="ApplyBuff" value="1,1" param1="electropulseArrowBuff"/>
+	</property>
+</item>
+
+
+<item id="178" name="corrosiveArrow">
+	<property name="Extends" value="ironArrow"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property class="Action1">
+		<property name="Velocity" value="75"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="12"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="20,45"/>
+		<property name="BlockDamage" value="5,8"/>
+		<property name="ApplyBuff" value="1,1" param1="corrosiveArrowBuff"/>
+	</property>
+</item>
+
+<item id="179" name="corrosiveCrossbowBolt">
+	<property name="Extends" value="ironCrossbowBolt"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_steelPrefab"/>
+	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_steelPrefab"/>
+	<property name="EconomicValue" value="57"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property class="Action1">
+		<property name="Velocity" value="85"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="12"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="25,55"/>
+		<property name="BlockDamage" value="6,11"/>
+		<property name="ApplyBuff" value="1,1" param1="corrosiveArrowBuff"/>
+	</property>
+</item>
+
 
 <!-- * * * * * * * * * * explosives / decoys / thrown items * * * * * * * * * * -->
 
@@ -13094,13 +13270,61 @@ Mesh files no longer used:
 	<property name="Group" value="Food/Cooking"/>
 </item>
 
+<item id="908" name="blueberryWine">
+	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="250"/> <!-- STK drink -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="30"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action0"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="emptyJar"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="cntGraniteSinkWorking2" />
+		<property name="Focused_blockname_2" value="cntCabinetOldSinkWorking2" />
+		<property name="Focused_blockname_3" value="cntGraniteSinkWorking" />
+		<property name="Focused_blockname_4" value="cntCabinetOldSinkWorking" />
+		<property name="Focused_blockname_5" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_6" value="cntCabinetOldSinkNotWorking" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<property name="Focused_blockname_8" value="cntGraniteSinkNotWorking" />
+		<property name="Focused_blockname_9" value="cntToilet01" />
+		<property name="Focused_blockname_10" value="cntToilet02" />
+		<property name="Focused_blockname_11" value="cntToilet03" />
+		<property name="Focused_blockname_12" value="cntToiletWorking" />
+		<property name="Focused_blockname_13" value="cntToiletWorkingLootable" />
+		<property name="Focused_blockname_14" value="cntToiletWorkingRecharge" />
+		<property name="Focused_blockname_15" value="water"/>
+		<property name="Focused_blockname_16" value="waterMoving"/>
+		<property name="Focused_blockname_17" value="waterStaticBucket"/>
+		<property name="Focused_blockname_18" value="waterMovingBucket"/>
+		<property name="Focused_blockname_19" value="waterSource8"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="20"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff,ConsumeFruit5,DrinkBlueberryWine,SweetSpeed"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
 <item id="910" name="clubSpikedSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="5" />
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="clubSpiked"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillWeapons"/> -->
 	</property>
 </item>
 
@@ -13110,7 +13334,6 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="sledgehammer"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillWeapons"/> -->
 	</property>
 </item>
 
@@ -13119,7 +13342,6 @@ Mesh files no longer used:
 	<property name="Weight" value="2" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="huntingKnife"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillWeapons"/> -->
 	</property>
 </item>
 
@@ -13128,7 +13350,14 @@ Mesh files no longer used:
 	<property name="Weight" value="10" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="plantedHop1,beer,signShopColdBeer"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillScience"/> -->
+	</property>
+</item>
+
+<item id="914" name="fermentingBarrelSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="Weight" value="10" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="fermentingBarrelSkill"/>
 	</property>
 </item>
 
@@ -13138,7 +13367,6 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="compoundBow"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillWeapons"/> -->
 	</property>
 </item>
 
@@ -13148,7 +13376,6 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="crossbow"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillWeapons"/> -->
 	</property>
 </item>
 
@@ -13157,7 +13384,6 @@ Mesh files no longer used:
 	<property name="Weight" value="7" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunPistol"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -13168,7 +13394,6 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2500"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gun44Magnum"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -13187,7 +13412,6 @@ Mesh files no longer used:
 	<property name="Weight" value="7" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunPumpShotgun,gunSawedOffPumpShotgun"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -13209,7 +13433,6 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2500"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunAK47"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -13219,7 +13442,6 @@ Mesh files no longer used:
 	<property name="Weight" value="7" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunHuntingRifle"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -13230,7 +13452,6 @@ Mesh files no longer used:
 	<property name="Weight" value="10" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunSniperRifle"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -13241,7 +13462,6 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2000"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunRocketLauncher,rocket,rocketCasing,rocketTip"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -13251,7 +13471,6 @@ Mesh files no longer used:
 	<property name="Weight" value="10" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="nailgun"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillScience"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -13261,8 +13480,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2000"/>
 	<property name="Weight" value="7" />
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="flamingArrow"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillWeapons"/> -->
+		<property name="Recipes_to_learn" value="flamingArrow,flamingCrossbowBolt"/>
 	</property>
 </item>
 
@@ -13271,47 +13489,29 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2000"/>
 	<property name="Weight" value="7" />
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="explodingCrossbowBolt"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillScience"/> -->
-	</property>
-</item>
-<!--
-<item id="950" name="ammunitionNationBook"> NO LONGER USED
-	<property name="Extends" value="schematicMaster"/>
-	<property class="Action1">
-		<property name="Recipes_to_learn" value="bulletTip,bulletCasing"/>
-		<property name="Skills_to_gain" value="craftSkillGuns"/>
+		<property name="Recipes_to_learn" value="explodingArrow,explodingCrossbowBolt"/>
 	</property>
 </item>
 
-<item id="951" name="9mmBulletSchematic">
+<item id="947" name="electropulseArrowBoltSchematic"> <!-- ammo crafting -->
 	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="Weight" value="7" />
 	<property class="Action1">
-		<property name="Skills_to_gain" value="9mm Round Crafting"/>
+		<property name="Recipes_to_learn" value="electropulseArrow,electropulseCrossbowBolt"/>
 	</property>
 </item>
 
-<item id="952" name="10mmBulletSchematic">
+<item id="948" name="corrosiveArrowBoltSchematic"> <!-- ammo crafting -->
 	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="Weight" value="7" />
 	<property class="Action1">
-		<property name="Skills_to_gain" value="10mm Round Crafting"/>
+		<property name="Recipes_to_learn" value="corrosiveArrow,corrosiveCrossbowBolt"/>
 	</property>
 </item>
 
-<item id="953" name="762mmBulletSchematic">
-	<property name="Extends" value="schematicMaster"/>
-	<property class="Action1">
-		<property name="Skills_to_gain" value="762mm Round Crafting"/>
-	</property>
-</item>
 
-<item id="956" name="shotgunShellSchematic">
-	<property name="Extends" value="schematicMaster"/>
-	<property class="Action1">
-		<property name="Skills_to_gain" value="shotgun Shell Crafting"/>
-	</property>
-</item>
--->
 
 <item id="951" name="paintMagazineDecorations"> <!-- unlocks a painting material group -->
 	<property name="Extends" value="schematicMaster"/>
@@ -13363,13 +13563,12 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="paintingTip"/>
 </item>
 
-<item id="957" name="shotgunSlugSchematic"> <!-- ammo crafting -->
+<item id="957" name="shotgunSlugSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="1500"/>
 	<property name="Weight" value="5" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="shotgunSlug"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 </item>
 
@@ -13382,7 +13581,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="961" name="bookToolSmithing"> <!-- ammo crafting -->
+<item id="961" name="bookToolSmithing">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="1500"/>
 	<property name="Weight" value="5" />
@@ -13391,7 +13590,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="962" name="bookWeaponSmithing"> <!-- ammo crafting -->
+<item id="962" name="bookWeaponSmithing">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="1500"/>
 	<property name="Weight" value="5" />
@@ -13400,7 +13599,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="963" name="bookGunSmithing"> <!-- ammo crafting -->
+<item id="963" name="bookGunSmithing">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="1500"/>
 	<property name="Weight" value="5" />
@@ -13409,7 +13608,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="964" name="bookArmorCrafting"> <!-- ammo crafting -->
+<item id="964" name="bookArmorCrafting">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="1500"/>
 	<property name="Weight" value="5" />
@@ -13423,15 +13622,14 @@ Mesh files no longer used:
 	<property name="CustomIcon" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="wrenchSchematic"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillTools"/> -->
 	</property>
 </item>
-<item id="971" name="clawHammerSchematic"> <!-- NO LONGER USED -->
+
+<item id="971" name="clawHammerSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CustomIcon" value="schematicMaster"/>
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="clawHammerSchematic"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillTools"/> -->
 	</property>
 </item>
 
@@ -13441,7 +13639,6 @@ Mesh files no longer used:
 	<property name="Weight" value="7" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gasCan"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillScience"/> -->
 	</property>
 </item>
 
@@ -13451,7 +13648,6 @@ Mesh files no longer used:
 	<property name="Weight" value="10" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="auger,partsAuger_blade"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillScience"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -14978,8 +15174,8 @@ Mesh files no longer used:
 	<property name="Material" value="stone"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
-	<property name="EconomicValue" value="10"/>
-	<property name="EconomicBundleSize" value="70"/>
+	<property name="EconomicValue" value="25"/>
+	<property name="EconomicBundleSize" value="50"/>
 	<property name="Group" value="Building,Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
@@ -14991,8 +15187,8 @@ Mesh files no longer used:
 	<property name="Weight" value="20"/>
 	<property name="HoldType" value="34"/>
 	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
-	<property name="EconomicValue" value="9"/>
-	<property name="EconomicBundleSize" value="20"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources"/>
 </item>
 
@@ -15001,7 +15197,7 @@ Mesh files no longer used:
 	<property name="Material" value="MfertilizedFarmland"/>
 	<property name="HoldType" value="21"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
-	<property name="EconomicValue" value="15"/>
+	<property name="EconomicValue" value="150"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientTime" value="2"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -16299,6 +16495,103 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 
+<item id="1422" name="sulphur"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+</item>
+
+<item id="1423" name="rockSalt"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+</item>
+
+<item id="1424" name="hydrochloricAcidSolution">
+	<property name="Meshfile" value="Items/Crafting/beaker"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="2"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="5"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+</item>
+
+<item id="1425" name="nitricAcidSolution">
+	<property name="Meshfile" value="Items/Crafting/beaker"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="2"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="5"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+</item>
+
+<item id="1426" name="saltPure"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+</item>
+
+<item id="1427" name="acidSac"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+</item>
+
+<item id="1428" name="salt"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources,Basics"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value="0.25"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+</item>
+
 <item id="1429" name="emptyBottle">
 	<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
 	<property name="Material" value="Mplastics"/>
@@ -16371,6 +16664,17 @@ Mesh files no longer used:
 		<property name="BatteryDischargeTimeInMinutes" value="30,90"/>
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+
+<item id="1433" name="sulfuricAcidSolution">
+	<property name="Meshfile" value="Items/Crafting/beaker"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="2"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="5"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
 <item id="1434" name="headlight">

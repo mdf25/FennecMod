@@ -370,6 +370,10 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
 
+<buff id="DrinkBlueberryWine" duration="1" actions="increment(beers, 2, 0, 0, 1)">
+	<modify id="0" stat="stamina" amount="2" rate="1"/>
+</buff>
+
 <buff id="DrinkGrainAlcohol" duration="1" actions="increment(beers, 4, 0, 0, 1)">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
@@ -385,6 +389,11 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	type="staminadown" icon="ui_game_symbol_drunk" name_key="drunk" description_key="drunkDesc" tooltip_key="drunkTooltip">
 	<modify id="0" stat="stamina" amount="5" rate="1"/>
 	<modify id="0" stat="speedmodifier" setValue="0.90"/>
+</buff>
+
+<buff id="SweetSpeed" stack="extend" duration="10" ffcheck="true">
+    <modify id="0" stat="speedmodifier" modifyMaxValue="1.05"/>
+    <modify id="1" stat="speedmodifier" modifyValue="1.05"/>
 </buff>
 
 <buff id="InstantSickDrunk" mutex="SickDrunk,AlcoholPoisoning" requires="Hangover" duration="1" buffif="beers greater 0" actions="setvar(beers, 9)"
@@ -951,6 +960,36 @@ This requires a 50+ food bar:
 "D:\7DTD_Project\trunk\Assets\GUI\Textures\ui_game_symbol_natural_healing.tga"
 -->
 
+<buff id="electropulseArrowBuff" duration="20" stack="reset" actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="electric_fence_impact"
+	icon="ui_game_symbol_electric_power" name_key="shockedBuffName" description_key="shockedBuffDesc" tooltip_key="shockedBuffTooltip">
+	<modify id="0" stat="health" amount="-1" rate="0.2"/>
+	<modify id="1" stat="speedmodifier" mulValue="0.1" duration="20"/>
+</buff>
+
+<buff id="electropulseArrowBuffAOE" duration="10" stack="reset" actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="electric_fence_impact"
+	icon="ui_game_symbol_electric_power" name_key="shockedBuffName" description_key="shockedBuffDesc" tooltip_key="shockedBuffTooltip">
+	<modify id="0" stat="health" amount="-1" rate="0.5"/>
+	<modify id="1" stat="speedmodifier" mulValue="0.3" duration="10"/>
+</buff>
+
+<buff id="electropulseGrenadeBuff" duration="10" stack="reset" actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="electric_fence_impact"
+	icon="ui_game_symbol_electric_power" name_key="shockedBuffName" description_key="shockedBuffDesc" tooltip_key="shockedBuffTooltip">
+	<modify id="0" stat="health" amount="-1" rate="0.4"/>
+	<modify id="1" stat="speedmodifier" mulValue="0.2" duration="10"/>
+</buff>
+
+<buff id="corrosiveArrowBuff" duration="30" stack="stack" stacklimit="5" actions="attach(Items/Weapons/Ranged/Vomit/vomitBulbPrefab, @impact);debuff(zombieRadiatedBuff40);debuff(zombieRadiatedBuff80)" icon="ui_game_symbol_death" name_key="corrosiveBuffName" description_key="corrosiveBuffDesc" tooltip_key="corrosiveBuffTooltip">
+	<modify id="0" stat="health" amount="-20" rate="0.4"/>
+</buff>
+
+
+<buff id="corrosiveBulletBuff" duration="30" stack="extend" actions="attach(Items/Weapons/Ranged/Vomit/vomitBulbPrefab, @impact);debuff(zombieRadiatedBuff40);debuff(zombieRadiatedBuff80)" icon="ui_game_symbol_death" name_key="corrosiveBuffName" description_key="corrosiveBuffDesc" tooltip_key="corrosiveBuffTooltip">
+	<modify id="0" stat="health" amount="-5" rate="0.75"/>
+</buff>
+
+<buff id="corrosiveGrenadeBuff" duration="20" stack="extend" actions="attach(Items/Weapons/Ranged/Vomit/vomitBulbPrefab, @impact);debuff(zombieRadiatedBuff40);debuff(zombieRadiatedBuff80)" icon="ui_game_symbol_death" name_key="corrosiveBuffName" description_key="corrosiveBuffDesc" tooltip_key="corrosiveBuffTooltip">
+	<modify id="0" stat="health" amount="-7.5" rate="0.5"/>
+</buff>
 
 <buff id="zombieRadiatedBuff40" duration="0" icon="ui_game_symbol_fire">
 	<modify id="0" stat="health" amount="10" rate="5" />

@@ -62,6 +62,8 @@ tbnsew:
 	<drop event="Harvest" name="coal"					count="2"  prob="0.03" 	tool_category="harvestingTools"/>
 	<drop event="Harvest" name="potassiumNitratePowder" count="2"  prob="0.03" 	tool_category="harvestingTools"/>
 	<drop event="Harvest" name="scrapLead" 				count="2"  prob="0.03" 	tool_category="harvestingTools"/>
+	<drop event="Harvest" name="salt" 					count="2"  prob="0.03" 	tool_category="harvestingTools"/>
+	<drop event="Harvest" name="sulphur" 		 		count="1"  prob="0.01" 	tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="rockSmall" count="50" prob="0.23" stick_chance="0"/>
 	<drop event="Fall" name="ironFragment" count="4" prob="0.23" stick_chance="0"/>
@@ -183,6 +185,7 @@ tbnsew:
 	<property name="DropScale" value="2"/>
 	<property name="Map.Color" value="167,136,107"/>
 	<drop event="Harvest" name="crushedSand" count="10" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="salt" 		 count="2"  prob="0.1" 	tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<property class="RepairItems"> <property name="crushedSand" value="10"/> </property>
 	<drop event="Fall" name="crushedSand" count="10" prob="0.5" stick_chance="0"/>
@@ -267,7 +270,9 @@ tbnsew:
 	<property name="DropScale" value="2"/>
 	<property class="RepairItems"> <property name="crushedSand" value="8"/> <property name="rockSmall" value="4"/> </property>
 	<drop event="Harvest" name="crushedSand" count="8" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="rockSmall" count="4" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="rockSmall" 	 count="4" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="salt" 		 count="2"  prob="0.12" 	tool_category="harvestingTools"/>
+	<drop event="Harvest" name="sulphur" 	 count="1"  prob="0.04" 	tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="crushedSand" count="8" prob="0.5" stick_chance="0"/>
 	<drop event="Fall" name="rockSmall" count="4" prob="0.5" stick_chance="0"/>
@@ -456,6 +461,7 @@ tbnsew:
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<drop event="Harvest" name="dirtFragment" count="10" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="sulphur" 	count="4"  prob="0.25" 	tool_category="harvestingTools"/>
 	<drop event="Destroy" name="yuccaFibers" count="1" prob="0.25"/>
 	<drop event="Fall" name="burntForestGround" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0"/>
@@ -519,7 +525,8 @@ tbnsew:
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="34"/>
 	<property name="DropScale" value="2"/>
-	<drop event="Harvest" name="coal" count="20" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="coal" 		count="20" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="sulphur" 	count="5"  tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="coal" count="20" prob="0.5" stick_chance="0"/>
 	<property name="CanMobsSpawnOn" value="true"/>
@@ -735,6 +742,7 @@ tbnsew:
 
 <block id="47" name="clayInSandstone">
 	<property name="Extends" value="clay"/>
+	<drop event="Harvest" name="salt" count="2"  prob="0.06" 	tool_category="harvestingTools"/>
 	<property name="CustomIcon" value="clay"/>
 	<property name="CustomIconTint" value="00a0a0"/>
 	<property name="Texture" value="301,184,184,184,184,184"/>
@@ -949,6 +957,7 @@ NOT the TextureNumber.
 	<property name="DropScale" value="2"/>
 	<property name="Map.Color" value="167,136,107"/>
 	<drop event="Harvest" name="crushedSand" count="10" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="salt" 		 count="2"  prob="0.2" 	tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<property class="RepairItems"> <property name="crushedSand" value="10"/> </property>
 	<drop event="Fall" name="crushedSand" count="10" prob="0.5" stick_chance="0"/>
@@ -1592,10 +1601,10 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="None"/>
 	<property class="RepairItems"> <property name="scrapIron" value="10"/> </property>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="scrapIronMaster"/>
-		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="40"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="ToBlock" 			value="pouredConcreteMaster"/>
+		<property name="Item" 				value="concreteMix"/>
+		<property name="ItemCount" 			value="10"/>
+		<property name="UpgradeHitCount" 	value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Destroy" name="scrapIron" count="1,8"/>
@@ -1717,7 +1726,9 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="wedge60"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedge"/> </property>
+	<property class="UpgradeBlock"> 
+		<property name="ToBlock" value="pouredConcreteWedge"/> 
+	</property>
 	<property name="DowngradeBlock" value="rWoodWedge"/>
 </block>
 
@@ -1819,7 +1830,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Plate"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronPlate"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcretePlate"/> </property>
 	<property name="DowngradeBlock" value="rWoodPlate"/>
 </block>
 
@@ -1917,7 +1928,7 @@ group desc for stuff like metal siding
 	<property name="UseGlobalUV" value="Local"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="ImposterDontBlock" value="true"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronSupport"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteSupport"/> </property>
 	<property name="DowngradeBlock" value="rWoodSupport"/>
 </block>
 
@@ -2352,7 +2363,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronRamp"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteRamp"/> </property>
 	<property name="DowngradeBlock" value="rWoodRamp"/>
 </block>
 
@@ -2393,7 +2404,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp_inside_corner"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRInside"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCNRInside"/> </property>
 	<property name="DowngradeBlock" value="rWoodCNRInside"/>
 </block>
 
@@ -2433,7 +2444,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp_outside_corner"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRFull"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCNRFull"/> </property>
 	<property name="DowngradeBlock" value="rWoodCNRFull"/>
 </block>
 
@@ -2973,7 +2984,7 @@ group desc for stuff like metal siding
 <block id="294" name="rWoodMetalBlock">
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="DowngradeBlock" value="rWoodBlock"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronBlock"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteBlock"/> </property>
 </block>
 
 <block id="295" name="woodFrameBlock">
@@ -6890,7 +6901,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="wedge60_incline"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeIncline"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeIncline"/> </property>
 	<property name="DowngradeBlock" value="rWoodWedgeIncline"/>
 </block>
 
@@ -7894,7 +7905,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="Pole1m"/>
 	<property name="UseGlobalUV" value="Local"/>
 	<property name="ImposterExchange" value="imposterDontBlockBlock" param1="120"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronPillar100"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcretePillar100"/> </property>
 	<property name="DowngradeBlock" value="rWoodPillar100"/>
 </block>
 
@@ -8017,7 +8028,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="wedge60_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeTipCNRFullTop"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeTipCNRFullTop"/> </property>
 	<property name="DowngradeBlock" value="rWoodWedgeTipCNRFullTop"/>
 </block>
 
@@ -8148,7 +8159,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="wedge_stairs" /> <property name="Place" value="TowardsPlacerInverted" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeStairs" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeStairs" /> </property>
 	<property name="DowngradeBlock" value="rWoodWedgeStairs" />
 </block>
 
@@ -8238,7 +8249,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="wedge_tip_stairs" /> <property name="Place" value="TowardsPlacerInverted" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeTipStairs" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeTipStairs" /> </property>
 	<property name="DowngradeBlock" value="rWoodWedgeTipStairs" />
 </block>
 
@@ -8622,7 +8633,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="wedge60_tip_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeTipCNRFullBottom"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeTipCNRFullBottom"/> </property>
 	<property name="DowngradeBlock" value="rWoodWedgeTipCNRFullBottom"/>
 </block>
 
@@ -9213,7 +9224,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="wedge60_inside_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeCNRInsideBottom"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeCNRInsideBottom"/> </property>
 	<property name="DowngradeBlock" value="rWoodWedgeCNRInsideBottom"/>
 </block>
 
@@ -9575,7 +9586,7 @@ group desc for stuff like metal siding
 	<property name="LightOpacity" value="6"/>
 	<property name="Model" value="arrow_slit_half"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="120"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronArrowSlitHalf"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteArrowSlitHalf"/> </property>
 	<property name="DowngradeBlock" value="rWoodArrowSlitHalf"/>
 	<property name="DescriptionKey" value="woodArrowSlitGroupDesc"/>
 </block>
@@ -10027,7 +10038,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="wedge60_inside_corner_2"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeCNRInsideTop"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeCNRInsideTop"/> </property>
 	<property name="DowngradeBlock" value="rWoodWedgeCNRInsideTop"/>
 </block>
 
@@ -10110,7 +10121,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp_corner_filler"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCNRRampFiller"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCNRRampFiller"/> </property>
 	<property name="DowngradeBlock" value="rWoodCNRRampFiller"/>
 	<property name="UseGlobalUV" value="Global"/>
 </block>
@@ -10662,7 +10673,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="stairs_filled_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronStairs25CornerCNR"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteStairs25CornerCNR"/> </property>
 	<property name="DowngradeBlock" value="rWoodStairs25CornerCNR"/>
 	<property name="ImposterExchange" value="imposterCNRFull" param1="120"/>
 </block>
@@ -11014,7 +11025,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="Arch"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronArch"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteArch"/> </property>
 	<property name="DowngradeBlock" value="rWoodArch"/>
 </block>
 
@@ -11226,7 +11237,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="wedge60_tip"/> <property name="Place" value="TowardsPlacerInverted"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeTip"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeTip"/> </property>
 	<property name="DowngradeBlock" value="rWoodWedgeTip"/>
 </block>
 
@@ -13745,7 +13756,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="rWoodMetalMaster" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="cube_half" />
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronHalf" /> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteHalf" /> </property>
 	<property name="DowngradeBlock" value="rWoodHalf" />
 </block>
 
@@ -15129,7 +15140,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="pole_square"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="UseGlobalUV" value="Local"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronPole"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcretePole"/> </property>
 	<property name="DowngradeBlock" value="rWoodPole"/>
 </block>
 
@@ -15890,6 +15901,46 @@ group desc for stuff like metal siding
 	<property name="CanPickup" value="true" param1="cementMixer"/>
 </block>
 
+<block id="1589" name="fermentingBarrel">
+	<property name="Class" value="Workstation"/>
+	<property name="Material" value="wood_regular"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="Pole1m"/>
+	<property name="Texture" value="380"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="FuelValue" value="300"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+	<property name="Group" value="Cooking"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="HeatMapStrength" value="0.5"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="25"/>
+	<property name="Stacknumber" value="1"/>
+	<property class="RepairItems">
+		<property name="wood" value="10"/> 
+	</property>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="fermenting_barrel"/>
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntSqueezerWorkbenchBox"/>
+		<property name="Item" value="workstationRemovalKit"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
+	<property name="TakeDelay" value="15"/>
+	<drop event="Destroy" name="wood" count="2,5"/>
+	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="776"/>
+</block>
+
 <block id="1592" name="rustyIronPoleSupportCtr">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
 	<property name="Shape" value="New"/>
@@ -16054,7 +16105,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="pole_square_centered"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="UseGlobalUV" value="Local"/>
-	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronCTRpole"/> </property>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteCTRpole"/> </property>
 	<property name="DowngradeBlock" value="rWoodCTRpole"/>
 </block>
 

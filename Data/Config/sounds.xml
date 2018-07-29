@@ -473,7 +473,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="Auger_Fire_Start"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="25" volume="10" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<Sequence/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/Auger_Fire_Start"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/auger_fire_lp" Loop="true"/>
@@ -497,7 +497,7 @@
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="chainsaw_fire_start"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="25" volume="10" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<Sequence/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_start"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_lp" Loop="true"/>
@@ -505,7 +505,7 @@
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="chainsaw_fire_rev"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="25" volume="10" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_rev1"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_rev2"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
@@ -3286,7 +3286,7 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
 
 <SoundDataNode name="electric_fence_impact"> <AudioSource name="Sounds/AudioSource_Impact_Large"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="7" volume="5" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Electricity/ElectricFence/electric_fence_impact_01"/>
 	<AudioClip ClipName="Sounds/Electricity/ElectricFence/electric_fence_impact_02"/>
 	<AudioClip ClipName="Sounds/Electricity/ElectricFence/electric_fence_impact_03"/>

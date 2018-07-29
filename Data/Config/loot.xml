@@ -346,6 +346,13 @@
 		<loot level="0.8,0.9" prob="0.9"/>
 		<loot level="0.9,1.0" prob="1.0"/>
 	</lootprobtemplate>
+	<lootprobtemplate name="factoryToolsTemplate">
+		<loot level="0.00,0.25" prob="0.05"/>
+		<loot level="0.25,0.50" prob="0.20"/>
+		<loot level="0.50,0.75" prob="0.50"/>
+		<loot level="0.75,0.90" prob="0.90"/>
+		<loot level="0.90,1.00" prob="1.40"/>
+	</lootprobtemplate>
 </lootprobtemplates>
 
 
@@ -862,15 +869,6 @@
 	<item name="forgeAheadSchematic" />
 	<item name="glassworkingSchematic" />
 	<item name="glassworkingBusinessSchematic" />
-	
-	<!-- <item name="ammunitionNationBook"/>NO LONGER USED
-	<item name="sawedoffPumpShotgunSchematic"/>
-	<item name="wrenchSchematic"/>
-	<item name="leatherTanning"/>
-	<item name="9mmBulletSchematic"/>
-	<item name="shotgunShellSchematic"/>
-	<item name="clawHammerSchematic"/>
-	-->
 </lootgroup>
 
 <lootgroup name="rareBooks" count="1">
@@ -913,16 +911,11 @@
 	<item name="squeezerWorkbenchSchematic" />
 	<item name="toiletUpgradeKitSchematic" />
 	<item name="megaWrenchSchematic" prob="0.03" />
+	<item name="fermentingBarrelSchematic" />
+	<item name="electropulseArrowBoltSchematic" />
+	<item name="corrosiveArrowBoltSchematic" />
 	<item name="schematicBag" prob="0.02" />
 	<item group="questChallenge" count="1"/>
-	<!--
-	<item name="handleBarsSchematic"/>
-	<item name="macDyverBook" prob="1.5"/>
-	<item name="theRiddleOfSteel"/>
-	<item name="setInConcrete"/>
-	<item name="10mmBulletSchematic"/>
-	<item name="762mmBulletSchematic"/>
-	-->
 </lootgroup>
 
 <lootgroup name="skillBooks" count="1">
@@ -931,6 +924,14 @@
 	<item name="bookWeaponSmithing" />
 	<item name="bookArmorCrafting" />
 	<item name="bookScience" />
+</lootgroup>
+
+<lootgroup name="SkillBooksStash" count="all">
+	<item name="bookGunSmithing" 	count="1,3" />
+	<item name="bookToolSmithing" 	count="1,3" />
+	<item name="bookWeaponSmithing" count="1,3" />
+	<item name="bookArmorCrafting" 	count="1,3" />
+	<item name="bookScience" 		count="1,3" />
 </lootgroup>
 
 <lootgroup name="paintMagazines" count="1">
@@ -947,7 +948,8 @@
 	<item group="commonBooks" prob="0.33"/>
 	<item group="paintMagazines" prob="0.03"/>
 	<item group="rareBooks" loot_prob_template="rareBookTemplate"/> <!-- .2 => 1.0 -->
-	<item group="skillBooks" count="0,1" prob="0.1"/>
+	<item group="skillBooks" count="1" prob="0.1"/>
+	<item group="SkillBooksStash" count="1" prob="0.01" />
 </lootgroup>
 
 <lootgroup name="weaponsMilitaryGuns+ammo">
@@ -1100,7 +1102,6 @@
 	<item name="goldenRodTea"		count="1,3"		prob="0.2"/>
 	<item name="redTea"				count="1,3"		prob="0.2"/>
 </lootgroup>
-
 
 <lootgroup name="farmCrops">
 	<item name="corn"/>
@@ -1340,7 +1341,6 @@
 	<item name="repairKit" count="1,4"/>
 	<item group="nailgun+parts"/>
 	<item group="rareTools"/>
-	<item group="factoryTools" count="1" prob="0.6" />
 	<item name="forgedCopper" count="1,5" prob="0.83" />
 	<item name="forgedIron" count="1,4" prob="0.41"/>
 	<item name="forgedSteel" count="1,4" prob="0.22"/>
@@ -1369,6 +1369,7 @@
 	<!-- <item name="calipers" prob="0.67"/> -->
 	<item name="toolAndDieSet" prob="0.67"/>
 	<item group="rareTools"/>
+	<item group="factoryTools" count="1" prob="0.6" />
 	<item group="automotive" prob="2"/>
 	<item name="forgedCopper" count="40,80" prob="0.31"/>
 	<item name="forgedIron" count="20,60" prob="0.31"/> <!-- together 3% per crate -->
@@ -1830,6 +1831,23 @@
 	<item name="gasCan"					count="0,400" />
 </lootgroup>
 
+<lootgroup name="copGroup" count="1">
+	<item group="junk" prob="3"/>
+	<item group="rottenFood" prob="1"/>
+	<item name="shamSandwich" count="1,5"/>
+	<item group="weaponsPistol+ammo" prob="1.1"/>
+	<item group="weaponsAnyShotguns+ammo" prob="1.1"/>
+	<item group="ammo"/>
+	<item name="flashlight02" prob="0.5"/>
+	<item name="militaryVest" prob="0.2"/>
+	<item name="militaryFiber" count="1,4" prob="0.04"/>
+	<item name="noteFragment" count="3,6" prob="0.4" />
+</lootgroup>
+
+<lootgroup name="copGroupFull" count="all">
+	<item name="acidSac" count="1" />
+	<item group="copGroup" count="0,2" />
+</lootgroup>
 
 <!-- misc storage, cardboard boxes-->
 <lootcontainer id="1" count="0,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
@@ -1958,17 +1976,8 @@
 </lootcontainer>
 
 <!-- zombie cop-->
-<lootcontainer id="17" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
-	<item group="junk" prob="3"/>
-	<item group="rottenFood" prob="1"/>
-	<item name="shamSandwich" count="1,5"/>
-	<item group="weaponsPistol+ammo" prob="1.1"/>
-	<item group="weaponsAnyShotguns+ammo" prob="1.1"/>
-	<item group="ammo"/>
-	<item name="flashlight02" prob="0.5"/>
-	<item name="militaryVest" prob="0.2"/>
-	<item name="militaryFiber" count="1,4" prob="0.04"/>
-	<item name="noteFragment" count="3,6" prob="0.4" />
+<lootcontainer id="17" count="1" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
+	<item group="copGroupFull" count="1" />
 </lootcontainer>
 
 <!-- washing machine, clothes in good condition -->
@@ -2318,7 +2327,7 @@
 	<item group="treasureMaps" count="1" prob="0.092"/>
 	<item group="weaponsPistol+ammo" prob="0.03"/>
 	<item name="noteFragment" count="1,2" prob="0.2" />
-	<item name="bookScience" prob="0.02" />
+	<item name="bookScience" prob="0.04" />
 </lootcontainer>
 
 <!-- snowzombie, lumberjack zombie loot-->

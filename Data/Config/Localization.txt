@@ -12,7 +12,7 @@ cntLootCrateWorkingStiffs,blocks,Container,EnChanged,Working Stiffs Box,Caisse W
 plantedCorn1,blocks,Farming,EnChanged,Corn Seed,,,,
 plantedCorn3Harvest,blocks,Farming,EnChanged,Planted Corn 3 (Harvestable),Récolte de tige de maïs planté 2,Gepflanzte Maisstauden-Ernte 2,,Sembrado Tallo de maíz 2 Cosecha
 barbedFenceDesc,blocks,Trap,EnChanged,"Barbed wire fences made from wood and iron can slow down enemies, making them easier to deal with. Place them by using the secondary action.",,"Stacheldrahtzäune aus Holz und Eisen können Gegner verlangsamen, wodurch man einfacher mit ihnen fertig wird. Platziere sie mit der sekundären Aktion.",,
-barbedWireSheetDesc,blocks,Trap,EnChanged,"Barbed wire made from iron can slow down enemies, making them easier to deal with. Place it by using the secondary action.",,"Stacheldraht aus Eisen kann Gegner verlangsamen, wodurch man einfacher mit ihnen fertig wird. Platziere ihn mit der sekundären Aktion.",,
+barbedWireSheetDesc,blocks,Trap,EnChanged,"Barbed wire made from iron can slow down enemies, making them easier to deal with. Place it by using the secondary action.\n[55ff88]Crafted in the Forge using an Anvil.[ffffff]",,"Stacheldraht aus Eisen kann Gegner verlangsamen, wodurch man einfacher mit ihnen fertig wird. Platziere ihn mit der sekundären Aktion.",,
 rScrapIronPlateMineDesc,blocks,Trap,EnChanged,A primitive pressure plate mine made of iron and gunpowder. Good for hobbling or killing most enemies.,,"Eine primitive Druckplattenmine aus Eisen und Schießpulver. Gut, um die meisten Gegner zu verstümmeln oder töten.",,
 hungry2Desc,buffs,Buff,EnChanged,You are dying of starvation! Find something to eat!,Vous mourrez de faim.,Du bist am Verhungern! Finde etwas zu essen!,,Te estás muriendo de hambre.
 hungry2Tooltip,buffs,Buff,EnChanged,You are dying of starvation! Find something to eat!,Vous mourrez de faim.,Du bist am Verhungern! Finde etwas zu essen!,,Te estás muriendo de hambre.
@@ -29,7 +29,7 @@ hazmatShirt,items,Clothes,EnChanged,Hazmat Jacket,Chemise de protection,Schutzan
 shadesDesc,items,Clothes,EnChanged,Sunglasses make you look cool.,Les lunettes de soleil vous donnent l'air cool et vous protègent des rayons solaires.,Mit einer Sonnenbrille siehst du cool aus.,,"Con estas gafas te ves cool, además te mantienes fresco en climas calurosos. "
 coffeeBeansDesc,items,Farming,EnChanged,Brew coffee at a campfire or craft the beans into coffee seeds.,,Braue Kaffee am Lagerfeuer oder verarbeite die Bohnen zu Kaffeesamen.,,
 foodYuccaFruitDesc,items,Food,EnChanged,Yucca fruit is edible and can be juiced to gain a bit of water. It is harvested from cacti and yucca plants.,Les fruits de yucca se mangent et peuvent être cueillis sur les cactus.,Die Yucca-Frucht ist essbar und kann von Kakteen geerntet werden.,,La yuca es comestible y se puede recoger de los cactus.
-moldyBreadDesc,items,Food,EnChanged,Eat at your own risk. Can be used to craft antibiotics at a chemistry station.,,"Auf eigene Gefahr essen. Kann benutzt werden, um am Chemietisch Antibiotika zu fertigen.",,
+moldyBreadDesc,items,Food,EnChanged,Eat at your own risk. Can be used to craft antibiotics.\n[55ff88]Crafted in a fermenting barrel, or use a chemistry station.[ffffff],,"Auf eigene Gefahr essen. Kann benutzt werden, um am Chemietisch Antibiotika zu fertigen.",,
 blunderbussDesc,items,Gun,EnChanged,A primitive muzzle loader can be crafted from mainly forged iron. Effective at very close ranges.,"Une arme primitive à chargement par la bouche peut être fabriquée à partir de tuyaux, de fer forgé, de bois et de ressorts. Efficace sur de très courtes distances.",Ein einfacher Vorderlader der hauptsächlich aus geschmiedetem Eisen gefertigt wird. Ist im Nahkampf sehr effektiv.,,"Se puede fabricar un arma de avancarga rudimentaria con tuberías, hierro forjado, madera y resortes. Eficaz a distancias muy cortas."
 gunMP5Desc,items,Gun,EnChanged,This silenced submachine gun uses 9mm ammo. Can be re-assembled and repaired if you read the schematic.,Cette formidable mitraillette nécessite des munitions de calibre 9 mm. L'arme peut être réassemblée et réparée si vous lisez le schéma.,"Diese schallgedämpfte Maschinenpistole verwendet 9 mm Munition. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,Esta metralleta pateaculos utiliza munición de 9 mm. Se puede rearmar y reparar si lees el esquema.
 animalHideDesc,items,Item,EnChanged,Use animal hide to make warm clothing and leather.,"Après avoir lu « Le livre du cuir », servez-vous de peaux de bête pour fabriquer des vêtements, des soufflets pour la forge et du cuir.",Tierhäute dienen dazu warme Kleidung und Leder herzustellen.,,"Una vez que hayas leído el libro del cuero, podrás usar la piel de animal para hacer ropa, fabricar fuelles para la fragua y cuero."
@@ -93,7 +93,7 @@ potatoSeed,items,Farming,EnChanged KgNone,Potato Seed,Graines de pomme de terre,
 treePlantedMaple1mDesc,items,Farming,EnChanged KgNone,Plant these seeds in dirt to grow a tree. They may grow in the desert but do prefer more fertile ground.,Plantez ces graines dans la terre pour faire pousser un arbre.,"Pflanze diese Samen in Erde, um einen Baum zu züchten.",,Planta estas semillas en la tierra para que crezca un árbol.
 treePlantedMountainPine1mDesc,items,Farming,EnChanged KgNone,Plant these seeds in dirt to grow a tree. They may grow in the desert but do prefer more fertile ground.,Plantez ces graines dans la terre pour faire pousser un arbre.,"Pflanze diese Samen in Erde, um einen Baum zu züchten.",,Planta estas semillas en la tierra para que crezca un árbol.
 treePlantedWinterPine1mDesc,items,Farming,EnChanged KgNone,Plant these seeds in dirt to grow a tree. They may grow in the desert but do prefer more fertile ground.,Plantez ces graines dans la terre pour faire pousser un arbre.,"Pflanze diese Samen in Erde, um einen Baum zu züchten.",,Planta estas semillas en la tierra para que crezca un árbol.
-beerDesc,items,Food,EnChanged KgNone,"Gain stamina, bravado and stun immunity all in one bottle of this tasty home brewed beer. Just like grandpa used to make.\n[55ff88]Crafted on a chemistry station.[ffffff]","Boire une bouteille de cette délicieuse bière artisanale vous offre de l'endurance, une dose de bravoure et une haute opinion de vous-même. Exactement comme celle que faisait papy.","Erhalte Ausdauer, Wagemut und ein großes Ego. All das in nur einer Flasche dieses leckeren selbst gebrauten Biers. Das gleiche Bier, das Opa früher immer braute.",,"Aumenta tu resistencia, valentía y tu gran ego con una simple botella de esta deliciosa cerveza casera. Tal y como el abuelo solía hacerla."
+beerDesc,items,Food,EnChanged KgNone,"Gain stamina, bravado and stun immunity all in one bottle of this tasty home brewed beer. Just like grandpa used to make.\n[55ff88]Crafted in a fermenting barrel.[ffffff]","Boire une bouteille de cette délicieuse bière artisanale vous offre de l'endurance, une dose de bravoure et une haute opinion de vous-même. Exactement comme celle que faisait papy.","Erhalte Ausdauer, Wagemut und ein großes Ego. All das in nur einer Flasche dieses leckeren selbst gebrauten Biers. Das gleiche Bier, das Opa früher immer braute.",,"Aumenta tu resistencia, valentía y tu gran ego con una simple botella de esta deliciosa cerveza casera. Tal y como el abuelo solía hacerla."
 ironFragment,items,Item,EnChanged KgNone,Raw Iron,Éclats de fer,Eisenbruchstücke,,Trozos de hierro
 ironFragmentDesc,items,Item,EnChanged KgNone,Raw iron should be smelted in a forge but can also be scrapped at a loss. [5588ff]Can be found by mining under gravel patches in the world.[ffffff],Objet essentiel pour forger. Il peut aussi servir à fabriquer des munitions de tromblon.,"Einer der wichtigsten Schmiedegegenstände, mit dem auch Munition für die Donnerbüchse gefertigt werden kann.",,Un objeto de forja básico que se puede usar también para fabricar munición para trabucos.
 leatherDesc,items,Item,EnChanged KgNone,"Leather can be used to make a variety of things including clothing, crossbows and bellows for a forge.\n[55ff88]Crafted in the firepit with bellows or using the workbench.[ffffff]","Après avoir lu « Le livre du cuir », le cuir peut servir à fabriquer un tas de choses, comme des vêtements et des arbalètes.","Mit Leder kann eine Reihe von Sachen hergestellt werden, darunter Kleidung, Armbrüste und Blasebälge für die Schmiede.",,"El cuero se puede usar para fabricar varios objetos, como ropa o ballestas, una vez que has leído el libro del Cuero."
@@ -564,7 +564,7 @@ scrapIronFrameCNRFull,blocks,Block,KgNone,Scrap Frame Full Corner,Angle complet 
 scrapIronFrameCNRInside,blocks,Block,KgNone,Scrap Frame Inside Corner,Angle intérieur avec structure en ferraille,Alteisenrahmen – Innenecke,,Esquina interior de estructura de chatarra
 scrapIronFrameRamp,blocks,Block,KgNone,Scrap Frame Ramp,Rampe avec structure en ferraille,Alteisenrahmen – Rampe,,Rampa de estructura de chatarra
 scrapIronFrameWedge,blocks,Block,KgNone,Scrap Frame Wedge,Pente avec structure en ferraille,Alteisenrahmen – Schräge,,Cuña de estructura de chatarra
-scrapIronGroupDesc,blocks,Block,KgNone,"While not as sturdy as solid concrete, metal constructions have high structural integrity, requiring fewer support pillars.","N'étant pas aussi solides et robustes que le béton, les constructions en métal sont idéales à la conception des structures et nécessitent moins de piliers.","Metallkonstruktionen sind nicht so stabil wie Massivbeton, doch sie verfügen über eine hohe Standsicherheit und benötigen weniger Stützpfeiler.",,"A pesar de no tener tanta robustez como el hormigón sólido, las construcciones de metal tienen una integridad estructural elevada, por lo que necesitan menos pilares de apoyo."
+scrapIronGroupDesc,blocks,Block,KgNone,"While not as sturdy as solid concrete, metal constructions have high structural integrity, requiring fewer support pillars.\n[55ff88]Crafted in the Forge using an Anvil.[ffffff]","N'étant pas aussi solides et robustes que le béton, les constructions en métal sont idéales à la conception des structures et nécessitent moins de piliers.","Metallkonstruktionen sind nicht so stabil wie Massivbeton, doch sie verfügen über eine hohe Standsicherheit und benötigen weniger Stützpfeiler.",,"A pesar de no tener tanta robustez como el hormigón sólido, las construcciones de metal tienen una integridad estructural elevada, por lo que necesitan menos pilares de apoyo."
 scrapIronPillar100,blocks,Block,KgNone,Scrap Iron Pillar100,Pilier 100 en ferraille,Alteisensäule 100,,Pilar de chatarra de hierro 100
 scrapIronPlate,blocks,Block,KgNone,Scrap Iron Plate,Plaque en ferraille,Alteisenplatte,,Placa de chatarra de hierro
 scrapIronPole,blocks,Block,KgNone,Scrap Iron Pole,Poteau en ferraille,Alteisenpfosten,,Poste de chatarra de hierro
@@ -1213,12 +1213,12 @@ clubSpikedSchematic,items,Book,KgNone,Spiked Club Schematic,Schéma de massue à
 clubSpikedSchematicDesc,items,Book,KgNone,Learn how to make a spiked club by reading this schematic.,Apprenez à fabriquer une massue à pointes en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Nagelkeulen gefertigt werden.",,Lee este esquema para aprender a elaborar un lucero del alba.
 crossbowSchematic,items,Book,KgNone,Crossbow Schematic,Schéma d'arbalète,Bauplan – Armbrust,,Esquema de ballesta
 crossbowSchematicDesc,items,Book,KgNone,Learn to craft a crossbow by reading this schematic.,Apprenez à fabriquer une arbalète en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Armbrüste gefertigt werden.",,Lee el esquema para aprender a fabricar una ballesta.
-explodingCrossbowBoltSchematic,items,Book,KgNone,Exploding Crossbow Bolt Schematic,Schéma de carreau d'arbalète explosif,Bauplan – Sprengbolzen für Armbrüste,,Esquema de saeta explosiva para ballesta
-explodingCrossbowBoltSchematicDesc,items,Book,KgNone,Learn to craft exploding crossbow bolts by reading this schematic.,Apprenez à fabriquer des carreaux d'arbalète explosifs en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Sprengbolzen für Armbrüste gefertigt werden.",,Lee el esquema para aprender a fabricar saetas explosivas para ballesta.
+explodingCrossbowBoltSchematic,items,Book,KgNone,Exploding Arrow & Bolt Schematic,Schéma de carreau d'arbalète explosif,Bauplan – Sprengbolzen für Armbrüste,,Esquema de saeta explosiva para ballesta
+explodingCrossbowBoltSchematicDesc,items,Book,KgNone,Learn to craft exploding arrows and crossbow bolts by reading this schematic.,Apprenez à fabriquer des carreaux d'arbalète explosifs en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Sprengbolzen für Armbrüste gefertigt werden.",,Lee el esquema para aprender a fabricar saetas explosivas para ballesta.
 firstAidKitSchematic,items,Book,KgNone,First Aid Kit Schematic,Schéma de trousse de premiers soins,Bauplan – Verbandskasten,,Esquema de botiquín de primeros auxilios
 firstAidKitSchematicDesc,items,Book,KgNone,Learn to make first aid kits by reading this schematic.,Apprenez à fabriquer des trousses de premiers soins en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Verbandskasten gefertigt werden.",,Lee el esquema para aprender a fabricar un botiquín de primeros auxilios.
-flamingArrowSchematic,items,Book,KgNone,Flaming Arrow Schematic,Schéma de flèche enflammée,Bauplan – Feuerpfeil,,Esquema de flecha incendiaria
-flamingArrowSchematicDesc,items,Book,KgNone,Learn to craft flaming arrows by reading this schematic.,Apprenez à fabriquer des flèches enflammées en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Feuerpfeile gefertigt werden.",,Lee el esquema para aprender a fabricar flechas incendiarias.
+flamingArrowSchematic,items,Book,KgNone,Flaming Arrows & Bolts Schematic,Schéma de flèche enflammée,Bauplan – Feuerpfeil,,Esquema de flecha incendiaria
+flamingArrowSchematicDesc,items,Book,KgNone,Learn to craft flaming arrows and crossbow bolts by reading this schematic.,Apprenez à fabriquer des flèches enflammées en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Feuerpfeile gefertigt werden.",,Lee el esquema para aprender a fabricar flechas incendiarias.
 gasCanSchematic,items,Book,KgNone,Gas Can Schematic,Schéma de bidon d'essence,Bauplan – Benzinkanister,,Esquema de bidón de gas
 gasCanSchematicDesc,items,Book,KgNone,Learn how to craft gas by reading this schematic.,Apprenez à fabriquer de l'essence en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Benzin gefertigt wird.",,Lee este esquema para aprender a producir gas.
 herbalAntibioticsRecipe,items,Book,KgNone,Herbal Antibiotics Recipe,Composition d'antibiotiques naturels,Rezept – Natürliche Antibiotika,,Receta de antibióticos herbales
@@ -4304,7 +4304,7 @@ devOnlyGroupDesc,blocks,Block,New,Only use for development and testing.,,,,
 sleeperGroupDesc,blocks,SleeperSpawn,New,"Regular: 20-7% empty, XS 1-2, S 2-4, M 3-7, L 4-9, XL 5-11.  LootRoom: 0% empty, XS 1-2, S 3-4, M 5-7, L 6-9, XL 8-11.  Abandoned: 1, high decoy %",,,,
 spawnTraderDesc,blocks,Block,New,"Navezgane Traders: 1394,1324 / -1052,951 / 318,107 / -771,-1305 / 1002,-1308",,,,
 rebarFrameGroupDesc,blocks,Block,New,"Place and upgrade with concrete mix and a construction tool using the secondary action. Upgrade more when dry.\n[55ff88]Crafted in a forge using an anvil.[ffffff]","Sert à construire des bases. Se construit à l'aide de bois, de mélange à béton et d'un outil de construction, et ce grâce à l'action secondaire. Une fois sèche, elle s'améliore à l'aide d'acier forgé.",Kann mit Betonmischung und Bauwerkzeugen unter Verwendung der sekundären Aktion gebaut werden. Werte nach dem Trocknen mit geschmiedetem Stahl weiter auf.,,"Se usa como cimiento. Usa la acción secundaria para construir con madera, mezcla de hormigón y una herramienta de construcción. Mejóralo aún más con acero forjado una vez que esté seco."
-concreteGroupDesc,blocks,Block,New,A very flexible building material. Place and wait for the concrete to set. Can be upgraded to reinforced concrete.,"Offrant une bonne protection, le béton est un matériau de construction très souple qui vous permet de fabriquer de nombreuses formes. Peut être amélioré.",Ein sehr flexibles Baumaterial. Braucht Zeit zum Aushärten. Kann zu verstärktem Beton aufgewertet werden.,,"El hormigón ofrece una buena protección y es un material de construcción muy flexible, por lo que se puede moldear mientras se usa. Se puede mejorar."
+concreteGroupDesc,blocks,Block,New,"A very flexible building material. Place and wait for the concrete to set. Can be upgraded to reinforced concrete. \n[55ff88]Crafted in a Cement Mixer.[ffffff]","Offrant une bonne protection, le béton est un matériau de construction très souple qui vous permet de fabriquer de nombreuses formes. Peut être amélioré.",Ein sehr flexibles Baumaterial. Braucht Zeit zum Aushärten. Kann zu verstärktem Beton aufgewertet werden.,,"El hormigón ofrece una buena protección y es un material de construcción muy flexible, por lo que se puede moldear mientras se usa. Se puede mejorar."
 ttRepairBeforePickup,UI,Tooltip,New,You must repair this before picking it up.,,,,
 electricBasicsName,progression,Perk,New,Electricity Basics,,,,
 electricBasicsDesc,progression,Perk,New,This perk will unlock recipes for electrical devices.,,,,
@@ -5659,7 +5659,7 @@ appleJuiceCooling,Buffs,buff,KgNone,"Apple Juice Cooling",,,,
 appleJuiceCoolingDesc,Buffs,buff,KgNone,"Refreshing apple juice is a good way to keep cool in warmer environments.",,,,
 appleJuiceCoolingTooltip,Buffs,buff,KgNone,"That apple juice sure was refreshing!",,,,
 appleCider,items,Food,KgNone,"Apple Cider",,,,
-appleCiderDesc,items,Food,KgNone,"Apple cider makes a good alternative to beer, especially if you prefer the taste!\n[55ff88]Leave apple juice to ferment on a chemistry station.[ffffff]",,,,
+appleCiderDesc,items,Food,KgNone,"Apple cider makes a good alternative to beer, especially if you prefer the taste!\n[55ff88]Leave apple juice to ferment in a fermenting barrel.[ffffff]",,,,
 
 
 aloeJuice,items,Food,KgNone,"Aloe Vera Juice",,,,
@@ -5924,6 +5924,8 @@ vegetableCream,items,Medical,KgNone,"Turpentine Extract",,,,
 vegetableCreamDesc,items,Medical,KgNone,"Turpentine extract has many healing properties. You can use this to apply some light pain relief, and can even be used to treat some bites.\n[55ff88]Craft in a campfire using a beaker, or use a chemistry station for best results.[ffffff]",,,,
 blueberryJuice,items,Food,KgNone,"Blueberry Juice",,,,
 blueberryJuiceDesc,items,Food,KgNone,"Refreshing blueberry juice - perfect for boosting your fruit intake! \n[55ff88]Squeeze some blueberries by hand, or for better results, try using a juicer on a kitchen worktable. The industrial squeezer will yield the most juice from each berry.[ffffff]",,,,
+blueberryWine,items,Food,KgNone,"Blueberry Wine",,,,
+blueberryWineDesc,items,Food,KgNone,"Surprising that blueberries could make such a good wine... Sweet and a tad bitter.\n[55ff88]Crafted in a fermenting barrel.[ffffff]",,,,
 
 chickenPie,items,Food,KgNone,"Chicken Pie",,,,
 chickenPieDesc,items,Food,KgNone,"A cluckin' delicious chicken pie.\n[55ff88]Cook in a working oven, and make sure you remove the feathers from that chicken![ffffff]",,,,
@@ -6111,6 +6113,13 @@ alloyForgeHighHeatDesc,Blocks,Workstation,KgNone,"A high heat alloy forge is cap
 laserForgeHighHeat,Blocks,Workstation,KgNone,"High Heat Laser Smelter",,,,
 laserForgeHighHeatDesc,Blocks,Workstation,KgNone,"A high heat laser smelter is capable of smmelting more items at once. \n[55ff88]Crafted on the Workbench.[ffffff]",,,,
 
+fermentingBarrelSchematic,items,Schematic,KgNone,"Fermenting Barrel Schematic",,,,
+fermentingBarrelSchematicDesc,items,Schematics,KgNone,"Learn how to craft a fermenting barrel in order to craft alcohols and other items. To learn this schematic you require Science Quality 3",,,,
+fermentingBarrelSkillName,progression,perk,EnChanged,"Fermenting Barrel Recipe",,,,
+fermentingBarrelSkillDesc,progression,perk,EnChanged,"Cover the smell of your ungodly farts with this fermenting barrel.",,,,
+fermentingBarrel,items,Workstation,KgNone,"Fermenting Barrel",,,,
+fermentingBarrelDesc,items,Workstation,KgNone,"A fermenting barrel can be used to let certain products ferment over time to produce alcohol, fertiliser or other materials.\n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+
 bookScience,Items,Schematics,KgNone,"Science Book",,,,
 bookScienceDesc,Items,Schematics,KgNone,"So E = MC whatsit now? Hmm, maybe there's some useful stuff in here...",,,,
 bookToolSmithing,Items,Schematics,KgNone,"Tool Smithing Book",,,,
@@ -6193,6 +6202,42 @@ cntSedanBoxDamage2T,blocks,Block,KgNone,"Boxed Car Parts",,,,
 cntSedanBoxDamage0,blocks,Block,KgNone,"Boxed Car Parts",,,,
 cntSedanBoxDamage1,blocks,Block,KgNone,"Boxed Car Parts",,,,
 cntSedanBoxDamage2,blocks,Block,KgNone,"Boxed Car Parts",,,,
+
+explodingArrow,items,Ammo,KgNone,"Exploding Arrow",,,,
+explodingArrowDesc,items,Ammo,KgNone,"Blast those zombies into bits with some highly explosive arrows! \n[55ff88]Crafted in the Workbench",,,,
+flamingCrossbowBolt,items,Ammo,KgNone,"Flaming Crossbow Bolt",,,,
+flamingCrossbowBoltDesc,items,Ammo,KgNone,"The best way to kill a zombie is to set the bugger on fire and watch it run around helplessly! \n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+electropulseArrow,items,Ammo,KgNone,"ElectroPulse Arrow",,,,
+electropulseArrowDesc,items,Ammo,KgNone,"ElectroPulse arrows are good for stunning zombies, holding them in a good spot for you to finish them off.\n[55ff88]Crafted on the Workbench[ffffff]",,,,
+electropulseCrossbowBolt,items,Ammo,KgNone,"ElectroPulse Crossbow Bolt",,,,
+electropulseCrossbowBoltDesc,items,Ammo,KgNone,"ElectroPulse crossbow bolts are good for stunning zombies, holding them in a good spot for you to finish them off.\n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+corrosiveArrow,items,Ammo,KgNone,"Corrosive Arrow",,,,
+corrosiveArrowDesc,items,Ammo,KgNone,"Corrosive arrows are useful for quickly draining and killing tougher enemies.\n[55ff88]Crafted on the Workbench[ffffff]",,,,
+corrosiveCrossbowBolt,items,Ammo,KgNone,"Corrosive Crossbow Bolt",,,,
+corrosiveCrossbowBoltDesc,items,Ammo,KgNone,"Corrosive bolts are useful for quickly draining and killing tougher enemies.\n[55ff88]Crafted on the Workbench[ffffff]",,,,
+
+salt,items,Resources,KgNone,"Salt Crystals",,,,
+saltDesc,items,Resources,KgNone,"Salt crystals can be found by digging in areas with high salt concentrations, such as sea beds.",,,,
+saltPure,items,Resources,KgNone,"Purified Salt",,,,
+saltPureDesc,items,Resources,KgNone,"Purified salt can be used in a reaction with other ingredients to create nitric acid.\n[55ff88]Crafted on the Purification Plant.[ffffff]",,,,
+rockSalt,items,Resources,KgNone,"Sack of Rock Salt",,,,
+rockSaltDesc,items,Resources,KgNone,"A sack of the finest quality rock salt. You can open this to get 250 salt crystals.",,,,
+hydrochloricAcidSolution,Items,Resources,KgNone,"Hydrochloric Acid Solution",,,,
+hydrochloricAcidSolutionDesc,Items,Resources,KgNone,"Hydrochloric acid is highly corrosive. You could use this to make some corrosive arrows, or rounds for weapons.\n[55ff88]Crafted in the Chemistry Station.[ffffff]"
+nitricAcidSolution,items,Resources,KgNone,"Nitric Acid Solution",,,,
+nitricAcidSolutionDesc,items,Resources,KgNone,"Nitric acid is corrosive and can be used to craft corrosive arrows, or rounds for weapons.\n[55ff88]Crafted on the Chemistry Station.[ffffff]"
+acidSac,items,Resources,KgNone,"Corrosive Acid Sac",,,,
+acidSacDesc,items,Resources,KgNone,"Cop puke is highly corrosive... Now I know how the bastards do it!",,,,
+sulphur,items,Resources,KgNone,"Sulphur",,,,
+sulphurDesc,items,Resources,KgNone,"Sulphur can be found rarely underground in stone and sandstone. It's much more common near coal.",,,,
+sulfuricAcidSolution,items,Resources,KgNone,"Sulfuric Acid Solution",,,,
+sulfuricAcidSolutionDesc,items,Resources,KgNone,"Sulfuric acid can be used to make car batteries (and you can drain existing batteries). \n[55ff88]Crafted on the Workbench from a battery, or make your own on a chemistry station.[ffffff]",,,,
+
+corrosiveArrowBoltSchematic,items,Schematic,KgNone,"Corrosive Arrow & Bolt Schematic",,,,
+corrosiveArrowBoltSchematicDesc,items,Schematic,KgNone,"Learn how to craft corrosive arrows and crossbow bolts by reading this schematic.",,,,
+
+
+
 
 
 
