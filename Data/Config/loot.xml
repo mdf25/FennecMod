@@ -2128,6 +2128,7 @@
 	<item group="ammo" prob="0.02"/>
 	<item group="weaponsLongShotgun+ammo" prob="0.02"/>
 	<item group="books" count="1,2"/>
+	<item name="bookScience" count="1" />
 	<item name="paper" count="1,2" prob="0.7"/>
 	<item name="oldCash" count="1,3" prob="0.3"/>
 	<item group="medicine" prob="0.05"/>
@@ -2297,7 +2298,8 @@
 </lootcontainer>
 
 <!-- minibike storage -->
-<lootcontainer id="62" count="0" size="3,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+<lootcontainer id="62" count="0,1" size="7,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="0" prob="0.01" />
 </lootcontainer>
 
 <!-- mountain man loot -->

@@ -409,7 +409,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/femur"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="2"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
