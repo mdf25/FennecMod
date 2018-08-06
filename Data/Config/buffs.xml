@@ -428,6 +428,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="stamina" amount="-2" rate="1" />
 	<modify id="0" stat="speedmodifier" setValue="0.75" />
 </buff> 
+<buff id="YuccariaCap" buffif="CTRyuccaConcentration greater 20" debuffif="CTRyuccaConcentration lequal 20" actions="max(CTRyuccaConcentration, 20)" />
 
 
 <!-- SOYBEAN POISONING -->
@@ -450,7 +451,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="EatRottingFood2" duration="1" actions="increment(CTRrottingFood,2,0,0,1)" />
 <buff id="EatRottingFood3" duration="1" actions="increment(CTRrottingFood,3,0,0,1)" />
 <buff id="EatRottingFood5" duration="1" actions="increment(CTRrottingFood,5,0,0,1)" />
-<buff id="MetabolizeRottingFood" buffif="CTRrottingFood greater 0" debuffif="CTRrottingFood less 1" actions="increment(CTRrottingFood,-1,150t,0,0);min(CTRrottingFood,0)" />
+<buff id="MetabolizeRottingFood" buffif="CTRrottingFood greater 0" debuffif="CTRrottingFood less 1" actions="increment(CTRrottingFood,-1,50t,0,0);min(CTRrottingFood,0)" />
 <buff id="RottingFleshPoisoning" mutex="foodPoisoning" duration="0" buffif="CTRrottingFood greater 5" debuffif="CTRrottingFood less 3" actions="increment(@wellness, -0.02, 150t, 0, 0)" type="staminadown" icon="ui_game_symbol_cramps" name_key="RottingFleshPoisoning" description_key="RottingFleshPoisoningDesc" tooltip_key="RottingFleshPoisoningTooltip">
 	<modify id="0" stat="stamina" 		amount="-3" rate="1" />
 	<modify id="1" stat="health" 		amount="-1" rate="240" />
@@ -461,6 +462,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" 		amount="-1" rate="30" />
 	<modify id="0" stat="speedmodifier" setValue="0.8" />
 </buff> 
+<buff id="RottingFoodCap" buffif="CTRrottingFood greater 12" debuffif="CTRrottingFood lequal 12" actions="max(CTRrottingFood, 12)" />
 
 
 <!-- RABIES -->

@@ -13398,14 +13398,14 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
 
-<!-- <item id="923" name="sawedoffPumpShotgunSchematic">
+<item id="923" name="smallRefinerySchematic">
 	<property name="Extends" value="schematicMaster"/>
+	<property name="Weight" value="10" />
+	<property name="EconomicValue" value="2500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunSawedOffPumpShotgun"/>
-		<property name="Skills_to_gain" value="craftSkillGuns"/>
+		<property name="Skills_to_gain" value="oilRefineryPerk"/>
 	</property>
-	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
-</item> -->
+</item>
 
 <item id="924" name="pumpShotgunSchematic">
 	<property name="Extends" value="schematicMaster"/>
@@ -13511,7 +13511,14 @@ Mesh files no longer used:
 	</property>
 </item>
 
-
+<item id="949" name="alloyForgeSchematic"> <!-- ammo crafting -->
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="Weight" value="7" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="alloyForgePerk"/>
+	</property>
+</item>
 
 <item id="951" name="paintMagazineDecorations"> <!-- unlocks a painting material group -->
 	<property name="Extends" value="schematicMaster"/>
@@ -15002,14 +15009,15 @@ Mesh files no longer used:
 <item id="1311" name="oilShale">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/oilShaleDroppedPrefab"/>
-	<property name="Material" value="Miron"/>
+	<property name="Material" value="organic"/>
+	<property name="Weight"	value="5"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
-	<property name="FuelValue" value="5"/>
+	<property name="Stacknumber" value="6000"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
 	<property name="DropScale" value="8"/>
 	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
 	<property name="CraftingIngredientExp" value="2"/>
 </item>
 
@@ -16599,7 +16607,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="6"/>
-	<property name="CraftingIngredientTime" value="9"/>
+	<property name="CraftingIngredientTime" value="5"/>
 	<property name="Group" value="Resources"/>
 </item>
 
@@ -16714,6 +16722,35 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
+<item id="1437" name="plasticSheet"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="106"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientExp" value="15"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<!-- <property name="RepairTime" value="2"/>
+	<property name="RepairAmount" value="400"/> -->
+</item>
+
+<item id="1438" name="crudeOil"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="organic"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="106"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientExp" value="15"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+</item>
+
 <item id="1439" name="glue">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -16802,18 +16839,6 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="20" />
 	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
-
-<!--<item id="1446" name="calipers">
-	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
-	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="HoldType" value="45"/>
-	<property name="Material" value="Msteel"/>
-	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="Group" value="Resources"/>
-	<property name="EconomicValue" value="2000"/>
-	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-</item>-->
 
 <item id="1447" name="toolAndDieSet">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -16950,6 +16975,48 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 
+<item id="1456" name="plasticCasing"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Crafting/leather"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="RepairAmount" value="80"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="FuelValue" value="5"/>
+	<property name="EconomicValue" value="22"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<property name="Weight" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+</item>
+
+<item id="1457" name="plasticCapsule"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Crafting/leather"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="RepairAmount" value="80"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="FuelValue" value="5"/>
+	<property name="EconomicValue" value="22"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<property name="Weight" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+
+<item id="1458" name="plasticFletching"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Crafting/leather"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="RepairAmount" value="80"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="FuelValue" value="5"/>
+	<property name="EconomicValue" value="22"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<property name="Weight" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+</item>
+
 <item id="1460" name="unit_iron">
 	<property name="CustomIcon" value="scrapIron"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -17053,6 +17120,9 @@ Mesh files no longer used:
 	<property name="Material" value="silver"/>
 	<property name="CreativeMode" value="None" />
 </item>
+
+
+
 
 <!-- Seed Packets for the farmer class -->
 <item id="1500" name="seedPacketBlueberry">
@@ -17304,7 +17374,38 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience" />
 </item>
 
+<item id="1548" name="airCooledCondenser">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="metal"/>
+	<property name="Stacknumber" value="10"/> <!-- STK loot -->
+	<property name="EconomicValue" value="240"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
 
+<item id="1549" name="distillationColumn">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="metal"/>
+	<property name="Stacknumber" value="10"/> <!-- STK loot -->
+	<property name="EconomicValue" value="240"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+
+<item id="1550" name="vacuumChamber">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="metal"/>
+	<property name="Stacknumber" value="10"/> <!-- STK loot -->
+	<property name="EconomicValue" value="240"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
 
 <item id="1551" name="juicer">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>

@@ -1344,7 +1344,15 @@
 		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>
 		<recipe name="toiletUpgradeKit"		unlock_level="1" />
 	</perk>	
-		
+	<perk name="oilRefineryPerk" icon="resource" description_key="oilRefineryPerkDesc" title_key="oilRefineryPerkName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="7"/>
+		<recipe name="smallRefinery"		unlock_level="1" />
+	</perk>
+	<perk name="alloyForgePerk" icon="resource" description_key="alloyForgePerkDesc" title_key="alloyForgePerkName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="7" />
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="6"/>
+		<recipe name="alloyForge"		unlock_level="1" />
+	</perk>
 	<perk name="squeezer" icon="resource" description_key="squeezerDesc" title_key="squeezerName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="6"/>
 		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="5"/>

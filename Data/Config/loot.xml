@@ -914,6 +914,8 @@
 	<item name="fermentingBarrelSchematic" />
 	<item name="electropulseArrowBoltSchematic" />
 	<item name="corrosiveArrowBoltSchematic" />
+	<item name="smallRefinerySchematic" />
+	<item name="alloyForgeSchematic" />
 	<item name="schematicBag" prob="0.02" />
 	<item group="questChallenge" count="1"/>
 </lootgroup>
@@ -1175,13 +1177,16 @@
 	<item name="femur" count="1,2" prob="0.05"/>
 	<item name="scrapPlastics" count="1,2" prob="0.3"/>
 	<item name="steroids" prob="0.004" />
-	<item group="skillBooks" prob="0.005" />
+	<item name="plasticSheet" prob="0.15" />
+	<item name="plasticCasing" prob="0.10" count="1,6" />
+	<item group="skillBooks" prob="0.01" />
 </lootgroup>
 
 <lootgroup name="rareAutomotive">
 	<item name="smallEngine" prob="3" />
 	<item group="motorToolParts" count="1" prob="5"/>
 	<item name="minibikeWheels" />
+	<item name="airCooledCondenser" count="1" />
 </lootgroup>
 
 <lootgroup name="automotive">
@@ -1381,11 +1386,14 @@
 	<item name="paint" count="500,1000" prob="0.4"/>
 	<item name="paintTool" prob="0.4"/>
 	<item name="wireTool"/>
+	<item name="rockSalt" count="1" prob="0.3" />
+	<item name="plasticSheet" count="5,12" prob="0.2" />
 	<item name="paintMagazineMasonry" prob="0.4"/>
 	<item name="bookToolSmithing" prob="0.05" />
 	<item name="bookWeaponSmithing" prob="0.05" />
 	<item name="forgedFadium" count="1,2" prob="0.15" />
 	<item name="forgedFoxium" count="1,2" prob="0.15" />
+	<item name="vacuumChamber" count="1" prob="0.02" />
 </lootgroup>
 
 <lootgroup name="rareMedicine" count="1">
@@ -1564,6 +1572,20 @@
 	<item name="padlock"/>
 </lootgroup>
 
+<lootgroup name="chemistryChemicals" count="1,2">
+	<item name="calciumNitrateSolution" count="1,2" />
+	<item name="hydrochloricAcidSolution" count="1,2" />
+	<item name="sulfuricAcidSolution" count="1,2" />
+	<item name="nitricAcidSolution" count="1,2" />
+</lootgroup>
+
+<lootgroup name="chemistryChemicalsJackpot" count="all">
+	<item name="calciumNitrateSolution" count="2,8" />
+	<item name="hydrochloricAcidSolution" count="2,8" />
+	<item name="sulfuricAcidSolution" count="2,8" />
+	<item name="nitricAcidSolution" count="2,8" />
+</lootgroup>
+
 <lootgroup name="labEquipment">
 	<item group="books" count="1"/>
 	<item group="rareBooks" count="1" prob="0.5"/>
@@ -1571,17 +1593,17 @@
 	<item name="emptyJar" count="1,20" prob="2"/>
 	<item name="grainAlcohol" count="5,10"/>
 	<item name="vitamins" count="1,2"/>
-	<item name="animalFat" count="4,10"/>
-	<item name="coal" count="10,20" prob="2"/>
-	<item name="potassiumNitratePowder" count="10,20" prob="2"/>
 	<item name="glue" count="1,5"/>
-	<item name="oilShale" count="10,30"/>
 	<item name="painkillers" count="1,2"/>
 	<item name="antibiotics" prob="0.5"/>
 	<item name="bloodDrawKit" prob="0.15"/>
 	<item name="firstAidKitSchematic" prob="0.15"/>
 	<item name="beaker" prob="0.15"/>
 	<item name="bookScience" prob="0.1" /> 
+	<item name="distillationColumn" prob="0.02" />
+	<item name="vacuumChamber" prob="0.02" />
+	<item group="chemistryChemicals" prob="0.12" />
+	<item group="chemistryChemicalsJackpot" prob="0.02" />
 </lootgroup>
 
 
@@ -1856,6 +1878,7 @@
 	<item name="fertilizer" count="1,3" prob="0.05"/>
 	<item name="paint" count="50,150" prob="0.1"/>
 	<item name="paintTool" prob="0.05"/>
+	<item name="airCooledCondenser" prob="0.005" />
 </lootcontainer>
 
 <!-- garbage-->
@@ -1913,6 +1936,8 @@
 <lootcontainer id="7" count="0,2" size="5,3" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet" loot_quality_template="baseTemplate">
 	<item group="medicine"/>
 	<item name="steroids" prob="0.05" />
+	<item group="chemistryChemicals" prob="0.002" />
+	<item group="chemistryChemicalsJackpot" prob="0.0002" />
 </lootcontainer>
 
 <!-- kitchen sink, cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
@@ -1993,6 +2018,7 @@
 	<item name="miningHelmet" prob="0.035"/>
 	<item name="noteFragment" count="2,6" prob="0.035" />
 	<item name="bookWeaponSmithing" prob="0.035" />
+	<item name="airCooledCondenser" prob="0.0001" count="1" />
 </lootcontainer>
 
 <!-- air conditioners-->

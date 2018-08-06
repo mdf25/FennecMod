@@ -1626,7 +1626,7 @@ forgedIronDesc,items,Item,KgNone,"Can be used to craft, repair and upgrade a var
 forgedSteel,items,Item,KgNone,Forged Steel,Acier forgé,Geschmiedeter Stahl,,Acero forjado
 forgedSteelDesc,items,Item,KgNone,"Can be used to make some of the strongest items.\n[55ff88]Crafted in the alloy forge using a crucible.[ffffff]",Peut être fabriqué à la forge après avoir acheté l'avantage de l'acier et peut servir à fabriquer des objets très solides.,"Kann in der Schmiede gefertigt werden, nachdem die Fertigkeit „Stahl“ erworben wurde. Kann benutzt werden, um einige der stärksten Gegenstände zu fertigen.",,Se puede producir en la fragua tras comprar el beneficio del metal y se puede usar para elaborar algunos de los objetos más resistentes.
 gasCan,items,Item,KgNone,Gas Can,Bidon d'essence,Benzinkanister,,Bidón de gas
-gasCanDesc,items,Item,KgNone,"A can of gas. Can be used to fuel powered tools and vehicles. Crafted in lots of 100.\n[55ff88]Crafted on a campfire using a beaker, or in a chemistry station.[ffffff]",Un bidon d'essence. Peut servir à alimenter certains outils et véhicules. Se fabrique en lots de 100.,"Ein Benzinkanister. Kann benutzt werden, um Werkzeuge und Fahrzeuge anzutreiben, die mit Benzin laufen. Wird in 100er Einheiten gefertigt.",,Un bidón de gas. Se puede usar para hacer funcionar herramientas que necesitan energía y vehículos. Se fabrica en lotes de 100.
+gasCanDesc,items,Item,KgNone,"A can of gas. Can be used to fuel powered tools and vehicles. Crafted in lots of 50 or more.\n[55ff88]Crafted on a campfire using a beaker, or in a chemistry station. For more efficient crafting, use a small refinery with a distillation column.[ffffff]",Un bidon d'essence. Peut servir à alimenter certains outils et véhicules. Se fabrique en lots de 100.,"Ein Benzinkanister. Kann benutzt werden, um Werkzeuge und Fahrzeuge anzutreiben, die mit Benzin laufen. Wird in 100er Einheiten gefertigt.",,Un bidón de gas. Se puede usar para hacer funcionar herramientas que necesitan energía y vehículos. Se fabrica en lotes de 100.
 glue,items,Item,KgNone,Glue,Colle,Kleber,,Pegamento
 glueDesc,items,Item,KgNone,"Glue is useful for making your own duct tape. \n[55ff88]Crafted at a campfire using a cooking pot, or at a chemistry station.[ffffff]",La colle sert à fabriquer votre propre ruban adhésif en toile.,Mit Kleber kannst du dein eigenes Klebeband fertigen.,,El pegamento es útil para hacer tu propia cinta de embalar.
 gunPowder,items,Item,KgNone,Gun Powder,Poudre à canon,Schießpulver,,Pólvora
@@ -3924,7 +3924,7 @@ paintDesc,items,Item,New,Use a paint brush to paint building blocks. You can fin
 rareOresGroupDesc,items,Item,New,When mining you will occasionally find rare metals and ores. Surely they are worth something to someone.,,Untertage findest du manchmal auch seltene Erze. Bestimmt sind diese für irgendjemanden etwas wert.,,
 rawDiamond,items,Item,New,Raw Diamond,,Rohdiamant,,
 scrapPlastics,items,Item,New,Scrap Plastics,,,,
-scrapPlasticsDesc,items,Item,New,Bits of plastics that you may carefully mold into new shapes.,,,,
+scrapPlasticsDesc,items,Item,New,Bits of plastics that you may carefully mold into new shapes.\n[55ff88]Crafted in the Small Refinery using a Vacuum Chamber.[ffffff],,,,
 silverNugget,items,Item,New,Silver Nugget,,Silbernugget,,
 snowBall,items,Item,New,Snowball,,,,
 snowBallDesc,items,Item,New,"You know what to do! Turn it into first rate drinking water over a campfire, of course.",,,,
@@ -6073,7 +6073,6 @@ healingAgentDesc,items,Medical,KgNone,"Combining aloe cream with turpentine extr
 firstAidBandagePotent,Items,Medical,KgNone,"Strong First Aid Bandage",,,,
 firstAidBandagePotentDesc,Items,Medical,KgNone,"When a regular first aid bandage just won't cut it, try this for a quicker heal.",,,,
 
-
 schematicBag,Blocks,Block,KgNone,"Bag of Schematics",,,,
 schematicBagOpen,Blocks,Block,KgNone,"Bag of Schematics",,,,
 schematicBagDesc,Blocks,Block,KgNone,"Hmmm, let's [55ff88]place it down[ffffff] and see what's inside!",,,,
@@ -6121,15 +6120,15 @@ fermentingBarrel,items,Workstation,KgNone,"Fermenting Barrel",,,,
 fermentingBarrelDesc,items,Workstation,KgNone,"A fermenting barrel can be used to let certain products ferment over time to produce alcohol, fertiliser or other materials.\n[55ff88]Crafted on the Workbench.[ffffff]",,,,
 
 bookScience,Items,Schematics,KgNone,"Science Book",,,,
-bookScienceDesc,Items,Schematics,KgNone,"So E = MC whatsit now? Hmm, maybe there's some useful stuff in here...",,,,
+bookScienceDesc,Items,Schematics,KgNone,"So E = MC whatsit now? Hmm, maybe there's some useful stuff in here...\n[55ff88]You can craft this with note fragments in your backpack, or use a research desk.[ffffff]",,,,
 bookToolSmithing,Items,Schematics,KgNone,"Tool Smithing Book",,,,
-bookToolSmithingDesc,Items,Schematics,KgNone,"Maybe something in here can help make those tools better...",,,,
+bookToolSmithingDesc,Items,Schematics,KgNone,"Maybe something in here can help make those tools better...\n[55ff88]You can craft this with note fragments in your backpack, or use a research desk.[ffffff]",,,,
 bookWeaponSmithing,Items,Schematics,KgNone,"Weapon Smithing Book",,,,
-bookWeaponSmithingDesc,Items,Schematics,KgNone,"So it seems making wooden clobbering devices is in fact an art form...",,,,
+bookWeaponSmithingDesc,Items,Schematics,KgNone,"So it seems making wooden clobbering devices is in fact an art form...\n[55ff88]You can craft this with note fragments in your backpack, or use a research desk.[ffffff]",,,,
 bookGunSmithing,Items,Schematics,KgNone,"Gun Smithing Book",,,,
-bookGunSmithingDesc,Items,Schematics,KgNone,"Step 1: Point gun at self. Step 2: Take safety off. St- Wait a minute, is this a guide on how to win a Darwin award?",,,,
+bookGunSmithingDesc,Items,Schematics,KgNone,"Step 1: Point gun at self. Step 2: Take safety off. St- Wait a minute, is this a guide on how to win a Darwin award?\n[55ff88]You can craft this with note fragments in your backpack, or use a research desk.[ffffff]",,,,
 bookArmorCrafting,Items,Schematics,KgNone,"Armor Crafting Book",,,,
-bookArmorCraftingDesc,Items,Schematics,KgNone,"Who knew that making armour could be so complicated? Well, guess there's some useful stuff in here...",,,,
+bookArmorCraftingDesc,Items,Schematics,KgNone,"Who knew that making armour could be so complicated? Well, guess there's some useful stuff in here...\n[55ff88]You can craft this with note fragments in your backpack, or use a research desk.[ffffff]",,,,
 
 cntToiletWorking,Blocks,block,KgNone,"Fancy Toilet (Working)",,,,
 cntToiletWorkingLootable,Blocks,block,KgNone,"Fancy Toilet (Working, Dirty)",,,,
@@ -6166,6 +6165,10 @@ cntPurificationPlantBox,Blocks,block,KgNone,"Boxed Purification Plant",,,,
 cntPurificationPlantBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your purification plant.",,,,
 cntSqueezerWorkbenchBox,Blocks,Block,KgNone,"Boxed Industrial Squeezer",,,,
 cntSqueezerWorkbenchBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your industrial squeezer.",,,,
+cntSmallRefineryBox,Blocks,Block,KgNone,"Boxed Small Refinery",,,,
+cntSmallRefineryBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your small refinery.",,,,
+cntFermentingBarrelBox,Blocks,Block,KgNone,"Boxed Fermenting Barrel",,,,
+cntFermentingBarrelBoxDesc,Blocks,Block,KgNone,"Pick this up to reclaim your fermenting barrel.",,,,
 
 cntCarpenterBenchBox,Blocks,block,KgNone,"Boxed Carpenter's Bench",,,,
 cntCarpenterBenchBoxDesc,Blocks,block,KgNone,"Pick this up to reclaim your carpenter's bench.",,,,
@@ -6203,6 +6206,13 @@ cntSedanBoxDamage0,blocks,Block,KgNone,"Boxed Car Parts",,,,
 cntSedanBoxDamage1,blocks,Block,KgNone,"Boxed Car Parts",,,,
 cntSedanBoxDamage2,blocks,Block,KgNone,"Boxed Car Parts",,,,
 
+alloyForgeSchematic,items,Schematic,KgNone,"The Art of Alloys",,,,
+alloyForgeSchematicDesc,items,Schematic,KgNone,"Learn how to craft an alloy forge in order to make steel, brass, and other alloys by reading this book. To read this book you require tool smithing quality 7 and science quality 6.",,,,
+
+alloyForgePerkName,progression,Perk,EnChanged,"The Art of Alloys",,,,
+alloyForgePerkDesc,progression,Perk,EnChanged,"Learn how to craft an alloy forge to make steel, brass and other metals by reading the book or purchasing this perk.",,,,
+electropulseArrowBoltSchematic,items,Schematic,KgNone,"Electropulse Arrows And Bolts Schematic",,,,
+electropulseArrowBoltSchematicDesc,items,Schematic,KgNone,"Learn how to craft electropulse arrows and crossbow bolts by reading this book.",,,,
 explodingArrow,items,Ammo,KgNone,"Exploding Arrow",,,,
 explodingArrowDesc,items,Ammo,KgNone,"Blast those zombies into bits with some highly explosive arrows! \n[55ff88]Crafted in the Workbench",,,,
 flamingCrossbowBolt,items,Ammo,KgNone,"Flaming Crossbow Bolt",,,,
@@ -6236,10 +6246,26 @@ sulfuricAcidSolutionDesc,items,Resources,KgNone,"Sulfuric acid can be used to ma
 corrosiveArrowBoltSchematic,items,Schematic,KgNone,"Corrosive Arrow & Bolt Schematic",,,,
 corrosiveArrowBoltSchematicDesc,items,Schematic,KgNone,"Learn how to craft corrosive arrows and crossbow bolts by reading this schematic.",,,,
 
+smallRefinerySchematic,items,Schematic,KgNone,"Oil Refining for Fennec Foxes",,,,
+smallRefinerySchematicDesc,items,Schematic,KgNone,"Learn how to craft a small oil refinery system to produce your very own oil and plastics by reading this book. To read this book you require Science Quality 7.",,,,
 
-
-
-
-
-
-
+oilRefineryPerkName,progression,Perk,EnChanged,"Oil Refining for Fennec Foxes",,,,
+oilRefineryPerkDesc,progression,Perk,EnChanged,"Learn how to craft a small refinery to process crude oil and plastic products by taking this perk or reading the book.",,,,
+smallRefinery,blocks,Workstation,KgNone,"Small Oil Refinery",,,,
+smallRefineryDesc,blocks,Workstation,KgNone,"The small oil refinery is capable of creating crude oil, plastics and refined oil products from shale. \n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+crudeOil,items,Resources,KgNone,"Crude Oil",,,,
+crudeOilDesc,items,Resources,KgNone,"Crude oil can be refined into many other useful products, including fuel and even plastics. \n[55ff88]Crafted on the Small Refinery using a Distillation Column.[ffffff]",,,,
+plasticSheet,items,Resources,KgNone,"Plastic Sheets",,,,
+plasticSheetDesc,items,Resources,KgNone,"Plastic sheets can be used to craft other plastic based items.\n[55ff88]Crafted in the Small Refinery using a Vacuum Chamber with Crude Oil, or an Air-cooled Condenser using scrap plastics.",,,,
+distillationColumn,items,Resources,KgNone,"Distillation Column",,,,
+distillationColumnDesc,items,Resources,KgNone,"A distillation column is used in the small refinery to turn oil shale into crude oil for further processing.",,,,
+vacuumChamber,items,Resources,KgNone,"Vacuum Chamber",,,,
+vacuumChamberDesc,items,Resources,KgNone,"The vacuum chamber is used to help refine crude oil into plastic products in a small refinery.",,,,
+airCooledCondenser,items,Resources,KgNone,"Air-cooled Condenser",,,,
+airCooledCondenserDesc,items,Resources,KgNone,"The air-cooled condenser is used in the small refinery in order to help shape and mould plastics into other usable products.",,,,
+plasticCasing,items,Resources,KgNone,"Plastic Shell Casing",,,,
+plasticCasingDesc,items,Resources,KgNone,"Plastic shell casings are used to craft the highest tier of shotgun shells.\n[55ff88]Crafted in a small refinery with a vacuum chamber.[ffffff]",,,,
+plasticCapsule,items,Resources,KgNone,"Plastic Pill Capsule",,,,
+plasticCapsuleDesc,items,Resources,KgNone,"Plastic capsules are used when crafting pills, vitamins and steroids.\n[55ff88]Crafted in a small refinery with a vacuum chamber.[ffffff]",,,,
+plasticFletching,items,Resources,KgNone,"Plastic Fletching",,,,
+plasticFletchingDesc,items,Resources,KgNone,"Plastic fletching can be used to craft higher tier arrows and crossbow bolts, in place of feathers.\n[55ff88]Crafted in a small refinery using a vacuum chamber.[ffffff]",,,,

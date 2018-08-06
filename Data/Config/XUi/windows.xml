@@ -478,9 +478,39 @@
 				</rect>
 			</grid> -->
 		</rect>
-
 	</window>
 
+	
+	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
+	<window name="windowToolsSmallRefinery" width="228" height="121" panel="Right" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel style="header.panel">
+			<sprite style="header.icon" sprite="ui_game_symbol_wrench"/>
+			<label style="header.name" text="TOOLS" text_key="xuiTools" />
+		</panel>
+
+		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
+
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			required_tools="vacuumChamber,airCooledCondenser,distillationColumn" required_tools_only="true">
+				<required_item_stack name="0"/>
+			</grid>
+
+			<!-- <grid name="slot_preview" depth="1" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="SlotPreview">
+				<rect>
+					<sprite name="slot" depth="2" width="70" height="50" foregroundlayer="true" color="[white_quarter_alpha]" sprite="anvil" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center"/>
+				</rect>
+				<rect>
+					<sprite name="slot" depth="2" width="70" height="50" foregroundlayer="true" color="[white_quarter_alpha]" sprite="forgeCrucible" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center"/>
+				</rect>
+				<rect>
+					<sprite name="slot" depth="2" width="70" height="50" foregroundlayer="true" color="[white_quarter_alpha]" sprite="toolAndDieSet" atlas="ItemIconAtlasGreyscale" pos="35,-30" pivot="center"/>
+				</rect>
+			</grid> -->
+		</rect>
+	</window>
+	
+	
 	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
 	<window name="windowToolsCampfire" width="228" height="121" panel="Right" cursor_area="true" >
 	<!--#$-IGS END.-$#-->
@@ -628,6 +658,7 @@
 			</grid>
 		</rect>
 	</window>
+	
 	
 	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
 	<window name="windowOutput" width="228" height="198" anchor="CenterTop" panel="Right" cursor_area="true" >

@@ -414,6 +414,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="fermentingBarrelSchematic" />
 			<item name="electropulseArrowBoltSchematic" />
 			<item name="corrosiveArrowBoltSchematic" />
+			<item name="smallRefinerySchematic" />
+			<item name="alloyForgeSchematic" />
 			<item name="megaWrenchSchematic" prob="0.03" />
 		</trader_item_group>
 
@@ -679,6 +681,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="fertilizer" count="1,3" prob="0.5"/>
 			<item name="paintTool" prob="0.5"/>
 			<item name="wireTool"/>
+			<item name="vacuumChamber" prob="0.03" />
+			<item name="distillationColumn" prob="0.03" />
+			<item name="airCooledCondenser" prob="0.03" />
 		</trader_item_group>
 
 		<trader_item_group name="minibikeParts" count="1">
