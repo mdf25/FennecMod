@@ -43,7 +43,7 @@
 			</rect>
 		</grid>
 		
-		<rect name="hud" pos="93,210" side="left" controller="BuffPopoutList" pivot="BottomLeft" >			
+		<rect name="hud" pos="93,210" side="left" controller="BuffPopoutList" pivot="BottomLeft" >	
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
 				<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
 				<sprite depth="4" name="Icon" size="36,32" pos="-58,0" pivot="center" color="[transparent]" atlas="ItemIconAtlas"/>
@@ -1250,7 +1250,7 @@
 	</window>
 	<!-- #$-IGS END-$# -->
 
-	<window name="windowVehicle" width="380" height="733" panel="Right" controller="VehicleFrameWindow" > 
+	<window name="windowVehicle" width="380" height="733" panel="Right" controller="VehicleFrameWindow"> 
 		<panel name="header" pos="3,0" height="43" depth="1" backgroundspritename="ui_game_panel_header">		
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_minibike"/>
 			<label style="header.name" text="{VehicleNameQuality}" />
@@ -1339,9 +1339,10 @@
 	
 	<window name="windowVehicleStorage" width="529" height="262" depth="5" anchor="CenterTop" panel="Left" backgroundcolor="[black]">
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-			<sprite depth="1" name="windowIcon" style="icon32px" pos="4,-5" sprite="ui_game_symbol_loot_sack"/>
+			<button depth="1" name="btnSort" style="icon32px, press, hover" pivot="center" pos="20,-21" sprite="ui_game_symbol_loot_sack" tooltip_key="lblSortInventory" sound="[paging_click]" />
 			<label style="header.name" text="MINIBIKE STORAGE" text_key="xuiMinibikeStorage" />
 		</panel>
+		
 		<grid depth="2" name="inventory" rows="7" cols="9" pos="3,-49" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
 			<item_stack name="0"/>
 		</grid>
