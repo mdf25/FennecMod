@@ -673,6 +673,16 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 	<modify id="1" stat="health" amount="-15" rate="1"/>
 </buff>
 
+<buff id="burningNapalm" mutex="cannotBreath,drowning,extinguishFireBuff" duration="30" stack="reset" ffcheck="true" actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0);buff(burningNapalmZombie)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
+	<modify id="1" stat="health" amount="-8" rate="1"/>
+</buff>
+
+<buff id="burningNapalmZombie" duration="30" mutex="isPlayer" stack="reset" ffcheck="true" actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
+	<modify id="1" stat="health" amount="-52" rate="1"/>
+</buff>
+
+
+
 <buff id="extinguishFireBuff" duration="10" stack="reset" actions="debuff(burningSmall);debuff(burning);debuff(burningMolotov);debuff(burningSmall);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0)"
 	icon="ui_game_symbol_water" name_key="extinguishFireBuffName" description_key="extinguishFireBuffDesc"/>
 

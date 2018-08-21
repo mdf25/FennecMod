@@ -192,6 +192,12 @@
 			<multiply perk_level="2" value="1.15"/>
 		</effect>
 	</perk>
+	<perk name="MinerAutoMiningStation" icon="mining" description_key="MinerAutoMiningStationDesc" title_key="MinerAutoMiningStationName" max_level="1" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="0" always_fire="true" group="crafting">
+		<requirement perk_level="1" required_skill_name="MinerMastery" required_skill_level="2"/>
+		<recipe name="autoMinerReady" unlock_level="1" />
+		<recipe name="autoMinerKit"	  unlock_level="1" />
+	</perk>
+	
 	
 	
 	
@@ -1326,6 +1332,14 @@
 		<recipe name="glassBulletproofPlateCurved"	unlock_level="1" />
 		<recipe name="glassBulletproofRamp"			unlock_level="1" />
 	</perk>	
+		
+	<perk name="NapalmPerk" icon="resource" description_key="NapalmPerkDesc" title_key="NapalmPerkName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillGunsPerk" 		required_skill_level="6"/>
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" 	required_skill_level="7"/>
+		<recipe name="napalm"						unlock_level="1" />
+		<recipe name="napalmBomb"					unlock_level="1" />
+	</perk>	
+		
 		
 	<perk name="plumbing" icon="resource" description_key="plumbingDesc" title_key="plumbingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="5"/>

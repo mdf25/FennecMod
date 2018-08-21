@@ -774,7 +774,9 @@ quest_sinkupgrade_1,,Quest Info,Reordered,"Sink It!",,,,
 quest_sinkupgrade_1_subtitle,,Quest Info,Reordered,"Gather Boiler Parts",,,,
 quest_sinkupgrade_1_offer,,Quest Info,Reordered,"Access to clean water is great and all, but damn do I miss having hot water. I haven't had a nice warm bath in god knows how long. But, I don't want to get off this roof, because of all the zombies outside. I am pretty good at mechanical stuff, and could probably make a boiler if you could go get me some parts? I have a mining helmet, a great wrench and even a sink upgrade kit for you.\n\nTamara",,,,
 
-
+quest_penetrationtester_1,,Quest Info,Reordered,"The Penetration Tester",,,,
+quest_penetrationtester_1_subtitle,,Quest Info,Reordered,"Find the Official Penetration Tester ID card.",,,,
+quest_penetrationtester_1_offer,,Quest Info,Reordered,"Rumour has it that there is a zombie, more powerful yet more unsuspecting than any of the others. They call him... The Penetration Tester. I don't know where and when you find him, or even if you can kill it. But, if you can bring me back his official ID card as proof that you killed it, I've got a nice schematic for an upgraded forge for you.",,,,
 
 
 

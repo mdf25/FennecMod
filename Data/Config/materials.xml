@@ -66,6 +66,34 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 </material>
 <!-- .1 and a zombie takes 2 damage hits.  .035 takes around 7 seconds to pass through -->
 
+<material id="MrazorWire">
+	<property name="damage_category" value="metal" />
+	<property name="surface_category" value="metal" />
+	<property name="forge_category" value="iron" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="metal" />
+	<property name="stability_glue" value="10" />
+	<property name="Mass" type="int" value="1" />
+	<property name="MaxDamage" value="2000" />
+	<property name="movement_factor" value="0.1" />
+	<property name="Experience" value="15.0"/>
+</material>
+
+
+<material id="MrazorFence">
+	<property name="damage_category" value="wood" />
+	<property name="surface_category" value="wood" />
+	<property name="forge_category" value="iron" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="metal" />
+	<property name="stability_glue" value="20" />
+	<property name="Mass" type="int" value="5" />
+	<property name="MaxDamage" value="2000" />
+	<property name="movement_factor" value="0.015" />
+	<property name="Experience" value="15.0"/>
+</material>
+
+
 <material id="MbarbedWire">
 	<property name="damage_category" value="metal" />
 	<property name="surface_category" value="metal" />
@@ -78,6 +106,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="movement_factor" value="0.2" />
 	<property name="Experience" value="15.0"/>
 </material>
+
 
 <material id="MtrapSpikes1">
 	<property name="damage_category" value="wood" />
@@ -702,6 +731,18 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stability_glue" value="40" />
 	<property name="Mass" type="int" value="10" />
 	<property name="MaxDamage" value="60" />
+	<property name="explosionresistance" value="0.02" />
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="MNapalmBarrel">
+	<property name="damage_category" value="glass" />
+	<property name="surface_category" value="metal" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="metal" />
+	<property name="stability_glue" value="40" />
+	<property name="Mass" type="int" value="10" />
+	<property name="MaxDamage" value="1" />
 	<property name="explosionresistance" value="0.02" />
 	<property name="Experience" value="0"/>
 </material>

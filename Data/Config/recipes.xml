@@ -385,6 +385,59 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 
+<recipe name="ironFragment" count="30" craft_area="grinder_station" craft_time="1">
+	<ingredient name="ironOre" count="1" />
+</recipe>
+
+<recipe name="copperFragment" count="30" craft_area="grinder_station" craft_time="1">
+	<ingredient name="copperOre" count="1" />
+</recipe>
+
+<recipe name="leadFragment" count="30" craft_area="grinder_station" craft_time="1">
+	<ingredient name="leadOre" count="1" />
+</recipe>
+
+<recipe name="uraniumFragment" count="30" craft_area="grinder_station" craft_time="1">
+	<ingredient name="uraniumOre" count="1" />
+</recipe>
+
+<recipe name="coal" count="30" craft_area="grinder_station" craft_time="1">
+	<ingredient name="coalOre" count="1" />
+</recipe>
+
+<recipe name="potassiumNitratePowder" count="30" craft_area="grinder_station" craft_time="1">
+	<ingredient name="potassiumNitrate" count="1" />
+</recipe>
+
+<recipe name="rockSmall" count="40" craft_area="grinder_station" craft_time="1">
+	<ingredient name="stone" count="1" />
+</recipe>
+
+<recipe name="crushedSand" count="40" craft_area="grinder_station" craft_time="1">
+	<ingredient name="gravel" count="1" />
+</recipe>
+
+<recipe name="clayLump" count="40" craft_area="grinder_station" craft_time="1">
+	<ingredient name="clay" count="1" />
+</recipe>
+
+<recipe name="oilShale" count="20" craft_area="grinder_station" craft_time="1">
+	<ingredient name="oilDeposit" count="1" />
+</recipe>
+
+<recipe name="goldNugget" count="3" craft_area="grinder_station" craft_time="1">
+	<ingredient name="goldOre" count="1" />
+</recipe>
+
+<recipe name="silverNugget" count="4" craft_area="grinder_station" craft_time="1">
+	<ingredient name="silverOre" count="1" />
+</recipe>
+
+<recipe name="rawDiamond" count="2" craft_area="grinder_station" craft_time="1">
+	<ingredient name="diamondOre" count="1" />
+</recipe>
+
+
 <recipe name="flour" count="1" craft_time="10">
 	<ingredient name="wheat" count="3" />
 </recipe>
@@ -657,6 +710,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="barbedWireSheet" count="1" craft_area="forge" craft_time="10" craft_tool="anvil"> <!-- trap -->
 	<ingredient name="unit_iron" count="12"/>
 	<ingredient name="unit_clay" count="5" />
+</recipe>
+
+<recipe name="razorFence" count="1"> <!-- trap -->
+	<ingredient name="razorWireSheet" count="1"/>
+	<ingredient name="wood" count="4"/>
+</recipe>
+
+<recipe name="razorWireSheet" count="1" craft_area="alloy_forge" craft_time="10" craft_tool="forgeCrucible"> <!-- trap -->
+	<ingredient name="unit_iron" count="12"/>
+	<ingredient name="unit_clay" count="5" />
+</recipe>
+
+<recipe name="paintToolRoller" count="1" craft_area="workbench" craft_time="120">
+	<ingredient name="paintTool" count="1" />
+	<ingredient name="forgedFadium" count="5" />
+	<ingredient name="forgedFoxium" count="5" />
 </recipe>
 
 <recipe name="bed01" count="1">
@@ -5173,8 +5242,37 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="grainAlcohol"			count="1" />
 </recipe>
 
+<recipe name="polystyrene" count="3" craft_area="small_refinery" craft_tool="vacuumChamber" craft_time="15">
+	<ingredient name="crudeOil"		count="2" />
+</recipe>
+
+<recipe name="napalm" count="1" craft_area="chemistryStation" craft_time="3" craft_exp_gain="10">
+	<ingredient name="gasCan" 		count="10" />
+	<ingredient name="polystyrene"  count="5"  />
+</recipe>
+
+<recipe name="napalmBomb" count="1" craft_area="workbench" craft_time="30" craft_exp_gain="20">
+	<ingredient name="emptyJar"		 count="1"  />
+	<ingredient name="gunpowderDust" count="5"  />
+	<ingredient name="napalm"		 count="30" />
+</recipe>
+
+<recipe name="autoMinerReady" count="1" craft_area="workbench" craft_time="120" craft_exp_gain="200">
+	<ingredient name="forgedFadium"	 	count="50" />
+	<ingredient name="forgedFoxium"	 	count="50" />
+	<ingredient name="smallEngine"   	count="3"  />
+	<ingredient name="shortMetalPipe"	count="12" />
+	<ingredient name="electronicParts"  count="25" />
+</recipe>
+
+<recipe name="autoMinerKit" count="1" craft_area="workbench" craft_time="120" craft_exp_gain="50">
+	<ingredient name="partsAuger_blade" count="1" 		/>
+	<ingredient name="rawDiamond"		count="1" 		/>
+	<ingredient name="gasCan"			count="1000" 	/>
+</recipe>
+
 <recipe name="projectileFlame" count="200" craft_area="chemistryStation" craft_time="2" craft_exp_gain="3">
-	<ingredient name="gasCan"		count="100" />
+	<ingredient name="napalm"		count="10" />
 	<ingredient name="oil"			count="1"	/>
 	<ingredient name="gunPowder"	count="10"	/>
 </recipe>

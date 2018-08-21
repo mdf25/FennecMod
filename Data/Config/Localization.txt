@@ -4565,7 +4565,9 @@ txName_Fabric_Blinds,painting,txGroupWallCovering,New,Fabric Blinds,,,,
 suitJacketBlack,items,Clothes,New,Black Suit Jacket,,,,
 suitPantsBlack,items,Clothes,New,Black Suit Pants,,,,
 zombieBusinessMan,entityclasses,Entity,New,Zombie Businessman,,,,
+zombieBusinessManBoss,entityclasses,Entity,New,"The Penetration Tester",,,,
 zombieBusinessManFeral,entityclasses,Entity,New,Feral Zombie Businessman,,,,
+DC-KILLER,entityclasses,Entity,New,"DC Killer",,,,
 arrowHelper,blocks,Block,New,Arrow Helper,,,,
 crossHelper,blocks,Block,New,Cross Helper,,,,
 flameTrap,blocks,Block,New,"Flame Trap",,,,
@@ -5266,7 +5268,7 @@ beakerUntreated,items,Book,KgNone,"Beaker (Untreated)",,,,
 beakerUntreatedDesc,items,Book,KgNone,"A beaker that has not gone through the proper treatment to be used in scientific or chemical experiments. It will require treatment before it can be used.\n[55ff88]Crafted in a forge with a tool and die set.[ffffff]",,,,
 
 purifiedWater,items,Book,KgNone,"Purified Water",,,,
-purifiedWaterDesc,items,Book,KgNone,"Water that has been purified through chemical processes. This can be used in the purification plant to turn ground ore dust into purified dust for greater yield when forging.\n[55ff88]Crafted in a purification plant.[ffffff]",,,,
+purifiedWaterDesc,items,Book,KgNone,"Water that has been purified through chemical processes. This can be used in the purification plant to turn ground ore dust into purified dust for greater yield when forging.\n[55ff88]Crafted in a chemistry station.[ffffff]",,,,
 
 rawFadium,items,Book,KgNone,"Raw Fadium",,,,
 rawFadiumDesc,items,Book,KgNone,"An alloy that is both rare and difficult to make. It seems resistant to forging directly into Forged Fadium, so it must be processed through the laser smelter twice. It has a strange purple glow and appears somewhat faded.\n[55ff88]Crafted in a laser smelter[ffffff]",,,,
@@ -5332,6 +5334,8 @@ BluntsKnifeDebuffName,progression,Perk,EnChanged,"Bash: Blades Debuff",,,,
 BluntsKnifeDebuffDesc,progression,Perk,EnChanged,"You find most bladed weapons are for puny humans compared to your longer reaching clubs and heavy sledgehammers. You deal less damage with bladed weapons than other survivors.",,,,
 MinerMasteryName,progression,Perk,EnChanged,"Miner: Mastery",,,,
 MinerMasteryDesc,progression,Perk,EnChanged,"If you chose the Miner class, this will reflect how much you have mastered by completing the quests. Taking the class will give you one level of mastery and completing the quest chain will give you the final level.",,,,
+MinerAutoMiningStationName,progression,Perk,EnChanged,"Miner: Auto-Miner Recipe",,,,
+MinerAutoMiningStationDesc,progression,Perk,EnChanged,"Learn how to construct an automatic mining machine by reading the schematic. Only the miner class with full mastery will be able to learn this perk.",,,,
 MinerHarvestName,progression,Perk,EnChanged,"Miner: Tool Efficiency",,,,
 MinerHarvestDesc,progression,Perk,EnChanged,"As a miner, you know how to get the most out of your pickaxes and shovels. You do more damage with them, whilst expending less stamina. You tend to get more harvest out of the earth than other survivors using the same tools.",,,,
 MinerSlowCraftName,progression,Perk,EnChanged,"Miner: Slow Crafting",,,,
@@ -6185,6 +6189,11 @@ q_ovenupgradeDesc,Items,Quest,KgNone,"A mysterious note I found. Seems someone n
 q_workbenchupgrade,Items,Quest,KgNone,"Quest: The Benchmark Brothers",,,,
 q_workbenchupgradeDesc,Items,Quest,KgNone,"A mysterious note I found. Seems someone needs help getting some bits and bobs for the garage.",,,,
 
+q_penetrationtester,Items,Quest,KgNone,"Quest: The Penetration Tester",,,,
+q_penetrationtesterDesc,Items,Quest,KgNone,"A mysterious note I found. Seems the trader wants me to bring him an ID card of some description...",,,,
+
+
+
 adobeGroupDesc,blocks,Block,KgNone,"Adobe makes a decent construction material when access to wood and cobblestone is limited. However, it's not very durable nor can it be shaped too well.",,,,
 adobeBlock,blocks,Block,KgNone,"Adobe Block",,,,
 adobeCNRFull,blocks,Block,KgNone,"Adobe Full Corner",,,,
@@ -6269,3 +6278,36 @@ plasticCapsule,items,Resources,KgNone,"Plastic Pill Capsule",,,,
 plasticCapsuleDesc,items,Resources,KgNone,"Plastic capsules are used when crafting pills, vitamins and steroids.\n[55ff88]Crafted in a small refinery with a vacuum chamber.[ffffff]",,,,
 plasticFletching,items,Resources,KgNone,"Plastic Fletching",,,,
 plasticFletchingDesc,items,Resources,KgNone,"Plastic fletching can be used to craft higher tier arrows and crossbow bolts, in place of feathers.\n[55ff88]Crafted in a small refinery using a vacuum chamber.[ffffff]",,,,
+polystyrene,items,Resource,KgNone,"Polystyrene Pellets",,,,
+polystyreneDesc,items,Resource,KgNone,"Polystyrene pellets can be mixed with gas to create a homemade version of napalm mixture.\n[55ff88]Crafted in a small refinery using a vacuum chamber.[ffffff]",,,,
+napalm,items,Resource,KgNone,"Napalm Mixture",,,,
+napalmDesc,items,Resource,KgNone,"Napalm mixtures can burn extremely hot and is capable of killing things rather quickly! Water also doesn't put out napalm...\n[55ff88]Crafter on a Chemistry Station.[ffffff]",,,,
+napalmBarrel,blocks,Explosives,KgNone,"Napalm Barrel",,,,
+napalmBarrelDesc,blocks,Explosives,KgNone,"Napalm barrels can be detonated to deal massive amounts of burning damage to targets in a moderate range. Water will not put out the flames, which will burn until the target dies.\n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+napalmBomb,items,Explosives,KgNone,"Napalm Bomb",,,,
+napalmBombDesc,items,Explosives,KgNone,"When molotovs just aren't enough, why not take some napalm in your hands and lob it at some zombies instead!\n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+NapalmPerkName,progression,Perk,EnChanged,"Napalm Mixing",,,,
+NapalmPerkDesc,progression,Perk,EnChanged,"Learn how to craft napalm for use in napalm bombs and other explosives by taking this perk.",,,,
+napalmSchematic,items,Schematic,KgNone,"Napalm Mixing",,,,
+napalmSchematicDesc,items,Schematic,KgNone,"Learn how to mix napalm for use in explosives and bombs by reading this book. To read this book you require Gun Smithing Quality 6 and Science Quality 7.",,,,
+
+penetrationTesterCard,items,Resources,KgNone,"Official Penetration Tester ID",,,,
+penetrationTesterCardDesc,items,Resources,KgNone,"Dropped by the official penetration tester zombie, breaking through walls since 1962! A trader might find this interesting...",,,,
+
+razorFence,blocks,Block,KgNone,"Razor Wire Fence",,,,
+razorFenceDesc,blocks,Block,KgNone,"Razor wire is more durable than barbed wire and can slow zombies down even more.",,,,
+razorWireSheet,blocks,Block,KgNone,"Razor Wire Sheet",,,,
+razorWireSheetDesc,blocks,Block,KgNone,"Razor wire is more durable than barbed wire and can slow zombies down even more.",,,,
+
+paintToolRoller,items,Tools,KgNone,"Roller Tool",,,,
+paintToolRollerDesc,items,Tools,KgNone,"The roller is faster than a regular paint brush and can reach much further distances.",,,,
+
+
+autoMinerReady,Blocks,Resources,KgNone,"Auto-Static Miner69er",,,,
+autoMinerReadyDesc,Blocks,Resources,KgNone,"Auto miners are capable of harvesting vast amounts of unreachable materials from well below the bedrock layer. [5588ff]To make it work, hold an auto miner kit in hand and right click on the block to get it started.[ffffff]\n[55ff88]Crafted on the Workbench.[ffffff]"
+autoMinerWorking,Blocks,Resources,KgNone,"Auto-Static Miner69er (Working)",,,,
+autoMinerFinished,Blocks,Resources,KgNone,"Auto-Static Miner69er (Finished)",,,,
+autoMinerKit,items,Resource,KgNone,"Auto-Miner Kit",,,,
+autoMinerKitDesc,items,Resource,KgNone,"Use this on an auto-miner whilst it is in a 'ready' state to make it start mining for you.\n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+
+

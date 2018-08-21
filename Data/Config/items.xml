@@ -1501,7 +1501,48 @@ Mesh files no longer used:
 
 
 
-
+<item id="68" name="paintToolRoller">
+	<property name="Meshfile" value="Items/Tools/PaintbrushPrefab"/>
+	<property name="Material" value="wood"/>
+	<property name="RepairTools" value="wood"/>
+	<property name="HoldType" value="51"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="CrosshairUpAfterShot" value="false"/>
+	<property name="FuelValue" value="20"/>
+	<property class="Action0">
+		<property name="Class" value="TextureBlock"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Sound_start" value="erase"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="paint"/>
+		<property name="Range" value="15"/>
+		<property name="Delay" value="0.83"/>
+		<property name="RemoveTexture" value="true"/>
+		<property name="DefaultTextureID" value="156"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="TextureBlock"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Sound_start" value="paint"/>
+		<property name="Magazine_items" value="paint"/>
+		<property name="Magazine_size" value="1"/>
+		<property name="Range" value="50"/>
+		<property name="Delay" value="0.2"/>
+		<property name="Particles_muzzle_fire" value="paint_splash2"/>
+	</property>
+	<property class="Attributes">
+		<property name="DegradationMax" value="3000,6000"/>
+		<property name="DegradationRate" value="1,1"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="15"/>
+	<property name="PickupJournalEntry" value="paintingTip"/>
+</item>
 
 <!-- * * * * * * * * * * player / zombie / animal weapons / hands (and great big fangs) * * * * * * * * * * -->
 
@@ -1982,8 +2023,10 @@ Mesh files no longer used:
 	<property name="Extends" value="handZombieStripper"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="500"/>
-		<property name="DamageBlock" value="2000"/>
+		<property name="DamageEntity" value="400"/>
+		<property name="DamageBlock" value="1500"/>
+		<property name="Buff" value="bleeding,infection,stunned"/>
+		<property name="Buff_chance" value="1,0.1,1"/>
 		<property name="Range" value="4"/>
 		<property name="Sphere" value="2"/>
 		<property name="Block_range" value="5"/>
@@ -2212,6 +2255,17 @@ Mesh files no longer used:
 		<property name="DamageBlock" value="75"/>
 		<property name="Buff" value="bleeding,infection,stunned,radiation2"/>
 		<property name="Buff_chance" value="0.04,0.02,0.5,1"/>
+	</property>
+</item>
+
+<item id="112" name="handZombieBusinessManBoss">
+	<property name="Extends" value="handMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="50"/>
+		<property name="DamageBlock" value="3000"/>
+		<property name="Buff" value="bleeding,infection,stunned"/>
+		<property name="Buff_chance" value="0.3,0.2,0.8"/>
 	</property>
 </item>
 
@@ -4829,7 +4883,6 @@ Mesh files no longer used:
 	<property name="ExplodeOnHit" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="ThrowAway"/>
-		<!-- <property name="Hitmask_override" value="Arrow"/> unfortunately this cannot work without a serious rewrite of the hitmask system -->
 		<property name="Delay" value="1.2"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Throw_strength_default" value="14"/>
@@ -4837,10 +4890,45 @@ Mesh files no longer used:
 		<property name="Max_strain_time" value="1.5"/>
 		<property name="Sound_start" value="swoosh"/>
 	</property>
-	<!-- <property class="Action1">
-		<property name="Class" value="Activate"/>
-		<property name="Delay" value="1"/>
-	</property> -->
+	<property name="EconomicValue" value="41"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+
+<item id="184" name="napalmBomb">
+	<property name="Class" value="ItemClassTimeBomb"/>
+	<property name="Material" value="organic"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Molotov/molotovPrefab"/>
+	<property name="HoldType" value="54"/>
+	<property name="DropScale" value="2"/>
+	<property name="ThrowableDecoy" value="true"/>
+	<property name="FuelValue" value="60"/>
+	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Explosion.BlockDamage" value="5"/>
+	<property name="Explosion.EntityDamage" value="5"/>
+	<property name="Explosion.ParticleIndex" value="5"/>
+	<property name="Explosion.RadiusBlocks" value="8"/>
+	<property name="Explosion.RadiusEntities" value="8"/>
+	<property name="Explosion.RadiusBuffs" value="8"/> <!-- int, default is same as RadiusBlocks -->
+	<property name="Explosion.BlastPower" value="90"/>
+	<property name="Explosion.DamageBonus.stone" value="0.1"/>
+	<property name="Explosion.DamageBonus.metal" value="0"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.DamageBonus.wood" value="200"/>
+	<property name="FuseTime" value="20000"/> <!-- theoretically redundant but I don't want to experiment on this -->
+	<property name="Explosion.Buff" value="burningNapalm"/>
+	<property name="Explosion.Buff_chance" value="1"/>
+	<property name="ExplodeOnHit" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Explosion.ParticleIndex" value="7"/>
+		<property name="Throw_strength_default" value="14"/>
+		<property name="Throw_strength_max" value="25"/>
+		<property name="Max_strain_time" value="1.5"/>
+		<property name="Sound_start" value="swoosh"/>
+	</property>
 	<property name="EconomicValue" value="41"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -4939,6 +5027,70 @@ Mesh files no longer used:
 		<property name="EntityDamage" value="22,45"/>
 		<property name="BlockDamage" value="3,8"/>
 		<property name="ApplyBuff" value="0.3,0.3" param1="arrowCriticalBleedout"/>
+	</property>
+</item>
+
+
+
+<item id="198" name="handZombieBlueFlareBoss">
+	<property name="Extends" value="handMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="20"/>
+		<property name="DamageBlock" value="250"/>
+		<property name="Buff" value="bleeding,infection,stunned"/>
+		<property name="Buff_chance" value="0.2,0.2,0.4"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0.35"/>
+		<property name="Range" value="200"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="projectileFlameZombie"/>
+		<property name="Rays_spread" value="0.5"/>
+		<!-- to be made redundant by the more flexible <property name="Magazine_item_ray_spreads" value="0.5"/> ... when it works -->
+		<property name="Reload_time" value="2"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_warning" value="hulkvomitwarning"/>
+		<property name="Sound_start" value="hulkvomitattack"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="infection"/>
+		<property name="Buff_chance" value="0.2"/>
+	</property>
+</item>
+
+<item id="199" name="projectileFlameZombie">
+	<property name="Meshfile" 		value="ParticleEffects/p_torch_wall"/>
+	<property name="DropMeshfile"	value="ParticleEffects/p_torch_wall"/>
+	<property name="HandMeshfile" 	value="Items/Misc/sackPrefab"/>
+	<property name="HoldType" 		value="32"/>
+	<property name="Material" 		value="organic"/>
+	<property name="EconomicValue" 	value="12"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="Stacknumber" 		value="5000" />
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Velocity" 			value="12.8"/>
+		<property name="FlyTime" 			value="4.2"/>
+		<property name="LifeTime" 			value="10.2"/>
+		<property name="CollisionRadius"	value="0.5" />
+		<property name="DamageBonus.earth" 	value="0" 	/>
+		<property name="DamageBonus.stone"	value="0" 	/>
+		<property name="DamageBonus.metal"	value="0" 	/>
+		<property name="DamageBonus.wood" 	value="20" 	/>
+	</property>
+	<property name="Group" value="Ammo/Weapons,Basics"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="ApplyBuff" 			value="1,1" param1="burningFlamethrower"/>
+		<property name="EntityDamage" 		value="1"/>
+		<property name="BlockDamage" 		value="10"/>
 	</property>
 </item>
 
@@ -13705,6 +13857,16 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="994" name="napalmSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Weight" value="7" />
+	<property class="Action1">
+		<!-- <property name="Recipes_to_learn" value="batterybank"/> -->
+		<property name="Skills_to_gain" value="NapalmPerk"/>
+	</property>
+</item>
+
 <item id="1003" name="minibikesForDumbshits">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="750"/>
@@ -14627,6 +14789,14 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="50" />
 	<property class="Action1">
 		<property name="QuestGiven" value="quest_sinkupgrade_1"/>
+	</property>
+</item>
+
+<item id="1165" name="q_penetrationtester">
+	<property name="Extends" value="questMaster"/>
+	<property name="EconomicValue" value="50" />
+	<property class="Action1">
+		<property name="QuestGiven" value="quest_penetrationtester_1"/>
 	</property>
 </item>
 
@@ -17070,6 +17240,68 @@ Mesh files no longer used:
 
 
 
+
+
+
+
+
+<item id="1497" name="autoMinerKit">
+	<property name="Meshfile" value="Items/Tools/wrenchPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="100"/> <!-- STK loot -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1" />
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.4"/>
+		<property name="Repair_amount" value="100"/>
+		<property name="Upgrade_hit_offset" value="0"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="autoMinerKit" />	
+	</property>
+	<property class="Attributes">
+		<property name="DegradationMax" value="1,1"/>
+		<property name="DegradationRate" value="1,1"/>
+	</property>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+</item>
+
+<item id="1498" name="napalm"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="organic"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="106"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+	<property name="CraftingIngredientExp" value="15"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<!-- <property name="RepairTime" value="2"/>
+	<property name="RepairAmount" value="400"/> -->
+</item>
+
+<item id="1499" name="polystyrene"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="106"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientExp" value="15"/>
+	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience" />
+	<!-- <property name="RepairTime" value="2"/>
+	<property name="RepairAmount" value="400"/> -->
+</item>
+
+
 <!-- Seed Packets for the farmer class -->
 <item id="1500" name="seedPacketBlueberry">
 	<property name="Extends" value="paper" />
@@ -17493,7 +17725,17 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 </item>
 
-
+<item id="1606" name="penetrationTesterCard">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="Weight"	value="5" />
+	<property name="Stacknumber" value="10"/> <!-- STK loot -->
+	<property name="EconomicValue" value="25000"/>
+	<property name="EconomicBundleSize" value="1" />
+	<property name="Group" value="Resources"/>
+</item>
 
 
 
@@ -17609,7 +17851,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="32"/>
 	<property name="DegradationBreaksAfter" value="true"/>
-	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property	 name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property class="Action0">
 		<property name="Class" value="Melee"/>
