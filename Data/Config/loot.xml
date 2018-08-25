@@ -300,11 +300,11 @@
 		<block name="cntLootCrateWorkingStiffs" />
 		<block name="cementMixer" prob="0.2"/>
 		<block name="cntCollapsedGeneratorbank" prob="0.25"/>
-		<block name="cntCollapsedBatterybank" prob="0.1"/>
+		<block name="cntCollapsedBatterybank" prob="0.15"/>
 		<block name="cntLootCrateWorkingStiffs"/>
-		<block name="airConditioner"/>
+		<block name="airConditioner" prob="0.05"/>
 		<block name="cntOven"/>
-		<block name="cntLootCrateHero" prob="0.05" />
+		<block name="cntLootCrateHero" prob="0.07" />
 		<!--
 		<block name="oilBarrel"/>
 		<block name="cntToilet01"/>

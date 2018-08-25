@@ -1258,7 +1258,14 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-
+<entity_class name="zombieBlueFlareFeralRadiated" extends="zombieBlueFlare">
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+	<property name="MaxHealth" value="2000"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.BlockDamage" value="2500"/>
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+</entity_class>
 
 <!-- Missing: zombieBurntRadiated -->
 

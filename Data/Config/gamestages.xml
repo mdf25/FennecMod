@@ -307,8 +307,12 @@ There is a console command: forcegamestage
 	<spawner name="SleeperTestChamberGSList">
 		<gamestage stage="1"><spawn group="ZombieBadassGroup" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="500"><spawn group="ZombieFeralRadiatedGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1000"><spawn group="ZombieBossesBasic" num="1" maxAlive="1"/></gamestage>
+		<gamestage stage="1500"><spawn group="ZombieBossesFeralRadiated" num="1" maxAlive="1"/></gamestage>
+		<gamestage stage="2500"><spawn group="ZombieBossesFinale" num="1" maxAlive="1"/></gamestage>
 	</spawner>
-
+	
+	
 	<!-- spawners -->
 
 	<spawner name="FeralZombieHorde">
@@ -324,7 +328,7 @@ There is a console command: forcegamestage
 	</spawner>
 
 	<spawner name="ZombieGhostTownHorde">
-		<gamestage stage="1"><spawn group="ZombieGhostTownGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1"><spawn group="ZombieGhostTownSleeperGroup" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
 	<spawner name="ZombieSoldierHorde">
@@ -333,6 +337,8 @@ There is a console command: forcegamestage
 
 	<spawner name="ZombieUtilityWorkerHorde">
 		<gamestage stage="1"><spawn group="ZombieUtilityWorkerGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="500"><spawn group="ZombieUtilityWorkerMixedGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1500"><spawn group="ZombieUtilityWorkerFeralGroup" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
 	<spawner name="SnowZombieHorde">
@@ -345,6 +351,8 @@ There is a console command: forcegamestage
 
 	<spawner name="ZombieBusinessManHorde">
 		<gamestage stage="1"><spawn group="ZombieBusinessManGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="500"><spawn group="ZombieBusinessManMixedGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="1500"><spawn group="ZombieBusinessManFeralGroup" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
 	<spawner name="ZombieBadassHorde">

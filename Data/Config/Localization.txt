@@ -1134,6 +1134,8 @@ zombieSteve,entityclasses,Entity,KgNone,Reanimated Corpse,Corps réanimé,Wieder
 zombieSteveCrawler,entityclasses,Entity,KgNone,Crawler,Rampeur,Kriecher,,Oruga
 zombieWightFeral,entityclasses,Entity,KgNone,Feral Wight,Rôdeur féroce,Wilder Streuner,,Caminante salvaje
 zombieYo,entityclasses,Entity,KgNone,Rotting Carcass,Carcasse pourrie,Verrottender Kadaver,,Cuerpo podrido
+zombieBlueFlare,entityclasses,Entity,KgNone,Blue Flare,,,,
+zombieBlueFlareFeralRadiated,entityclasses,Entity,KgNone,Radioactive Flare,,,,
 zombieArleneNS,entityclasses,Entity,KgNone,Putrid Girl,Fille putride,Verfaultes Mädchen,,Niña putrefacta
 zombieBoeNS,entityclasses,Entity,KgNone,Infected Survivor,Survivant infecté,Infizierter Überlebender,,Sobreviviente infectado
 zombieBurntNS,entityclasses,Entity,KgNone,Burn Victim,Calciné,Brandopfer,,Víctima quemada
