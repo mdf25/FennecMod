@@ -1463,7 +1463,7 @@ Mesh files no longer used:
 		<property name="Crosshair_max_distance" value="49"/> <!-- 49 -->
 		<property name="Magazine_size" value="8"/>
 		<property name="Magazine_items" value="shotgunShell"/>
-		<property name="Magazine_item_ray_counts" value="2"/>
+		<property name="Magazine_item_ray_counts" value="6"/>
 		<property name="Magazine_item_ray_spreads" value="0.74"/> <!-- .74 -->
 		<property name="Reload_time" value="2.6"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -4152,7 +4152,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<property name="EconomicValue" value="14"/>
 	<property name="Group" value="Ammo/Weapons"/>
@@ -4189,7 +4189,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<property name="EconomicValue" value="19"/>
@@ -4199,7 +4199,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<property name="EconomicValue" value="19"/>
 	<property name="Group" value="Ammo/Weapons"/>
@@ -4234,12 +4234,12 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="DropScale" value="4"/>
 	<property name="EconomicValue" value="17"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
-		<property name="EntityDamage" value="7,15"/>
+		<property name="EntityDamage" value="7,12"/>
 		<property name="BlockDamage" value="5.4,13.5"/>
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -4250,11 +4250,11 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="128"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="EconomicValue" value="56"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
-		<property name="EntityDamage" value="100,150"/>
+		<property name="EntityDamage" value="120,200"/>
 		<property name="BlockDamage" value="100,150"/>
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -4276,7 +4276,7 @@ Mesh files no longer used:
 	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="100"/> <!-- STK explosives -->
 	<property name="EconomicValue" value="588"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
@@ -4303,7 +4303,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="paper"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="128"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="DropScale" value="4"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="6"/>
@@ -4327,11 +4327,11 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/>
+	<property name="Stacknumber" value="1000"/>
  	<property name="EconomicValue" value="25"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
-		<property name="EntityDamage" value="10,23"/>
+		<property name="EntityDamage" value="10,17"/>
 		<property name="BlockDamage" value="7.8,18.5"/>
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -4342,11 +4342,11 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/>
+	<property name="Stacknumber" value="1000"/>
  	<property name="EconomicValue" value="45"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
-		<property name="EntityDamage" value="20,40"/>
+		<property name="EntityDamage" value="15,28"/>
 		<property name="BlockDamage" value="10.2,25.5"/>
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -4359,7 +4359,7 @@ Mesh files no longer used:
 	<property name="HandMeshfile" value="Items/Misc/arrow_hand"/>
 	<property name="HoldType" value="32"/>
 	<property name="Material" value="wood"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="FuelValue" value="8"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -4507,7 +4507,7 @@ Mesh files no longer used:
 	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_handPrefab"/>
 	<property name="HoldType" value="32"/>
 	<property name="Material" value="metal"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="FuelValue" value="8"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -4541,7 +4541,7 @@ Mesh files no longer used:
 	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_handPrefab"/>
 	<property name="HoldType" value="32"/>
 	<property name="Material" value="metal"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="FuelValue" value="8"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -4790,7 +4790,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="25"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="100"/> <!-- STK explosives -->
 	<property name="EconomicValue" value="41"/>
 	<property name="Explosion.BlockDamage" value="10"/>
 	<property name="Explosion.EntityDamage" value="90"/>
@@ -4829,7 +4829,7 @@ Mesh files no longer used:
 	<property name="Material" value="MDynamite"/>
 	<property name="CustomIcon" value="tnt"/>
 	<property name="HoldType" value="25"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="100"/> <!-- STK explosives -->
 	<property name="EconomicValue" value="71"/>
 	<property name="Explosion.BlockDamage" value="900"/>
 	<property name="Explosion.EntityDamage" value="320"/>
@@ -4864,7 +4864,7 @@ Mesh files no longer used:
 	<property name="DropScale" value="2"/>
 	<property name="ThrowableDecoy" value="true"/>
 	<property name="FuelValue" value="60"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="100"/> <!-- STK explosives -->
 	<property name="Explosion.BlockDamage" value="5"/>
 	<property name="Explosion.EntityDamage" value="5"/>
 	<property name="Explosion.ParticleIndex" value="10"/>
@@ -4903,7 +4903,7 @@ Mesh files no longer used:
 	<property name="DropScale" value="2"/>
 	<property name="ThrowableDecoy" value="true"/>
 	<property name="FuelValue" value="60"/>
-	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="100"/> <!-- STK explosives -->
 	<property name="Explosion.BlockDamage" value="5"/>
 	<property name="Explosion.EntityDamage" value="5"/>
 	<property name="Explosion.ParticleIndex" value="5"/>
@@ -4994,7 +4994,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/clayPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="40"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources"/>
@@ -5015,7 +5015,7 @@ Mesh files no longer used:
 	<property name="Extends" value="ironArrow" param1="HandMeshfile"/>
 	<property name="Meshfile" value="Entities/Electrical/steel_dartPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
 	<property name="EconomicValue" value="34"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property class="Action1">
