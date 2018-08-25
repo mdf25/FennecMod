@@ -329,6 +329,7 @@ There is a console command: forcegamestage
 
 	<spawner name="ZombieGhostTownHorde">
 		<gamestage stage="1"><spawn group="ZombieGhostTownSleeperGroup" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="ZombieGhostTownFeralSleeperGroup" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
 	<spawner name="ZombieSoldierHorde">
