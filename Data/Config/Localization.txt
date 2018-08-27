@@ -1346,12 +1346,19 @@ leatherHood,items,Clothes,KgNone,Leather Hood,Capuche en cuir,Lederkapuze,,Capuc
 leatherJacket,items,Clothes,KgNone,Leather Chest Armor,Plastron en cuir,Lederbrustpanzer,,Coraza de cuero
 leatherPants,items,Clothes,KgNone,Leather Leg Armor,Jambières en cuir,Lederbeinschienen,,Espinillera de cuero
 militaryArmorGroupDesc,items,Clothes,KgNone,Military armor provides the best armor defense and moderate weather protection.,L'armure militaire offre une protection optimale en tant qu'armure et une protection modérée contre les intempéries.,Militärische Ausrüstung bietet den besten Rüstungsschutz und einen moderaten Schutz vor der Witterung.,,La armadura militar proporciona la mejor defensa de armadura y protección moderada contra el clima.
+militaryArmorImprovedGroupDesc,items,Clothes,KgNone,"Improved military armor provides even better protection than regular military armor, including more fire and electrical protection.",,,,
 militaryBoots,items,Clothes,KgNone,Military Boots,Bottes militaires,Militärstiefel,,Botas militares
+militaryBootsImproved,items,Clothes,KgNone,"Improved Military Boots",,,,
 militaryGloves,items,Clothes,KgNone,Military Gloves,Gants militaires,Militärhandschuhe,,Guanteletes militares
+militaryGlovesImproved,items,Clothes,KgNone,"Improved Military Gloves",,,,
 militaryHelmet,items,Clothes,KgNone,Military Helmet,Casque militaire,Militärhelm,,Casco militar
+militaryHelmetImproved,items,Clothes,KgNone,"Improved Military Helmet",,,,
 militaryHelmetDesc,items,Clothes,KgNone,The military helmet offers the very best damage protection in the wasteland.,Le casque militaire offre une protection optimale dans les terres désolées.,Der Militärhelm bietet den bestmöglichen Schutz im Ödland.,,El casco militar ofrece la mejor protección contra daño en el páramo.
 militaryLegArmor,items,Clothes,KgNone,Military Leg Armor,Jambières militaires,Militärbeinschienen,,Greba militar
+militaryLegArmorImproved,items,Clothes,KgNone,"Improved Military Leg Armor",,,,
 militaryVest,items,Clothes,KgNone,Military Vest,Gilet militaire,Militärweste,,Chaleco militar
+militaryVestImproved,items,Clothes,KgNone,"Improved Military Vest",,,,
+militaryHelmetLightImproved,items,Clothes,KgNone,"Improved Military Helmet (Light)",,,,
 miningHelmet,items,Clothes,KgNone,Mining Helmet,Casque de mineur,Bergbauhelm,,Casco de minero
 miningHelmetDesc,items,Clothes,KgNone,"This helmet offers good concussive & puncture defense & the added bonus of a mobile light source. No more dark caves for you.\n[55ff88]Crafted on the workbench.[ffffff]","Ce casque protège bien contre les commotions cérébrales et autres blessures perforantes. Il offre également une source de lumière mobile. Finies, les grottes sombres.",Dieser Helm bietet guten Schutz vor Schlag- und Stichschaden und hat zudem eine mobile Lichtquelle. Jetzt bleibt keine Höhle mehr dunkel.,,"Este casco ofrece buena protección frente a contusiones y perforaciones, además de ser una fuente de luz móvil. ¡Ya no habrá más cuevas oscuras para ti!"
 nightvisionGoggles,items,Clothes,KgNone,Night Vision Goggles,Lunettes de vision nocturne,Nachtsichtbrille,,Gafas de visión nocturna
@@ -5219,7 +5226,7 @@ groundZincDustDesc,items,Book,KgNone,"Zinc ore that has been ground in an indust
 groundBrassDust,items,Book,KgNone,"Ground Brass Dust",,,,
 groundBrassDustDesc,items,Book,KgNone,"This finely mixed dust can be smelted in a forge to produce brass. It is made by combining copper and zinc dusts and mixing thoroughly.",,,,
 groundUraniumDust,items,Book,KgNone,"Ground Uranium Dust",,,,
-groundUraniumDustDesc,items,Book,KgNone,"By grinding down a forged ingot of uranium, you can remove some impurities and make it suitable for enriching after purification. Or, the dust can be mixed with lead to make a depleted uranium compound useful in improved military armour.\n[55ff88]Crafted using an industrial grinder.[ffffff]",,,,
+groundUraniumDustDesc,items,Book,KgNone,"By grinding down a forged ingot of uranium, you can remove some impurities and make it suitable for enriching after purification. \n[55ff88]Crafted using an industrial grinder.[ffffff]",,,,
 groundLeadDust,items,Book,KgNone,"Ground Lead Dust",,,,
 groundLeadDustDesc,items,Book,KgNone,"Lead ore that has been ground in an industrial grinder. This will give you twice the amount of usable resource when forged, compared to the ore.\n[55ff88]Crafted using an industrial grinder.[ffffff]",,,,
 groundIronDustPure,items,Book,KgNone,"Pure Iron Dust",,,,
@@ -6193,8 +6200,8 @@ q_workbenchupgradeDesc,Items,Quest,KgNone,"A mysterious note I found. Seems some
 
 q_penetrationtester,Items,Quest,KgNone,"Quest: The Penetration Tester",,,,
 q_penetrationtesterDesc,Items,Quest,KgNone,"A mysterious note I found. Seems the trader wants me to bring him an ID card of some description...",,,,
-
-
+q_bosskiller,Items,Quest,KgNone,"Quest: Big Bad Boss Killer",,,,
+q_bosskillerDesc,Items,Quest,KgNone,"A mysterious note I found. Seems the trader wants me to kill a ton of tough zombies...",,,,
 
 adobeGroupDesc,blocks,Block,KgNone,"Adobe makes a decent construction material when access to wood and cobblestone is limited. However, it's not very durable nor can it be shaped too well.",,,,
 adobeBlock,blocks,Block,KgNone,"Adobe Block",,,,
@@ -6299,11 +6306,20 @@ penetrationTesterCardDesc,items,Resources,KgNone,"Dropped by the official penetr
 razorFence,blocks,Block,KgNone,"Razor Wire Fence",,,,
 razorFenceDesc,blocks,Block,KgNone,"Razor wire is more durable than barbed wire and can slow zombies down even more.",,,,
 razorWireSheet,blocks,Block,KgNone,"Razor Wire Sheet",,,,
-razorWireSheetDesc,blocks,Block,KgNone,"Razor wire is more durable than barbed wire and can slow zombies down even more.",,,,
+razorWireSheetDesc,blocks,Block,KgNone,"Razor wire is more durable than barbed wire and can slow zombies down even more.\n[55ff88]Crafted in the Alloy Forge.[ffffff]",,,,
 
 paintToolRoller,items,Tools,KgNone,"Roller Tool",,,,
 paintToolRollerDesc,items,Tools,KgNone,"The roller is faster than a regular paint brush and can reach much further distances.",,,,
 
+rocketImproved,items,Ammo,KgNone,"High Explosive Rocket",,,,
+rocketImprovedDesc,Items,Ammo,KgNone,"High Explosive Rockets can't be crafted, but these ones found in the stomach of a rocket cop sure should come in useful. Don't stand too close to these things, though, at least 20m from the target lest you wish to get blown up.",,,,
+
+nuclearPowerBook,items,Schematic,KgNone,"Nuclear Power, the Wrong Way",,,,
+nuclearPowerBookDesc,items,Schematic,KgNone,"Learn how to craft a nuclear reactor and uranium fuel cells by reading this schematic.",,,,
+fuelRod,items,Tools,KgNone,"Uranium Fuel Rod",,,,
+fuelRodDesc,items,Tools,KgNone,"Uranium Fuel Rods can be used to power a nuclear generator for a long time and gives a lot of energy.\n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+miniNuclearReactor,blocks,Power,KgNone,"Mini Nuclear Reactor",,,,
+miniNuclearReactorDesc,blocks,Power,KgNone,"A mini nuclear reactor can be powered with uranium fuel rods to give out a lot of energy.\n[55ff88]Crafted on the Workbench.[ffffff]"
 
 autoMinerReady,Blocks,Resources,KgNone,"Auto-Static Miner69er",,,,
 autoMinerReadyDesc,Blocks,Resources,KgNone,"Auto miners are capable of harvesting vast amounts of unreachable materials from well below the bedrock layer. [5588ff]To make it work, hold an auto miner kit in hand and right click on the block to get it started.[ffffff]\n[55ff88]Crafted on the Workbench.[ffffff]"
@@ -6311,5 +6327,29 @@ autoMinerWorking,Blocks,Resources,KgNone,"Auto-Static Miner69er (Working)",,,,
 autoMinerFinished,Blocks,Resources,KgNone,"Auto-Static Miner69er (Finished)",,,,
 autoMinerKit,items,Resource,KgNone,"Auto-Miner Kit",,,,
 autoMinerKitDesc,items,Resource,KgNone,"Use this on an auto-miner whilst it is in a 'ready' state to make it start mining for you.\n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+
+forgedUraniumBase,items,Resources,KgNone,"Forged Uranium Base",,,,
+forgedUraniumBaseDesc,items,Resources,KgNone,"Uranium forged directly from raw uranium can later be broken down in an industrial grinder and purification plant to create dust to further refine into more uranium or enriched uranium later.\n[55ff88]Crafted in the laser smelter.[ffffff]",,,,
+forgedUraniumDepleted,items,Resources,KgNone,"Depleted Uranium",,,,
+forgedUraniumDeplatedDesc,items,Resources,KgNone,"Depleted uranium can be used to craft improved military armour. You can get this from uranium fuel cells after they are out of durability.\n[55ff88]Crafted on the Workbench.[ffffff]",,,,
+forgedUraniumEnriched,items,Resources,KgNone,"Enriched Uranium",,,,
+forgedUraniumEnrichedDesc,items,Resources,KgNone,"Enriched uranium can be used to craft into fuel cells to power the mini nuclear reactor.\n[55ff88]Crafted at a chemistry station.[ffffff]",,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

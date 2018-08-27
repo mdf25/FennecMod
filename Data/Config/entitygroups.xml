@@ -185,10 +185,6 @@
 	</entitygroup>
 
 	<entitygroup name="ZombiesWastelandNightNoBears">
-		<!--
-		Bears/Animals aren't controllable by the BloodMoon horde system  until Joe
-		refactors all the Animal code.
-		-->
 		<entity name="zombieSpiderNS"/>
 		<entity name="zombieBoeNS" />
 		<entity name="zombieJoeNS" />
@@ -230,10 +226,6 @@
 	</entitygroup>
 
 	<entitygroup name="ZombiesWastelandNight2NoBears">
-		<!--
-		Bears/Animals aren't controllable by the BloodMoon horde system  until Joe
-		refactors all the Animal code.
-		-->
 		<entity name="zombieSpiderNS"/>
 		<entity name="zombieBoeNS" prob="0.05"/>
 		<entity name="zombieJoeNS" prob="0.05"/>
@@ -361,12 +353,13 @@
 	<entitygroup name="AnimalsDesert">
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
+		<entity name="animalBoar" prob="0.3" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsDesert">
 		<entity name="invisibleAnimalEnemy" prob="2" />
-		<entity name="animalZombieVulture" />
-		<entity name="animalSnake" />
+		<entity name="animalZombieVulture" prob="0.4" />
+		<entity name="animalSnake" prob="0.5" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsDesert">
@@ -379,7 +372,7 @@
 	<entitygroup name="EnemyAnimalsSnow">
 		<entity name="invisibleAnimalEnemy" prob="2" />
 		<entity name="animalZombieVulture" prob="0.4" />
-		<entity name="animalDireWolf" prob="0.05" />
+		<entity name="animalDireWolf" prob="0.1" />
 		<entity name="animalBear" prob="0.05" />
 	</entitygroup>
 
@@ -397,6 +390,11 @@
 		<entity name="animalDireWolf" prob="0.05" />
 	</entitygroup>
 
+	<entitygroup name="BearsGroup">
+		<entity name="invisibleAnimalEnemy" prob="4.5" />
+		<entity name="animalBear" prob="0.1" />
+	</entitygroup>
+	
 	<entitygroup name="FriendlyAnimalsForest">
 		<!--<entity name="invisibleAnimal" prob="3" />-->
 		<entity name="animalRabbit" />
@@ -445,8 +443,8 @@
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsWasteland" >
-		<entity name="animalSnake" />
-		<entity name="animalZombieVulture" />
+		<entity name="animalSnake" prob="0.2" />
+		<entity name="animalZombieVulture" prob="0.4" />
 		<entity name="animalZombieDog" />
 		<entity name="animalZombieBear" prob="0.15" />
 	</entitygroup>
@@ -510,12 +508,19 @@
 		<entity name="zombieSpiderFeralRadiatedNS" />
 		<entity name="zombieWightFeralRadiatedNS" />
 		<entity name="zombieFatCopFeralRadiatedNS" />
+		<entity name="zombieFatRocketCop" prob="0.2" />
+		<entity name="zombieFatHawaiianBomberFeral" prob="0.2" />
+		<entity name="zombieBlueFlareFeralRadiated" prob="0.2" />
+		<entity name="zombieBusinessManBoss" prob="0.02" />
+		<entity name="zombieFemaleFatBomberFeral" prob="0.2" />
+		<entity name="DC-KILLER" prob="0.003" />
 	</entitygroup>
 
 	<entitygroup name="ZombieFeralRadiatedGroup">
 		<entity name="zombieSpiderFeralRadiated" />
 		<entity name="zombieWightFeralRadiated" />
 		<entity name="zombieFatCopFeralRadiated" />
+		<entity name="zombieBlueFlareFeralRadiated" prob="0.3" />
 	</entitygroup>
 
 	<entitygroup name="ZombieFarmGroup">

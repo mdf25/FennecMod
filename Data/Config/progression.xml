@@ -1340,7 +1340,6 @@
 		<recipe name="napalmBomb"					unlock_level="1" />
 	</perk>	
 		
-		
 	<perk name="plumbing" icon="resource" description_key="plumbingDesc" title_key="plumbingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<requirement skill_level="1" required_skill_name="craftSkillToolsPerk" required_skill_level="5"/>
 		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="4"/>

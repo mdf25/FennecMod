@@ -350,7 +350,15 @@
 		<reward type="Item"			id="miningHelmet"		value="300" />
 	</quest>
 	
-	
+	<quest id="quest_bosskiller_1" name_key="quest_bosskiller_1" subtitle_key="quest_bosskiller_1_subtitle" description_key="quest_bosskiller_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_bosskiller_1_offer" difficulty="easy">
+		<objective type="ZombieKill" id="ZombieBlueFlareFeralRadiated"	value="1" />
+		<objective type="ZombieKill" id="ZombieFatRocketCop"			value="1" />
+		<objective type="ZombieKill" id="ZombieBusinessManBoss"			value="1" />
+		<objective type="ZombieKill" id="ZombieFatHawaiianBomberFeral"  value="1" />
+		<objective type="ZombieKill" id="ZombieFemaleFatBomberFeral"	value="1" />
+		<reward type="Item"			id="nuclearPowerBook" 	value="1" />
+	</quest>
 	
 	
 	

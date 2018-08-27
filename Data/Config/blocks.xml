@@ -17893,7 +17893,40 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="pressureplateDesc"/>
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
 </block>
-	<!-- 2 Free -->
+
+<block id="2018" name="miniNuclearReactor">
+	<property name="Class" value="BatteryBank"/>
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Entities/Electrical/battery_bankPrefab"/> <property name="HandleFace" value="Bottom"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="MaxPower" value="10000"/>
+	<property name="InputPerTick" value="0"/>
+	<property name="ChargePerInput" value="0"/>
+	<property name="OutputPerStack" value="2000"/>
+	<property name="OutputPerCharge" value="5000"/>
+	<property name="SlotItem" value="fuelRod"/>
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="8"/>
+		<property name="electricParts" value="6"/>
+		<property name="electronicParts" value="2"/>
+		<property name="scrapPlastics" value="4"/>
+	</property>
+	<drop event="Harvest" name="scrapIron" count="120" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="2,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="EconomicValue" value="400"/>
+</block>
+
 
 <block id="2020" name="spotlightPlayer">
 	<property name="CreativeMode" value="Player"/>

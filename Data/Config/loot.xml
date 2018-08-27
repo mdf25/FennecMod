@@ -1910,6 +1910,11 @@
 	<item group="copGroup" count="0,2" />
 </lootgroup>
 
+<lootgroup name="rocketCopGroupFull" count="all">
+	<item name="rocketImproved" count="3,6" />
+	<item group="copGroup" />
+</lootgroup>
+
 <lootgroup name="autoMiner100" count="all">
 	<item name="stone" 	count="10000,20000" />
 	<item name="gravel"	count="10000,20000" />
@@ -2871,6 +2876,12 @@
 <lootcontainer id="122" count="1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump" loot_quality_template="baseTemplate">
 	<item group="autoMinerGroup" count="1" />
 </lootcontainer>
+
+<!-- rocket cop-->
+<lootcontainer id="123" count="1" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
+	<item group="rocketCopGroupFull" count="1" />
+</lootcontainer>
+
 
 <!-- Penetration Tester Loot -->
 <lootcontainer id="125" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">

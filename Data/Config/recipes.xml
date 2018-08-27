@@ -999,7 +999,31 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay"	count="5"  />
 </recipe>
 
+<recipe name="forgedUraniumBase" count="1" craft_area="laser_forge" material_based="true">
+	<ingredient name="unit_uranium" count="10" />
+	<ingredient name="unit_clay"	count="5"  />
+</recipe>
 
+<recipe name="forgedUraniumEnriched" count="1" craft_area="chemistryStation" material_based="true" craft_time="120">
+	<ingredient name="groundUraniumDustPure" count="100" />
+</recipe>
+
+<recipe name="forgedUraniumDepleted" count="6" craft_area="workbench" craft_time="60">
+	<ingredient name="fuelRod" count="1" />
+</recipe>
+
+<recipe name="fuelRod" count="1" craft_area="workbench" craft_time="60">
+	<ingredient name="forgedUraniumEnriched" count="6" />
+	<ingredient name="forgedSteel"			 count="6" />
+</recipe>
+
+<recipe name="miniNuclearReactor" count="1" craft_area="workbench" craft_time="120">
+	<ingredient name="forgedFadium"		count="12" />
+	<ingredient name="forgedFoxium"		count="12" />
+	<ingredient name="electronicParts"	count="50" />
+	<ingredient name="electricParts"	count="100"/>
+	<ingredient name="forgedSteel"		count="30" />
+</recipe>
 
 <recipe name="laserForge" count="1" craft_area="workbench" craft_exp_gain="300">
 	<ingredient name="forgedFadium" count="10" 		/>
@@ -1653,9 +1677,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="nitricAcidSolution" count="1" />
 </recipe>
 
-<recipe name="hydrochloricAcidSolution" count="10" craft_area="chemistryStation" craft_time="20">
+<recipe name="hydrochloricAcidSolution" count="4" craft_area="chemistryStation" craft_time="20">
 	<ingredient name="acidSac"	count="1" />
-	<ingredient name="emptyJar" count="10"/>
+	<ingredient name="emptyJar" count="4"/>
 </recipe>
 
 <recipe name="sulfuricAcidSolution" count="20" craft_area="workbench" craft_time="10">
@@ -1672,6 +1696,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="purifiedWater" 		count="10" />
 	<ingredient name="salt"			 		count="2"  />
 	<ingredient name="potassiumNitrateDust"	count="2"  />
+</recipe>
+
+<recipe name="steelPolish" count="1" craft_area="chemistryStation" craft_time="20">
+	<ingredient name="oil" 					count="1" />
+	<ingredient name="sulfuricAcidSolution"	count="1" />
+	<ingredient name="groundIronDustPure"	count="1" />
 </recipe>
 
 <recipe name="salt" count="250" craft_time="5">
@@ -5657,10 +5687,35 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="crudeOil" count="5"/>
 </recipe>
 
+<recipe name="militaryGlovesImproved" craft_area="workbench" craft_exp_gain="120" craft_time="120">
+	<ingredient name="militaryGloves" count="1" />
+	<ingredient name="forgedUraniumDepleted" count="3" />
+</recipe>
 
+<recipe name="militaryHelmetImproved" craft_area="workbench" craft_exp_gain="120" craft_time="120">
+	<ingredient name="militaryHelmet" count="1" />
+	<ingredient name="forgedUraniumDepleted" count="3" />
+</recipe>
 
+<recipe name="militaryVestImproved" craft_area="workbench" craft_exp_gain="120" craft_time="120">
+	<ingredient name="militaryVest" count="1" />
+	<ingredient name="forgedUraniumDepleted" count="3" />
+</recipe>
 
+<recipe name="militaryLegArmorImproved" craft_area="workbench" craft_exp_gain="120" craft_time="120">
+	<ingredient name="militaryLegArmor" count="1" />
+	<ingredient name="forgedUraniumDepleted" count="3" />
+</recipe>
 
+<recipe name="militaryBootsImproved" craft_area="workbench" craft_exp_gain="120" craft_time="120">
+	<ingredient name="militaryBoots" count="1" />
+	<ingredient name="forgedUraniumDepleted" count="3" />
+</recipe>
 
+<recipe name="militaryHelmetLightImproved" craft_area="workbench" craft_exp_gain="120" craft_time="120">
+	<ingredient name="militaryHelmetImproved" count="1" />
+	<ingredient name="flashlight02" count="1" />
+	<ingredient name="ductTape"		count="2" />
+</recipe>
 
 </recipes>

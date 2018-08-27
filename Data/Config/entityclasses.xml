@@ -1012,7 +1012,7 @@
 </entity_class>
 
 <entity_class name="zombieBusinessManBoss" extends="zombieBusinessManNS">
-	<property name="MaxHealth" 			value="10000" />
+	<property name="MaxHealth" 			value="6000" />
 	<property name="ApproachSpeed" 		value="0.15" />
 	<property name="NightApproachSpeed" value="0.9" />
 	<property name="LootListOnDeath"	value="125" />
@@ -1518,6 +1518,7 @@
 	<property name="Explosion.BlockDamage" value="2500"/>
 	<property name="Explosion.EntityDamage" value="200"/>
 	<property name="Explosion.ParticleIndex" value="4" />
+	<property name="LootListOnDeath" value="123" />
 </entity_class>
 
 <entity_class name="zombieFatCopFeralRadiated" extends="zombieFatCopFeral">

@@ -850,7 +850,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="44magnum_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
-		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.head" value="6"/>
 		<property name="DamageBonus.wood" value="4"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -1251,7 +1251,7 @@ Mesh files no longer used:
 		<property name="Crosshair_max_distance" value="34"/>
 		<!-- <property name="Range" value="200"/> -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="rocket"/>
+		<property name="Magazine_items" value="rocket,rocketImproved"/>
 		<property name="Rays_spread" value="0.095"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -2023,11 +2023,11 @@ Mesh files no longer used:
 	<property name="Extends" value="handZombieStripper"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="400"/>
-		<property name="DamageBlock" value="1500"/>
+		<property name="DamageEntity" value="100"/>
+		<property name="DamageBlock" value="800"/>
 		<property name="Buff" value="bleeding,infection,stunned"/>
 		<property name="Buff_chance" value="1,0.1,1"/>
-		<property name="Range" value="4"/>
+		<property name="Range" value="2.5"/>
 		<property name="Sphere" value="2"/>
 		<property name="Block_range" value="5"/>
 	</property>
@@ -4934,6 +4934,33 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
+<item id="185" name="rocketImproved">
+	<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab"/>
+	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="100"/> <!-- STK explosives -->
+	<property name="EconomicValue" value="588"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="250,500"/>
+		<property name="BlockDamage" value="0,0"/> <!-- this is not working yet, it uses damage from Action1 -->
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Explosion.ParticleIndex" value="4"/> <!-- which Prefab/particle is used -->
+		<property name="Explosion.RadiusBlocks" value="8"/> <!-- damage radius for blocks -->
+		<property name="Explosion.BlockDamage" value="0"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="Explosion.RadiusEntities" value="8"/> <!-- damage radius for entities -->
+		<property name="Explosion.EntityDamage" value="750"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+		<property name="Velocity" value="60"/>
+		<property name="FlyTime" value="2.5"/>
+		<property name="LifeTime" value="8"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+
 <item id="186" name="flare">
 	<property name="Class" value="ItemClassTimeBomb"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/PipeBomb/PipeBombPrefab"/>
@@ -5197,7 +5224,7 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="20"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="62,100"/>
+		<property name="EntityDamage" value="90,160"/>
 		<property name="BlockDamage" value="14,24"/>
 		<property name="DegradationMax" value="4000,12500"/>
 	</property>
@@ -6726,6 +6753,112 @@ Mesh files no longer used:
 		<property name="UISlot" value="ChestArmor"/>
 	</property>
 </item>
+
+
+<item id="415" name="militaryGlovesImproved"> <!-- armorMastermilitaryArmor -->
+	<property name="CustomIcon" value="militaryGloves" />
+	<property name="Insulation" value="0"/>
+	<property name="Encumbrance" value="0.04"/>
+	<property name="Material" value="MmilitaryFiber"/>
+	<property name="RepairTools" value="militaryFiber"/>
+	<property name="Weight" value="12"/>
+	<property name="EconomicValue" value="5800"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EquipSlot" value="Hands"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property class="Attributes">
+		<property name="ConcussiveProtection" value="0.56,1.2"/>
+		<property name="PunctureProtection" value="0.6,1.2"/>
+		<property name="FireProtection" value="0.36,0.6"/>
+		<property name="RadiationProtection" value="0.28,0.6"/>
+		<property name="ElectricalProtection" value="0.2,0.46"/>
+		<property name="DegradationMax" value="2800,7000"/>
+	</property>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_gloves"/>
+		<property name="Overlay0" value="armor_kevlar_gloves"/>
+		<property name="Layer" value="0"/>
+		<property name="UISlot" value="Gloves"/>
+	</property>
+	<property name="DescriptionKey" value="militaryArmorImprovedGroupDesc"/>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="180"/>
+</item>
+
+<item id="416" name="militaryHelmetImproved"> <!-- militaryArmor -->
+	<property name="Extends" value="militaryGloves"/>
+	<property name="CustomIcon" value="militaryHelmet" />
+	<property name="EquipSlot" value="Head"/>
+	<property class="UMA">
+		<property name="Mesh" value="gear_kevlar_helmet"/>
+		<property name="Overlay0" value="gear_kevlar_helmet"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="ShowAltHair" value="true"/>
+	</property>
+</item>
+
+<item id="417" name="militaryBootsImproved"> <!-- militaryArmor -->
+	<property name="Extends" value="militaryGloves"/>
+	<property name="CustomIcon" value="militaryBoots" />
+	<property name="EquipSlot" value="Feet"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_boots"/>
+		<property name="Overlay0" value="armor_kevlar_boots"/>
+		<property name="Layer" value="0"/>
+		<property name="UISlot" value="Footwear"/>
+	</property>
+</item>
+
+<item id="418" name="militaryLegArmorImproved"> <!-- militaryArmor -->
+	<property name="Extends" value="militaryGloves"/>
+	<property name="CustomIcon" value="militaryLegArmor" />
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="3200"/>
+	<property name="EquipSlot" value="Legs"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_legarmor"/>
+		<property name="Overlay0" value="armor_kevlar_legarmor"/>
+		<property name="Layer" value="3"/>
+		<property name="UISlot" value="LegArmor"/>
+	</property>
+</item>
+
+<item id="419" name="militaryVestImproved"> <!-- militaryArmor -->
+	<property name="Extends" value="militaryGloves"/>
+	<property name="CustomIcon" value="militaryVest" />
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="3200"/>
+	<property name="EquipSlot" value="Chest"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_vest"/>
+		<property name="Overlay0" value="armor_kevlar_vest"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="ChestArmor"/>
+	</property>
+</item>
+
+<item id="420" name="militaryHelmetLightImproved"> <!-- militaryArmor -->
+	<property name="Extends" value="militaryGloves"/>
+	<property name="CustomIcon" value="militaryHelmet"/>
+	<property name="DescriptionKey" value="militaryHelmetLightDesc" />
+	<property name="Class" value="ItemClassToggle"/>
+	<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource"/>
+	<property name="EquipSlot" value="Head"/>
+	<property class="UMA">
+		<property name="Mesh" value="gear_kevlar_helmet"/>
+		<property name="Overlay0" value="gear_kevlar_helmet"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="ShowAltHair" value="true"/>
+	</property>
+</item>
+
+
 
 
 <!-- * * * * * * * * * * general clothing * * * * * * * * * * -->
@@ -13509,6 +13642,14 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="915" name="nuclearPowerBook">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="Weight" value="2" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="miniNuclearReactor,fuelRod,forgedUraniumBase,forgedUraniumEnriched,forgedUraniumDepleted"/>
+	</property>
+</item>
+
 <item id="919" name="compoundBowSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="5" />
@@ -14967,6 +15108,13 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="1227" name="q_bosskiller">
+	<property name="Extends" value="questMaster"/>
+	<property class="Action1">
+		<property name="QuestGiven" value="quest_bosskiller_1"/>
+	</property>
+</item>
+
 <!-- * * * * * * * * * * other stuff * * * * * * * * * * -->
 
 <item id="1300" name="yuccaFibers"> <!-- scrap material -->
@@ -16090,8 +16238,6 @@ Mesh files no longer used:
 <item id="1376" name="forgedUraniumDepleted">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="CustomIcon" value="forgedIron" />
-	<property name="CustomIconTint" value="508152" />
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="gold"/>
 	<property name="Weight"	value="10" />
@@ -16107,8 +16253,6 @@ Mesh files no longer used:
 <item id="1377" name="forgedUraniumEnriched">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="CustomIcon" value="forgedIron" />
-	<property name="CustomIconTint" value="508152" />
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="gold"/>
 	<property name="Weight"	value="10" />
@@ -17243,7 +17387,22 @@ Mesh files no longer used:
 
 
 
-
+<item id="1496" name="fuelRod">
+	<property name="Meshfile" value="Items/Misc/car_battery"/>
+	<property name="Material" value="uranium"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Weight" value="160"/>
+	<property name="EconomicValue" value="500"/>
+	<property name="Group" value="Resources"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="50000,50000"/>
+		<property name="BatteryMaxLoadInVolts" value="1000, 2000"/>
+		<property name="BatteryDischargeTimeInMinutes" value="720,1440"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
 
 <item id="1497" name="autoMinerKit">
 	<property name="Meshfile" value="Items/Tools/wrenchPrefab"/>
