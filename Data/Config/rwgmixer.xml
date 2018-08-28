@@ -293,8 +293,9 @@
 			<prefab name="trailer_03" />
 			<prefab name="trailer_04" />
 			<prefab name="trailer_park_01" />
-		</prefab_rule>
-
+			<prefab name="xcostum_simpsonshouse(by_magoli)" />
+		</prefab_rule>	
+		
 		<prefab_rule name="residentialNewGroup">
 			<prefab name="house_new_mansion_01"/>
 			<prefab name="house_new_mansion_02"/>
@@ -310,14 +311,20 @@
 			<prefab name="houseranchtan2"/>
 			<prefab name="houseranchblue1"/>
 			<prefab name="church_sm_01"/>
-			<prefab name="hospital_01_rg"  max_count="1"/>
-			<prefab name="school_01" min_count="1" max_count="1"/>
-			<prefab name="school_k6_01" min_count="1" max_count="1"/>
-			<prefab name="school_daycare_01" min_count="1" max_count="1"/>
-			<prefab name="football_stadium"  max_count="1"/>
-			<prefab name="apartment_adobe_red_5_flr" max_count="1" />
-			<prefab name="apartment_brick_6_flr" max_count="1" />
-			<prefab name="funeral_home_01" max_count="1" />
+			<prefab name="school_01" 							min_count="1" max_count="1"/>
+			<prefab name="school_k6_01" 						min_count="1" max_count="1"/>
+			<prefab name="school_daycare_01" 					min_count="1" max_count="1"/>
+			<prefab name="football_stadium"  					max_count="1"/>
+			<prefab name="apartment_adobe_red_5_flr" 			max_count="1" />
+			<prefab name="apartment_brick_6_flr" 				max_count="1" />
+			<prefab name="funeral_home_01" 						max_count="1" />
+			<prefab name="xcostum_Apartment(by_Gertle)" 		max_count="1" prob="0.4" />
+			<prefab name="xcostum_Apartments(by_Batman)" 		max_count="1" prob="0.6" />
+			<prefab name="xcostum_Cantine(by_Limodor)" 			max_count="1" prob="1.2" />
+			<prefab name="xcostum_House(by_ShoNuff)" 			max_count="2" />
+			<prefab name="xcostum_house2(by_Curbolt)"			max_count="1" />
+			<prefab name="xcostum_kwikemart(by_magoli)"			min_count="1" max_count="1" />
+			<prefab name="xcostum_med_clinic_small(by_magoli)" 	max_count="1" prob="0.3" />
 		</prefab_rule>
 		
 		<prefab_rule name="smallTownGroup">
@@ -335,6 +342,12 @@
 			<prefab name="hotel_roadside_02" 				max_count="1"				/>
 		</prefab_rule>
 		
+		<prefab_rule name="hospitals">
+			<prefab name="hospital_01_rg"  				max_count="1"/>
+			<prefab name="xcostum_Hospital(by_Tom)" 	max_count="1" />
+			<prefab name="xcostum_Hospital(by_Wsiegel)" max_count="1" />
+		</prefab_rule>
+		
 		<prefab_rule name="smallStores">
 			<prefab name="store_gun_sm_01" 		max_count="1"/>
 			<prefab name="store_pharmacy_sm_01" max_count="1"/>
@@ -344,32 +357,46 @@
 		</prefab_rule>
 		
 		<prefab_rule name="fastfood">
-			<prefab name="fastfood_01"						max_count="1"  	/>
-			<prefab name="fastfood_02"						max_count="1" 	/>
-			<prefab name="fastfood_03"						max_count="1" 	/>
+			<prefab name="diner_01" 								max_count="2"	/>
+			<prefab name="diner_02" 								max_count="2"	/>
+			<prefab name="fastfood_01"								max_count="1"  	/>
+			<prefab name="fastfood_02"								max_count="1" 	/>
+			<prefab name="fastfood_03"								max_count="1" 	/>
+			<prefab name="xcostum_McDowell_restaurant(by_LazMan)"	max_count="1"	/>
+			<prefab name="xcostum_RedCatDiner(by_Najax)"			max_count="1"	/>
 		</prefab_rule>
 		
 		<prefab_rule name="gasStations">
-			<prefab name="gas_station1" 					max_count="1"/>
-			<prefab name="gas_station2" 					max_count="1"/>
-			<prefab name="gas_station3" 					max_count="1"/>
-			<prefab name="gas_station4" 					max_count="1"/>
-			<prefab name="gas_station5" 					max_count="1"/>
+			<prefab name="gas_station1" 								max_count="1"	/>
+			<prefab name="gas_station2" 								max_count="1"	/>
+			<prefab name="gas_station3" 								max_count="1"	/>
+			<prefab name="gas_station4" 								max_count="1"	/>
+			<prefab name="gas_station5" 								max_count="1"	/>
+			<prefab name="xcostum_GasStation(by_Warsaken)"				max_count="1"	/>
+			<prefab name="xcostum_Store_Automotive_sm(by_Laz_Man)" 		max_count="1" 	/>
+			<prefab name="xcostum_TruckStop_Garage(by_stallionsden)"	max_count="1"	/>
+			<prefab name="xcostum_TruckStop_Roadhouse(by_stallionsden)" max_count="1"	/>
 		</prefab_rule>
 		
 		<prefab_rule name="businesses">
-			<prefab name="business_red_brick_01"			max_count="1" 	/>
-			<prefab name="business_red_brick_02"			max_count="1" 	/>
-			<prefab name="business_red_brick_03"			max_count="1" 	/>
-			<prefab name="business_red_brick_04"			max_count="1" 	/>
-			<prefab name="business_red_brick_05"			max_count="1" 	/>
-			<prefab name="business_red_brick_06"			max_count="1" 	/>
-			<prefab name="business_red_brick_07"			max_count="1" 	/>
-			<prefab name="business_tan_brick_01"			max_count="1" 	/>
-			<prefab name="business_tan_brick_02"			max_count="1" 	/>
-			<prefab name="business_tan_brick_03"			max_count="1" 	/>
-			<prefab name="business_tan_brick_04"			max_count="1" 	/>
-			<prefab name="business_tan_brick_05"			max_count="1" 	/>
+			<prefab name="business_red_brick_01"					max_count="1" 	/>
+			<prefab name="business_red_brick_02"					max_count="1" 	/>
+			<prefab name="business_red_brick_03"					max_count="1" 	/>
+			<prefab name="business_red_brick_04"					max_count="1" 	/>
+			<prefab name="business_red_brick_05"					max_count="1" 	/>
+			<prefab name="business_red_brick_06"					max_count="1" 	/>
+			<prefab name="business_red_brick_07"					max_count="1" 	/>
+			<prefab name="business_tan_brick_01"					max_count="1" 	/>
+			<prefab name="business_tan_brick_02"					max_count="1" 	/>
+			<prefab name="business_tan_brick_03"					max_count="1" 	/>
+			<prefab name="business_tan_brick_04"					max_count="1" 	/>
+			<prefab name="business_tan_brick_05"					max_count="1" 	/>
+			<prefab name="xcostum_Apartment_Stores(by_Laz_Man)" 	max_count="1"   />
+			<prefab name="xcostum_Bavarian_Bowse_Shop(by_magoli)"	max_count="1"	/>
+			<prefab name="xcostum_DriveIn(by_Wsiegel)"				max_count="1"   />
+			<prefab name="xcostum_Info_Center(by_LuckyStar)"		max_count="1" 	/>
+			<prefab name="xcostum_MiniMall(by_Spider)"				max_count="1"	/>
+			<prefab name="xcostum_Stripmall(by_Guppycur)"			max_count="1"	/>
 		</prefab_rule>
 		
 
@@ -384,37 +411,37 @@
 			<prefab name="store_book_lg_01" prob="0.4" min_count="1"/>
 			<prefab name="store_grocery_lg_01" prob="0.4" min_count="1"/>
 			<prefab name="store_bank_lg_01" />
+			<prefab name="xcostum_Bank(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Bank(by_Limodor)" max_count="1" />
 			<prefab name="gas_station1" max_count="1"/>
 			<prefab name="gas_station2" max_count="1"/>
 			<prefab name="gas_station3" max_count="1"/>
 			<prefab name="gas_station4" max_count="1"/>
 			<prefab name="gas_station5" max_count="1"/>
-			<prefab name="diner_01" max_count="2"/>
-			<prefab name="diner_02" max_count="2"/>
-			<prefab name="fastfood_01" max_count="2"/>
-			<prefab name="fastfood_02" max_count="2"/>
-			<prefab name="fastfood_03" max_count="2"/>
+			<prefab rule="fastfood"	max_count="2" />
 			<prefab name="carlot_01" max_count="2"/>
 			<prefab name="carlot_02" max_count="2"/>
 			<prefab name="store_autoparts_01" max_count="1"/>
 			<prefab name="skate_park_01"  max_count="1"/>
 			<prefab name="store_laundry_01" max_count="1" />
 			<prefab name="store_salon" max_count="1" />
+			<prefab name="xcostum_Car_Dealership_new(by_p1ut0nium)" max_count="1" />
+			<prefab name="xcostum_MultiStore(by_ANT)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Pawnshop(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Restaurant(by_Gertle)" max_count="1" />
 		</prefab_rule>
 
+		<prefab_rule name="firestations">
+			<prefab name="fire_station_01" 						max_count="1"/>
+			<prefab name="fire_station_02" 						max_count="1"/>
+			<prefab name="xcostum_Firedepartment(by_Guppycur)" 	max_count="1" />
+			<prefab name="xcostum_Firehouse(by_Warsaken)" 		max_count="1" />
+			<prefab name="xcostum_Firestation(by_Slick50)" 		max_count="1" />
+		</prefab_rule>
+		
 		<prefab_rule name="downtownGroup">
-			<prefab name="business_red_brick_01"/>
-			<prefab name="business_red_brick_02"/>
-			<prefab name="business_red_brick_03"/>
-			<prefab name="business_red_brick_04"/>
-			<prefab name="business_red_brick_05"/>
-			<prefab name="business_red_brick_06"/>
-			<prefab name="business_red_brick_07"/>
-			<prefab name="business_tan_brick_01"/>
-			<prefab name="business_tan_brick_02"/>
-			<prefab name="business_tan_brick_03"/>
-			<prefab name="business_tan_brick_04"/>
-			<prefab name="business_tan_brick_05"/>
+			<prefab rule="businesses" min_count="6" />
+			<prefab rule="hospitals"  max_count="1" />
 			<prefab name="business_strip_old_01" max_count="1"/>
 			<prefab name="business_strip_old_02" max_count="1"/>
 			<prefab name="courthouse_med_01" max_count="1" />
@@ -432,21 +459,30 @@
 			<prefab name="parking_lot_02"/>
 			<prefab name="parking_lot_03"/>
 			<prefab name="parking_garage_01"/>
-			<prefab name="theater_01"  max_count="1"/>
-			<prefab name="bar_theater_01"  max_count="1"/>
 			<prefab name="bar_stripclub_01" />
 			<prefab name="bar_sm_01" />
-			<prefab name="fire_station_01" max_count="1"/>
-			<prefab name="fire_station_02" max_count="1"/>
-			<prefab rule="skyscrapers" min_count="2"/>
-			<prefab name="store_pawn_01" max_count="1" />
+			<prefab name="theater_01"  											max_count="1"/>
+			<prefab name="bar_theater_01"  										max_count="1"/>
+			<prefab rule="firestations" 										max_count="2"/>
+			<prefab rule="skyscrapers" 											min_count="2"/>
+			<prefab name="store_pawn_01" 										max_count="1" />
+			<prefab name="xcostum_School(by_LazMan)" 							min_count="1" max_count="1" />
+			<prefab name="xcostum_seafoodshop(by_Guppycur)" 					max_count="1" />
+			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" 					max_count="1" />
+			<prefab name="xcostum_SuperStore(by_Volar)" 						max_count="1" />
+			<prefab name="xcostum_TruckStop(by_magoli)"							max_count="1" />
+			<prefab name="xcostum_tv_store(by_magoli)"							max_count="1" />
+			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" 	max_count="1" />
 		</prefab_rule>
 
 		<prefab_rule name="skyscrapers">
-			<prefab name="skyscraper_01" max_count="1" prob="50"/>
-			<prefab name="skyscraper_02" max_count="1" prob="50"/>
-			<prefab name="skyscraper_03" max_count="1" prob="50"/>
-			<prefab name="skyscraper_04" max_count="1" prob="50"/>
+			<prefab name="skyscraper_01" 						max_count="1" prob="50" />
+			<prefab name="skyscraper_02" 						max_count="1" prob="50" />
+			<prefab name="skyscraper_03" 						max_count="1" prob="50" />
+			<prefab name="skyscraper_04" 						max_count="1" prob="50" />
+			<prefab name="xcostum_3BlockStores(by_Leo_Liuos)" 	max_count="1" prob="50" />
+			<prefab name="xcostum_Courthouse(by_stallionsden)"  max_count="1" prob="50" />
+			<prefab name="xcostum_Skycpraper(by_Peppino)"		max_count="1" prob="50" />
 		</prefab_rule>
 
 		<prefab_rule name="industrialGroup">
@@ -490,43 +526,56 @@
 			<prefab name="waste_rubble_bldg_08" />
 			<prefab name="waste_rubble_bldg_09" />
 			<prefab name="mp_waste_sewer_hole_1" />
+			<prefab name="xcostum_collapsed_bldg_01(by_BuLLeTZ)" 	max_count="2" />
+			<prefab name="xcostum_Glass_factory_big(by_Khyber)" 	max_count="1" />
+			<prefab name="xcostum_Hydro_Plant(by_LuckyStar)" 		max_count="1" />
+			<prefab name="xcostum_Nuclear_Powerplant(by_Rocky)"		max_count="1" />
+			<prefab name="xcostum_Plant(by_Wsiegel)"				max_count="1" />
+			<prefab name="xcostum_Polarstation(by_magoli)"			max_count="1" />
+			<prefab name="xcostum_Power_Station(by_LuckyStar)"		max_count="1" />
+			<prefab name="xcostum_powerplant(byKam)"				max_count="1" />
+			<prefab name="xcostum_Recycling(by_Limodor)"			max_count="1" />
+			<prefab name="xcostum_Science_lab(by_kinklade)"			max_count="1" />
+			<prefab name="xcostum_Storage(by_ShoNuff)"				max_count="1" />
+			<prefab name="xcostum_Tank_Garage(by_LuckyStar)"		max_count="2" />
+			<prefab name="xcostum_Warehouse(by_Batman)" 			max_count="1" prob="0.4" />
+			<prefab name="xcostum_Warehouse(by_Illidua)"			max_count="1" prob="0.4" />
+			<prefab name="xcostum_Windowfactory(by_magoli)"			max_count="1" />
 		</prefab_rule>
 
 		<prefab_rule name="ruralGroup">
-			<!-- REMOVE FARM POIs
-			<prefab name="blueberryfield_sm"/>
-			<prefab name="cornfield_sm"/>
-			<prefab name="cornfield_med"/>
-			<prefab name="potatofield_sm"/>
-			-->
-			<prefab name="barn_01" 				max_count="1" />
-			<prefab name="barn_02" 				max_count="1" />
-			<prefab name="barn_03" 				max_count="1" />
-			<prefab name="farm_shed1" 			max_count="1" />
-			<prefab name="farm_shed2" 			max_count="1" />
-			<prefab name="farm_shed3" 			max_count="1" />
-			<prefab name="farm_shed4" 			max_count="1" />
-			<prefab name="oldwest_stables" 		max_count="2" />
-			<prefab name="pond02" 				max_count="2" />
-			<prefab name="pond01" 				max_count="2" />
-			<prefab name="water_tower_01" 		max_count="1" />
-			<prefab name="water_tower_02" 		max_count="1" />
-			<prefab name="oldwest_watertower" 	max_count="1" />
-			<prefab name="oldwest_church"		max_count="1" />
-			<prefab name="oldwest_hotel_01"		max_count="1" />
-			<prefab name="oldwest_hotel_02" 	max_count="1" />
-			<prefab name="oldwest_jail"			max_count="1" />
-			<prefab name="oldwest_md_shop_01"	max_count="2" />
-			<prefab name="oldwest_md_shop_02"	max_count="2" />
-			<prefab name="oldwest_md_shop_03"	max_count="2" />
-			<prefab name="oldwest_md_shop_04"	max_count="2" />
-			<prefab name="oldwest_sm_shop_01"	max_count="2" />
-			<prefab name="oldwest_sm_shop_02"	max_count="2" />
-			<prefab name="oldwest_sm_shop_03"	max_count="2" />
+			<prefab name="barn_01" 									max_count="1" />
+			<prefab name="barn_02" 									max_count="1" />
+			<prefab name="barn_03" 									max_count="1" />
+			<prefab name="farm_shed1" 								max_count="1" />
+			<prefab name="farm_shed2" 								max_count="1" />
+			<prefab name="farm_shed3" 								max_count="1" />
+			<prefab name="farm_shed4" 								max_count="1" />
+			<prefab name="oldwest_stables" 							max_count="2" />
+			<prefab name="pond02" 									max_count="2" />
+			<prefab name="pond01" 									max_count="2" />
+			<prefab name="water_tower_01" 							max_count="1" />
+			<prefab name="water_tower_02" 							max_count="1" />
+			<prefab name="oldwest_watertower" 						max_count="1" />
+			<prefab name="oldwest_church"							max_count="1" />
+			<prefab name="oldwest_hotel_01"							max_count="1" />
+			<prefab name="oldwest_hotel_02" 						max_count="1" />
+			<prefab name="oldwest_jail"								max_count="1" />
+			<prefab name="oldwest_md_shop_01"						max_count="2" />
+			<prefab name="oldwest_md_shop_02"						max_count="2" />
+			<prefab name="oldwest_md_shop_03"						max_count="2" />
+			<prefab name="oldwest_md_shop_04"						max_count="2" />
+			<prefab name="oldwest_sm_shop_01"						max_count="2" />
+			<prefab name="oldwest_sm_shop_02"						max_count="2" />
+			<prefab name="oldwest_sm_shop_03"						max_count="2" />
+			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" max_count="1" />
+			<prefab name="xcostum_house2(by_Curbolt)" 				max_count="1" />
+			<prefab name="xcostum_oldwestBank(by_magoli)"			max_count="1" />
 		</prefab_rule>
 
 		<prefab_rule name="wildernessGroup">
 			<prefab rule="traderGroup" min_count="1" max_count="1" prob="0.4" />
+			<prefab name="xcostum_Cabin(by_Sudo)" max_count="1" />
 			<prefab name="cabin_01" />
 			<prefab name="cabin_02_sm" />
 			<prefab name="cabin_03_lg" />
@@ -562,6 +611,16 @@
 			<prefab name="house_new_mansion_01" prob="0.2"/>
 			<prefab name="house_new_mansion_02" prob="0.3"/>
 			<prefab name="house_new_mansion_03" prob="0.2"/>
+			<prefab name="xcostum_Asylum(by_Wsiegel)" prob="2" />
+			<prefab name="xcostum_CrashedAirplane(by_LazMan)" prob="0.2" />
+			<prefab name="xcostum_Farm(by_BigC90210)" prob="0.04" />
+			<prefab name="xcostum_Firewatchtower(by_SciFiFlippa)" prob="0.2" />
+			<prefab name="xcostum_GasnWash32(by_LuckyStar)"	prob="0.3" />
+			<prefab name="xcostum_LumberMill(by_IceJudge)" prob="0.2" />
+			<prefab name="xcostum_nationalparkLodge(by_Laz_Man)" prob="0.1" />
+			<prefab name="xcostum_RestArea_Desert(by_Guppycur)" prob="0.2" />
+			<prefab name="xcostum_RocketLaunchPad(by_Saeid)" prob="20" />
+			<prefab name="xcostum_TheMill(by_MoNKeYest1)" prob="0.15" />
 		</prefab_rule>
 
 		<prefab_rule name="detailFillerGroup">
