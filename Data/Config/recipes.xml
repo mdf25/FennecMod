@@ -220,7 +220,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="aloePlant" count="1"/>
 </recipe>
 
-
 <recipe name="aloeJuice" count="1" craft_exp_gain="10">
 	<ingredient name="aloePlant" count="5"/>
 	<ingredient name="emptyJar"	 count="1"/>
@@ -236,11 +235,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="emptyJar"	 count="1"/>
 </recipe>
 
-
 <recipe name="appleCider" count="1" craft_exp_gain="300" craft_area="fermenting_barrel" craft_time="300">
 	<ingredient name="appleJuice" count="1" />
 </recipe>
-
 
 <recipe name="fermentingBarrel" count="1" craft_area="workbench">
 	<ingredient name="wood"				count="20" />
@@ -248,7 +245,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="airFilter"		count="1" />
 	<ingredient name="shortMetalPipe"	count="1" />
 </recipe>
-
 
 <recipe name="healingAgent" count="1" craft_exp_gain="10" craft_area="chemistryStation">
 	<ingredient name="aloeCream" 		count="1" />
@@ -264,7 +260,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="healingAgent"		count="1" />
 	<ingredient name="cloth"			count="2" />
 </recipe>
-
 
 <recipe name="blueberryJuice" count="1" craft_time="20">
 	<ingredient name="blueberries" count="5" />
@@ -384,7 +379,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="seedPacketTomato" count="1"/>
 </recipe>
 
-
 <recipe name="ironFragment" count="30" craft_area="grinder_station" craft_time="1">
 	<ingredient name="ironOre" count="1" />
 </recipe>
@@ -436,7 +430,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="rawDiamond" count="2" craft_area="grinder_station" craft_time="1">
 	<ingredient name="diamondOre" count="1" />
 </recipe>
-
 
 <recipe name="flour" count="1" craft_time="10">
 	<ingredient name="wheat" count="3" />
@@ -621,6 +614,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsAuger_parts" count="1"/>
 	<ingredient name="partsAuger_blade" count="1"/>
 </recipe>
+
 <recipe name="partsAuger_blade" count="1" craft_area="workbench" craft_exp_gain="30">
 	<ingredient name="partsAuger_blade" count="1"/>
 	<ingredient name="repairKit" count="1"/>
@@ -631,30 +625,37 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="4"/>
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningRamp" count="1">
 	<ingredient name="wood" count="4"/>
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningCNRFull" count="1">
 	<ingredient name="wood" count="4"/>
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningCNRInside" count="1">
 	<ingredient name="wood" count="4"/>
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningGable" count="1">
 	<ingredient name="wood" count="4"/>
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningPyramid" count="1">
 	<ingredient name="wood" count="4"/>
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningCNRRound" count="1">
 	<ingredient name="wood" count="4"/>
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningCNRRoundTop" count="1">
 	<ingredient name="wood" count="4"/>
 	<ingredient name="cloth" count="10"/>
@@ -1116,6 +1117,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsChainsaw_parts" count="1"/>
 	<ingredient name="partsChainsaw_blade" count="1"/>
 </recipe>
+
 <recipe name="partsChainsaw_blade" count="1" craft_area="workbench" craft_exp_gain="30">
 	<ingredient name="partsChainsaw_blade" count="1"/>
 	<ingredient name="repairKit" count="1"/>
@@ -2061,6 +2063,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_iron" count="20"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
+
 <recipe name="glassBulletproofPlate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 	<ingredient name="unit_glass" count="110"/>
 	<ingredient name="unit_stone" count="10"/>
@@ -2068,6 +2071,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_iron" count="20"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
+
 <recipe name="glassBulletproofCTRPlate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 	<ingredient name="unit_glass" count="110"/>
 	<ingredient name="unit_stone" count="10"/>
@@ -2075,6 +2079,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_iron" count="20"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
+
 <recipe name="glassBulletproofPlateCurved" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 	<ingredient name="unit_glass" count="110"/>
 	<ingredient name="unit_stone" count="10"/>
@@ -2082,6 +2087,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_iron" count="20"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
+
 <recipe name="glassBulletproofRamp" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 	<ingredient name="unit_glass" count="110"/>
 	<ingredient name="unit_stone" count="10"/>
@@ -2496,7 +2502,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="groundSeeds" count="1" craft_time="10" craft_area="grinder_station" craft_exp_gain="5">
 	<ingredient name="plantedWheat1" count="2" />
 </recipe>
-
 
 <recipe name="vegetableOil" count="1" craft_time="20" craft_exp_gain="6">
 	<ingredient name="emptyJar"		count="1" />
@@ -3587,10 +3592,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="nail" count="5"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
+
 <recipe name="looseBoardsTrapBlock3x3" count="1"> <!-- trap -->
 	<ingredient name="nail" count="30"/>
 	<ingredient name="wood" count="180"/>
 </recipe>
+
 <recipe name="looseBoardsTrapPlate1x1" count="1"> <!-- trap -->
 	<ingredient name="nail" count="5"/>
 	<ingredient name="wood" count="20"/>
@@ -3602,6 +3609,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_lead" count="5"/>
 	<ingredient name="unit_clay" count="3"/>
 </recipe>
+
 <recipe name="trapGlassBusinessCTRSheet1x1" count="1" craft_area="forge" material_based="true"> <!-- trap -->
 	<ingredient name="unit_glass" count="20"/>
 	<ingredient name="unit_stone" count="5"/>
@@ -3834,6 +3842,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="electricParts" count="10"/>
 	<ingredient name="electronicParts" count="4"/>
 </recipe>
+
 <recipe name="batterybank" count="1" craft_area="workbench" craft_exp_gain="75">
 	<ingredient name="forgedIron" count="10"/>
 	<ingredient name="electricParts" count="8"/>
@@ -3851,29 +3860,35 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="4"/>
 </recipe>
+
 <recipe name="porchLight01_player" count="1" craft_area="workbench" craft_exp_gain="20">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="6"/>
 </recipe>
+
 <recipe name="wallLight01_player" count="1" craft_area="workbench" craft_exp_gain="20">
 	<ingredient name="forgedIron" count="12"/>
 </recipe>
+
 <recipe name="ceilingLight02_player" count="1" craft_area="workbench" craft_exp_gain="20">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="7"/>
 </recipe>
+
 <recipe name="industrialLight01_player" count="1" craft_area="workbench" craft_exp_gain="20">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="5"/>
 	<ingredient name="electronicParts" count="3"/>
 	<ingredient name="plasticSheet" count="1"/>
 </recipe>
+
 <recipe name="ceilingLight07_player" count="1" craft_area="workbench" craft_exp_gain="20">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="5"/>
 	<ingredient name="electronicParts" count="3"/>
 	<ingredient name="plasticSheet" count="3"/>
 </recipe>
+
 <recipe name="spotlightPlayer" count="1" craft_area="workbench" craft_exp_gain="20">
 	<ingredient name="headlight" count="1"/>
 	<ingredient name="electricParts" count="8"/>
@@ -3885,30 +3900,36 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="forgedIron" count="4"/>
 	<ingredient name="electricParts" count="3"/>
 </recipe>
+
 <recipe name="switch" count="1" craft_area="workbench" craft_exp_gain="12">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="forgedCopper" count="1" />
 	<ingredient name="mechanicalParts" count="1"/>
 	<ingredient name="electricParts" count="1"/>
 </recipe>
+
 <recipe name="pressureplate" count="1" craft_area="workbench" craft_exp_gain="12">
 	<ingredient name="forgedIron" count="10"/>
 	<ingredient name="mechanicalParts" count="2"/>
 	<ingredient name="electricParts" count="2"/>
 </recipe>
+
 <recipe name="pressureplateLong" count="1" craft_area="workbench" craft_exp_gain="25">
 	<ingredient name="pressureplate" count="5" />
 </recipe>
+
 <recipe name="tripwirepost" count="1" craft_area="workbench" craft_exp_gain="15">
 	<ingredient name="wood" count="5"/>
 	<ingredient name="electricParts" count="1"/>
 </recipe>
+
 <recipe name="electrictimerrelay" count="1" craft_area="workbench" craft_exp_gain="35">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="forgedSilver" count="1" />
 	<ingredient name="electricParts" count="2"/>
 	<ingredient name="electronicParts" count="3"/>
 </recipe>
+
 <recipe name="motionsensor" count="1" craft_area="workbench" craft_exp_gain="35">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="forgedGold" count="1"/>
@@ -3916,22 +3937,26 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="electricParts" count="2"/>
 	<ingredient name="electronicParts" count="3"/>
 </recipe>
+
 <recipe name="electricfencepost" count="1" craft_area="workbench" craft_exp_gain="20">
 	<ingredient name="forgedIron" count="5"/>
 	<ingredient name="forgedCopper" count="1" />
 	<ingredient name="electricParts" count="2"/>
 </recipe>
+
 <recipe name="bladeTrap" count="1" craft_area="workbench" craft_exp_gain="55"> <!-- trap -->
 	<ingredient name="forgedIron" count="10"/>
 	<ingredient name="forgedSteel" count="10"/>
 	<ingredient name="mechanicalParts" count="8"/>
 	<ingredient name="electricParts" count="6"/>
 </recipe>
+
 <recipe name="dartTrap" count="1" craft_area="workbench" craft_exp_gain="30"> <!-- trap -->
 	<ingredient name="forgedIron" count="20"/>
 	<ingredient name="mechanicalParts" count="6"/>
 	<ingredient name="electricParts" count="4"/>
 </recipe>
+
 <recipe name="steelDart" count="1" craft_area="forge" craft_tool="anvil" material_based="true"  craft_exp_gain="2">
 	<ingredient name="unit_iron" count="3"/>
 	<ingredient name="unit_clay" count="1"/>
@@ -3984,9 +4009,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsMP5_parts" 		count="1"/>
 	<ingredient name="mechanicalParts" 		count="6"/>
 </recipe>
-
-
-
 
 <recipe name="forgeCrucible" count="1" craft_area="workbench" craft_exp_gain="120">
 	<ingredient name="forgedSteel" 		count="30"	/>
@@ -4041,9 +4063,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cobblestones" count="4"/>
 </recipe>
 
-
-
-<!-- Class Recipes -->
 <recipe name="classPaperBuilder" count="1">
 	<ingredient name="classPaperCraftable" count="1" />
 </recipe>
@@ -4124,7 +4143,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="classPaperCraftable" count="1" />
 </recipe>
 
-<!-- Secondary -->
 <recipe name="classPaperBuilderSecondary" count="1" craft_area="research_desk" craft_time="120">
 	<ingredient name="noteFragment" count="1000" />
 </recipe>
@@ -4205,13 +4223,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="noteFragment" count="1000" />
 </recipe>
 
-
 <recipe name="researchDesk" count="1" craft_area="workbench" craft_time="30">
 	<ingredient name="wood" 		count="20" />
 	<ingredient name="nail"			count="8"  />
 	<ingredient name="noteFragment" count="100" />
 </recipe>
-
 
 <recipe name="chickenAndSweetcornSoup" count="1" craft_area="working_oven" craft_time="50">
 	<ingredient name="canChicken"   count="1"/>
@@ -4543,8 +4559,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledMilk"		count="1" />
 </recipe>
 
-
-
 <recipe name="cheesyChickenBurger" count="1" craft_area="kitchen_workbench" craft_time="20" craft_tool="breadBoard">
 	<ingredient name="bread"				count="1" />
 	<ingredient name="cheese" 				count="1" />
@@ -4603,7 +4617,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="dough"				count="2" />
 	<ingredient name="cheese"				count="1" />
 </recipe>
-
 
 <recipe name="charredVenisonMeat" count="1" craft_area="campfire" craft_time="20">
 	<ingredient name="rawVenisonMeat" count="1" />
@@ -4724,8 +4737,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="grilledSnakeMeat" count="1" craft_area="working_oven" craft_time="10">
 	<ingredient name="rawSnakeMeat" count="1" />
 </recipe>
-
-
 
 <recipe name="ironHelmetLight" count="1" craft_exp_gain="10">
 	<ingredient name="ironHelmet" count="1"/>
@@ -4932,7 +4943,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapIron"	 	count="10" />
 </recipe>
 
-<!-- QUICK DRYING CONCRETE RECIPES -->
 <recipe name="concreteMixQuick" count="10" craft_time="10" craft_area="cementMixer">
 	<ingredient name="concreteMix"				count="10" />
 	<ingredient name="calciumNitrateSolution"	count="1"  />
@@ -5080,8 +5090,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="concreteMixQuick"			count="10"	/>
 </recipe>
 
-
-<!-- Reinforced concrete quick dry -->
 <recipe name="rConcreteBlock" count="1" craft_area="cementMixer" craft_time="5">
 	<ingredient name="concreteMixQuick"			count="10"	/>
 	<ingredient name="rebarFrameBlock"			count="1"	/>
@@ -5600,7 +5608,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="grainAlcohol"			count="1" />
 </recipe>
 
-
 <recipe name="bookScience" count="1" craft_time="30">
 	<ingredient name="noteFragment" count="100" />
 </recipe>
@@ -5620,7 +5627,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="bookArmorCrafting" count="1" craft_time="30">
 	<ingredient name="noteFragment" count="100" />
 </recipe>
-
 
 <recipe name="bookScience" count="1" craft_time="10" craft_area="research_desk">
 	<ingredient name="noteFragment" count="50" />
@@ -5642,13 +5648,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="noteFragment" count="50" />
 </recipe>
 
-
 <recipe name="smallRefinery" count="1" craft_area="workbench" craft_time="120">
-	<ingredient name="forgedSteel" 		count="30" />
-	<ingredient name="plasticSheet" 	count="30" />
-	<ingredient name="electricParts" 	count="25" />
-	<ingredient name="shortMetalPipe" 	count="7" />
-	<ingredient name="burningBarrel" 	count="3" />
+	<ingredient name="forgedSteel" 			count="30" />
+	<ingredient name="plasticSheet" 		count="30" />
+	<ingredient name="electricParts" 		count="25" />
+	<ingredient name="shortMetalPipe" 		count="7" />
+	<ingredient name="burningBarrelPlayer" 	count="3" />
 </recipe>
 
 <recipe name="crudeOil" count="1" craft_area="small_refinery" craft_tool="distillationColumn" craft_time="20">
