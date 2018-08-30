@@ -249,7 +249,8 @@
 </entity_class>
 
 <entity_class name="zombieWightFeralNS" extends="zombieWightFeral">
-	<property name="SightRange"	value="90" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieWightFeralFrozen" extends="zombieWightFeralNS">
@@ -260,6 +261,8 @@
 	<property name="ApproachSpeed" value="0.9"/>
 	<property name="NightApproachSpeed" value="0.9"/>
 	<property name="HandItem" value="handZombieFeralFrozen"/>
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieWightFeralRadiated" extends="zombieWightFeral">
@@ -302,7 +305,8 @@
 </entity_class>
 
 <entity_class name="zombieWightFeralRadiatedNS" extends="zombieWightFeralRadiated">
-	<property name="SightRange"	value="120" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!--
@@ -354,7 +358,8 @@
 </entity_class>
 
 <entity_class name="zombieBoeNS" extends="zombieBoe">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieBoeFrozen" extends="zombieBoeNS">
@@ -365,6 +370,8 @@
 	<property name="ApproachSpeed" value="0.1"/>
 	<property name="NightApproachSpeed" value="0.8"/>
 	<property name="HandItem" value="handZombieFrozen"/>
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieBoeRadiated -->
@@ -385,7 +392,8 @@
 </entity_class>
 
 <entity_class name="zombieBoeFeralNS" extends="zombieBoeFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieBoeFeralRadiated -->
@@ -419,7 +427,8 @@
 </entity_class>
 
 <entity_class name="zombieFootballPlayerNS" extends="zombieFootballPlayer">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieFootballPlayerRadiated -->
@@ -462,7 +471,8 @@
 </entity_class>
 
 <entity_class name="zombieFemaleFatNS" extends="zombieFemaleFat">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieFemaleFatFrozen" extends="zombieFemaleFatNS">
@@ -473,8 +483,8 @@
 	<property name="ApproachSpeed" value="0.1"/>
 	<property name="NightApproachSpeed" value="0.8"/>
 	<property name="HandItem" value="handZombieFrozen"/>
-	<!-- Tint material 1 is the eyes -->
-	<!-- Tint material 2 is hair -->
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieFemaleFatRadiated -->
@@ -495,7 +505,8 @@
 </entity_class>
 
 <entity_class name="zombieFemaleFatFeralNS" extends="zombieFemaleFatFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 
@@ -563,7 +574,8 @@
 </entity_class>
 
 <entity_class name="zombieJoeNS" extends="zombieJoe">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieJoeFrozen" extends="zombieJoeNS">
@@ -594,7 +606,8 @@
 </entity_class>
 
 <entity_class name="zombieJoeFeralNS" extends="zombieJoeFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieJoeFeralRadiated -->
@@ -624,7 +637,8 @@
 </entity_class>
 
 <entity_class name="zombieMoeNS" extends="zombieMoe">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieMoeFrozen" extends="zombieMoeNS">
@@ -654,7 +668,8 @@
 </entity_class>
 
 <entity_class name="zombieMoeFeralNS" extends="zombieMoeFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieMoeFeralRadiated -->
@@ -681,7 +696,8 @@
 </entity_class>
 
 <entity_class name="zombieArleneNS" extends="zombieArlene">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieArleneFrozen" extends="zombieArleneNS">
@@ -711,7 +727,8 @@
 </entity_class>
 
 <entity_class name="zombieArleneFeralNS" extends="zombieArleneFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieArleneFeralRadiated -->
@@ -733,6 +750,8 @@
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="LootListOnDeath" value="102"/>
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
@@ -772,7 +791,8 @@
 </entity_class>
 
 <entity_class name="zombieDarleneNS" extends="zombieDarlene">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieDarleneFrozen" extends="zombieDarleneNS">
@@ -802,7 +822,8 @@
 </entity_class>
 
 <entity_class name="zombieDarleneFeralNS" extends="zombieDarleneFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieDarleneFeralRadiated -->
@@ -829,7 +850,8 @@
 </entity_class>
 
 <entity_class name="zombieMarleneNS" extends="zombieMarlene">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieMarleneFrozen" extends="zombieMarleneNS">
@@ -859,7 +881,8 @@
 </entity_class>
 
 <entity_class name="zombieMarleneFeralNS" extends="zombieMarleneFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieMarleneFeralRadiated -->
@@ -876,7 +899,8 @@
 </entity_class>
 
 <entity_class name="zombieYoNS" extends="zombieYo">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieYoFrozen" extends="zombieYoNS">
@@ -907,7 +931,8 @@
 </entity_class>
 
 <entity_class name="zombieYoFeralNS" extends="zombieYoFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieYoFeralRadiated -->
@@ -923,7 +948,8 @@
 </entity_class>
 
 <entity_class name="zombieSteveNS" extends="zombieSteve">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieSteveFrozen" extends="zombieSteveNS">
@@ -954,7 +980,8 @@
 </entity_class>
 
 <entity_class name="zombieSteveFeralNS" extends="zombieSteveFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieSteveFeralRadiated -->
@@ -974,7 +1001,8 @@
 </entity_class>
 
 <entity_class name="zombieSteveCrawlerNS" extends="zombieSteveCrawler">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieSteveCrawlerRadiated -->
@@ -989,7 +1017,8 @@
 </entity_class>
 
 <entity_class name="zombieSteveCrawlerFeralNS" extends="zombieSteveCrawlerFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieSteveCrawlerFeralRadiated -->
@@ -1006,7 +1035,8 @@
 </entity_class>
 
 <entity_class name="zombieBusinessManNS" extends="zombieBusinessMan">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieBusinessManBoss" extends="zombieBusinessManNS">
@@ -1045,7 +1075,8 @@
 </entity_class>
 
 <entity_class name="zombieBusinessManFeralNS" extends="zombieBusinessManFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieBusinessManFeralRadiated -->
@@ -1072,7 +1103,8 @@
 </entity_class>
 
 <entity_class name="zombieSnowNS" extends="zombieSnow">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieSnowRadiated -->
@@ -1093,7 +1125,8 @@
 </entity_class>
 
 <entity_class name="zombieSnowFeralNS" extends="zombieSnowFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieSnowFeralRadiated -->
@@ -1132,7 +1165,8 @@
 </entity_class>
 
 <entity_class name="zombieSpiderNS" extends="zombieSpider">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieSpiderRadiated -->
@@ -1153,7 +1187,8 @@
 </entity_class>
 
 <entity_class name="zombieSpiderFeralNS" extends="zombieSpiderFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieSpiderFeralRadiated" extends="zombieSpiderFeral">
@@ -1172,7 +1207,8 @@
 </entity_class>
 
 <entity_class name="zombieSpiderFeralRadiatedNS" extends="zombieSpiderFeralRadiated">
-	<property name="SightRange"	value="120" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieBurnt" extends="zombieTemplateMale">
@@ -1193,6 +1229,8 @@
 	<property name="ArmsExplosionDamageMultiplier" value="3"/>
 	<property name="HeadExplosionDamageMultiplier" value="3"/>
 	<property name="ChestExplosionDamageMultiplier" value="3"/>
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
@@ -1253,6 +1291,8 @@
 	<property name="HeadExplosionDamageMultiplier" value="2"/>
 	<property name="ChestExplosionDamageMultiplier" value="2"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
@@ -1292,7 +1332,8 @@
 </entity_class>
 
 <entity_class name="zombieNurseNS" extends="zombieNurse">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieNurseFrozen" extends="zombieNurseNS">
@@ -1323,7 +1364,8 @@
 </entity_class>
 
 <entity_class name="zombieNurseFeralNS" extends="zombieNurseFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieNurseFeralRadiated -->
@@ -1357,7 +1399,8 @@
 </entity_class>
 
 <entity_class name="zombieFatHawaiianNS" extends="zombieFatHawaiian">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieFatHawaiianRadiated -->
@@ -1378,7 +1421,8 @@
 </entity_class>
 
 <entity_class name="zombieFatHawaiianFeralNS" extends="zombieFatHawaiianFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieFatHawaiianFeralRadiated -->
@@ -1485,7 +1529,8 @@
 </entity_class>
 
 <entity_class name="zombieFatCopNS" extends="zombieFatCop">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieFatCopRadiated -->
@@ -1503,7 +1548,8 @@
 </entity_class>
 
 <entity_class name="zombieFatCopFeralNS" extends="zombieFatCopFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieFatRocketCop" extends="zombieFatCopNS">
@@ -1542,7 +1588,8 @@
 </entity_class>
 
 <entity_class name="zombieFatCopFeralRadiatedNS" extends="zombieFatCopFeralRadiated">
-	<property name="SightRange"	value="100" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieMaleHazmat" extends="zombieBoe">
@@ -1555,7 +1602,8 @@
 </entity_class>
 
 <entity_class name="zombieMaleHazmatNS" extends="zombieMaleHazmat">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieMaleHazmatFrozen" extends="zombieMaleHazmatNS">
@@ -1600,7 +1648,8 @@
 </entity_class>
 
 <entity_class name="zombieUtilityWorkerNS" extends="zombieUtilityWorker">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieUtilityWorkerFrozen" extends="zombieUtilityWorkerNS">
@@ -1640,7 +1689,8 @@
 </entity_class>
 
 <entity_class name="zombieUtilityWorkerFeralNS" extends="zombieUtilityWorkerFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieUtilityWorkerFeralRadiated -->
@@ -1666,7 +1716,8 @@
 </entity_class>
 
 <entity_class name="zombieSoldierNS" extends="zombieSoldier">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieSoldierRadiated -->
@@ -1686,7 +1737,8 @@
 </entity_class>
 
 <entity_class name="zombieSoldierFeralNS" extends="zombieSoldierFeral">
-	<property name="SightRange"	value="100" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieSoldierFeralRadiated -->
@@ -1706,7 +1758,8 @@
 </entity_class>
 
 <entity_class name="zombieSkateboarderNS" extends="zombieSkateboarder">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieSkateboarderFrozen" extends="zombieSkateboarderNS">
@@ -1736,7 +1789,8 @@
 </entity_class>
 
 <entity_class name="zombieSkateboarderFeralNS" extends="zombieSkateboarderFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieSkateboarderFeralRadiated -->
@@ -1763,7 +1817,8 @@
 </entity_class>
 
 <entity_class name="zombieCheerleaderNS" extends="zombieCheerleader">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieCheerleaderFrozen" extends="zombieCheerleaderNS">
@@ -1793,7 +1848,8 @@
 </entity_class>
 
 <entity_class name="zombieCheerleaderFeralNS" extends="zombieCheerleaderFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieCheerleaderFeralRadiated -->
@@ -1806,7 +1862,8 @@
 </entity_class>
 
 <entity_class name="zombieOldTimerNS" extends="zombieOldTimer">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieOldTimerRadiated -->
@@ -1828,7 +1885,8 @@
 </entity_class>
 
 <entity_class name="zombieOldTimerFeralNS" extends="zombieOldTimerFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieOldTimerFeralRadiated -->
@@ -1848,7 +1906,8 @@
 </entity_class>
 
 <entity_class name="zombieBikerNS" extends="zombieBiker">
-	<property name="SightRange"	value="90" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieBikerFrozen" extends="zombieBikerNS">
@@ -1879,7 +1938,8 @@
 </entity_class>
 
 <entity_class name="zombieFarmerNS" extends="zombieFarmer">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieFarmerRadiated -->
@@ -1903,7 +1963,8 @@
 </entity_class>
 
 <entity_class name="zombieFarmerFeralNS" extends="zombieFarmerFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieFarmerFeralRadiated -->
@@ -1918,7 +1979,8 @@
 </entity_class>
 
 <entity_class name="zombieStripperNS" extends="zombieStripper">
-	<property name="SightRange"	value="70" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <entity_class name="zombieStripperFrozen" extends="zombieStripperNS">
@@ -1949,7 +2011,8 @@
 </entity_class>
 
 <entity_class name="zombieStripperFeralNS" extends="zombieStripperFeral">
-	<property name="SightRange"	value="80" />
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- Missing: zombieStripperFeralRadiated -->
@@ -1986,8 +2049,8 @@
 <entity_class name="DC-KILLER" extends="zombieUMATemplateMale" >
     <property name="Archetype" value="DC-KILLER"/>
     <property name="AvatarController" value="AvatarZombie01Controller"/>
-    <property name="SightRange" value="120"/> <!-- distance in m -->
-    <property name="SightScale" value="-2,50"/> <!-- how well lit you have to be for the zombie to see you at min,max range -->
+    <property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
     <property name="NoiseAlertThreshold" value="40"/> <!-- for awake zombies -->
     <property name="SmellAlertThreshold" value="80"/> <!-- for awake zombies -->
     <property name="WalkType" value="7"/>
@@ -2274,8 +2337,6 @@
 	<property name="AITask-3" value="Territorial"/>
 	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="20"/>
 	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" param2="20"/>
-	<!--property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalBear" /-->
-	<!--property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityAnimalStag" /-->
 	<property name="AITask-6" value="ApproachSpot"/>
 	<property name="AITask-7" value="Wander"/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
@@ -2288,6 +2349,8 @@
 	<property name="SleeperSmellWakeThreshold" value="10,40"/>
 	<property name="SmellAlertThreshold" value="5"/> <!-- for awake zombies -->
 	<property name="PhysicsBody" value="zombieDog"/>
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4"/> <!-- animalZombieDog -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1"/>
@@ -2337,13 +2400,13 @@
 	<property name="AITask-3" value="BreakBlock"/>
 	<property name="AITask-4" value="Territorial"/>
 	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" param2="40"/>
-	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="25"/>
+	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="50"/>
 	<property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30"/>
 	<property name="AITask-8" value="ApproachSpot"/>
 	<property name="AITask-9" value="Wander"/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
 	<property name="AITarget-2" value="BlockingTargetTask"/>
-	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="30"/>
 	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
 	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
 	<property name="SoundHurt" value="Animals/Bear/bearpain"/>
@@ -2356,6 +2419,8 @@
 	<property name="SoundGiveUp" value="Animals/Bear/beargiveup"/>
 	<property name="ExperienceGain" value="2509"/>
 	<property name="DeadBodyHitPoints" value="600"/>
+	<property name="SightRange" value="100"/>
+	<property name="SightScale" value="-2,20"/>
 	<drop event="Harvest" name="rawBearMeat" tool_category="Butcher" count="3"/> <!-- animalBear -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
@@ -2418,7 +2483,7 @@
 	<property name="AITask-3" value="BreakBlock"/>
 	<property name="AITask-4" value="Territorial"/>
 	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" param2="40"/>
-	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="15"/>
+	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="45"/>
 	<property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30"/>
 	<property name="AITask-8" value="ApproachSpot"/>
 	<property name="AITask-9" value="Wander"/>
@@ -2465,9 +2530,11 @@
 	<property name="AITask-9" value="Wander"/>
 	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
 	<property name="AITarget-2" value="BlockingTargetTask"/>
-	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="30"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="50"/>
 	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
 	<property name="DeadBodyHitPoints" value="450"/>
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 	<drop event="Harvest" name="rawWolfMeat" tool_category="Butcher" count="3"/> <!-- animalDireWolf -->
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="12"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
@@ -2641,6 +2708,8 @@
 	<property name="AITarget-2" value="BlockingTargetTask"/>
 	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="40"/>
 	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
+	<property name="SightRange" value="200"/>
+	<property name="SightScale" value="-2,20"/>
 </entity_class>
 
 <!-- VEHICLES -->
