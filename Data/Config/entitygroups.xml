@@ -347,14 +347,16 @@
 	</entitygroup>
 
 	<entitygroup name="AnimalsFarm">
-		<entity name="animalBoar" />
+		<entity name="animalBoar" 			prob="0.7" />
+		<entity name="animalBoarAggressive" prob="0.3" />
 		<entity name="animalChicken" />
 	</entitygroup>
 
 	<entitygroup name="AnimalsDesert">
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
-		<entity name="animalBoar" prob="0.3" />
+		<entity name="animalBoar" 			prob="0.2" />
+		<entity name="animalBoarAggressive" prob="0.1" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsDesert">
@@ -364,24 +366,26 @@
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsDesert">
-		<entity name="invisibleAnimal" prob="1" />
+		<entity name="invisibleAnimal" 		prob="1" />
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
-		<entity name="animalBoar" prob="0.4" />
+		<entity name="animalBoar" 			prob="0.3" />
+		<entity name="animalBoarAggressive"	prob="0.1" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsSnow">
-		<entity name="invisibleAnimalEnemy" prob="2" />
-		<entity name="animalZombieVulture" prob="0.4" />
-		<entity name="animalDireWolf" prob="0.1" />
-		<entity name="animalBear" prob="0.05" />
+		<entity name="invisibleAnimalEnemy" prob="1.5" />
+		<entity name="animalZombieVulture" 	prob="0.4" />
+		<entity name="animalDireWolf" 		prob="0.2" />
+		<entity name="animalBear" 			prob="0.05" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsSnow">
-		<entity name="invisibleAnimal" prob="1" />
+		<entity name="invisibleAnimal" 		prob="1" />
 		<entity name="animalRabbit" />
-		<entity name="animalBoar" prob="0.4" />
-		<entity name="animalStag" prob="0.4" />
+		<entity name="animalBoar" 			prob="0.3" />
+		<entity name="animalBoarAggressive" prob="0.1" />
+		<entity name="animalStag" 			prob="0.4" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsForest">
@@ -392,15 +396,16 @@
 	</entitygroup>
 
 	<entitygroup name="BearsGroup">
-		<entity name="invisibleAnimalEnemy" prob="4.5" />
-		<entity name="animalBear" prob="0.1" />
+		<entity name="invisibleAnimalEnemy" prob="9" />
+		<entity name="animalBear" 			prob="1" />
 	</entitygroup>
 	
 	<entitygroup name="FriendlyAnimalsForest">
 		<!--<entity name="invisibleAnimal" prob="3" />-->
 		<entity name="animalRabbit" />
-		<entity name="animalBoar" prob="0.4" />
-		<entity name="animalStag" prob="0.4" />
+		<entity name="animalBoar" 			prob="0.3" />
+		<entity name="animalBoarAggressive"	prob="0.1" />
+		<entity name="animalStag" 			prob="0.4" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsBurntForest">
@@ -410,10 +415,10 @@
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsBurntForest">
-		<entity name="invisibleAnimal" prob="3" />
+		<entity name="invisibleAnimal" 		prob="3" />
 		<entity name="animalChicken" />
-		<entity name="animalStag" prob="0.4" />
-		<entity name="animalBoar" prob="0.4" />
+		<entity name="animalStag" 			prob="0.4" />
+		<entity name="animalBoarAggressive" prob="0.4" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsPlains">
@@ -427,7 +432,8 @@
 		<!--<entity name="invisibleAnimal" prob="6" />-->
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
-		<entity name="animalBoar" />
+		<entity name="animalBoar" 			prob="0.7" />
+		<entity name="animalBoarAggressive" prob="0.3" />
 		<entity name="animalStag" />
 	</entitygroup>
 
@@ -435,25 +441,45 @@
 		<entity name="animalRabbit" />
 		<entity name="animalChicken" />
 		<entity name="animalStag" />
-		<entity name="animalBoar" />
+		<entity name="animalBoar"			prob="0.7" />
+		<entity name="animalBoarAggressive" prob="0.3" />
 		<entity name="animalSnake" />
 		<entity name="animalZombieVulture" />
 		<entity name="animalWolf" />
-		<entity name="animalDireWolf" prob="0.15" />
-		<entity name="animalBear" prob="0.15" />
+		<entity name="animalDireWolf" 		prob="0.15" />
+		<entity name="animalBear" 			prob="0.15" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsWasteland" >
-		<entity name="animalSnake" prob="0.2" />
-		<entity name="animalZombieVulture" prob="0.4" />
+		<entity name="animalSnake" 			prob="0.2" />
+		<entity name="animalZombieVulture" 	prob="0.4" />
 		<entity name="animalZombieDog" />
-		<entity name="animalZombieBear" prob="0.15" />
+		<entity name="animalZombieBear" 	prob="0.15" />
 	</entitygroup>
 
 	<entitygroup name="ZombieDogGroup">
 		<entity name="animalZombieDog" />
 	</entitygroup>
+	
+	<entitygroup name="ZombieDogGroup2">
+		<entity name="animalZombieDog"				prob="0.8" />
+		<entity name="animalZombieDogFeralRadiated"	prob="0.2" />
+	</entitygroup>
 
+	<entitygroup name="ZombieDogGroup3">
+		<entity name="animalZombieDog"				prob="0.5" />
+		<entity name="animalZombieDogFeralRadiated"	prob="0.5" />
+	</entitygroup>
+	
+	<entitygroup name="ZombieDogGroup4">
+		<entity name="animalZombieDog"				prob="0.2" />
+		<entity name="animalZombieDogFeralRadiated"	prob="0.8" />
+	</entitygroup>
+	
+	<entitygroup name="ZombieDogGroup5">
+		<entity name="animalZombieDogFeralRadiated"	/>
+	</entitygroup>
+	
 	<entitygroup name="WolfGroup">
 		<entity name="animalWolf" />
 	</entitygroup>
@@ -472,13 +498,35 @@
 	</entitygroup>
 	
 	<entitygroup name="ZombieBusinessManMixedGroup">
-		<entity name="zombieBusinessMan" />
-		<entity name="zombieBusinessManFeral" />
+		<entity name="zombieBusinessMan"		prob="6" />
+		<entity name="zombieBusinessManFeral" 	prob="1" />
+		<entity name="zombieWightFeral"			prob="0.05" />
+	</entitygroup>
+	
+	<entitygroup name="ZombieBusinessManMixedGroup2">
+		<entity name="zombieBusinessMan"			prob="3" />
+		<entity name="zombieBusinessManFeral" 		prob="1" />
+		<entity name="zombieWightFeral"				prob="0.02" />
+		<entity name="zombieFemaleFatBomberFeral"	prob="0.05" />
+		<entity name="zombieFatHawaiianBomberFeral" prob="0.05" />
+	</entitygroup>
+	
+	<entitygroup name="ZombieBusinessManMixedGroup3">
+		<entity name="zombieBusinessMan"			prob="1" />
+		<entity name="zombieBusinessManFeral" 		prob="3" />
+		<entity name="zombieWightFeral"				prob="0.04" />
+		<entity name="zombieFemaleFatBomberFeral"	prob="0.05" />
+		<entity name="zombieFatHawaiianBomberFeral" prob="0.05" />
+		<entity name="animalZombieDog"				prob="0.02" />
 	</entitygroup>
 	
 	<entitygroup name="ZombieBusinessManFeralGroup">
-		<entity name="zombieBusinessManBoss" prob="0.04" />
-		<entity name="zombieBusinessManFeral" />
+		<entity name="zombieBusinessManFeral" 				prob="2" />
+		<entity name="zombieBusinessManBoss" 				prob="0.15" />
+		<entity name="zombieWightFeralRadiated"				prob="0.05" />
+		<entity name="zombieFemaleFatBomberFeralRadiated" 	prob="0.05" />
+		<entity name="zombieFatHawaiianBomberFeralRadiated" prob="0.05" />
+		<entity name="animalZombieDogFeralRadiated"			prob="0.03" />
 	</entitygroup>
 
 	<entitygroup name="ZombieBadassGroup">
@@ -539,9 +587,47 @@
 		<entity name="zombieWightFeralNS" prob="0.1" />
 	</entitygroup>
 
+	<entitygroup name="ZombieSoldierSleeperGroup">
+		<entity name="zombieSoldier" />
+		<entity name="zombieMaleHazmat" prob="0.2" />
+		<entity name="zombieWightFeral" prob="0.1" />
+	</entitygroup>
+	
+	<entitygroup name="ZombieSoldierSleeperGroupMixed">
+		<entity name="zombieSoldier" 		prob="2"	/>
+		<entity name="zombieSoldierFeral" 	prob="0.5"	/>
+		<entity name="zombieMaleHazmat" 	prob="0.4" 	/>
+		<entity name="zombieWightFeral" 	prob="0.1" 	/>
+	</entitygroup>
+	
+	<entitygroup name="ZombieSoldierSleeperGroupMixed2">
+		<entity name="zombieSoldier" 		prob="0.5"	/>
+		<entity name="zombieSoldierFeral" 	prob="2"	/>
+		<entity name="zombieMaleHazmat" 	prob="0.4" 	/>
+		<entity name="zombieWightFeral" 	prob="0.3" 	/>
+	</entitygroup>
+	
+	<entitygroup name="ZombieSoldierSleeperGroupFeral">
+		<entity name="zombieSoldierFeral" 	prob="2"	/>
+		<entity name="zombieMaleHazmat" 	prob="0.4" 	/>
+		<entity name="zombieWightFeral" 	prob="0.3" 	/>
+		<entity name="zombieFatRocketCop"	prob="0.1"  />
+	</entitygroup>
+	
 	<entitygroup name="ZombieFootballStadiumGroup">
 		<entity name="zombieFootballPlayer" prob="10" />
 		<entity name="zombieCheerleader" prob="10"/>
+		<entity name="zombieBoe" prob="0.01" />
+		<entity name="zombieJoe" prob="0.01" />
+		<entity name="zombieSteve" prob="0.01" />
+		<entity name="zombieYo" prob="0.01" />
+		<entity name="zombieNurse" prob="0.01" />
+		<entity name="zombieFatHawaiian" prob="0.01" />
+	</entitygroup>
+	
+	<entitygroup name="ZombieFootballStadiumGroupFeral">
+		<entity name="zombieFootballPlayer" prob="10" />
+		<entity name="zombieCheerleaderFeral" prob="10"/>
 		<entity name="zombieBoe" prob="0.01" />
 		<entity name="zombieJoe" prob="0.01" />
 		<entity name="zombieSteve" prob="0.01" />
@@ -612,7 +698,20 @@
 		<entity name="zombieBlueFlare" prob="0.1" />
 	</entitygroup>
 	
-	
+	<entitygroup name="ZombieGhostTownFeralRadiatedSleeperGroup"> <!-- old west town -->
+		<entity name="zombieOldTimerFeral" prob="4"/>
+		<entity name="zombieMarleneFeral" />
+		<entity name="zombieArleneFeral" />
+		<entity name="zombieJoeFeral" />
+		<entity name="zombieSteveCrawlerFeral" />
+		<entity name="zombieFemaleFatFeral" />
+		<entity name="zombieSkateboarderFeral" />
+		<entity name="zombieBoeFeral" />
+		<entity name="zombieMoeFeral" />
+		<entity name="animalZombieDogFeralRadiated" 		prob="0.8" />
+		<entity name="zombieFatHawaiianBomberFeralRadiated" prob="0.5" />
+		<entity name="zombieBlueFlareFeralRadiated" 		prob="0.1" />
+	</entitygroup>
 	
 	
 	
@@ -625,6 +724,57 @@
 		<entity name="zombieBoe" />
 		<entity name="zombieMoe" />
 	</entitygroup>
+	
+	<entitygroup name="ZombieBikerBarGroupMixed"> 
+		<entity name="zombieBiker" 					prob="6"	/>
+		<entity name="zombieStripper" 				prob="4"	/>
+		<entity name="zombieUtilityWorker" 			prob="1"	/>
+		<entity name="zombieFarmer" 				prob="1"	/>
+		<entity name="zombieSkateboarder" 			prob="1"	/>
+		<entity name="zombieBoe" 					prob="1"	/>
+		<entity name="zombieMoe" 					prob="1"	/>
+		<entity name="zombieStripperFeral" 			prob="2"	/>
+		<entity name="zombieUtilityWorkerFeral" 	prob="0.5" 	/>
+		<entity name="zombieFarmerFeral" 			prob="0.5" 	/>
+		<entity name="zombieSkateboarderFeral" 		prob="0.5" 	/>
+		<entity name="zombieBoeFeral" 				prob="0.5" 	/>
+		<entity name="zombieMoeFeral" 				prob="0.5" 	/>
+		<entity name="zombieWightFeral"				prob="0.1"  />
+	</entitygroup>
+	
+	<entitygroup name="ZombieBikerBarGroupMixed2"> 
+		<entity name="zombieBiker" 					prob="6"	/>
+		<entity name="zombieStripper" 				prob="2"	/>
+		<entity name="zombieUtilityWorker" 			prob="0.5"	/>
+		<entity name="zombieFarmer" 				prob="0.5"	/>
+		<entity name="zombieSkateboarder" 			prob="0.5"	/>
+		<entity name="zombieBoe" 					prob="0.5"	/>
+		<entity name="zombieMoe" 					prob="0.5"	/>
+		<entity name="zombieStripperFeral" 			prob="4"	/>
+		<entity name="zombieUtilityWorkerFeral" 	prob="1" 	/>
+		<entity name="zombieFarmerFeral" 			prob="1" 	/>
+		<entity name="zombieSkateboarderFeral" 		prob="1" 	/>
+		<entity name="zombieBoeFeral" 				prob="1" 	/>
+		<entity name="zombieMoeFeral" 				prob="1" 	/>
+		<entity name="zombieSpiderFeral"			prob="0.3"  />
+		<entity name="zombieWightFeral"				prob="0.3"  />
+	</entitygroup>
+	
+	<entitygroup name="ZombieBikerBarGroupFeral"> 
+		<entity name="zombieBiker" 					prob="6"	/>
+		<entity name="zombieStripperFeral" 			prob="4"	/>
+		<entity name="zombieUtilityWorkerFeral" 	prob="1" 	/>
+		<entity name="zombieFarmerFeral" 			prob="1" 	/>
+		<entity name="zombieSkateboarderFeral" 		prob="1" 	/>
+		<entity name="zombieBoeFeral" 				prob="1" 	/>
+		<entity name="zombieMoeFeral" 				prob="1" 	/>
+		<entity name="zombieWightFeralRadiated"		prob="0.2"  />
+		<entity name="zombieSpiderFeralRadiated"	prob="0.8"	/>
+		<entity name="animalZombieBear"				prob="0.2"  />
+		<entity name="zombieBlueFlare"				prob="0.3"  />
+	</entitygroup>
+	
+	
 
 	<entitygroup name="ZombieAnimalsGroup">
 		<entity name="animalZombieDog"  prob="4"/>

@@ -903,6 +903,7 @@ workstations
 			<item name="q_sinkupgrade" 			count="1" />
 			<item name="q_penetrationtester"	count="1" />
 			<item name="q_bosskiller"			count="1" />
+			<item name="q_chemistry"			count="1" />
 		</trader_items>
 
 		<tier_items level="1,499" count="all">  <!-- requires Perk 0 -->

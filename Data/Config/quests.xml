@@ -360,7 +360,13 @@
 		<reward type="Item"			id="nuclearPowerBook" 	value="1" />
 	</quest>
 	
-	
+	<quest id="quest_chemistry_1" name_key="quest_chemistry_1" subtitle_key="quest_chemistry_1_subtitle" description_key="quest_chemistry_1_offer" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="quest" offer_key="quest_chemistry_1_offer" difficulty="easy">
+		<objective type="Fetch" 	id="hydrochloricAcidSolution"	value="10"	/>
+		<objective type="Fetch" 	id="nitricAcidSolution"			value="10"	/>
+		<objective type="Fetch" 	id="sulfuricAcidSolution"		value="10"	/>
+		<reward type="Item"			id="acidCraftingSchematic" 		value="1" />
+	</quest>
 	
 	
 	

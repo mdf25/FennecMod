@@ -782,9 +782,9 @@ quest_bosskiller_1,,Quest Info,Reordered,"Big Bad Boss Killer",,,,
 quest_bosskiller_1_subtitle,,Quest Info,Reordered,"Kill the Boss Zombies!",,,,
 quest_bosskiller_1_offer,,Quest Info,Reordered,"Those zombie bastards are tough, but some of them are even tougher than the average zombie. I wonder if they can be killed... Here, I got a list for you. If you can kill one of each of these guys, I've got a secret schematic that could show you how to use some of that uranium you may have.",,,,
 
-
-
-
+quest_chemistry_1,,Quest Info,Reordered,"Chemical Collector",,,,
+quest_chemistry_1_subtitle,,Quest Info,Reordered,"Find some chemicals.",,,,
+quest_chemistry_1_offer,,Quest Info,Reordered,"It seems some of the buildings around here may still have some untouched chemical supplies that we could use. But I can't leave my post here, so maybe you could go out and find some for me. If you can find enough of each type of chemical we could learn how to create them ourselves, which could benefit you later...",,,,
 
 requirementGroupKnife1,,Requirement Group,KgNone,"Holding a Stone Knife, Bone Shiv, Scrap Knife, or Hunting Knife",,,,
 requirementGroupBlunt1,,Requirement Group,KgNone,"Holding a Wooden or Iron Reinforced Club",,,,

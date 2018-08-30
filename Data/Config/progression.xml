@@ -1958,6 +1958,13 @@
 		<recipe name="solarCell"	unlock_level="3"/>
 	</perk>
 	
+	<perk name="AcidCrafting" icon="science" description_key="AcidCraftingDesc" title_key="AcidCraftingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="science">
+		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="7"/>
+		<recipe name="hydrochloricAcidSolution" 	unlock_level="1"/>
+		<recipe name="sulfuricAcidSolution" 		unlock_level="1"/>
+		<recipe name="nitricAcidSolution" 			unlock_level="1"/>
+	</perk>
+	
 	
 	<perk name="electricTriggersPerk" icon="electric_switch" description_key="electricTriggersDesc" title_key="electricTriggersName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="3" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillSciencePerk" required_skill_level="2"/>
