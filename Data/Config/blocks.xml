@@ -14409,6 +14409,39 @@ group desc for stuff like metal siding
 	<property name="UseGlobalUV" value="Local"/>
 	<!--property name="DontDamageOnTouch" value="true" /-->
 	<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
+	<property class="RepairItems"> 
+		<property name="forgedSteel" value="10"/> 
+	</property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="rSteelLogSpike7"/>
+		<property name="Item" value="steelPolish"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="CustomUpgradeSound" value="place_block_metal"/>
+	<property name="DowngradeBlock" value="rScrapIronLogSpike5"/>
+	<drop event="Destroy" name="scrapIron" count="10,20" prob="1"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="160"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
+</block>
+
+<block id="1442" name="rSteelLogSpike7"> <!-- log spike 7 Reinforced Steel -->
+	<property name="Class" value="TrunkTip"/>
+	<property name="Damage" value="7"/>
+	<property name="Damage_received" value="40"/>
+	<property name="Material" value="Msteel"/>
+	<property name="MaxDamage" value="20000"/>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="6"/>
+	<property name="Model" value="cone1m"/>
+	<property name="Texture" value="267"/>
+	<property name="ImposterExchange" value="imposterPyramid" param1="112"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<!--property name="DontDamageOnTouch" value="true" /-->
+	<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
 	<property class="RepairItems"> <property name="forgedSteel" value="10"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="rScrapIronLogSpike5"/>
