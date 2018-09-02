@@ -1959,7 +1959,7 @@
 
 <!-- DEATH MODE -->
 <lootgroup name="DeathModeAmmo" count="1,2">
-	<item group="arrow" 		count="30,60"   prob="4"   />
+	<item name="arrow" 			count="30,60"   prob="4"   />
 	<item name="9mmBulletLow" 	count="25,50" 	prob="2"   />
 	<item name="762mmBulletLow" count="20,35" 	prob="1.5" />
 	<item name="shotgunShell" 	count="12,25" 	prob="0.5" />
