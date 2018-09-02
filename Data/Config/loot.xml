@@ -2036,7 +2036,7 @@
 	<item name="firstAidBandage"	count="1,2" />
 	<item name="firstAidKit"		count="1" prob="0.3" />
 	<item name="antibiotics"		count="1" prob="0.2" />
-<lootgroup>
+</lootgroup>
 
 <lootgroup name="DeathModeFinal" count="1">
 	<item group="DeathModeConstruction" 	prob="10"  />
