@@ -12438,7 +12438,17 @@ group desc for stuff like metal siding
 	<property name="Extends" value="cntGarageStorage"/>
 	<property name="LootList" value="88"/>
 </block>
-	<!-- 3 Free -->
+	
+<block id="1223" name="cntShippingCrateDeathMode">
+	<property name="Extends" value="cntShippingCrateShamway" param1="DescriptionKey"/>
+	<property name="DowngradeBlock" value="cntLootCrateDeathMode"/>
+</block>
+
+<block id="1224" name="cntLootCrateDeathMode">
+	<property name="Extends" value="cntGarageStorage"/>
+	<property name="LootList" value="200"/>
+</block>
+
 
 <block id="1226" name="houseFrontDoor2_v1">
 	<property name="Extends" value="houseFrontDoor1_v1"/>
