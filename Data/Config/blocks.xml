@@ -16536,7 +16536,7 @@ group desc for stuff like metal siding
 
 <block id="1677" name="gattlingTurret">
 	<property name="Class" value="Ranged"/>
-	<property name="Material" value="Mmetal_medium"/>
+	<property name="Material" value="Mmetal_hard"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
@@ -16594,7 +16594,7 @@ group desc for stuff like metal siding
 	
 <block id="1678" name="autoTurret">
 	<property name="Class" value="Ranged"/>
-	<property name="Material" value="Mmetal_medium"/>
+	<property name="Material" value="Mmetal_hard"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
