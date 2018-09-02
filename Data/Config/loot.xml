@@ -1984,6 +1984,7 @@
 	<item name="partsPistol_grip" />
 	<item name="partsPistol_parts" />
 	<item name="partsPistol_receiver" />
+	<item name="pistolBook" />
 </lootgroup>
 
 <lootgroup name="DeathModeHuntingRifle" count="all">
@@ -1991,6 +1992,7 @@
 	<item name="partsHuntingRifle_parts" />
 	<item name="partsHuntingRifle_receiver" />
 	<item name="partsHuntingRifle_stock" />
+	<item name="huntingRifleSchematic" />
 </lootgroup>
 
 <lootgroup name="DeathModePumpShotgun" count="all">
@@ -1998,6 +2000,7 @@
 	<item name="partsPumpShotgun_parts" />
 	<item name="partsPumpShotgun_receiver" />
 	<item name="partsPumpShotgun_stock" />
+	<item name="pumpShotgunSchematic" />
 </lootgroup>
 
 <lootgroup name="DeathModePumpShotgunShort" count="all">
@@ -2005,13 +2008,20 @@
 	<item name="partsPumpShotgun_parts" />
 	<item name="partsPumpShotgun_receiver" />
 	<item name="partsPumpShotgun_stockShort" />
+	<item name="pumpShotgunSchematic" />
+</lootgroup>
+
+<lootgroup name="DeathModeCrossbow" count="all">
+	<item name="crossbow" />
+	<item name="crossbowSchematic" />
 </lootgroup>
 
 <lootgroup name="DeathModeGunParts" count="1">
-	<item group="DeathModePistol" />
-	<item group="DeathModeHuntingRifle" />
-	<item group="DeathModePumpShotgun" />
-	<item group="DeathModePumpShotgunShort" />
+	<item group="DeathModePistol" 			prob="10"/>
+	<item group="DeathModeCrossbow"			prob="5" />
+	<item group="DeathModeHuntingRifle" 	prob="3" />
+	<item group="DeathModePumpShotgun" 		prob="1" />
+	<item group="DeathModePumpShotgunShort" prob="1" />
 </lootgroup>
 
 <lootgroup name="woodAndNails" count="all">
@@ -2026,7 +2036,7 @@
 </lootgroup>
 
 <lootgroup name="DeathModeConstruction" count="1">
-	<item group="woodAndNails" 		count="50,100" />
+	<item group="woodAndNails" 		count="50,150" />
 	<item group="adobeMaterials"	count="25,100" prob="0.5" />		
 </lootgroup>
 
@@ -2035,14 +2045,14 @@
 	<item name="aloeCream"			count="3,6" />
 	<item name="firstAidBandage"	count="1,2" />
 	<item name="firstAidKit"		count="1" prob="0.3" />
-	<item name="antibiotics"		count="1" prob="0.2" />
+	<item name="antibiotics"		count="1" prob="0.05" />
 </lootgroup>
 
 <lootgroup name="DeathModeFinal" count="1">
 	<item group="DeathModeConstruction" 	prob="10"  />
-	<item group="DeathModeMedical" 			prob="5"   />
-	<item group="DeathModeGunParts" 		prob="3"   />
-	<item group="DeathModeAmmo"				prob="8"   />
+	<item group="DeathModeMedical" 			prob="4"   />
+	<item group="DeathModeGunParts" 		prob="1"   />
+	<item group="DeathModeAmmo"				prob="7"   />
 </lootgroup>
 
 
