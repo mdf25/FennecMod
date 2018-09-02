@@ -37,8 +37,8 @@
 
     <biome name="forest">
         <spawn maxcount="2" respawndelay="1" time="Any"   entitygroup="ZombiesAll" />
-		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesAllNight" />
-		<spawn maxcount="1" respawndelay="0" time="Night" entitygroup="ZombiesNightFerals" />
+		<spawn maxcount="3" respawndelay="0" time="Night" entitygroup="ZombiesAllNight" />
+		<spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesNightFerals" />
 		<spawn maxcount="1" respawndelay="2" time="Any" entitygroup="EnemyAnimalsForest" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="FriendlyAnimalsForest" spawnDeadChance="0" />
     </biome>
@@ -46,7 +46,7 @@
     <biome name="pine_forest">
         <spawn maxcount="2" respawndelay="1" time="Any"   entitygroup="ZombiesAll" />
 		<spawn maxcount="3" respawndelay="0" time="Night" entitygroup="ZombiesAllNight" />
-		<spawn maxcount="3" respawndelay="0" time="Night" entitygroup="ZombiesNightFerals" />
+		<spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesNightFerals" />
 		<spawn maxcount="1" respawndelay="2" time="Any" entitygroup="EnemyAnimalsForest" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="4" time="Any" entitygroup="BearsGroup" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="FriendlyAnimalsForest" spawnDeadChance="0" />
@@ -55,7 +55,7 @@
     <biome name="plains">
         <spawn maxcount="2" respawndelay="1" time="Any"   entitygroup="ZombiesAll" />
 		<spawn maxcount="3" respawndelay="0" time="Night" entitygroup="ZombiesAllNight" />
-		<spawn maxcount="3" respawndelay="0" time="Night" entitygroup="ZombiesNightFerals" />
+		<spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesNightFerals" />
 		<spawn maxcount="1" respawndelay="2" time="Any" entitygroup="EnemyAnimalsPlains" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="FriendlyAnimalsPlains" spawnDeadChance="0" />
     </biome>
@@ -63,7 +63,7 @@
     <biome name="desert">
         <spawn maxcount="2" respawndelay="1" time="Any"   entitygroup="ZombiesAll" />
 		<spawn maxcount="3" respawndelay="0" time="Night" entitygroup="ZombiesAllNight" />
-		<spawn maxcount="3" respawndelay="0" time="Night" entitygroup="ZombiesNightFerals" />
+		<spawn maxcount="3" respawndelay="1" time="Night" entitygroup="ZombiesNightFerals" />
 		<spawn maxcount="1" respawndelay="2" time="Any" entitygroup="EnemyAnimalsDesert" spawnDeadChance="0" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="FriendlyAnimalsDesert" spawnDeadChance="0" />
     </biome>
