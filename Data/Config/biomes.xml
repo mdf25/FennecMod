@@ -191,7 +191,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="plantedBlueberry3Harvest" prob=".001"/>
 				<decoration type="block" blockname="snowberry3Harvest" prob =".1" />
 				<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".4" />
-				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00008" />
 			</decorations>
 		</subbiome>
 		<subbiome prob="0.1"> <!-- Snow Sub Biome rocks and snowberries -->
@@ -228,7 +228,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="lootForestHelper" prob="0.001"/>
 				<decoration type="block" blockname="snowberry3Harvest" prob =".001" />
 				<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".04" />
-				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 			</decorations>
 		</subbiome>
 
@@ -310,7 +310,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="cntTreeStump" prob="0.0005" rotatemax="7"/>
 			<decoration type="block" blockname="treeSnowyDeadBush" prob ="0.005" rotatemax="7"/>
 			<decoration type="block" blockname="treeSnowyGrassDiagonal" prob =".01" />
-			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 		</decorations>
 		<terrain class="Mountains" />
 	</biome>
@@ -365,7 +365,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="snowberry3Harvest" prob =".013" />
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob =".07" />
 				<decoration type="block" blockname="treeForestGrassDiagonal" prob =".065" />
-				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 			</decorations>
 		</subbiome>
 
@@ -463,7 +463,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="snowberry3Harvest" prob =".001" />
 			<decoration type="block" blockname="forestFlower" prob =".0004" />
 			<decoration type="block" blockname="treeForestGrassDiagonal" prob =".05" />
-			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 		</decorations>
 		<terrain class="Forest" />
 	</biome>
@@ -517,7 +517,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rockResource02" prob =".025" rotatemax="3"/>
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob =".05" />
 				<decoration type="block" blockname="cntTreeStump" prob="0.01" rotatemax="7"/>
-				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 			</decorations>
 		</subbiome>
 		<subbiome prob="0.11"> <!-- Pine Forest Sub Biome: clay, Flowers and Boulders -->
@@ -552,7 +552,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rockResource" prob =".025" rotatemax="3"/>
 				<decoration type="block" blockname="rockResource02" prob =".025" rotatemax="3"/>
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob =".05" />
-				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 			</decorations>
 		</subbiome>
 
@@ -637,7 +637,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeMountainPine20m" prob="0.004" rotatemax="7"/>
 			<decoration type="block" blockname="snowberry3Harvest" prob =".001" />
 			<decoration type="block" blockname="treeTallGrassDiagonal" prob =".02" />
-			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />v
+			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />v
 		</decorations>
 		<terrain class="Mountains" />
 	</biome>
@@ -690,7 +690,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="lootPlainsHelper" prob="0.00025"/>
 				<decoration type="block" blockname="cntBirdnest" prob ="0.007" />
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob ="0.1" />
-				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 			</decorations>
 		</subbiome>
 
@@ -724,7 +724,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="plantedCorn3Harvest" prob=".005"/>
 				<decoration type="block" blockname="lootPlainsHelper" prob="0.00025"/>
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob =".1" />
-				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 			</decorations>
 		</subbiome>
 
@@ -815,7 +815,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeCactus05" prob ="0.00025" rotatemax="3"/>
 			<decoration type="block" blockname="treeCactus06" prob ="0.00025" rotatemax="3"/>
 			<decoration type="block" blockname="treePlainsGrassDiagonal" prob =".02" />
-			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 		</decorations>
 		<terrain class="Desert" />
 	</biome>
@@ -867,7 +867,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="randomCarsHelper" prob="0.007" rotatemax="3"/>
 				<decoration type="block" blockname="lootDesertHelper" prob="0.01"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".001" />
-				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 			</decorations>
 		</subbiome>
 
@@ -892,7 +892,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="plantedYucca3Harvest" prob=".003" rotatemax="3"/>
 				<decoration type="block" blockname="plantedAloe3Harvest" prob=".008" rotatemax="3"/>
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".0025" />
-				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+				<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 			</decorations>
 		</subbiome>
 		<spectrum name="desert" />
@@ -963,7 +963,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="cntBirdnest" prob ="0.001" />
 			<decoration type="block" blockname="treeCactus06" prob ="0.00009" rotatemax="3"/>
 			<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".0025" />
-			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.0005" />
+			<decoration type="block" blockname="cntShippingCrateDeathMode" prob="0.00007" />
 		</decorations>
 		<terrain class="Desert" />
 	</biome>
