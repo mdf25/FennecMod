@@ -1669,6 +1669,7 @@
 	<item name="bottledWater"			count="2" 	/>
 	<item name="wood"					count="200" />
 	<item name="nail"					count="50"  />
+	<item name="torch" 					count="5" 	/>
 </lootgroup>
 
 <lootgroup name="startingFirstAid" count="all">
