@@ -396,7 +396,7 @@
 	</entitygroup>
 
 	<entitygroup name="BearsGroup">
-		<entity name="invisibleAnimalEnemy" prob="9" />
+		<entity name="invisibleAnimalEnemy" prob="19" />
 		<entity name="animalBear" 			prob="1" />
 	</entitygroup>
 	
