@@ -3407,8 +3407,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="1"/>
 </recipe>
 
-<recipe name="trapSpikesNew" count="1"> <!-- trap -->
-	<ingredient name="wood" count="5"/>
+<recipe name="trapSpikesNew" count="1" craft_time="2"> <!-- trap -->
+	<ingredient name="wood" count="10"/>
 </recipe>
 
 <recipe name="treePlant02" count="1">
