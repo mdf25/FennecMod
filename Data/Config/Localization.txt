@@ -6350,6 +6350,9 @@ acidCraftingSchematicDesc,items,Book,KgNone,"Learn how to craft acid solutions a
 AcidCraftingName,progression,perk,EnChanged,"Acid Crafting",,,,
 AcidCraftingDesc,progression,perk,EnChanged,"Learn how to craft acid solutions and extract sulfuric acid from car batteries by taking this perk or reading a schematic.",,,,
 
+saplingStrips,items,Resources,KgNone,"Sapling Strips",,,,
+saplingStripsDesc,items,Resources,KgNone,"Sapling strips can be found by using a knife or blade weapon on a young tree. This can further be crafted into string.",,,,
+
 cntShippingCrateDeathMode,blocks,block,KgNone,"Sealed Loot Crate",,,,
 cntLootCrateDeathMode,blocks,block,KgNone,"Loot Crate",,,,
 

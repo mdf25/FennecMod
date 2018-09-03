@@ -15215,6 +15215,22 @@ Mesh files no longer used:
 
 <!-- * * * * * * * * * * other stuff * * * * * * * * * * -->
 
+<item id="1299" name="saplingStrips"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Crafting/plant_fibers"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Weight" value="1"/>
+	<property name="Material" value="plants"/>
+	<property name="RepairTime" value="1"/>
+	<property name="RepairAmount" value="30"/>
+	<property name="HoldType" value="16"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="FuelValue" value="2"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+</item>
+
 <item id="1300" name="yuccaFibers"> <!-- scrap material -->
 	<property name="Meshfile" value="Items/Crafting/plant_fibers"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>

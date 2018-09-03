@@ -6118,6 +6118,7 @@ group desc for stuff like metal siding
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_6m"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="saplingStrips" count="4" tool_category="butcher" />
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 	<drop event="Destroy" name="woodLogPillar100" count="6" />
 	<drop event="Destroy" name="apple" count="0,1" />
@@ -7439,6 +7440,7 @@ group desc for stuff like metal siding
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine8m"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="saplingStrips" count="4" tool_category="butcher" />
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<drop event="Destroy" name="woodLogPillar100" count="6" />
 </block>
@@ -15732,6 +15734,7 @@ group desc for stuff like metal siding
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine13m"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="saplingStrips" count="4" tool_category="butcher" />
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
 	<drop event="Destroy" name="woodLogPillar100" count="6" />
 </block>
