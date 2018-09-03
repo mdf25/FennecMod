@@ -2570,9 +2570,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cottonPlant" 	 count="3" />
 </recipe>
 
+<!--
 <recipe name="string" count="1" craft_exp_gain="4">
 	<ingredient name="saplingStrips" count="5" />
 </recipe>
+-->
 
 <recipe name="leatherBoots" count="1" craft_exp_gain="30">
 	<ingredient name="leather" count="5"/>
