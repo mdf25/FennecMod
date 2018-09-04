@@ -2356,7 +2356,7 @@
 	<quest id="quest_athlete_5_secondary" name_key="quest_athlete_5" subtitle_key="quest_athlete_5_subtitle" description_key="quest_athlete_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_athlete_5_offer" difficulty="easy">
 		<objective type="Craft"		id="bed02"		value="1" />
-		<reward type="Skill" id="AthleteMastery" 			value="1" stage="aftercomplete" />
+		<!--<reward type="Skill" id="AthleteMastery" 			value="1" stage="aftercomplete" />-->
 		<reward type="Skill" id="AthleteVitaminsRecipe"		value="1" stage="aftercomplete" />
 		<reward type="Skill" id="ClassMastery"			value="1" stage="aftercomplete" />
 	</quest>
