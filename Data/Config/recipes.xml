@@ -728,7 +728,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="4"/>
 </recipe>
 
-<recipe name="barbedWireSheet" count="1" craft_area="forge" craft_time="10" craft_tool="anvil"> <!-- trap -->
+<recipe name="barbedWireSheet" count="1" material_based="true" craft_area="forge" craft_time="10" craft_tool="anvil"> <!-- trap -->
 	<ingredient name="unit_iron" count="12"/>
 	<ingredient name="unit_clay" count="5" />
 </recipe>
@@ -738,7 +738,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="4"/>
 </recipe>
 
-<recipe name="razorWireSheet" count="1" craft_area="alloy_forge" craft_time="10" craft_tool="forgeCrucible"> <!-- trap -->
+<recipe name="razorWireSheet" count="1" material_based="true" craft_area="alloy_forge" craft_time="10" craft_tool="forgeCrucible"> <!-- trap -->
 	<ingredient name="unit_iron" count="12"/>
 	<ingredient name="unit_clay" count="5" />
 </recipe>
