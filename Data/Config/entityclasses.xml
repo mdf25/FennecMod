@@ -2641,6 +2641,10 @@
 	<property name="AITarget-2" value="BlockingTargetTask"/>
 	<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="40"/>
 	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
+	<drop event="Harvest" name="rawBoarMeat" tool_category="Butcher" count="2"/> <!-- animalBoar -->
+	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="7"/>
+	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="6"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
 </entity_class>
 
 <!-- VEHICLES -->
