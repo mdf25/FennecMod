@@ -2302,6 +2302,10 @@
 	<property name="Buffs" 				value="zombieRadiatedBuff80" />
 	<property name="ReplaceMaterial0" 	value="entities/zombies/materials/feral_rad"/>
 	<property name="ReplaceMaterial1" 	value="entities/zombies/materials/rad_eye"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4"/> <!-- animalZombieDog -->
+	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4"/>
+	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
 </entity_class>
 
 
@@ -2381,6 +2385,10 @@
 	<property name="Buffs" 				value="zombieRadiatedBuff80" />
 	<property name="ReplaceMaterial0" 	value="entities/zombies/materials/feral_rad"/>
 	<property name="ReplaceMaterial1" 	value="entities/zombies/materials/rad_eye"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="7"/> <!-- animalZombieBear -->
+	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="12"/>
+	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="3"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="4"/>
 </entity_class>
 
 <entity_class name="animalWolf" extends="animalTemplateHostile">
@@ -2442,11 +2450,6 @@
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="10"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="5"/>
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
-</entity_class>
-
-<entity_class name="animalWolfTest" extends="animalWolf">
-	<property name="TintMaterial0" value="0,255,0"/>
-	<property name="TintMaterial2" value="0,255,0"/>
 </entity_class>
 
 <entity_class name="animalDireWolf" extends="animalWolf">
