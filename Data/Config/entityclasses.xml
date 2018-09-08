@@ -1399,6 +1399,11 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<entity_class name="zombieBurntDM" extends="zombieBurnt">
+	<property name="SightRange" value="200" />
+	<property name="SightScale" value="-2,20" />
+</entity_class>
+
 <entity_class name="zombieBlueFlare" extends="zombieTemplateMale">
 	<property name="Mesh" value="Zombies/ZombieStandardBurntRagdoll"/>
 	<property name="Class" value="EntityZombieCop"/>
