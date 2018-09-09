@@ -352,11 +352,11 @@
 	
 	<quest id="quest_bosskiller_1" name_key="quest_bosskiller_1" subtitle_key="quest_bosskiller_1_subtitle" description_key="quest_bosskiller_1_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_bosskiller_1_offer" difficulty="easy">
-		<objective type="ZombieKill" id="ZombieBlueFlareFeralRadiated"	value="1" />
-		<objective type="ZombieKill" id="ZombieFatRocketCop"			value="1" />
-		<objective type="ZombieKill" id="ZombieBusinessManBoss"			value="1" />
-		<objective type="ZombieKill" id="ZombieFatHawaiianBomberFeral"  value="1" />
-		<objective type="ZombieKill" id="ZombieFemaleFatBomberFeral"	value="1" />
+		<objective type="ZombieKill" id="zombieBlueFlareFeralRadiated"										value="1" />
+		<objective type="ZombieKill" id="zombieFatRocketCop,zombieFatRocketCopFeralRadiated"				value="1" />
+		<objective type="ZombieKill" id="zombieBusinessManBoss"												value="1" />
+		<objective type="ZombieKill" id="zombieFatHawaiianBomberFeral,zombieFatHawaiianBomberFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieFemaleFatBomberFeral,zombieFemaleFatBomberFeralRadiated"		value="1" />
 		<reward type="Item"			id="nuclearPowerBook" 	value="1" />
 	</quest>
 	
@@ -412,7 +412,7 @@
 		repeatable="true" category_key="challenge" offer_key="challenge_nurseyoubacktohealth_offer" difficulty="medium" >
 
 		<objective type="Time" value="900" optional="true" />
-		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="3" />
+		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral,zombieNurseNS,zombieNurseFeralNS,zombieNurseDM,zombieNurseFeralDM,zombieNurseFrozen,zombieNurseFrozenDM" value="3" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />
@@ -421,7 +421,7 @@
 	<quest id="challenge_copanattitude" name_key="challenge_copanattitude" subtitle_key="challenge_copanattitude_subtitle" description_key="challenge_copanattitude_offer" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer_key="challenge_copanattitude_offer" difficulty="hard">
 		<objective type="Time" value="1500" optional="true" />
-		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopFeral,zombieFatCopFeralRadiated" value="2" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopNS,zombieFatCopDM,zombieFatCopFeral,zombieFatCopFeralNS,zombieFatCopFeralDM,zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM,zombieFatRocketCop,zombieFatRocketCopFeralRadiated" value="2" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />
@@ -430,7 +430,7 @@
 	<quest id="challenge_dogdaysareover" name_key="challenge_dogdaysareover" subtitle_key="challenge_dogdaysareover_subtitle" description_key="challenge_dogdaysareover_offer" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer_key="challenge_dogdaysareover_offer" difficulty="hard">
 		<objective type="Time" value="1500" optional="true" />
-		<objective type="ZombieKill" id="animalZombieDog" value="4" />
+		<objective type="ZombieKill" id="animalZombieDog,animalZombieDogDM,animalZombieDogFeralRadiated" value="4" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />
@@ -439,7 +439,7 @@
 	<quest id="challenge_itsybitsyspider" name_key="challenge_itsybitsyspider" subtitle_key="challenge_itsybitsyspider_subtitle" description_key="challenge_itsybitsyspider_offer" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer_key="challenge_itsybitsyspider_offer" difficulty="medium">
 		<objective type="Time" value="900" optional="true" />
-		<objective type="ZombieKill" id="zombieSpider,zombieSpiderFeral,zombieSpiderFeralRadiated" value="3" />
+		<objective type="ZombieKill" id="zombieSpider,zombieSpiderNS,zombieSpiderDM,zombieSpiderFeral,zombieSpiderFeralNS,zombieSpiderFeralDM,zombieSpiderFeralRadiated,zombieSpiderFeralRadiatedNS,zombieSpiderFeralRadiatedDM" value="3" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />
@@ -448,10 +448,10 @@
 	<quest id="challenge_ladykiller" name_key="challenge_ladykiller" subtitle_key="challenge_ladykiller_subtitle" description_key="challenge_ladykiller_offer" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer_key="challenge_ladykiller_offer" difficulty="medium">
 		<objective type="Time" value="900" optional="true" />
-		<objective type="ZombieKill" id="zombieArlene,zombieArleneFeral" value="1" />
-		<objective type="ZombieKill" id="zombieDarlene,zombieDarleneFeral" value="1" />
-		<objective type="ZombieKill" id="zombieMarlene,zombieMarleneFeral" value="1" />
-		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="1" />
+		<objective type="ZombieKill" id="zombieArlene,zombieArleneNS,zombieArleneDM,zombieArleneFeral,zombieArleneFeralNS,zombieArleneFeralDM,zombieArleneFrozen,zombieArleneFrozenDM" 			value="1" />
+		<objective type="ZombieKill" id="zombieDarlene,zombieDarleneNS,zombieDarleneDM,zombieDarleneFeral,zombieDarleneFeralNS,zombieDarleneFeralDM,zombieDarleneFrozen,zombieDarleneFrozenDM" 	value="1" />
+		<objective type="ZombieKill" id="zombieMarlene,zombieMarleneNS,zombieMarleneDM,zombieMarleneFeral,zombieMarleneFeralNS,zombieMarleneFeralDM,zombieMarleneFrozen,zombieMarleneFrozenDM" value="1" />
+		<objective type="ZombieKill" id="zombieNurse,zombieNurseNS,zombieNurseDM,zombieNurseFeral,zombieNurseFeralNS,zombieNurseFeralDM,zombieNurseFrozen,zombieNurseFrozenDM" value="1" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />
@@ -461,11 +461,11 @@
 	<quest id="challenge_maneater" name_key="challenge_maneater" subtitle_key="challenge_maneater_subtitle" description_key="challenge_maneater_offer" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer_key="challenge_maneater_offer" difficulty="medium">
 		<objective type="Time" value="900" optional="true" />
-		<objective type="ZombieKill" id="zombieBoe,zombieBoeFeral" value="1" />
-		<objective type="ZombieKill" id="zombieJoe,zombieJoeFeral" value="1" />
-		<objective type="ZombieKill" id="zombieMoe,zombieMoeFeral" value="1" />
-		<objective type="ZombieKill" id="zombieYo,zombieYoFeral" value="1" />
-		<objective type="ZombieKill" id="zombieSteve,zombieSteveFeral" value="1" />
+		<objective type="ZombieKill" id="zombieBoe,zombieBoeNS,zombieBoeDM,zombieBoeFeral,zombieBoeFeralNS,zombieBoeFeralDM,zombieBoeFrozen,zombieBoeFrozenDM" value="1" />
+		<objective type="ZombieKill" id="zombieJoe,zombieJoeNS,zombieJoeDM,zombieJoeFeral,zombieJoeFeralNS,zombieJoeFeralDM,zombieJoeFrozen,zombieJoeFrozenDM" value="1" />
+		<objective type="ZombieKill" id="zombieMoe,zombieMoeNS,zombieMoeDM,zombieMoeFeral,zombieMoeFeralNS,zombieMoeFeralDM,zombieMoeFrozen,zombieMoeFrozenDM" value="1" />
+		<objective type="ZombieKill" id="zombieYo,zombieYoNS,zombieYoDM,zombieYoFeral,zombieYoFeralNS,zombieYoFeralDM,zombieYoFrozen,zombieYoFrozenDM" value="1" />
+		<objective type="ZombieKill" id="zombieSteve,zombieSteveNS,zombieSteveDM,zombieSteveFeral,zombieSteveFeralNS,zombieSteveFeralDM,zombieSteveFrozen,zombieSteveFrozenDM" value="1" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />
@@ -474,11 +474,11 @@
 	<quest id="challenge_yournothingspecial" name_key="challenge_yournothingspecial" subtitle_key="challenge_yournothingspecial_subtitle" description_key="challenge_yournothingspecial_offer" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer_key="challenge_yournothingspecial_offer" difficulty="insane">
 		<objective type="Time" value="1800" optional="true" />
-		<objective type="ZombieKill" id="zombieSpider,zombieSpiderFeral,zombieSpiderFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopFeral,zombieFatCopFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieWightFeral,zombieWightFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieSpider,zombieSpiderNS,zombieSpiderDM,zombieSpiderFeral,zombieSpiderFeralNS,zombieSpiderFeralDM,zombieSpiderFeralRadiated,zombieSpiderFeralRadiatedNS,zombieSpiderFeralRadiatedDM" value="1" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopNS,zombieFatCopDM,zombieFatCopFeral,zombieFatCopFeralNS,zombieFatCopFeralDM,zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM,zombieFatRocketCop,zombieFatRocketCopFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeral,zombieWightFeralNS,zombieWightFeralDM,zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM,zombieWightFeralFrozen,zombieWightFeralFrozenDM" value="1" />
 		<objective type="ZombieKill" id="zombieScreamer,zombieScreamerFeral" value="1" />
-		<objective type="ZombieKill" id="zombieBurnt" value="1" />
+		<objective type="ZombieKill" id="zombieBurnt,zombieBurntDM" value="1" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />
@@ -488,7 +488,7 @@
 		repeatable="true" category_key="challenge" offer_key="challenge_imalumberjackandimokay_offer" difficulty="hard">
 
 		<objective type="Time" value="900" optional="true" />
-		<objective type="ZombieKill" id="zombieSnow,zombieSnowFeral" value="3" />
+		<objective type="ZombieKill" id="zombieSnow,zombieSnowNS,zombieSnowDM,zombieSnowFeral,zombieSnowFeralNS,zombieSnowFeralDM" value="3" />
 
 		<requirement type="Group" id="requirementGroupFireaxe" value="OR">
 			<requirement type="Holding" id="fireaxeIron" />
@@ -524,7 +524,7 @@
 
 	<quest id="challenge_thatlldopig" name_key="challenge_thatlldopig" subtitle_key="challenge_thatlldopig_subtitle" description_key="challenge_thatlldopig_offer" icon="ui_game_symbol_knife"
 	repeatable="true" category_key="challenge" offer_key="challenge_thatlldopig_offer" difficulty="easy">
-		<objective type="AnimalKill" id="animalBoar" value="5"  />
+		<objective type="AnimalKill" id="animalBoar,animalBoarAggressive" value="5"  />
 
 		<reward type="SkillPoints" value="2" />
 	</quest>
@@ -538,7 +538,7 @@
 
 	<quest id="challenge_dontfeedthebears" name_key="challenge_dontfeedthebears" subtitle_key="challenge_dontfeedthebears_subtitle" description_key="challenge_dontfeedthebears_offer" icon="ui_game_symbol_knife"
 	repeatable="true" category_key="challenge" offer_key="challenge_dontfeedthebears_offer" difficulty="hard">
-		<objective type="AnimalKill" id="animalBear" value="3"  />
+		<objective type="AnimalKill" id="animalBear,animalBearDM" value="3"  />
 
 
 		<reward type="SkillPoints" value="2" />
@@ -548,11 +548,9 @@
 	repeatable="true" category_key="challenge" offer_key="challenge_buythefarm_offer" difficulty="medium">
 		<objective type="AnimalKill" id="animalRabbit" value="1"  />
 		<objective type="AnimalKill" id="animalChicken" value="1"  />
-		<objective type="AnimalKill" id="animalBoar" value="1"  />
+		<objective type="AnimalKill" id="animalBoar,animalBoarAggressive" value="1"  />
 		<objective type="AnimalKill" id="animalStag" value="1"  />
-		<objective type="AnimalKill" id="animalBear" value="1"  />
-
-
+		<objective type="AnimalKill" id="animalBear,animalBearDM" value="1"  />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 
@@ -917,10 +915,10 @@
 	
 	<quest id="quest_ranger_5" name_key="quest_ranger_5" subtitle_key="quest_ranger_5_subtitle" description_key="quest_ranger_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_ranger_5_offer" difficulty="easy">
-		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
-		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
 		<requirement type="Group" id="requirementGroupBows1" value="OR">
 			<requirement type="Holding" id="crossbow" />
 			<requirement type="Holding" id="compoundBow" />
@@ -973,10 +971,10 @@
 	
 	<quest id="quest_shotguns_5" name_key="quest_shotguns_5" subtitle_key="quest_shotguns_5_subtitle" description_key="quest_shotguns_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_shotguns_5_offer" difficulty="easy">
-		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
-		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
 		<requirement type="Group" id="requirementGroupShotguns1" value="OR">
 			<requirement type="Holding" id="oldShotgun" />
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
@@ -1028,10 +1026,10 @@
 	
 	<quest id="quest_pistols_5" name_key="quest_pistols_5" subtitle_key="quest_pistols_5_subtitle" description_key="quest_pistols_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_pistols_5_offer" difficulty="easy">
-		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
-		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
 		<requirement type="Group" id="requirementGroupPistols1" value="OR">
 			<requirement type="Holding" id="oldPistol" />
 			<requirement type="Holding" id="gunPistol" />
@@ -1083,10 +1081,10 @@
 	
 	<quest id="quest_rifles_5" name_key="quest_rifles_5" subtitle_key="quest_rifles_5_subtitle" description_key="quest_rifles_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_rifles_5_offer" difficulty="easy">
-		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
-		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
 		<requirement type="Group" id="requirementGroupRifles1" value="OR">
 			<requirement type="Holding" id="gunHuntingRifle" />
 			<requirement type="Holding" id="gunSniperRifle" />
@@ -1934,10 +1932,10 @@
 	
 	<quest id="quest_ranger_5_secondary" name_key="quest_ranger_5" subtitle_key="quest_ranger_5_subtitle" description_key="quest_ranger_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_ranger_5_offer" difficulty="easy">
-		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
-		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
 		<requirement type="Group" id="requirementGroupBows1" value="OR">
 			<requirement type="Holding" id="crossbow" />
 			<requirement type="Holding" id="compoundBow" />
@@ -1980,10 +1978,10 @@
 	
 	<quest id="quest_shotguns_5_secondary" name_key="quest_shotguns_5" subtitle_key="quest_shotguns_5_subtitle" description_key="quest_shotguns_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_shotguns_5_offer" difficulty="easy">
-		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
-		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
 		<requirement type="Group" id="requirementGroupShotguns1" value="OR">
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
 			<requirement type="Holding" id="gunPumpShotgun" />
@@ -2022,10 +2020,10 @@
 	
 	<quest id="quest_pistols_5_secondary" name_key="quest_pistols_5" subtitle_key="quest_pistols_5_subtitle" description_key="quest_pistols_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_pistols_5_offer" difficulty="easy">
-		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
-		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
 		<requirement type="Group" id="requirementGroupPistols1" value="OR">
 			<requirement type="Holding" id="gunPistol" />
 			<requirement type="Holding" id="gun44Magnum" />
@@ -2064,10 +2062,10 @@
 	
 	<quest id="quest_rifles_5_secondary" name_key="quest_rifles_5" subtitle_key="quest_rifles_5_subtitle" description_key="quest_rifles_5_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_rifles_5_offer" difficulty="easy">
-		<objective type="ZombieKill" id="zombieFatCopFeralRadiated" value="1" />
-		<objective type="ZombieKill" id="zombieWightFeralRadiated" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf" 			value="2"  />
-		<objective type="AnimalKill" id="animalBear" 				value="2"  />
+		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
+		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
 		<requirement type="Group" id="requirementGroupRifles1" value="OR">
 			<requirement type="Holding" id="gunHuntingRifle" />
 			<requirement type="Holding" id="gunSniperRifle" />
