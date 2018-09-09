@@ -4974,6 +4974,7 @@ inpActSelectionSetDesc,UI,Controls Dialog,,,,,,
 inpActPrefabName,UI,Controls Dialog,,Prefab,,,,
 inpActPrefabDesc,UI,Controls Dialog,,,,,,
 animalBoar,entityclasses,Entity,New,Boar,,,,
+animalBoarAggressive,entityclasses,Entity,New,Boar,,,,
 forgeCrucible,items,Item,New,Crucible,,,,
 forgeCrucibleDesc,items,Item,New,A crucible upgrade is required to craft steel bars and bulletproof glass in a forge. Learn the recipe by buying the Steel Smithing perk.,,,,
 macheteCraftingName,progression,Perk,New,Machete Crafting,,,,
@@ -6383,7 +6384,16 @@ saplingStripsDesc,items,Resources,KgNone,"Sapling strips can be found by using a
 cntShippingCrateDeathMode,blocks,block,KgNone,"Sealed Loot Crate",,,,
 cntLootCrateDeathMode,blocks,block,KgNone,"Loot Crate",,,,
 
-
+zombieFatRocketCop,entityclasses,entity,KgNone,"Rocket Cop",,,,
+zombieFatRocketCopFeralRadiated,entityclasses,entity,KgNone,"Nuclear Cop",,,,
+zombieFatHawaiianBomber,entityclasses,entity,KgNone,"Bomber Bastard",,,,
+zombieFatHawaiianBomberFeral,entityclasses,entity,KgNone,"Feral Bomber Bastard",,,,
+zombieFatHawaiianBomberFeralRadiated,entityclasses,entity,KgNone,"Radiated Bomber Bastard",,,,
+zombieFemaleFatBomber,entityclasses,entity,KgNone,"Bomber Bitch",,,,
+zombieFemaleFatBomberFeral,entityclasses,entity,KgNone,"Feral Bomber Bitch",,,,
+zombieFemaleFatBomberFeralRadiated,entityclasses,entity,KgNone,"Radiated Bomber Bitch",,,,
+DC-KILLER,entityclasses,entity,KgNone,"The Big Boss",,,,
+DC-KILLER-FeralRadiated,entityclasses,entity,KgNone,"The Big Green Boss",,,,
 
 
 
