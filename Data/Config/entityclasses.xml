@@ -1925,8 +1925,8 @@
 	<property name="SoundDeath" 			value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
 	<property name="SoundSense" 			value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
 	<property name="Mesh" 					value="Zombies/zombieStandardWorkerRagdoll"/>
-	<property name="TintMaterial0" 			value="0,0,255"/>
-	<property name="TintMaterial2" 			value="0,0,128"/>
+	<property name="TintMaterial0" 			value="120,120,255"/>
+	<property name="TintMaterial2" 			value="120,120,255"/>
 	<property name="SoundFootstepModifier" 	value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
 	<property name="MaxHealth" 				value="3500"/>
 	<property name="HandItem" 				value="handZombieUtilityWorkerBoss"/>
