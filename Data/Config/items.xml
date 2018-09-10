@@ -5005,6 +5005,59 @@ Mesh files no longer used:
 		<property name="CreativeMode" value="Dev"/>
 </item>
 
+<item id="189" name="empoweredNailgun">
+	<property name="Meshfile" value="Items/Tools/nailgunPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="37"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="CrosshairUpAfterShot" value="false"/>
+	<property class="Parts">
+		<property name="Stock" 		value="partsEmpoweredNailgun_frame"/>
+		<property name="Receiver" 	value="partsEmpoweredNailgun_receiver"/>
+		<property name="Pump" 		value="partsEmpoweredNailgun_parts"/>
+		<property name="Barrel" 	value="partsEmpoweredNailgun_battery"/>
+	</property>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Launcher"/>
+		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Delay" value="0.1"/>
+		<property name="Crosshair_min_distance" value="15"/> <!-- 15 -->
+		<property name="Crosshair_max_distance" value="18"/> <!-- 18 -->
+		<property name="Magazine_size" value="150"/>
+		<property name="Magazine_items" value="nail"/>
+		<property name="Rays_spread" value="0.003"/>
+		<property name="Instantiate_on_load" value="false"/>
+		<property name="Reload_time" value="2"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="nailgun_fire"/>
+		<property name="Particles_muzzle_fire" value="nailgunfire"/>
+	<!-- <property name="Particles_muzzle_smoke" value="nozzlesmoke"/> -->
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="nailgun_reload"/>
+		<property name="DamageBonus.head" value="120"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="ActionExp" value="2"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.05"/>
+		<property name="Repair_amount" value="1000"/>
+		<property name="Upgrade_hit_offset" value="-5"/>
+		<property name="Repair_action_sound" value="nailgun_fire"/>
+		<property name="Upgrade_action_sound" value="nailgun_fire"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,nail,forgeUpgradeKit"/>
+		<!--<property name="Restricted_upgrade_items" value="concrete"/>-->
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="RepairExpMultiplier" value="100"/>
+</item>
+
 <item id="190" name="rockSmall"> <!-- scrap material -->
 	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
 	<property name="Material" value="stone"/>
@@ -5814,6 +5867,59 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 </item>
+
+
+<item id="284" name="partsEmpoweredNailgun_frame">
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsNailgunGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Material" value="Mplastics"/>
+	<property name="Weight" value="8"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="5,5"/>
+		<property name="DegradationMax" value="2000,4000"/>
+	</property>
+	<property name="EconomicValue" value="5000"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+<item id="285" name="partsEmpoweredNailgun_receiver">
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsNailgunGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Material" value="metal"/>
+	<property name="Weight" value="27"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="2000,4000"/>
+	</property>
+	<property name="EconomicValue" value="5000"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+<item id="286" name="partsEmpoweredNailgun_parts">
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsNailgunGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Material" value="metal"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="2000,4000"/>
+	</property>
+	<property name="EconomicValue" value="5000"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+<item id="287" name="partsEmpoweredNailgun_battery">
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsNailgunGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Material" value="lead"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="2000,4000"/>
+	</property>
+	<property name="EconomicValue" value="5000"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+
+
 
 <!-- * * * * * * * * * * armor tiers * * * * * * * * * * -->
 
@@ -13840,7 +13946,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="10" />
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="nailgun"/>
+		<property name="Recipes_to_learn" value="nailgun,empoweredNailgun"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>

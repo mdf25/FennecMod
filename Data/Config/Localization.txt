@@ -6395,7 +6395,13 @@ zombieFemaleFatBomberFeralRadiated,entityclasses,entity,KgNone,"Radiated Bomber 
 DC-KILLER,entityclasses,entity,KgNone,"The Big Boss",,,,
 DC-KILLER-FeralRadiated,entityclasses,entity,KgNone,"The Big Green Boss",,,,
 
+partsEmpoweredNailgun_frame,items,parts,KgNone,"Empowered Nailgun Frame",,,,
+partsEmpoweredNailgun_receiver,items,parts,KgNone,"Empowered Nailgun Receiver",,,,
+partsEmpoweredNailgun_parts,items,parts,KgNone,"Empowered Nailgun Parts",,,,
+partsEmpoweredNailgun_battery,items,parts,KgNone,"Empowered Uranium Battery",,,,
 
+empoweredNailgun,items,tools,KgNone,"Empowered Nailgun",,,,
+empoweredNailgunDesc,items,tools,KgNone,"The empowered nailgun is the fastest construction tool of them all. Capable of repairing and upgrading at super high speeds.",,,,
 
 
 
