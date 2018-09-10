@@ -5138,7 +5138,7 @@ Mesh files no longer used:
 	<property name="Explosion.DamageBonus.earth" value="0"/>
 	<property name="Explosion.DamageBonus.water" value="0"/>
 	<property name="Explosion.DamageBonus.wood"  value="0"/>
-	<property name="FuseTime" value="20000"/> <!-- theoretically redundant but I don't want to experiment on this -->
+	<property name="FuseTime" value="1"/> <!-- theoretically redundant but I don't want to experiment on this -->
 	<property name="Explosion.Buff" value="burningNapalm"/>
 	<property name="Explosion.Buff_chance" value="1"/>
 	<property name="ExplodeOnHit" value="true"/>
@@ -5150,14 +5150,12 @@ Mesh files no longer used:
 		<property name="Buff" value="bleeding,infection,shockedBuff"/>
 		<property name="Buff_chance" value="0.2,0.2,0.4"/>
 	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Activate"/>
+		<property name="Delay" value="1"/>
+	</property>
 	<property class="Action1">
-		<property name="Class" value="ThrowAway"/>
-		<property name="Delay" value="1.2"/>
-		<property name="Explosion.ParticleIndex" value="7"/>
-		<property name="Throw_strength_default" value="14"/>
-		<property name="Throw_strength_max" value="25"/>
-		<property name="Max_strain_time" value="1.5"/>
-		<property name="Sound_start" value="swoosh"/>
+		
 	</property>
 </item>
 
