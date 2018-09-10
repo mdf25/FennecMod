@@ -5123,9 +5123,9 @@ Mesh files no longer used:
 
 <item id="196" name="handZombieUtilityWorkerBoss">
 	<property name="Extends" value="handMaster"/>
+	<property name="Class" value="ItemClassTimeBomb"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
-	
 	<property name="Explosion.BlockDamage" value="5"/>
 	<property name="Explosion.EntityDamage" value="5"/>
 	<property name="Explosion.ParticleIndex" value="5"/>
@@ -5142,7 +5142,6 @@ Mesh files no longer used:
 	<property name="Explosion.Buff" value="burningNapalm"/>
 	<property name="Explosion.Buff_chance" value="1"/>
 	<property name="ExplodeOnHit" value="true"/>
-	
 	<property class="Action0">
 		<property name="Range" value="1.75"/>
 		<property name="DamageEntity" value="10"/>
