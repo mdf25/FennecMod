@@ -538,7 +538,7 @@
 
 	<quest id="challenge_dontfeedthebears" name_key="challenge_dontfeedthebears" subtitle_key="challenge_dontfeedthebears_subtitle" description_key="challenge_dontfeedthebears_offer" icon="ui_game_symbol_knife"
 	repeatable="true" category_key="challenge" offer_key="challenge_dontfeedthebears_offer" difficulty="hard">
-		<objective type="AnimalKill" id="animalBear,animalBearDM" value="3"  />
+		<objective type="AnimalKill" id="animalBear" value="3"  />
 
 
 		<reward type="SkillPoints" value="2" />
@@ -548,9 +548,9 @@
 	repeatable="true" category_key="challenge" offer_key="challenge_buythefarm_offer" difficulty="medium">
 		<objective type="AnimalKill" id="animalRabbit" value="1"  />
 		<objective type="AnimalKill" id="animalChicken" value="1"  />
-		<objective type="AnimalKill" id="animalBoar,animalBoarAggressive" value="1"  />
+		<objective type="AnimalKill" id="animalBoar" value="1"  />
 		<objective type="AnimalKill" id="animalStag" value="1"  />
-		<objective type="AnimalKill" id="animalBear,animalBearDM" value="1"  />
+		<objective type="AnimalKill" id="animalBear" value="1"  />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 
@@ -917,8 +917,8 @@
 	repeatable="false" category_key="quest" offer_key="quest_ranger_5_offer" difficulty="easy">
 		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
-		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
+		<objective type="AnimalKill" id="animalDireWolf" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear" 															value="2"  />
 		<requirement type="Group" id="requirementGroupBows1" value="OR">
 			<requirement type="Holding" id="crossbow" />
 			<requirement type="Holding" id="compoundBow" />
@@ -973,8 +973,8 @@
 	repeatable="false" category_key="quest" offer_key="quest_shotguns_5_offer" difficulty="easy">
 		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
-		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
+		<objective type="AnimalKill" id="animalDireWolf" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear" 															value="2"  />
 		<requirement type="Group" id="requirementGroupShotguns1" value="OR">
 			<requirement type="Holding" id="oldShotgun" />
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
@@ -1028,8 +1028,8 @@
 	repeatable="false" category_key="quest" offer_key="quest_pistols_5_offer" difficulty="easy">
 		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
-		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
+		<objective type="AnimalKill" id="animalDireWolf" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear" 															value="2"  />
 		<requirement type="Group" id="requirementGroupPistols1" value="OR">
 			<requirement type="Holding" id="oldPistol" />
 			<requirement type="Holding" id="gunPistol" />
@@ -1083,8 +1083,8 @@
 	repeatable="false" category_key="quest" offer_key="quest_rifles_5_offer" difficulty="easy">
 		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
-		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
+		<objective type="AnimalKill" id="animalDireWolf" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear" 															value="2"  />
 		<requirement type="Group" id="requirementGroupRifles1" value="OR">
 			<requirement type="Holding" id="gunHuntingRifle" />
 			<requirement type="Holding" id="gunSniperRifle" />
@@ -1934,8 +1934,8 @@
 	repeatable="false" category_key="quest" offer_key="quest_ranger_5_offer" difficulty="easy">
 		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
-		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
+		<objective type="AnimalKill" id="animalDireWolf" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear" 															value="2"  />
 		<requirement type="Group" id="requirementGroupBows1" value="OR">
 			<requirement type="Holding" id="crossbow" />
 			<requirement type="Holding" id="compoundBow" />
@@ -1980,8 +1980,8 @@
 	repeatable="false" category_key="quest" offer_key="quest_shotguns_5_offer" difficulty="easy">
 		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
-		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
+		<objective type="AnimalKill" id="animalDireWolf" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear" 															value="2"  />
 		<requirement type="Group" id="requirementGroupShotguns1" value="OR">
 			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
 			<requirement type="Holding" id="gunPumpShotgun" />
@@ -2022,8 +2022,8 @@
 	repeatable="false" category_key="quest" offer_key="quest_pistols_5_offer" difficulty="easy">
 		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
-		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
+		<objective type="AnimalKill" id="animalDireWolf" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear" 															value="2"  />
 		<requirement type="Group" id="requirementGroupPistols1" value="OR">
 			<requirement type="Holding" id="gunPistol" />
 			<requirement type="Holding" id="gun44Magnum" />
@@ -2064,8 +2064,8 @@
 	repeatable="false" category_key="quest" offer_key="quest_rifles_5_offer" difficulty="easy">
 		<objective type="ZombieKill" id="zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM" 	value="1" />
-		<objective type="AnimalKill" id="animalDireWolf,animalDireWolfDM" 													value="2"  />
-		<objective type="AnimalKill" id="animalBear,animalBearDM" 															value="2"  />
+		<objective type="AnimalKill" id="animalDireWolf" 													value="2"  />
+		<objective type="AnimalKill" id="animalBear" 															value="2"  />
 		<requirement type="Group" id="requirementGroupRifles1" value="OR">
 			<requirement type="Holding" id="gunHuntingRifle" />
 			<requirement type="Holding" id="gunSniperRifle" />

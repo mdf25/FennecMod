@@ -6403,6 +6403,8 @@ partsEmpoweredNailgun_battery,items,parts,KgNone,"Empowered Uranium Battery",,,,
 empoweredNailgun,items,tools,KgNone,"Empowered Nailgun",,,,
 empoweredNailgunDesc,items,tools,KgNone,"The empowered nailgun is the fastest construction tool of them all. Capable of repairing and upgrading at super high speeds.",,,,
 
+animalDireWolf,entityclasses,entity,KgNone,Direwolf,,,,
+
 zombieUtilityWorkerBoss,entityclasses,entity,KgNone,"The Engineer",,,,
 
 

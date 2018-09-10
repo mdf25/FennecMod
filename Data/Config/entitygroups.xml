@@ -286,7 +286,7 @@
 		<entity name="animalZombieDogDM" />
 		<entity name="zombieSteveCrawlerFeralDM" />
 		<entity name="zombieFatCopFeralDM" />
-		<entity name="animalZombieBearDM" />
+		<entity name="animalZombieBear" />
 		<entity name="zombieWightFeralDM" />
 		<entity name="zombieFatHawaiianDM" />
 	</entitygroup>
@@ -329,7 +329,7 @@
 		<entity name="animalZombieDogDM" />
 		<entity name="zombieSteveCrawlerFeralDM" />
 		<entity name="zombieFatCopFeralDM" />
-		<entity name="animalZombieBearDM" prob="0.2" />
+		<entity name="animalZombieBear" prob="0.2" />
 		<entity name="zombieWightFeralDM" />
 		<entity name="zombieFatHawaiianDM" />
 		<entity name="zombieWightFeralRadiatedDM" prob="0.1" />
@@ -414,7 +414,7 @@
 		<entity name="zombieSteveCrawlerDM" prob="0.05"/>
 		<entity name="zombieFatCopDM" prob="0.15"/>
 		<entity name="zombieBurntDM" prob="0.07"/>
-		<entity name="animalZombieBearDM" prob="0.1"/>
+		<entity name="animalZombieBear" prob="0.1"/>
 		<entity name="zombieWightFeralDM" prob="0.1"/>
 		<entity name="zombieFatHawaiianDM" />
 	</entitygroup>
@@ -487,7 +487,7 @@
 		<entity name="zombieNurseDM" />
 		<entity name="zombieFatCopDM" prob="0.05"/>
 		<entity name="animalZombieDogDM" prob="0.05"/>
-		<entity name="animalZombieBearDM" prob="0.05"/>
+		<entity name="animalZombieBear" prob="0.05"/>
 		<entity name="zombieSteveCrawlerDM" prob="0.1"/>
 	</entitygroup>
 
@@ -632,7 +632,7 @@
 	</entitygroup>
 	
 	<entitygroup name="ZombiesCaveDM">
-		<entity name="animalBearDM" prob="0.1"/>
+		<entity name="animalBear" prob="0.1"/>
 		<entity name="zombieSteveCrawlerDM" prob="0.05"/>
 		<entity name="zombieJoeDM" prob="0.05"/>
 		<entity name="zombieSteveDM" prob="0.05"/>
@@ -683,8 +683,8 @@
 	<entitygroup name="EnemyAnimalsSnowDM">
 		<entity name="invisibleAnimalEnemy" prob="1.5" />
 		<entity name="animalZombieVulture" 	prob="0.4" />
-		<entity name="animalDireWolfDM"		prob="0.2" />
-		<entity name="animalBearDM"			prob="0.05" />
+		<entity name="animalDireWolf"		prob="0.2" />
+		<entity name="animalBear"			prob="0.05" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsSnow">
@@ -704,9 +704,9 @@
 
 	<entitygroup name="EnemyAnimalsForestDM">
 		<entity name="invisibleAnimalEnemy" prob="6" />
-		<entity name="animalWolfDM" prob="0.4" />
-		<entity name="animalBearDM" prob="0.05" />
-		<entity name="animalDireWolfDM" prob="0.05" />
+		<entity name="animalWolf" prob="0.4" />
+		<entity name="animalBear" prob="0.05" />
+		<entity name="animalDireWolf" prob="0.05" />
 	</entitygroup>
 	
 	<entitygroup name="BearsGroup">
@@ -716,7 +716,7 @@
 	
 	<entitygroup name="BearsGroupDM">
 		<entity name="invisibleAnimalEnemy" prob="9" />
-		<entity name="animalBearDM" 		prob="1" />
+		<entity name="animalBear" 		prob="1" />
 	</entitygroup>
 	
 	<entitygroup name="FriendlyAnimalsForest">
@@ -736,7 +736,7 @@
 	<entitygroup name="EnemyAnimalsBurntForestDM">
 		<!--<entity name="invisibleAnimalEnemy" prob="6" />-->
 		<entity name="animalZombieVulture" />
-		<entity name="animalZombieBearDM" prob="0.15" />
+		<entity name="animalZombieBear" prob="0.15" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsBurntForest">
@@ -757,7 +757,7 @@
 		<entity name="invisibleAnimalEnemy" prob="6" /> <!-- The first entity in the list of a group determines if it can spawn in safe zones or not. This animal is not friendly therefore this group will not spawn in safe zones-->
 		<entity name="animalZombieVulture" />
 		<entity name="animalSnake" />
-		<entity name="animalWolfDM" />
+		<entity name="animalWolf" />
 	</entitygroup>
 
 	<entitygroup name="FriendlyAnimalsPlains">
@@ -790,9 +790,9 @@
 		<entity name="animalBoarAggressive" prob="0.3" />
 		<entity name="animalSnake" />
 		<entity name="animalZombieVulture" />
-		<entity name="animalWolfDM" />
-		<entity name="animalDireWolfDM" 	prob="0.15" />
-		<entity name="animalBearDM" 		prob="0.15" />
+		<entity name="animalWolf" />
+		<entity name="animalDireWolf" 	prob="0.15" />
+		<entity name="animalBear" 		prob="0.15" />
 	</entitygroup>
 
 	<entitygroup name="EnemyAnimalsWasteland" >
@@ -806,7 +806,7 @@
 		<entity name="animalSnake" 			prob="0.2" />
 		<entity name="animalZombieVulture" 	prob="0.4" />
 		<entity name="animalZombieDogDM" />
-		<entity name="animalZombieBearDM" 	prob="0.15" />
+		<entity name="animalZombieBear" 	prob="0.15" />
 	</entitygroup>
 
 	<entitygroup name="ZombieDogGroup">
@@ -837,7 +837,7 @@
 	</entitygroup>
 
 	<entitygroup name="WolfGroupDM">
-		<entity name="animalWolfDM" />
+		<entity name="animalWolf" />
 	</entitygroup>
 	
 	<entitygroup name="WolfPack">
@@ -846,8 +846,8 @@
 	</entitygroup>
 
 	<entitygroup name="WolfPackDM">
-		<entity name="animalWolfDM" />
-		<entity name="animalDireWolfDM" prob="0.5" />
+		<entity name="animalWolf" />
+		<entity name="animalDireWolf" prob="0.5" />
 	</entitygroup>
 	
 	<entitygroup name="VultureGroup">
@@ -1228,7 +1228,7 @@
 	
 	<entitygroup name="ZombieAnimalsGroupDM">
 		<entity name="animalZombieDogDM"  prob="4"/>
-		<entity name="animalZombieBearDM" />
+		<entity name="animalZombieBear" />
 	</entitygroup>
 
 	<entitygroup name="ZombieBearsGroup">
@@ -1236,7 +1236,7 @@
 	</entitygroup>
 
 	<entitygroup name="ZombieBearsGroupDM">
-		<entity name="animalZombieBearDM" />
+		<entity name="animalZombieBear" />
 	</entitygroup>
 	
 	<entitygroup name="BanditGroup">
