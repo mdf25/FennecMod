@@ -1896,7 +1896,7 @@
 <entity_class name="zombieUtilityWorkerFeral" extends="zombieUtilityWorker">
 	<property name="MaxHealth" value="800"/>
 	<property name="ExperienceGain" value="2091"/>
-		<property name="LegsExplosionDamageMultiplier" value="0.4"/>
+	<property name="LegsExplosionDamageMultiplier" value="0.4"/>
 	<property name="ArmsExplosionDamageMultiplier" value="0.4"/>
 	<property name="HeadExplosionDamageMultiplier" value="0.4"/>
 	<property name="ChestExplosionDamageMultiplier" value="0.4"/>
@@ -1915,6 +1915,23 @@
 	<property name="SightRange" value="200" />
 	<property name="SightScale" value="-2,20" />
 </entity_class>
+
+
+<entity_class name="zombieUtilityWorkerBoss" extends="zombieFatCop">
+	<property name="SoundRandom" 			value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	<property name="SoundAlert" 			value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	<property name="SoundAttack" 			value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	<property name="SoundHurt" 				value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	<property name="SoundDeath" 			value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	<property name="SoundSense" 			value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	<property name="Mesh" 					value="Zombies/zombieStandardWorkerRagdoll"/>
+	<property name="TintMaterial0" 			value="0,0,255"/>
+	<property name="TintMaterial2" 			value="0,0,128"/>
+	<property name="SoundFootstepModifier" 	value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
+	<property name="MaxHealth" 				value="3500"/>
+	<property name="HandItem" 				value="handZombieUtilityWorkerBoss"/>
+</entity_class>
+
 
 <!-- Missing: zombieUtilityWorkerFeralRadiated -->
 

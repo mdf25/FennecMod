@@ -5121,7 +5121,67 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="196" name="handZombieUtilityWorkerBoss">
+	<property name="Extends" value="handMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="500"/>
+		<property name="Buff" value="bleeding,infection,shockedBuff"/>
+		<property name="Buff_chance" value="0.2,0.2,0.4"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0.35"/>
+		<property name="Range" value="200"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="projectileElectricZombie"/>
+		<property name="Rays_spread" value="0.5"/>
+		<!-- to be made redundant by the more flexible <property name="Magazine_item_ray_spreads" value="0.5"/> ... when it works -->
+		<property name="Reload_time" value="2"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_warning" value="hulkvomitwarning"/>
+		<property name="Sound_start" value="hulkvomitattack"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="infection"/>
+		<property name="Buff_chance" value="0.2"/>
+	</property>
+</item>
 
+<item id="197" name="projectileElectricZombie">
+	<property name="Meshfile" 		value="ParticleEffects/p_electric_shock"/>
+	<property name="DropMeshfile"	value="ParticleEffects/p_electric_shock"/>
+	<property name="HandMeshfile" 	value="Items/Misc/sackPrefab"/>
+	<property name="HoldType" 		value="32"/>
+	<property name="Material" 		value="organic"/>
+	<property name="EconomicValue" 	value="12"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="Stacknumber" 		value="5000" />
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Velocity" 			value="12.8"/>
+		<property name="FlyTime" 			value="4.2"/>
+		<property name="LifeTime" 			value="10.2"/>
+		<property name="CollisionRadius"	value="0.5" />
+		<property name="DamageBonus.earth" 	value="0" 	/>
+		<property name="DamageBonus.stone"	value="0" 	/>
+		<property name="DamageBonus.metal"	value="0" 	/>
+		<property name="DamageBonus.wood" 	value="20" 	/>
+	</property>
+	<property name="Group" value="Ammo/Weapons,Basics"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="ApplyBuff" 			value="1,1" param1="shockedBuff"/>
+		<property name="EntityDamage" 		value="1"/>
+		<property name="BlockDamage" 		value="10"/>
+	</property>
+</item>
 
 <item id="198" name="handZombieBlueFlareBoss">
 	<property name="Extends" value="handMaster"/>
