@@ -5033,7 +5033,6 @@ Mesh files no longer used:
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="nailgun_fire"/>
 		<property name="Particles_muzzle_fire" value="nailgunfire"/>
-	<!-- <property name="Particles_muzzle_smoke" value="nozzlesmoke"/> -->
 		<property name="Sound_repeat" value=""/>
 		<property name="Sound_end" value=""/>
 		<property name="Sound_empty" value="weapon_empty"/>
@@ -5041,6 +5040,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.head" value="120"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="ActionExp" value="2"/>
+		<property name="Auto_fire" value="true"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Repair"/>
