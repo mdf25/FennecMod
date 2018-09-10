@@ -1931,8 +1931,8 @@
 	<property name="MaxHealth" 				value="3500"/>
 	<property name="HandItem" 				value="handZombieUtilityWorkerBoss"/>
 	<property name="AITask-3" 				value="RangedAttackTarget" param1="1" param2="0"/>
-	<property name="ApproachSpeed"			value="1.5" />
-	<property name="NightApproachSpeed"		value="2.2" />
+	<property name="ApproachSpeed"			value="2" />
+	<property name="NightApproachSpeed"		value="2.3" />
 </entity_class>
 
 

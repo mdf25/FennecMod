@@ -1017,4 +1017,17 @@ This requires a 50+ food bar:
 	<modify id="0" stat="health" amount="-3" rate="0.5"/>
 	<modify id="1" stat="speedmodifier" mulValue="0.1" duration="3.2"/>
 </buff>
+
+<buff id="shockedBuffPlayer" requires="isPlayer" duration="4.5" stack="discard"
+	actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="electric_fence_impact"
+	icon="ui_game_symbol_electric_power" name_key="shockedBuffName" description_key="shockedBuffDesc" tooltip_key="shockedBuffTooltip">
+	<modify id="0" stat="health" amount="-30" rate="5" />
+	<modify id="1" stat="health" amount="-3" rate="0.5"/>
+	<modify id="2" stat="speedmodifier" mulValue="0.1" duration="3.2"/>
+</buff>
+
+
+
+
+
 </buffs>

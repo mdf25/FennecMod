@@ -5126,20 +5126,20 @@ Mesh files no longer used:
 	<property name="Class" value="ItemClassTimeBomb"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
-	<property name="Explosion.BlockDamage" value="5"/>
-	<property name="Explosion.EntityDamage" value="5"/>
+	<property name="Explosion.BlockDamage" value="10"/>
+	<property name="Explosion.EntityDamage" value="0"/>
 	<property name="Explosion.ParticleIndex" value="5"/>
-	<property name="Explosion.RadiusBlocks" value="8"/>
-	<property name="Explosion.RadiusEntities" value="8"/>
-	<property name="Explosion.RadiusBuffs" value="8"/> <!-- int, default is same as RadiusBlocks -->
-	<property name="Explosion.BlastPower" value="90"/>
-	<property name="Explosion.DamageBonus.stone" value="0"/>
-	<property name="Explosion.DamageBonus.metal" value="200"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="5"/>
+	<property name="Explosion.RadiusBuffs" value="5"/> <!-- int, default is same as RadiusBlocks -->
+	<property name="Explosion.BlastPower" value="120"/>
+	<property name="Explosion.DamageBonus.stone" value="200"/>
+	<property name="Explosion.DamageBonus.metal" value="500"/>
 	<property name="Explosion.DamageBonus.earth" value="0"/>
 	<property name="Explosion.DamageBonus.water" value="0"/>
-	<property name="Explosion.DamageBonus.wood"  value="0"/>
-	<property name="FuseTime" value="1"/> <!-- theoretically redundant but I don't want to experiment on this -->
-	<property name="Explosion.Buff" value="burningNapalm"/>
+	<property name="Explosion.DamageBonus.wood"  value="100"/>
+	<property name="FuseTime" value="1"/>
+	<property name="Explosion.Buff" value="shockedBuffPlayer"/>
 	<property name="Explosion.Buff_chance" value="1"/>
 	<property name="ExplodeOnHit" value="true"/>
 	<property class="Action0">
@@ -5147,7 +5147,7 @@ Mesh files no longer used:
 		<property name="DamageEntity" value="10"/>
 		<property name="DamageBlock" value="500"/>
 		<property name="Buff" value="bleeding,infection,shockedBuff"/>
-		<property name="Buff_chance" value="0.2,0.2,0.4"/>
+		<property name="Buff_chance" value="0.2,0.2,1"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Activate"/>
