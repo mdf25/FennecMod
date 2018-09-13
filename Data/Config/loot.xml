@@ -1978,7 +1978,7 @@
 	<item name="noteFragment"		count="5,20"	prob="0.3" 	/>
 	<item name="bookGunSmithing"	count="1"		prob="0.04" />
 	<item name="bookScience"		count="1"		prob="0.04" />
-<lootgroup>
+</lootgroup>
 
 
 
