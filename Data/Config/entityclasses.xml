@@ -1429,7 +1429,7 @@
 	<property name="ExperienceGain" value="2916"/>
 	<property name="Weight" value="70"/>
 	<property name="PushFactor" value="20"/>
-	<property name="LootListOnDeath" value="17"/>
+	<property name="LootListOnDeath" value="126"/>
 	<property name="AITask-1" value="BreakDoor"/>
 	<property name="AITask-2" value="BreakBlock"/>
 	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5"/>
@@ -1462,6 +1462,12 @@
 	<property name="ChestExplosionDamageMultiplier" value="2"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieBlueFlareSleeper" extends="zombieBlueFlare">
+	<property name="Explosion.DamageBonus.wood" 	value="0.5" />
+	<property name="Explosion.DamageBonus.stone" 	value="0.05" />
+	<property name="Explosion.DamageBonus.metal" 	value="0.05" />
 </entity_class>
 
 <entity_class name="zombieBlueFlareFeralRadiated" extends="zombieBlueFlare">
@@ -1640,6 +1646,13 @@
     <property name="Explosion.DamageBonus.earth" value="1.2"/>
 </entity_class>
 
+<entity_class name="zombieFatHawaiianBomberSleeper" extends="zombieFatHawaiianBomber">
+	<property name="Explosion.DamageBonus.wood"  value="0.2" />
+	<property name="Explosion.DamageBonus.stone" value="0.05" />
+	<property name="Explosion.DamageBonus.metal" value="0.01" />
+	<property name="Explosion.DamageBonus.earth" value="0" />
+</entity_class>
+
 <entity_class name="zombieFatHawaiianBomberFeral" extends="zombieFatHawaiianBomber">
     <property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="TintMaterial0" value="255,30,30"/>
@@ -1649,6 +1662,13 @@
     <property name="Explosion.BlockDamage" value="2500"/>
     <property name="Explosion.EntityDamage" value="200"/>
     <property name="Explosion.DamageBonus.earth" value="1.2"/>
+</entity_class>
+
+<entity_class name="zombieFatHawaiianBomberFeralSleeper" extends="zombieFatHawaiianBomberFeral">
+	<property name="Explosion.DamageBonus.wood"  value="0.2" />
+	<property name="Explosion.DamageBonus.stone" value="0.05" />
+	<property name="Explosion.DamageBonus.metal" value="0.01" />
+	<property name="Explosion.DamageBonus.earth" value="0" />
 </entity_class>
 
 <entity_class name="zombieFatHawaiianBomberFeralRadiated" extends="zombieFatHawaiianBomberFeral">
@@ -1661,6 +1681,13 @@
     <property name="Explosion.EntityDamage" value="250"/>
     <property name="Explosion.DamageBonus.earth" value="1.2"/>
 	<property name="Explosion.DamageBonus.metal" value="1.2"/>
+</entity_class>
+
+<entity_class name="zombieFatHawaiianBomberFeralRadiatedSleeper" extends="zombieFatHawaiianBomberFeralRadiated">
+	<property name="Explosion.DamageBonus.wood"  value="0.2" />
+	<property name="Explosion.DamageBonus.stone" value="0.05" />
+	<property name="Explosion.DamageBonus.metal" value="0.01" />
+	<property name="Explosion.DamageBonus.earth" value="0" />
 </entity_class>
 
 <entity_class name="zombieFatCop" extends="zombieTemplateMale">
@@ -1760,6 +1787,14 @@
 	<property name="LootListOnDeath" value="123" />
 </entity_class>
 
+<entity_class name="zombieFatRocketCopSleeper" extends="zombieFatRocketCop">
+	<property name="HandItem" value="handZombieRocketCopSleeper" />
+	<property name="Explosion.DamageBonus.wood" value="0.1" />
+	<property name="Explosion.DamageBonus.stone" value="0.05" />
+	<property name="Explosion.DamageBonus.metal" value="0.01" />
+	<property name="Explosion.DamageBonus.earth" value="0" />
+<entity_class>
+
 <entity_class name="zombieFatRocketCopFeralRadiated" extends="zombieFatRocketCop">
 	<property name="HandItem" value="handZombieRocketCop"/>
 	<property name="MaxHealth" value="5000"/>
@@ -1771,6 +1806,14 @@
 	<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_rad"/>
 	<property name="LootListOnDeath" value="123" />
 </entity_class>
+
+<entity_class name="zombieFatRocketCopFeralRadiatedSleeper" extends="zombieFatRocketCopFeralRadiated">
+	<property name="HandItem" value="handZombieRocketCopSleeper" />
+	<property name="Explosion.DamageBonus.wood" value="0.1" />
+	<property name="Explosion.DamageBonus.stone" value="0.05" />
+	<property name="Explosion.DamageBonus.metal" value="0.01" />
+	<property name="Explosion.DamageBonus.earth" value="0" />
+<entity_class>
 
 <entity_class name="zombieFatCopFeralRadiated" extends="zombieFatCopFeral">
 	<property name="MaxHealth" value="3500"/>
@@ -1933,6 +1976,11 @@
 	<property name="AITask-3" 				value="RangedAttackTarget" param1="1" param2="0"/>
 	<property name="ApproachSpeed"			value="2" />
 	<property name="NightApproachSpeed"		value="2.3" />
+	<property name="LootListOnDeath"		value="124" />
+</entity_class>
+
+<entity_class name="zombieUtilityWorkerBossSleeper" extends="zombieUtilityWorkerBoss">
+	<property name="HandItem"				value="handZombieUtilityWorkerBossSleeper" />
 </entity_class>
 
 

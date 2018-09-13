@@ -352,10 +352,10 @@
 	
 	<quest id="quest_bosskiller_1" name_key="quest_bosskiller_1" subtitle_key="quest_bosskiller_1_subtitle" description_key="quest_bosskiller_1_offer" icon="ui_game_symbol_knife"
 	repeatable="false" category_key="quest" offer_key="quest_bosskiller_1_offer" difficulty="easy">
-		<objective type="ZombieKill" id="zombieBlueFlareFeralRadiated"										value="1" />
-		<objective type="ZombieKill" id="zombieFatRocketCop,zombieFatRocketCopFeralRadiated"				value="1" />
+		<objective type="ZombieKill" id="zombieBlueFlareFeralRadiated,zombieBlueFlareFeralRadiatedSleeper"										value="1" />
+		<objective type="ZombieKill" id="zombieFatRocketCop,zombieFatRocketCopFeralRadiated,zombieFatRocketCopFeralRadiatedSleeper"				value="1" />
 		<objective type="ZombieKill" id="zombieBusinessManBoss"												value="1" />
-		<objective type="ZombieKill" id="zombieFatHawaiianBomberFeral,zombieFatHawaiianBomberFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieFatHawaiianBomberFeral,zombieFatHawaiianBomberFeralSleeper,zombieFatHawaiianBomberFeralRadiated,zombieFatHawaiianBomberFeralRadiatedSleeper" value="1" />
 		<objective type="ZombieKill" id="zombieFemaleFatBomberFeral,zombieFemaleFatBomberFeralRadiated"		value="1" />
 		<reward type="Item"			id="nuclearPowerBook" 	value="1" />
 	</quest>
@@ -421,7 +421,7 @@
 	<quest id="challenge_copanattitude" name_key="challenge_copanattitude" subtitle_key="challenge_copanattitude_subtitle" description_key="challenge_copanattitude_offer" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer_key="challenge_copanattitude_offer" difficulty="hard">
 		<objective type="Time" value="1500" optional="true" />
-		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopNS,zombieFatCopDM,zombieFatCopFeral,zombieFatCopFeralNS,zombieFatCopFeralDM,zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM,zombieFatRocketCop,zombieFatRocketCopFeralRadiated" value="2" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopNS,zombieFatCopDM,zombieFatCopFeral,zombieFatCopFeralNS,zombieFatCopFeralDM,zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM,zombieFatRocketCop,zombieFatRocketCopFeralRadiated,zombieFatRocketCopSleeper,zombieFatRocketCopFeralRadiatedSleeper" value="2" />
 
 		<reward type="SkillPoints" value="2" />
 		<reward type="SkillPoints" value="1" optional="true" />
@@ -475,7 +475,7 @@
 		repeatable="true" category_key="challenge" offer_key="challenge_yournothingspecial_offer" difficulty="insane">
 		<objective type="Time" value="1800" optional="true" />
 		<objective type="ZombieKill" id="zombieSpider,zombieSpiderNS,zombieSpiderDM,zombieSpiderFeral,zombieSpiderFeralNS,zombieSpiderFeralDM,zombieSpiderFeralRadiated,zombieSpiderFeralRadiatedNS,zombieSpiderFeralRadiatedDM" value="1" />
-		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopNS,zombieFatCopDM,zombieFatCopFeral,zombieFatCopFeralNS,zombieFatCopFeralDM,zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM,zombieFatRocketCop,zombieFatRocketCopFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopNS,zombieFatCopDM,zombieFatCopFeral,zombieFatCopFeralNS,zombieFatCopFeralDM,zombieFatCopFeralRadiated,zombieFatCopFeralRadiatedNS,zombieFatCopFeralRadiatedDM,zombieFatRocketCop,zombieFatRocketCopFeralRadiated,zombieFatRocketCopSleeper,zombieFatRocketCopFeralRadiatedSleeper" value="1" />
 		<objective type="ZombieKill" id="zombieWightFeral,zombieWightFeralNS,zombieWightFeralDM,zombieWightFeralRadiated,zombieWightFeralRadiatedNS,zombieWightFeralRadiatedDM,zombieWightFeralFrozen,zombieWightFeralFrozenDM" value="1" />
 		<objective type="ZombieKill" id="zombieScreamer,zombieScreamerFeral" value="1" />
 		<objective type="ZombieKill" id="zombieBurnt,zombieBurntDM" value="1" />

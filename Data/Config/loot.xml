@@ -805,10 +805,10 @@
 <lootgroup name="weaponsBasicGuns+ammo">
 	<item group="weaponsCommonParts"/>
 	<item group="weaponsCompoundBowParts" prob="0.05"/>
-	<item group="weaponsPistol+ammo" prob="0.03"/>
-	<item group="weaponsAnyShotguns+ammo" prob="0.03"/>
-	<item group="weaponsHuntingRifle+ammo" prob="0.03"/>
-	<item name="compoundBow" prob="0.03"/>
+	<item group="weaponsPistol+ammo" prob="0.003"/>
+	<item group="weaponsAnyShotguns+ammo" prob="0.003"/>
+	<item group="weaponsHuntingRifle+ammo" prob="0.003"/>
+	<item name="compoundBow" prob="0.003"/>
 	<item group="weaponsMagnumParts" prob="0.12"/>
 </lootgroup>
 
@@ -842,7 +842,7 @@
 </lootgroup>
 
 <lootgroup name="nailgun+parts" count="1">
-	<item name="nailgun" prob="1"/>
+	<item name="nailgun" prob="1" />
 	<item group="nailgunParts" prob="4"/>
 </lootgroup>
 
@@ -1345,7 +1345,7 @@
 	<item name="fireaxeSteel"/>
 	<item name="shovelSteel"/>
 	<item name="toolAndDieSet" prob="0.09"/>
-	<item group="nailgun+parts"/>
+	<item group="nailgunParts"/>
 </lootgroup>
 
 <lootgroup name="tools" count="1">
@@ -1358,7 +1358,7 @@
 	<item name="clawHammer"/>
 	<item name="wrench" prob="0.7"/>
 	<item name="repairKit" count="1,4"/>
-	<item group="nailgun+parts"/>
+	<item group="nailgunParts"/>
 	<item group="rareTools"/>
 	<item name="forgedCopper" count="1,5" prob="0.83" />
 	<item name="forgedIron" count="1,4" prob="0.41"/>
@@ -1384,7 +1384,7 @@
 	<item name="anvil" count="1"/>
 	<item name="ironDoor1_v1"/>
 	<item name="sledgehammer"/>
-	<item group="nailgun+parts"/>
+	<item group="nailgunParts"/>
 	<!-- <item name="calipers" prob="0.67"/> -->
 	<item name="toolAndDieSet" prob="0.67"/>
 	<item group="rareTools"/>
@@ -1958,6 +1958,30 @@
 	<item group="autoMinerAugerRetrieve"	count="0,1" />
 </lootgroup>
 
+<lootgroup name="utilityWorkerBoss" count="1">
+	<item name="partsEmpoweredNailgun_parts"	prob="0.02" />
+	<item name="megaWrenchSchematic"			prob="0.05" />
+	<item group="tools"							prob="0.6"  />
+	<item name="miningHelmet" 					prob="0.1"  />
+	<item name="bookToolSmithing" 				prob="0.05" />
+	<item name="pickaxeSteelFactory" 			prob="0.1"  />
+	<item name="noteFragment"	count="5,20"	prob="0.3"	/>
+</lootgroup>
+
+<lootgroup name="blueFlareBoss" 	count="1">
+	<item name="partsEmpoweredNailgun_frame" 		prob="0.02" />
+	<item name="charcoal"			count="20,80"	prob="0.2"  />
+	<item name="gunPowder"			count="10,30"	prob="0.5" 	/>
+	<item name="napalm"				count="2,8"		prob="0.2" 	/>
+	<item name="gunpowderDust"		count="5,15"	prob="0.3" 	/>
+	<item name="napalmSchematic"	count="1"		prob="0.003" />
+	<item name="noteFragment"		count="5,20"	prob="0.3" 	/>
+	<item name="bookGunSmithing"	count="1"		prob="0.04" />
+	<item name="bookScience"		count="1"		prob="0.04" />
+<lootgroup>
+
+
+
 <!-- DEATH MODE -->
 <lootgroup name="DeathModeAmmo" count="1,2">
 	<item name="arrow" 			count="30,60"   prob="4"   />
@@ -2518,6 +2542,7 @@
 	<item group="rareOres" count="5,11"/>
 	<item name="oldCash" count="50,250" prob="0.5"/>
 	<item name="noteFragment" count="50,100" prob="0.4" />
+	<item name="herbalAntibioticsRecipe" prob="0.1" />
 </lootcontainer>
 
 <!-- bandit melee -->
@@ -2742,7 +2767,7 @@
 	<item name="fireaxeSteel" prob="0.4"/>
 	<item name="shovelSteel" prob="0.4"/>
 	<item name="sledgehammer" prob="0.4"/>
-	<item group="nailgun+parts" prob="0.4"/>
+	<item group="nailgunParts" prob="0.4"/>
 	<item group="electricalDevices" prob="2"/>
 </lootcontainer>
 
@@ -2918,15 +2943,27 @@
 	<item group="autoMinerGroup" count="1" />
 </lootcontainer>
 
-<!-- rocket cop-->
+<!-- Rocket Cop Loot -->
 <lootcontainer id="123" count="1" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
-	<item group="rocketCopGroupFull" count="1" />
+	<item group="rocketCopGroupFull" count="1" prob="0.98" />
+	<item name="partsEmpoweredNailgun_receiver" prob="0.02" />
 </lootcontainer>
 
-<!-- Penetration Tester Loot -->
+<!-- The Engineer Loot -->
+<lootcontainer id="124" count="1" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item group="utilityWorkerBoss" 	count="1" />
+</lootcontainer>
+
+<!-- The Penetration Tester Loot -->
 <lootcontainer id="125" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
-	<item name="noteFragment" count="50,100" prob="0.6" />
-	<item name="penetrationTesterCard" count="1" prob="0.4" />
+	<item name="noteFragment" 			count="50,100" 	prob="0.9" />
+	<item name="penetrationTesterCard" 	count="1" 		prob="0.1" />
+	<item name="partsEmpoweredNailgun_battery" 			prob="0.02" />
+</lootcontainer>
+
+<!-- Blue Flare Loot -->
+<lootcontainer id="126" count="1" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item group="blueFlareBoss"			count="1,2" />
 </lootcontainer>
 
 <!-- Death Mode Loot -->

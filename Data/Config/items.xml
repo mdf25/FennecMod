@@ -1713,6 +1713,39 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="75" name="handZombieRocketCopSleeper">
+	<property name="Extends" value="handMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="20"/>
+		<property name="DamageBlock" value="250"/>
+		<property name="Buff" value="bleeding,infection,stunned"/>
+		<property name="Buff_chance" value="0.2,0.2,0.4"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0.35"/>
+		<property name="Range" value="200"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="copRocketSleeper"/>
+		<property name="Rays_spread" value="0.5"/>
+		<!-- to be made redundant by the more flexible <property name="Magazine_item_ray_spreads" value="0.5"/> ... when it works -->
+		<property name="Reload_time" value="2"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_warning" value="hulkvomitwarning"/>
+		<property name="Sound_start" value="hulkvomitattack"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="infection"/>
+		<property name="Buff_chance" value="0.2"/>
+	</property>
+</item>
+
 <item id="76" name="handZombie">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
@@ -5121,6 +5154,33 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="195" name="copRocketSleeper">
+	<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab"/>
+	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="EconomicValue" value="588"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="1,1"/>
+		<property name="BlockDamage" value="500,500"/> <!-- this is not working yet, it uses damage from Action1 -->
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Explosion.ParticleIndex" value="4"/> <!-- which Prefab/particle is used -->
+		<property name="Explosion.RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+		<property name="Explosion.BlockDamage" value="100"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="Explosion.RadiusEntities" value="3"/> <!-- damage radius for entities -->
+		<property name="Explosion.EntityDamage" value="80"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+		<property name="Velocity" value="10"/>
+		<property name="FlyTime" value="4"/>
+		<property name="LifeTime" value="8"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+
 <item id="196" name="handZombieUtilityWorkerBoss">
 	<property name="Extends" value="handMaster"/>
 	<property name="Class" value="ItemClassTimeBomb"/>
@@ -5129,9 +5189,9 @@ Mesh files no longer used:
 	<property name="Explosion.BlockDamage" value="10"/>
 	<property name="Explosion.EntityDamage" value="0"/>
 	<property name="Explosion.ParticleIndex" value="5"/>
-	<property name="Explosion.RadiusBlocks" value="5"/>
-	<property name="Explosion.RadiusEntities" value="5"/>
-	<property name="Explosion.RadiusBuffs" value="5"/> <!-- int, default is same as RadiusBlocks -->
+	<property name="Explosion.RadiusBlocks" value="8"/>
+	<property name="Explosion.RadiusEntities" value="8"/>
+	<property name="Explosion.RadiusBuffs" value="8"/> <!-- int, default is same as RadiusBlocks -->
 	<property name="Explosion.BlastPower" value="120"/>
 	<property name="Explosion.DamageBonus.stone" value="200"/>
 	<property name="Explosion.DamageBonus.metal" value="500"/>
@@ -5153,8 +5213,39 @@ Mesh files no longer used:
 		<property name="Class" value="Activate"/>
 		<property name="Delay" value="1"/>
 	</property>
-	<property class="Action1">
-		
+</item>
+
+<item id="197" name="handZombieUtilityWorkerBossSleeper">
+	<property name="Extends" value="handMaster"/>
+	<property name="Class" value="ItemClassTimeBomb"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property name="Explosion.BlockDamage" value="10"/>
+	<property name="Explosion.EntityDamage" value="0"/>
+	<property name="Explosion.ParticleIndex" value="5"/>
+	<property name="Explosion.RadiusBlocks" value="8"/>
+	<property name="Explosion.RadiusEntities" value="8"/>
+	<property name="Explosion.RadiusBuffs" value="8"/> <!-- int, default is same as RadiusBlocks -->
+	<property name="Explosion.BlastPower" value="120"/>
+	<property name="Explosion.DamageBonus.stone" value="5"/>
+	<property name="Explosion.DamageBonus.metal" value="1"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<property name="Explosion.DamageBonus.water" value="0"/>
+	<property name="Explosion.DamageBonus.wood"  value="5"/>
+	<property name="FuseTime" value="1"/>
+	<property name="Explosion.Buff" value="shockedBuffPlayer"/>
+	<property name="Explosion.Buff_chance" value="1"/>
+	<property name="ExplodeOnHit" value="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="500"/>
+		<property name="Buff" value="bleeding,infection,shockedBuff"/>
+		<property name="Buff_chance" value="0.2,0.2,1"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Activate"/>
+		<property name="Delay" value="1"/>
 	</property>
 </item>
 

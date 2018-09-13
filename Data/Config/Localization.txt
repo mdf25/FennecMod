@@ -6385,10 +6385,16 @@ cntShippingCrateDeathMode,blocks,block,KgNone,"Sealed Loot Crate",,,,
 cntLootCrateDeathMode,blocks,block,KgNone,"Loot Crate",,,,
 
 zombieFatRocketCop,entityclasses,entity,KgNone,"Rocket Cop",,,,
+zombieFatRocketCopSleeper,entityclasses,entity,KgNone,"Rocket Cop",,,,
 zombieFatRocketCopFeralRadiated,entityclasses,entity,KgNone,"Nuclear Cop",,,,
+zombieFatRocketCopFeralRadiatedSleeper,entityclasses,entity,KgNone,"Nuclear Cop",,,,
 zombieFatHawaiianBomber,entityclasses,entity,KgNone,"Bomber Bastard",,,,
 zombieFatHawaiianBomberFeral,entityclasses,entity,KgNone,"Feral Bomber Bastard",,,,
 zombieFatHawaiianBomberFeralRadiated,entityclasses,entity,KgNone,"Radiated Bomber Bastard",,,,
+zombieFatHawaiianBomberSleeper,entityclasses,entity,KgNone,"Bomber Bastard",,,,
+zombieFatHawaiianBomberFeralSleeper,entityclasses,entity,KgNone,"Feral Bomber Bastard",,,,
+zombieFatHawaiianBomberFeralRadiatedSleeper,entityclasses,entity,KgNone,"Radiated Bomber Bastard",,,,
+
 zombieFemaleFatBomber,entityclasses,entity,KgNone,"Bomber Bitch",,,,
 zombieFemaleFatBomberFeral,entityclasses,entity,KgNone,"Feral Bomber Bitch",,,,
 zombieFemaleFatBomberFeralRadiated,entityclasses,entity,KgNone,"Radiated Bomber Bitch",,,,
@@ -6406,8 +6412,9 @@ empoweredNailgunDesc,items,tools,KgNone,"The empowered nailgun is the fastest co
 animalDireWolf,entityclasses,entity,KgNone,Direwolf,,,,
 
 zombieUtilityWorkerBoss,entityclasses,entity,KgNone,"The Engineer",,,,
-
-
+zombieUtilityWorkerBossSleeper,entityclasses,entity,KgNone,"The Engineer",,,,
+zombieBlueFlareSleeper,entityclasses,entity,KgNone,"Blue Flare",,,,
+zombieBlueFlareFeralRadiatedSleeper,entityclasses,entity,KgNone,"Radioactive Flare",,,,
 
 
 
