@@ -1793,7 +1793,7 @@
 	<property name="Explosion.DamageBonus.stone" value="0.05" />
 	<property name="Explosion.DamageBonus.metal" value="0.01" />
 	<property name="Explosion.DamageBonus.earth" value="0" />
-<entity_class>
+</entity_class>
 
 <entity_class name="zombieFatRocketCopFeralRadiated" extends="zombieFatRocketCop">
 	<property name="HandItem" value="handZombieRocketCop"/>
@@ -1813,7 +1813,7 @@
 	<property name="Explosion.DamageBonus.stone" value="0.05" />
 	<property name="Explosion.DamageBonus.metal" value="0.01" />
 	<property name="Explosion.DamageBonus.earth" value="0" />
-<entity_class>
+</entity_class>
 
 <entity_class name="zombieFatCopFeralRadiated" extends="zombieFatCopFeral">
 	<property name="MaxHealth" value="3500"/>
