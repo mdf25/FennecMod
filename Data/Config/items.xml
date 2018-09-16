@@ -14272,6 +14272,8 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
 
+
+
 <item id="990" name="firstAidKitSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property name="Weight" value="5" />
@@ -14336,6 +14338,16 @@ Mesh files no longer used:
 	<property name="Weight" value="100" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="workstationRemovalKit"/>
+	</property>
+</item>
+
+<item id="1009" name="autoMinerSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="DescriptionKey" value="megaWrenchSchematicDesc"/>
+	<property name="EconomicValue" value="1250"/>
+	<property name="Weight" value="10" />
+	<property class="Action1">
+		<property name="Skills_to_gain" value="MinerAutoMiningStation"/>
 	</property>
 </item>
 

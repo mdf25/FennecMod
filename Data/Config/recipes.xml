@@ -402,6 +402,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="copperOre" count="1" />
 </recipe>
 
+<recipe name="zincFragment" count="30" craft_area="grinder_station" craft_time="1">
+	<ingredient name="zincOre" count="1" />
+</recipe>
+
 <recipe name="leadFragment" count="30" craft_area="grinder_station" craft_time="1">
 	<ingredient name="leadOre" count="1" />
 </recipe>

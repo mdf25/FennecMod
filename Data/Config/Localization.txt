@@ -6416,7 +6416,8 @@ zombieUtilityWorkerBossSleeper,entityclasses,entity,KgNone,"The Engineer",,,,
 zombieBlueFlareSleeper,entityclasses,entity,KgNone,"Blue Flare",,,,
 zombieBlueFlareFeralRadiatedSleeper,entityclasses,entity,KgNone,"Radioactive Flare",,,,
 
-
+autoMinerSchematic,items,Schematic,KgNone,"Auto Mining for Lazy Bastards",,,,
+autoMinerSchematicDesc,items,Schematic,KgNone,"Tired of using a pickaxe or auger to get your materials? Well, now you can be a lazy bastard and make a machine to do it for you! Well, after mastering your Miner class completely, of course...",,,,
 
 
 

@@ -916,14 +916,15 @@
 	<item name="ovenUpgradeKitSchematic" />
 	<item name="squeezerWorkbenchSchematic" />
 	<item name="toiletUpgradeKitSchematic" />
-	<item name="megaWrenchSchematic" prob="0.05" />
+	<item name="megaWrenchSchematic" prob="0.15" />
+	<item name="autoMinerSchematic" prob="0.15" />
 	<item name="fermentingBarrelSchematic" />
 	<item name="electropulseArrowBoltSchematic" />
 	<item name="corrosiveArrowBoltSchematic" />
 	<item name="smallRefinerySchematic" />
 	<item name="alloyForgeSchematic" />
 	<item name="napalmSchematic" />
-	<item name="schematicBag" prob="0.02" />
+	<item name="schematicBag" prob="0.05" />
 	<item group="questChallenge" count="1"/>
 </lootgroup>
 
