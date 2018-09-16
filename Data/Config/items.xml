@@ -14343,7 +14343,7 @@ Mesh files no longer used:
 
 <item id="1009" name="autoMinerSchematic">
 	<property name="Extends" value="schematicMaster"/>
-	<property name="DescriptionKey" value="megaWrenchSchematicDesc"/>
+	<property name="DescriptionKey" value="autoMinerSchematicDesc"/>
 	<property name="EconomicValue" value="1250"/>
 	<property name="Weight" value="10" />
 	<property class="Action1">
