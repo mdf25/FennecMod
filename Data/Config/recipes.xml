@@ -5713,7 +5713,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="burningBarrelPlayer" 	count="3" />
 </recipe>
 
-<recipe name="crudeOil" craft_time="10" count="20" craft_area="small_refinery" craft_tool="distillationColumn" craft_time="20">
+<recipe name="crudeOil" count="20" craft_area="small_refinery" craft_tool="distillationColumn" craft_time="20">
 	<ingredient name="oilShale" count="5" />
 </recipe>
 
@@ -5745,7 +5745,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="plasticSheet" count="1" />
 </recipe>
 
-<recipe name="oil" count="1" craft_time="5" craft_area="small_refinery" craft_exp_gain="6" craft_time="distillationColumn">
+<recipe name="oil" count="1" craft_area="small_refinery" craft_exp_gain="6" craft_time="distillationColumn">
 	<ingredient name="crudeOil" count="5"/>
 </recipe>
 
