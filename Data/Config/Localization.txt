@@ -6073,7 +6073,7 @@ canPastaHotDesc,items,Food,KgNone,"A heated can of pasta is sure to raise your c
 noteFragment,items,Schematic,KgNone,"Note Fragment",,,,
 noteFragmentDesc,items,Schematics,KgNone,"A note fragment. Collect enough of them, and you will be able to craft another class paper.",,,,
 researchDesk,blocks,block,KgNone,"Research Desk",,,,
-researchDeskDesc,blocks,block,KgNone,"You can use this research desk to [55ff88]craft additional class papers![ffffff].",,,,
+researchDeskDesc,blocks,block,KgNone,"You can use this research desk to [55ff88]craft additional class papers![ffffff] To unlock the research desk, master all three of your primary classes. Note that secondary classes give you the recipes and ability to purchase higher perk levels, but will not give you the buffs and debuffs had you taken it as a primary class.",,,,
 
 ClassMasteryName,progression,perk,EnChanged,"Overall Class Mastery",,,,
 ClassMasteryDesc,progression,perk,EnChanged,"Once you master all three of your classes by completing the quest, you will unlock the research desk which will allow you to craft additional class papers.",,,,

@@ -4378,7 +4378,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="egg"				count="3"/>
 </recipe>
 
-<recipe name="winterFruitSalad" count="1" craft_area="working_oven" craft_time="50">
+<recipe name="winterFruitSalad" count="1" craft_area="kitchen_workbench" craft_time="50">
  	<ingredient name="blueberries"      count="1"/>
    	<ingredient name="canPears"		    count="1"/>
 	<ingredient name="goldenRodTea"		count="1"/>
@@ -4492,7 +4492,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="egg"				count="3"/>
 </recipe>
 
-<recipe name="winterFruitSaladTasty" count="1" craft_area="working_oven" craft_time="80">
+<recipe name="winterFruitSaladTasty" count="1" craft_area="kitchen_workbench" craft_time="80">
  	<ingredient name="blueberries"      count="1"/>
    	<ingredient name="canPears"		    count="1"/>
 	<ingredient name="goldenRodTea"		count="1"/>
@@ -5475,7 +5475,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="emptyJar"			count="1" />
 </recipe>
 
-<recipe name="foodHoney" count="1" craft_area="kitchenWorkbench" craft_time="30">
+<recipe name="foodHoney" count="1" craft_area="kitchen_workbench" craft_time="30">
 	<ingredient name="honeycomb"		count="8" />
 	<ingredient name="cloth"			count="5" />
 	<ingredient name="emptyJar"			count="1" />
@@ -5713,7 +5713,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="burningBarrelPlayer" 	count="3" />
 </recipe>
 
-<recipe name="crudeOil" count="1" craft_area="small_refinery" craft_tool="distillationColumn" craft_time="20">
+<recipe name="crudeOil" craft_time="10" count="20" craft_area="small_refinery" craft_tool="distillationColumn" craft_time="20">
 	<ingredient name="oilShale" count="5" />
 </recipe>
 
@@ -5730,22 +5730,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="plasticSheet" count="1" craft_area="small_refinery" craft_tool="vacuumChamber" craft_time="30">
-	<ingredient name="crudeOil" count="20" />
+	<ingredient name="crudeOil" count="10" />
 </recipe>
 
-<recipe name="plasticCasing" count="1" craft_area="small_refinery" craft_tool="vacuumChamber" craft_time="20">
+<recipe name="plasticCasing" count="2" craft_area="small_refinery" craft_tool="vacuumChamber" craft_time="20">
 	<ingredient name="plasticSheet" count="1" />
 </recipe>
 
-<recipe name="plasticCapsule" count="1" craft_area="small_refinery" craft_tool="vacuumChamber" craft_time="10">
+<recipe name="plasticCapsule" count="3" craft_area="small_refinery" craft_tool="vacuumChamber" craft_time="10">
 	<ingredient name="plasticSheet" count="1" />
 </recipe>
 
-<recipe name="plasticFletching" count="2" craft_area="small_refinery" craft_tool="vacuumChamber" craft_time="5">
+<recipe name="plasticFletching" count="4" craft_area="small_refinery" craft_tool="vacuumChamber" craft_time="5">
 	<ingredient name="plasticSheet" count="1" />
 </recipe>
 
-<recipe name="oil" count="1" craft_area="small_refinery" craft_exp_gain="6" craft_time="distillationColumn">
+<recipe name="oil" count="1" craft_time="5" craft_area="small_refinery" craft_exp_gain="6" craft_time="distillationColumn">
 	<ingredient name="crudeOil" count="5"/>
 </recipe>
 
