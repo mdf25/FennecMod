@@ -6419,7 +6419,9 @@ zombieBlueFlareFeralRadiatedSleeper,entityclasses,entity,KgNone,"Radioactive Fla
 autoMinerSchematic,items,Schematic,KgNone,"Auto Mining for Lazy Bastards",,,,
 autoMinerSchematicDesc,items,Schematic,KgNone,"Tired of using a pickaxe or auger to get your materials? Well, now you can be a lazy bastard and make a machine to do it for you! Well, after mastering your Miner class completely, of course...",,,,
 
-
-
+rockSmallBurnt,items,Resource,KgNone,"Burnt Rock",,,,
+rockSmallBurntDesc,items,Resources,KgNone,"Whilst useless in its current state, burnt rock can be melted back into a forge to be usable in other recipes.",,,,
+clayLumpBurnt,items,Resource,KgNone,"Burnt Clay",,,,
+clayLumpBurntDesc,items,Resource,KgNone,"Whilst useless in its current state, burnt clay can be melted back into a forge to be usable in other recipes."
 
 

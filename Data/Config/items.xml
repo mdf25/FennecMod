@@ -5154,6 +5154,29 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="193" name="rockSmallBurnt"> <!-- scrap material -->
+	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab"/>
+	<property name="Material" value="stone"/>
+	<property name="MeltTimePerUnit" value="1" />
+	<property name="HoldType" value="40"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="RepairAmount" value="300"/>
+	<property name="Weight" value="5"/>
+	<property name="SellableToTrader" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="ThrowAway"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Throw_strength_default" value="8"/>
+		<property name="Throw_strength_max" value="25"/>
+		<property name="Max_strain_time" value="1.5"/>
+		<property name="Sound_start" value="swoosh"/>
+	</property>
+	<property name="ThrowableDecoy" value="true"/>
+	<property name="DropScale" value="3"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value="0.5"/>
+</item>
+
 <item id="195" name="copRocketSleeper">
 	<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab"/>
 	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
@@ -17633,6 +17656,19 @@ Mesh files no longer used:
 	<property name="CraftingIngredientTime" value="2"/>
 	<property name="Weight" value="5"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+</item>
+
+<item id="1459" name="clayLumpBurnt">
+	<property name="Meshfile" value="Items/Crafting/clay"/>
+	<property name="Material" value="clay"/>
+	<property name="Weight" value="5"/>
+	<property name="MeltTimePerUnit" value="1" />
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="6"/>
+	<property name="EconomicBundleSize" value="150"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value="0.5"/>
 </item>
 
 <item id="1460" name="unit_iron">
