@@ -1025,6 +1025,46 @@ NOT the TextureNumber.
 group desc for stuff like metal siding
 -->
 
+<block id="100" name="bedrockMaster">
+	<property name="Group" value="Building"/>
+	<property name="Material" value="Mbedrock"/>
+	<property name="Texture" value="241"/>
+	<property name="FuelValue" value="300"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodMaster"/>
+		<property name="Item" value="wood"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="CustomUpgradeSound" value="place_block_wood"/>
+	<drop event="Harvest" name="wood" count="2"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="20"/>
+</block>
+
+<block id="101" name="bedrockBlock">
+	<property name="Extends" value="bedrockMaster" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodBlock" />
+	</property>
+</block>
+
+<block id="102" name="bedrockPole">
+	<property name="Extends" value="bedrockMaster" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="woodBlock" />
+	</property>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="Model" value="pole_square"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="UseGlobalUV" value="Local"/>
+</block>
+
 <block id="115" name="corrugatedMetalMaster">
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="scrapFrameGroupDesc"/>
