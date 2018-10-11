@@ -1253,10 +1253,10 @@
 	<window name="windowVehicle" width="380" height="733" panel="Right" controller="VehicleFrameWindow"> 
 		<panel name="header" pos="3,0" height="43" depth="1" backgroundspritename="ui_game_panel_header">		
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_minibike"/>
-			<label style="header.name" text="{VehicleNameQuality}" />
+			<label style="header.name" text="{vehiclenamequality}" />
 			<sprite depth="2" width="112" pos="260, -17" height="10" type="sliced" color="[black]" />
 			<sprite depth="2" width="110" pos="261, -18" height="8" type="sliced" color="[mediumGrey]" />
-			<sprite depth="2" name="sprVehicleQuality" width="110" pos="261, -18" height="8" type="filled" color="{VehicleQualityColor}" />
+			<sprite depth="2" name="sprVehicleQuality" width="110" pos="261, -18" height="8" type="filled" color="{vehiclequalitycolor}" />
 		</panel>
 		
 		<panel name="content" depth="0" pos="0,-43" disableautobackground="true">
@@ -1266,8 +1266,8 @@
 				<rect pos="3,-3" width="374" height="218">
 					<sprite color="[mediumGrey]" type="sliced" />
 					<texture depth="2" name="vehiclePreview" material="Materials/Transparent Colored" size="374,218" />
-					<label depth="3" pos="14,-20" font_size="26" text="{VehicleQualityTitle}: [DECEA3]{VehicleQuality}[-]" width="200" height="30"/> 
-					<label depth="3" pos="14,-50" font_size="26" text="{VehicleDurabilityTitle}: [DECEA3]{VehicleDurability}[-]" width="200" height="30"/>
+					<label depth="3" pos="14,-20" font_size="26" text="{vehiclequalitytitle}: [DECEA3]{vehiclequality}[-]" width="200" height="30"/> 
+					<label depth="3" pos="14,-50" font_size="26" text="{vehicledurabilitytitle}: [DECEA3]{vehicledurability}[-]" width="200" height="30"/>
 				</rect>
 				
 				<grid name="parts" rows="8" cols="1" pos="3,-223" cell_width="374" cell_height="60" repeat_content="true" controller="VehiclePartStackGrid">
@@ -1310,27 +1310,27 @@
 				<grid name="stats" rows="5" cols="1" pos="3,-5" cell_width="223" cell_height="30" repeat_content="false" >
 					<panel height="20" width="375" disableautobackground="true">
 						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_gas"/>
-						<label depth="1" width="100" pos="30,-2" font_size="22" text="{FuelTitle}: [DECEA3]{Fuel}%[-]" />
+						<label depth="1" width="100" pos="30,-2" font_size="22" text="{fueltitle}: [DECEA3]{fuel}%[-]" />
 						<sprite depth="2" width="100" pos="105, -7" height="10" type="sliced" color="[black]" />
 						<sprite depth="2" width="98" pos="106, -8" height="8" type="sliced" color="[mediumGrey]" />
-						<sprite depth="2" name="sprFillPotential" width="98" pos="106, -9" height="6" type="filled" color="[beige]" fill="{PotentialFuelFill}" />
-						<sprite depth="2" name="sprFuelFill" width="98" pos="106, -8" height="8" type="filled" color="240,240,240" fill="{FuelFill}" />
+						<sprite depth="2" name="sprFillPotential" width="98" pos="106, -9" height="6" type="filled" color="[beige]" fill="{potentialfuelfill}" />
+						<sprite depth="2" name="sprFuelFill" width="98" pos="106, -8" height="8" type="filled" color="240,240,240" fill="{fuelfill}" />
 					</panel>
 					<panel height="20" width="375" disableautobackground="true">
 						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_defense"/>
-						<label depth="1" width="180" pos="30,-2" name="lblProtection" font_size="22" text="{ProtectionTitle}: [DECEA3]{Protection|once}%[-]" />
+						<label depth="1" width="180" pos="30,-2" name="lblProtection" font_size="22" text="{protectiontitle}: [DECEA3]{protection}%[-]" />
 					</panel>
 					<panel height="20" width="375" disableautobackground="true">
 						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_seats"/>
-						<label depth="1" width="180" pos="30,-2" name="lblPassengers" font_size="22" text="{PassengersTitle}: [DECEA3]{Passengers|once}[-]" />
+						<label depth="1" width="180" pos="30,-2" name="lblPassengers" font_size="22" text="{passengerstitle}: [DECEA3]{passengers|once}[-]" />
 					</panel>
 					<panel height="20" width="375" disableautobackground="true">
 						<sprite depth="1" name="windowIcon" style="icon22px" pos="132,60" sprite="ui_game_symbol_speed"/>
-						<label depth="1" width="180" pos="160,60" name="lblSpeed" font_size="22" text="{SpeedTitle}: [DECEA3]{Speed}m/s ({SpeedText|once})[-]" />
+						<label depth="1" width="180" pos="160,60" name="lblSpeed" font_size="22" text="{speedtitle}: [DECEA3]{speed}m/s ({speedtext})[-]" />
 					</panel>
 					<panel height="20" width="375" disableautobackground="true">
 						<sprite depth="1" name="windowIcon" style="icon22px" pos="132,60" sprite="ui_game_symbol_noise"/>
-						<label depth="1" width="180" pos="160,60" name="lblNoise" font_size="22" text="{NoiseTitle}: [DECEA3]{Noise|once}[-]" />
+						<label depth="1" width="180" pos="160,60" name="lblNoise" font_size="22" text="{noisetitle}: [DECEA3]{noise}[-]" />
 					</panel>
 				</grid>
 			</rect>
