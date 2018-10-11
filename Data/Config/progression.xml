@@ -1116,9 +1116,12 @@
 		</effect>
 	</perk>
 	
-	<action_skill name="PowerTools" exp_to_level="2000" icon="mining" description_key="PowerToolsDesc" title_key="PowerToolsName" group="tools">
+	<action_skill name="PowerTools" exp_to_level="600" icon="mining" description_key="PowerToolsDesc" title_key="PowerToolsName" group="tools">
 		<effect name="BlockDamage">
-			<multiply skill_level="1,100" value="1.00,4.00"/>
+			<multiply skill_level="1,100" value="1.00,5.00"/>
+		</effect>
+		<effect name="HarvestCount">
+			<multiply perk_level="1,100" value="1.00,3.50"/>
 		</effect>
 	</action_skill>
 	
@@ -1135,7 +1138,6 @@
 			<multiply skill_level="3" value="2.00000"/>
 			<multiply skill_level="4" value="2.50000"/>
 			<multiply skill_level="5" value="3.00000"/>
-			
 		</effect>
 		<effect name="DismembermentChance">
 			<add perk_level="0" value="0"/>
