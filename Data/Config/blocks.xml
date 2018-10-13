@@ -1075,6 +1075,24 @@ group desc for stuff like metal siding
 	<property name="Place" 				value="TowardsPlacerInverted"/>
 </block>
 
+<block id="105" name="bedrockPlate">
+	<property name="Extends" value="bedrockBlock"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="Plate"/>
+</block>
+
+<block id="106" name="bedrockCNRRound">
+	<property name="Extends" value="bedrockMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="corner_round1m"/>
+</block>
+
+
+
+
+
+
+
 
 
 <block id="115" name="corrugatedMetalMaster">
@@ -17872,7 +17890,7 @@ group desc for stuff like metal siding
 	<property name="RunningSound" value="bladetrap_fire_lp"/>
 	<property name="RunningSoundBreaking" value="bladetrap_dm1_lp"/>
 	<property name="RunningSoundBroken" value="bladetrap_dm2_lp"/>
-	<property name="MaxDamage" value="2000"/>
+	<property name="MaxDamage" value="10000"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="ModelEntity"/>
 	<property class="RepairItems"> <property name="electronicParts" value="1"/> <property name="scrapIron" value="1"/> </property>
