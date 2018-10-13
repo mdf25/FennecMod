@@ -1038,9 +1038,9 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="Dev"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" 			value="woodFrameBlock" />
-		<property name="Item" 				value="wrench"/>
-		<property name="ItemCount" 			value="0"/>
-		<property name="UpgradeHitCount" 	value="2"/>
+		<property name="Item" 				value="wood"/>
+		<property name="ItemCount" 			value="1"/>
+		<property name="UpgradeHitCount" 	value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Harvest" name="wood" count="2"/>
@@ -18221,14 +18221,14 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models"/>
 	<property name="CustomIcon" value="pressureplate"/>
 	<property name="Model" value="Entities/Electrical/pressure_platePrefab"/>
-	<property name="ModelOffset" value="0,0,0"/>
+	<property name="ModelOffset" value="0,0.65,0"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="143"/>
 	<property name="CanPickup" value="false"/>
 	<property name="RequiredPower" value="0"/>
 	<property name="FallDamage" value="false"/>
-	<property name="Damage" value="0" />
-	<property name="Damage_received" value="0" />
+	<property name="Damage" value="1" />
+	<property name="Damage_received" value="1" />
 	<property name="Group" value="Science"/>
 	<property class="RepairItems">
 		<property name="forgedIron" value="8"/>
