@@ -6424,4 +6424,11 @@ rockSmallBurntDesc,items,Resources,KgNone,"Whilst useless in its current state, 
 clayLumpBurnt,items,Resource,KgNone,"Burnt Clay",,,,
 clayLumpBurntDesc,items,Resource,KgNone,"Whilst useless in its current state, burnt clay can be melted back into a forge to be usable in other recipes."
 
+catapultTrap,blocks,Trap,KgNone,"Jump Pad",,,,
+catapultTrapDesc,blocks,Trap,KgNone,"A jump pad. Walk on it and WHEEEEEEEE!!!",,,,
+
+
+
+
+
 

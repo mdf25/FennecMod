@@ -1052,23 +1052,36 @@ group desc for stuff like metal siding
 </block>
 
 <block id="101" name="bedrockBlock">
-	<property name="Extends" value="bedrockMaster" />
+	<property name="Extends" 			value="bedrockMaster" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="woodBlock" />
+		<property name="ToBlock" 	value="air" />
+		<property name="Item" 		value="wrench"/>
+		<property name="ItemCount" 	value="0"/>
 	</property>
 </block>
 
 <block id="102" name="bedrockPole">
-	<property name="Extends" value="bedrockMaster" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="woodBlock" />
-	</property>
-	<property name="Shape" value="New"/>
-	<property name="LightOpacity" value="0"/>
-	<property name="Model" value="pole_square"/>
-	<property name="ImposterExclude" value="true"/>
-	<property name="UseGlobalUV" value="Local"/>
+	<property name="Extends" 			value="bedrockMaster" />
+	<property name="Shape" 				value="New"/>
+	<property name="LightOpacity" 		value="0"/>
+	<property name="Model" 				value="pole_square"/>
+	<property name="ImposterExclude" 	value="true"/>
+	<property name="UseGlobalUV" 		value="Local"/>
 </block>
+
+<block id="103" name="bedrockBlockNoDamage">
+	<property name="Extends" 			value="bedrockBlock" />
+	<property name="FallDamage" 		value="false"/>
+</block>
+
+<block id="104" name="bedrockRamp">
+	<property name="Extends" 			value="bedrockMaster"/>
+	<property name="Shape" 				value="New"/>
+	<property name="Model" 				value="ramp"/> 
+	<property name="Place" 				value="TowardsPlacerInverted"/>
+</block>
+
+
 
 <block id="115" name="corrugatedMetalMaster">
 	<property name="Group" value="Building"/>
@@ -18203,7 +18216,42 @@ group desc for stuff like metal siding
 	<property name="EconomicValue" value="135"/>
 	<property name="PickupJournalEntry" value="cameraTip,triggerDelayDurationTip,passthroughTriggeringTip"/>
 </block>
-	<!-- n Free -->
+	
+<block id="2031" name="catapultTrap">
+	<property name="Class" value="JumpPad"/>
+	<property name="CustomIcon" value="pressureplate" />
+	<property name="CustomIconTint" value="aa0000" />
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="CustomIcon" value="pressureplate"/>
+	<property name="Model" value="Entities/Electrical/pressure_platePrefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterPlate" param1="143"/>
+	<property name="CanPickup" value="false"/>
+	<property name="RequiredPower" value="0"/>
+	<property name="FallDamage" value="false"/>
+	<property name="Damage" value="0" />
+	<property name="Damage_received" value="0" />
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="8"/>
+		<property name="mechanicalParts" value="1"/>
+		<property name="electricParts" value="1"/>
+		<property name="spring" value="1"/>
+	</property>
+	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="spring" count="0,1" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="Catapult" count="1" tool_category="Disassemble" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="50"/>
+	<property name="EconomicValue" value="124"/>
+</block>
+	
 
 <block id="2041" name="glassShowerRamp">
 	<property name="Material" value="glass"/>
