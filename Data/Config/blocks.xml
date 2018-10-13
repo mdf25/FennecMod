@@ -1087,7 +1087,12 @@ group desc for stuff like metal siding
 	<property name="Model" value="corner_round1m"/>
 </block>
 
-
+<block id="107" name="bedrockSheet">
+	<property name="Extends" value="bedrockMaster" />
+	<property name="Shape" value="New"/>
+	<property name="Model" value="billboard"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+</block>
 
 
 
@@ -16842,7 +16847,63 @@ group desc for stuff like metal siding
 	<property name="PickupJournalEntry" value="cameraTip"/>
 </block>
 
+<block id="1683" name="pepperTurret">
+	<property name="Class" value="Ranged"/>
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+	<property name="AmmoItem" value="9mmBulletPepper"/>
+	<property name="TurnSpeed" value="10"/>
+	<property name="MaxDistance" value="40"/>
+	<property name="EntityDamage" value="1"/> <!-- 146 dps, 330 / burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="3.5"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
 
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.4"/>
+	<property name="CooldownTime" value="1"/>
+	<property name="OvershootTime" value="0.4"/>
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+	<property name="DamageBonus.glass" value="1"/>
+	<property name="DamageBonus.wood" value="2"/>
+	<property name="DamageBonus.earth" value="0.2"/>
+	<property name="DamageBonus.stone" value="0.2"/>
+	<property name="DamageBonus.metal" value="0.2"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="15"/>
+
+	<property class="RepairItems">
+		<property name="forgedIron" value="12"/>
+		<property name="mechanicalParts" value="2"/>
+		<property name="electricParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="10,40" prob="1"/>
+	<drop event="Destroy" count="0"/>
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+</block>
 
 
 
@@ -18264,7 +18325,31 @@ group desc for stuff like metal siding
 	<property name="EconomicValue" value="124"/>
 </block>
 	
+<block id="2032" name="slowPad">
+	<property name="Material" 			value="Mmetal_hard" />
+	<property name="Shape" 				value="New"/>
+	<property name="Model" 				value="Plate"/>
+	<property name="Texture"			value="265" />
+	<property name="BuffsWhenWalkedOn"	value="slowBuff" />
+</block>
 
+<block id="2033" name="healPad">
+	<property name="Material" 			value="Mmetal_hard" />
+	<property name="Shape" 				value="New"/>
+	<property name="Model" 				value="Plate"/>
+	<property name="Texture"			value="265" />
+	<property name="BuffsWhenWalkedOn"	value="healBuff" />
+</block>
+
+<block id="2034" name="burningPad">
+	<property name="Material" 			value="Mmetal_hard" />
+	<property name="Shape" 				value="New"/>
+	<property name="Model" 				value="Plate"/>
+	<property name="Texture"			value="265" />
+	<property name="BuffsWhenWalkedOn"	value="burning" />
+</block>
+	
+	
 <block id="2041" name="glassShowerRamp">
 	<property name="Material" value="glass"/>
 	<property name="Shape" value="New"/>

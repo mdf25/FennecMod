@@ -603,6 +603,10 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" amount="2" rate="1"/>
 </buff>
 
+<buff id="healBuff" duration="5" stack="extend" type="healthup" icon="ui_game_symbol_medical" name_key="firstAidLarge" description_key="firstAidLargeDesc" tooltip_key="firstAidLargeTooltip" causes="firstAidKit">
+	<modify id="1" stat="health" amount="5" rate="0.2"/>
+</buff>
+
 <buff id="painkillerBuff" duration="30" stack="extend" type="healthup" icon="ui_game_symbol_pills" name_key="painkillersBuffName" description_key="painkillersBuffDesc" tooltip_key="painkillersBuffTooltip" causes="painkillers">
 	<modify id="1" stat="health" amount="1" rate="1"/>
 </buff>
@@ -1025,6 +1029,11 @@ This requires a 50+ food bar:
 	<modify id="1" stat="health" amount="-3" rate="0.5"/>
 	<modify id="2" stat="speedmodifier" mulValue="0.1" duration="3.2"/>
 </buff>
+
+<buff id="slowBuff" requires="isPlayer" duration="5" stack="discard">
+	<modify id="0" stat="speedmodifier" mulValue="0.3" />
+</buff>
+
 
 
 

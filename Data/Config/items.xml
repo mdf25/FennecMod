@@ -5038,6 +5038,23 @@ Mesh files no longer used:
 		<property name="CreativeMode" value="Dev"/>
 </item>
 
+<item id="187" name="9mmBulletPepper">
+	<property name="CustomIcon" value="9mmBulletHigh" />
+	<proeprty name="CustomIconTint" value="0000ff" />
+	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab"/>
+	<property name="Material" value="brass"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="EconomicValue" value="14"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="1,1"/>
+		<property name="BlockDamage" value="1,1"/>
+	</property>
+</item>
+
 <item id="189" name="empoweredNailgun">
 	<property name="Meshfile" value="Items/Tools/nailgunPrefab"/>
 	<property name="Material" value="metal"/>
