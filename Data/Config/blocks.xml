@@ -1036,12 +1036,11 @@ group desc for stuff like metal siding
 	<property name="Texture" value="241"/>
 	<property name="FuelValue" value="300"/>
 	<property name="CreativeMode" value="Dev"/>
-	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="woodMaster"/>
-		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="4"/>
-		<property name="UpgradeHitCount" value="4"/>
+		<property name="ToBlock" 			value="woodFrameBlock" />
+		<property name="Item" 				value="wrench"/>
+		<property name="ItemCount" 			value="0"/>
+		<property name="UpgradeHitCount" 	value="2"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Harvest" name="wood" count="2"/>
@@ -1053,11 +1052,6 @@ group desc for stuff like metal siding
 
 <block id="101" name="bedrockBlock">
 	<property name="Extends" 			value="bedrockMaster" />
-	<property class="UpgradeBlock">
-		<property name="ToBlock" 	value="air" />
-		<property name="Item" 		value="wrench"/>
-		<property name="ItemCount" 	value="0"/>
-	</property>
 </block>
 
 <block id="102" name="bedrockPole">
