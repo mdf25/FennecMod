@@ -980,44 +980,16 @@
 	</biome_intensity_generators>
 
 	<biome_spawn_rules>
-		<biome_spawn_rule name="pine_forest">
-			<biome_generator range="0,0.2"/>
-			<terrain_generator range="70,86"/>
-		</biome_spawn_rule>
-
 		<biome_spawn_rule name="forest">
-			<biome_generator range="0.2,0.65"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="plains">
-			<biome_generator range="0.65,8"/>
-			<terrain_generator range="0,3"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="snow">
-			<biome_generator range="0.8,0.85"/>
-			<terrain_generator range="86,255"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="desert">
-			<biome_generator range="0.85,1"/>
-		</biome_spawn_rule>
-
-		<biome_spawn_rule name="burnt_forest">
-			<distance_from_center range="7000,9000"/>
+			<distance_from_center range="0,800"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="wasteland">
-			<distance_from_center range="9000,12000"/>
+			<distance_from_center range="800,1500"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="radiated">
-			<distance_from_center range="12000,20000"/>
+			<distance_from_center range="1500,20000"/>
 		</biome_spawn_rule>
-
-		<biome_spawn_rule name="water">
-			<terrain_generator range="-31,-1"/>
-		</biome_spawn_rule>
-
 	</biome_spawn_rules>
 </rwgmixer>
