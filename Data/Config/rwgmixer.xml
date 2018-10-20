@@ -824,12 +824,10 @@
 			
 			<module name="FinalLand" 			type="ScaleBiasOutput">
 				<property name="sourceModule"	value="BlendFinalLand" />
-				<property name="scale"			value="1.7" />
-				<property name="bias"			value="5" />
+				<property name="scale"			value="0" />
+				<property name="bias"			value="20" />
 			</module>
 			
-			<!--<output module="SmallHillsClamped" />-->
-			<!--<output module="scaleLandBaseFilter" />-->
 			<output module="FinalLand" />
 		</terrain_generator>
 	
