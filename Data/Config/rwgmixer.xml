@@ -11,23 +11,23 @@
 
 	<cell_rules>
 		<cell_rule name="default">
-			<cave_count value="4,8"/>
+			<cave_count value="0"/>
 			<path_material value="asphalt" />
 			<path_radius value="10" />
 			
-			<!--
 			<hub_rule name="emptyTown"/>
 			<wilderness_rule name="empty" />
 			<hub_rule name="smallTown"  prob="0.1" />
 			<hub_rule name="rural" 		prob="0.05"/>
-			-->
 			
+			
+			<!--
 			<hub_rule name="townSmall" 	prob="0.1"/>
-			<hub_rule name="townLarge" 	prob="0.1"/>
-			<hub_rule name="citySmall" 	prob="0.35"/>
-			<hub_rule name="cityLarge" 	prob="0.3"/>
+				<hub_rule name="townLarge" 	prob="0.1"/>
+				<hub_rule name="citySmall" 	prob="0.35"/>
+				<hub_rule name="cityLarge" 	prob="0.3"/>
 			<wilderness_rule name="wildernessDefault"/>
-			
+			-->
 		</cell_rule>
 
 		<cell_rule name="customHubTest">
@@ -53,13 +53,7 @@
 			<prefab_rule name="none"/>
 
 			<street_gen level="10" length_multiplier="4">
-				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
-
-				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
-				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
-				<alt_commands chars="T,I,N,K"/>
+				<axiom value="F-F-F-F-"/>
 			</street_gen>
 		</hub_rule>
 		
