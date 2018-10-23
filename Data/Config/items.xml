@@ -18351,8 +18351,9 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="5000,10000"/>
 	</property>
 </item>
+-->
 
-<item id="1502" name="gunSuperDigger">
+<item id="1700" name="gunSuperDigger">
 	<property name="CustomIcon" value="gunMP5"/>
 	<property name="CustomIconTint" value="ffa0a0"/>
 	<Property name="TintColor" value="255,160,160"/>
@@ -18398,6 +18399,7 @@ Mesh files no longer used:
 	</property>
 	</item>
 
+<!--
 <item id="1503" name="gunJustDie">
 	<property name="CustomIcon" value="gunPistol"/>
 	<property name="CustomIconTint" value="ffa0a0"/>
