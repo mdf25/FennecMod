@@ -7451,8 +7451,8 @@ Mesh files no longer used:
 <item id="468" name="swatHelmetLight">
 	<property name="CustomIcon" value="swatHelmet"/>
 	<property name="Class" value="ItemClassToggle"/>
-	<property name="DescriptionKey" value="swatHelmetLightDesc" />
 	<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource"/>
+	<property name="DescriptionKey" value="swatHelmetLightDesc" />
 	<property name="Waterproof" value="0.15"/>
 	<property name="Meshfile" value="Items/Clothing/Head/swatHelmetPrefab"/>
 	<property name="Material" value="metal"/>
@@ -7505,6 +7505,40 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="70"/>
 	<property name="CreativeMode" value="Dev"/>
+</item>
+
+<item id="470" name="footballHelmetWolfie">
+	<property name="Waterproof" value="0.15"/>
+	<property name="Meshfile" value="Items/Clothing/Head/fb_helmet"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="forgedIron"/>
+	<property name="HoldType" value="7"/>
+	<property name="EquipSlot" value="Head"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="Weight" value="60"/>
+	<property name="EconomicValue" value="400"/>
+	<property name="Encumbrance" value="0"/>
+	<property class="Attributes"> <!-- scrapArmor -->
+		<property name="ConcussiveProtection" value="0.5,1.00"/>
+		<property name="PunctureProtection" value="0.5,1.0"/>
+		<property name="FireProtection" value="0.2,0.6"/>
+		<property name="RadiationProtection" value="0.12,0.3"/>
+		<property name="ElectricalProtection" value="0.08,0.18"/>
+		<property name="DegradationMax" value="1000,2650"/>
+	</property>
+	<property class="UMA">
+		<property name="Mesh" value="gear_football_helmet"/>
+		<property name="Overlay0" value="gear_football_helmet"/>
+		<property name="Overlay0Tint" value="255,105,180"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="Mask0" value="Head" param1="inner"/>
+		<property name="ShowAltHair" value="false"/>
+	</property>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="40"/>
 </item>
 
 <item id="471" name="shades">
@@ -7641,6 +7675,13 @@ Mesh files no longer used:
 		<property name="Mesh" value="specs"/>
 		<property name="Overlay0" value="specs"/>
 	</property>
+</item>
+
+<item id="480" name="footballHelmetWolfieLight">
+	<property name="Extends" 		value="footballHelmetWolfie" />
+	<property name="CustomIcon" 	value="footballHelmetWolfie" />
+	<property name="Class" 			value="ItemClassToggle"/>
+	<property name="LightSource" 	value="Entities/Lighting/miningHelmetLightSource"/>
 </item>
 
 <item id="481" name="animalHidePoncho">

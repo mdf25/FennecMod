@@ -6427,8 +6427,10 @@ clayLumpBurntDesc,items,Resource,KgNone,"Whilst useless in its current state, bu
 catapultTrap,blocks,Trap,KgNone,"Jump Pad",,,,
 catapultTrapDesc,blocks,Trap,KgNone,"A jump pad. Walk on it and WHEEEEEEEE!!!",,,,
 
-
-
+footballHelmetWolfie,items,Clothing,KgNone,"Team Wolfie Football Helmet",,,,
+footballHelmetWolfieDesc,items,Clothing,KgNone,"It may be pink, but pink is good and it will offer some of the best protection around.",,,,
+footballHelmetWolfieLight,items,Clothing,KgNone,"Team Wolfie Football Helmet (Light)",,,,
+footballHelmetWolfieLightDesc,items,Clothing,KgNone,"It may be pink and it may give off light, but pink is good and light is illuminating!",,,,
 
 
 
