@@ -8211,6 +8211,16 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="519" name="shirtWolfie">
+	<property name="Extends" value="shirt"/>
+	<property name="CustomIcon" value="shirt"/>
+	<property name="CustomIconTint" value="60,60,60"/>
+	<property name="EconomicValue" value="1200"/>
+	<property class="UMA">
+		<property name="Overlay0Tint" value="60,60,60"/>
+	</property>
+</item>
+
 <item id="520" name="pufferCoat">
 	<property name="Insulation" value="40"/>
 	<property name="Waterproof" value="0.45"/>
@@ -8858,7 +8868,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="tshirtZUWhiteDesc"/>
 </item>
 
-<item id="579" name="shirtWolfie">
+<item id="579" name="tshirtWolfie">
 	<property name="Extends" value="tshirtWhite"/>
 	<property class="Attributes"> <!-- scrapArmor -->
 		<property name="ConcussiveProtection" value="0.5,1.00"/>
