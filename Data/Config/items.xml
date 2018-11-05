@@ -8211,16 +8211,6 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="519" name="shirtWolfie">
-	<property name="Extends" value="shirt"/>
-	<property name="CustomIcon" value="shirt"/>
-	<property name="CustomIconTint" value="60,60,60"/>
-	<property name="EconomicValue" value="1200"/>
-	<property class="UMA">
-		<property name="Overlay0Tint" value="60,60,60"/>
-	</property>
-</item>
-
 <item id="520" name="pufferCoat">
 	<property name="Insulation" value="40"/>
 	<property name="Waterproof" value="0.45"/>
@@ -8879,7 +8869,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="1000,2650"/>
 	</property>
 	<property class="UMA">
-		<property name="Overlay0Tint" value="255,105,180" />
+		<property name="Overlay1Tint" value="255,105,180" />
 		<property name="Overlay2" value="unisex_football_logo"/>
 		<property name="Overlay2Tint" value="122,0,122,255"/>
 	</property>

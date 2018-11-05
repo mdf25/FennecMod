@@ -1476,6 +1476,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cement" count="1"/>
 </recipe>
 
+<recipe name="concreteMix" count="1" craft_area="cementMixer">
+	<ingredient name="crushedSand"		count="1" />
+	<ingredient name="crushedStones"	count="1" />
+	<ingredient name="cement"			count="1" />
+</recipe>
+
 <recipe name="pouredConcreteBlock" count="1" craft_area="cementMixer">
 	<ingredient name="concreteMix" count="10"/>
 </recipe>
@@ -2565,14 +2571,24 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="groundSeeds" 	count="2" />
 </recipe>
 
+<recipe name="leather" count="1" craft_exp_gain="6">
+	<ingredient name="leatherStrips" count="6" />
+	<ingredient name="string"		 count="3" />
+</recipe>
+
 <recipe name="leather" count="1" craft_area="workbench" craft_exp_gain="6">
-	<ingredient name="leatherStrips" count="5" />
-	<ingredient name="string"		 count="2" />
+	<ingredient name="leatherStrips" count="4" />
+	<ingredient name="string"		 count="1" />
 </recipe>
 
 <recipe name="string" count="1" craft_exp_gain="4">
 	<ingredient name="cottonPlant" 	 count="3" />
 </recipe>
+
+<recipe name="string" count="2" craft_area="squeezer_workbench" craft_exp_gain="4">
+	<ingredient name="cottonPlant" 	 count="2" />
+</recipe>
+
 
 <!--
 <recipe name="string" count="1" craft_exp_gain="4">
@@ -4870,6 +4886,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="clayLump"			count="5" />			
 </recipe>
 
+<recipe name="ingotMoldHardened" count="1" craft_time="120" craft_area="forge" material_based="true" craft_tool="anvil" craft_exp_gain="20">
+	<ingredient name="unit_iron"		count="5" />
+	<ingredient name="unit_clay"		count="25" />
+</recipe>
+
+<recipe name="ingotMoldHardened" count="1" craft_time="80" craft_area="alloy_forge" material_based="true" craft_tool="anvil" craft_exp_gain="20">
+	<ingredient name="unit_iron"		count="5" />
+	<ingredient name="unit_clay"		count="25" />
+</recipe>
+
 <recipe name="forgedCopper"	count="1" craft_time="45" craft_area="firepit" craft_tool="ingotMoldHardened">
 	<ingredient name="scrapCopper"		count="40" />
 </recipe>
@@ -5778,6 +5804,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="militaryHelmetImproved" count="1" />
 	<ingredient name="flashlight02" count="1" />
 	<ingredient name="ductTape"		count="2" />
+</recipe>
+
+<recipe name="footballHelmetWolfieLight" craft_area="workbench" craft_exp_gain="120" craft_time="5">
+	<ingredient name="footballHelmetWolfie" count="1" />
+	<ingredient name="flashlight02"			count="1" />
+	<ingredient name="ductTape"				count="2" />
 </recipe>
 
 </recipes>
