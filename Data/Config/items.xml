@@ -8211,21 +8211,6 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="519" name="shirtWolfie">
-	<property name="Extends" value="shirt"/>
-	<property class="Attributes"> <!-- scrapArmor -->
-		<property name="ConcussiveProtection" value="0.5,1.00"/>
-		<property name="PunctureProtection" value="0.5,1.0"/>
-		<property name="FireProtection" value="0.2,0.6"/>
-		<property name="RadiationProtection" value="0.12,0.3"/>
-		<property name="ElectricalProtection" value="0.08,0.18"/>
-		<property name="DegradationMax" value="1000,2650"/>
-	</property>
-	<property class="UMA">
-		<property name="Overlay0Tint" value="255,105,180" />
-	</property>
-</item>
-
 <item id="520" name="pufferCoat">
 	<property name="Insulation" value="40"/>
 	<property name="Waterproof" value="0.45"/>
@@ -8871,6 +8856,23 @@ Mesh files no longer used:
 		<property name="Overlay2Tint" value="44,0,5,255"/>
 	</property>
 	<property name="DescriptionKey" value="tshirtZUWhiteDesc"/>
+</item>
+
+<item id="579" name="shirtWolfie">
+	<property name="Extends" value="tshirtWhite"/>
+	<property class="Attributes"> <!-- scrapArmor -->
+		<property name="ConcussiveProtection" value="0.5,1.00"/>
+		<property name="PunctureProtection" value="0.5,1.0"/>
+		<property name="FireProtection" value="0.2,0.6"/>
+		<property name="RadiationProtection" value="0.12,0.3"/>
+		<property name="ElectricalProtection" value="0.08,0.18"/>
+		<property name="DegradationMax" value="1000,2650"/>
+	</property>
+	<property class="UMA">
+		<property name="Overlay0Tint" value="255,105,180" />
+		<property name="Overlay2" value="unisex_football_logo"/>
+		<property name="Overlay2Tint" value="122,0,122,255"/>
+	</property>
 </item>
 
 <item id="585" name="cowboyBootsBrown">
