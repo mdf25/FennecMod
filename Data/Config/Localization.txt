@@ -6431,6 +6431,12 @@ footballHelmetWolfie,items,Clothing,KgNone,"Team Wolfie Football Helmet",,,,
 footballHelmetWolfieDesc,items,Clothing,KgNone,"It may be pink, but pink is good and it will offer some of the best protection around.",,,,
 footballHelmetWolfieLight,items,Clothing,KgNone,"Team Wolfie Football Helmet (Light)",,,,
 footballHelmetWolfieLightDesc,items,Clothing,KgNone,"It may be pink and it may give off light, but pink is good and light is illuminating!",,,,
-
-
+runningShoesWolfie,items,Clothing,KgNone,"Team Wolfie Football Boots",,,,
+runningShoesWolfieDesc,items,Clothing,KgNone,"The pinkest of pink shoes! Pink is good!",,,,
+denimShortsPantsWolfie,items,Clothing,KgNone,"Team Wolfie Football Shorts",,,,
+denimShortsPantsWolfieDesc,items,Clothing,KgNone,"The purplest of purple shorts! Simply marvellous with pink.",,,,
+shirtWolfie,items,Clothing,KgNone,"Team Wolfie Football Jersey",,,,
+shirtWolfieDesc,items,Clothing,KgNone,"Pink, the flagship colour of Team Wolfie's football squad.",,,,
+footballGlovesWolfie,items,Clothing,KgNone,"Team Wolfie Football Gloves",,,,
+footballGlovesWolfieDesc,items,Clothing,KgNone,"The pinkest of pink gloves, to camouflage oneself better.",,,,
 

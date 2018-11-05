@@ -7798,6 +7798,47 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="488" name="footballGlovesWolfie"> <!-- armorMastermilitaryArmor -->
+	<property name="Insulation" value="0"/>
+	<property name="Encumbrance" value="0.05"/>
+	<property name="Material" value="cloth"/>
+	<property name="RepairTools" value="cloth"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EquipSlot" value="Hands"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property class="Attributes"> <!-- scrapArmor -->
+		<property name="ConcussiveProtection" value="0.5,1.00"/>
+		<property name="PunctureProtection" value="0.5,1.0"/>
+		<property name="FireProtection" value="0.2,0.6"/>
+		<property name="RadiationProtection" value="0.12,0.3"/>
+		<property name="ElectricalProtection" value="0.08,0.18"/>
+		<property name="DegradationMax" value="1000,2650"/>
+	</property>
+	<property class="Attributes">
+		<property name="ConcussiveProtection" value="0.28,0.7"/>
+		<property name="PunctureProtection" value="0.3,0.75"/>
+		<property name="FireProtection" value="0.08,0.2"/>
+		<property name="RadiationProtection" value="0.12,0.3"/>
+		<property name="ElectricalProtection" value="0.06,0.1"/>
+		<property name="DegradationMax" value="280,700"/>
+	</property>
+	<property class="UMA">
+		<property name="Mesh" value="armor_kevlar_gloves"/>
+		<property name="Overlay0" value="armor_kevlar_gloves"/>
+		<property name="Overlay0Tint" value="255,105,180" />
+		<property name="Layer" value="0"/>
+		<property name="UISlot" value="Gloves"/>
+	</property>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="80"/>
+</item>
+
 <item id="490" name="denimPants"> <!-- clothPantsMaster -->
 	<property name="Insulation" value="2"/>
 	<!-- <property name="Encumbrance" value="0.001"/> -->
@@ -8106,6 +8147,24 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="516" name="runningShoesWolfie">
+	<property name="Extends" value="runningShoes"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="1500,2650"/>
+	</property>
+	<property class="Attributes"> <!-- scrapArmor -->
+		<property name="ConcussiveProtection" value="0.5,1.00"/>
+		<property name="PunctureProtection" value="0.5,1.0"/>
+		<property name="FireProtection" value="0.2,0.6"/>
+		<property name="RadiationProtection" value="0.12,0.3"/>
+		<property name="ElectricalProtection" value="0.08,0.18"/>
+		<property name="DegradationMax" value="1000,2650"/>
+	</property>
+	<property class="UMA">
+		<property name="Overlay0Tint" value="255,105,180" />
+	</property>
+</item>
+
 <item id="517" name="leatherDuster">
 	<property name="Insulation" value="30"/>
 	<property name="Waterproof" value="0.55"/>
@@ -8149,6 +8208,21 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1200"/>
 	<property class="UMA">
 		<property name="Overlay0Tint" value="60,60,60"/>
+	</property>
+</item>
+
+<item id="519" name="shirtWolfie">
+	<property name="Extends" value="shirt"/>
+	<property class="Attributes"> <!-- scrapArmor -->
+		<property name="ConcussiveProtection" value="0.5,1.00"/>
+		<property name="PunctureProtection" value="0.5,1.0"/>
+		<property name="FireProtection" value="0.2,0.6"/>
+		<property name="RadiationProtection" value="0.12,0.3"/>
+		<property name="ElectricalProtection" value="0.08,0.18"/>
+		<property name="DegradationMax" value="1000,2650"/>
+	</property>
+	<property class="UMA">
+		<property name="Overlay0Tint" value="255,105,180" />
 	</property>
 </item>
 
@@ -8627,6 +8701,21 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="87,87,87"/>
 	<property class="UMA">
 		<property name="Overlay1Tint" value="87,87,87"/>
+	</property>
+</item>
+
+<item id="563" name="denimShortsPantsWolfie">
+	<property name="Extends" value="denimShortsPants"/>
+	<property class="Attributes"> <!-- scrapArmor -->
+		<property name="ConcussiveProtection" value="0.5,1.00"/>
+		<property name="PunctureProtection" value="0.5,1.0"/>
+		<property name="FireProtection" value="0.2,0.6"/>
+		<property name="RadiationProtection" value="0.12,0.3"/>
+		<property name="ElectricalProtection" value="0.08,0.18"/>
+		<property name="DegradationMax" value="1000,2650"/>
+	</property>
+	<property class="UMA">
+		<property name="Overlay1Tint" value="139,0,139"/>
 	</property>
 </item>
 
