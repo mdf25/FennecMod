@@ -537,10 +537,16 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 </buff>
 
 <buff id="powerAttack" hitmask="body;head" duration="1" icon="ui_game_symbol_stunned">
-	<modify id="1" stat="health" amount="-30" rate="1"/>
+	<modify id="1" stat="health" amount="-40" rate="1"/>
 </buff>
 
+<buff id="powerAttackMedium" hitmask="body;head" duration="1" icon="ui_game_symbol_stunned">
+	<modify id="1" stat="health" amount="-60" rate="1"/>
+</buff>
 
+<buff id="powerAttackStrong" hitmask="body;head" duration="1" icon="ui_game_symbol_stunned">
+	<modify id="1" stat="health" amount="-150" rate="1"/>
+</buff>
 
 
 <buff id="dysentery" mutex="cured,dysentery2" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="2400t" onexpired="dysentery2"

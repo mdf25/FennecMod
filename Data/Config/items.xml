@@ -89,8 +89,8 @@ Mesh files no longer used:
 		<property name="Stamina_usage" value="3.7"/>
 	</property>
 	<property class="Action1">
-		<property name="Buff" value="criticalBlunt,powerAttack"/>
-		<property name="Buff_chance" value="0.2,1"/>
+		<property name="Buff" value="criticalBlunt,powerAttack,powerAttackMedium,powerAttackStrong"/>
+		<property name="Buff_chance" value="0.2,1,0.4,0.1"/>
 		<property name="DamageBonus.head" value="6"/>
 		<property name="Stamina_usage" value="8"/>
 	</property>
@@ -116,8 +116,8 @@ Mesh files no longer used:
 	</property>
 	<property class="Action1">
 		<property name="Stamina_usage" value="16"/>
-		<property name="Buff" value="criticalBlunt,powerAttack"/>
-		<property name="Buff_chance" value="0.2,1"/>
+		<property name="Buff" value="criticalBlunt,powerAttack,powerAttackMedium,powerAttackStrong"/>
+		<property name="Buff_chance" value="0.2,1,0.4,0.1"/>
 		<property name="DamageBonus.head" value="6"/>
 	</property>
 	<property class="Attributes">
@@ -147,8 +147,8 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="Stamina_usage" value="13"/>
 		<property name="Delay" value="1.15" />
-		<property name="Buff" value="bleeding,criticalBlunt,powerAttack"/>
-		<property name="Buff_chance" value="0.4,0.4,1"/>
+		<property name="Buff" value="bleeding,criticalBlunt,powerAttack,powerAttackMedium,powerAttackStrong"/>
+		<property name="Buff_chance" value="0.4,0.4,1,0.5,0.2"/>
 		<property name="DamageBonus.head" value="7"/>
 	</property>
 	<property class="Attributes">
@@ -177,8 +177,8 @@ Mesh files no longer used:
 	</property>
 	<property class="Action1"> <!-- AttackAction -->
 		<property name="Stamina_usage" value="8.5"/>
-		<property name="Buff" value="bleeding,criticalBlunt,powerAttack"/>
-		<property name="Buff_chance" value="0.6,0.5,1"/>
+		<property name="Buff" value="bleeding,criticalBlunt,powerAttack,powerAttackMedium,powerAttackStrong"/>
+		<property name="Buff_chance" value="0.6,0.5,1,0.6,0.3"/>
 		<property name="DamageBonus.head" value="8"/>
 	</property>
 	<property class="Attributes">
@@ -208,8 +208,8 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="Stamina_usage" value="12"/>
 		<property name="Delay" value="1.15" />
-		<property name="Buff" value="bleeding,criticalBlunt,powerAttack"/>
-		<property name="Buff_chance" value="0.4,0.4,1"/>
+		<property name="Buff" value="bleeding,criticalBlunt,powerAttack,powerAttackMedium,powerAttackStrong"/>
+		<property name="Buff_chance" value="0.4,0.4,1,0.4,0.1"/>
 		<property name="DamageBonus.head" value="6.5"/>
 	</property>
 	<property class="Attributes">
@@ -254,8 +254,8 @@ Mesh files no longer used:
 		<property name="Delay" value="1.2"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.1"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.4,0.1" />
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="7"/>
 		<property name="DamageBonus.head" value="6.5"/>
@@ -312,8 +312,8 @@ Mesh files no longer used:
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="SlowSwoosh"/>
 		<property name="Stamina_usage" value="25"/>
-		<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,powerAttack"/>
-		<property name="Buff_chance" value="0.5,0.3,0.3,1"/>
+		<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,powerAttack,powerAttackMedium,powerAttackStrong"/>
+		<property name="Buff_chance" value="0.5,0.3,0.3,1,0.8,0.5"/>
 		<property name="DamageBonus.wood" value="0.5"/>
 		<property name="DamageBonus.head" value="6"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -454,8 +454,8 @@ Mesh files no longer used:
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.4,0.1" />
 		<property name="Stamina_usage" value="9.5"/>
 		<property name="DamageBonus.head" value="7"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -507,8 +507,8 @@ Mesh files no longer used:
 		<property name="Delay" value="1.2"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.1"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.3,0.05" />
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="8.5"/>
 		<property name="DamageBonus.head" value="6"/>
@@ -562,8 +562,8 @@ Mesh files no longer used:
 		<property name="Delay" value="1.2"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.1"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.5,0.2" />
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="11"/>
 		<property name="DamageBonus.head" value="7"/>
@@ -617,8 +617,8 @@ Mesh files no longer used:
 		<property name="Delay" value="1.2"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.1"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.6,0.3" />
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="13.5"/>
 		<property name="DamageBonus.wood" value="3"/>
@@ -672,8 +672,8 @@ Mesh files no longer used:
 		<property name="Delay" value="1.2"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.1"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.5,0.2" />
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="11"/>
 		<property name="DamageBonus.head" value="7"/>
@@ -2213,8 +2213,8 @@ Mesh files no longer used:
 		<property name="DamageBonus.metal" value="0.25"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.organic" value="2"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.4,0.1" />
 		<property name="ActionExp" value="4"/>
 		<property name="ToolCategory.Butcher" value="0.5" param1="10"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
@@ -2338,8 +2338,8 @@ Mesh files no longer used:
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="15"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.4,0.1" />
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.head" value="4.5"/>
 		<property name="DamageBonus.wood" value="0.2"/>
@@ -2491,8 +2491,8 @@ Mesh files no longer used:
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="9"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.4,0.1" />
 		<property name="DamageBonus.earth" value="4.5"/>
 		<property name="DamageBonus.glass" value="0.5"/>
 		<property name="DamageBonus.head" value="6"/>
@@ -2555,8 +2555,8 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.2"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="16"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.4,0.1" />
 		<property name="DamageBonus.earth" value="4.5"/>
 		<property name="DamageBonus.glass" value="0.5"/>
 		<property name="DamageBonus.head" value="6"/>
@@ -2747,8 +2747,8 @@ Mesh files no longer used:
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="13"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.4,0.1" />
 		<property name="DamageBonus.wood" value="2.5"/>
 		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="0.25"/>
@@ -2810,8 +2810,8 @@ Mesh files no longer used:
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="10.5"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" /> 
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.4,0.1" /> 
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.head" value="3"/>
 		<property name="DamageBonus.wood" value="0.2"/>
@@ -2875,8 +2875,8 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.2"/>
 		<property name="Sound_start" value="swoosh"/>
 		<property name="Stamina_usage" value="13"/>
-		<property name="Buff" value="powerAttack" />
-		<property name="Buff_chance" value="1" />
+		<property name="Buff" value="powerAttack,powerAttackMedium,powerAttackStrong" />
+		<property name="Buff_chance" value="1,0.4,0.1" />
 		<property name="DamageBonus.earth" value="4.5"/>
 		<property name="DamageBonus.glass" value="0.5"/>
 		<property name="DamageBonus.head" value="4.5"/>
